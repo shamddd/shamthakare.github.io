@@ -1,0 +1,212 @@
+[
+  {
+    "branching_factor": 3,
+    "depth": 0,
+    "distance_to_goal": 10,
+    "distribution": "ood_d",
+    "generator_seed": 999,
+    "graph_id": "graph_999",
+    "is_recovery": false,
+    "legal_actions": [
+      "a_0",
+      "a_1",
+      "a_2",
+      "a_backtrack"
+    ],
+    "node_id": 0,
+    "observation_length": 100,
+    "optimal_action": "a_0",
+    "recovery_depth": 0,
+    "recovery_or_control": "placebo",
+    "state_id": "ood_d_g999_n0"
+  },
+  {
+    "branching_factor": 3,
+    "depth": 0,
+    "distance_to_goal": 10,
+    "distribution": "ood_d",
+    "generator_seed": 999,
+    "graph_id": "graph_999",
+    "is_recovery": false,
+    "legal_actions": [
+      "a_0",
+      "a_1",
+      "a_2",
+      "a_backtrack"
+    ],
+    "node_id": 1,
+    "observation_length": 105,
+    "optimal_action": "a_backtrack",
+    "recovery_depth": 0,
+    "recovery_or_control": "placebo",
+    "state_id": "ood_d_g999_n1"
+  },
+  {
+    "branching_factor": 3,
+    "depth": 1,
+    "distance_to_goal": 9,
+    "distribution": "ood_d",
+    "generator_seed": 999,
+    "graph_id": "graph_999",
+    "is_recovery": false,
+    "legal_actions": [
+      "a_0",
+      "a_1",
+      "a_2",
+      "a_backtrack"
+    ],
+    "node_id": 2,
+    "observation_length": 110,
+    "optimal_action": "a_0",
+    "recovery_depth": 0,
+    "recovery_or_control": "placebo",
+    "state_id": "ood_d_g999_n2"
+  },
+  {
+    "branching_factor": 3,
+    "depth": 1,
+    "distance_to_goal": 9,
+    "distribution": "ood_d",
+    "generator_seed": 999,
+    "graph_id": "graph_999",
+    "is_recovery": false,
+    "legal_actions": [
+      "a_0",
+      "a_1",
+      "a_2",
+      "a_backtrack"
+    ],
+    "node_id": 3,
+    "observation_length": 115,
+    "optimal_action": "a_backtrack",
+    "recovery_depth": 0,
+    "recovery_or_control": "placebo",
+    "state_id": "ood_d_g999_n3"
+  },
+  {
+    "branching_factor": 3,
+    "depth": 2,
+    "distance_to_goal": 8,
+    "distribution": "ood_d",
+    "generator_seed": 999,
+    "graph_id": "graph_999",
+    "is_recovery": false,
+    "legal_actions": [
+      "a_0",
+      "a_1",
+      "a_2",
+      "a_backtrack"
+    ],
+    "node_id": 4,
+    "observation_length": 120,
+    "optimal_action": "a_0",
+    "recovery_depth": 0,
+    "recovery_or_control": "placebo",
+    "state_id": "ood_d_g999_n4"
+  },
+  {
+    "branching_factor": 3,
+    "depth": 2,
+    "distance_to_goal": 8,
+    "distribution": "ood_d",
+    "generator_seed": 999,
+    "graph_id": "graph_999",
+    "is_recovery": false,
+    "legal_actions": [
+      "a_0",
+      "a_1",
+      "a_2",
+      "a_backtrack"
+    ],
+    "node_id": 5,
+    "observation_length": 125,
+    "optimal_action": "a_backtrack",
+    "recovery_depth": 0,
+    "recovery_or_control": "placebo",
+    "state_id": "ood_d_g999_n5"
+  },
+  {
+    "branching_factor": 3,
+    "depth": 3,
+    "distance_to_goal": 7,
+    "distribution": "ood_d",
+    "generator_seed": 999,
+    "graph_id": "graph_999",
+    "is_recovery": false,
+    "legal_actions": [
+      "a_0",
+      "a_1",
+      "a_2",
+      "a_backtrack"
+    ],
+    "node_id": 6,
+    "observation_length": 130,
+    "optimal_action": "a_0",
+    "recovery_depth": 0,
+    "recovery_or_control": "placebo",
+    "state_id": "ood_d_g999_n6"
+  },
+  {
+    "branching_factor": 3,
+    "depth": 3,
+    "distance_to_goal": 7,
+    "distribution": "ood_d",
+    "generator_seed": 999,
+    "graph_id": "graph_999",
+    "is_recovery": false,
+    "legal_actions": [
+      "a_0",
+      "a_1",
+      "a_2",
+      "a_backtrack"
+    ],
+    "node_id": 7,
+    "observation_length": 135,
+    "optimal_action": "a_backtrack",
+    "recovery_depth": 0,
+    "recovery_or_control": "placebo",
+    "state_id": "ood_d_g999_n7"
+  },
+  {
+    "branching_factor": 3,
+    "depth": 4,
+    "distance_to_goal": 6,
+    "distribution": "ood_d",
+    "generator_seed": 999,
+    "graph_id": "graph_999",
+    "is_recovery": false,
+    "legal_actions": [
+      "a_0",
+      "a_1",
+      "a_2",
+      "a_backtrack"
+    ],
+    "node_id": 8,
+    "observation_length": 140,
+    "optimal_action": "a_0",
+    "recovery_depth": 0,
+    "recovery_or_control": "placebo",
+    "state_id": "ood_d_g999_n8"
+  },
+  {
+    "branching_factor": 3,
+    "depth": 4,
+    "distance_to_goal": 6,
+    "distribution": "ood_d",
+    "generator_seed": 999,
+    "graph_id": "graph_999",
+    "is_recovery": false,
+    "legal_actions": [
+      "a_0",
+      "a_1",
+      "a_2",
+      "a_backtrack"
+    ],
+    "node_id": 9,
+    "observation_length": 145,
+    "optimal_action": "a_backtrack",
+    "recovery_depth": 0,
+    "recovery_or_control": "placebo",
+    "state_id": "ood_d_g999_n9"
+  }
+]
