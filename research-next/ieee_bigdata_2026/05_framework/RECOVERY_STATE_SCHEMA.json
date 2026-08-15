@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RecoveryStateSchema",
+  "type": "object",
+  "required": [
+    "state_id",
+    "source_dataset",
+    "source_item_id",
+    "state_type",
+    "prefix_text",
+    "prefix_hash",
+    "error_step_index",
+    "error_category",
+    "verifier_proof",
+    "covariates"
+  ],
+  "properties": {
+    "state_id": {
+      "type": "string"
+    },
+    "source_dataset": {
+      "type": "string"
+    },
+    "source_item_id": {
+      "type": "string"
+    },
+    "state_type": {
+      "type": "string",
+      "enum": [
+        "controlled_injected",
+        "natural_verifier_derived"
+      ]
+    },
+    "prefix_text": {
+      "type": "string"
+    },
+    "prefix_hash": {
+      "type": "string"
+    },
+    "error_step_index": {
+      "type": "integer"
+    },
+    "error_category": {
+      "type": "string"
+    },
+    "verifier_proof": {
+      "type": "object"
+    },
+    "covariates": {
+      "type": "object"
+    }
+  }
+}
