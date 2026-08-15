@@ -1,0 +1,5 @@
+{"seed": 43, "arms": ["BASE", "PREFIXRL", "RECOVERY-SFT", "FULL-SFT", "FULL-RLVR"], "spent_hours": 0.077, "cumulative_hours": 0.077, "status": "COMPLETED_CLEAN"}
+{"seed": 44, "arms": ["BASE", "PREFIXRL", "RECOVERY-SFT", "FULL-SFT", "FULL-RLVR"], "spent_hours": 0.079, "cumulative_hours": 0.156, "status": "COMPLETED_CLEAN"}
+{"seed": 45, "arms": ["BASE", "PREFIXRL", "RECOVERY-SFT", "FULL-SFT", "FULL-RLVR"], "spent_hours": 0.075, "cumulative_hours": 0.23099999999999998, "status": "COMPLETED_CLEAN"}
+{"seed": 46, "arms": ["BASE", "PREFIXRL", "RECOVERY-SFT", "FULL-SFT", "FULL-RLVR"], "spent_hours": 0.077, "cumulative_hours": 0.308, "status": "COMPLETED_CLEAN"}
+{"seed": 47, "arms": ["BASE", "PREFIXRL", "RECOVERY-SFT", "FULL-SFT", "FULL-RLVR"], "spent_hours": 0.079, "cumulative_hours": 0.387, "status": "COMPLETED_CLEAN"}
