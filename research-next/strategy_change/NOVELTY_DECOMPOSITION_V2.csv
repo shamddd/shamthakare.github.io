@@ -1,0 +1,8 @@
+component,status,source
+N1: RL reweights strategy distributions,KNOWN,"Chen et al. (ICLR 2026 Poster), Echo Chamber"
+N2: RLVR learns efficient backtracking,KNOWN,"Wei & Kim (2026), Cai et al. (2025/2026)"
+N3: Early prefix steering recovers large RL gains,KNOWN,"Rocha Filho et al. (Prefix-RL, ICLR 2026)"
+N4: Task structure determines prefix sufficiency (PS_k),PARTIALLY KNOWN / POSSIBLY NOVEL,Operationalized via PS_k metric
+N5: State-matched post-prefix policy divergence Delta_state(s_k),POSSIBLY NOVEL,Isolates policy divergence at s_k
+N6: Intervention-based identification of late policy change,POSSIBLY NOVEL,State-matched causal framework
+N7: Generalization of state-contingent recovery to unseen graph topologies,POSSIBLY NOVEL,Decisive empirical test

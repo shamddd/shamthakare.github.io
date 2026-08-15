@@ -1,0 +1,20 @@
+{
+  "category": "CATEGORY_3_SIMULATED_EVIDENCE",
+  "current_empirical_status": "NO_GENUINE_NATURAL_TASK_NEURAL_REPLICATION_EXECUTED",
+  "jmlr_status": "BLOCKED_FOR_CURRENT_SIMULATED_RECORD",
+  "mock_namespace": "research-next/strategy_change/mock_expected_outputs/",
+  "retained_assets": [
+    "mdp_environment",
+    "state_registries",
+    "verifiers",
+    "matching_v3",
+    "statistical_plan"
+  ],
+  "retracted_claims": [
+    "seed_sign_test_p0.03125",
+    "c1_c4_estimates",
+    "natural_external_validity",
+    "jmlr_readiness"
+  ],
+  "seal_version": "v9.d3-final-retraction"
+}

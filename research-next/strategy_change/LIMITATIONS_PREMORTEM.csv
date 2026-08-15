@@ -1,0 +1,16 @@
+id,limitation,severity
+L1,Synthetic algorithmic environment external validity,HIGH
+L2,Latent strategy variable z identifiability,HIGH
+L3,CoT faithfulness vs unobserved computation,HIGH
+L4,Model family generalization bounds,MEDIUM
+L5,Model scale boundary (1B vs 7B),MEDIUM
+L6,RL algorithm dependence (PPO vs GRPO vs RLOO),MEDIUM
+L7,Reward function design sensitivity,MEDIUM
+L8,Prefix length k sensitivity,MEDIUM
+L9,Trace stochasticity and temperature sensitivity,MEDIUM
+L10,Verifier accuracy in synthetic environment,LOW
+L11,Pre-training data contamination uncertainty,MEDIUM
+L12,Prior instruction-tuning history confounding,MEDIUM
+L13,Seed variance across RL runs,MEDIUM
+L14,Hardware FLOP / wall-clock abstraction,LOW
+L15,Tokenizer artifact sensitivity on prefix boundary,LOW

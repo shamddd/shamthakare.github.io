@@ -1,6 +1,7 @@
 {
   "git_commit": "4c22265fb9540f2f0f4602829fd54f2a2c13ec7f",
   "quarantined_pilot_effect_OOD_D": "+0.2500",
+  "stage6b_evidence_commit": "b4dfd2657e0f2f354ab93708170c04fa27725946",
   "stage6b_frozen_files": {
     "FULLRLVR_RUN_MANIFEST.json": {
       "sha256": "8b5a7c73aaf6ee4a64ff7e7bb1986d274ad822061e39f5ef5f7a2010fb33ed94",
