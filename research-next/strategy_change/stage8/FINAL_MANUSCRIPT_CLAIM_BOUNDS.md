@@ -1,13 +1,13 @@
-# FINAL MANUSCRIPT CLAIM BOUNDS & APPROVED ABSTRACT WORDING
+# FINAL MANUSCRIPT CLAIM BOUNDS & APPROVED ABSTRACT WORDING (V2)
 
 **Date**: August 16, 2026  
 
 ---
 
-## 1. OFFICIAL CANONICAL SCIENTIFIC CONCLUSION
+## 1. OFFICIAL CANONICAL SCIENTIFIC CONCLUSION (REFINED)
 
 $$\boxed{\text{CANONICAL MANUSCRIPT STATEMENT}}$$
-> *"Within the controlled synthetic state-matched testbed and the evaluated model/training configuration, Full-RLVR showed a positive recovery-specific continuation contrast relative to the tested PrefixRL baseline across all five fresh training replications ($p=0.03125$, exact one-sided sign test), together with concordant recovery-action changes. These findings are consistent with late-state recovery-relevant policy modification not reproduced by the tested prefix-conditioned treatment."*
+> *"Within the controlled synthetic state-matched testbed and evaluated model/training configuration, Full-RLVR exhibited a positive recovery-specific continuation contrast relative to the tested PrefixRL baseline across all five fresh training replications ($p=0.03125$, exact one-sided sign test), together with concordant differences in recovery-action selection. These findings are consistent with recovery-relevant late-state policy behavior not reproduced by the tested prefix-conditioned treatment."*
 
 ---
 
