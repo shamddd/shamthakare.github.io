@@ -1,0 +1,5 @@
+method,year,focus,overlap
+RTTC (Real-Time Test-Time Strategy Selection),2025,Dynamic test-time strategy routing per query,STRONG OVERLAP on test-time routing
+OAKS (Continual Online Adaptation Benchmark),2025,Continual online adaptation under non-stationary streams,STRONG OVERLAP on online post-training
+Multi-Shop Ski Rental (Classical Theory),1999,Rent-or-buy across multiple asset choices,DIRECT THEORETICAL REDUCTION
+Metrical Task Systems (MTS / Borodin et al.),1992,Online state switching under transition costs,DIRECT THEORETICAL REDUCTION

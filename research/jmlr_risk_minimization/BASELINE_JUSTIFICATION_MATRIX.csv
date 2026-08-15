@@ -1,0 +1,5 @@
+baseline,tested,justification
+A0 (Base Greedy),YES,Single-sample baseline
+A1 (Best-of-N),YES,Primary search baseline (N<=32)
+A2 (LoRA-RLVR),YES,Adapter-based RL post-training
+A3 (Full RLVR),YES,Full-parameter RL post-training

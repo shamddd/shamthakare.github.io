@@ -1,0 +1,6 @@
+citation_key,authors,year,title,venue,collision_status,exact_contribution
+snell2025scaling,"Snell, Lee, Xu, Kumar",2025,Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters,ICLR 2025 / arXiv:2408.03314,STRONG OVERLAP,Shows compute-optimal test-time search depends strongly on prompt difficulty; adaptive search outperforms naive Best-of-N. We extend to up-front training amortization Q.
+setlur2025scaling,Setlur et al.,2025,Scaling Test-Time Compute Without Verification or RL is Suboptimal,arXiv preprint,ADJACENT,Demonstrates verification is critical for test-time scaling efficiency.
+hu2024amortizing,Hu et al.,2024,Amortizing Intractable Inference in Large Language Models,ICLR 2024,ADJACENT,Applies amortized inference ideas to LLM generation.
+lin2025sleeptime,Lin et al.,2025,Sleep-time Compute: Beyond Inference Scaling at Test-time,arXiv preprint,ADJACENT,Investigates offline consolidation compute vs online inference search.
+xia2024understanding,Xia et al.,2024,Understanding the Performance and Estimating the Cost of LLM Fine-Tuning,arXiv preprint,ADJACENT,Estimates fine-tuning cost overheads for LLMs.

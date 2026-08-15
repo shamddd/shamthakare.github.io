@@ -1,0 +1,6 @@
+paper,year,venue,collision_verdict,notes
+"Quagmires in SFT-RL (Kang et al., 2025)",2025,arXiv / ICLR 2026,DISTINCT,SFT-to-RL outcome prediction
+"SAGE (Lee et al., 2026)",2026,arXiv,DISTINCT,Anchor-guided exploration mechanics
+"ScaleLogic (Anonymous, 2026)",2026,arXiv,PARTIAL OVERLAP,RL training compute scaling vs logical depth
+"Best-of-N Scaling (Brown et al., 2024)",2024,NeurIPS 2024,STRONG OVERLAP,Inference search compute scaling
+"Compute-Optimal Post-Training (Shen et al., 2025)",2025,ICML 2025,STRONG OVERLAP,Single-query training vs test-time FLOP tradeoff
