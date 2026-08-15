@@ -4,7 +4,7 @@
 
 ---
 
-## 1. RETAINED METHODOLOGICAL INFRASTRUCTURE
+## 1. PREVIOUSLY PREREGISTERED METHODOLOGICAL FRAMEWORK (RETAINED ASSETS)
 
 The following assets remain available as methodological infrastructure for future study design:
 

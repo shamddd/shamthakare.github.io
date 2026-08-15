@@ -8,7 +8,7 @@
 
 ---
 
-## Retained Methodological Infrastructure
+## Retained Methodological Framework (Previously Preregistered)
 
 1. **Synthetic Graph MDP Environment**: Deterministic Python MDP with state-matched recovery/control generators.
 2. **Natural State Registries**: Stage 9C GSM8K-derived evaluation registry with real item IDs, hashes, and Class 1/2 origin fields.
