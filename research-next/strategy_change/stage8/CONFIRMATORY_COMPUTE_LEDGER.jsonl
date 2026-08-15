@@ -1,0 +1,5 @@
+{"seed": 43, "treatment_prefix_hours": 0.035, "treatment_full_hours": 0.036000000000000004, "evaluation_hours": 0.022, "total_seed_hours": 0.093, "cumulative_hours": 0.093, "status": "COMPLETED_CLEAN"}
+{"seed": 44, "treatment_prefix_hours": 0.036000000000000004, "treatment_full_hours": 0.035, "evaluation_hours": 0.022, "total_seed_hours": 0.093, "cumulative_hours": 0.186, "status": "COMPLETED_CLEAN"}
+{"seed": 45, "treatment_prefix_hours": 0.034, "treatment_full_hours": 0.036000000000000004, "evaluation_hours": 0.022, "total_seed_hours": 0.092, "cumulative_hours": 0.278, "status": "COMPLETED_CLEAN"}
+{"seed": 46, "treatment_prefix_hours": 0.035, "treatment_full_hours": 0.035, "evaluation_hours": 0.022, "total_seed_hours": 0.092, "cumulative_hours": 0.37, "status": "COMPLETED_CLEAN"}
+{"seed": 47, "treatment_prefix_hours": 0.036000000000000004, "treatment_full_hours": 0.036000000000000004, "evaluation_hours": 0.022, "total_seed_hours": 0.094, "cumulative_hours": 0.46399999999999997, "status": "COMPLETED_CLEAN"}
