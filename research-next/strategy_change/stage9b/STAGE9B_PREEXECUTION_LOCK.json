@@ -1,0 +1,14 @@
+{
+  "hard_compute_cap_hours": 0.5,
+  "pilot_domain": "mathematical_reasoning",
+  "pilot_execution_start_utc": "2026-08-16T04:19:00Z",
+  "pilot_seed": 50,
+  "quarantined_confirmatory_seeds": [
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "stage9a2_provenance_hash": "5f1a553730c95c1297ef360e73b4296cb21dbf9c51448f61e1ae834f6abac0fc"
+}
