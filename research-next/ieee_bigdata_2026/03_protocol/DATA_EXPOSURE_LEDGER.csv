@@ -1,0 +1,4 @@
+dataset,item_id,historical_stage,seen_by_researcher,used_by_simulation,used_by_harness,used_for_design_decisions,eligible_for_development,eligible_for_confirmatory_testing,reason
+GSM8K,gsm8k_train_0005..0014,Stage 9C,True,True,True,True,True,False,DEVELOPMENT-EXPOSED: Inspected and used during harness validation and pilot design.
+MBPP,mbpp_601..615,Stage 9A,True,True,True,True,True,False,DEVELOPMENT-EXPOSED: Inspected during sandbox verifier validation.
+GSM8K-Fresh,gsm8k_test_partition_000..099,None,False,False,False,False,False,True,UNTOUCHED: Pure unseen evaluation partition for any future empirical test.
