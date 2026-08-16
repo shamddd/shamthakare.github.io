@@ -3,6 +3,10 @@
     "size_bytes": 906,
     "sha256": "672a5a4cd4abd025183a9e260533c1186df41043a46b991f1b2e367382497c06"
   },
+  "SUBMISSION_PACKAGE_MANIFEST.json": {
+    "size_bytes": 2974,
+    "sha256": "5cb673c59e55f082bf80621e755820a1fe941dbadfe160d0adb15d49cf0219ce"
+  },
   "IEEEtran.bst": {
     "size_bytes": 158,
     "sha256": "d1e4b774b77836c97498fb2c7c7a5aa9c2b6c6acce7a4c0f2268dfabe0a4d6c9"
@@ -13,11 +17,11 @@
   },
   "main.pdf": {
     "size_bytes": 509057,
-    "sha256": "800948b7f7f1b41aa62a8074ee0c25111cd27689678e966ce5db20badef4a6c0"
+    "sha256": "262691fc1876372dda4ea395ef152189f11c871c9b8e986a054770da05fde0dd"
   },
   "FINAL_PDF_SHA256.txt": {
     "size_bytes": 75,
-    "sha256": "db5195b9b877a2cadf55da768b2ae939a2f8af6b77156a7a41c9e865a96f930a"
+    "sha256": "1c0b814160c0449644cb9489a5ac0a991d76b2213def679f0a0c8fcdd303d16d"
   },
   "references.bib": {
     "size_bytes": 2741,
@@ -50,6 +54,10 @@
   "SUBMISSION_CHECKLIST.md": {
     "size_bytes": 972,
     "sha256": "fbd001d50aded65436c510794bdd52d02b77c079b900c5f94d40e98ec15be3f7"
+  },
+  "SUBMISSION_PACKAGE_SHA256.txt": {
+    "size_bytes": 99,
+    "sha256": "42049819a62aec644acb01ae740d349c0eb7fc0c97c123324e53b970caa52a65"
   },
   "figures/fig2_state_construction.pdf": {
     "size_bytes": 30729,
