@@ -1,78 +1,110 @@
 # Sham Satish Thakare
 
-Independent Computer Science Researcher | AI & RL Systems, Confidential Computing, Distributed Consensus & Causal Observability
+**AI/ML Researcher & Research Software Engineer**  
+Pune, Maharashtra, India • [GitHub](https://github.com/shamddd) • [Email](mailto:shamthakare3000@gmail.com)
 
-[GitHub](https://github.com/shamddd) • [Google Scholar](#) • [ORCID](#) • [alphaXiv](#) • [Website](#)
-
----
-
-## 🔬 Research Focus
-
-My research centers on **Trustworthy, Adaptive, and Verifiable Autonomous Systems**. I investigate four primary questions:
-1. **Foundation Model Plasticity**: How can internal representation metrics ($\alpha_{SVD}, \bar{H}, \sigma_g^2$) of intermediate language model checkpoints predict post-training reinforcement learning (RL) reward plasticity without executing expensive policy gradient rollouts?
-2. **Confidential Computing**: How can Zero-Knowledge attestation proofs and frequency-weighted dynamic Oblivious RAM (ORAM) tree rebalancing mitigate page-fault side channels in hardware enclaves (SGX/TDX) while bounding memory latency ratios to $< 2.5\times$?
-3. **Distributed Consensus & Fault Tolerance**: How can dynamic vote-weight adaptation ($\text{AdaptiveReplica}$) reduce p99 write latency under asymmetric network degradation and partitions without compromising strong consistency ($C=100\%$) or liveness?
-4. **Graph-Constrained Causal Observability**: How can OpenTelemetry traces, metrics, and logs be fused via topological causal walks over Service Dependency Graphs (SDGs) to eliminate LLM hallucination in microservice root cause analysis?
+I work on large language model evaluation, agentic AI systems, reinforcement-learning-inspired reasoning diagnostics, AI safety/reliability, and reproducible ML infrastructure. My current research focuses on state-matched, provenance-aware evaluation of recovery behavior in language-model reasoning.
 
 ---
 
-## 📄 Selected Manuscripts & Preprints
+## 🔬 Current Research Manuscript
 
-### 1. Representation Geometry & Reinforcement Learning Plasticity
-* **Predicting Reinforcement-Learning Plasticity of Intermediate Language-Model Checkpoints: A Cross-Architecture Diagnostic Study**  
-  *Author*: Sham Satish Thakare  
-  *Status*: **Submitted / Under Review at Journal of Machine Learning Research (JMLR)**  
-  *Repository*: [`adaptive-rl-forge`](https://github.com/shamddd/adaptive-rl-forge)  
-  *Key Finding*: Diagnostic probing vectors $\mathbf{\phi}(C_k)$ predict downstream GRPO reward gain $\beta_{RL}$ with $R^2 = 0.91$ ($p = 0.0004$), consuming $< 2\%$ of the compute of running full RL training loops.
+### `recovery_eval`
 
-### 2. Confidential Hardware Enclave Memory Security
-* **EnclaveShield: Zero-Knowledge Memory Attestation and Side-Channel Mitigation for Hardware Enclaves**  
-  *Author*: Sham Satish Thakare  
-  *Status*: **Preprint / Working Paper** (Target: *IEEE TDSC*)  
-  *Repository*: [`enclaveshield`](https://github.com/shamddd/enclaveshield)  
-  *Key Finding*: Frequency-weighted adaptive ORAM tree rebalancing achieves $H(A) = 0.82 \pm 0.02$ page access pattern entropy while bounding page access latency to $1.47\text{ms}$ ($2.45\times$ host baseline vs $15.00\text{ms}$ static Path ORAM).
+**Title:** *recovery_eval: State-Matched and Provenance-Aware Evaluation of Recovery Behavior in Language-Model Reasoning*  
+**Venue:** IEEE International Conference on Big Data (IEEE BigData 2026)  
+**Submission ID:** `BigD497`  
+**Associated Session:** 11th IEEE Special Session on Machine Learning on Big Data (MLBD 2026), Session #2  
+**Status:** **Submitted / Under Review** (Awaiting conference decision)  
+**Repository:** [`recovery_eval`](https://github.com/shamddd/recovery_eval)
 
-### 3. Distributed Consensus & Quorum Adaptation
-* **AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus**  
-  *Author*: Sham Satish Thakare  
-  *Status*: **Preprint / Working Paper** (Target: *IEEE TPDS*)  
-  *Repository*: [`quorumshift`](https://github.com/shamddd/quorumshift)  
-  *Key Finding*: Dynamic vote-weight adaptation over Raft joint-consensus transitions achieves $99.97\%$ availability and reduces p99 write latency to $13.50\text{ms}$ ($88.8\%$ reduction vs static $R=5$ majority $120.48\text{ms}$) under 50ms asymmetric degradation with zero stale reads ($S_{\text{stale}} = 0$).
-
-### 4. Microservice AIOps & Causal Observability
-* **TraceMind: Graph-Constrained Causal Reasoning for Root-Cause Localization in Microservice Systems**  
-  *Author*: Sham Satish Thakare  
-  *Status*: **Preprint / Working Paper** (Target: *IEEE TCC*)  
-  *Repository*: [`tracemind`](https://github.com/shamddd/tracemind)  
-  *Key Finding*: Topological causal walks over Service Dependency Graphs achieve $100.0\%$ Top-1 RCA accuracy (MRR = 1.00) on 24 cascading fault scenarios in `CausalOpsBench`, outperforming unconstrained LLM reasoning (Top-1 = 0.0%, MRR = 0.44).
+* **Key Focus**: Distinguishing true error-recovery capability from general baseline continuation fluency gains in reasoning LLMs.
+* **Methodology**: Combines verifier-defined recovery states, prospective covariate matching ($d \le 0.25$), append-only cryptographic exposure governance, and primitive neural rollout provenance.
+* **Empirical Demonstration**: Evaluated on 400 genuine neural continuations from `Qwen2.5-Math-1.5B` Base vs. Instruct across 20 GSM8K evaluation problems. Measured matched recovery-specific contrast $D_{\text{recovery}} = -0.110$ with a 95% descriptive bootstrap interval of $[-0.240, +0.030]$.
+* **Finding**: Under the evaluated state-matched protocol, we did not observe evidence of a recovery-specific advantage for the Instruct checkpoint over the Base checkpoint.
 
 ---
 
-## 🛠️ Flagship Research Repositories
+## 📄 Research Manuscripts
 
-| Repository | Research Area | Primary Language | Tests & Reproducibility |
-| :--- | :--- | :--- | :---: |
-| [`adaptive-rl-forge`](https://github.com/shamddd/adaptive-rl-forge) | RL Plasticity & Probing Probes | Python / PyTorch | **100% Pass** (`uv run pytest`) |
-| [`enclaveshield`](https://github.com/shamddd/enclaveshield) | ZK Attestation & Adaptive ORAM | Python / C++ | **100% Pass** (`uv run pytest`) |
-| [`quorumshift`](https://github.com/shamddd/quorumshift) | Fault-Aware Consensus Adaptation | Python / Go | **100% Pass** (`uv run pytest`) |
-| [`tracemind`](https://github.com/shamddd/tracemind) | OpenTelemetry Causal Walk Engine | Python | **100% Pass** (`uv run pytest`) |
-| [`secure-cloud-infrastructure-platform`](https://github.com/shamddd/secure-cloud-infrastructure-platform) | Static AST Attack Graph Checker | Python / FastAPI | **100% Pass** (`uv run pytest`) |
+| Manuscript Title | Targeted Venue / Track | Current Status | Code Repository |
+| :--- | :--- | :---: | :---: |
+| **recovery_eval: State-Matched and Provenance-Aware Evaluation of Recovery Behavior in Language-Model Reasoning** | IEEE BigData 2026 / MLBD 2026 | Submitted (`BigD497`) | [`recovery_eval`](https://github.com/shamddd/recovery_eval) |
+| **AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus** | IEEE TAI | Submitted | [`quorumshift`](https://github.com/shamddd/quorumshift) |
 
 ---
 
-## ⚡ Reproducibility Protocol
+## 🛠️ Featured Research & Engineering Projects
 
-All active research repositories feature single-command automated reproduction workflows:
-```bash
-git clone https://github.com/shamddd/<repo-name>.git
-cd <repo-name>
-uv run python scripts/run_<bench>_bench.py --seeds 42,43,44,45,46
-uv run pytest tests/ -v
-```
+### 1. [`recovery_eval`](https://github.com/shamddd/recovery_eval) — State-Matched LLM Reasoning Evaluation Infrastructure
+State-matched, provenance-aware framework for evaluating recovery behavior in language-model reasoning.
+* **Focus**: Model evaluation, data-centric AI, verifier-guided search, reproducibility.
+* **Features**: Verifier-defined recovery states, prospective covariate matching, append-only event ledger, primitive BPE rollout provenance, 100% independent analysis reconstruction.
+* **Stack**: Python 3.11+, PyTorch, HuggingFace Transformers, Pytest, Tectonic TeX.
+
+### 2. [`agentguard-final`](https://github.com/shamddd/agentguard-final) — AI Agent Reliability & Security Observability Platform
+AI agent reliability and security platform for monitoring tool execution, threat events, policy violations, and operational behavior in agentic systems.
+* **Focus**: Agentic AI, AI safety & reliability, tool-execution monitoring, LLM security observability.
+* **Features**: Real-time policy enforcement engine, tool execution auditing, multi-agent event tracing, interactive security dashboard.
+* **Stack**: Python, FastAPI, Next.js, TypeScript, Tailwind CSS, Docker, PostgreSQL.
+
+### 3. [`medirush`](https://github.com/shamddd/medirush) — Hyperlocal Healthcare-Commerce & Logistics Platform
+Full-stack hyperlocal healthcare-commerce platform exploring fast medicine delivery, pharmacy workflows, safety-aware AI assistance, and production web/API infrastructure.
+* **Focus**: Full-stack web architecture, healthcare APIs, high-throughput backend services.
+* **Features**: Real-time order tracking, inventory management, secure authentication, Redis caching, Docker containerization, CI/CD pipeline.
+* **Stack**: Next.js, React, TypeScript, FastAPI, PostgreSQL, Redis, Docker, GitHub Actions.
+
+### 4. [`quorumshift`](https://github.com/shamddd/quorumshift) — AdaptiveReplica Distributed Consensus Engine
+Research-oriented distributed-systems implementation exploring dynamic quorum adaptation and failure-aware replica selection in Raft-based consensus.
+* **Focus**: Distributed systems, consensus protocols, fault tolerance, p99 latency optimization.
+* **Features**: Dynamic vote-weight adaptation, asymmetric degradation monitoring, joint-consensus transitions.
+* **Stack**: Python, Go, Pytest, Docker.
+
+### 5. [`adaptive-rl-forge`](https://github.com/shamddd/adaptive-rl-forge) — Reinforcement-Learning Experiment Infrastructure
+Research tooling for reinforcement-learning experimentation, scheduling, representation diagnostics, and reproducible evaluation workflows.
+* **Focus**: RL infrastructure, reward plasticity, diagnostic probing, reproducible benchmarks.
+* **Features**: Automated experiment tracking, policy gradient utilities, seed invariance verification.
+* **Stack**: Python, PyTorch, Ray/RLlib, Pytest.
+
+### 6. [`tracemind`](https://github.com/shamddd/tracemind) — Graph-Constrained Causal Reasoning for Microservice AIOps
+Graph-constrained causal reasoning engine fusing OpenTelemetry traces, metrics, and service dependency graphs for root-cause localization.
+* **Focus**: AIOps, graph algorithms, causal observability, microservice diagnostics.
+* **Features**: Topological causal walks over Service Dependency Graphs, hallucination-free RCA.
+* **Stack**: Python, NetworkX, OpenTelemetry, Pytest.
 
 ---
 
-## ✉️ Contact & Academic Identity
-* **Canonical Name**: Sham Satish Thakare
-* **Affiliation**: Independent Researcher
-* **Email**: `151498087+shamddd@users.noreply.github.com`
+## 🎯 Research Interests
+
+* **Large Language Model Evaluation**: State-matched benchmarks, diagnostic probing, error-recovery verification, counterfactual prompt evaluation.
+* **Agentic AI & Tool Safety**: Multi-agent orchestration, tool execution governance, policy enforcement, LLM security observability.
+* **Reinforcement Learning & Reasoning**: Policy gradient methods, process supervision, test-time compute scaling, representation geometry.
+* **AI Safety & Reliability**: Robustness testing, failure mode taxonomy, dataset exposure prevention, reproducible evidence ledgers.
+* **Reproducible ML Systems**: Data-centric AI pipelines, deterministic execution, hardware-bound benchmarks, open scientific software.
+
+---
+
+## 💻 Technical Skills
+
+* **AI / ML**: Python · PyTorch · HuggingFace Transformers · Scikit-learn · Reinforcement Learning · LLM Evaluation · Agentic AI
+* **LLM / Agent Systems**: HuggingFace · Tool-using Agents · RAG · Multi-Agent Orchestration · Evaluation Pipelines · Safety & Reliability
+* **Backend & Systems**: FastAPI · Flask · REST APIs · PostgreSQL · MySQL · Redis · Docker · CI/CD Pipelines
+* **Frontend**: React · Next.js · TypeScript · Tailwind CSS
+* **Data & Analytics**: Pandas · NumPy · SciPy · Matplotlib · Seaborn · SQL
+
+---
+
+## 🛡️ Research Integrity & Transparency
+
+I prioritize reproducibility and scientific integrity across all research endeavors:
+* **Evidence Provenance**: All active empirical results derive from verifiable raw outputs, cryptographic hashes, and locked pre-execution protocols.
+* **Scientific Transparency**: Retraction notices and forensic audit trails are permanently preserved for historical auditability (e.g., exploratory simulation retractions).
+* **Open Software**: All evaluation frameworks include automated test suites (`pytest`), single-command reproduction scripts, and complete environment manifests.
+
+---
+
+## ✉️ Connect
+
+* **Email**: [`shamthakare3000@gmail.com`](mailto:shamthakare3000@gmail.com)
+* **GitHub**: [`github.com/shamddd`](https://github.com/shamddd)
+* **Location**: Pune, Maharashtra, India
