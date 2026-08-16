@@ -4,8 +4,8 @@
     "sha256": "672a5a4cd4abd025183a9e260533c1186df41043a46b991f1b2e367382497c06"
   },
   "SUBMISSION_PACKAGE_MANIFEST.json": {
-    "size_bytes": 2979,
-    "sha256": "39e9a2f20b30f033c7591ad8e150e2fed93c2ceba09e570395b0b4ca9b6c7f68"
+    "size_bytes": 3551,
+    "sha256": "516b8870cfb91591b12c9cadf5aa78886a52ffcd50e4cfbdc476a02874e5415d"
   },
   "IEEEtran.bst": {
     "size_bytes": 61632,
@@ -16,8 +16,8 @@
     "sha256": "49079addca608202d72929ff8ae8b7ba231dc5a3a35eaaa0fba96b2f95f36ac7"
   },
   "main.pdf": {
-    "size_bytes": 152666,
-    "sha256": "00c4afeab0f3f503a17f768f612b71d8de9bd8bd8dd61e75945ec2981325be14"
+    "size_bytes": 152717,
+    "sha256": "278d1cdce114ff327c365aebb7498ed63097a2bb5d93a03d61da19e44def062a"
   },
   "FINAL_PDF_SHA256.txt": {
     "size_bytes": 75,
@@ -28,8 +28,8 @@
     "sha256": "d1a606ff57001441f96700617dcf9ff6606fb8a8beb70f9a8780a39f5b36527b"
   },
   "main.tex": {
-    "size_bytes": 16560,
-    "sha256": "70f3f590b8a4c86f5d8329d9c4a0355af29624acc0235ed10f541376339d291f"
+    "size_bytes": 16597,
+    "sha256": "aa18da9f4f3fcc893c59cf8b5d370a09c69cb0298f71fc4a1eb8622ada72ac57"
   },
   "FINAL_REFERENCE_AUDIT.csv": {
     "size_bytes": 2561,
@@ -48,12 +48,12 @@
     "sha256": "c471e12749467aaf14c8e776bc4f05728ffc4366be76ef1adb5ebc84768a451e"
   },
   "FINAL_REFERENCE_AUDIT_V2.csv": {
-    "size_bytes": 5471,
-    "sha256": "ef984b801db758f5128f19b0840e395a401ce6f9e5871ac5f6d9c07b97750a1c"
+    "size_bytes": 5445,
+    "sha256": "e255cf1baf1071b129278874638e27c4b468a4665a87aa208c43181b153bca3a"
   },
   "Archive.zip": {
-    "size_bytes": 765902,
-    "sha256": "8af4838e1a54d5905be37462b242e2232006a7dec9babb5391285e8b56865c41"
+    "size_bytes": 804890,
+    "sha256": "15d8e0dcd3b9b116718e44658ffcb68ac7ee4560ff2c26f478a29eda0af1a190"
   },
   "REPRODUCIBILITY_CHECKLIST.md": {
     "size_bytes": 1724,
@@ -65,7 +65,7 @@
   },
   "SUBMISSION_PACKAGE_SHA256.txt": {
     "size_bytes": 99,
-    "sha256": "52a2dae7b67be768d0f35f63a5a0ca5de2bfd34ad4be64e8957e27c416fd304c"
+    "sha256": "8a23241e9a2ff94060ade73c291084cd871137a56265cc22b5c57b249e492499"
   },
   "figures/fig2_state_construction.pdf": {
     "size_bytes": 25510,

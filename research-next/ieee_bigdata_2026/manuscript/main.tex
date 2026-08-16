@@ -56,7 +56,7 @@ To address these diagnostic challenges, we introduce \texttt{recovery\_eval}, a 
 \end{figure}
 
 \section{Related Work}
-Prior work has studied end-to-end reasoning accuracy, process supervision, self-correction, and search-based reasoning \cite{cobbe2021gsm8k, lightman2023process, zelikman2022star, snell2024scaling, wang2022selfconsistency, madaan2023selfrefine, huang2023large, kumar2024training, yao2023tree}. Our framework instead focuses on prospective structural matching between verifier-defined recovery and control states. We did not identify the same combination of verifier-defined recovery states, prospective structural matching, exposure governance, and primitive rollout provenance in the audited primary-source corpus \cite{sambasivan2021everyone}.
+Prior work has studied end-to-end reasoning accuracy, process supervision, self-correction, and search-based reasoning \cite{cobbe2021gsm8k, lightman2023process, zelikman2022star, snell2024scaling, wang2022selfconsistency, madaan2023selfrefine, huang2023large, kumar2024training, yao2023tree}. Our framework instead focuses on prospective structural matching between verifier-defined recovery and control states. In the primary-source corpus we audited, we did not identify prior work combining verifier-defined recovery states, prospective structural matching, exposure governance, and primitive rollout provenance within a single evaluation protocol.
 
 \begin{table}[htbp]
 \caption{Comparison with Existing Reasoning Evaluation Frameworks}
@@ -127,7 +127,7 @@ Problem Difficulty & Categorical & Exact Match & -- \\
 \end{table}
 
 \section{Provenance and Exposure Governance}
-To guarantee artifact integrity and prevent item re-selection or data leakage, \texttt{recovery\_eval} implements an append-only event ledger. Every item exposure event is logged with cryptographic parent hashing. Development-exposed items are flagged as \texttt{SIMULATION\_EXPOSED} and forbidden from entering the evaluation registry.
+To guarantee artifact integrity and prevent item re-selection or data leakage, \texttt{recovery\_eval} implements an append-only event ledger \cite{sambasivan2021everyone}. Every item exposure event is logged with cryptographic parent hashing. Development-exposed items are flagged as \texttt{SIMULATION\_EXPOSED} and forbidden from entering the evaluation registry.
 
 \begin{figure}[htbp]
 \centering
