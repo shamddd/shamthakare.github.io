@@ -1,0 +1,22 @@
+[
+  {
+    "model_id": "Qwen/Qwen2.5-Math-1.5B",
+    "model_class": "Qwen2ForCausalLM",
+    "parameter_count": 1543714304,
+    "device": "mps:0",
+    "duration_sec": 15.3695,
+    "tokens_per_sec": 2.08,
+    "bpe_token_round_trip_valid": true,
+    "status": "CANARY_VERIFIED_PASSED"
+  },
+  {
+    "model_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "model_class": "Qwen2ForCausalLM",
+    "parameter_count": 1543714304,
+    "device": "mps:0",
+    "duration_sec": 1980.3878,
+    "tokens_per_sec": 0.02,
+    "bpe_token_round_trip_valid": true,
+    "status": "CANARY_VERIFIED_PASSED"
+  }
+]

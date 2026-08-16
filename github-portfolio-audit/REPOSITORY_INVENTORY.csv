@@ -1,0 +1,10 @@
+Repository_Name,URL,Visibility,Archived,Fork,Created_At,Last_Update,Default_Branch,Commit_Count,Contributors,Tags,Releases,Stars,Forks,Issues,PRs,Primary_Language,README_Quality,License,Tests,CI_CD,Docker_Support,Architecture,AI_ML_Functionality,Research_Artifacts,Documentation,Git_Hygiene,Security_State
+adaptive-rl-forge,https://github.com/shamddd/adaptive-rl-forge,PUBLIC,NO,NO,2026-08-01,2026-08-13,main,6,1,0,0,0,0,0,0,Python,STRONG,NO,YES,NO,NO,Modular,YES,YES,GOOD,CLEAN,AUDITED
+quorumshift,https://github.com/shamddd/quorumshift,PUBLIC,NO,NO,2026-08-01,2026-08-13,main,19,1,0,0,0,0,0,0,C++,STRONG,YES,YES,YES,YES,Modular,NO,YES,GOOD,CLEAN,AUDITED
+enclaveshield,https://github.com/shamddd/enclaveshield,PUBLIC,NO,NO,2026-08-01,2026-08-13,main,14,1,0,0,0,0,0,0,Python,STRONG,YES,YES,YES,YES,Modular,YES,YES,GOOD,CLEAN,AUDITED
+tracemind,https://github.com/shamddd/tracemind,PUBLIC,NO,NO,2026-08-01,2026-08-13,main,14,1,0,0,0,0,0,0,Python,STRONG,YES,YES,YES,YES,Modular,YES,YES,GOOD,CLEAN,AUDITED
+agentguard-final,https://github.com/shamddd/agentguard-final,PRIVATE,NO,NO,2026-08-01,2026-08-13,main,22,1,0,0,0,0,0,0,TypeScript,STRONG,NO,NO,YES,YES,Modular,YES,YES,GOOD,CLEAN,AUDITED
+medirush,https://github.com/shamddd/medirush,PUBLIC,NO,NO,2026-08-01,2026-08-13,main,13,1,0,0,0,0,0,0,Python,STRONG,NO,NO,NO,NO,Modular,YES,YES,GOOD,CLEAN,AUDITED
+secure-cloud-infrastructure-platform,https://github.com/shamddd/secure-cloud-infrastructure-platform,PUBLIC,NO,NO,2026-08-01,2026-08-13,main,11,1,0,0,0,0,0,0,Python,STRONG,YES,YES,YES,YES,Modular,NO,NO,GOOD,CLEAN,AUDITED
+scre-align,https://github.com/shamddd/scre-align,PUBLIC,NO,NO,2026-08-01,2026-08-13,main,1,1,0,0,0,0,0,0,Python,STRONG,NO,NO,NO,NO,Modular,YES,NO,GOOD,CLEAN,AUDITED
+Reinforcement-learning,https://github.com/shamddd/Reinforcement-learning,PUBLIC,NO,NO,2026-08-01,2026-08-13,main,3,1,0,0,0,0,0,0,Python,BASIC,YES,NO,NO,NO,Modular,NO,NO,GOOD,CLEAN,AUDITED

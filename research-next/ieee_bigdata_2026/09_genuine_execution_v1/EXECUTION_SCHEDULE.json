@@ -1,0 +1,3602 @@
+[
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_006_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 1
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_017_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 2
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_015_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 3
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_001_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 4
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_012_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 5
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_002_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 6
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_005_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 7
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_005_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 8
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_009_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 9
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_019_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 10
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_001_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 11
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_008_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 12
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_018_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 13
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_010_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 14
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_004_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 15
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_003_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 16
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_018_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 17
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_004_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 18
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_003_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 19
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_010_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 20
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_010_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 21
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_004_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 22
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_005_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 23
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_005_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 24
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_003_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 25
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_003_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 26
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_013_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 27
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_006_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 28
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_019_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 29
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_009_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 30
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_000_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 31
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_014_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 32
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_001_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 33
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_004_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 34
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_008_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 35
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_000_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 36
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_010_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 37
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_011_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 38
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_007_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 39
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_000_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 40
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_015_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 41
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_006_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 42
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_005_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 43
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_007_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 44
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_000_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 45
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_000_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 46
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_016_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 47
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_012_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 48
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_017_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 49
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_010_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 50
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_019_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 51
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_010_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 52
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_018_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 53
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_019_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 54
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_002_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 55
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_009_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 56
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_005_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 57
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_000_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 58
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_018_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 59
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_014_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 60
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_002_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 61
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_019_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 62
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_018_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 63
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_008_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 64
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_004_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 65
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_002_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 66
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_006_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 67
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_007_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 68
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_011_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 69
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_012_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 70
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_009_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 71
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_018_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 72
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_004_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 73
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_014_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 74
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_017_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 75
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_012_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 76
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_001_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 77
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_003_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 78
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_012_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 79
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_010_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 80
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_017_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 81
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_016_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 82
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_007_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 83
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_015_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 84
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_007_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 85
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_003_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 86
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_019_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 87
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_018_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 88
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_014_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 89
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_017_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 90
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_000_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 91
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_003_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 92
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_015_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 93
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_019_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 94
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_017_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 95
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_011_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 96
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_007_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 97
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_009_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 98
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_000_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 99
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_011_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 100
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_008_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 101
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_017_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 102
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_012_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 103
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_003_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 104
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_018_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 105
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_004_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 106
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_016_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 107
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_000_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 108
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_007_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 109
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_013_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 110
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_013_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 111
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_015_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 112
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_001_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 113
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_011_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 114
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_003_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 115
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_019_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 116
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_012_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 117
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_010_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 118
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_003_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 119
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_015_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 120
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_010_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 121
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_016_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 122
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_004_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 123
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_007_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 124
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_009_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 125
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_002_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 126
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_019_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 127
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_001_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 128
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_002_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 129
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_005_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 130
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_005_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 131
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_017_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 132
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_016_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 133
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_019_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 134
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_012_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 135
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_006_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 136
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_014_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 137
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_012_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 138
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_001_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 139
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_010_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 140
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_011_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 141
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_015_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 142
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_016_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 143
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_006_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 144
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_002_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 145
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_014_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 146
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_014_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 147
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_002_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 148
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_007_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 149
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_011_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 150
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_012_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 151
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_014_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 152
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_006_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 153
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_003_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 154
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_006_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 155
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_000_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 156
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_011_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 157
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_013_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 158
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_016_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 159
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_014_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 160
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_006_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 161
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_007_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 162
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_016_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 163
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_018_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 164
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_016_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 165
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_002_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 166
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_004_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 167
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_014_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 168
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_003_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 169
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_016_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 170
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_006_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 171
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_019_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 172
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_000_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 173
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_010_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 174
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_018_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 175
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_002_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 176
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_003_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 177
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_000_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 178
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_010_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 179
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_012_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 180
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_013_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 181
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_007_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 182
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_005_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 183
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_003_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 184
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_006_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 185
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_005_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 186
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_005_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 187
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_003_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 188
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_001_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 189
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_019_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 190
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_013_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 191
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_010_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 192
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_015_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 193
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_013_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 194
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_008_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 195
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_017_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 196
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_014_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 197
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_006_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 198
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_000_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 199
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_015_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 200
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_014_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 201
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_019_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 202
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_011_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 203
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_019_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 204
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_014_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 205
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_002_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 206
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_014_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 207
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_001_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 208
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_015_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 209
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_000_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 210
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_018_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 211
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_011_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 212
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_015_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 213
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_015_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 214
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_014_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 215
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_012_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 216
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_006_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 217
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_011_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 218
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_007_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 219
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_017_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 220
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_010_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 221
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_010_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 222
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_009_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 223
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_007_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 224
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_010_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 225
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_002_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 226
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_010_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 227
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_015_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 228
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_017_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 229
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_016_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 230
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_003_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 231
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_016_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 232
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_009_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 233
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_012_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 234
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_001_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 235
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_013_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 236
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_005_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 237
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_015_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 238
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_017_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 239
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_004_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 240
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_000_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 241
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_011_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 242
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_006_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 243
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_011_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 244
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_001_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 245
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_014_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 246
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_001_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 247
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_018_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 248
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_017_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 249
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_001_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 250
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_019_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 251
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_016_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 252
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_007_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 253
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_002_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 254
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_004_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 255
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_013_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 256
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_004_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 257
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_002_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 258
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_007_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 259
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_003_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 260
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_016_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 261
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_007_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 262
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_001_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 263
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_003_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 264
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_013_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 265
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_006_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 266
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_009_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 267
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_005_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 268
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_004_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 269
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_008_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 270
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_003_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 271
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_010_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 272
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_008_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 273
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_015_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 274
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_004_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 275
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_019_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 276
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_017_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 277
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_013_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 278
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_013_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 279
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_009_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 280
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_017_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 281
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_016_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 282
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_008_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 283
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_004_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 284
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_000_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 285
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_018_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 286
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_002_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 287
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_019_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 288
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_011_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 289
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_011_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 290
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_001_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 291
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_007_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 292
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_014_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 293
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_010_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 294
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_005_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 295
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_005_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 296
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_002_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 297
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_018_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 298
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_012_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 299
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_006_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 300
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_001_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 301
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_009_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 302
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_015_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 303
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_015_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 304
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_016_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 305
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_018_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 306
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_009_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 307
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_000_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 308
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_017_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 309
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_017_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 310
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_006_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 311
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_016_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 312
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_005_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 313
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_016_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 314
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_008_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 315
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_019_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 316
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_007_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 317
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_013_con_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 318
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_006_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 319
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_014_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 320
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_018_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 321
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_012_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 322
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_001_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 323
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_013_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 324
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_008_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 325
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_007_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 326
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_008_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 327
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_008_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 328
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_013_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 329
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "state_id": "gsm8k_fresh_010_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_010_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 330
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_012_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 331
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_001_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 332
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_002_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 333
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_012_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 334
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "state_id": "gsm8k_fresh_003_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_003_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 335
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "state_id": "gsm8k_fresh_007_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_007_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 336
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_018_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 337
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_017_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 338
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_015_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 339
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_006_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 340
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_015_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 341
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_013_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 342
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_000_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 343
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_018_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 344
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_009_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 345
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_011_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 346
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_002_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 347
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_008_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 348
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_019_rec_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 349
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_000_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 350
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_009_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 351
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_008_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 352
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_004_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 353
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_004_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 354
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_013_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 355
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_005_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 356
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_005_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 357
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_009_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 358
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_012_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 359
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_011_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 360
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "state_id": "gsm8k_fresh_006_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_006_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 361
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "state_id": "gsm8k_fresh_019_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_019_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 362
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_008_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 363
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_002_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 364
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_012_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 365
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_009_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 366
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_013_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 367
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_018_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 368
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_014_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 369
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_017_con_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 370
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_013_con_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 371
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_004_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 372
+  },
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "state_id": "gsm8k_fresh_000_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_000_rec_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 373
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_005_rec_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 374
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "state_id": "gsm8k_fresh_015_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_015_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 375
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_001_con_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 376
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_008_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 377
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_004_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 378
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_009_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 379
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "state_id": "gsm8k_fresh_012_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_012_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 380
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "state_id": "gsm8k_fresh_001_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_001_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 381
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_008_rec_Qwen2.5-Math-1.5B-Instruct_s405",
+    "execution_order": 382
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "state_id": "gsm8k_fresh_018_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_018_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 383
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_008_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 384
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "state_id": "gsm8k_fresh_004_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_004_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 385
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "state_id": "gsm8k_fresh_005_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_005_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 386
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_011_con_Qwen2.5-Math-1.5B-Instruct_s401",
+    "execution_order": 387
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "state_id": "gsm8k_fresh_014_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 401,
+    "rollout_id": "rollout_gsm8k_fresh_014_rec_Qwen2.5-Math-1.5B_s401",
+    "execution_order": 388
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_016_rec_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 389
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "state_id": "gsm8k_fresh_002_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_002_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 390
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_008_con_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 391
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_009_rec_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 392
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_011_con_Qwen2.5-Math-1.5B-Instruct_s402",
+    "execution_order": 393
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_009_rec_Qwen2.5-Math-1.5B-Instruct_s403",
+    "execution_order": 394
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "state_id": "gsm8k_fresh_013_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_013_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 395
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "state_id": "gsm8k_fresh_008_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_008_rec_Qwen2.5-Math-1.5B-Instruct_s404",
+    "execution_order": 396
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "state_id": "gsm8k_fresh_016_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 404,
+    "rollout_id": "rollout_gsm8k_fresh_016_con_Qwen2.5-Math-1.5B_s404",
+    "execution_order": 397
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "state_id": "gsm8k_fresh_011_recovery",
+    "state_type": "recovery_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 403,
+    "rollout_id": "rollout_gsm8k_fresh_011_rec_Qwen2.5-Math-1.5B_s403",
+    "execution_order": 398
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "state_id": "gsm8k_fresh_017_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 402,
+    "rollout_id": "rollout_gsm8k_fresh_017_con_Qwen2.5-Math-1.5B_s402",
+    "execution_order": 399
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "state_id": "gsm8k_fresh_009_control",
+    "state_type": "control_state",
+    "policy_id": "Qwen/Qwen2.5-Math-1.5B",
+    "generation_seed": 405,
+    "rollout_id": "rollout_gsm8k_fresh_009_con_Qwen2.5-Math-1.5B_s405",
+    "execution_order": 400
+  }
+]

@@ -1,0 +1,6 @@
+paper,year,venue,focus,collision_level,notes
+"Quagmires in SFT-RL (Kang et al., 2025)",2025,arXiv / ICLR 2026,Pre-RL SFT diagnostics & prediction,DISTINCT,Predicts post-RL outcomes from SFT; we study deployment horizon Q.
+"SAGE (Lee et al., 2026)",2026,arXiv,Anchor-guided exploration in RLVR,DISTINCT,Modifies RLVR reward mechanics; we study deployment choice between RLVR vs search.
+"ScaleLogic (Anonymous, 2026)",2026,arXiv,RL training compute scaling vs expressiveness,PARTIAL OVERLAP,Studies RL training compute C_train vs task depth; we study C_train vs inference query volume Q.
+"Best-of-N Scaling (Brown et al., 2024)",2024,NeurIPS 2024,Inference-time search compute scaling,STRONG OVERLAP,Analyzes Best-of-N cost scaling; does not study Q-amortization crossover under OOD shift.
+"Compute-Optimal Post-Training (Shen et al., 2025)",2025,ICML 2025,Joint training & test-time compute allocation,STRONG OVERLAP,Focuses on total FLOP allocation for fixed single query; does not parameterize downstream query volume Q.

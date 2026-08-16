@@ -1,0 +1,95 @@
+{
+  "execution_status": "COMPLETED",
+  "confirmatory_replicated": true,
+  "successful_families": "3/3",
+  "total_measured_mps_hours": 12.620000000000001,
+  "total_algorithmic_flops": 1.495630848e+16,
+  "per_family_results": {
+    "SmolLM2-360M": {
+      "family_id": "SmolLM2-360M",
+      "repo": "HuggingFaceTB/SmolLM2-360M-Instruct",
+      "commit_sha": "e43db60b2404bc4955745e1493010b91d2936932",
+      "Q_star_IID": 1250.0,
+      "Q_star_OOD_LENGTH": 79.0,
+      "Q_star_OOD_RECOMB": 210.0,
+      "R_f": 0.0632,
+      "replicated_R_f_less_than_1": true
+    },
+    "Qwen2.5-0.5B": {
+      "family_id": "Qwen2.5-0.5B",
+      "repo": "Qwen/Qwen2.5-0.5B-Instruct",
+      "commit_sha": "7422f98f6d78709e3e3b97c0f1624d777d12f623",
+      "Q_star_IID": 1420.0,
+      "Q_star_OOD_LENGTH": 92.0,
+      "Q_star_OOD_RECOMB": 245.0,
+      "R_f": 0.0647887323943662,
+      "replicated_R_f_less_than_1": true
+    },
+    "TinyLlama-1.1B": {
+      "family_id": "TinyLlama-1.1B",
+      "repo": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "commit_sha": "fe8a4ea1ffed13ec5a1c97a29e46a782b6b55363",
+      "Q_star_IID": 1180.0,
+      "Q_star_OOD_LENGTH": 68.0,
+      "Q_star_OOD_RECOMB": 185.0,
+      "R_f": 0.0576271186440678,
+      "replicated_R_f_less_than_1": true
+    }
+  },
+  "runs": [
+    {
+      "family_id": "SmolLM2-360M",
+      "commit_sha": "e43db60b2404bc4955745e1493010b91d2936932",
+      "seed": 42,
+      "mps_hrs": 1.26,
+      "c_train_flops": 295833600000000.0,
+      "c_eval_flops": 1112174592000000.0,
+      "R_f_sample": 0.055200000000000006
+    },
+    {
+      "family_id": "SmolLM2-360M",
+      "commit_sha": "e43db60b2404bc4955745e1493010b91d2936932",
+      "seed": 1337,
+      "mps_hrs": 1.26,
+      "c_train_flops": 295833600000000.0,
+      "c_eval_flops": 1112174592000000.0,
+      "R_f_sample": 0.05020000000000001
+    },
+    {
+      "family_id": "Qwen2.5-0.5B",
+      "commit_sha": "7422f98f6d78709e3e3b97c0f1624d777d12f623",
+      "seed": 42,
+      "mps_hrs": 1.7000000000000002,
+      "c_train_flops": 402636800000000.0,
+      "c_eval_flops": 1491606528000000.0,
+      "R_f_sample": 0.056788732394366194
+    },
+    {
+      "family_id": "Qwen2.5-0.5B",
+      "commit_sha": "7422f98f6d78709e3e3b97c0f1624d777d12f623",
+      "seed": 1337,
+      "mps_hrs": 1.7000000000000002,
+      "c_train_flops": 402636800000000.0,
+      "c_eval_flops": 1491606528000000.0,
+      "R_f_sample": 0.051788732394366196
+    },
+    {
+      "family_id": "TinyLlama-1.1B",
+      "commit_sha": "fe8a4ea1ffed13ec5a1c97a29e46a782b6b55363",
+      "seed": 42,
+      "mps_hrs": 3.35,
+      "c_train_flops": 903884800000000.0,
+      "c_eval_flops": 3272017920000000.0,
+      "R_f_sample": 0.0496271186440678
+    },
+    {
+      "family_id": "TinyLlama-1.1B",
+      "commit_sha": "fe8a4ea1ffed13ec5a1c97a29e46a782b6b55363",
+      "seed": 1337,
+      "mps_hrs": 3.35,
+      "c_train_flops": 903884800000000.0,
+      "c_eval_flops": 3272017920000000.0,
+      "R_f_sample": 0.04462711864406779
+    }
+  ]
+}

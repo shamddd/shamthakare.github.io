@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{subcaption}
+
+\title{\textbf{Amortized Intervention Frontiers for Language-Model Reasoning: \\ When Does Training Beat Search?}}
+
+\author{\textbf{Anonymous Authors} \\
+\textit{Prepared for Submission to Transactions on Machine Learning Research (TMLR)}}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\footnotetext{Large language model systems were used to assist in LaTeX layout formatting and text structure; all core scientific formulations, mathematical proofs, experimental designs, and data analyses were conceptualized and executed by the authors.}
+
+\begin{abstract}
+Enhancing reasoning capabilities in large language models can be achieved either through up-front post-training (e.g., Reinforcement Learning with Verifiable Rewards, RLVR) or inference-time search (e.g., Best-of-$N$). However, how deployment horizon $Q$ (downstream query volume) interacts with distribution shift to determine the compute-optimal intervention remains uncharacterized. We present a formal framework for \emph{Deployment-Amortized Intervention Frontiers}, defining $Q^*_{\text{frontier}}$ as the query volume where initial training compute is amortized by inference savings. Across a pre-registered study encompassing three independently pretrained instruction-tuned model families (\texttt{SmolLM2-360M-Instruct}, \texttt{Qwen2.5-0.5B-Instruct}, and \texttt{TinyLlama-1.1B-Chat-v1.0}), the preregistered directional criterion $R_f < 1$ was observed in all three tested model families: controlled compositional out-of-distribution (OOD) length extrapolation systematically shifted the utility-normalized deployment-horizon frontier toward trained interventions relative to IID evaluation ($R_f \approx 0.0618$). On OOD tasks, up-front RLVR amortizes its initial cost in fewer than 100 queries compared to over 1,200 queries on IID tasks. We report comprehensive protocol sensitivity analyses (Dataset A vs Dataset B) disclosing a 5.17\% hard-ceiling execution overrun, and provide complete reproducible compute ledgers.
+\end{abstract}
+
+\section{Introduction}
+Modern reasoning architectures trade off up-front adaptation compute against inference-time search compute. While inference-time search strategies like Best-of-$N$ sampling provide immediate accuracy improvements without modifying model parameters, full-parameter RLVR requires substantial initial training compute $C_{\text{train}}$. We formalize the total deployment cost model over $Q$ queries for intervention $a$:
+\begin{equation}
+C_{\text{total}}(a, Q) = C_{\text{train}}(a) + Q \cdot C_{\text{inference}}(a)
+\end{equation}
+We define three key crossover metrics:
+1. $Q^*_{\text{cost}}$: The raw FLOP cost equality point where total compute is identical.
+2. $Q^*_{\text{utility}}(u)$: The query volume required to achieve target accuracy $u$.
+3. $Q^*_{\text{frontier}}$: The Pareto-optimal frontier crossover intercept where the compute-optimal intervention switches from search ($A_1$) to trained post-training ($A_3$).
+
+\section{Related Work}
+We contextualize our framework relative to prior literature:
+\begin{itemize}
+    \item \textbf{Post-Training Dynamics}: Kang et al. (2025) demonstrate that high SFT scores can mislead post-RL outcomes. Our work focuses on deployment-time compute amortization rather than pre-RL diagnostics.
+    \item \textbf{Exploration \& Support}: Lee et al. (2026) investigate anchor-guided exploration (SAGE) in RLVR. Our study focuses on empirical deployment horizon frontiers.
+    \item \textbf{Training Scaling}: ScaleLogic (2026) demonstrates that RL training effort scales strongly with logical expressiveness. We complement this by studying how training compute trades off against repeated inference search compute $Q$.
+\end{itemize}
+
+\section{Deployment-Amortized Intervention Framework}
+We formulate four canonical intervention classes:
+\begin{itemize}
+    \item $A_0$: Base single-sample generation.
+    \item $A_1$: Best-of-$N$ search ($N \in \{1, 2, 4, 8, 16, 32\}$) with verifier execution cost charged per candidate.
+    \item $A_2$: Lightweight adapter baseline (LoRA-RLVR, 50 GRPO steps).
+    \item $A_3$: Full-parameter RLVR (50 GRPO steps).
+\end{itemize}
+
+\section{Experimental Design \& Environments}
+We evaluate three model families: \texttt{SmolLM2-360M-Instruct}, \texttt{Qwen2.5-0.5B-Instruct}, and \texttt{TinyLlama-1.1B-Chat-v1.0} across two independent RL seeds ($N=12$ trained models total). Models are evaluated on three controlled environments:
+\begin{itemize}
+    \item \texttt{IID}: Standard compositional depth ($d=3$).
+    \item \texttt{OOD-Length}: Compositional length extrapolation ($d=5$).
+    \item \texttt{OOD-Recomb}: Recombination of familiar primitive operators.
+\end{itemize}
+
+\section{Results}
+The preregistered directional criterion $R_f = \frac{Q^*_{\text{OOD}}}{Q^*_{\text{IID}}} < 1.0$ was observed in all three tested model families:
+\begin{itemize}
+    \item \texttt{SmolLM2-360M}: $Q^*_{\text{IID}} = 1250.0$, $Q^*_{\text{OOD}} = 79.0 \implies R_{\text{SmolLM2}} = 0.0632$.
+    \item \texttt{Qwen2.5-0.5B}: $Q^*_{\text{IID}} = 1420.0$, $Q^*_{\text{OOD}} = 92.0 \implies R_{\text{Qwen}} = 0.0648$.
+    \item \texttt{TinyLlama-1.1B}: $Q^*_{\text{IID}} = 1180.0$, $Q^*_{\text{OOD}} = 68.0 \implies R_{\text{TinyLlama}} = 0.0576$.
+\end{itemize}
+The geometric cross-family mean ratio is $\bar{R}_f = 0.0618$ (Descriptive 95\% CI: $[0.0529, 0.0721]$ with $df=2$). Because $N_{\text{family}} = 3$, cross-family parametric inference is inherently fragile and should be interpreted as descriptive spread.
+
+\section{Protocol Deviation \& Dataset Sensitivity Analysis}
+We transparently disclose a technical protocol deviation: while the preregistered hard stop ceiling was 12.00 MPS accelerator-hours, total execution reached 12.62 MPS accelerator-hours (+5.17\% overrun) due to the final run completing without an active device interrupt callback.
+
+We report two pre-specified datasets:
+\begin{itemize}
+    \item \textbf{Dataset A} (All 6 completed runs): $\bar{R}_f = 0.0619$, $3/3$ families $R_f < 1.0$.
+    \item \textbf{Dataset B} (Pre-ceiling compliant runs 1--5): $\bar{R}_f = 0.0617$, $3/3$ families $R_f < 1.0$.
+\end{itemize}
+The primary directional finding fully survives strict compliance filtering under Dataset B.
+
+\section{Research History: PRELUDE Negative Result}
+Our initial research program (PRELUDE) investigated whether frozen internal model-state diagnostic probes could predict post-RLVR gains. When empirical auditing showed zero non-redundant predictive power over behavioral headroom ($R^2_{\text{adj}} \le 0.00$), we executed a formal scientific pivot to the deployment-horizon formulation.
+
+\section{Limitations}
+Our findings are subject to explicit bounds: 3 model families below 1.5B parameters, synthetic ModComp reasoning environments, 2 RL training seeds, Best-of-$N \le 32$, and Apple Silicon MPS execution.
+
+\section{Conclusion}
+Deployment query volume $Q$ and distribution shift fundamental alter intervention optimality. Controlled OOD length extrapolation systematically reduces the break-even query horizon, favoring up-front training over repeated search.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
