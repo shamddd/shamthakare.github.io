@@ -30,15 +30,17 @@ def test_empirical_tokens_round_trip(tmp_path):
     output_tensor = torch.tensor([[1, 2, 3, 100, 101, 102]])
     
     rec = EmpiricalNeuralRolloutRecord(
-        experiment_id="test", rollout_id="r1", problem_id="p1", state_id="s1",
-        recovery_or_control="CONTROL", policy_id="m1", model_id="m1", model_revision="r",
-        model_class="Qwen2ForCausalLM", parameter_count=1500000000, weight_manifest_sha256="h",
+        experiment_id="test", execution_version="v1.0", rollout_id="r1", attempt_number=1,
+        problem_id="p1", state_id="s1", recovery_or_control="CONTROL", state_provenance="REFERENCE_CONTROL",
+        policy_id="m1", model_repository="m1", model_revision="r", model_class="Qwen2ForCausalLM",
+        parameter_count=1500000000, trainable_parameter_count=1500000000, weight_manifest_sha256="h",
         tokenizer_revision="r", device="mps:0", dtype="torch.float16",
-        canonical_semantic_state_hash="h1", serialized_input_sha256="h2",
+        canonical_semantic_state_sha256="h1", serialized_input_sha256="h2",
         input_ids_tensor=input_tensor, output_ids_tensor=output_tensor, tokenizer=tok,
-        generation_seed=401, temperature=0.7, top_p=0.9, max_new_tokens=32,
-        start_ns=1000000, end_ns=500000000, verifier_input="q", verifier_raw_output={},
-        primitive_success=True, git_commit="e68dde7"
+        generation_seed=401, temperature=0.7, top_p=0.9, do_sample=True, max_new_tokens=32,
+        start_ns=1000000, end_ns=500000000, verifier_name="MathVerifier", verifier_version="1.0",
+        verifier_input="q", verifier_raw_output={}, extracted_answer="20", expected_answer="20",
+        primitive_success=True, git_commit="e68dde7", execution_schedule_index=1
     )
     
     assert rec.generated_token_ids == [100, 101, 102]
