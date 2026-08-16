@@ -1,0 +1,12 @@
+{
+  "arm_1_base": {
+    "model_id": "Qwen/Qwen2.5-Math-1.5B",
+    "revision_sha": "c181514eb9160eb80f0ed9a3c9e6d013ab63060a",
+    "license": "Apache-2.0"
+  },
+  "arm_2_instruct": {
+    "model_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "revision_sha": "8a719c2ddc18eb3d441113b2fa7975c613045610",
+    "license": "Apache-2.0"
+  }
+}
