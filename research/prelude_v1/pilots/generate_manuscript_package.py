@@ -1,15 +1,23 @@
 """
-Generator script for IEEE BigData 2026 Manuscript & Artifact Package.
-Creates main.tex, references.bib, figures, README.md, REPRODUCIBILITY_CHECKLIST.md, ARTIFACT_MANIFEST.md, COVER_LETTER.md, SUBMISSION_CHECKLIST.md.
+Generator script for IEEE BigData 2026 Manuscript Figures without Type 3 fonts.
+Sets pdf.fonttype=42 and ps.fonttype=42 so matplotlib outputs pure TrueType fonts.
 """
 
 import os
 import sys
-import json
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
+
+# Force TrueType (Type 42) font embedding instead of Type 3 fonts
+plt.rcParams['pdf.fonttype'] = 42
+plt.rcParams['ps.fonttype'] = 42
+plt.rcParams["font.family"] = "sans-serif"
+plt.rcParams["font.sans-serif"] = ["DejaVu Sans", "Helvetica", "Arial"]
+plt.rcParams["font.size"] = 10
+plt.rcParams["axes.edgecolor"] = "#333333"
+plt.rcParams["axes.linewidth"] = 0.8
 
 base_dir = os.path.expanduser("/Users/shamthakare/.gemini/antigravity/scratch")
 manuscript_dir = os.path.join(base_dir, "research-next/ieee_bigdata_2026/manuscript")
@@ -18,20 +26,12 @@ figures_dir = os.path.join(manuscript_dir, "figures")
 os.makedirs(figures_dir, exist_ok=True)
 
 def generate_figures():
-    print("[*] Generating publication-grade figures...", flush=True)
-
-    # Style configuration
-    plt.rcParams["font.family"] = "sans-serif"
-    plt.rcParams["font.sans-serif"] = ["DejaVu Sans", "Helvetica", "Arial"]
-    plt.rcParams["font.size"] = 10
-    plt.rcParams["axes.edgecolor"] = "#333333"
-    plt.rcParams["axes.linewidth"] = 0.8
+    print("[*] Generating publication-grade vector figures without Type 3 fonts...", flush=True)
 
     # Figure 1: Architecture
     fig, ax = plt.subplots(figsize=(8, 3.5), dpi=300)
     ax.axis("off")
     
-    # Draw architecture blocks
     boxes = [
         ("Fresh Evaluation\nRegistry\n(N=20 GSM8K)", 0.05, 0.5, "#E8F0FE", "#1A73E8"),
         ("State Perturbation &\nControl Matching\n(d <= 0.25)", 0.28, 0.5, "#E6F4EA", "#137333"),
@@ -102,7 +102,6 @@ def generate_figures():
     colors = ["#1A73E8", "#137333", "#C5221F"]
     bars = ax.bar(categories, instruct_vals, color=colors, width=0.45, zorder=3)
     
-    # Error bar for D_recovery [-0.240, 0.030]
     ax.errorbar([2], [-0.110], yerr=[[-0.110 - (-0.240)], [0.030 - (-0.110)]], fmt="none", ecolor="#202124", elinewidth=2, capsize=6, capthick=2, zorder=4)
     
     ax.axhline(0, color="#5F6368", linestyle="--", linewidth=1, zorder=2)
@@ -124,7 +123,7 @@ def generate_figures():
     plt.savefig(os.path.join(figures_dir, "fig4_empirical_results.png"))
     plt.close()
 
-    print("[+] All figures generated successfully.", flush=True)
+    print("[+] Re-generated figures with pdf.fonttype=42 (Type 42 TrueType).", flush=True)
 
 if __name__ == "__main__":
     generate_figures()

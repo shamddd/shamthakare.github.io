@@ -56,7 +56,7 @@ To address these diagnostic challenges, we introduce \texttt{recovery\_eval}, a 
 \end{figure}
 
 \section{Related Work}
-Recent research has focused on reasoning self-correction, test-time compute scaling, and process reward modeling \cite{snell2024scaling, wang2022selfconsistency, yao2023tree, miao2024verifier}. Table \ref{tab:related_work} compares \texttt{recovery\_eval} with existing evaluation methodologies.
+Prior work has studied end-to-end reasoning accuracy, process supervision, self-correction, and search-based reasoning \cite{cobbe2021gsm8k, lightman2023process, zelikman2022star, snell2024scaling, wang2022selfconsistency, madaan2023selfrefine, huang2023large, kumar2024training, yao2023tree}. Our framework instead focuses on prospective structural matching between verifier-defined recovery and control states. We did not identify the same combination of verifier-defined recovery states, prospective structural matching, exposure governance, and primitive rollout provenance in the audited primary-source corpus \cite{sambasivan2021everyone}.
 
 \begin{table}[htbp]
 \caption{Comparison with Existing Reasoning Evaluation Frameworks}
@@ -75,7 +75,7 @@ Tree of Thoughts \cite{yao2023tree} & Unmatched & No & Node Search \\
 \end{tabularx}
 \end{table}
 
-Existing benchmark designs generally do not explicitly control for the structural state differences targeted by our matched recovery/control protocol \cite{liao2021benchmarking, sambasivan2021everyone}.
+Existing benchmark designs generally do not explicitly control for the structural state differences targeted by our matched recovery/control protocol.
 
 \section{Problem Formulation}
 Let $s$ represent a partial reasoning trajectory prefix for a mathematical word problem $p \in \mathcal{P}$. A deterministic verifier $\mathcal{V}(s) \in \{0, 1\}$ evaluates whether prefix $s$ contains any logical or arithmetic errors.
@@ -91,12 +91,7 @@ D_{\text{recovery}} = \mathbb{E}[V_{\pi}(s_R) - V_{\pi_0}(s_R)] - \mathbb{E}[V_{
 The \texttt{recovery\_eval} framework provides an end-to-end evaluation pipeline comprising three main modules: state generation, prospective matching, and governance-backed neural rollout execution.
 
 \subsection{System Architecture}
-The framework operates as a decoupled pipeline:
-\begin{enumerate}
-    \item \textbf{Registry Phase}: Evaluation items and candidate prefixes are locked in an append-only registry.
-    \item \textbf{Matching Phase}: Recovery states are prospectively matched to reference control states prior to inference.
-    \item \textbf{Execution Phase}: Continuations are sampled under sealed generation settings and evaluated by the primitive verifier.
-\end{enumerate}
+The framework operates as a decoupled pipeline: 1) Registry Phase: Evaluation items and candidate prefixes are locked in an append-only registry; 2) Matching Phase: Recovery states are prospectively matched to reference control states prior to inference; 3) Execution Phase: Continuations are sampled under sealed generation settings and evaluated by the primitive verifier.
 
 \section{State Construction and Prospective Matching}
 Recovery states $s_R$ are constructed by introducing controlled single-step arithmetic perturbations into valid intermediate reasoning prefixes. For example, if a valid intermediate calculation step evaluates to $11 \times 4 = 44$, a recovery perturbation injects a single arithmetic error $11 \times 4 = 46$ while preserving all prior problem context and equations. Reference control states $s_C$ maintain valid prefix steps.
