@@ -1,8 +1,8 @@
 # STATESHIFT PROSPECTIVE STUDY PROTOCOL & HYPOTHESIS REGISTRATION (V3 SEALED)
 
-**Protocol Version**: `Phase 1H Prospective Release 3.0`  
+**Protocol Version**: `Phase 1H Prospective Release 3.1`  
 **Registration Date**: `2026-08-17`  
-**Execution Status**: **`DRAFTED & FROZEN; SCIENTIFIC EXECUTION ON HOLD`**  
+**Execution Status**: **`DRAFTED & FROZEN; CANARY PHASE PREPARED`**  
 **Confirmatory Registry V3 Hash**: `d95c1d7b6f6132733f9e778ef7d67cd8001ac4b30652ac5b83fc96053a0b8941`  
 **Strict Sensitivity Registry Hash**: `ff57926a32b84a4e975d4d38977333662ae5b6c39b04e5613ddb9b30ed4df7f8`  
 
@@ -30,8 +30,9 @@ The **StateShift** experiment measures whether reinforcement learning fine-tunin
 4. **Strict Sensitivity Subset**:
    Strict Registry $N = 398$ pairs excluding `POSSIBLE_RELATED` contamination items (`FINAL_PROSPECTIVE_STATE_REGISTRY_STRICT_CONTAMINATION_V4.json`).
 
-5. **Rollout Allocation**:
-   $K = 16$ independent stochastic rollouts per state per checkpoint ($T_s = 0.6$, top_p $= 0.95$, max_tokens $= 2048$).
+5. **Rollout Allocation & Exact Neural Accounting**:
+   - $K = 16$ independent stochastic rollouts per state per checkpoint ($T_s = 0.6$, top_p $= 0.95$, max_tokens $= 2048$).
+   - Total Neural Rollouts = $456 \text{ pairs} \times 2 \text{ states} \times 9 \text{ checkpoints} \times 16 \text{ rollouts} = \mathbf{131,328 \text{ total rollouts}}$.
 
 6. **Inference Resampling Procedure**:
    $B = 10,000$ problem-blocked bootstrap replicates resampling problems with all states and rollouts intact.
@@ -69,11 +70,11 @@ The study evaluates the public UWNSL Qwen2.5-7B DeepScaleR 4K Temporal Sampling 
 
 ---
 
-## 4. PROTOCOL EXECUTION BOUNDARY & SCIENTIFIC HOLD DIRECTIVE
+## 4. NEXT STEP: TECHNICAL CHECKPOINT CANARY PHASE
 
-> [!CAUTION]
-> **MANDATORY EXECUTION DIRECTIVE**:
-> This protocol document formally freezes all StateShift study parameters. However, **scientific execution (checkpoint downloads, technical canary runs, and model inference) is strictly ON HOLD until human adjudication gate verification is complete.**
+> [!TIP]
+> **NEXT OPERATIONAL PHASE**:
+> The registry V3 hash (`d95c1d7b6f6132733f9e778ef7d67cd8001ac4b30652ac5b83fc96053a0b8941`) and protocol parameters are completely frozen. The authorized next step is launching the **Technical Checkpoint Canary Phase** to benchmark 7B checkpoint load times, runtime per rollout, memory/VRAM consumption, and storage estimates across the 131,328 planned rollouts.
 
 ---
 *Signed by StateShift Principal Investigators, Lead Auditor & Research Statistician*
