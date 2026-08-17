@@ -1,9 +1,9 @@
-# STATESHIFT PROSPECTIVE STUDY PROTOCOL & HYPOTHESIS REGISTRATION
+# STATESHIFT PROSPECTIVE STUDY PROTOCOL & HYPOTHESIS REGISTRATION (V2 SEALED)
 
-**Protocol Version**: `Phase 1H Prospective Release 1.0`  
+**Protocol Version**: `Phase 1H Prospective Release 2.0`  
 **Registration Date**: `2026-08-17`  
 **Execution Status**: **`DRAFTED & FROZEN; SCIENTIFIC EXECUTION ON HOLD`**  
-**Confirmatory Registry Hash**: `8f2f81e31505898cf18fb81fd96914b4a1b9bea7665d649cee25a463a7961863`  
+**Confirmatory Registry V2 Hash**: `e94552615e478b3a787e9154c5b16b46c1d7b770e1c252c4c92688a4d20e25a8`  
 **Strict Sensitivity Registry Hash**: `ff57926a32b84a4e975d4d38977333662ae5b6c39b04e5613ddb9b30ed4df7f8`  
 
 ---
@@ -25,7 +25,7 @@ The **StateShift** experiment measures whether reinforcement learning fine-tunin
    Scalar interaction $\Gamma_T$ at final RL checkpoint $T=256$.
 
 3. **Confirmatory Sample Size**:
-   Primary Registry $N = 468$ decontaminated problem pairs (`FINAL_CONFIRMATORY_REGISTRY.json`).
+   Post-Human Certified Registry $N = 461$ decontaminated problem pairs (`FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V2.json`).
 
 4. **Strict Sensitivity Subset**:
    Strict Registry $N = 398$ pairs excluding `POSSIBLE_RELATED` contamination items (`FINAL_PROSPECTIVE_STATE_REGISTRY_STRICT_CONTAMINATION_V4.json`).
