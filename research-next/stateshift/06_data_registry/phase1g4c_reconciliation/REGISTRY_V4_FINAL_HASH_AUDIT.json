@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-08-17 11:27 UTC",
+  "primary_registry_v4": {
+    "file": "FINAL_PROSPECTIVE_STATE_REGISTRY_V4.json",
+    "pair_count": 468,
+    "sha256": "8f2f81e31505898cf18fb81fd96914b4a1b9bea7665d649cee25a463a7961863"
+  },
+  "strict_sensitivity_registry_v4": {
+    "file": "FINAL_PROSPECTIVE_STATE_REGISTRY_STRICT_CONTAMINATION_V4.json",
+    "pair_count": 398,
+    "sha256": "ff57926a32b84a4e975d4d38977333662ae5b6c39b04e5613ddb9b30ed4df7f8"
+  },
+  "automatically_verified_registry": {
+    "file": "AUTOMATICALLY_VERIFIED_REGISTRY.json",
+    "pair_count": 468,
+    "sha256": "8f2f81e31505898cf18fb81fd96914b4a1b9bea7665d649cee25a463a7961863",
+    "byte_identical_to_v4": true
+  }
+}
