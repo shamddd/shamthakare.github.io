@@ -1,0 +1,59 @@
+{
+  "download_timestamp": "2026-08-17T05:44:47.973615+00:00",
+  "datasets": {
+    "MATH-500": {
+      "repository": "HuggingFaceH4/MATH-500",
+      "revision": "main",
+      "split": "test",
+      "license": "MIT / CC-BY-4.0 (MATH Benchmark Derivative)",
+      "record_count": 500,
+      "file_path": "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g_real_data/raw_data/math500_raw.json",
+      "size_bytes": 478566,
+      "sha256": "e51c56264004515c91c5b99714ef3d21e0373f87506e6b37110fbada033c9581",
+      "columns": [
+        "math500_id",
+        "unique_id",
+        "problem",
+        "solution",
+        "answer",
+        "subject",
+        "level"
+      ]
+    },
+    "DeepScaleR": {
+      "repository": "agentica-org/DeepScaleR-Preview-Dataset",
+      "revision": "main",
+      "split": "train",
+      "license": "MIT",
+      "record_count": 40315,
+      "file_path": "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g_real_data/raw_data/deepscaler_raw.json",
+      "size_bytes": 23511379,
+      "sha256": "2f538b8caad164364428609ec13194628314e43096b46c2e939781ce82e2243c",
+      "columns": [
+        "deepscaler_id",
+        "problem",
+        "solution",
+        "answer"
+      ]
+    },
+    "Omni-MATH": {
+      "repository": "KbsdJames/Omni-MATH",
+      "revision": "main",
+      "split": "test",
+      "license": "MIT / CC-BY-4.0",
+      "record_count": 4428,
+      "file_path": "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g_real_data/raw_data/omnimath_raw.json",
+      "size_bytes": 7827085,
+      "sha256": "a532162daf00e6940c0ab0bdecc13efcc981caaac08313371f45351476aa2b7c",
+      "columns": [
+        "omni_id",
+        "domain",
+        "difficulty",
+        "problem",
+        "solution",
+        "answer",
+        "source"
+      ]
+    }
+  }
+}
