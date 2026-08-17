@@ -1,0 +1,815 @@
+pair_id,problem_id,operator,control_assertion,recovery_assertion,control_coherent,recovery_coherent,recovery_wrong,difference_local,structurally_recoverable,controlled_reasoning_perturbation,adjudication_status,reviewer_notes
+pair_math500_001,math500_001,OP_FRACTION_FLIP,We count the number of times $\frac{1}{n^3}$ appears in the sum,We count the number of times $\frac{n^3}{1}$ appears in the sum,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_001, inverting fraction \frac{1}{n^3} to \frac{n^3}{1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_002,math500_002,OP_FRACTION_FLIP,$f(-2)+f(-1)+f(0)=\frac{3(-2)-2}{-2-2}+\frac{3(-1)-2}{-1-2}+\frac{3(0)-2}{0-2}=\frac{-8}{-4}+\frac{-5}{-3}+\frac{-2}{-2}=2+\frac{5}{3}+1=\boxed{\frac{14}{3}}$,$f(-2)+f(-1)+f(0)=\frac{-2-2}{3(-2)-2}+\frac{3(-1)-2}{-1-2}+\frac{3(0)-2}{0-2}=\frac{-8}{-4}+\frac{-5}{-3}+\frac{-2}{-2}=2+\frac{5}{3}+1=\boxed{\frac{14}{3}}$,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_002, inverting fraction \frac{3(-2)-2}{-2-2} to \frac{-2-2}{3(-2)-2} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_006,math500_006,OP_SIGN_FLIP,The sum of three consecutive integers takes the form $(k-1)+(k)+(k+1)=3k$ and hence is a multiple of 3.,The sum of three consecutive integers takes the form $(k-1)-(k)+(k+1)=3k$ and hence is a multiple of 3.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_006, flipping '+' to '-' in sub-expression 'e form $(k-1)+(k)+(k' -> 'e form $(k-1)-(k)+(k' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_007,math500_007,OP_SIGN_FLIP,"For the first line, let $t = 2x = 3y = -z.$  Then","For the first line, let $t = 2x = 3y = +z.$  Then",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_007, flipping '-' to '+' in sub-expression '2x = 3y = -z.$  Then' -> '2x = 3y = +z.$  Then' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_009,math500_009,OP_SIGN_FLIP,"For example, the associative property tells us that $(2\cdot(3\cdot 4))\cdot (5+1)$ is the same as $2\cdot3\cdot4\cdot (5+1)$.","For example, the associative property tells us that $(2\cdot(3\cdot 4))\cdot (5-1)$ is the same as $2\cdot3\cdot4\cdot (5+1)$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_009, flipping '+' to '-' in sub-expression '))\cdot (5+1)$ is th' -> '))\cdot (5-1)$ is th' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_011,math500_011,OP_SIGN_FLIP,"Let $q(x) = (x^2 - 1) p(x) - x.$  Then $q(x)$ has degree 7, and $q(n) = 0$ for $n = 2$, 3, 4, $\dots,$ 7, so","Let $q(x) = (x^2 + 1) p(x) - x.$  Then $q(x)$ has degree 7, and $q(n) = 0$ for $n = 2$, 3, 4, $\dots,$ 7, so",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_011, flipping '-' to '+' in sub-expression 'x) = (x^2 - 1) p(x)' -> 'x) = (x^2 + 1) p(x)' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_014,math500_014,OP_FRACTION_FLIP,"The triangle is a right triangle, so $\sin D = \frac{EF}{DF}$.","The triangle is a right triangle, so $\sin D = \frac{DF}{EF}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_014, inverting fraction \frac{EF}{DF} to \frac{DF}{EF} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_015,math500_015,OP_FRACTION_FLIP,Rotating by $\frac{\pi}{4}$ counter-clockwise corresponds to the complex number,Rotating by $\frac{4}{\pi}$ counter-clockwise corresponds to the complex number,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_015, inverting fraction \frac{\pi}{4} to \frac{4}{\pi} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_016,math500_016,OP_SIGN_FLIP,$(1-2)+(3-4)+ \dots +(97-98)+(99-100) = 50(-1) = \boxed{-50}.$,$(1-2)-(3-4)+ \dots +(97-98)+(99-100) = 50(-1) = \boxed{-50}.$,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_016, flipping '+' to '-' in sub-expression '$(1-2)+(3-4)+' -> '$(1-2)-(3-4)+' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_019,math500_019,OP_SIGN_FLIP,"Note that $x = -1$ is always a root of $x^3 + ax^2 + ax + 1 = 0,$ so we can factor out $x + 1,$ to get","Note that $x = -1$ is always a root of $x^3 - ax^2 + ax + 1 = 0,$ so we can factor out $x + 1,$ to get",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_019, flipping '+' to '-' in sub-expression 'that $x = -1$ is alw' -> 'that $x = -1$ is alw' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_020,math500_020,OP_SIGN_FLIP,Distribute the factor of 6 and simplify to obtain $(1+2i)6-3i=6+12i-3i=\boxed{6+9i}$.,Distribute the factor of 6 and simplify to obtain $(1-2i)6-3i=6+12i-3i=\boxed{6+9i}$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_020, flipping '+' to '-' in sub-expression 'obtain $(1+2i)6-3i=6' -> 'obtain $(1-2i)6-3i=6' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_021,math500_021,OP_SIGN_FLIP,Let $x = \sqrt{7} + \sqrt{5}$ and $y = \sqrt{7} - \sqrt{5}.$,Let $x = \sqrt{7} - \sqrt{5}$ and $y = \sqrt{7} - \sqrt{5}.$,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_021, flipping '+' to '-' in sub-expression '\sqrt{7} + \sqrt{5}' -> '\sqrt{7} - \sqrt{5}' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_023,math500_023,OP_SIGN_FLIP,Subtracting 4 from both sides gives $x-4 = \!\sqrt{11-2x}$.,Subtracting 4 from both sides gives $x+4 = \!\sqrt{11-2x}$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_023, flipping '-' to '+' in sub-expression 's gives $x-4 = \!\sq' -> 's gives $x+4 = \!\sq' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_024,math500_024,OP_FRACTION_FLIP,"If the interest rate is $r$, it follows that $$20000(1+r)^2 + 20000(1+r) + 20000 \ge 66200.$$ If we set $x = 1+r$ and divide through the inequality by $200$, it follows that $$100x^2 + 100x - 231 \ge 0.$$ Since $231 = 11 \cdot 21$, we can factor the quadratic as $(10x - 11)(10x + 21) \ge 0$, so it follows that $x \ge \frac {11}{10}$ or $x \le \frac{-21}{10}$.","If the interest rate is $r$, it follows that $$20000(1+r)^2 + 20000(1+r) + 20000 \ge 66200.$$ If we set $x = 1+r$ and divide through the inequality by $200$, it follows that $$100x^2 + 100x - 231 \ge 0.$$ Since $231 = 11 \cdot 21$, we can factor the quadratic as $(10x - 11)(10x + 21) \ge 0$, so it follows that $x \ge \frac {11}{10}$ or $x \le \frac{10}{-21}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_024, inverting fraction \frac{-21}{10} to \frac{10}{-21} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_028,math500_028,OP_SIGN_FLIP,A $90^\circ$ rotation around the origin in the counter-clockwise direction corresponds to multiplication by $\operatorname{cis} 90^\circ = i.$,A $90^\circ$ rotation around the origin in the counter+clockwise direction corresponds to multiplication by $\operatorname{cis} 90^\circ = i.$,YES,NO,YES,YES,YES,NO,FAILED,"In problem math500_028, perturbation fails semantic quality criteria: English prose word hyphenation corrupted ('counter+clockwise'). Excluded prospectively from confirmatory registry."
+pair_math500_030,math500_030,OP_SIGN_FLIP,"Multiplying, we see that $6_8 \cdot 7_8 = 42_{10} = 52_8.$ Written out, $$\begin{array}{@{}c@{\;}c@{}c@{}c} && & 6_8 \\ & \times & & 7_8 \\ \cline{2-4} & & 5 & 2_8 \\ \end{array} $$ Thus, the answer is $\boxed{52_8}.$","Multiplying, we see that $6_8 \cdot 7_8 = 42_{10} = 52_8.$ Written out, $$\begin{array}{@{}c@{\;}c@{}c@{}c} && & 6_8 \\ & \times & & 7_8 \\ \cline{2+4} & & 5 & 2_8 \\ \end{array} $$ Thus, the answer is $\boxed{52_8}.$",YES,NO,YES,YES,YES,NO,FAILED,"In problem math500_030, perturbation fails semantic quality criteria: LaTeX array layout command mutated ('\cline{2-4}' -> '\cline{2+4}'). Excluded prospectively from confirmatory registry."
+pair_math500_034,math500_034,OP_FRACTION_FLIP,"If we take the term with 2 $x^3$'s and 3 $\frac{1}{x^2}$'s, then they will cancel.","If we take the term with 2 $x^3$'s and 3 $\frac{x^2}{1}$'s, then they will cancel.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_034, inverting fraction \frac{1}{x^2} to \frac{x^2}{1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_035,math500_035,OP_SIGN_FLIP,"If $n \equiv 2 \pmod{7}$, then $(n + 2)(n + 4)(n + 6) \equiv 4 \cdot 6 \cdot 8 \equiv 4 \cdot 6 \cdot 1 \equiv 24 \equiv \boxed{3} \pmod{7}$.","If $n \equiv 2 \pmod{7}$, then $(n - 2)(n + 4)(n + 6) \equiv 4 \cdot 6 \cdot 8 \equiv 4 \cdot 6 \cdot 1 \equiv 24 \equiv \boxed{3} \pmod{7}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_035, flipping '+' to '-' in sub-expression 'then $(n + 2)(n + 4' -> 'then $(n - 2)(n + 4' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_036,math500_036,OP_SIGN_FLIP,Let $a = x - 3$ and $b = x - 7.$  Then we can write the given equation as,Let $a = x + 3$ and $b = x - 7.$  Then we can write the given equation as,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_036, flipping '-' to '+' in sub-expression 'et $a = x - 3$ and $' -> 'et $a = x + 3$ and $' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_043,math500_043,OP_SIGN_FLIP,\[\sqrt{x^2 + 400} + \sqrt{y^2 + 900} + \sqrt{(x - 40)^2 + (y - 50)^2} = \sqrt{x^2 + 400} + \sqrt{y^2 + 900} + \sqrt{(40 - x)^2 + (50 - y)^2}.\],\[\sqrt{x^2 - 400} + \sqrt{y^2 + 900} + \sqrt{(x - 40)^2 + (y - 50)^2} = \sqrt{x^2 + 400} + \sqrt{y^2 + 900} + \sqrt{(40 - x)^2 + (50 - y)^2}.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_043, flipping '+' to '-' in sub-expression '\sqrt{x^2 + 400} + \' -> '\sqrt{x^2 - 400} + \' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_045,math500_045,OP_FRACTION_FLIP,"We have $\sin A = \frac{BC}{AC}$ and $\cos A = \frac{AB}{AC}$, so $\sin A = 2\cos A$ gives us $\frac{BC}{AC} = 2\cdot\frac{AB}{AC}$.","We have $\sin A = \frac{AC}{BC}$ and $\cos A = \frac{AB}{AC}$, so $\sin A = 2\cos A$ gives us $\frac{BC}{AC} = 2\cdot\frac{AB}{AC}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_045, inverting fraction \frac{BC}{AC} to \frac{AC}{BC} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_046,math500_046,OP_SIGN_FLIP,"Multiplying the equation $z^4 + z^2 + 1 = 0$ by $z^2 - 1 = (z - 1)(z + 1)$, we get $z^6 - 1 = 0$.","Multiplying the equation $z^4 - z^2 + 1 = 0$ by $z^2 - 1 = (z - 1)(z + 1)$, we get $z^6 - 1 = 0$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_046, flipping '+' to '-' in sub-expression 'tion $z^4 + z^2 + 1' -> 'tion $z^4 - z^2 + 1' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_050,math500_050,OP_SIGN_FLIP,"If there are $b$ gold coins in each of the original 7 bags, then $7b+53$ is divisible by 8.","If there are $b$ gold coins in each of the original 7 bags, then $7b-53$ is divisible by 8.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_050, flipping '+' to '-' in sub-expression ', then $7b+53$ is di' -> ', then $7b-53$ is di' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_051,math500_051,OP_FRACTION_FLIP,"Alternatively, by the Remainder Theorem, the remainder upon division is $(-1)^6 - 3 = -2.$  Thus, we can write
+\begin{align*}
+\frac{x^6 - 3}{x + 1} &= \frac{(x^6 - 1) - 2}{x + 1} \\
+&= \frac{x^6 - 1}{x + 1} - \frac{2}{x + 1} \\
+&= \frac{(x^3 - 1)(x^3 + 1)}{x + 1} - \frac{2}{x + 1} \\
+&= \frac{(x^3 - 1)(x + 1)(x^2 - x + 1)}{x + 1} - \frac{2}{x + 1} \\
+&= (x^3 - 1)(x^2 - x + 1) - \frac{2}{x + 1} \\
+&= x^5 - x^4 + x^3 - x^2 + x - 1 - \frac{2}{x + 1}.
+\end{align*}Thus, the quotient is $\boxed{x^5 - x^4 + x^3 - x^2 + x - 1}.$","Alternatively, by the Remainder Theorem, the remainder upon division is $(-1)^6 - 3 = -2.$  Thus, we can write
+\begin{align*}
+\frac{x + 1}{x^6 - 3} &= \frac{(x^6 - 1) - 2}{x + 1} \\
+&= \frac{x^6 - 1}{x + 1} - \frac{2}{x + 1} \\
+&= \frac{(x^3 - 1)(x^3 + 1)}{x + 1} - \frac{2}{x + 1} \\
+&= \frac{(x^3 - 1)(x + 1)(x^2 - x + 1)}{x + 1} - \frac{2}{x + 1} \\
+&= (x^3 - 1)(x^2 - x + 1) - \frac{2}{x + 1} \\
+&= x^5 - x^4 + x^3 - x^2 + x - 1 - \frac{2}{x + 1}.
+\end{align*}Thus, the quotient is $\boxed{x^5 - x^4 + x^3 - x^2 + x - 1}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_051, inverting fraction \frac{x^6 - 3}{x + 1} to \frac{x + 1}{x^6 - 3} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_052,math500_052,OP_FRACTION_FLIP,"We have  \begin{align*}
+\frac{\sqrt{2.5^2 - 0.7^2}}{2.7-2.5} &= \frac{\sqrt{6.25 - 0.49}}{2.7-2.5} = \frac{\sqrt{5.76}}{0.2} = \frac{\sqrt{576/100}}{0.2}\\
+&= \frac{\sqrt{576}/\sqrt{100}}{0.2} = \frac{24/10}{0.2} = \frac{2.4}{0.2} = \boxed{12}.\end{align*}","We have  \begin{align*}
+\frac{\sqrt{2.5^2 - 0.7^2}}{2.7-2.5} &= \frac{\sqrt{6.25 - 0.49}}{2.7-2.5} = \frac{\sqrt{5.76}}{0.2} = \frac{\sqrt{576/100}}{0.2}\\
+&= \frac{\sqrt{576}/\sqrt{100}}{0.2} = \frac{0.2}{24/10} = \frac{2.4}{0.2} = \boxed{12}.\end{align*}",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_052, inverting fraction \frac{24/10}{0.2} to \frac{0.2}{24/10} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_055,math500_055,OP_SIGN_FLIP,"Since the product of $f$ and a polynomial with degree 1 equals a polynomial with degree 4, we know that $f$ is a polynomial with degree $4-1=\boxed{3}$.","Since the product of $f$ and a polynomial with degree 1 equals a polynomial with degree 4, we know that $f$ is a polynomial with degree $4+1=\boxed{3}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_055, flipping '-' to '+' in sub-expression 'degree $4-1=\boxed{' -> 'degree $4+1=\boxed{' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_056,math500_056,OP_SIGN_FLIP,"The first $N$ positive odd integers are 1, 3, $\dots$, $2N - 1$.","The first $N$ positive odd integers are 1, 3, $\dots$, $2N + 1$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_056, flipping '-' to '+' in sub-expression 'ots$, $2N - 1$.' -> 'ots$, $2N + 1$.' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_057,math500_057,OP_SIGN_FLIP,\[\left|\left(1-i\right)^8\right|=\left|1-i\right|^8\],\[\left|\left(1+i\right)^8\right|=\left|1-i\right|^8\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_057, flipping '-' to '+' in sub-expression 'ft|\left(1-i\right)^' -> 'ft|\left(1+i\right)^' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_058,math500_058,OP_SIGN_FLIP,$99^2+99+1=99(99+1)+1=99\cdot 100+1=9900+1=\boxed{9901}$.,$99^2-99+1=99(99+1)+1=99\cdot 100+1=9900+1=\boxed{9901}$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_058, flipping '+' to '-' in sub-expression '$99^2+99+1=99(9' -> '$99^2-99+1=99(9' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_059,math500_059,OP_SIGN_FLIP,"Among the $50-6=44$ students that participate in either MATHCOUNTS or science club, $44-28=16$ students do not participate in MATHCOUNTS.","Among the $50+6=44$ students that participate in either MATHCOUNTS or science club, $44-28=16$ students do not participate in MATHCOUNTS.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_059, flipping '-' to '+' in sub-expression 'ng the $50-6=44$ stu' -> 'ng the $50+6=44$ stu' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_060,math500_060,OP_SIGN_FLIP,"Let $\alpha$ be a root of $x^3 - 3x^2 + 4x - 1 = 0,$ so $\alpha^3 = 3 \alpha^2 - 4 \alpha + 1.$  Then","Let $\alpha$ be a root of $x^3 - 3x^2 - 4x - 1 = 0,$ so $\alpha^3 = 3 \alpha^2 - 4 \alpha + 1.$  Then",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_060, flipping '+' to '-' in sub-expression 't of $x^3 - 3x^2 + 4' -> 't of $x^3 - 3x^2 - 4' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_061,math500_061,OP_SIGN_FLIP,"\[
+5= \log_2r_1 + \log_2 r_2 + \log_2 r_3 = \log_2r_1r_2r_3,
+\]","\[
+5= \log_2r_1 - \log_2 r_2 + \log_2 r_3 = \log_2r_1r_2r_3,
+\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_061, flipping '+' to '-' in sub-expression '\log_2r_1 + \log_2 r' -> '\log_2r_1 - \log_2 r' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_062,math500_062,OP_SIGN_FLIP,"\[\|\bold{v}\| = \left\| \begin{pmatrix} x \\ y \end{pmatrix} \right\| = \sqrt{x^2 + y^2},\]","\[\|\bold{v}\| = \left\| \begin{pmatrix} x \\ y \end{pmatrix} \right\| = \sqrt{x^2 - y^2},\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_062, flipping '+' to '-' in sub-expression '\sqrt{x^2 + y^2},\]' -> '\sqrt{x^2 - y^2},\]' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_063,math500_063,OP_SIGN_FLIP,"First, we can factor $x^8 + 3x^4 - 4$ as $(x^4 - 1)(x^4 + 4).$  Then","First, we can factor $x^8 - 3x^4 - 4$ as $(x^4 - 1)(x^4 + 4).$  Then",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_063, flipping '+' to '-' in sub-expression 'ctor $x^8 + 3x^4 - 4' -> 'ctor $x^8 - 3x^4 - 4' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_064,math500_064,OP_SIGN_FLIP,"\[\sin x = \frac{e^{ix} - e^{-ix}}{2i},\]","\[\sin x = \frac{e^{ix} + e^{-ix}}{2i},\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_064, flipping '-' to '+' in sub-expression 'ac{e^{ix} - e^{-ix}}' -> 'ac{e^{ix} + e^{-ix}}' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_068,math500_068,OP_FRACTION_FLIP,"Isolating $\tan x^\circ,$ we find
+\begin{align*}
+\tan x &= \frac{\tan 53^\circ + \tan 81^\circ}{\tan 53^\circ \tan 81^\circ - 1} \\
+&= -\frac{\tan 53^\circ + \tan 81^\circ}{1 - \tan 53^\circ \tan 81^\circ}.
+\end{align*}From the angle addition formula, this is equal to","Isolating $\tan x^\circ,$ we find
+\begin{align*}
+\tan x &= \frac{\tan 53^\circ \tan 81^\circ - 1}{\tan 53^\circ + \tan 81^\circ} \\
+&= -\frac{\tan 53^\circ + \tan 81^\circ}{1 - \tan 53^\circ \tan 81^\circ}.
+\end{align*}From the angle addition formula, this is equal to",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_068, inverting fraction \frac{\tan 53^\circ + \tan 81^\circ}{\tan 53^\circ \tan 81^\circ - 1} to \frac{\tan 53^\circ \tan 81^\circ - 1}{\tan 53^\circ + \tan 81^\circ} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_069,math500_069,OP_SIGN_FLIP,"Since $z^5 = 1,$ $z^5 - 1 = 0,$ which factors as","Since $z^5 = 1,$ $z^5 + 1 = 0,$ which factors as",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_069, flipping '-' to '+' in sub-expression '1,$ $z^5 - 1 = 0,$' -> '1,$ $z^5 + 1 = 0,$' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_070,math500_070,OP_SIGN_FLIP,"No borrowing occurs: $$ \begin{array}{c@{}c@{\;}c@{}c} & & 5 & 8_9 \\ &- & 1 & 8_9 \\ \cline{2-4} & & 4 & 0_9 \\ \end{array} $$ Thus, the answer is $\boxed{40_9}.$","No borrowing occurs: $$ \begin{array}{c@{}c@{\;}c@{}c} & & 5 & 8_9 \\ &+ & 1 & 8_9 \\ \cline{2-4} & & 4 & 0_9 \\ \end{array} $$ Thus, the answer is $\boxed{40_9}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_070, flipping '-' to '+' in sub-expression '& 8_9 \\ &- & 1 & 8_' -> '& 8_9 \\ &+ & 1 & 8_' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_073,math500_073,OP_SIGN_FLIP,We have $9\&2 = \frac{\sqrt{(9)(2)+9}}{\sqrt{(9)(2)-2}} = \frac{\sqrt{27}}{\sqrt{16}} = \boxed{\frac{3\sqrt{3}}{4}}.$,We have $9\&2 = \frac{\sqrt{(9)(2)-9}}{\sqrt{(9)(2)-2}} = \frac{\sqrt{27}}{\sqrt{16}} = \boxed{\frac{3\sqrt{3}}{4}}.$,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_073, flipping '+' to '-' in sub-expression 'qrt{(9)(2)+9}}{\sqrt' -> 'qrt{(9)(2)-9}}{\sqrt' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_074,math500_074,OP_FRACTION_FLIP,"We can write
+\begin{align*}
+\frac{\sec x}{\sin x} - \frac{\sin x}{\cos x} &= \frac{1}{\cos x \sin x} - \frac{\sin x}{\cos x} \\
+&= \frac{1 - \sin^2 x}{\cos x \sin x} \\
+&= \frac{\cos^2 x}{\cos x \sin x} \\
+&= \frac{\cos x}{\sin x} \\
+&= \boxed{\cot x}.
+\end{align*}","We can write
+\begin{align*}
+\frac{\sin x}{\sec x} - \frac{\sin x}{\cos x} &= \frac{1}{\cos x \sin x} - \frac{\sin x}{\cos x} \\
+&= \frac{1 - \sin^2 x}{\cos x \sin x} \\
+&= \frac{\cos^2 x}{\cos x \sin x} \\
+&= \frac{\cos x}{\sin x} \\
+&= \boxed{\cot x}.
+\end{align*}",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_074, inverting fraction \frac{\sec x}{\sin x} to \frac{\sin x}{\sec x} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_078,math500_078,OP_SIGN_FLIP,"By the remainder theorem, $f(x) - f(a)$ is divisible by $x - a,$ so we can take out a factor of $x - a$ accordingly:
+\begin{align*}
+f(x) - f(a) &= (x^3 + 3x^2 + 1) - (a^3 + 3a^2 + 1) \\
+&= (x^3 - a^3) + 3(x^2 - a^2) \\
+&= (x - a)(x^2 + ax + a^2) + 3(x - a)(x + a) \\
+&= (x - a)(x^2 + ax + a^2 + 3x + 3a) \\
+&= (x - a)(x^2 + (a + 3) x + a^2 + 3a).
+\end{align*}Thus, we want","By the remainder theorem, $f(x) - f(a)$ is divisible by $x - a,$ so we can take out a factor of $x - a$ accordingly:
+\begin{align*}
+f(x) - f(a) &= (x^3 - 3x^2 + 1) - (a^3 + 3a^2 + 1) \\
+&= (x^3 - a^3) + 3(x^2 - a^2) \\
+&= (x - a)(x^2 + ax + a^2) + 3(x - a)(x + a) \\
+&= (x - a)(x^2 + ax + a^2 + 3x + 3a) \\
+&= (x - a)(x^2 + (a + 3) x + a^2 + 3a).
+\end{align*}Thus, we want",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_078, flipping '+' to '-' in sub-expression 'em, $f(x) - f(a)$ is' -> 'em, $f(x) - f(a)$ is' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_081,math500_081,OP_SIGN_FLIP,"Then the given information tells us \begin{align*}
+10t &=3s+g\\
+2t +g &= s.
+\end{align*} Since we would like to solve for $s$ in terms of $t$, we want to eliminate $g$.","Then the given information tells us \begin{align*}
+10t &=3s-g\\
+2t +g &= s.
+\end{align*} Since we would like to solve for $s$ in terms of $t$, we want to eliminate $g$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_081, flipping '+' to '-' in sub-expression '}
+10t &=3s+g\\
+2t +g' -> '}
+10t &=3s-g\\
+2t +g' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_082,math500_082,OP_SIGN_FLIP,The greatest possible $y$-coordinate for $B$ is 3 and the least possible $y$-coordinate for $A$ is 0.,The greatest possible $y$+coordinate for $B$ is 3 and the least possible $y$-coordinate for $A$ is 0.,YES,NO,YES,YES,YES,NO,FAILED,"In problem math500_082, perturbation fails semantic quality criteria: Inline math hyphenated prose term corrupted ('+coordinate'). Excluded prospectively from confirmatory registry."
+pair_math500_083,math500_083,OP_SIGN_FLIP,"Rewrite $3^{2x}$ as $(3^2)^x=9^x$, and subtract $9^x$ from both sides to obtain $19=10^x-9^x$.","Rewrite $3^{2x}$ as $(3^2)^x=9^x$, and subtract $9^x$ from both sides to obtain $19=10^x+9^x$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_083, flipping '-' to '+' in sub-expression 'n $19=10^x-9^x$.' -> 'n $19=10^x+9^x$.' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_084,math500_084,OP_SIGN_FLIP,"Therefore we know that $6=-2a$, so $a=-3$.","Therefore we know that $6=+2a$, so $a=-3$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_084, flipping '-' to '+' in sub-expression 'w that $6=-2a$, so $' -> 'w that $6=+2a$, so $' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_088,math500_088,OP_SIGN_FLIP,"For $x < a,$ the graph of $y = f(x)$ is the same as the graph of $y = ax+2a,$ which is a line with slope $a$ and which passes through the point $(a, a^2+2a).$ For $x \ge a,$ the graph of $y = f(x)$ is the same as the graph of $y = ax^2,$ which is a parabola passing through the point $(a, a^3).$","For $x < a,$ the graph of $y = f(x)$ is the same as the graph of $y = ax-2a,$ which is a line with slope $a$ and which passes through the point $(a, a^2+2a).$ For $x \ge a,$ the graph of $y = f(x)$ is the same as the graph of $y = ax^2,$ which is a parabola passing through the point $(a, a^3).$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_088, flipping '+' to '-' in sub-expression 'of $y = ax+2a,$ whic' -> 'of $y = ax-2a,$ whic' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_089,math500_089,OP_SIGN_FLIP,"First, we use it for $3339$ and $2961$. \begin{align*}
+\text{gcd}\,(3339,2961) &=\text{gcd}\,(3339-2961,2961)\\
+&=\text{gcd}\,(378,2961)\\
+&=\text{gcd}\,(378,2961-378 \cdot 7)\\
+&=\text{gcd}\,(378,315)\\
+&=\text{gcd}\,(378-315,315)\\
+&=\text{gcd}\,(63,315)\\
+\end{align*}Since $63$ is a divisor of $315$, the greatest common divisor of $3339$ and $2961$ is $63$.","First, we use it for $3339$ and $2961$. \begin{align*}
+\text{gcd}\,(3339,2961) &=\text{gcd}\,(3339+2961,2961)\\
+&=\text{gcd}\,(378,2961)\\
+&=\text{gcd}\,(378,2961-378 \cdot 7)\\
+&=\text{gcd}\,(378,315)\\
+&=\text{gcd}\,(378-315,315)\\
+&=\text{gcd}\,(63,315)\\
+\end{align*}Since $63$ is a divisor of $315$, the greatest common divisor of $3339$ and $2961$ is $63$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_089, flipping '-' to '+' in sub-expression 'cd}\,(3339-2961,2961' -> 'cd}\,(3339+2961,2961' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_091,math500_091,OP_SIGN_FLIP,"In order for $f(x)$ to have a real number value, the expression inside the square root in the numerator must be non-negative and the denominator must not be 0.","In order for $f(x)$ to have a real number value, the expression inside the square root in the numerator must be non+negative and the denominator must not be 0.",YES,NO,YES,YES,YES,NO,FAILED,"In problem math500_091, perturbation fails semantic quality criteria: English prose word hyphenation corrupted ('non+negative'). Excluded prospectively from confirmatory registry."
+pair_math500_093,math500_093,OP_SIGN_FLIP,Completing the square gives us $(x - 5)^2 + (y + 3)^2 = 34 - c$.,Completing the square gives us $(x - 5)^2 - (y + 3)^2 = 34 - c$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_093, flipping '+' to '-' in sub-expression 'es us $(x - 5)^2 + (' -> 'es us $(x - 5)^2 - (' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_095,math500_095,OP_SIGN_FLIP,The projection of $\begin{pmatrix} 2 \\ y \\ -5 \end{pmatrix}$ onto $\begin{pmatrix} 1 \\ -2 \\ 1 \end{pmatrix}$ is,The projection of $\begin{pmatrix} 2 \\ y \\ +5 \end{pmatrix}$ onto $\begin{pmatrix} 1 \\ -2 \\ 1 \end{pmatrix}$ is,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_095, flipping '-' to '+' in sub-expression '2 \\ y \\ -5 \end{pm' -> '2 \\ y \\ +5 \end{pm' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_096,math500_096,OP_FRACTION_FLIP,\[\frac{x^2 - 2x - 3}{5(x^2 - 2x - 8)} + \frac{x^2 - 2x - 15}{9(x^2 - 2x - 24)} - \frac{2(x^2 - 2x - 35)}{13(x^2 - 2x - 48)} = \frac{92}{585}.\],\[\frac{5(x^2 - 2x - 8)}{x^2 - 2x - 3} + \frac{x^2 - 2x - 15}{9(x^2 - 2x - 24)} - \frac{2(x^2 - 2x - 35)}{13(x^2 - 2x - 48)} = \frac{92}{585}.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_096, inverting fraction \frac{x^2 - 2x - 3}{5(x^2 - 2x - 8)} to \frac{5(x^2 - 2x - 8)}{x^2 - 2x - 3} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_098,math500_098,OP_SIGN_FLIP,We have $(-k+4) + (-2+3k) = -k + 4 -2 + 3k = \boxed{2k+2}$.,We have $(-k-4) + (-2+3k) = -k + 4 -2 + 3k = \boxed{2k+2}$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_098, flipping '+' to '-' in sub-expression 'We have $(-k+4) + (-' -> 'We have $(-k-4) + (-' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_099,math500_099,OP_SIGN_FLIP,"Let $\mathbf{v} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}.$  Then from the equation $\mathbf{a} \cdot \mathbf{v} = 2,$ $x + y + z = 2.$","Let $\mathbf{v} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}.$  Then from the equation $\mathbf{a} \cdot \mathbf{v} = 2,$ $x - y + z = 2.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_099, flipping '+' to '-' in sub-expression '= 2,$ $x + y + z =' -> '= 2,$ $x - y + z =' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_100,math500_100,OP_SIGN_FLIP,"Labeling our vertices will help a great deal, as will drawing a few radii:  First of all, we see that $\angle ABC = 110^\circ$ must be half of the major arc ${AEC},$ thus arc ${AEC} = 2 \cdot \angle ABC.$ Then, the minor arc ${AC}$ must be $360^\circ - 2 \cdot \angle ABC = 360^\circ - 2 \cdot 110^\circ = 140^\circ.$","Labeling our vertices will help a great deal, as will drawing a few radii:  First of all, we see that $\angle ABC = 110^\circ$ must be half of the major arc ${AEC},$ thus arc ${AEC} = 2 \cdot \angle ABC.$ Then, the minor arc ${AC}$ must be $360^\circ + 2 \cdot \angle ABC = 360^\circ - 2 \cdot 110^\circ = 140^\circ.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_100, flipping '-' to '+' in sub-expression '360^\circ - 2 \cdot' -> '360^\circ + 2 \cdot' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_101,math500_101,OP_SIGN_FLIP,"Let $p(x) = x^{10} + (13x - 1)^{10}.$  If $r$ is a root of $p(x),$ then $r^{10} + (13x - 1)^{10} = 0.$  Then $(13r - 1)^{10} = -r^{10},$ so","Let $p(x) = x^{10} - (13x - 1)^{10}.$  If $r$ is a root of $p(x),$ then $r^{10} + (13x - 1)^{10} = 0.$  Then $(13r - 1)^{10} = -r^{10},$ so",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_101, flipping '+' to '-' in sub-expression '= x^{10} + (13x - 1' -> '= x^{10} - (13x - 1' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_102,math500_102,OP_SIGN_FLIP,"We have $ab +5b+2a+10 = ab + 5b+2a + 2\cdot 5$, so we have a straightforward application of Simon's Favorite Factoring Trick:","We have $ab -5b+2a+10 = ab + 5b+2a + 2\cdot 5$, so we have a straightforward application of Simon's Favorite Factoring Trick:",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_102, flipping '+' to '-' in sub-expression 'have $ab +5b+2a+10' -> 'have $ab -5b+2a+10' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_103,math500_103,OP_SIGN_FLIP,"\[f(f(x)) = f(\lambda x(1 - x)) = \lambda \cdot \lambda x(1 - x) (1 - \lambda x(1 - x)),\]","\[f(f(x)) = f(\lambda x(1 + x)) = \lambda \cdot \lambda x(1 - x) (1 - \lambda x(1 - x)),\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_103, flipping '-' to '+' in sub-expression 'ambda x(1 - x)) = \l' -> 'ambda x(1 + x)) = \l' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_104,math500_104,OP_SIGN_FLIP,"\[2x^2 + 12x - 8y + 26 = 0,\]","\[2x^2 - 12x - 8y + 26 = 0,\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_104, flipping '+' to '-' in sub-expression '\[2x^2 + 12x - 8y' -> '\[2x^2 - 12x - 8y' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_108,math500_108,OP_FRACTION_FLIP,"\[\frac{x^2}{(1/\sqrt k)^2} + \frac{y^2}{1^2} = 1,\]","\[\frac{(1/\sqrt k)^2}{x^2} + \frac{y^2}{1^2} = 1,\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_108, inverting fraction \frac{x^2}{(1/\sqrt k)^2} to \frac{(1/\sqrt k)^2}{x^2} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_109,math500_109,OP_SIGN_FLIP,"From the angle addition formula, the numerator is
+\begin{align*}
+&(\cos 5^\circ \cos 20^\circ - \sin 5^\circ \sin 20^\circ) + (\cos 35^\circ \cos 50^\circ -  \sin 35^\circ \sin 50^\circ) \\
+&= \cos (5^\circ + 20^\circ) + \cos (35^\circ + 50^\circ) \\
+&= \cos 25^\circ + \cos 85^\circ.
+\end{align*}From the sum-to-product formula, $\cos 25^\circ + \cos 85^\circ = 2 \cos 55^\circ \cos 30^\circ.$","From the angle addition formula, the numerator is
+\begin{align*}
+&(\cos 5^\circ \cos 20^\circ - \sin 5^\circ \sin 20^\circ) - (\cos 35^\circ \cos 50^\circ -  \sin 35^\circ \sin 50^\circ) \\
+&= \cos (5^\circ + 20^\circ) + \cos (35^\circ + 50^\circ) \\
+&= \cos 25^\circ + \cos 85^\circ.
+\end{align*}From the sum-to-product formula, $\cos 25^\circ + \cos 85^\circ = 2 \cos 55^\circ \cos 30^\circ.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_109, flipping '+' to '-' in sub-expression '20^\circ - \sin 5^\' -> '20^\circ - \sin 5^\' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_111,math500_111,OP_FRACTION_FLIP,"There are 4 ways to pick the first girl and 3 ways to pick the second one; however, this counts each pair of girls twice since selecting girl A followed by girl B is the same as selecting girl B followed by girl A, so the total number of ways to pick the girls is $\frac{4\times3}{2}=6$.","There are 4 ways to pick the first girl and 3 ways to pick the second one; however, this counts each pair of girls twice since selecting girl A followed by girl B is the same as selecting girl B followed by girl A, so the total number of ways to pick the girls is $\frac{2}{4\times3}=6$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_111, inverting fraction \frac{4\times3}{2} to \frac{2}{4\times3} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_112,math500_112,OP_SIGN_FLIP,"Multiplying top and bottom by the conjugate, we have $\frac{1+\sqrt{2}}{2+\sqrt{3}} = \frac{(1+\sqrt{2})(2-\sqrt{3})}{(2+\sqrt{3})((2-\sqrt{3}))} = \frac{2-\sqrt{3}+2\sqrt{2}-\sqrt{6}}{4-3} = 2-\sqrt{3}+2\sqrt{2}-\sqrt{6}$.","Multiplying top and bottom by the conjugate, we have $\frac{1-\sqrt{2}}{2+\sqrt{3}} = \frac{(1+\sqrt{2})(2-\sqrt{3})}{(2+\sqrt{3})((2-\sqrt{3}))} = \frac{2-\sqrt{3}+2\sqrt{2}-\sqrt{6}}{4-3} = 2-\sqrt{3}+2\sqrt{2}-\sqrt{6}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_112, flipping '+' to '-' in sub-expression 'e $\frac{1+\sqrt{2}}' -> 'e $\frac{1-\sqrt{2}}' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_113,math500_113,OP_SIGN_FLIP,We know that $x^2 - y^2 = (x+y)(x-y)$.,We know that $x^2 - y^2 = (x-y)(x-y)$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_113, flipping '+' to '-' in sub-expression 'that $x^2 - y^2 = (x' -> 'that $x^2 - y^2 = (x' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_114,math500_114,OP_FRACTION_FLIP,\[\frac{C}{x - 3} + \frac{D}{x + 8} = \frac{4x - 23}{(x - 3)(x + 8)}.\],\[\frac{x - 3}{C} + \frac{D}{x + 8} = \frac{4x - 23}{(x - 3)(x + 8)}.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_114, inverting fraction \frac{C}{x - 3} to \frac{x - 3}{C} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_117,math500_117,OP_SIGN_FLIP,"First, we start by squaring both sides of the equation \begin{align*} (\sqrt{3x-5})^2& =(2)^2
+\\ \Rightarrow\qquad 3x-5& =4
+\\\Rightarrow\qquad 3x& =9
+\\\Rightarrow\qquad x& =\boxed{3}.
+\end{align*}Testing, we find that this value of $x$ does indeed satisfy the equation.","First, we start by squaring both sides of the equation \begin{align*} (\sqrt{3x+5})^2& =(2)^2
+\\ \Rightarrow\qquad 3x-5& =4
+\\\Rightarrow\qquad 3x& =9
+\\\Rightarrow\qquad x& =\boxed{3}.
+\end{align*}Testing, we find that this value of $x$ does indeed satisfy the equation.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_117, flipping '-' to '+' in sub-expression '(\sqrt{3x-5})^2& =(' -> '(\sqrt{3x+5})^2& =(' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_119,math500_119,OP_SIGN_FLIP,The expression is thus minimized when parentheses are placed in the following location: $1+2+3-(4+5+6)$.,The expression is thus minimized when parentheses are placed in the following location: $1-2+3-(4+5+6)$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_119, flipping '+' to '-' in sub-expression 'cation: $1+2+3-(4+5+' -> 'cation: $1-2+3-(4+5+' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_120,math500_120,OP_SIGN_FLIP,"\[f(f(g(f(g(f(-x)))))) = f(f(g(f(g(-f(x)))))) = f(f(g(f(g(f(x)))))),\]","\[f(f(g(f(g(f(+x)))))) = f(f(g(f(g(-f(x)))))) = f(f(g(f(g(f(x)))))),\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_120, flipping '-' to '+' in sub-expression 'f(g(f(g(f(-x)))))) =' -> 'f(g(f(g(f(+x)))))) =' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_121,math500_121,OP_SIGN_FLIP,"Writing the left-hand side with a common denominator, we have$$\dfrac{x}{2} + \dfrac{x}{3} = \dfrac{3x}{6} + \dfrac{2x}{6} = \dfrac{5x}{6},$$ so our equation is $$\dfrac{5x}{6} = 5.$$Multiplying both sides by $\dfrac{6}{5}$ gives $$x = 5\cdot \dfrac{6}{5} = \boxed{6}.$$","Writing the left-hand side with a common denominator, we have$$\dfrac{x}{2} - \dfrac{x}{3} = \dfrac{3x}{6} + \dfrac{2x}{6} = \dfrac{5x}{6},$$ so our equation is $$\dfrac{5x}{6} = 5.$$Multiplying both sides by $\dfrac{6}{5}$ gives $$x = 5\cdot \dfrac{6}{5} = \boxed{6}.$$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_121, flipping '+' to '-' in sub-expression 'g the left-hand side' -> 'g the left-hand side' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_124,math500_124,OP_SIGN_FLIP,"We begin by moving the second inequality to the right side of the equation, giving us $|x+5|=|3x-6|$.","We begin by moving the second inequality to the right side of the equation, giving us $|x-5|=|3x-6|$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_124, flipping '+' to '-' in sub-expression 'ing us $|x+5|=|3x-6|' -> 'ing us $|x-5|=|3x-6|' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_126,math500_126,OP_FRACTION_FLIP,"\[\begin{aligned} F(F(z)) &= \frac{\frac{z+i}{z-i}+i}{\frac{z+i}{z-i}-i} = \frac{(z+i)+i(z-i)}{(z+i)-i(z-i)}= \frac{z+i+zi+1}{z+i-zi-1}= \frac{(z+1)(i+1)}{(z-1)(1-i)}\\
+&= \frac{(z+1)(i+1)^2}{(z-1) \cdot 2}= \frac{(z+1)(2i)}{(z-1) \cdot 2} = \frac{z+1}{z-1}i,\\
+F(F(F(z))) &= \frac{\frac{z+1}{z-1}i+i}{\frac{z+1}{z-1}i-i} = \frac{\frac{z+1}{z-1}+1}{\frac{z+1}{z-1}-1} = \frac{(z+1)+(z-1)}{(z+1)-(z-1)}= z. \end{aligned}\]","\[\begin{aligned} F(F(z)) &= \frac{\frac{z-i}{z+i}+i}{\frac{z+i}{z-i}-i} = \frac{(z+i)+i(z-i)}{(z+i)-i(z-i)}= \frac{z+i+zi+1}{z+i-zi-1}= \frac{(z+1)(i+1)}{(z-1)(1-i)}\\
+&= \frac{(z+1)(i+1)^2}{(z-1) \cdot 2}= \frac{(z+1)(2i)}{(z-1) \cdot 2} = \frac{z+1}{z-1}i,\\
+F(F(F(z))) &= \frac{\frac{z+1}{z-1}i+i}{\frac{z+1}{z-1}i-i} = \frac{\frac{z+1}{z-1}+1}{\frac{z+1}{z-1}-1} = \frac{(z+1)+(z-1)}{(z+1)-(z-1)}= z. \end{aligned}\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_126, inverting fraction \frac{z+i}{z-i} to \frac{z-i}{z+i} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_131,math500_131,OP_SIGN_FLIP,"Evaluating $f(x)$ for $x=3$ and $x=-3$, we have","Evaluating $f(x)$ for $x=3$ and $x=+3$, we have",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_131, flipping '-' to '+' in sub-expression '3$ and $x=-3$, we ha' -> '3$ and $x=+3$, we ha' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_133,math500_133,OP_SIGN_FLIP,"The interior angles of a quadrilateral must add up to 360.  (You can solve for this using the formula: $S = (n-2)(180)$, where S is the sum of the interior angles, and $n$ is the number of sides in the polygon.","The interior angles of a quadrilateral must add up to 360.  (You can solve for this using the formula: $S = (n+2)(180)$, where S is the sum of the interior angles, and $n$ is the number of sides in the polygon.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_133, flipping '-' to '+' in sub-expression 'a: $S = (n-2)(180)$,' -> 'a: $S = (n+2)(180)$,' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_134,math500_134,OP_SIGN_FLIP,"The center of the hyperbola is the midpoint of $\overline{F_1 F_2},$ which is $(-3,2).$  Thus, $h = -3$ and $k = 2.$","The center of the hyperbola is the midpoint of $\overline{F_1 F_2},$ which is $(+3,2).$  Thus, $h = -3$ and $k = 2.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_134, flipping '-' to '+' in sub-expression 'hich is $(-3,2).$  T' -> 'hich is $(+3,2).$  T' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_136,math500_136,OP_SIGN_FLIP,\[(a_1 + a_2 + \dots + a_n)(a_1^3 + a_2^3 + \dots + a_n^3) \ge (a_1^2 + a_2^2 + \dots + a_n^2)^2.\],\[(a_1 - a_2 + \dots + a_n)(a_1^3 + a_2^3 + \dots + a_n^3) \ge (a_1^2 + a_2^2 + \dots + a_n^2)^2.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_136, flipping '+' to '-' in sub-expression '\[(a_1 + a_2 + \d' -> '\[(a_1 - a_2 + \d' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_139,math500_139,OP_SIGN_FLIP,"Then $(a - b)^2 \ge 0,$ which is equivalent to","Then $(a + b)^2 \ge 0,$ which is equivalent to",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_139, flipping '-' to '+' in sub-expression 'Then $(a - b)^2 \ge' -> 'Then $(a + b)^2 \ge' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_140,math500_140,OP_SIGN_FLIP,"Let $d = \gcd(n + 7, 2n + 1)$, so $d$ divides both $n + 7$ and $2n + 1$.","Let $d = \gcd(n - 7, 2n + 1)$, so $d$ divides both $n + 7$ and $2n + 1$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_140, flipping '+' to '-' in sub-expression '= \gcd(n + 7, 2n +' -> '= \gcd(n - 7, 2n +' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_143,math500_143,OP_SIGN_FLIP,\[\|\overrightarrow{OA} \times \overrightarrow{OB}\| = \left\| \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix} \times \begin{pmatrix} -3 \\ -2 \\ 1 \end{pmatrix} \right\| = \left\| \begin{pmatrix} 8 \\ -10 \\ 4 \end{pmatrix} \right\| = 6 \sqrt{5}.\],\[\|\overrightarrow{OA} \times \overrightarrow{OB}\| = \left\| \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix} \times \begin{pmatrix} +3 \\ -2 \\ 1 \end{pmatrix} \right\| = \left\| \begin{pmatrix} 8 \\ -10 \\ 4 \end{pmatrix} \right\| = 6 \sqrt{5}.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_143, flipping '-' to '+' in sub-expression '{pmatrix} -3 \\ -2 \' -> '{pmatrix} +3 \\ -2 \' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_144,math500_144,OP_SIGN_FLIP,"At $t = 2,$ $(x,y) = (2^3 + 7, -3 \cdot 2^2 - 6 \cdot 2 - 5) = \boxed{(15,-29)}.$","At $t = 2,$ $(x,y) = (2^3 - 7, -3 \cdot 2^2 - 6 \cdot 2 - 5) = \boxed{(15,-29)}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_144, flipping '+' to '-' in sub-expression 'y) = (2^3 + 7, -3 \c' -> 'y) = (2^3 - 7, -3 \c' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_145,math500_145,OP_FRACTION_FLIP,"From $z + \frac{1}{z} = \frac{1 + \sqrt{5}}{2},$","From $z + \frac{z}{1} = \frac{1 + \sqrt{5}}{2},$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_145, inverting fraction \frac{1}{z} to \frac{z}{1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_147,math500_147,OP_SIGN_FLIP,"By AM-GM,
+\begin{align*}
+x^4 + 4y^2 + 4z^4 &= x^4 + 2y^2 + 2y^2 + 4z^4 \\
+&\ge 4 \sqrt[4]{(x^4)(2y^2)(2y^2)(4z^4)} \\
+&= 8xyz \\
+&= 16.
+\end{align*}Equality occurs when $x^4 = 2y^2 = 4z^2.$  Using the condition $xyz = 2,$ we can solve to get $x = y = \sqrt{2}$ and $z = 1,$ so the minimum value is $\boxed{16}.$","By AM-GM,
+\begin{align*}
+x^4 - 4y^2 + 4z^4 &= x^4 + 2y^2 + 2y^2 + 4z^4 \\
+&\ge 4 \sqrt[4]{(x^4)(2y^2)(2y^2)(4z^4)} \\
+&= 8xyz \\
+&= 16.
+\end{align*}Equality occurs when $x^4 = 2y^2 = 4z^2.$  Using the condition $xyz = 2,$ we can solve to get $x = y = \sqrt{2}$ and $z = 1,$ so the minimum value is $\boxed{16}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_147, flipping '+' to '-' in sub-expression 'By AM-GM,
+\begi' -> 'By AM-GM,
+\begi' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_148,math500_148,OP_SIGN_FLIP,Multiplying both sides by $x-5$ and by 3 gives $2(x-5) = 4(3)$.,Multiplying both sides by $x+5$ and by 3 gives $2(x-5) = 4(3)$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_148, flipping '-' to '+' in sub-expression 'ides by $x-5$ and by' -> 'ides by $x+5$ and by' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_153,math500_153,OP_FRACTION_FLIP,"\[
+\binom{9}{3} = \frac{9!}{3!\cdot 6!} = 84.
+\]","\[
+\binom{9}{3} = \frac{3!\cdot 6!}{9!} = 84.
+\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_153, inverting fraction \frac{9!}{3!\cdot 6!} to \frac{3!\cdot 6!}{9!} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_154,math500_154,OP_SIGN_FLIP,"The walls the gecko walked along unfold as such:  The gecko's path is the hypotenuse of a right triangle with legs 6 and 22, so its length is $\sqrt{6^2 + 22^2} = 2\sqrt{3^2 + 11^2} = 2\sqrt{130}$.","The walls the gecko walked along unfold as such:  The gecko's path is the hypotenuse of a right triangle with legs 6 and 22, so its length is $\sqrt{6^2 - 22^2} = 2\sqrt{3^2 + 11^2} = 2\sqrt{130}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_154, flipping '+' to '-' in sub-expression '\sqrt{6^2 + 22^2} =' -> '\sqrt{6^2 - 22^2} =' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_156,math500_156,OP_FRACTION_FLIP,"Without loss of generality, assume that $OP = 1.$  Let $OA = x$ and $OB = 3x.$  Let $\alpha = \angle OPA$ and $\beta = \angle OPB,$ so $\tan \alpha = x$ and $\tan \beta = 3x,$ so from the angle subtraction formula,
+\begin{align*}
+\tan \angle APB &= \tan (\angle OPB - \angle OPA) \\
+&= \tan (\beta - \alpha) \\
+&= \frac{\tan \beta - \tan \alpha}{1 + \tan \alpha \tan \beta} \\
+&= \frac{2x}{1 + 3x^2}.
+\end{align*}We want to maximize this expression.","Without loss of generality, assume that $OP = 1.$  Let $OA = x$ and $OB = 3x.$  Let $\alpha = \angle OPA$ and $\beta = \angle OPB,$ so $\tan \alpha = x$ and $\tan \beta = 3x,$ so from the angle subtraction formula,
+\begin{align*}
+\tan \angle APB &= \tan (\angle OPB - \angle OPA) \\
+&= \tan (\beta - \alpha) \\
+&= \frac{1 + \tan \alpha \tan \beta}{\tan \beta - \tan \alpha} \\
+&= \frac{2x}{1 + 3x^2}.
+\end{align*}We want to maximize this expression.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_156, inverting fraction \frac{\tan \beta - \tan \alpha}{1 + \tan \alpha \tan \beta} to \frac{1 + \tan \alpha \tan \beta}{\tan \beta - \tan \alpha} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_157,math500_157,OP_SIGN_FLIP,\[\begin{aligned} 1+5x^3 &= 6x^2 - 24x \\ 5x^3 - 6x^2 + 24x + 1 &= 0 .\end{aligned}\],\[\begin{aligned} 1-5x^3 &= 6x^2 - 24x \\ 5x^3 - 6x^2 + 24x + 1 &= 0 .\end{aligned}\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_157, flipping '+' to '-' in sub-expression 'aligned} 1+5x^3 &= 6' -> 'aligned} 1-5x^3 &= 6' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_159,math500_159,OP_SIGN_FLIP,"We have $(x+1.3)^2 = x^2 + (2.6)x + 1.69$, and so","We have $(x-1.3)^2 = x^2 + (2.6)x + 1.69$, and so",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_159, flipping '+' to '-' in sub-expression 'e have $(x+1.3)^2 =' -> 'e have $(x-1.3)^2 =' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_163,math500_163,OP_FRACTION_FLIP,The given expression expands to $\frac{1}{b^2} - a^2$.,The given expression expands to $\frac{b^2}{1} - a^2$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_163, inverting fraction \frac{1}{b^2} to \frac{b^2}{1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_164,math500_164,OP_FRACTION_FLIP,"We have that
+\begin{align*}
+\tan 100^\circ + 4 \sin 100^\circ &= \frac{\sin 100^\circ}{\cos 100^\circ} + 4 \sin 100^\circ \\
+&= \frac{\sin 80^\circ}{-\cos 80^\circ} + 4 \sin 80^\circ \\
+&= -\frac{\cos 10^\circ}{\sin 10^\circ} + 4 \cos 10^\circ \\
+&= \frac{4 \cos 10^\circ \sin 10^\circ - \cos 10^\circ}{\sin 10^\circ}.
+\end{align*}By double angle formula,
+\begin{align*}
+\frac{4 \cos 10^\circ \sin 10^\circ - \cos 10^\circ}{\sin 10^\circ} &= \frac{2 \sin 20^\circ - \cos 10^\circ}{\sin 10^\circ} \\
+&= \frac{\sin 20^\circ + \sin 20^\circ - \sin 80^\circ}{\sin 10^\circ}.
+\end{align*}By sum-to-product,","We have that
+\begin{align*}
+\tan 100^\circ + 4 \sin 100^\circ &= \frac{\cos 100^\circ}{\sin 100^\circ} + 4 \sin 100^\circ \\
+&= \frac{\sin 80^\circ}{-\cos 80^\circ} + 4 \sin 80^\circ \\
+&= -\frac{\cos 10^\circ}{\sin 10^\circ} + 4 \cos 10^\circ \\
+&= \frac{4 \cos 10^\circ \sin 10^\circ - \cos 10^\circ}{\sin 10^\circ}.
+\end{align*}By double angle formula,
+\begin{align*}
+\frac{4 \cos 10^\circ \sin 10^\circ - \cos 10^\circ}{\sin 10^\circ} &= \frac{2 \sin 20^\circ - \cos 10^\circ}{\sin 10^\circ} \\
+&= \frac{\sin 20^\circ + \sin 20^\circ - \sin 80^\circ}{\sin 10^\circ}.
+\end{align*}By sum-to-product,",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_164, inverting fraction \frac{\sin 100^\circ}{\cos 100^\circ} to \frac{\cos 100^\circ}{\sin 100^\circ} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_165,math500_165,OP_SIGN_FLIP,"Six books are removed from the shelves, so $24-6=18$ books remain.","Six books are removed from the shelves, so $24+6=18$ books remain.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_165, flipping '-' to '+' in sub-expression 'es, so $24-6=18$ boo' -> 'es, so $24+6=18$ boo' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_166,math500_166,OP_SIGN_FLIP,The measure of each interior angle in a regular $n$-gon is $180(n-2)/n$ degrees.,The measure of each interior angle in a regular $n$+gon is $180(n-2)/n$ degrees.,YES,NO,YES,YES,YES,NO,FAILED,"In problem math500_166, perturbation fails semantic quality criteria: Inline math hyphenated prose term corrupted ('+gon'). Excluded prospectively from confirmatory registry."
+pair_math500_168,math500_168,OP_SIGN_FLIP,"The number of $1\times1$ squares in the diagram is $2(n-1)$, the number of $2\times 2$ squares is $n-2$, and the number of $\sqrt{2} \times \sqrt{2}$ squares is also $n-2$ (see diagram).","The number of $1\times1$ squares in the diagram is $2(n+1)$, the number of $2\times 2$ squares is $n-2$, and the number of $\sqrt{2} \times \sqrt{2}$ squares is also $n-2$ (see diagram).",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_168, flipping '-' to '+' in sub-expression 'am is $2(n-1)$, the' -> 'am is $2(n+1)$, the' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_170,math500_170,OP_SIGN_FLIP,"Squaring $y=x^2-8$, we obtain $y^2=x^4-16x^2+64$.","Squaring $y=x^2-8$, we obtain $y^2=x^4-16x^2-64$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_170, flipping '+' to '-' in sub-expression 'ing $y=x^2-8$, we ob' -> 'ing $y=x^2-8$, we ob' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_172,math500_172,OP_SIGN_FLIP,"Therefore, the sixth term is $(200 + 500)/2 = \boxed{350}$.","Therefore, the sixth term is $(200 - 500)/2 = \boxed{350}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_172, flipping '+' to '-' in sub-expression 'is $(200 + 500)/2 =' -> 'is $(200 - 500)/2 =' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_173,math500_173,OP_FRACTION_FLIP,We use the formula $\left(\frac{\text{first term}}{1-(\text{common ratio})}\right)$ for the sum of a geometric series to get the sum $\left(\frac{4}{1-\frac{3}{a}}\right)=\frac{4}{\frac{a-3}{a}}=\frac{4a}{a-3}$.,We use the formula $\left(\frac{\text{first term}}{1-(\text{common ratio})}\right)$ for the sum of a geometric series to get the sum $\left(\frac{4}{1-\frac{a}{3}}\right)=\frac{4}{\frac{a-3}{a}}=\frac{4a}{a-3}$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_173, inverting fraction \frac{3}{a} to \frac{a}{3} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_174,math500_174,OP_SIGN_FLIP,"A $y$-intercept is a point on the graph that lies on the $y$-axis, so $x = 0$.","A $y$+intercept is a point on the graph that lies on the $y$-axis, so $x = 0$.",YES,NO,YES,YES,YES,NO,FAILED,"In problem math500_174, perturbation fails semantic quality criteria: Inline math hyphenated prose term corrupted ('+intercept'). Excluded prospectively from confirmatory registry."
+pair_math500_176,math500_176,OP_FRACTION_FLIP,"A terminating decimal can be written in the form $\frac{a}{10^b}$, where $a$ and $b$ are integers.","A terminating decimal can be written in the form $\frac{10^b}{a}$, where $a$ and $b$ are integers.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_176, inverting fraction \frac{a}{10^b} to \frac{10^b}{a} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_179,math500_179,OP_SIGN_FLIP,"Let $\mathbf{a} = \begin{pmatrix} 0 \\ -1 \\ -1 \end{pmatrix},$ $\mathbf{b} = \begin{pmatrix} -4 \\ 4 \\ 4 \end{pmatrix},$ and $\mathbf{c} = \begin{pmatrix} 4 \\ 5 \\ 1 \end{pmatrix}.$  Then the normal vector of the plane is orthogonal to both","Let $\mathbf{a} = \begin{pmatrix} 0 \\ +1 \\ -1 \end{pmatrix},$ $\mathbf{b} = \begin{pmatrix} -4 \\ 4 \\ 4 \end{pmatrix},$ and $\mathbf{c} = \begin{pmatrix} 4 \\ 5 \\ 1 \end{pmatrix}.$  Then the normal vector of the plane is orthogonal to both",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_179, flipping '-' to '+' in sub-expression 'rix} 0 \\ -1 \\ -1 \' -> 'rix} 0 \\ +1 \\ -1 \' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_184,math500_184,OP_FRACTION_FLIP,\[S = \frac{c}{a} + \frac{a}{b + c} + \frac{b}{c}.\],\[S = \frac{a}{c} + \frac{a}{b + c} + \frac{b}{c}.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_184, inverting fraction \frac{c}{a} to \frac{a}{c} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_187,math500_187,OP_SIGN_FLIP,"We have the two equations \begin{align*}
+d+n&=11\\
+10d+5n&=75
+\end{align*} (The last equation is in terms of cents.) To make the second equation nicer, we divide both sides by 5 to get $2d+n=15$.","We have the two equations \begin{align*}
+d-n&=11\\
+10d+5n&=75
+\end{align*} (The last equation is in terms of cents.) To make the second equation nicer, we divide both sides by 5 to get $2d+n=15$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_187, flipping '+' to '-' in sub-expression '{align*}
+d+n&=11\\
+1' -> '{align*}
+d-n&=11\\
+1' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_188,math500_188,OP_SIGN_FLIP,All that matters for intersection is whether $f(x)-g(x)=0$.,All that matters for intersection is whether $f(x)+g(x)=0$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_188, flipping '-' to '+' in sub-expression 'ther $f(x)-g(x)=0$.' -> 'ther $f(x)+g(x)=0$.' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_191,math500_191,OP_SIGN_FLIP,"We plug in $x = 4$: \begin{align*}
+3(4) + 2y &= 12\\
+12 + 2y &= 12\\
+y &= 0.
+\end{align*}","We plug in $x = 4$: \begin{align*}
+3(4) - 2y &= 12\\
+12 + 2y &= 12\\
+y &= 0.
+\end{align*}",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_191, flipping '+' to '-' in sub-expression 'gn*}
+3(4) + 2y &= 12' -> 'gn*}
+3(4) - 2y &= 12' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_192,math500_192,OP_SIGN_FLIP,"We have $MP = PR/2 = 16$, so right triangle $PQM$ gives us  \begin{align*}
+QM &= \sqrt{PQ^2 - PM^2}\\
+&= \sqrt{34^2 - 16^2}\\
+&= \sqrt{(34-16)(34+16)}\\
+& = \boxed{30}.
+\end{align*}  (We might also have recognized that $PM/PQ = 8/17$, so $QM/PQ = 15/17$.)","We have $MP = PR/2 = 16$, so right triangle $PQM$ gives us  \begin{align*}
+QM &= \sqrt{PQ^2 - PM^2}\\
+&= \sqrt{34^2 - 16^2}\\
+&= \sqrt{(34-16)(34-16)}\\
+& = \boxed{30}.
+\end{align*}  (We might also have recognized that $PM/PQ = 8/17$, so $QM/PQ = 15/17$.)",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_192, flipping '+' to '-' in sub-expression 'sqrt{PQ^2 - PM^2}\\' -> 'sqrt{PQ^2 - PM^2}\\' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_194,math500_194,OP_SIGN_FLIP,"Let $z = -y,$ so $z$ is positive, and $y = -z.$  Then","Let $z = +y,$ so $z$ is positive, and $y = -z.$  Then",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_194, flipping '-' to '+' in sub-expression 'Let $z = -y,$ so $z' -> 'Let $z = +y,$ so $z' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_203,math500_203,OP_SIGN_FLIP,"By the Remainder Theorem, to find the remainder, we set $x = -2.$  This gives us","By the Remainder Theorem, to find the remainder, we set $x = +2.$  This gives us",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_203, flipping '-' to '+' in sub-expression 'set $x = -2.$  This' -> 'set $x = +2.$  This' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_204,math500_204,OP_FRACTION_FLIP,"Since $|a| = 1,$ $a \overline{a} = |a|^2,$ so $\overline{a} = \frac{1}{a}.$  Similarly, $\overline{b} = \frac{1}{b},$ $\overline{c} = \frac{1}{c},$ and $\overline{d} = \frac{1}{d}.$","Since $|a| = 1,$ $a \overline{a} = |a|^2,$ so $\overline{a} = \frac{a}{1}.$  Similarly, $\overline{b} = \frac{1}{b},$ $\overline{c} = \frac{1}{c},$ and $\overline{d} = \frac{1}{d}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_204, inverting fraction \frac{1}{a} to \frac{a}{1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_205,math500_205,OP_SIGN_FLIP,"Subtracting the equations $\mathbf{A} \begin{pmatrix} 3 \\ 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 2 \\ 4 \\ -3 \end{pmatrix}$ and $\mathbf{A} \begin{pmatrix} -5 \\ 2 \\ 2 \end{pmatrix} = \begin{pmatrix} 0 \\ -5 \\ -5 \end{pmatrix},$ we get","Subtracting the equations $\mathbf{A} \begin{pmatrix} 3 \\ 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 2 \\ 4 \\ +3 \end{pmatrix}$ and $\mathbf{A} \begin{pmatrix} -5 \\ 2 \\ 2 \end{pmatrix} = \begin{pmatrix} 0 \\ -5 \\ -5 \end{pmatrix},$ we get",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_205, flipping '-' to '+' in sub-expression '2 \\ 4 \\ -3 \end{pm' -> '2 \\ 4 \\ +3 \end{pm' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_206,math500_206,OP_SIGN_FLIP,"We have that $x = 8 + 2t$ and $y = -1 + 3t.$  Isolating $t$ in $x = 8 + 2t,$ we find","We have that $x = 8 - 2t$ and $y = -1 + 3t.$  Isolating $t$ in $x = 8 + 2t,$ we find",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_206, flipping '+' to '-' in sub-expression 'at $x = 8 + 2t$ and' -> 'at $x = 8 - 2t$ and' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_211,math500_211,OP_SIGN_FLIP,Recall that $a^m\div a^n=a^{m-n}$ for positive integers $m>n$ and $a^m\cdot a^n=a^{m+n}$.,Recall that $a^m\div a^n=a^{m-n}$ for positive integers $m>n$ and $a^m\cdot a^n=a^{m-n}$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_211, flipping '+' to '-' in sub-expression 'v a^n=a^{m-n}$ for p' -> 'v a^n=a^{m-n}$ for p' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_212,math500_212,OP_SIGN_FLIP,"We have the two equations \begin{align*}
+a+b&=80\\
+5a-2b&=232
+\end{align*} From the first equation, we have $b=80-a$.","We have the two equations \begin{align*}
+a-b&=80\\
+5a-2b&=232
+\end{align*} From the first equation, we have $b=80-a$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_212, flipping '+' to '-' in sub-expression '{align*}
+a+b&=80\\
+5' -> '{align*}
+a-b&=80\\
+5' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_213,math500_213,OP_SIGN_FLIP,"Since $F_{n + 1} = F_{n + 2} - F_n,$","Since $F_{n - 1} = F_{n + 2} - F_n,$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_213, flipping '+' to '-' in sub-expression 'nce $F_{n + 1} = F_{' -> 'nce $F_{n - 1} = F_{' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_214,math500_214,OP_SIGN_FLIP,"There are 15 students taking all three, and 30 students in both physics and calculus, meaning there are $30 - 15 = 15$ students in just physics and calculus.","There are 15 students taking all three, and 30 students in both physics and calculus, meaning there are $30 + 15 = 15$ students in just physics and calculus.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_214, flipping '-' to '+' in sub-expression 'e are $30 - 15 = 15$' -> 'e are $30 + 15 = 15$' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_215,math500_215,OP_SIGN_FLIP,Rearranging $x^2 - x - 1= 0$ gives $x^2 = x + 1$.,Rearranging $x^2 - x - 1= 0$ gives $x^2 = x - 1$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_215, flipping '+' to '-' in sub-expression 'ging $x^2 - x - 1= 0' -> 'ging $x^2 - x - 1= 0' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_218,math500_218,OP_FRACTION_FLIP,"Applying the midpoint formula gives us $$\left(\frac{-5+3}{2},\frac{5+7}{2}\right)=\boxed{(-1,6)}.$$","Applying the midpoint formula gives us $$\left(\frac{2}{-5+3},\frac{5+7}{2}\right)=\boxed{(-1,6)}.$$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_218, inverting fraction \frac{-5+3}{2} to \frac{2}{-5+3} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_222,math500_222,OP_SIGN_FLIP,"Since $AB \parallel DE,$ we know that $\angle A = \angle E$ and $\angle B = \angle D.$ That works out nicely, since that means $\triangle ABC \sim EDC.$ If $BD = 4BC,$ that means $CD = BD - BC = 3BC.$ Therefore, the ratio of sides in $ABC$ to $EDC$ is $1:3,$ meaning the ratio of their areas is $1:9.$","Since $AB \parallel DE,$ we know that $\angle A = \angle E$ and $\angle B = \angle D.$ That works out nicely, since that means $\triangle ABC \sim EDC.$ If $BD = 4BC,$ that means $CD = BD + BC = 3BC.$ Therefore, the ratio of sides in $ABC$ to $EDC$ is $1:3,$ meaning the ratio of their areas is $1:9.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_222, flipping '-' to '+' in sub-expression '$CD = BD - BC = 3BC' -> '$CD = BD + BC = 3BC' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_223,math500_223,OP_FRACTION_FLIP,"Rewriting $\frac{4321}{5^7\cdot2^8}$ as a decimal with a denominator of $5^8\cdot2^8=10^8$, we have","Rewriting $\frac{5^7\cdot2^8}{4321}$ as a decimal with a denominator of $5^8\cdot2^8=10^8$, we have",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_223, inverting fraction \frac{4321}{5^7\cdot2^8} to \frac{5^7\cdot2^8}{4321} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_225,math500_225,OP_SIGN_FLIP,"Since \begin{align*}
+(3x-2)(4x+1)-(3x-2)4x+1 &=(3x-2)(4x+1-4x)+1 \\
+&=(3x-2) \cdot 1 +1 =3x-1,
+\end{align*} when $x=4$ we have the value $3 \cdot 4 -1 =\boxed{11}$.","Since \begin{align*}
+(3x-2)(4x-1)-(3x-2)4x+1 &=(3x-2)(4x+1-4x)+1 \\
+&=(3x-2) \cdot 1 +1 =3x-1,
+\end{align*} when $x=4$ we have the value $3 \cdot 4 -1 =\boxed{11}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_225, flipping '+' to '-' in sub-expression 'lign*}
+(3x-2)(4x+1)-' -> 'lign*}
+(3x-2)(4x-1)-' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_228,math500_228,OP_SIGN_FLIP,"Let $P = (a,b,c).$  Then the distance from $P$ to the plane $x - z = 0$ is","Let $P = (a,b,c).$  Then the distance from $P$ to the plane $x + z = 0$ is",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_228, flipping '-' to '+' in sub-expression 'plane $x - z = 0$ i' -> 'plane $x + z = 0$ i' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_230,math500_230,OP_SIGN_FLIP,\[(a^2 + b^2 + c^2 + d^2)(1 + 1 + 1 + 1) \ge (a + b + c + d)^2.\],\[(a^2 - b^2 + c^2 + d^2)(1 + 1 + 1 + 1) \ge (a + b + c + d)^2.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_230, flipping '+' to '-' in sub-expression '\[(a^2 + b^2 + c^' -> '\[(a^2 - b^2 + c^' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_231,math500_231,OP_FRACTION_FLIP,"We have the equations \begin{align*} \tag{1}
+\frac{a+b+c}{3}=6 \Rightarrow a+b+c&=18 \\ \tag{2}
+c-4&=a\\ \tag{3}
+b+4&=\frac{3}{5}(a+4)
+\end{align*} From Equation (3), we have $b=\frac{3}{5}(a+4)-4$.","We have the equations \begin{align*} \tag{1}
+\frac{3}{a+b+c}=6 \Rightarrow a+b+c&=18 \\ \tag{2}
+c-4&=a\\ \tag{3}
+b+4&=\frac{3}{5}(a+4)
+\end{align*} From Equation (3), we have $b=\frac{3}{5}(a+4)-4$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_231, inverting fraction \frac{a+b+c}{3} to \frac{3}{a+b+c} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_232,math500_232,OP_FRACTION_FLIP,"Note that
+\begin{align*}
+\frac{1}{1 + \omega^k} + \frac{1}{1 + \omega^{1997 - k}} &= \frac{1}{1 + \omega^k} + \frac{\omega^k}{\omega^k + \omega^{1997}} \\
+&= \frac{1}{1 + \omega^k} + \frac{\omega^k}{\omega^k + 1} \\
+&= \frac{1 + \omega^k}{1 + \omega^k} = 1.
+\end{align*}Thus, we can pair the terms","Note that
+\begin{align*}
+\frac{1 + \omega^k}{1} + \frac{1}{1 + \omega^{1997 - k}} &= \frac{1}{1 + \omega^k} + \frac{\omega^k}{\omega^k + \omega^{1997}} \\
+&= \frac{1}{1 + \omega^k} + \frac{\omega^k}{\omega^k + 1} \\
+&= \frac{1 + \omega^k}{1 + \omega^k} = 1.
+\end{align*}Thus, we can pair the terms",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_232, inverting fraction \frac{1}{1 + \omega^k} to \frac{1 + \omega^k}{1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_234,math500_234,OP_SIGN_FLIP,"Let $a,$ $b,$ $c$ be the roots of $x^3 - 49x^2 + 623x - 2015.$  Then by Vieta's formulas, $a + b + c = 49.$","Let $a,$ $b,$ $c$ be the roots of $x^3 - 49x^2 - 623x - 2015.$  Then by Vieta's formulas, $a + b + c = 49.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_234, flipping '+' to '-' in sub-expression 's of $x^3 - 49x^2 +' -> 's of $x^3 - 49x^2 -' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_235,math500_235,OP_FRACTION_FLIP,"In general, to express the number $0.\overline{n}$ as a fraction, we call it $x$ and subtract it from $10x$: $$\begin{array}{r r c r@{}l}
+&10x &=& n&.nnnnn\ldots \\
+- &x &=& 0&.nnnnn\ldots \\
+\hline
+&9x &=& n &
+\end{array}$$ This shows that $0.\overline{n} = \frac{n}{9}$.","In general, to express the number $0.\overline{n}$ as a fraction, we call it $x$ and subtract it from $10x$: $$\begin{array}{r r c r@{}l}
+&10x &=& n&.nnnnn\ldots \\
+- &x &=& 0&.nnnnn\ldots \\
+\hline
+&9x &=& n &
+\end{array}$$ This shows that $0.\overline{n} = \frac{9}{n}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_235, inverting fraction \frac{n}{9} to \frac{9}{n} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_236,math500_236,OP_FRACTION_FLIP,"We can write
+\begin{align*}
+\frac{1}{\cos^2 10^\circ} &= \frac{2}{1 + \cos 20^\circ} \\
+&= \frac{2 (1 - \cos 20^\circ)}{(1 + \cos 20^\circ)(1 - \cos 20^\circ)} \\
+&= \frac{2 (1 - \cos 20^\circ)}{1 - \cos^2 20^\circ} \\
+&= \frac{2 - 2 \cos 20^\circ}{\sin^2 20^\circ},
+\end{align*}so
+\begin{align*}
+\frac{1}{\cos^2 10^\circ} + \frac{1}{\sin^2 20^\circ} + \frac{1}{\sin^2 40^\circ} &= \frac{2 - 2 \cos 20^\circ}{\sin^2 20^\circ} + \frac{1}{\sin^2 20^\circ} + \frac{1}{\sin^2 40^\circ} \\
+&= \frac{3 - 2 \cos 20^\circ}{\sin^2 20^\circ} + \frac{1}{\sin^2 40^\circ} \\
+&= \frac{4 \cos^2 20^\circ (3 - 2 \cos 20^\circ)}{4 \sin^2 20^\circ \cos^2 20^\circ} + \frac{1}{\sin^2 40^\circ} \\
+&= \frac{12 \cos^2 20^\circ - 8 \cos^3 20^\circ}{\sin^2 40^\circ} + \frac{1}{\sin^2 40^\circ} \\
+&= \frac{12 \cos^2 20^\circ - 8 \cos^3 20^\circ + 1}{\sin^2 40^\circ}.
+\end{align*}By the triple angle formula,
+\begin{align*}
+\frac{1}{2} &= \cos 60^\circ \\
+&= \cos (3 \cdot 20^\circ) \\
+&= 4 \cos^3 20^\circ - 3 \cos 20^\circ,
+\end{align*}which means $8 \cos^3 20^\circ = 6 \cos 20^\circ + 1.$  Hence,
+\begin{align*}
+\frac{12 \cos^2 20^\circ - 8 \cos^3 20^\circ + 1}{\sin^2 40^\circ} &= \frac{12 \cos^2 20^\circ - 6 \cos 20^\circ}{\sin^2 40^\circ} \\
+&= \frac{12 \cos^2 20^\circ - 6 \cos 20^\circ}{4 \sin^2 20^\circ \cos^2 20^\circ} \\
+&= \frac{12 \cos 20^\circ - 6}{4 \sin^2 20^\circ \cos 20^\circ} \\
+&= \frac{12 \cos 20^\circ - 6}{4 (1 - \cos^2 20^\circ) \cos 20^\circ} \\
+&= \frac{12 \cos 20^\circ - 6}{4 \cos 20^\circ - 4 \cos^3 20^\circ} \\
+&= \frac{12 \cos 20^\circ - 6}{4 \cos 20^\circ - 3 \cos 20^\circ - \frac{1}{2}} \\
+&= \frac{12 \cos 20^\circ - 6}{\cos 20^\circ - \frac{1}{2}} \\
+&= \boxed{12}.
+\end{align*}","We can write
+\begin{align*}
+\frac{\cos^2 10^\circ}{1} &= \frac{2}{1 + \cos 20^\circ} \\
+&= \frac{2 (1 - \cos 20^\circ)}{(1 + \cos 20^\circ)(1 - \cos 20^\circ)} \\
+&= \frac{2 (1 - \cos 20^\circ)}{1 - \cos^2 20^\circ} \\
+&= \frac{2 - 2 \cos 20^\circ}{\sin^2 20^\circ},
+\end{align*}so
+\begin{align*}
+\frac{1}{\cos^2 10^\circ} + \frac{1}{\sin^2 20^\circ} + \frac{1}{\sin^2 40^\circ} &= \frac{2 - 2 \cos 20^\circ}{\sin^2 20^\circ} + \frac{1}{\sin^2 20^\circ} + \frac{1}{\sin^2 40^\circ} \\
+&= \frac{3 - 2 \cos 20^\circ}{\sin^2 20^\circ} + \frac{1}{\sin^2 40^\circ} \\
+&= \frac{4 \cos^2 20^\circ (3 - 2 \cos 20^\circ)}{4 \sin^2 20^\circ \cos^2 20^\circ} + \frac{1}{\sin^2 40^\circ} \\
+&= \frac{12 \cos^2 20^\circ - 8 \cos^3 20^\circ}{\sin^2 40^\circ} + \frac{1}{\sin^2 40^\circ} \\
+&= \frac{12 \cos^2 20^\circ - 8 \cos^3 20^\circ + 1}{\sin^2 40^\circ}.
+\end{align*}By the triple angle formula,
+\begin{align*}
+\frac{1}{2} &= \cos 60^\circ \\
+&= \cos (3 \cdot 20^\circ) \\
+&= 4 \cos^3 20^\circ - 3 \cos 20^\circ,
+\end{align*}which means $8 \cos^3 20^\circ = 6 \cos 20^\circ + 1.$  Hence,
+\begin{align*}
+\frac{12 \cos^2 20^\circ - 8 \cos^3 20^\circ + 1}{\sin^2 40^\circ} &= \frac{12 \cos^2 20^\circ - 6 \cos 20^\circ}{\sin^2 40^\circ} \\
+&= \frac{12 \cos^2 20^\circ - 6 \cos 20^\circ}{4 \sin^2 20^\circ \cos^2 20^\circ} \\
+&= \frac{12 \cos 20^\circ - 6}{4 \sin^2 20^\circ \cos 20^\circ} \\
+&= \frac{12 \cos 20^\circ - 6}{4 (1 - \cos^2 20^\circ) \cos 20^\circ} \\
+&= \frac{12 \cos 20^\circ - 6}{4 \cos 20^\circ - 4 \cos^3 20^\circ} \\
+&= \frac{12 \cos 20^\circ - 6}{4 \cos 20^\circ - 3 \cos 20^\circ - \frac{1}{2}} \\
+&= \frac{12 \cos 20^\circ - 6}{\cos 20^\circ - \frac{1}{2}} \\
+&= \boxed{12}.
+\end{align*}",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_236, inverting fraction \frac{1}{\cos^2 10^\circ} to \frac{\cos^2 10^\circ}{1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_237,math500_237,OP_FRACTION_FLIP,"Multiplying all three equations, we get $x^2 y^2 z^2 = 82944.$  Since $x,$$y,$ and $z$ are positive, $xyz = \sqrt{82944} = 288.$  Then
+\begin{align*}
+x &= \frac{xyz}{yz} = \frac{288}{72} = 4, \\
+y &= \frac{xyz}{xz} = \frac{288}{48} = 6, \\
+z &= \frac{xyz}{xy} = \frac{288}{24} = 12.
+\end{align*}Hence, $x + y + z = \boxed{22}.$","Multiplying all three equations, we get $x^2 y^2 z^2 = 82944.$  Since $x,$$y,$ and $z$ are positive, $xyz = \sqrt{82944} = 288.$  Then
+\begin{align*}
+x &= \frac{yz}{xyz} = \frac{288}{72} = 4, \\
+y &= \frac{xyz}{xz} = \frac{288}{48} = 6, \\
+z &= \frac{xyz}{xy} = \frac{288}{24} = 12.
+\end{align*}Hence, $x + y + z = \boxed{22}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_237, inverting fraction \frac{xyz}{yz} to \frac{yz}{xyz} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_243,math500_243,OP_SIGN_FLIP,"By the triangle inequality, $1+3>n$ and $1+n>3$, or $2<n<4$.","By the triangle inequality, $1-3>n$ and $1+n>3$, or $2<n<4$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_243, flipping '+' to '-' in sub-expression 'uality, $1+3>n$ and' -> 'uality, $1-3>n$ and' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_244,math500_244,OP_SIGN_FLIP,"The sum of the interior angles in any $n$-sided polygon is $180(n-2)$ degrees, so the angle measures in a polygon with 7 sides sum to $180(7-2) = 900$ degrees, which means that the desired polygon has more than 7 sides.","The sum of the interior angles in any $n$+sided polygon is $180(n-2)$ degrees, so the angle measures in a polygon with 7 sides sum to $180(7-2) = 900$ degrees, which means that the desired polygon has more than 7 sides.",YES,NO,YES,YES,YES,NO,FAILED,"In problem math500_244, perturbation fails semantic quality criteria: Inline math hyphenated prose term corrupted ('+sided'). Excluded prospectively from confirmatory registry."
+pair_math500_245,math500_245,OP_SIGN_FLIP,"We have
+$$f(x) = q(x)(x^2-1) + r(x),$$where $q(x)$ is the quotient and $r(x)$ is the remainder.","We have
+$$f(x) = q(x)(x^2-1) - r(x),$$where $q(x)$ is the quotient and $r(x)$ is the remainder.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_245, flipping '+' to '-' in sub-expression '= q(x)(x^2-1) + r(x)' -> '= q(x)(x^2-1) - r(x)' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_247,math500_247,OP_SIGN_FLIP,"Because $p(x)$ has integer coefficients (in particular, because it has rational coefficients), the other root of $p(x)$ must be the radical conjugate of $4-\sqrt{11},$ which is $4+\sqrt{11}.$ Then, $p(x)$ must take the form","Because $p(x)$ has integer coefficients (in particular, because it has rational coefficients), the other root of $p(x)$ must be the radical conjugate of $4-\sqrt{11},$ which is $4-\sqrt{11}.$ Then, $p(x)$ must take the form",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_247, flipping '+' to '-' in sub-expression 'gate of $4-\sqrt{11}' -> 'gate of $4-\sqrt{11}' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_248,math500_248,OP_SIGN_FLIP,\[\mathbf{A}^2 = \begin{pmatrix} 2 & 7 \\ -1 & -3 \end{pmatrix}\],\[\mathbf{A}^2 = \begin{pmatrix} 2 & 7 \\ +1 & -3 \end{pmatrix}\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_248, flipping '-' to '+' in sub-expression '2 & 7 \\ -1 & -3 \e' -> '2 & 7 \\ +1 & -3 \e' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_249,math500_249,OP_SIGN_FLIP,We could find the answer by trial and error -- testing each candidate $t$ to see if $t\cdot (t+2)\equiv 1\pmod{23}$.,We could find the answer by trial and error -- testing each candidate $t$ to see if $t\cdot (t-2)\equiv 1\pmod{23}$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_249, flipping '+' to '-' in sub-expression 'and error -- testing' -> 'and error -- testing' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_250,math500_250,OP_SIGN_FLIP,We can find the $x$-intercept by setting $y=0$ in the equation.,We can find the $x$+intercept by setting $y=0$ in the equation.,YES,NO,YES,YES,YES,NO,FAILED,"In problem math500_250, perturbation fails semantic quality criteria: Inline math hyphenated prose term corrupted ('+intercept'). Excluded prospectively from confirmatory registry."
+pair_math500_252,math500_252,OP_SIGN_FLIP,The graph of $y = 4(x + 7)(2 - x)$ is a parabola.,The graph of $y = 4(x - 7)(2 - x)$ is a parabola.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_252, flipping '+' to '-' in sub-expression '$y = 4(x + 7)(2 - x' -> '$y = 4(x - 7)(2 - x' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_259,math500_259,OP_SIGN_FLIP,"The radical conjugate of this number is $5-\sqrt{3},$ so the product of the two numbers is","The radical conjugate of this number is $5+\sqrt{3},$ so the product of the two numbers is",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_259, flipping '-' to '+' in sub-expression 'mber is $5-\sqrt{3},' -> 'mber is $5+\sqrt{3},' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_261,math500_261,OP_SIGN_FLIP,"If $AB$ is a diameter, that means the triangle must have a right angle at $C.$ Therefore, we have that \begin{align*}
+\angle B &= 180^\circ - (\angle A + \angle C) \\
+&= 180^\circ - (14^\circ + 90^\circ) = \boxed{76^\circ}.
+\end{align*}","If $AB$ is a diameter, that means the triangle must have a right angle at $C.$ Therefore, we have that \begin{align*}
+\angle B &= 180^\circ - (\angle A - \angle C) \\
+&= 180^\circ - (14^\circ + 90^\circ) = \boxed{76^\circ}.
+\end{align*}",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_261, flipping '+' to '-' in sub-expression '180^\circ - (\angle' -> '180^\circ - (\angle' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_262,math500_262,OP_SIGN_FLIP,"Since $10^x - 10 = 9990,$ we have $$10^x = 9990+10=10000.$$If $10^x = 10000,$ then $x=\boxed{4},$ since $10000$ ends in four zeroes.","Since $10^x - 10 = 9990,$ we have $$10^x = 9990-10=10000.$$If $10^x = 10000,$ then $x=\boxed{4},$ since $10000$ ends in four zeroes.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_262, flipping '+' to '-' in sub-expression 'nce $10^x - 10 = 999' -> 'nce $10^x - 10 = 999' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_263,math500_263,OP_FRACTION_FLIP,The measure of an interior angle of a regular $n$-gon is $\frac{180(n-2)}{n}$ degrees and the measure of an exterior angle is $\frac{360}{n}$ degrees.,The measure of an interior angle of a regular $n$-gon is $\frac{n}{180(n-2)}$ degrees and the measure of an exterior angle is $\frac{360}{n}$ degrees.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_263, inverting fraction \frac{180(n-2)}{n} to \frac{n}{180(n-2)} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_264,math500_264,OP_SIGN_FLIP,Observe that $BD=\sqrt{BE^2-DE^2}=\sqrt{5^2-3^2}=4$ units.,Observe that $BD=\sqrt{BE^2+DE^2}=\sqrt{5^2-3^2}=4$ units.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_264, flipping '-' to '+' in sub-expression '\sqrt{BE^2-DE^2}=\sq' -> '\sqrt{BE^2+DE^2}=\sq' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_271,math500_271,OP_SIGN_FLIP,"We note that $$997\equiv -3\pmod{1000},$$and $$(-3)\cdot 333 = -999 = -1000+1\equiv 1\pmod{1000}.$$Therefore, $$997\cdot 333\equiv 1\pmod{1000},$$and the inverse of $997$ modulo $1000$ is $\boxed{333}$.","We note that $$997\equiv -3\pmod{1000},$$and $$(-3)\cdot 333 = -999 = -1000-1\equiv 1\pmod{1000}.$$Therefore, $$997\cdot 333\equiv 1\pmod{1000},$$and the inverse of $997$ modulo $1000$ is $\boxed{333}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_271, flipping '+' to '-' in sub-expression '997\equiv -3\pmod{10' -> '997\equiv -3\pmod{10' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_275,math500_275,OP_SIGN_FLIP,"We have $f(5) = 2(5) -3 = 7$, so $g(f(5)-1) = g(7-1) = g(6) = 6+1 = \boxed{7}$.","We have $f(5) = 2(5) -3 = 7$, so $g(f(5)-1) = g(7-1) = g(6) = 6-1 = \boxed{7}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_275, flipping '+' to '-' in sub-expression '5) = 2(5) -3 = 7$, s' -> '5) = 2(5) -3 = 7$, s' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_276,math500_276,OP_SIGN_FLIP,Suppose that  $k = \sqrt{120 - \sqrt{x}}$ is an integer.,Suppose that  $k = \sqrt{120 + \sqrt{x}}$ is an integer.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_276, flipping '-' to '+' in sub-expression '\sqrt{120 - \sqrt{x}' -> '\sqrt{120 + \sqrt{x}' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_278,math500_278,OP_SIGN_FLIP,"The largest eight-digit base 2 integer is 1 less than the smallest nine-digit base 2 integer, which is $$ 100000000_{2} = 1 \cdot 2^8 = 256. $$Thus, the largest eight-digit base 2 integer is $256 - 1 = \boxed{255}$.","The largest eight+digit base 2 integer is 1 less than the smallest nine-digit base 2 integer, which is $$ 100000000_{2} = 1 \cdot 2^8 = 256. $$Thus, the largest eight-digit base 2 integer is $256 - 1 = \boxed{255}$.",YES,NO,YES,YES,YES,NO,FAILED,"In problem math500_278, perturbation fails semantic quality criteria: English prose word hyphenation corrupted ('eight+digit'). Excluded prospectively from confirmatory registry."
+pair_math500_280,math500_280,OP_SIGN_FLIP,"Distributing and combining like terms, we have $a(2a+b)-2a^2+ab=2a^2+ab-2a^2+ab=2ab$.","Distributing and combining like terms, we have $a(2a-b)-2a^2+ab=2a^2+ab-2a^2+ab=2ab$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_280, flipping '+' to '-' in sub-expression 'have $a(2a+b)-2a^2+a' -> 'have $a(2a-b)-2a^2+a' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_281,math500_281,OP_SIGN_FLIP,"The sum of the angle measures in a pentagon is $180(5-2) = 540$ degrees, so each of the interior angles of regular pentagon $FGHIJ$ has measure $540^\circ / 5 = 108^\circ$.","The sum of the angle measures in a pentagon is $180(5+2) = 540$ degrees, so each of the interior angles of regular pentagon $FGHIJ$ has measure $540^\circ / 5 = 108^\circ$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_281, flipping '-' to '+' in sub-expression 'is $180(5-2) = 540$' -> 'is $180(5+2) = 540$' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_284,math500_284,OP_FRACTION_FLIP,"Since $\cot^{-1} \left( \frac{1}{x} \right) = \tan^{-1} x$ for all $x,$ we can write","Since $\cot^{-1} \left( \frac{x}{1} \right) = \tan^{-1} x$ for all $x,$ we can write",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_284, inverting fraction \frac{1}{x} to \frac{x}{1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_286,math500_286,OP_FRACTION_FLIP,"For a triangle with side lengths $a,$ $b,$ $c,$ let $s = \frac{a + b + c}{2},$ and let
+\begin{align*}
+x &= s - a = \frac{-a + b + c}{2}, \\
+y &= s - b = \frac{a - b + c}{2}, \\
+z &= s - c = \frac{a + b - c}{2}.
+\end{align*}By the Triangle Inequality, $x,$ $y,$ and $z$ are all positive.  (This technique is often referred to as the Ravi Substitution.)  Note that
+\begin{align*}
+a &= y + z, \\
+b &= x + z, \\
+c &= x + y.
+\end{align*}If $s$ is even, then $x,$ $y,$ and $z$ are all positive integers.","For a triangle with side lengths $a,$ $b,$ $c,$ let $s = \frac{2}{a + b + c},$ and let
+\begin{align*}
+x &= s - a = \frac{-a + b + c}{2}, \\
+y &= s - b = \frac{a - b + c}{2}, \\
+z &= s - c = \frac{a + b - c}{2}.
+\end{align*}By the Triangle Inequality, $x,$ $y,$ and $z$ are all positive.  (This technique is often referred to as the Ravi Substitution.)  Note that
+\begin{align*}
+a &= y + z, \\
+b &= x + z, \\
+c &= x + y.
+\end{align*}If $s$ is even, then $x,$ $y,$ and $z$ are all positive integers.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_286, inverting fraction \frac{a + b + c}{2} to \frac{2}{a + b + c} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_288,math500_288,OP_SIGN_FLIP,"We see that $(3,-10,1)$ is a point on the first line.","We see that $(3,+10,1)$ is a point on the first line.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_288, flipping '-' to '+' in sub-expression 'that $(3,-10,1)$ is' -> 'that $(3,+10,1)$ is' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_289,math500_289,OP_SIGN_FLIP,"\[a + b + c + d \ge 4 \sqrt[4]{abcd},\]","\[a - b + c + d \ge 4 \sqrt[4]{abcd},\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_289, flipping '+' to '-' in sub-expression '\[a + b + c +' -> '\[a - b + c +' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_290,math500_290,OP_FRACTION_FLIP,Factoring the quadratic on the left gives $$\frac{(2r-7)(3r+1)}{2r-7} = 4r-3.$$Canceling the common factor on the left gives $3r + 1 = 4r - 3$.,Factoring the quadratic on the left gives $$\frac{2r-7}{(2r-7)(3r+1)} = 4r-3.$$Canceling the common factor on the left gives $3r + 1 = 4r - 3$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_290, inverting fraction \frac{(2r-7)(3r+1)}{2r-7} to \frac{2r-7}{(2r-7)(3r+1)} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_294,math500_294,OP_SIGN_FLIP,"The sum of the set $\{n-1, n, n+1\}$ of three consecutive integers is $3n$.","The sum of the set $\{n-1, n, n-1\}$ of three consecutive integers is $3n$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_294, flipping '+' to '-' in sub-expression 'e set $\{n-1, n, n+1' -> 'e set $\{n-1, n, n-1' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_295,math500_295,OP_SIGN_FLIP,"By the Binomial Theorem,
+\begin{align*}
+(z + i)^4 &= z^4 + 4z^3 i + 6z^2 i^2 + 4zi^3 + 1 \\
+&= z^4 + 4iz^3 - 6z^2 - 4iz + 1.
+\end{align*}So, if $z^4 + 4z^3 i - 6z^2 - 4zi - i = 0,$ then","By the Binomial Theorem,
+\begin{align*}
+(z - i)^4 &= z^4 + 4z^3 i + 6z^2 i^2 + 4zi^3 + 1 \\
+&= z^4 + 4iz^3 - 6z^2 - 4iz + 1.
+\end{align*}So, if $z^4 + 4z^3 i - 6z^2 - 4zi - i = 0,$ then",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_295, flipping '+' to '-' in sub-expression 'lign*}
+(z + i)^4 &=' -> 'lign*}
+(z - i)^4 &=' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_299,math500_299,OP_SIGN_FLIP,The length of the rectangle is $5 - (-5) = 10$ units.,The length of the rectangle is $5 + (-5) = 10$ units.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_299, flipping '-' to '+' in sub-expression 'gle is $5 - (-5) = 1' -> 'gle is $5 + (-5) = 1' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_304,math500_304,OP_FRACTION_FLIP,\[\frac{(x + 5)(x + 2)}{x + 1} = \frac{x^2 + 7x + 10}{x + 1}.\],\[\frac{x + 1}{(x + 5)(x + 2)} = \frac{x^2 + 7x + 10}{x + 1}.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_304, inverting fraction \frac{(x + 5)(x + 2)}{x + 1} to \frac{x + 1}{(x + 5)(x + 2)} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_305,math500_305,OP_SIGN_FLIP,"We can start by cross-multiplying: \begin{align*} 3\sqrt{3x-1}&=2\sqrt{2x}
+\\\Rightarrow \qquad (3\sqrt{3x-1})^2 &=(2\sqrt{2x})^2
+\\\Rightarrow \qquad 9(3x-1)& =4(2x)
+\\\Rightarrow \qquad 27x-9& =8x
+\\ \Rightarrow \qquad19x&=9
+\\ \Rightarrow \qquad x&=\boxed{\frac9{19}}.
+\end{align*}Checking, we see that this value of $x$ does indeed work, so it is not an extraneous solution.","We can start by cross+multiplying: \begin{align*} 3\sqrt{3x-1}&=2\sqrt{2x}
+\\\Rightarrow \qquad (3\sqrt{3x-1})^2 &=(2\sqrt{2x})^2
+\\\Rightarrow \qquad 9(3x-1)& =4(2x)
+\\\Rightarrow \qquad 27x-9& =8x
+\\ \Rightarrow \qquad19x&=9
+\\ \Rightarrow \qquad x&=\boxed{\frac9{19}}.
+\end{align*}Checking, we see that this value of $x$ does indeed work, so it is not an extraneous solution.",YES,NO,YES,YES,YES,NO,FAILED,"In problem math500_305, perturbation fails semantic quality criteria: English prose word hyphenation corrupted ('cross+multiplying'). Excluded prospectively from confirmatory registry."
+pair_math500_312,math500_312,OP_FRACTION_FLIP,"If $x < 5,$ then $\frac{1}{x - 5} < 0,$ and if $x > 5,$ then $\frac{1}{x - 5} > 0,$ so the solution is $x \in \boxed{(5,\infty)}.$","If $x < 5,$ then $\frac{x - 5}{1} < 0,$ and if $x > 5,$ then $\frac{1}{x - 5} > 0,$ so the solution is $x \in \boxed{(5,\infty)}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_312, inverting fraction \frac{1}{x - 5} to \frac{x - 5}{1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_316,math500_316,OP_SIGN_FLIP,"We see that $10x^2-x-24=(5x-8)(2x+3)$, thus $A = 5$ and $B = 2$.","We see that $10x^2-x-24=(5x-8)(2x-3)$, thus $A = 5$ and $B = 2$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_316, flipping '+' to '-' in sub-expression 'hat $10x^2-x-24=(5x-' -> 'hat $10x^2-x-24=(5x-' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_319,math500_319,OP_SIGN_FLIP,We rearrange the given equation to $|x-4| = 12$.,We rearrange the given equation to $|x+4| = 12$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_319, flipping '-' to '+' in sub-expression 'ion to $|x-4| = 12$.' -> 'ion to $|x+4| = 12$.' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_320,math500_320,OP_SIGN_FLIP,"For any angle $x$, we have $\cos(180^\circ - x)=-\cos x$, so $\cos \angle RPS = \cos(180^\circ - \angle RPQ) =- \cos\angle RPQ$.","For any angle $x$, we have $\cos(180^\circ + x)=-\cos x$, so $\cos \angle RPS = \cos(180^\circ - \angle RPQ) =- \cos\angle RPQ$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_320, flipping '-' to '+' in sub-expression '180^\circ - x)=-\cos' -> '180^\circ + x)=-\cos' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_322,math500_322,OP_SIGN_FLIP,"We have $q(1) = b\cdot 1 + 1 = b+1$, so $f(q(1)) = f(b+1)$.","We have $q(1) = b\cdot 1 - 1 = b+1$, so $f(q(1)) = f(b+1)$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_322, flipping '+' to '-' in sub-expression 'b\cdot 1 + 1 = b+1$' -> 'b\cdot 1 - 1 = b+1$' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_327,math500_327,OP_SIGN_FLIP,"Let $P(x) = x^3 + ax^2 + bx + 5.$  The remainder $R(x)$ has degree at most 1, so let $R(x) = cx + d.$","Let $P(x) = x^3 - ax^2 + bx + 5.$  The remainder $R(x)$ has degree at most 1, so let $R(x) = cx + d.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_327, flipping '+' to '-' in sub-expression '(x) = x^3 + ax^2 + b' -> '(x) = x^3 - ax^2 + b' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_328,math500_328,OP_SIGN_FLIP,"Since $-\frac58$ is a negative number, $f(x)$ is only defined for integer values of $x$, and will alternate between positive and negative values.","Since $+\frac58$ is a negative number, $f(x)$ is only defined for integer values of $x$, and will alternate between positive and negative values.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_328, flipping '-' to '+' in sub-expression 'Since $-\frac58$' -> 'Since $+\frac58$' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_331,math500_331,OP_SIGN_FLIP,"First, we'll divide $\sqrt{5}$ into each term in the numerator of the fraction inside the big radical: $$\sqrt{\dfrac{\dfrac{5}{\sqrt{80}}+\dfrac{\sqrt{845}}{9}+\sqrt{45}}{\sqrt5}}=
+\sqrt{\frac{5}{\sqrt{80}\cdot\sqrt{5}} + \frac{\sqrt{845}}{9\sqrt{5}} + \frac{\sqrt{45}}{\sqrt{5}}}.
+$$Let's attack each fraction within the square root separately.","First, we'll divide $\sqrt{5}$ into each term in the numerator of the fraction inside the big radical: $$\sqrt{\dfrac{\dfrac{5}{\sqrt{80}}-\dfrac{\sqrt{845}}{9}+\sqrt{45}}{\sqrt5}}=
+\sqrt{\frac{5}{\sqrt{80}\cdot\sqrt{5}} + \frac{\sqrt{845}}{9\sqrt{5}} + \frac{\sqrt{45}}{\sqrt{5}}}.
+$$Let's attack each fraction within the square root separately.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_331, flipping '+' to '-' in sub-expression '\sqrt{80}}+\dfrac{\s' -> '\sqrt{80}}-\dfrac{\s' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_332,math500_332,OP_SIGN_FLIP,"We can write $(x + y)(y + z)$ as $xz + y(x + y + z).$  By AM-GM,","We can write $(x - y)(y + z)$ as $xz + y(x + y + z).$  By AM-GM,",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_332, flipping '+' to '-' in sub-expression 'write $(x + y)(y + z' -> 'write $(x - y)(y + z' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_333,math500_333,OP_SIGN_FLIP,"\[\sqrt[3]{2} = a + \cfrac{1}{b + \cfrac{1}{c + \cfrac{1}{d + \dotsb}}} > a,\]","\[\sqrt[3]{2} = a - \cfrac{1}{b + \cfrac{1}{c + \cfrac{1}{d + \dotsb}}} > a,\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_333, flipping '+' to '-' in sub-expression '3]{2} = a + \cfrac{1' -> '3]{2} = a - \cfrac{1' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_334,math500_334,OP_SIGN_FLIP,"Adding the first given equation to the second, we have $a+2b+c=5$.","Adding the first given equation to the second, we have $a-2b+c=5$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_334, flipping '+' to '-' in sub-expression 'we have $a+2b+c=5$.' -> 'we have $a-2b+c=5$.' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_337,math500_337,OP_SIGN_FLIP,"Call the integers $n-1$, $n$, and $n+1$.","Call the integers $n-1$, $n$, and $n-1$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_337, flipping '+' to '-' in sub-expression 'ntegers $n-1$, $n$,' -> 'ntegers $n-1$, $n$,' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_339,math500_339,OP_SIGN_FLIP,\[y = a(x - h)^2 + k.\],\[y = a(x - h)^2 - k.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_339, flipping '+' to '-' in sub-expression '\[y = a(x - h)^2 + k' -> '\[y = a(x - h)^2 - k' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_340,math500_340,OP_SIGN_FLIP,"Since $\mathbf{a}, \mathbf{b},$ and $\mathbf{a-b}$ all lie in the same plane, from the diagram below, we see that the angle between $\mathbf{a}$ and $\mathbf{a} - \mathbf{b}$ is $84^\circ - 29^\circ = \boxed{55^\circ}.$","Since $\mathbf{a}, \mathbf{b},$ and $\mathbf{a+b}$ all lie in the same plane, from the diagram below, we see that the angle between $\mathbf{a}$ and $\mathbf{a} - \mathbf{b}$ is $84^\circ - 29^\circ = \boxed{55^\circ}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_340, flipping '-' to '+' in sub-expression '$\mathbf{a-b}$ all l' -> '$\mathbf{a+b}$ all l' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_341,math500_341,OP_FRACTION_FLIP,The question is asking us to find the smallest value of $x$ such that $x = 2\cdot\frac{1}{x} - 1$.,The question is asking us to find the smallest value of $x$ such that $x = 2\cdot\frac{x}{1} - 1$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_341, inverting fraction \frac{1}{x} to \frac{x}{1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_344,math500_344,OP_SIGN_FLIP,"In order for this to happen, we know that $4a+3=7a-12$.","In order for this to happen, we know that $4a-3=7a-12$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_344, flipping '+' to '-' in sub-expression 'w that $4a+3=7a-12$.' -> 'w that $4a-3=7a-12$.' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_345,math500_345,OP_SIGN_FLIP,"We have $g(16) = 4$, so $t(g(16)) = t(4) = 3- g(4) = 3-\sqrt{4} = 3-2 = \boxed{1}$.","We have $g(16) = 4$, so $t(g(16)) = t(4) = 3+ g(4) = 3-\sqrt{4} = 3-2 = \boxed{1}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_345, flipping '-' to '+' in sub-expression '= t(4) = 3- g(4) = 3' -> '= t(4) = 3+ g(4) = 3' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_346,math500_346,OP_SIGN_FLIP,We first cube each side of the equation to get $x^2 - 4x + 4 = 16^3$.,We first cube each side of the equation to get $x^2 - 4x - 4 = 16^3$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_346, flipping '+' to '-' in sub-expression 'get $x^2 - 4x + 4 =' -> 'get $x^2 - 4x - 4 =' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_347,math500_347,OP_SIGN_FLIP,"Using the distributive property and combining like terms, we have  $4(3r^3+5r-6)-6(2r^3-r^2+4r) = 12r^3+20r-24-12r^3+6r^2-24r.$ Simplifying, we get $\boxed{6r^2-4r-24}.$","Using the distributive property and combining like terms, we have  $4(3r^3-5r-6)-6(2r^3-r^2+4r) = 12r^3+20r-24-12r^3+6r^2-24r.$ Simplifying, we get $\boxed{6r^2-4r-24}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_347, flipping '+' to '-' in sub-expression 'e  $4(3r^3+5r-6)-6(2' -> 'e  $4(3r^3-5r-6)-6(2' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_351,math500_351,OP_FRACTION_FLIP,"Let $x = \cos \left( \frac{2 \pi}{15} \right) \cos \left (\frac {4 \pi}{15} \right) \cos \left( \frac{8 \pi}{15} \right) \cos \left( \frac {16 \pi}{15} \right).$  Then by repeated application of the double angle formula,
+\begin{align*}
+x \sin \left( \frac{2 \pi}{15} \right) &= \sin \left( \frac{2 \pi}{15} \right) \cos \left( \frac{2 \pi}{15} \right) \cos \left (\frac {4 \pi}{15} \right) \cos \left( \frac{8 \pi}{15} \right) \cos \left( \frac {16 \pi}{15} \right) \\
+&= \frac{1}{2} \sin \left( \frac{4 \pi}{15} \right) \cos \left (\frac {4 \pi}{15} \right) \cos \left( \frac{8 \pi}{15} \right) \cos \left( \frac {16 \pi}{15} \right) \\
+&= \frac{1}{4} \sin \left (\frac {8 \pi}{15} \right) \cos \left( \frac{8 \pi}{15} \right) \cos \left( \frac {16 \pi}{15} \right) \\
+&= \frac{1}{8} \sin \left( \frac{16 \pi}{15} \right) \cos \left( \frac {16 \pi}{15} \right) \\
+&= \frac{1}{16} \sin \left( \frac{32 \pi}{15} \right) \\
+&= \frac{1}{16} \sin \left( \frac{2 \pi}{15} \right),
+\end{align*}so $x = \boxed{\frac{1}{16}}.$","Let $x = \cos \left( \frac{15}{2 \pi} \right) \cos \left (\frac {4 \pi}{15} \right) \cos \left( \frac{8 \pi}{15} \right) \cos \left( \frac {16 \pi}{15} \right).$  Then by repeated application of the double angle formula,
+\begin{align*}
+x \sin \left( \frac{2 \pi}{15} \right) &= \sin \left( \frac{2 \pi}{15} \right) \cos \left( \frac{2 \pi}{15} \right) \cos \left (\frac {4 \pi}{15} \right) \cos \left( \frac{8 \pi}{15} \right) \cos \left( \frac {16 \pi}{15} \right) \\
+&= \frac{1}{2} \sin \left( \frac{4 \pi}{15} \right) \cos \left (\frac {4 \pi}{15} \right) \cos \left( \frac{8 \pi}{15} \right) \cos \left( \frac {16 \pi}{15} \right) \\
+&= \frac{1}{4} \sin \left (\frac {8 \pi}{15} \right) \cos \left( \frac{8 \pi}{15} \right) \cos \left( \frac {16 \pi}{15} \right) \\
+&= \frac{1}{8} \sin \left( \frac{16 \pi}{15} \right) \cos \left( \frac {16 \pi}{15} \right) \\
+&= \frac{1}{16} \sin \left( \frac{32 \pi}{15} \right) \\
+&= \frac{1}{16} \sin \left( \frac{2 \pi}{15} \right),
+\end{align*}so $x = \boxed{\frac{1}{16}}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_351, inverting fraction \frac{2 \pi}{15} to \frac{15}{2 \pi} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_352,math500_352,OP_SIGN_FLIP,"Let $\theta = \angle BAM.$  Then $\angle BDM = 3 \theta.$  Since $\angle BDM$ is external to triangle $ABD,$ $\angle BDM = \angle BAD + \angle ABD.$  Hence, $\angle ABD = \angle BDM - \angle BAD = 2 \theta.$","Let $\theta = \angle BAM.$  Then $\angle BDM = 3 \theta.$  Since $\angle BDM$ is external to triangle $ABD,$ $\angle BDM = \angle BAD - \angle ABD.$  Hence, $\angle ABD = \angle BDM - \angle BAD = 2 \theta.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_352, flipping '+' to '-' in sub-expression 'angle BAD + \angle A' -> 'angle BAD - \angle A' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_355,math500_355,OP_SIGN_FLIP,"\[a + b \ge 2 \sqrt{ab},\]","\[a - b \ge 2 \sqrt{ab},\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_355, flipping '+' to '-' in sub-expression '\[a + b \ge 2' -> '\[a - b \ge 2' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_358,math500_358,OP_SIGN_FLIP,"\[\left(\frac x2 - 3\right)^2 = \frac 14 \left( x - 6\right)^2,\]","\[\left(\frac x2 + 3\right)^2 = \frac 14 \left( x - 6\right)^2,\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_358, flipping '-' to '+' in sub-expression '(\frac x2 - 3\right)' -> '(\frac x2 + 3\right)' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_359,math500_359,OP_FRACTION_FLIP,"Let $s_1 = x + y + z$ and $s_2 = xy + xz + yz.$  Then
+\begin{align*}
+s_1 s_2 &= (x + y + z)(xy + xz + yz) \\
+&= x^2 y + xy^2 + x^2 z + xz^2 + y^2 z + yz^2 + 3xyz \\
+&= 12 + 3 \cdot 4 = 24.
+\end{align*}Also,
+\begin{align*}
+s_1^3 &= (x + y + z)^3 \\
+&= (x^3 + y^3 + z^3) + 3(x^2 y + xy^2 + x^2 z + xz^2 + y^2 z + yz^2) + 6xyz \\
+&= 4 + 3 \cdot 12 + 6 \cdot 4 = 64,
+\end{align*}so $s_1 = 4.$  Hence, $s_2 = \frac{24}{s_1} = \boxed{6}.$","Let $s_1 = x + y + z$ and $s_2 = xy + xz + yz.$  Then
+\begin{align*}
+s_1 s_2 &= (x + y + z)(xy + xz + yz) \\
+&= x^2 y + xy^2 + x^2 z + xz^2 + y^2 z + yz^2 + 3xyz \\
+&= 12 + 3 \cdot 4 = 24.
+\end{align*}Also,
+\begin{align*}
+s_1^3 &= (x + y + z)^3 \\
+&= (x^3 + y^3 + z^3) + 3(x^2 y + xy^2 + x^2 z + xz^2 + y^2 z + yz^2) + 6xyz \\
+&= 4 + 3 \cdot 12 + 6 \cdot 4 = 64,
+\end{align*}so $s_1 = 4.$  Hence, $s_2 = \frac{s_1}{24} = \boxed{6}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_359, inverting fraction \frac{24}{s_1} to \frac{s_1}{24} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_360,math500_360,OP_SIGN_FLIP,"The line passes through $\begin{pmatrix} -5 \\ 4 \end{pmatrix}$ and $\begin{pmatrix} -1 \\ 3 \end{pmatrix},$ so its direction vector is proportional to","The line passes through $\begin{pmatrix} +5 \\ 4 \end{pmatrix}$ and $\begin{pmatrix} -1 \\ 3 \end{pmatrix},$ so its direction vector is proportional to",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_360, flipping '-' to '+' in sub-expression '{pmatrix} -5 \\ 4 \e' -> '{pmatrix} +5 \\ 4 \e' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_361,math500_361,OP_FRACTION_FLIP,"Let $A = \left( a, \frac{a^2}{8} \right)$ be one vertex of the triangle.","Let $A = \left( a, \frac{8}{a^2} \right)$ be one vertex of the triangle.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_361, inverting fraction \frac{a^2}{8} to \frac{8}{a^2} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_363,math500_363,OP_SIGN_FLIP,Converting the words in the problem into an equation gives us $3+\dfrac{1}{x} = \dfrac{7}{x}$.,Converting the words in the problem into an equation gives us $3-\dfrac{1}{x} = \dfrac{7}{x}$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_363, flipping '+' to '-' in sub-expression 'ives us $3+\dfrac{1}' -> 'ives us $3-\dfrac{1}' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_366,math500_366,OP_SIGN_FLIP,Each group of 7 numbers would have the sum of residues $1+3+5+0+2+4+6 \equiv 21 \equiv 0 \pmod7$.,Each group of 7 numbers would have the sum of residues $1-3+5+0+2+4+6 \equiv 21 \equiv 0 \pmod7$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_366, flipping '+' to '-' in sub-expression 'esidues $1+3+5+0+2+4' -> 'esidues $1-3+5+0+2+4' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_367,math500_367,OP_SIGN_FLIP,"Since $f(2) = 6$, we have $f^{-1}(6)=2$. (Note that the hypothesis that $f$ has an inverse implies that there are no other values of $x$ with $f(x) = 6$.)  Similarly, $f(1) =2$ implies $f^{-1}(2)=1$.","Since $f(2) = 6$, we have $f^{+1}(6)=2$. (Note that the hypothesis that $f$ has an inverse implies that there are no other values of $x$ with $f(x) = 6$.)  Similarly, $f(1) =2$ implies $f^{-1}(2)=1$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_367, flipping '-' to '+' in sub-expression 'have $f^{-1}(6)=2$.' -> 'have $f^{+1}(6)=2$.' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_368,math500_368,OP_SIGN_FLIP,That means $8+8=16$ must be greater than the length of the third side.,That means $8-8=16$ must be greater than the length of the third side.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_368, flipping '+' to '-' in sub-expression 't means $8+8=16$ mus' -> 't means $8-8=16$ mus' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_370,math500_370,OP_SIGN_FLIP,The dot product of $\begin{pmatrix} -2 \\ 0 \\ 7 \end{pmatrix}$ and $\begin{pmatrix} 3 \\ 4 \\ -5 \end{pmatrix}$ is,The dot product of $\begin{pmatrix} +2 \\ 0 \\ 7 \end{pmatrix}$ and $\begin{pmatrix} 3 \\ 4 \\ -5 \end{pmatrix}$ is,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_370, flipping '-' to '+' in sub-expression '{pmatrix} -2 \\ 0 \\' -> '{pmatrix} +2 \\ 0 \\' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_373,math500_373,OP_SIGN_FLIP,"In this case, the conjugate of $1+2i$ is $1-2i$.","In this case, the conjugate of $1-2i$ is $1-2i$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_373, flipping '+' to '-' in sub-expression 'gate of $1+2i$ is $1' -> 'gate of $1-2i$ is $1' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_376,math500_376,OP_FRACTION_FLIP,"Since $A$ has coordinates $(10,-10)$ and $O$ has coordinates $(0,0)$, $AO$ has slope $\frac{-10-0}{10-0}=-1$.","Since $A$ has coordinates $(10,-10)$ and $O$ has coordinates $(0,0)$, $AO$ has slope $\frac{10-0}{-10-0}=-1$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_376, inverting fraction \frac{-10-0}{10-0} to \frac{10-0}{-10-0} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_380,math500_380,OP_SIGN_FLIP,"Note that $|x^2 - 81| \ge 0$ for all $x,$ with $|x^2 - 81| = 0$ only for $x = \pm 9.$","Note that $|x^2 + 81| \ge 0$ for all $x,$ with $|x^2 - 81| = 0$ only for $x = \pm 9.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_380, flipping '-' to '+' in sub-expression 'hat $|x^2 - 81| \ge' -> 'hat $|x^2 + 81| \ge' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_381,math500_381,OP_SIGN_FLIP,"If a triangle with sides of length 1, $x$, and $y$ exists, the triangle inequality must be satisfied, which states that $x+y>1$, $1+x>y$, and $1+y>x$.","If a triangle with sides of length 1, $x$, and $y$ exists, the triangle inequality must be satisfied, which states that $x-y>1$, $1+x>y$, and $1+y>x$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_381, flipping '+' to '-' in sub-expression 'es that $x+y>1$, $1+' -> 'es that $x-y>1$, $1+' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_382,math500_382,OP_SIGN_FLIP,"Then the length of the track is $2w + 2 \pi r = 400,$ so $w + \pi r = 200.$  By AM-GM,","Then the length of the track is $2w - 2 \pi r = 400,$ so $w + \pi r = 200.$  By AM-GM,",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_382, flipping '+' to '-' in sub-expression 'ck is $2w + 2 \pi r' -> 'ck is $2w - 2 \pi r' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_383,math500_383,OP_SIGN_FLIP,"Re-arranging, $x^2 - 5x - 14 \le 0$.","Re+arranging, $x^2 - 5x - 14 \le 0$.",YES,NO,YES,YES,YES,NO,FAILED,"In problem math500_383, perturbation fails semantic quality criteria: English prose word hyphenation corrupted ('Re+arranging'). Excluded prospectively from confirmatory registry."
+pair_math500_384,math500_384,OP_SIGN_FLIP,"Rearranging and grouping, we obtain $(19x - 4x) + (1 - 81) = \boxed{15x - 80}$.","Rearranging and grouping, we obtain $(19x - 4x) - (1 - 81) = \boxed{15x - 80}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_384, flipping '+' to '-' in sub-expression 'ain $(19x - 4x) + (1' -> 'ain $(19x - 4x) - (1' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_386,math500_386,OP_SIGN_FLIP,"Getting rid of the absolute value, we have $-5.6 \le x-2 \le 5.6$, or $-3.6 \le x \le 7.6$.","Getting rid of the absolute value, we have $+5.6 \le x-2 \le 5.6$, or $-3.6 \le x \le 7.6$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_386, flipping '-' to '+' in sub-expression 'we have $-5.6 \le x' -> 'we have $+5.6 \le x' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_387,math500_387,OP_SIGN_FLIP,We have $f(-2) = 5(-2)^2 + 3(-2) + 4 = 5(4) -6 + 4 = \boxed{18}$.,We have $f(-2) = 5(-2)^2 - 3(-2) + 4 = 5(4) -6 + 4 = \boxed{18}$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_387, flipping '+' to '-' in sub-expression 'e have $f(-2) = 5(-2' -> 'e have $f(-2) = 5(-2' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_389,math500_389,OP_FRACTION_FLIP,"Because $\triangle RST$ is a right triangle, $\sin R = \frac{ST}{RT}$.","Because $\triangle RST$ is a right triangle, $\sin R = \frac{RT}{ST}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_389, inverting fraction \frac{ST}{RT} to \frac{RT}{ST} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_390,math500_390,OP_SIGN_FLIP,"By the distance formula, we are trying to minimize $\sqrt{x^2+y^2}=\sqrt{x^2+(1/2)(x^4-6x^2+9)}$.","By the distance formula, we are trying to minimize $\sqrt{x^2-y^2}=\sqrt{x^2+(1/2)(x^4-6x^2+9)}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_390, flipping '+' to '-' in sub-expression '$\sqrt{x^2+y^2}=\sqr' -> '$\sqrt{x^2-y^2}=\sqr' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_391,math500_391,OP_SIGN_FLIP,The number $f^{-1}(0)$ is the value of $x$ such that $f(x) = 0$.,The number $f^{+1}(0)$ is the value of $x$ such that $f(x) = 0$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_391, flipping '-' to '+' in sub-expression 'umber $f^{-1}(0)$ is' -> 'umber $f^{+1}(0)$ is' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_392,math500_392,OP_SIGN_FLIP,"Let $P = (x,y,z),$ and let the vertices of the octahedron be $A = (a,0,0),$ $B = (-a,0,0),$ $C = (0,a,0),$ $D = (0,-a,0),$ $E = (0,0,a),$ and $F = (0,0,-a).$  Then the squares of the distances from $P$ to the vertices are
+\begin{align*}
+d_A^2 &= (x - a)^2 + y^2 + z^2, \\
+d_B^2 &= (x + a)^2 + y^2 + z^2, \\
+d_C^2 &= x^2 + (y - a)^2 + z^2, \\
+d_D^2 &= x^2 + (y + a)^2 + z^2, \\
+d_E^2 &= x^2 + y^2 + (z - a)^2, \\
+d_F^2 &= x^2 + y^2 + (z + a)^2.
+\end{align*}Note that","Let $P = (x,y,z),$ and let the vertices of the octahedron be $A = (a,0,0),$ $B = (-a,0,0),$ $C = (0,a,0),$ $D = (0,-a,0),$ $E = (0,0,a),$ and $F = (0,0,-a).$  Then the squares of the distances from $P$ to the vertices are
+\begin{align*}
+d_A^2 &= (x - a)^2 - y^2 + z^2, \\
+d_B^2 &= (x + a)^2 + y^2 + z^2, \\
+d_C^2 &= x^2 + (y - a)^2 + z^2, \\
+d_D^2 &= x^2 + (y + a)^2 + z^2, \\
+d_E^2 &= x^2 + y^2 + (z - a)^2, \\
+d_F^2 &= x^2 + y^2 + (z + a)^2.
+\end{align*}Note that",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_392, flipping '+' to '-' in sub-expression '),$ $B = (-a,0,0),$' -> '),$ $B = (-a,0,0),$' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_393,math500_393,OP_FRACTION_FLIP,"If $j_1$ is the acceleration of Jen's ball and $j_2$ is the acceleration of Jack's ball, then we have $$j_1 \cdot 200 = j_2 \cdot 150\qquad \Rightarrow\qquad \frac{j_1}{j_2} = \boxed{\frac 34}.$$","If $j_1$ is the acceleration of Jen's ball and $j_2$ is the acceleration of Jack's ball, then we have $$j_1 \cdot 200 = j_2 \cdot 150\qquad \Rightarrow\qquad \frac{j_2}{j_1} = \boxed{\frac 34}.$$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_393, inverting fraction \frac{j_1}{j_2} to \frac{j_2}{j_1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_394,math500_394,OP_SIGN_FLIP,"Expanding $z,$ we get
+\begin{align*}
+z &= 4x^2 - 4xy + y^2 - 2y^2 - 3y \\
+&= -y^2 - (4x + 3) y + 4x^2.
+\end{align*}After Archimedes chooses $x,$ Brahmagupta will choose","Expanding $z,$ we get
+\begin{align*}
+z &= 4x^2 - 4xy - y^2 - 2y^2 - 3y \\
+&= -y^2 - (4x + 3) y + 4x^2.
+\end{align*}After Archimedes chooses $x,$ Brahmagupta will choose",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_394, flipping '+' to '-' in sub-expression 'z &= 4x^2 - 4xy + y^' -> 'z &= 4x^2 - 4xy - y^' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_397,math500_397,OP_SIGN_FLIP,Expanding and collecting terms on the left hand side of the first equation gives $5x+2=17$.,Expanding and collecting terms on the left hand side of the first equation gives $5x-2=17$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_397, flipping '+' to '-' in sub-expression 'gives $5x+2=17$.' -> 'gives $5x-2=17$.' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_399,math500_399,OP_SIGN_FLIP,"\[
+\begin{array}{@{}c@{}c@{}c@{}c@{}c@{}c}
+& & & 1 & \\
+& 3 & 1 & 3. & 9 \\
++ & & 1 & 2. & 6
+\\ \cline{1-5}
+& 3 & 2 & 6. & 5 \\
+\end{array}
+\]","\[
+\begin{array}{@{}c@{}c@{}c@{}c@{}c@{}c}
+& & & 1 & \\
+& 3 & 1 & 3. & 9 \\
+- & & 1 & 2. & 6
+\\ \cline{1-5}
+& 3 & 2 & 6. & 5 \\
+\end{array}
+\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_399, flipping '+' to '-' in sub-expression '3. & 9 \\
++ & & 1 &' -> '3. & 9 \\
+- & & 1 &' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_400,math500_400,OP_SIGN_FLIP,"We have $QD=QB-DB=14-r$ and $QC=7$, so we can apply the Pythagorean theorem to triangle $QCD$ to obtain","We have $QD=QB+DB=14-r$ and $QC=7$, so we can apply the Pythagorean theorem to triangle $QCD$ to obtain",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_400, flipping '-' to '+' in sub-expression 'ave $QD=QB-DB=14-r$' -> 'ave $QD=QB+DB=14-r$' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_401,math500_401,OP_SIGN_FLIP,"Let $z = x + yi,$ where $x$ and $y$ are real numbers.","Let $z = x - yi,$ where $x$ and $y$ are real numbers.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_401, flipping '+' to '-' in sub-expression 'et $z = x + yi,$ whe' -> 'et $z = x - yi,$ whe' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_402,math500_402,OP_SIGN_FLIP,A $90^\circ$ rotation in the clockwise direction corresponds to multiplication by $\operatorname{cis} (-90^\circ) = -i.$,A $90^\circ$ rotation in the clockwise direction corresponds to multiplication by $\operatorname{cis} (+90^\circ) = -i.$,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_402, flipping '-' to '+' in sub-expression 'ame{cis} (-90^\circ)' -> 'ame{cis} (+90^\circ)' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_404,math500_404,OP_SIGN_FLIP,"Of the 5 boxes with pencils, 2 have pens also, so $5-2=3$ have pencils only.","Of the 5 boxes with pencils, 2 have pens also, so $5+2=3$ have pencils only.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_404, flipping '-' to '+' in sub-expression 'lso, so $5-2=3$ have' -> 'lso, so $5+2=3$ have' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_413,math500_413,OP_FRACTION_FLIP,\[\frac{(10r^3)(4r^6)}{8r^4}= \frac{40r^{3+6}}{8r^4} = \frac{40}{8}r^{3+6-4} = \boxed{5r^5}.\],\[\frac{8r^4}{(10r^3)(4r^6)}= \frac{40r^{3+6}}{8r^4} = \frac{40}{8}r^{3+6-4} = \boxed{5r^5}.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_413, inverting fraction \frac{(10r^3)(4r^6)}{8r^4} to \frac{8r^4}{(10r^3)(4r^6)} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_414,math500_414,OP_SIGN_FLIP,"First we multiply all terms in the equation by 3 to avoid fractions and then solve for $a$. \begin{align*}
+9\cdot5^2-4(5-a)^2&=3\cdot63\quad\Rightarrow\\
+-4(5-a)^2&=9\cdot21-9\cdot25\quad\Rightarrow\\
+&=9(-4)\quad\Rightarrow\\
+(5-a)^2&=9
+\end{align*} Therefore, \begin{align*}
+5-a=3\quad\text{ OR }\quad 5-a=-3\quad\Rightarrow\\
+2=a \quad\text{ OR }\quad 8=a.
+\end{align*} The sum of the values of $a$ is $2+8=\boxed{10}$.","First we multiply all terms in the equation by 3 to avoid fractions and then solve for $a$. \begin{align*}
+9\cdot5^2-4(5-a)^2&=3\cdot63\quad\Rightarrow\\
+-4(5-a)^2&=9\cdot21-9\cdot25\quad\Rightarrow\\
+&=9(-4)\quad\Rightarrow\\
+(5-a)^2&=9
+\end{align*} Therefore, \begin{align*}
+5-a=3\quad\text{ OR }\quad 5-a=-3\quad\Rightarrow\\
+2=a \quad\text{ OR }\quad 8=a.
+\end{align*} The sum of the values of $a$ is $2-8=\boxed{10}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_414, flipping '+' to '-' in sub-expression '9\cdot5^2-4(5-a)^2&' -> '9\cdot5^2-4(5-a)^2&' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_416,math500_416,OP_FRACTION_FLIP,"We can write
+\begin{align*}
+\sin^3 18^\circ + \sin^2 18^\circ &= \sin^2 18^\circ (\sin 18^\circ + 1) \\
+&= \sin^2 18^\circ (\sin 18^\circ + \sin 90^\circ).
+\end{align*}By sum-to-product,
+\begin{align*}
+\sin^2 18^\circ (\sin 18^\circ + \sin 90^\circ) &= \sin^2 18^\circ \cdot 2 \sin 54^\circ \cos 36^\circ \\
+&= 2 \sin^2 18^\circ \cos^2 36^\circ \\
+&= \frac{2 \sin^2 18^\circ \cos^2 18^\circ \cos^2 36^\circ}{\cos^2 18^\circ} \\
+&= \frac{4 \sin^2 18^\circ \cos^2 18^\circ \cos^2 36^\circ}{2 \cos^2 18^\circ}.
+\end{align*}Then by double angle formula,
+\begin{align*}
+\frac{4 \sin^2 18^\circ \cos^2 18^\circ \cos^2 36^\circ}{2 \cos^2 18^\circ} &= \frac{\sin^2 36^\circ \cos^2 36^\circ}{2 \cos^2 18^\circ} \\
+&= \frac{4 \sin^2 36^\circ \cos^2 36^\circ}{8 \cos^2 18^\circ} \\
+&= \frac{\sin^2 72^\circ}{8 \cos^2 18^\circ} \\
+&= \boxed{\frac{1}{8}}.
+\end{align*}Alternatively, we can plug in the value $\sin 18^\circ = \frac{\sqrt{5} - 1}{4}.$","We can write
+\begin{align*}
+\sin^3 18^\circ + \sin^2 18^\circ &= \sin^2 18^\circ (\sin 18^\circ + 1) \\
+&= \sin^2 18^\circ (\sin 18^\circ + \sin 90^\circ).
+\end{align*}By sum-to-product,
+\begin{align*}
+\sin^2 18^\circ (\sin 18^\circ + \sin 90^\circ) &= \sin^2 18^\circ \cdot 2 \sin 54^\circ \cos 36^\circ \\
+&= 2 \sin^2 18^\circ \cos^2 36^\circ \\
+&= \frac{\cos^2 18^\circ}{2 \sin^2 18^\circ \cos^2 18^\circ \cos^2 36^\circ} \\
+&= \frac{4 \sin^2 18^\circ \cos^2 18^\circ \cos^2 36^\circ}{2 \cos^2 18^\circ}.
+\end{align*}Then by double angle formula,
+\begin{align*}
+\frac{4 \sin^2 18^\circ \cos^2 18^\circ \cos^2 36^\circ}{2 \cos^2 18^\circ} &= \frac{\sin^2 36^\circ \cos^2 36^\circ}{2 \cos^2 18^\circ} \\
+&= \frac{4 \sin^2 36^\circ \cos^2 36^\circ}{8 \cos^2 18^\circ} \\
+&= \frac{\sin^2 72^\circ}{8 \cos^2 18^\circ} \\
+&= \boxed{\frac{1}{8}}.
+\end{align*}Alternatively, we can plug in the value $\sin 18^\circ = \frac{\sqrt{5} - 1}{4}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_416, inverting fraction \frac{2 \sin^2 18^\circ \cos^2 18^\circ \cos^2 36^\circ}{\cos^2 18^\circ} to \frac{\cos^2 18^\circ}{2 \sin^2 18^\circ \cos^2 18^\circ \cos^2 36^\circ} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_419,math500_419,OP_SIGN_FLIP,"\[\begin{pmatrix} 1 \\ 2 \\ -5 \end{pmatrix} \times \begin{pmatrix} a \\ b \\ c \end{pmatrix} = \begin{pmatrix} 90 \\ 30 \\ 30 \end{pmatrix},\]","\[\begin{pmatrix} 1 \\ 2 \\ +5 \end{pmatrix} \times \begin{pmatrix} a \\ b \\ c \end{pmatrix} = \begin{pmatrix} 90 \\ 30 \\ 30 \end{pmatrix},\]",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_419, flipping '-' to '+' in sub-expression '1 \\ 2 \\ -5 \end{pm' -> '1 \\ 2 \\ +5 \end{pm' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_420,math500_420,OP_FRACTION_FLIP,\[\frac{\mathbf{a} \cdot \mathbf{b}}{\mathbf{b} \cdot \mathbf{b}} \mathbf{b} = \frac{8}{2^2 + 6^2 + 3^2} \begin{pmatrix} 2 \\ 6 \\ 3 \end{pmatrix} = \boxed{\begin{pmatrix} 16/49 \\ 48/49 \\ 24/49 \end{pmatrix}}.\],\[\frac{\mathbf{a} \cdot \mathbf{b}}{\mathbf{b} \cdot \mathbf{b}} \mathbf{b} = \frac{2^2 + 6^2 + 3^2}{8} \begin{pmatrix} 2 \\ 6 \\ 3 \end{pmatrix} = \boxed{\begin{pmatrix} 16/49 \\ 48/49 \\ 24/49 \end{pmatrix}}.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_420, inverting fraction \frac{8}{2^2 + 6^2 + 3^2} to \frac{2^2 + 6^2 + 3^2}{8} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_421,math500_421,OP_SIGN_FLIP,"From the equation $\arccos x + \arccos 2x + \arccos 3x = \pi,$ $\arccos x + \arccos 2x = \pi - \arccos 3x,$ so","From the equation $\arccos x - \arccos 2x + \arccos 3x = \pi,$ $\arccos x + \arccos 2x = \pi - \arccos 3x,$ so",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_421, flipping '+' to '-' in sub-expression '\arccos x + \arccos' -> '\arccos x - \arccos' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_422,math500_422,OP_SIGN_FLIP,"Employing the elementary symmetric polynomials ($s_1 = \alpha_1+\alpha_2+\alpha_3+\alpha_4 = -2$, $s_2 = \alpha_1\alpha_2 + \alpha_1\alpha_3 + \alpha_1\alpha_4 + \alpha_2\alpha_3 + \alpha_2\alpha_4 + \alpha_3\alpha_4 = 0$, $s_3 = \alpha_1\alpha_2\alpha_3 + \alpha_2\alpha_3\alpha_4 + \alpha_3\alpha_4\alpha_1 + \alpha_4\alpha_1\alpha_2 = 0$, and $s_4 = \alpha_1\alpha_2\alpha_3\alpha_4 = 2$) we consider the polynomial","Employing the elementary symmetric polynomials ($s_1 = \alpha_1-\alpha_2+\alpha_3+\alpha_4 = -2$, $s_2 = \alpha_1\alpha_2 + \alpha_1\alpha_3 + \alpha_1\alpha_4 + \alpha_2\alpha_3 + \alpha_2\alpha_4 + \alpha_3\alpha_4 = 0$, $s_3 = \alpha_1\alpha_2\alpha_3 + \alpha_2\alpha_3\alpha_4 + \alpha_3\alpha_4\alpha_1 + \alpha_4\alpha_1\alpha_2 = 0$, and $s_4 = \alpha_1\alpha_2\alpha_3\alpha_4 = 2$) we consider the polynomial",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_422, flipping '+' to '-' in sub-expression '= \alpha_1+\alpha_2+' -> '= \alpha_1-\alpha_2+' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_425,math500_425,OP_SIGN_FLIP,\[\overrightarrow{G} = \frac{\overrightarrow{A} + \overrightarrow{B} + \overrightarrow{C}}{3}\],\[\overrightarrow{G} = \frac{\overrightarrow{A} - \overrightarrow{B} + \overrightarrow{C}}{3}\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_425, flipping '+' to '-' in sub-expression 'tarrow{A} + \overrig' -> 'tarrow{A} - \overrig' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_427,math500_427,OP_SIGN_FLIP,"We can use the following system of equations to represent the information given: \begin{align*}
+3p + e &= 124 \\
+5p + e &= 182 \\
+\end{align*} Subtracting the first equation from the second gives $2p = 58$, or $p = 29$.","We can use the following system of equations to represent the information given: \begin{align*}
+3p - e &= 124 \\
+5p + e &= 182 \\
+\end{align*} Subtracting the first equation from the second gives $2p = 58$, or $p = 29$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_427, flipping '+' to '-' in sub-expression 'lign*}
+3p + e &= 124' -> 'lign*}
+3p - e &= 124' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_428,math500_428,OP_FRACTION_FLIP,\[(a + b + c + d) \left( \frac{1}{a} + \frac{1}{b} + \frac{4}{c} + \frac{16}{d} \right) \ge (1 + 1 + 2 + 4)^2 = 64.\],\[(a + b + c + d) \left( \frac{a}{1} + \frac{1}{b} + \frac{4}{c} + \frac{16}{d} \right) \ge (1 + 1 + 2 + 4)^2 = 64.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_428, inverting fraction \frac{1}{a} to \frac{a}{1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_429,math500_429,OP_SIGN_FLIP,\[a^4 + b^8 \ge 2 \sqrt{a^4 b^8} = 2a^2 b^4 = 2(ab^2)^2 = 50.\],\[a^4 - b^8 \ge 2 \sqrt{a^4 b^8} = 2a^2 b^4 = 2(ab^2)^2 = 50.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_429, flipping '+' to '-' in sub-expression '\[a^4 + b^8 \ge' -> '\[a^4 - b^8 \ge' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_433,math500_433,OP_FRACTION_FLIP,"A terminating decimal can be written in the form $\frac{a}{10^b}$, where $a$ and $b$ are integers.","A terminating decimal can be written in the form $\frac{10^b}{a}$, where $a$ and $b$ are integers.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_433, inverting fraction \frac{a}{10^b} to \frac{10^b}{a} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_435,math500_435,OP_SIGN_FLIP,"The function is defined when the value inside the square root is positive, i.e. we must have $x^2-5x+6>0$.","The function is defined when the value inside the square root is positive, i.e. we must have $x^2-5x-6>0$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_435, flipping '+' to '-' in sub-expression 'have $x^2-5x+6>0$.' -> 'have $x^2-5x-6>0$.' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_436,math500_436,OP_FRACTION_FLIP,"For $n$ dice, there are $\binom{n}{2}=\frac{n(n-1)}{2}$ ways to choose two of them.","For $n$ dice, there are $\binom{n}{2}=\frac{2}{n(n-1)}$ ways to choose two of them.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_436, inverting fraction \frac{n(n-1)}{2} to \frac{2}{n(n-1)} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_437,math500_437,OP_SIGN_FLIP,"The three given equations become \begin{align*}
+a+b&=d\\
+2a&=5c\\
+2a&=c+d
+\end{align*} We want to find the value of $b$.","The three given equations become \begin{align*}
+a-b&=d\\
+2a&=5c\\
+2a&=c+d
+\end{align*} We want to find the value of $b$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_437, flipping '+' to '-' in sub-expression '{align*}
+a+b&=d\\
+2a' -> '{align*}
+a-b&=d\\
+2a' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_439,math500_439,OP_FRACTION_FLIP,"We can also write
+\begin{align*}
+\frac{x^9 + 1}{x - 1} &= \frac{(x^9 - 1) + 2}{x - 1} \\
+&= \frac{x^9 - 1}{x - 1} + \frac{2}{x - 1} \\
+&= x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1 + \frac{2}{x - 1}.
+\end{align*}Thus, the quotient is $\boxed{x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1}.$","We can also write
+\begin{align*}
+\frac{x - 1}{x^9 + 1} &= \frac{(x^9 - 1) + 2}{x - 1} \\
+&= \frac{x^9 - 1}{x - 1} + \frac{2}{x - 1} \\
+&= x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1 + \frac{2}{x - 1}.
+\end{align*}Thus, the quotient is $\boxed{x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_439, inverting fraction \frac{x^9 + 1}{x - 1} to \frac{x - 1}{x^9 + 1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_440,math500_440,OP_SIGN_FLIP,"Expanding the first product, the distribute property shows that  $$(u+4)(u-1) = u^2 + 4u - u - 4 = u^2 + 3u - 4.$$The second product becomes $$(u-3)(u+6) = u^2 - 3u + 6u - 18 = u^2 + 3u - 18.$$Subtracting, both the $u^2$ and the $3u$ terms cancel, leaving an answer of $-4 - (-18) = \boxed{14}$.","Expanding the first product, the distribute property shows that  $$(u-4)(u-1) = u^2 + 4u - u - 4 = u^2 + 3u - 4.$$The second product becomes $$(u-3)(u+6) = u^2 - 3u + 6u - 18 = u^2 + 3u - 18.$$Subtracting, both the $u^2$ and the $3u$ terms cancel, leaving an answer of $-4 - (-18) = \boxed{14}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_440, flipping '+' to '-' in sub-expression 'that  $$(u+4)(u-1) =' -> 'that  $$(u-4)(u-1) =' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_443,math500_443,OP_SIGN_FLIP,"The term $x$ is simply the average of $3^2 = 9$ and $3^4 = 81$, which is $(9 + 81)/2 = 90/2 = \boxed{45}$.","The term $x$ is simply the average of $3^2 = 9$ and $3^4 = 81$, which is $(9 - 81)/2 = 90/2 = \boxed{45}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_443, flipping '+' to '-' in sub-expression 'ch is $(9 + 81)/2 =' -> 'ch is $(9 - 81)/2 =' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_445,math500_445,OP_SIGN_FLIP,Let the equation of a tangent line be $y = mx + b.$,Let the equation of a tangent line be $y = mx - b.$,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_445, flipping '+' to '-' in sub-expression 'e $y = mx + b.$' -> 'e $y = mx - b.$' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_449,math500_449,OP_SIGN_FLIP,"From the defined function, we know that $5\star 1 = 9(5)+2(1)-(5)(1)+5= 45+2-5+5=\boxed{47}$.","From the defined function, we know that $5\star 1 = 9(5)-2(1)-(5)(1)+5= 45+2-5+5=\boxed{47}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_449, flipping '+' to '-' in sub-expression 'r 1 = 9(5)+2(1)-(5)(' -> 'r 1 = 9(5)-2(1)-(5)(' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_451,math500_451,OP_FRACTION_FLIP,"If we let the distance between the buildings on the map be $d$, then $\frac{d}{53.25} = \frac{3}{10}$.","If we let the distance between the buildings on the map be $d$, then $\frac{53.25}{d} = \frac{3}{10}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_451, inverting fraction \frac{d}{53.25} to \frac{53.25}{d} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_452,math500_452,OP_SIGN_FLIP,"The two digit number can be represented as $10x + y,$ where $x$ and $y$ are digits, with $x \neq 0.$ We are given that the sum of the digits is $13,$ so $x + y = 13.$ If we reverse the digits of this number, we have $10y + x.$ We are given that the difference is $27,$ but we don't know if the original number or if the number with its digits reversed is greater.","The two digit number can be represented as $10x - y,$ where $x$ and $y$ are digits, with $x \neq 0.$ We are given that the sum of the digits is $13,$ so $x + y = 13.$ If we reverse the digits of this number, we have $10y + x.$ We are given that the difference is $27,$ but we don't know if the original number or if the number with its digits reversed is greater.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_452, flipping '+' to '-' in sub-expression 'd as $10x + y,$ wher' -> 'd as $10x - y,$ wher' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_453,math500_453,OP_FRACTION_FLIP,The 8th grade has $\frac{650}{520+650} = \frac{650}{1170} = \frac{65}{117}$ of the total students.,The 8th grade has $\frac{520+650}{650} = \frac{650}{1170} = \frac{65}{117}$ of the total students.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_453, inverting fraction \frac{650}{520+650} to \frac{520+650}{650} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_454,math500_454,OP_SIGN_FLIP,"We have that $\mathbf{M} \begin{pmatrix} 2 \\ -1 \end{pmatrix} = \begin{pmatrix} 9 \\ 3 \end{pmatrix}$ and $\mathbf{M} \begin{pmatrix} 1 \\ -3 \end{pmatrix} = \begin{pmatrix} 7 \\ -1 \end{pmatrix}.$  Then $\mathbf{M} \begin{pmatrix} 6 \\ -3 \end{pmatrix} = \begin{pmatrix} 27 \\ 9 \end{pmatrix},$ so","We have that $\mathbf{M} \begin{pmatrix} 2 \\ +1 \end{pmatrix} = \begin{pmatrix} 9 \\ 3 \end{pmatrix}$ and $\mathbf{M} \begin{pmatrix} 1 \\ -3 \end{pmatrix} = \begin{pmatrix} 7 \\ -1 \end{pmatrix}.$  Then $\mathbf{M} \begin{pmatrix} 6 \\ -3 \end{pmatrix} = \begin{pmatrix} 27 \\ 9 \end{pmatrix},$ so",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_454, flipping '-' to '+' in sub-expression 'rix} 2 \\ -1 \end{pm' -> 'rix} 2 \\ +1 \end{pm' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_456,math500_456,OP_SIGN_FLIP,"By the Integer Root Theorem, the possible integer roots are all the divisors of 14 (including negative divisors), which are $-14,$ $-7,$ $-2,$ $-1,$ $1,$ $2,$ $7,$ and $14.$  Checking, we find that the only integer roots are $\boxed{-2,1}.$","By the Integer Root Theorem, the possible integer roots are all the divisors of 14 (including negative divisors), which are $+14,$ $-7,$ $-2,$ $-1,$ $1,$ $2,$ $7,$ and $14.$  Checking, we find that the only integer roots are $\boxed{-2,1}.$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_456, flipping '-' to '+' in sub-expression 'hich are $-14,$ $-7,' -> 'hich are $+14,$ $-7,' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_457,math500_457,OP_SIGN_FLIP,$54 = 9 \cdot 6 + 0 \Rightarrow 54 \equiv \boxed{0} \pmod{6}$.,$54 = 9 \cdot 6 - 0 \Rightarrow 54 \equiv \boxed{0} \pmod{6}$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_457, flipping '+' to '-' in sub-expression '9 \cdot 6 + 0 \Right' -> '9 \cdot 6 - 0 \Right' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_459,math500_459,OP_SIGN_FLIP,Since a 1 inch cube has surface area 6 $\text{in}^2$ and volume 1 $\text{in}^3$ its total price will be $6x+y$ dollars.,Since a 1 inch cube has surface area 6 $\text{in}^2$ and volume 1 $\text{in}^3$ its total price will be $6x-y$ dollars.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_459, flipping '+' to '-' in sub-expression 'ill be $6x+y$ dollar' -> 'ill be $6x-y$ dollar' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_460,math500_460,OP_SIGN_FLIP,"From $\triangle PQR$, we have $\angle R = 180^\circ - \angle Q - \angle P = 105^\circ$.","From $\triangle PQR$, we have $\angle R = 180^\circ + \angle Q - \angle P = 105^\circ$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_460, flipping '-' to '+' in sub-expression '180^\circ - \angle Q' -> '180^\circ + \angle Q' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_461,math500_461,OP_FRACTION_FLIP,We begin by finding $f\left(\frac{\pi}{3}\right)$.,We begin by finding $f\left(\frac{3}{\pi}\right)$.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_461, inverting fraction \frac{\pi}{3} to \frac{3}{\pi} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_463,math500_463,OP_SIGN_FLIP,"Thus, we need to find the number of values of $x$ such that $x^2-9=0$.","Thus, we need to find the number of values of $x$ such that $x^2+9=0$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_463, flipping '-' to '+' in sub-expression 'that $x^2-9=0$.' -> 'that $x^2+9=0$.' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_464,math500_464,OP_SIGN_FLIP,"Working on the first equation, we have from the difference of squares factorization that $\log_6 (x-y) + \log_6 (x+y) = \log_6 (x^2-y^2) = 2$, so $x^2 - y^2 = 6^2 = 36$.","Working on the first equation, we have from the difference of squares factorization that $\log_6 (x-y) - \log_6 (x+y) = \log_6 (x^2-y^2) = 2$, so $x^2 - y^2 = 6^2 = 36$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_464, flipping '+' to '-' in sub-expression '$\log_6 (x-y) + \log' -> '$\log_6 (x-y) - \log' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_466,math500_466,OP_FRACTION_FLIP,\[\frac{z^9 + 1}{z + 1} = 0.\],\[\frac{z + 1}{z^9 + 1} = 0.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_466, inverting fraction \frac{z^9 + 1}{z + 1} to \frac{z + 1}{z^9 + 1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_470,math500_470,OP_FRACTION_FLIP,"By AM-GM,
+\begin{align*}
+a + b + c + d &= a + \frac{b}{2} + \frac{b}{2} + \frac{c}{3} + \frac{c}{3} + \frac{c}{3} + \frac{d}{4} + \frac{d}{4} + \frac{d}{4} + \frac{d}{4} \\
+&\ge 10 \sqrt[10]{a \left( \frac{b}{2} \right)^2 \left( \frac{c}{3} \right)^3 \left( \frac{d}{4} \right)^4} \\
+&= 10 \sqrt[10]{\frac{ab^2 c^3 d^4}{27648}}.
+\end{align*}Since $a + b + c + d = 10,$","By AM-GM,
+\begin{align*}
+a + b + c + d &= a + \frac{2}{b} + \frac{b}{2} + \frac{c}{3} + \frac{c}{3} + \frac{c}{3} + \frac{d}{4} + \frac{d}{4} + \frac{d}{4} + \frac{d}{4} \\
+&\ge 10 \sqrt[10]{a \left( \frac{b}{2} \right)^2 \left( \frac{c}{3} \right)^3 \left( \frac{d}{4} \right)^4} \\
+&= 10 \sqrt[10]{\frac{ab^2 c^3 d^4}{27648}}.
+\end{align*}Since $a + b + c + d = 10,$",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_470, inverting fraction \frac{b}{2} to \frac{2}{b} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_473,math500_473,OP_SIGN_FLIP,"First, we can evaluate the sum across the first row, which gives $(n+1)+1+(n-1)=2n+1$.","First, we can evaluate the sum across the first row, which gives $(n-1)+1+(n-1)=2n+1$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_473, flipping '+' to '-' in sub-expression 'gives $(n+1)+1+(n-1' -> 'gives $(n-1)+1+(n-1' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_474,math500_474,OP_FRACTION_FLIP,"We use the change-of-base identity $\log_a{b}=\frac{\log{b}}{\log{a}}$ to find $$\log_2{3} \cdot \log_3{4} \cdot \log_4{5} \cdot \log_5{6} \cdot \log_6{7} \cdot \log_7{8}=
+\frac{\log3}{\log2} \cdot \frac{\log4}{\log3} \cdot \frac{\log5}{\log4} \cdot \frac{\log6}{\log5} \cdot \frac{\log7}{\log6} \cdot \frac{\log8}{\log7}.$$Simplifying, we get $\frac{\log8}{\log2}=\log_2{8}=\boxed{3}$.","We use the change-of-base identity $\log_a{b}=\frac{\log{b}}{\log{a}}$ to find $$\log_2{3} \cdot \log_3{4} \cdot \log_4{5} \cdot \log_5{6} \cdot \log_6{7} \cdot \log_7{8}=
+\frac{\log2}{\log3} \cdot \frac{\log4}{\log3} \cdot \frac{\log5}{\log4} \cdot \frac{\log6}{\log5} \cdot \frac{\log7}{\log6} \cdot \frac{\log8}{\log7}.$$Simplifying, we get $\frac{\log8}{\log2}=\log_2{8}=\boxed{3}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_474, inverting fraction \frac{\log3}{\log2} to \frac{\log2}{\log3} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_475,math500_475,OP_SIGN_FLIP,"Then the probability of obtaining a sum of 7 is $$p(1,6)+p(2,5)+p(3,4)+p(4,3)+p(5,2)+p(6,1).$$Let the probability of obtaining face $F$ be $(1/6)+x$.","Then the probability of obtaining a sum of 7 is $$p(1,6)-p(2,5)+p(3,4)+p(4,3)+p(5,2)+p(6,1).$$Let the probability of obtaining face $F$ be $(1/6)+x$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_475, flipping '+' to '-' in sub-expression 's $$p(1,6)+p(2,5)+p(' -> 's $$p(1,6)-p(2,5)+p(' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_476,math500_476,OP_SIGN_FLIP,The diagonal of the field is $\sqrt{300^2+400^2}=500$ feet long so Jim walks 500 feet.,The diagonal of the field is $\sqrt{300^2-400^2}=500$ feet long so Jim walks 500 feet.,YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_476, flipping '+' to '-' in sub-expression 'sqrt{300^2+400^2}=50' -> 'sqrt{300^2-400^2}=50' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_477,math500_477,OP_SIGN_FLIP,"Of the two-digit perfect squares, only $4^2=16$ and $6^2=36$ end in $6$.","Of the two+digit perfect squares, only $4^2=16$ and $6^2=36$ end in $6$.",YES,NO,YES,YES,YES,NO,FAILED,"In problem math500_477, perturbation fails semantic quality criteria: English prose word hyphenation corrupted ('two+digit'). Excluded prospectively from confirmatory registry."
+pair_math500_480,math500_480,OP_FRACTION_FLIP,"We can write
+\begin{align*}
+\frac{1}{1 + \omega} + \frac{1}{1 + \omega^2} &= \frac{1 + \omega^2 + 1 + \omega}{(1 + \omega)(1 + \omega^2)} \\
+&= \frac{2 + \omega + \omega^2}{1 + \omega + \omega^2 + \omega^3} \\
+&= \frac{2 + \omega + \omega^2}{2 + \omega + \omega^2} \\
+&= \boxed{1}.
+\end{align*}","We can write
+\begin{align*}
+\frac{1 + \omega}{1} + \frac{1}{1 + \omega^2} &= \frac{1 + \omega^2 + 1 + \omega}{(1 + \omega)(1 + \omega^2)} \\
+&= \frac{2 + \omega + \omega^2}{1 + \omega + \omega^2 + \omega^3} \\
+&= \frac{2 + \omega + \omega^2}{2 + \omega + \omega^2} \\
+&= \boxed{1}.
+\end{align*}",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_480, inverting fraction \frac{1}{1 + \omega} to \frac{1 + \omega}{1} alters the ratio value, creating a local mathematical invalidity while preserving derivation context."
+pair_math500_484,math500_484,OP_SIGN_FLIP,\[x + \sqrt{3x + 6} + 2 \sqrt{x + \sqrt{3x + 6}} \sqrt{x - \sqrt{3x + 6}} + x - \sqrt{3x + 6} = 36.\],\[x - \sqrt{3x + 6} + 2 \sqrt{x + \sqrt{3x + 6}} \sqrt{x - \sqrt{3x + 6}} + x - \sqrt{3x + 6} = 36.\],YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_484, flipping '+' to '-' in sub-expression '\[x + \sqrt{3x' -> '\[x - \sqrt{3x' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_485,math500_485,OP_SIGN_FLIP,"The sum of the shortest three segments is $3+4+5=12$, but we quickly notice that it is impossible to start at one point and visit the other three points by traveling on a path with length $12$ ($DB$, $BC$, and $CD$ do not let us visit point $A$, and it is not possible to travel on $AD$, $CD$, and $BD$ in a continuous path).","The sum of the shortest three segments is $3-4+5=12$, but we quickly notice that it is impossible to start at one point and visit the other three points by traveling on a path with length $12$ ($DB$, $BC$, and $CD$ do not let us visit point $A$, and it is not possible to travel on $AD$, $CD$, and $BD$ in a continuous path).",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_485, flipping '+' to '-' in sub-expression 'ents is $3+4+5=12$,' -> 'ents is $3-4+5=12$,' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_493,math500_493,OP_SIGN_FLIP,"First, we calculate $(\sqrt{2} + \sqrt{3})^2$: \begin{align*}
+(\sqrt{2} + \sqrt{3})^2 &= (\sqrt{2} + \sqrt{3})(\sqrt{2}+\sqrt{3})\\
+&=(\sqrt{2})(\sqrt{2}) + (\sqrt{2})(\sqrt{3}) + (\sqrt{3})(\sqrt{2}) + (\sqrt{3})(\sqrt{3})\\
+&= 2 + \sqrt{6} + \sqrt{6} + 3\\
+&=5+2\sqrt{6}.
+\end{align*} Multiplying this by $\sqrt{2} +\sqrt{3}$ gives \begin{align*}
+(\sqrt{2}+ \sqrt{3})^3 &=(\sqrt{2}+\sqrt{3})^2 (\sqrt{2} +\sqrt{3})\\
+&=(5+2\sqrt{6})(\sqrt{2} +\sqrt{3})\\
+&= 5\sqrt{2} + 5\sqrt{3} + (2\sqrt{6})(\sqrt{2}) + (2\sqrt{6})(\sqrt{3})\\
+&=5\sqrt{2} + 5\sqrt{3} + 2\sqrt{12} + 2\sqrt{18}\\
+&=5\sqrt{2} + 5\sqrt{3} + 2(2\sqrt{3}) + 2(3\sqrt{2})\\
+&=11\sqrt{2} + 9\sqrt{3}.
+\end{align*} Therefore, we have $a+b+c = \boxed{20}$.  (Notice that $c=0;$ tricky!)","First, we calculate $(\sqrt{2} - \sqrt{3})^2$: \begin{align*}
+(\sqrt{2} + \sqrt{3})^2 &= (\sqrt{2} + \sqrt{3})(\sqrt{2}+\sqrt{3})\\
+&=(\sqrt{2})(\sqrt{2}) + (\sqrt{2})(\sqrt{3}) + (\sqrt{3})(\sqrt{2}) + (\sqrt{3})(\sqrt{3})\\
+&= 2 + \sqrt{6} + \sqrt{6} + 3\\
+&=5+2\sqrt{6}.
+\end{align*} Multiplying this by $\sqrt{2} +\sqrt{3}$ gives \begin{align*}
+(\sqrt{2}+ \sqrt{3})^3 &=(\sqrt{2}+\sqrt{3})^2 (\sqrt{2} +\sqrt{3})\\
+&=(5+2\sqrt{6})(\sqrt{2} +\sqrt{3})\\
+&= 5\sqrt{2} + 5\sqrt{3} + (2\sqrt{6})(\sqrt{2}) + (2\sqrt{6})(\sqrt{3})\\
+&=5\sqrt{2} + 5\sqrt{3} + 2\sqrt{12} + 2\sqrt{18}\\
+&=5\sqrt{2} + 5\sqrt{3} + 2(2\sqrt{3}) + 2(3\sqrt{2})\\
+&=11\sqrt{2} + 9\sqrt{3}.
+\end{align*} Therefore, we have $a+b+c = \boxed{20}$.  (Notice that $c=0;$ tricky!)",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_493, flipping '+' to '-' in sub-expression '(\sqrt{2} + \sqrt{3}' -> '(\sqrt{2} - \sqrt{3}' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_495,math500_495,OP_SIGN_FLIP,"The inner logarithm is only defined if $x - 2 > 0$, so $x > 2$.","The inner logarithm is only defined if $x + 2 > 0$, so $x > 2$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_495, flipping '-' to '+' in sub-expression 'ned if $x - 2 > 0$,' -> 'ned if $x + 2 > 0$,' alters the algebraic sign, introducing a local mathematical error."
+pair_math500_496,math500_496,OP_SIGN_FLIP,"Plugging in, we have $w = \dfrac{3(1+i)+1}{5(1+i)+7} = \dfrac{4+3i}{12+5i}$.","Plugging in, we have $w = \dfrac{3(1-i)+1}{5(1+i)+7} = \dfrac{4+3i}{12+5i}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_496, flipping '+' to '-' in sub-expression '\dfrac{3(1+i)+1}{5(1' -> '\dfrac{3(1-i)+1}{5(1' alters the arithmetic value, contradicting the derivation assertion."
+pair_math500_499,math500_499,OP_SIGN_FLIP,"We have $\angle AHB = \angle DHE$, and from quadrilateral $CDHE$, we have  \begin{align*}
+\angle DHE &= 360^\circ - \angle HEC - \angle ECD - \angle CDH \\
+&= 360^\circ - 90^\circ - \angle ACB - 90^\circ\\
+&= 180^\circ - \angle ACB.
+\end{align*}From triangle $ABC$, we have $180^\circ - \angle ACB = \angle BAC + \angle ABC = 54^\circ + 52^\circ = \boxed{106^\circ}$.","We have $\angle AHB = \angle DHE$, and from quadrilateral $CDHE$, we have  \begin{align*}
+\angle DHE &= 360^\circ - \angle HEC - \angle ECD - \angle CDH \\
+&= 360^\circ - 90^\circ - \angle ACB - 90^\circ\\
+&= 180^\circ - \angle ACB.
+\end{align*}From triangle $ABC$, we have $180^\circ - \angle ACB = \angle BAC - \angle ABC = 54^\circ + 52^\circ = \boxed{106^\circ}$.",YES,YES,YES,YES,YES,YES,PASSED,"In problem math500_499, flipping '+' to '-' in sub-expression '360^\circ - \angle H' -> '360^\circ - \angle H' alters the arithmetic value, contradicting the derivation assertion."
