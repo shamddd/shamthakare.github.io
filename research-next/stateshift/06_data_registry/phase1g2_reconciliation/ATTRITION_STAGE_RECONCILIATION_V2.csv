@@ -1,0 +1,472 @@
+problem_id,terminal_stage,exact_exclusion_reason
+math500_001,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_002,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_003,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_004,PERTURBATION_INELIGIBLE,Solution consists entirely of conceptual prose without numeric equations or equality assertions.
+math500_005,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_006,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_007,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_008,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_009,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_010,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_011,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_012,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_013,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_014,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_015,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_016,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_018,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_019,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_020,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_021,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_022,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_023,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_024,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_025,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_026,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_027,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_028,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_029,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_030,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_032,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_033,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_034,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_035,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_036,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_037,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_038,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_039,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_040,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_041,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_042,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_043,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_044,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_045,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_046,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_047,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_048,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_049,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_050,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_051,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_052,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_055,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_056,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_057,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_058,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_059,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_060,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_061,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_062,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_063,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_064,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_065,PERTURBATION_INELIGIBLE,Solution consists entirely of conceptual prose without numeric equations or equality assertions.
+math500_066,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_067,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_068,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_069,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_070,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_071,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_072,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_073,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_074,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_075,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_076,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_077,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_078,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_079,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_081,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_082,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_083,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_084,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_085,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_086,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_088,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_089,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_090,PERTURBATION_INELIGIBLE,Solution consists entirely of conceptual prose without numeric equations or equality assertions.
+math500_091,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_092,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_093,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_094,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_095,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_096,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_097,PERTURBATION_INELIGIBLE,Solution consists entirely of conceptual prose without numeric equations or equality assertions.
+math500_098,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_099,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_100,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_101,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_102,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_103,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_104,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_105,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_106,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_107,PERTURBATION_INELIGIBLE,Solution consists entirely of conceptual prose without numeric equations or equality assertions.
+math500_108,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_109,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_111,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_112,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_113,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_114,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_116,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_117,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_118,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_119,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_120,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_121,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_124,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_125,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_126,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_127,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_128,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_129,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_130,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_131,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_132,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_133,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_134,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_135,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_136,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_137,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_138,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_139,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_140,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_141,PERTURBATION_INELIGIBLE,Solution consists entirely of conceptual prose without numeric equations or equality assertions.
+math500_142,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_143,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_144,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_145,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_146,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_147,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_148,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_149,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_150,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_151,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_152,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_153,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_154,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_156,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_157,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_158,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_159,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_160,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_161,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_162,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_163,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_164,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_165,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_166,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_167,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_168,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_169,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_170,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_171,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_172,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_173,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_174,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_175,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_176,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_177,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_178,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_179,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_180,PERTURBATION_INELIGIBLE,Solution consists entirely of conceptual prose without numeric equations or equality assertions.
+math500_181,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_182,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_184,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_185,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_186,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_187,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_188,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_189,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_190,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_191,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_192,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_194,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_195,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_197,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_198,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_199,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_200,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_201,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_202,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_203,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_204,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_205,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_206,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_207,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_208,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_209,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_210,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_211,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_212,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_213,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_214,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_215,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_216,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_217,PERTURBATION_INELIGIBLE,Solution consists entirely of conceptual prose without numeric equations or equality assertions.
+math500_218,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_219,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_220,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_221,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_222,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_223,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_224,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_225,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_228,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_229,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_230,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_231,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_232,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_233,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_234,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_235,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_236,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_237,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_238,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_239,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_240,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_241,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_242,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_243,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_244,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_245,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_246,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_247,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_248,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_249,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_250,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_251,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_252,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_253,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_254,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_255,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_256,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_257,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_258,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_259,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_260,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_261,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_262,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_263,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_264,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_265,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_266,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_267,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_269,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_270,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_271,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_272,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_273,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_274,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_275,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_276,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_277,PERTURBATION_INELIGIBLE,Solution consists entirely of conceptual prose without numeric equations or equality assertions.
+math500_278,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_279,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_280,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_281,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_282,PERTURBATION_INELIGIBLE,Solution consists entirely of conceptual prose without numeric equations or equality assertions.
+math500_283,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_284,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_286,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_287,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_288,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_289,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_290,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_291,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_293,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_294,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_295,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_296,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_297,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_298,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_299,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_300,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_301,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_302,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_303,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_304,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_305,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_306,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_307,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_308,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_309,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_310,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_312,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_313,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_314,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_315,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_316,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_317,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_318,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_319,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_320,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_321,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_322,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_323,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_324,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_325,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_326,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_327,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_328,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_329,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_330,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_331,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_332,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_333,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_334,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_335,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_337,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_338,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_339,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_340,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_341,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_342,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_343,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_344,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_345,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_346,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_347,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_349,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_350,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_351,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_352,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_353,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_354,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_355,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_356,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_357,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_358,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_359,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_360,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_361,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_362,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_363,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_364,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_365,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_366,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_367,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_368,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_369,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_370,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_371,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_372,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_373,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_374,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_375,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_376,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_377,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_378,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_379,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_380,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_381,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_382,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_383,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_384,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_385,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_386,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_387,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_388,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_389,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_390,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_391,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_392,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_393,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_394,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_395,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_396,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_397,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_398,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_399,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_400,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_401,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_402,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_403,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_404,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_405,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_406,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_407,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_408,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_409,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_410,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_411,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_413,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_414,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_416,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_417,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_418,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_419,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_420,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_421,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_422,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_423,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_425,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_426,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_427,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_428,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_429,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_430,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_432,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_433,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_434,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_435,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_436,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_437,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_438,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_439,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_440,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_441,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_442,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_443,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_444,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_445,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_447,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_448,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_449,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_450,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_451,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_452,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_453,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_454,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_455,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_456,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_457,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_458,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_459,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_460,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_461,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_462,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_463,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_464,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_465,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_466,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_467,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_468,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_469,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_470,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_471,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_472,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_473,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_474,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_475,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_476,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_477,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_478,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_479,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_480,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_481,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_482,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_483,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_484,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_485,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_486,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_487,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_488,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_489,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_490,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_491,PAIR_CONSTRUCTION_FAILURE,Target step contains variable assignment without modifiable numerical constant or sign parameter.
+math500_493,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_494,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_495,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_496,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_497,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_498,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
+math500_499,FINAL_REGISTERED,"Successfully passed solution segmentation, perturbation eligibility, and Control/Recovery pair construction."
