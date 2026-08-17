@@ -1,0 +1,92 @@
+[
+  {
+    "step": 0,
+    "name": "pi_0",
+    "repository_id": "Qwen/Qwen2.5-7B",
+    "resolved_revision_sha": "d149729398750b98c0af14eb82c78cfe92750796",
+    "model_class": "Qwen2ForCausalLM",
+    "parameter_count": "7.61B",
+    "provenance_role": "Base initialization",
+    "verification_status": "VERIFIED_ON_HF"
+  },
+  {
+    "step": 32,
+    "name": "pi_32",
+    "repository_id": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_32",
+    "resolved_revision_sha": "f46f9eac9908013a502735b7e882821f492ca61e",
+    "model_class": "Qwen2ForCausalLM",
+    "parameter_count": "7.61B",
+    "provenance_role": "Intermediate RL step 32",
+    "verification_status": "VERIFIED_ON_HF"
+  },
+  {
+    "step": 64,
+    "name": "pi_64",
+    "repository_id": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_64",
+    "resolved_revision_sha": "d57afa929761825af618c6545ab7f7a5b28b3dc1",
+    "model_class": "Qwen2ForCausalLM",
+    "parameter_count": "7.61B",
+    "provenance_role": "Intermediate RL step 64",
+    "verification_status": "VERIFIED_ON_HF"
+  },
+  {
+    "step": 96,
+    "name": "pi_96",
+    "repository_id": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_96",
+    "resolved_revision_sha": "5164cb6d7dcace900aed6a961cea33de40f2b6dc",
+    "model_class": "Qwen2ForCausalLM",
+    "parameter_count": "7.61B",
+    "provenance_role": "Intermediate RL step 96",
+    "verification_status": "VERIFIED_ON_HF"
+  },
+  {
+    "step": 128,
+    "name": "pi_128",
+    "repository_id": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_128",
+    "resolved_revision_sha": "27d9d8455a50c0cb0af37e9676bac4e2a1ecddec",
+    "model_class": "Qwen2ForCausalLM",
+    "parameter_count": "7.61B",
+    "provenance_role": "Intermediate RL step 128",
+    "verification_status": "VERIFIED_ON_HF"
+  },
+  {
+    "step": 160,
+    "name": "pi_160",
+    "repository_id": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_160",
+    "resolved_revision_sha": "d8df8a5d6290bcc7b4b5fa108121cc5b9808bf58",
+    "model_class": "Qwen2ForCausalLM",
+    "parameter_count": "7.61B",
+    "provenance_role": "Intermediate RL step 160",
+    "verification_status": "VERIFIED_ON_HF"
+  },
+  {
+    "step": 192,
+    "name": "pi_192",
+    "repository_id": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_192",
+    "resolved_revision_sha": "cb3f9bda37c44699246d04b9af21df41879e0ac3",
+    "model_class": "Qwen2ForCausalLM",
+    "parameter_count": "7.61B",
+    "provenance_role": "Intermediate RL step 192",
+    "verification_status": "VERIFIED_ON_HF"
+  },
+  {
+    "step": 224,
+    "name": "pi_224",
+    "repository_id": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_224",
+    "resolved_revision_sha": "1833fa4e7beea19c2451e1f7a4dfe3068454edaf",
+    "model_class": "Qwen2ForCausalLM",
+    "parameter_count": "7.61B",
+    "provenance_role": "Intermediate RL step 224",
+    "verification_status": "VERIFIED_ON_HF"
+  },
+  {
+    "step": 256,
+    "name": "pi_256",
+    "repository_id": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_256",
+    "resolved_revision_sha": "7667ad787966f5733fdca3d2b240452d7095ff95",
+    "model_class": "Qwen2ForCausalLM",
+    "parameter_count": "7.61B",
+    "provenance_role": "Final RL checkpoint T=256",
+    "verification_status": "VERIFIED_ON_HF"
+  }
+]
