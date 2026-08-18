@@ -2,13 +2,16 @@
 r"""
 StateShift Phase 1H.2 GPU Feasibility Calibration Benchmark
 ===========================================================
-Executes 8 real PyTorch / Hugging Face neural canary generations on CUDA/GPU accelerator:
+Executes 16 real PyTorch / Hugging Face neural canary generations on CUDA/GPU accelerator:
 
 1. Loads base model Qwen/Qwen2.5-7B (t=0, rev: d149729...) and final checkpoint
    UWNSL/Qwen2.5-7B-deepscaler_4k_step_256 (t=256, rev: 7667ad7...) on CUDA/GPU
-2. Executes 8 real model.generate(...) calls (2 checkpoints x 2 synthetic states x K=2 rollouts)
-3. Captures all forensic system fields, peak GPU VRAM (torch.cuda.max_memory_allocated),
-   token speed (tok/s), and generation duration
+2. Executes 16 real model.generate(...) calls (2 checkpoints x 2 synthetic states x K=4 rollouts)
+3. Captures all forensic system fields:
+   - GPU model, count, CUDA driver version, PyTorch version, transformers version
+   - dtype, device_map, attention implementation, quantization state, KV cache state
+   - Allocated & max reserved VRAM (torch.cuda.memory_allocated, torch.cuda.max_memory_allocated, torch.cuda.memory_reserved)
+   - Per-rollout tokens/sec and generation duration
 4. Enforces anti-simulation audit and scientific firewall test (record_type = "technical_canary")
 5. Extrapolates empirical GPU-Hours for 131,328 planned rollouts
 6. Outputs GPU_CANARY_EXECUTION_REPORT.json and GPU_CANARY_FEASIBILITY_REPORT.md
@@ -29,6 +32,7 @@ import json
 import hashlib
 import psutil
 import torch
+import transformers
 from datetime import datetime, timezone
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -59,35 +63,44 @@ SYNTHETIC_CANARY_ITEM = {
     ]
 }
 
-def get_gpu_memory(device_str):
-    mem_info = {}
-    proc = psutil.Process()
-    mem_info["rss_bytes"] = proc.memory_info().rss
-    mem_info["rss_mb"] = round(mem_info["rss_bytes"] / (1024 * 1024), 2)
+def get_gpu_environment_details(device_str):
+    env_info = {
+        "device_type": device_str,
+        "pytorch_version": torch.__version__,
+        "transformers_version": transformers.__version__,
+        "python_version": sys.version.split()[0],
+        "rss_bytes": psutil.Process().memory_info().rss,
+        "rss_mb": round(psutil.Process().memory_info().rss / (1024 * 1024), 2)
+    }
 
     if device_str == "cuda" and torch.cuda.is_available():
-        mem_info["device_type"] = "CUDA GPU VRAM"
-        mem_info["cuda_allocated_bytes"] = torch.cuda.memory_allocated()
-        mem_info["cuda_max_bytes"] = torch.cuda.max_memory_allocated()
-        mem_info["cuda_allocated_gb"] = round(mem_info["cuda_allocated_bytes"] / (1024 ** 3), 2)
-        mem_info["cuda_max_gb"] = round(mem_info["cuda_max_bytes"] / (1024 ** 3), 2)
+        env_info["cuda_available"] = True
+        env_info["cuda_version"] = torch.version.cuda
+        env_info["gpu_count"] = torch.cuda.device_count()
+        env_info["gpu_name"] = torch.cuda.get_device_name(0)
+        env_info["cuda_allocated_bytes"] = torch.cuda.memory_allocated()
+        env_info["cuda_max_bytes"] = torch.cuda.max_memory_allocated()
+        env_info["cuda_reserved_bytes"] = torch.cuda.memory_reserved()
+        env_info["cuda_allocated_gb"] = round(env_info["cuda_allocated_bytes"] / (1024 ** 3), 4)
+        env_info["cuda_max_gb"] = round(env_info["cuda_max_bytes"] / (1024 ** 3), 4)
+        env_info["cuda_reserved_gb"] = round(env_info["cuda_reserved_bytes"] / (1024 ** 3), 4)
     elif device_str == "mps" and torch.backends.mps.is_available():
-        mem_info["device_type"] = "Apple MPS (Unified Memory)"
+        env_info["mps_available"] = True
         try:
-            mem_info["mps_allocated_bytes"] = torch.mps.current_allocated_memory()
-            mem_info["mps_driver_bytes"] = torch.mps.driver_allocated_memory()
-            mem_info["mps_allocated_mb"] = round(mem_info["mps_allocated_bytes"] / (1024 * 1024), 2)
-            mem_info["mps_driver_mb"] = round(mem_info["mps_driver_bytes"] / (1024 * 1024), 2)
+            env_info["mps_allocated_bytes"] = torch.mps.current_allocated_memory()
+            env_info["mps_driver_bytes"] = torch.mps.driver_allocated_memory()
+            env_info["mps_allocated_mb"] = round(env_info["mps_allocated_bytes"] / (1024 * 1024), 2)
+            env_info["mps_driver_mb"] = round(env_info["mps_driver_bytes"] / (1024 * 1024), 2)
         except Exception as e:
-            mem_info["mps_note"] = str(e)
+            env_info["mps_note"] = str(e)
     else:
-        mem_info["device_type"] = "CPU System Memory"
+        env_info["device_category"] = "CPU System Memory"
 
-    return mem_info
+    return env_info
 
 def run_gpu_canary_execution():
     print("============================================================", flush=True)
-    print("STARTING PHASE 1H.2 GPU FEASIBILITY CALIBRATION (8 GENERATIONS)", flush=True)
+    print("STARTING PHASE 1H.2 GPU FEASIBILITY CALIBRATION (16 GENERATIONS)", flush=True)
     print("============================================================", flush=True)
     
     device_str = "cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu")
@@ -132,8 +145,8 @@ def run_gpu_canary_execution():
             input_ids = inputs["input_ids"][0].tolist()
             input_sha = hashlib.sha256(prompt_text.encode("utf-8")).hexdigest()
 
-            # Execute K=2 rollouts
-            for k in range(1, 3):
+            # Execute K=4 rollouts for GPU throughput variance calibration
+            for k in range(1, 5):
                 seed = 42 + t_val + k
                 torch.manual_seed(seed)
                 
@@ -147,6 +160,7 @@ def run_gpu_canary_execution():
                         temperature=0.6,
                         top_p=0.95,
                         do_sample=True,
+                        use_cache=True,
                         pad_token_id=tokenizer.eos_token_id
                     )
 
@@ -161,7 +175,7 @@ def run_gpu_canary_execution():
                 roundtrip_ok = (tokenizer.decode(re_encoded_ids) == decoded_text)
 
                 tokens_per_sec = len(gen_ids) / gen_duration if gen_duration > 0 else 0.0
-                mem_metrics = get_gpu_memory(device_str)
+                env_metrics = get_gpu_environment_details(device_str)
 
                 rec = {
                     "record_type": "technical_canary",
@@ -175,6 +189,7 @@ def run_gpu_canary_execution():
                     "tokenizer_revision": rev,
                     "device": device_str,
                     "dtype": str(model.dtype),
+                    "use_cache": True,
                     "state_type": st_type,
                     "rollout_k": k,
                     "input_text": prompt_text,
@@ -194,7 +209,7 @@ def run_gpu_canary_execution():
                     "generation_duration_sec": round(gen_duration, 4),
                     "tokens_per_sec": round(tokens_per_sec, 2),
                     "model_load_duration_sec": round(load_duration, 2),
-                    "device_unified_memory_metrics": mem_metrics
+                    "hardware_environment_details": env_metrics
                 }
 
                 assert roundtrip_ok, "Token roundtrip verification failed!"
@@ -208,7 +223,7 @@ def run_gpu_canary_execution():
     with open(RAW_REPORT_PATH, "w", encoding="utf-8") as f:
         json.dump(canary_records, f, indent=2, ensure_ascii=False)
 
-    print(f"\n[GPU CALIBRATION COMPLETE] 8 Neural Generations Finished. Raw Log: '{RAW_REPORT_PATH}'", flush=True)
+    print(f"\n[GPU CALIBRATION COMPLETE] {len(canary_records)} Neural Generations Finished. Raw Log: '{RAW_REPORT_PATH}'", flush=True)
     return canary_records, checkpoint_load_stats
 
 def main():
