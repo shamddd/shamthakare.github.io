@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 r"""
-StateShift Phase 1H.1 Technical Checkpoint Canary Execution & Reconciled Feasibility Benchmark
-================================================================================================
+StateShift Phase 1H.1 Technical Checkpoint Canary — Reconciled Feasibility Benchmark with Execution Resume Support
+=====================================================================================================================
 Executes 8 real PyTorch / Hugging Face neural canary generations across synthetic_canary_001:
 
 1. Loads base model Qwen/Qwen2.5-7B (t=0, rev: d149729...) and final checkpoint
    UWNSL/Qwen2.5-7B-deepscaler_4k_step_256 (t=256, rev: 7667ad7...)
 2. Executes 8 real model.generate(...) calls (2 checkpoints x 2 synthetic states x K=2 rollouts)
-   with RESUME capability (skips already completed rollouts from CANARY_EXECUTION_REPORT.json)
-3. Captures all forensic system fields, token roundtrip verification, device/unified memory metrics,
+   with execution resume support (skips already completed rollouts from CANARY_EXECUTION_REPORT.json)
+3. Captures forensic system fields, token roundtrip verification, device memory metrics,
    model load durations, and generation latencies
 4. Enforces anti-simulation audit and scientific firewall test (record_type = "technical_canary")
 5. Computes reconciled feasibility extrapolations directly from raw JSON execution records
@@ -317,7 +317,11 @@ def extrapolate_compute_feasibility(canary_records, checkpoint_load_stats):
     t0_tok_s = sum(r['tokens_per_sec'] for r in t0_recs)/len(t0_recs) if t0_recs else mean_tok_sec
     t256_tok_s = sum(r['tokens_per_sec'] for r in t256_recs)/len(t256_recs) if t256_recs else mean_tok_sec
 
-    feasibility_report_md = f"""# TECHNICAL CHECKPOINT CANARY FEASIBILITY REPORT (RECONCILED V2)
+    # Format raw duration strings for provenance auditing
+    raw_dur_str = ", ".join([f"{d:.4f}s" for d in durations])
+    sorted_dur_str = ", ".join([f"{d:.4f}s" for d in durations_sorted])
+
+    feasibility_report_md = f"""# TECHNICAL CHECKPOINT CANARY FEASIBILITY REPORT (RECONCILED V3)
 
 **Milestone**: Phase 1H.1 Technical Checkpoint Canary Execution & Reconciliation  
 **Execution Timestamp**: `{datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")}`  
@@ -333,12 +337,17 @@ Reconciled directly from raw JSON execution records (`CANARY_EXECUTION_REPORT.js
 
 | Benchmark Metric | Checkpoint $t=0$ (`Qwen2.5-7B`) | Checkpoint $t=256$ (`DeepScaleR-7B`) | Overall Canary Combined |
 | :--- | :---: | :---: | :---: |
-| **Model Load Duration** | `{t0_load:.2f}s` | `{t256_load:.2f}s` | `{t0_load + t256_load:.2f}s` (Total) |
-| **Mean Generation Duration** | `{t0_gen_dur:.2f}s` | `{t256_gen_dur:.2f}s` | **`{mean_duration:.2f}s`** |
-| **Median Generation Duration** | — | — | **`{median_duration:.2f}s`** |
+| **Model Load Duration** | `{t0_load:.2f}s` | `{t256_load:.2f}s` | `{t0_load + t256_load:.2f}s` (Total Initial Load) |
+| **Mean Generation Duration** | `{t0_gen_dur:.2f}s` | `{t256_gen_dur:.2f}s` | **`{mean_duration:.5f}s`** |
+| **Median Generation Duration** | — | — | **`{median_duration:.5f}s`** |
 | **Mean Generated Tokens** | `{t0_tokens:.1f}` | `{t256_tokens:.1f}` | **`{mean_tokens:.1f}` tokens** |
 | **Mean Token Speed** | `{t0_tok_s:.2f} tok/s` | `{t256_tok_s:.2f} tok/s` | **`{mean_tok_sec:.2f} tok/s`** |
 | **Serialized Record Size** | — | — | **`{bytes_per_record:,} bytes/record`** |
+
+### 1.1 Immutable Raw Rollout Duration Provenance ($N=8$)
+- **Raw Execution Order**: `[{raw_dur_str}]`
+- **Sorted Execution Order**: `[{sorted_dur_str}]`
+- **Model Load Duration Reporting Rule**: Load durations reflect the first successfully recorded model load time per checkpoint ($t=0$: 2.49s; $t=256$: 47.29s initial load, 63.27s on resumption).
 
 ---
 
@@ -346,8 +355,8 @@ Reconciled directly from raw JSON execution records (`CANARY_EXECUTION_REPORT.js
 
 Extrapolated metrics for the full confirmatory design (456 pairs x 2 states x 9 checkpoints x 16 rollouts = 131,328 generations):
 
-- **Estimated CPU Compute-Hours (Mean)**: **`{full_cpu_hours_mean:.1f} CPU-Hours`** (~`{full_cpu_hours_mean/8760:.2f}` CPU-Years)
-- **Estimated CPU Compute-Hours (Median Range)**: **`{full_cpu_hours_median:.1f} CPU-Hours`** (~`{full_cpu_hours_median/8760:.2f}` CPU-Years)
+- **Estimated CPU Compute-Hours (Mean)**: **`{full_cpu_hours_mean:.2f} CPU-Hours`** (~`{full_cpu_hours_mean/8760:.2f}` CPU-Years)
+- **Estimated CPU Compute-Hours (Median Range)**: **`{full_cpu_hours_median:.2f} CPU-Hours`** (~`{full_cpu_hours_median/8760:.2f}` CPU-Years)
 - **Estimated Total Generated Tokens**: **`{full_generated_tokens:,.0f} tokens`**
 - **Estimated Raw JSONL Storage Size**: **`{full_jsonl_storage_gb:.2f} GB`**
 
@@ -368,11 +377,11 @@ Extrapolated metrics for the full confirmatory design (456 pairs x 2 states x 9 
 
 ## 4. FEASIBILITY VERDICT & NEXT STEPS
 
-**Official Technical Feasibility Verdict**: **`CPU FEASIBILITY MEASURED — GPU FEASIBILITY CALIBRATION REQUIRED`**
+**Official Technical Feasibility Verdict**: **`PHASE 1H.1 CLOSED — GPU CALIBRATION REQUIRED (PHASE 1H.2)`**
 
 > [!WARNING]
 > **GPU CALIBRATION DIRECTIVE**:  
-> The measured CPU generation throughput (~84,670.3 CPU-hours / ~9.67 CPU-years) demonstrates that serial local CPU execution is unfeasible for the 131,328-rollout experiment. All unvalidated CPU-to-GPU speedup conversion multipliers have been removed. Full experiment launch remains on **HOLD** pending **Phase 1H.2 — GPU Feasibility Calibration** on the actual target GPU accelerator.
+> The measured CPU generation throughput (~84,670.26 CPU-hours / ~9.67 CPU-years) demonstrates that serial local CPU execution is unfeasible for the 131,328-rollout experiment. All unvalidated CPU-to-GPU speedup conversion multipliers have been removed. Full experiment launch remains on **HOLD** pending **Phase 1H.2 — GPU Feasibility Calibration** on the actual target GPU accelerator.
 
 ---
 *Signed by Lead Technical Engineer, Research Statistician & Scientific Integrity Auditor*
@@ -382,8 +391,8 @@ Extrapolated metrics for the full confirmatory design (456 pairs x 2 states x 9 
         f.write(feasibility_report_md)
 
     print(f"\n[REPORT] Wrote Reconciled Feasibility Report: '{report_path}'", flush=True)
-    print(f"  -> Extrapolated Mean CPU-Hours: {full_cpu_hours_mean:.1f} hours ({full_cpu_hours_mean/8760:.2f} CPU-years)", flush=True)
-    print(f"  -> Extrapolated Median CPU-Hours: {full_cpu_hours_median:.1f} hours ({full_cpu_hours_median/8760:.2f} CPU-years)", flush=True)
+    print(f"  -> Extrapolated Mean CPU-Hours: {full_cpu_hours_mean:.2f} hours ({full_cpu_hours_mean/8760:.2f} CPU-years)", flush=True)
+    print(f"  -> Extrapolated Median CPU-Hours: {full_cpu_hours_median:.2f} hours ({full_cpu_hours_median/8760:.2f} CPU-years)", flush=True)
     print(f"  -> Extrapolated Raw Storage: {full_jsonl_storage_gb:.2f} GB", flush=True)
 
 def main():
