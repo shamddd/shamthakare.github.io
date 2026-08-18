@@ -4,7 +4,7 @@ StateShift Phase 1H.2 GPU Feasibility Calibration Benchmark (Fully Reconciled CU
 =============================================================================================
 Executes 16 real PyTorch / Hugging Face neural canary generations + 2 checkpoint warmup generations on CUDA GPU:
 
-1. HARD CUDA REQUIREMENT: Aborts if CUDA is unavailable; zero CPU/MPS fallback permitted.
+1. HARD CUDA REQUIREMENT: Aborts if CUDA is unavailable with exit code 2; zero CPU/MPS fallback permitted.
 2. Loads base model Qwen/Qwen2.5-7B (t=0, rev: d149729...) and final checkpoint
    UWNSL/Qwen2.5-7B-deepscaler_4k_step_256 (t=256, rev: 7667ad7...) on CUDA GPU.
 3. WARMUP EXCLUSION: Executes exactly 1 warmup rollout per checkpoint prior to state loops (state_type="warmup", rollout_k=0, is_warmup=True). 2 warmups total + 16 measured rollouts = 18 total GPU rollouts.
@@ -158,11 +158,14 @@ def run_gpu_canary_execution():
     print("STARTING PHASE 1H.2 HARDENED GPU FEASIBILITY CALIBRATION", flush=True)
     print("============================================================", flush=True)
     
-    # HARD REQUIREMENT: Abort if CUDA is unavailable
+    # HARD REQUIREMENT: Abort with non-zero exit code 2 if CUDA is unavailable
     if not torch.cuda.is_available():
-        error_msg = "[FATAL ERROR] Phase 1H.2 requires CUDA GPU accelerator! torch.cuda.is_available() is False. Fallback to CPU/MPS is strictly prohibited."
-        print(error_msg, flush=True)
-        raise RuntimeError(error_msg)
+        print(
+            "[FATAL ERROR] Phase 1H.2 requires a CUDA GPU accelerator. CPU/MPS fallback is strictly prohibited.",
+            file=sys.stderr,
+            flush=True
+        )
+        sys.exit(2)
 
     gpu_name = torch.cuda.get_device_name(0)
     gpu_count = torch.cuda.device_count()
@@ -572,12 +575,9 @@ Extrapolated metrics for the full confirmatory design (456 pairs x 2 states x 9 
     print(f"  -> Peak VRAM Allocated: {max_vram_gb:.2f} GB", flush=True)
 
 def main():
-    try:
-        canary_records, checkpoint_load_stats = run_gpu_canary_execution()
-        run_scientific_firewall_test(canary_records)
-        extrapolate_gpu_feasibility(canary_records, checkpoint_load_stats)
-    except RuntimeError as e:
-        print(f"\n[EXECUTION HALTED] {e}", flush=True)
+    canary_records, checkpoint_load_stats = run_gpu_canary_execution()
+    run_scientific_firewall_test(canary_records)
+    extrapolate_gpu_feasibility(canary_records, checkpoint_load_stats)
 
 if __name__ == "__main__":
     main()
