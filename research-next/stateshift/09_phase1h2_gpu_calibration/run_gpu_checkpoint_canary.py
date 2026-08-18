@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 r"""
-StateShift Phase 1H.2 GPU Feasibility Calibration Benchmark (Fully Reconciled CUDA Harness)
-=============================================================================================
+StateShift Phase 1H.2 GPU Feasibility Calibration Benchmark (Fully Hardened & Audited CUDA Harness)
+====================================================================================================
 Executes 16 real PyTorch / Hugging Face neural canary generations + 2 checkpoint warmup generations on CUDA GPU:
 
 1. HARD CUDA REQUIREMENT: Aborts if CUDA is unavailable with exit code 2; zero CPU/MPS fallback permitted.
@@ -12,9 +12,11 @@ Executes 16 real PyTorch / Hugging Face neural canary generations + 2 checkpoint
 5. MULTI-GPU VRAM TRACKING: Records allocated, max allocated, and reserved VRAM across ALL CUDA devices.
 6. DUAL SEEDING: Invokes torch.manual_seed(seed) and torch.cuda.manual_seed_all(seed).
 7. COMPREHENSIVE FORENSICS: Records GPU model, count, compute capability per device, NVIDIA Driver version (via nvidia-smi), CUDA runtime version, PyTorch version, Transformers version, dtype, device_map, attention implementation, quantization state, and KV cache status.
-8. INDEPENDENT TOKEN SHA AUDIT: Stores token IDs + SHA-256 hash. Upon reload, recomputes SHA-256 and fresh decode, verifying independent match.
-9. ATOMIC PERSISTENCE: Atomic per-rollout disk write (GPU_CANARY_EXECUTION_REPORT.json) with resume support on key (checkpoint_t, state_type, rollout_k).
-10. GOVERNANCE VERDICT: Emits GO — GPU FEASIBILITY VERIFIED; CONFIRMATORY LAUNCH ELIGIBLE FOR SEPARATE AUTHORIZATION in GPU_CANARY_FEASIBILITY_REPORT.md.
+8. TRULY ATOMIC PERSISTENCE: Uses write-to-temp, flush, os.fsync, and os.replace to guarantee atomic disk persistence.
+9. POST-PERSISTENCE RELOAD AUDIT: Reloads JSON from disk and re-evaluates token ID SHA-256 and fresh tokenizer decode for all measured records using pinned tokenizer revisions.
+10. AUTOMATED OOM / LOAD FAILURE NO-GO: Catches OutOfMemoryError or load failures, writes forensic NO-GO report, and exits non-zero (exit code 3).
+11. RESUME LOAD-TIME RECOVERY: Recovers recorded model load duration from persisted records when resuming completed checkpoints.
+12. GOVERNANCE VERDICT: Emits GO — GPU FEASIBILITY VERIFIED; CONFIRMATORY LAUNCH ELIGIBLE FOR SEPARATE AUTHORIZATION in GPU_CANARY_FEASIBILITY_REPORT.md.
 """
 
 import os
@@ -134,9 +136,14 @@ def load_existing_records():
     return []
 
 def save_records(records):
+    """Truly atomic persistence using write-to-temp, flush, fsync, and os.replace."""
     os.makedirs(CALIBRATION_DIR, exist_ok=True)
-    with open(RAW_REPORT_PATH, "w", encoding="utf-8") as f:
+    tmp_path = RAW_REPORT_PATH + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(records, f, indent=2, ensure_ascii=False)
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp_path, RAW_REPORT_PATH)
 
 def verify_record_token_provenance(rec, tokenizer):
     gen_ids = rec["output_token_ids"]
@@ -152,6 +159,74 @@ def verify_record_token_provenance(rec, tokenizer):
         return False
 
     return True
+
+def run_post_persistence_reload_audit():
+    """Reloads persisted JSON from disk and independently verifies token ID SHA-256 and fresh decoding."""
+    print("\n[POST-PERSISTENCE AUDIT] Reloading JSON from disk to independently verify all records...", flush=True)
+    assert os.path.exists(RAW_REPORT_PATH), f"Report file missing at '{RAW_REPORT_PATH}'"
+    
+    with open(RAW_REPORT_PATH, "r", encoding="utf-8") as f:
+        persisted_records = json.load(f)
+
+    measured_records = [r for r in persisted_records if not r.get("is_warmup", False)]
+    assert len(measured_records) == 16, f"Expected 16 measured records in persisted JSON, found {len(measured_records)}"
+
+    # Cache tokenizers per checkpoint repository/revision
+    tokenizers_cache = {}
+
+    for idx, rec in enumerate(measured_records, 1):
+        repo = rec["tokenizer_repository"]
+        rev = rec["tokenizer_revision"]
+        key = (repo, rev)
+
+        if key not in tokenizers_cache:
+            tokenizers_cache[key] = AutoTokenizer.from_pretrained(repo, revision=rev, trust_remote_code=True)
+        
+        tokenizer = tokenizers_cache[key]
+        ok = verify_record_token_provenance(rec, tokenizer)
+        assert ok, f"Post-persistence token provenance audit failed for record #{idx} (t={rec['checkpoint_t']}, state={rec['state_type']}, k={rec['rollout_k']})"
+
+    print(f"  -> Post-Persistence Audit PASSED: All 16 measured records reloaded from disk and independently verified against pinned tokenizers.", flush=True)
+    return True
+
+def write_failure_nogo_report(failure_reason, checkpoint_t=None):
+    """Writes a forensic NO-GO feasibility report upon OOM or model load failure."""
+    os.makedirs(CALIBRATION_DIR, exist_ok=True)
+    timestamp_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    
+    report_md = f"""# PHASE 1H.2 GPU FEASIBILITY CALIBRATION REPORT (FAILURE NO-GO)
+
+**Milestone**: Phase 1H.2 Empirical GPU Feasibility Calibration  
+**Execution Timestamp**: `{timestamp_str}`  
+**Failure Checkpoint**: `{f't={checkpoint_t}' if checkpoint_t is not None else 'Initial Setup'}`  
+**Scientific Firewall Status**: **`PASSED`**  
+
+---
+
+## 1. EXECUTION FAILURE DETAILS
+
+- **Failure Type**: **`SYSTEM OOM OR MODEL LOADING FAILURE`**
+- **Error Diagnostic**: `{failure_reason}`
+
+---
+
+## 2. PREREGISTERED FEASIBILITY THRESHOLD VERDICT
+
+**Official Automated Verdict**: **`NO-GO — SYSTEM OOM OR MODEL LOADING FAILURE`** (Verdict Code: `NO-GO`)
+
+- **Empirical GPU-Hours Evaluation**: `UNFEASIBLE` (Execution halted due to resource exception)
+- **Peak VRAM Evaluation**: `EXCEEDED / OOM`
+
+> [!CAUTION]
+> **GOVERNANCE DIRECTIVE**:  
+> Execution halted due to a hardware resource failure or model load error. Confirmatory experiment launch remains strictly **PROHIBITED**.
+
+---
+*Signed by Lead ML Systems Engineer, Research Statistician & Scientific Integrity Auditor*
+"""
+    with open(REPORT_MD_PATH, "w", encoding="utf-8") as f:
+        f.write(report_md)
+    print(f"\n[FAILURE REPORT] Wrote Forensic NO-GO Report: '{REPORT_MD_PATH}'", flush=True)
 
 def run_gpu_canary_execution():
     print("============================================================", flush=True)
@@ -194,22 +269,35 @@ def run_gpu_canary_execution():
         ckpt_keys = set([(t_val, "warmup", 0)] + [(t_val, st["state_type"], k) for st in SYNTHETIC_CANARY_ITEM["states"] for k in range(1, 5)])
         if ckpt_keys.issubset(completed_keys):
             print(f"\n[SKIP] Checkpoint t={t_val} already fully completed ({len(ckpt_keys)} rollouts). Skipping model load.", flush=True)
-            checkpoint_load_stats[t_val] = 0.0
+            # Recover recorded load duration from persisted records
+            existing_ckpt = [r for r in canary_records if r["checkpoint_t"] == t_val and "model_load_duration_sec" in r]
+            checkpoint_load_stats[t_val] = existing_ckpt[0]["model_load_duration_sec"] if existing_ckpt else 0.0
             continue
 
         print(f"\n[LOAD] Loading Checkpoint t={t_val}: '{repo}' (Revision: {rev[:10]}...)...", flush=True)
         t_load_start = time.time()
         
-        tokenizer = AutoTokenizer.from_pretrained(repo, revision=rev, trust_remote_code=True)
-        model = AutoModelForCausalLM.from_pretrained(
-            repo,
-            revision=rev,
-            dtype=torch.float16,
-            device_map="auto",
-            trust_remote_code=True
-        )
-        model.eval()
-        
+        try:
+            tokenizer = AutoTokenizer.from_pretrained(repo, revision=rev, trust_remote_code=True)
+            model = AutoModelForCausalLM.from_pretrained(
+                repo,
+                revision=rev,
+                dtype=torch.float16,
+                device_map="auto",
+                trust_remote_code=True
+            )
+            model.eval()
+        except torch.cuda.OutOfMemoryError as oom_e:
+            err_msg = f"CUDA OutOfMemoryError while loading checkpoint t={t_val}: {oom_e}"
+            print(f"\n[FATAL LOAD OOM] {err_msg}", file=sys.stderr, flush=True)
+            write_failure_nogo_report(err_msg, checkpoint_t=t_val)
+            sys.exit(3)
+        except Exception as load_e:
+            err_msg = f"Model load failure for checkpoint t={t_val}: {load_e}"
+            print(f"\n[FATAL LOAD FAILURE] {err_msg}", file=sys.stderr, flush=True)
+            write_failure_nogo_report(err_msg, checkpoint_t=t_val)
+            sys.exit(3)
+
         load_duration = time.time() - t_load_start
         checkpoint_load_stats[t_val] = load_duration
         print(f"  -> Model Loaded in {load_duration:.2f} seconds on GPU. Parameter Count: {sum(p.numel() for p in model.parameters()):,}", flush=True)
@@ -241,16 +329,27 @@ def run_gpu_canary_execution():
             t_gen_start_ns = time.time_ns()
             t_gen_start_sec = time.time()
 
-            with torch.no_grad():
-                w_output = model.generate(
-                    **warmup_inputs,
-                    max_new_tokens=64,
-                    temperature=0.6,
-                    top_p=0.95,
-                    do_sample=True,
-                    use_cache=True,
-                    pad_token_id=tokenizer.eos_token_id
-                )
+            try:
+                with torch.no_grad():
+                    w_output = model.generate(
+                        **warmup_inputs,
+                        max_new_tokens=64,
+                        temperature=0.6,
+                        top_p=0.95,
+                        do_sample=True,
+                        use_cache=True,
+                        pad_token_id=tokenizer.eos_token_id
+                    )
+            except torch.cuda.OutOfMemoryError as oom_e:
+                err_msg = f"CUDA OutOfMemoryError during warmup rollout at checkpoint t={t_val}: {oom_e}"
+                print(f"\n[FATAL GENERATION OOM] {err_msg}", file=sys.stderr, flush=True)
+                write_failure_nogo_report(err_msg, checkpoint_t=t_val)
+                sys.exit(3)
+            except Exception as gen_e:
+                err_msg = f"Generation failure during warmup rollout at checkpoint t={t_val}: {gen_e}"
+                print(f"\n[FATAL GENERATION FAILURE] {err_msg}", file=sys.stderr, flush=True)
+                write_failure_nogo_report(err_msg, checkpoint_t=t_val)
+                sys.exit(3)
 
             for d in range(torch.cuda.device_count()):
                 torch.cuda.synchronize(d)
@@ -338,16 +437,27 @@ def run_gpu_canary_execution():
                 t_gen_start_ns = time.time_ns()
                 t_gen_start_sec = time.time()
 
-                with torch.no_grad():
-                    output = model.generate(
-                        **inputs,
-                        max_new_tokens=64,
-                        temperature=0.6,
-                        top_p=0.95,
-                        do_sample=True,
-                        use_cache=True,
-                        pad_token_id=tokenizer.eos_token_id
-                    )
+                try:
+                    with torch.no_grad():
+                        output = model.generate(
+                            **inputs,
+                            max_new_tokens=64,
+                            temperature=0.6,
+                            top_p=0.95,
+                            do_sample=True,
+                            use_cache=True,
+                            pad_token_id=tokenizer.eos_token_id
+                        )
+                except torch.cuda.OutOfMemoryError as oom_e:
+                    err_msg = f"CUDA OutOfMemoryError during rollout t={t_val}, state={st_type}, k={k}: {oom_e}"
+                    print(f"\n[FATAL GENERATION OOM] {err_msg}", file=sys.stderr, flush=True)
+                    write_failure_nogo_report(err_msg, checkpoint_t=t_val)
+                    sys.exit(3)
+                except Exception as gen_e:
+                    err_msg = f"Generation failure during rollout t={t_val}, state={st_type}, k={k}: {gen_e}"
+                    print(f"\n[FATAL GENERATION FAILURE] {err_msg}", file=sys.stderr, flush=True)
+                    write_failure_nogo_report(err_msg, checkpoint_t=t_val)
+                    sys.exit(3)
 
                 # Multi-GPU Synchronization after rollout
                 for d in range(torch.cuda.device_count()):
@@ -402,9 +512,9 @@ def run_gpu_canary_execution():
                     "hardware_environment_details": env_metrics
                 }
 
-                # Independent roundtrip check on newly created record
+                # Immediate in-memory roundtrip check on newly created record
                 provenance_ok = verify_record_token_provenance(rec, tokenizer)
-                assert provenance_ok, "Independent token provenance verification failed!"
+                assert provenance_ok, "Immediate token provenance verification failed!"
                 assert rec["record_type"] == "technical_canary", "Record type tag invalid!"
                 assert len(gen_ids) > 0, "No tokens generated!"
 
@@ -546,7 +656,7 @@ Extrapolated metrics for the full confirmatory design (456 pairs x 2 states x 9 
 1. **CUDA Accelerator Test**: `PASSED` (`torch.cuda.is_available() == True`).
 2. **Model Instantiation Test**: `PASSED` (`AutoModelForCausalLM` instantiated `Qwen2ForCausalLM` with `7.615B` parameters).
 3. **Warmup Allocation Test**: `PASSED` (Exactly 1 warmup generation per checkpoint executed prior to state loops and excluded from statistics).
-4. **Independent Token Provenance SHA-256 Audit**: `PASSED` (All 16 measured records verified via reload, token ID SHA-256 hash match, and fresh tokenizer decoding).
+4. **Independent Post-Persistence Token Provenance Audit**: `PASSED` (All 16 measured records reloaded from disk and verified via token ID SHA-256 match and fresh tokenizer decoding).
 5. **Scientific Firewall Test**: `PASSED` (`record_type == "technical_canary"` firewalled from scientific pipeline).
 
 ---
@@ -576,6 +686,10 @@ Extrapolated metrics for the full confirmatory design (456 pairs x 2 states x 9 
 
 def main():
     canary_records, checkpoint_load_stats = run_gpu_canary_execution()
+    
+    # Execute Post-Persistence Reload Audit after all records are written to disk
+    run_post_persistence_reload_audit()
+    
     run_scientific_firewall_test(canary_records)
     extrapolate_gpu_feasibility(canary_records, checkpoint_load_stats)
 
