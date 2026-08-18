@@ -1,4 +1,4 @@
-# STATESHIFT PHASE 1H.2 — GPU FEASIBILITY CALIBRATION SPECIFICATION (V3 REVISED)
+# PHASE 1H.2 — GPU FEASIBILITY CALIBRATION SPECIFICATION (V3 REVISED)
 
 **Protocol Version**: `Phase 1H.2 Release 3.0`  
 **Registration Date**: `2026-08-19`  
@@ -16,7 +16,7 @@ Phase 1H.1 established that serial CPU execution requires ~84,670.26 CPU-hours (
 
 > [!CAUTION]
 > **FULL EXPERIMENT LAUNCH HOLD**:  
-> The 131,328-rollout confirmatory experiment remains strictly on **HOLD**. Full launch is prohibited until empirical GPU calibration metrics (load time, tokens/sec per rollout, VRAM per device, latency) are measured on the target GPU platform.
+> The 131,328-rollout confirmatory experiment remains strictly on **HOLD**. Full launch is prohibited until empirical GPU calibration metrics (load time, tokens/sec per rollout, VRAM per device, latency) are measured on the target GPU platform and human principal authorization is granted.
 
 ---
 
@@ -29,8 +29,8 @@ To preserve prospective scientific separation, **ZERO items from the 456-pair co
 - **Control Prefix ($S_C$)**: `"12 + 8 = 20."`
 - **Recovery Prefix ($S_R$)**: `"12 - 8 = 20."`
 - **Record Type Tag**: `record_type = "technical_canary"`
-- **Allocation**:
-  - **2 Warmup Generations**: 1 per checkpoint executed prior to state loops (`state_type="warmup"`, `rollout_k=0`, `is_warmup=True`).
+- **Generation Allocation**:
+  - **2 Warmup Generations**: Exactly 1 per checkpoint executed prior to state loops (`state_type="warmup"`, `rollout_k=0`, `is_warmup=True`). Warmup rollouts are logged but strictly excluded from feasibility statistics.
   - **16 Measured Generations**: 2 Checkpoints ($t=0, t=256$) $\times$ 2 States ($S_C, S_R$) $\times K=4$ rollouts.
   - **Total**: Exactly **18 GPU rollout generations**.
 
@@ -82,7 +82,7 @@ Upon executing GPU calibration on the target GPU hardware:
 - **`REDESIGN`**: Measured GPU-hours $> 250$ GPU-hours (requires pre-execution protocol amendment).
 - **`NO-GO`**: System OOM or model loading failure on GPU target platform.
 
-*Note: The harness emits technical feasibility eligibility only; explicit human principal authorization is strictly required prior to launching the confirmatory study.*
+*Note: The harness evaluates technical compute feasibility only; explicit human principal authorization is strictly required prior to launching the confirmatory study.*
 
 ---
 *Signed by Lead ML Systems Engineer, Research Statistician & Scientific Integrity Auditor*
