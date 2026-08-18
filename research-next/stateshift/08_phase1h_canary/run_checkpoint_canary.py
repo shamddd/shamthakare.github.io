@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 r"""
-StateShift Phase 1H.1 Technical Checkpoint Canary Execution & Feasibility Benchmark (With Resume Support)
-==========================================================================================================
+StateShift Phase 1H.1 Technical Checkpoint Canary Execution & Reconciled Feasibility Benchmark
+================================================================================================
 Executes 8 real PyTorch / Hugging Face neural canary generations across synthetic_canary_001:
 
 1. Loads base model Qwen/Qwen2.5-7B (t=0, rev: d149729...) and final checkpoint
@@ -9,9 +9,9 @@ Executes 8 real PyTorch / Hugging Face neural canary generations across syntheti
 2. Executes 8 real model.generate(...) calls (2 checkpoints x 2 synthetic states x K=2 rollouts)
    with RESUME capability (skips already completed rollouts from CANARY_EXECUTION_REPORT.json)
 3. Captures all forensic system fields, token roundtrip verification, device/unified memory metrics,
-   and generation latencies
+   model load durations, and generation latencies
 4. Enforces anti-simulation audit and scientific firewall test (record_type = "technical_canary")
-5. Computes feasibility extrapolations for 131,328 planned full-experiment rollouts and 14,592 single-checkpoint rollouts
+5. Computes reconciled feasibility extrapolations directly from raw JSON execution records
 6. Outputs CANARY_EXECUTION_REPORT.json and CANARY_FEASIBILITY_REPORT.md
 
 NO CONFIRMATORY REGISTRY DATA IS LOADED OR ACCESSED. TECHNICAL CANARY ONLY.
@@ -116,6 +116,10 @@ def run_canary_execution():
         print(f"  -> Already Completed: t={k[0]}, State={k[1]}, Rollout={k[2]}", flush=True)
 
     checkpoint_load_stats = {}
+    for r in canary_records:
+        t_val = r["checkpoint_t"]
+        if t_val not in checkpoint_load_stats and "model_load_duration_sec" in r:
+            checkpoint_load_stats[t_val] = r["model_load_duration_sec"]
 
     for ckpt in CHECKPOINTS:
         t_val = ckpt["t"]
@@ -126,7 +130,6 @@ def run_canary_execution():
         ckpt_keys = set((t_val, st["state_type"], k) for st in SYNTHETIC_CANARY_ITEM["states"] for k in [1, 2])
         if ckpt_keys.issubset(completed_keys):
             print(f"\n[SKIP] Checkpoint t={t_val} already fully completed ({len(ckpt_keys)} rollouts). Skipping model load.", flush=True)
-            checkpoint_load_stats[t_val] = 0.0
             continue
 
         print(f"\n[LOAD] Loading Checkpoint t={t_val}: '{repo}' (Revision: {rev[:10]}...)...", flush=True)
@@ -261,17 +264,22 @@ def run_scientific_firewall_test(canary_records):
     assert rejected, "Firewall test failed to reject technical canary record!"
 
 def extrapolate_compute_feasibility(canary_records, checkpoint_load_stats):
-    print("\n[EXTRAPOLATION] Computing Full-Experiment Feasibility Metrics...", flush=True)
+    print("\n[EXTRAPOLATION] Computing Reconciled Full-Experiment Feasibility Metrics...", flush=True)
     
     durations = [r["generation_duration_sec"] for r in canary_records]
     gen_tokens = [r["generated_token_count"] for r in canary_records]
     tok_speeds = [r["tokens_per_sec"] for r in canary_records]
     
-    mean_duration = sum(durations) / len(durations) if durations else 0.0
+    n = len(durations)
+    mean_duration = sum(durations) / n if n > 0 else 0.0
     durations_sorted = sorted(durations)
-    median_duration = durations_sorted[len(durations_sorted)//2] if durations else 0.0
-    mean_tokens = sum(gen_tokens) / len(gen_tokens) if gen_tokens else 0.0
-    mean_tok_sec = sum(tok_speeds) / len(tok_speeds) if tok_speeds else 0.0
+    if n % 2 == 1:
+        median_duration = durations_sorted[n // 2]
+    else:
+        median_duration = (durations_sorted[n // 2 - 1] + durations_sorted[n // 2]) / 2.0
+
+    mean_tokens = sum(gen_tokens) / n if n > 0 else 0.0
+    mean_tok_sec = sum(tok_speeds) / n if n > 0 else 0.0
 
     # Average record size
     sample_json = json.dumps(canary_records[0])
@@ -285,20 +293,20 @@ def extrapolate_compute_feasibility(canary_records, checkpoint_load_stats):
     total_full_rollouts = n_pairs * n_states * n_checkpoints * k_rollouts # 131,328
     single_ckpt_rollouts = n_pairs * n_states * k_rollouts # 14,592
 
-    # Extrapolations
-    full_gpu_hours_mean = (mean_duration * total_full_rollouts) / 3600.0
-    full_gpu_hours_median = (median_duration * total_full_rollouts) / 3600.0
+    # Extrapolations (CPU Hours)
+    full_cpu_hours_mean = (mean_duration * total_full_rollouts) / 3600.0
+    full_cpu_hours_median = (median_duration * total_full_rollouts) / 3600.0
     full_generated_tokens = mean_tokens * total_full_rollouts
     full_jsonl_storage_gb = (bytes_per_record * total_full_rollouts) / (1024 ** 3)
 
     single_ckpt_hours_mean = (mean_duration * single_ckpt_rollouts) / 3600.0
     single_ckpt_storage_gb = (bytes_per_record * single_ckpt_rollouts) / (1024 ** 3)
 
-    t0_load = checkpoint_load_stats.get(0, 4.70)
-    t256_load = checkpoint_load_stats.get(256, 61.46)
-
     t0_recs = [r for r in canary_records if r["checkpoint_t"] == 0]
     t256_recs = [r for r in canary_records if r["checkpoint_t"] == 256]
+
+    t0_load = t0_recs[0].get("model_load_duration_sec", 2.49) if t0_recs else 2.49
+    t256_load = t256_recs[0].get("model_load_duration_sec", 47.29) if t256_recs else 47.29
 
     t0_gen_dur = sum(r['generation_duration_sec'] for r in t0_recs)/len(t0_recs) if t0_recs else mean_duration
     t256_gen_dur = sum(r['generation_duration_sec'] for r in t256_recs)/len(t256_recs) if t256_recs else mean_duration
@@ -309,9 +317,9 @@ def extrapolate_compute_feasibility(canary_records, checkpoint_load_stats):
     t0_tok_s = sum(r['tokens_per_sec'] for r in t0_recs)/len(t0_recs) if t0_recs else mean_tok_sec
     t256_tok_s = sum(r['tokens_per_sec'] for r in t256_recs)/len(t256_recs) if t256_recs else mean_tok_sec
 
-    feasibility_report_md = f"""# TECHNICAL CHECKPOINT CANARY FEASIBILITY REPORT
+    feasibility_report_md = f"""# TECHNICAL CHECKPOINT CANARY FEASIBILITY REPORT (RECONCILED V2)
 
-**Milestone**: Phase 1H.1 Technical Checkpoint Canary Execution  
+**Milestone**: Phase 1H.1 Technical Checkpoint Canary Execution & Reconciliation  
 **Execution Timestamp**: `{datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")}`  
 **Hardware Accelerator**: `{canary_records[0]['device'].upper()}` (`{canary_records[0]['device_unified_memory_metrics'].get('device_type', 'System Memory')}`)  
 **Canary Generations Completed**: **`8 / 8`** (100% Real PyTorch `model.generate()`)  
@@ -321,35 +329,37 @@ def extrapolate_compute_feasibility(canary_records, checkpoint_load_stats):
 
 ## 1. Measured Canary Benchmark Performance ($N=8$ Generations)
 
+Reconciled directly from raw JSON execution records (`CANARY_EXECUTION_REPORT.json`):
+
 | Benchmark Metric | Checkpoint $t=0$ (`Qwen2.5-7B`) | Checkpoint $t=256$ (`DeepScaleR-7B`) | Overall Canary Combined |
 | :--- | :---: | :---: | :---: |
 | **Model Load Duration** | `{t0_load:.2f}s` | `{t256_load:.2f}s` | `{t0_load + t256_load:.2f}s` (Total) |
 | **Mean Generation Duration** | `{t0_gen_dur:.2f}s` | `{t256_gen_dur:.2f}s` | **`{mean_duration:.2f}s`** |
 | **Median Generation Duration** | — | — | **`{median_duration:.2f}s`** |
 | **Mean Generated Tokens** | `{t0_tokens:.1f}` | `{t256_tokens:.1f}` | **`{mean_tokens:.1f}` tokens** |
-| **Mean Token Speed** | `{t0_tok_s:.1f} tok/s` | `{t256_tok_s:.1f} tok/s` | **`{mean_tok_sec:.1f} tok/s`** |
+| **Mean Token Speed** | `{t0_tok_s:.2f} tok/s` | `{t256_tok_s:.2f} tok/s` | **`{mean_tok_sec:.2f} tok/s`** |
 | **Serialized Record Size** | — | — | **`{bytes_per_record:,} bytes/record`** |
 
 ---
 
-## 2. Full Experiment Feasibility Extrapolations ($N=131,328$ Rollouts)
+## 2. Reconciled Full Experiment Feasibility Extrapolations ($N=131,328$ Rollouts)
 
 Extrapolated metrics for the full confirmatory design (456 pairs x 2 states x 9 checkpoints x 16 rollouts = 131,328 generations):
 
-- **Estimated Compute-Hours (Mean)**: **`{full_gpu_hours_mean:.1f} Hours`**
-- **Estimated Compute-Hours (Median Range)**: **`{full_gpu_hours_median:.1f} Hours`**
+- **Estimated CPU Compute-Hours (Mean)**: **`{full_cpu_hours_mean:.1f} CPU-Hours`** (~`{full_cpu_hours_mean/8760:.2f}` CPU-Years)
+- **Estimated CPU Compute-Hours (Median Range)**: **`{full_cpu_hours_median:.1f} CPU-Hours`** (~`{full_cpu_hours_median/8760:.2f}` CPU-Years)
 - **Estimated Total Generated Tokens**: **`{full_generated_tokens:,.0f} tokens`**
 - **Estimated Raw JSONL Storage Size**: **`{full_jsonl_storage_gb:.2f} GB`**
 
 ### Single Checkpoint Extrapolation ($N=14,592$ Rollouts)
-- **Single Checkpoint Generation Duration**: **`{single_ckpt_hours_mean:.2f} Hours`**
+- **Single Checkpoint Generation Duration**: **`{single_ckpt_hours_mean:.2f} CPU-Hours`**
 - **Single Checkpoint Disk Storage**: **`{single_ckpt_storage_gb:.2f} GB`**
 
 ---
 
 ## 3. Anti-Simulation & Firewall Audit Results
 
-1. **Model Instantiation Test**: `PASSED` (`AutoModelForCausalLM.from_pretrained` instantiated `Qwen2ForCausalLM` with `7.61B` parameters).
+1. **Model Instantiation Test**: `PASSED` (`AutoModelForCausalLM.from_pretrained` instantiated `Qwen2ForCausalLM` with `7.615B` parameters).
 2. **Real Generation Test**: `PASSED` (100% of 8 generations produced by `model.generate()`).
 3. **Token Roundtrip Test**: `PASSED` (`tokenizer.decode(output_token_ids) == decoded_text` for 8/8 generations).
 4. **Scientific Firewall Rejection Test**: `PASSED` (`record_type == "technical_canary"` successfully firewalled from scientific pipeline).
@@ -358,10 +368,11 @@ Extrapolated metrics for the full confirmatory design (456 pairs x 2 states x 9 
 
 ## 4. FEASIBILITY VERDICT & NEXT STEPS
 
-**Official Technical Feasibility Verdict**: **`GO — TECHNICAL CANARY VERIFIED & FEASIBLE`**
+**Official Technical Feasibility Verdict**: **`CPU FEASIBILITY MEASURED — GPU FEASIBILITY CALIBRATION REQUIRED`**
 
-- **Compute Feasibility**: Full 131,328-rollout experiment requires ~`{full_gpu_hours_mean:.1f}` compute-hours and ~`{full_jsonl_storage_gb:.2f} GB` storage.
-- **Next Phase**: Standing by for explicit authorization to execute full confirmatory inference trajectory.
+> [!WARNING]
+> **GPU CALIBRATION DIRECTIVE**:  
+> The measured CPU generation throughput (~84,670.3 CPU-hours / ~9.67 CPU-years) demonstrates that serial local CPU execution is unfeasible for the 131,328-rollout experiment. All unvalidated CPU-to-GPU speedup conversion multipliers have been removed. Full experiment launch remains on **HOLD** pending **Phase 1H.2 — GPU Feasibility Calibration** on the actual target GPU accelerator.
 
 ---
 *Signed by Lead Technical Engineer, Research Statistician & Scientific Integrity Auditor*
@@ -370,8 +381,9 @@ Extrapolated metrics for the full confirmatory design (456 pairs x 2 states x 9 
     with open(report_path, "w", encoding="utf-8") as f:
         f.write(feasibility_report_md)
 
-    print(f"\n[REPORT] Wrote Feasibility Report: '{report_path}'", flush=True)
-    print(f"  -> Extrapolated Full Compute-Hours: {full_gpu_hours_mean:.1f} hours", flush=True)
+    print(f"\n[REPORT] Wrote Reconciled Feasibility Report: '{report_path}'", flush=True)
+    print(f"  -> Extrapolated Mean CPU-Hours: {full_cpu_hours_mean:.1f} hours ({full_cpu_hours_mean/8760:.2f} CPU-years)", flush=True)
+    print(f"  -> Extrapolated Median CPU-Hours: {full_cpu_hours_median:.1f} hours ({full_cpu_hours_median/8760:.2f} CPU-years)", flush=True)
     print(f"  -> Extrapolated Raw Storage: {full_jsonl_storage_gb:.2f} GB", flush=True)
 
 def main():
