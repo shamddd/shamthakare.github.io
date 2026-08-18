@@ -1,10 +1,10 @@
-# STATESHIFT PROSPECTIVE STUDY PROTOCOL & HYPOTHESIS REGISTRATION (V3 SEALED)
+# STATESHIFT PROSPECTIVE STUDY PROTOCOL & HYPOTHESIS REGISTRATION (V3.1 FROZEN)
 
 **Protocol Version**: `Phase 1H Prospective Release 3.1`  
 **Registration Date**: `2026-08-17`  
-**Execution Status**: **`DRAFTED & FROZEN; CANARY PHASE PREPARED`**  
+**Execution Status**: **`DRAFTED & FROZEN; CANARY PHASE EXECUTING`**  
 **Confirmatory Registry V3 Hash**: `d95c1d7b6f6132733f9e778ef7d67cd8001ac4b30652ac5b83fc96053a0b8941`  
-**Strict Sensitivity Registry Hash**: `ff57926a32b84a4e975d4d38977333662ae5b6c39b04e5613ddb9b30ed4df7f8`  
+**Strict Sensitivity Registry Hash**: `d50f18f9391d63901fadf0b4b16069b74e108dc4ab31afeebb7a4a3ab1d541a1`  
 
 ---
 
@@ -28,14 +28,16 @@ The **StateShift** experiment measures whether reinforcement learning fine-tunin
    Post-Human Certified Registry $N = 456$ decontaminated problem pairs (`FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V3.json`).
 
 4. **Strict Sensitivity Subset**:
-   Strict Registry $N = 398$ pairs excluding `POSSIBLE_RELATED` contamination items (`FINAL_PROSPECTIVE_STATE_REGISTRY_STRICT_CONTAMINATION_V4.json`).
+   Strict Registry $N = 389$ pairs excluding `POSSIBLE_RELATED` contamination items (`FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V3_STRICT.json`).
 
 5. **Rollout Allocation & Exact Neural Accounting**:
    - $K = 16$ independent stochastic rollouts per state per checkpoint ($T_s = 0.6$, top_p $= 0.95$, max_tokens $= 2048$).
    - Total Neural Rollouts = $456 \text{ pairs} \times 2 \text{ states} \times 9 \text{ checkpoints} \times 16 \text{ rollouts} = \mathbf{131,328 \text{ total rollouts}}$.
 
-6. **Inference Resampling Procedure**:
-   $B = 10,000$ problem-blocked bootstrap replicates resampling problems with all states and rollouts intact.
+6. **Inference Resampling Procedure & Locked Bootstrap Method**:
+   - **Primary Interval Method**: **95% problem-blocked percentile bootstrap interval** ($B = 10,000$).
+   - **Resampling Unit**: Problem ID. When a problem is sampled, it carries together both states ($S_C, S_R$), all 9 checkpoints, and all $K=16$ rollouts.
+   - Intermediate checkpoint interaction curves $\hat{\Gamma}_t$ ($t=32 \dots 224$) are presented descriptively with 95% point-wise percentile confidence bands.
 
 ---
 
@@ -61,20 +63,20 @@ The study evaluates the public UWNSL Qwen2.5-7B DeepScaleR 4K Temporal Sampling 
 
 ### 3.1 Primary Hypothesis Test (Option A Descriptive Inference)
 - **Primary Endpoint**: Scalar interaction point estimate $\hat{\Gamma}_T$ at $T=256$.
-- **Interval Estimation**: 95% non-parametric BC_a / percentile confidence interval $[\hat{\Gamma}_{T,0.025}, \hat{\Gamma}_{T,0.975}]$ computed via $B=10,000$ problem-blocked bootstrap replicates.
+- **Interval Estimation**: 95% non-parametric percentile confidence interval $[\hat{\Gamma}_{T,0.025}, \hat{\Gamma}_{T,0.975}]$ computed via $B=10,000$ problem-blocked bootstrap replicates.
 - **Descriptive Trajectory**: Intermediate values $\hat{\Gamma}_t$ ($t=32 \dots 224$) are presented descriptively as interaction curves with 95% point-wise confidence bands.
 
 ### 3.2 Sensitivity Analyses
-1. **Strict Decontamination Subset**: Re-evaluate $\Gamma_T$ on $N=398$ strict subset.
+1. **Strict Decontamination Subset**: Re-evaluate $\Gamma_T$ on $N=389$ strict subset (`FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V3_STRICT.json`).
 2. **Operator Stratification**: Compute $\Gamma_{T,\text{op}}$ across `OP_CONSTANT_PERTURB`, `OP_SIGN_FLIP`, and `OP_FRACTION_FLIP`.
 
 ---
 
-## 4. NEXT STEP: TECHNICAL CHECKPOINT CANARY PHASE
+## 4. TECHNICAL CANARY EXECUTION & SCIENTIFIC FIREWALL
 
 > [!TIP]
-> **NEXT OPERATIONAL PHASE**:
-> The registry V3 hash (`d95c1d7b6f6132733f9e778ef7d67cd8001ac4b30652ac5b83fc96053a0b8941`) and protocol parameters are completely frozen. The authorized next step is launching the **Technical Checkpoint Canary Phase** to benchmark 7B checkpoint load times, runtime per rollout, memory/VRAM consumption, and storage estimates across the 131,328 planned rollouts.
+> **CANARY PHASE EXECUTION**:
+> The Technical Checkpoint Canary Phase benchmarks 7B model loading, token generation latency, memory consumption, and compute/storage feasibility across 8 synthetic generations (`synthetic_canary_001`). All canary records are explicitly tagged `record_type = "technical_canary"` and firewalled from scientific analysis.
 
 ---
 *Signed by StateShift Principal Investigators, Lead Auditor & Research Statistician*
