@@ -1,0 +1,17 @@
+metric_name,symbol,value,unit,ci_95_lower,ci_95_upper,population_n,description
+Primary_N,N,454,problems,N/A,N/A,454,Primary confirmatory problem population
+Strict_N,N_strict,388,problems,N/A,N/A,388,Strict contamination sensitivity problem population
+Total_Primary_Rollouts,rollouts,29056,rollouts,N/A,N/A,454,Completed 2-state x 2-ckpt x 16-repeat rollouts
+Recovery_t0_Mean,mu_R_0,0.3834,probability,0.3621,0.4047,454,Mean target-transition success at t=0 for Recovery
+Control_t0_Mean,mu_C_0,0.3892,probability,0.3678,0.4106,454,Mean target-transition success at t=0 for Control
+Recovery_t256_Mean,mu_R_256,0.7039,probability,0.6821,0.7257,454,Mean target-transition success at t=256 for Recovery
+Control_t256_Mean,mu_C_256,0.5921,probability,0.5694,0.6148,454,Mean target-transition success at t=256 for Control
+Recovery_Absolute_Change,Delta_R,0.3205,probability_diff,N/A,N/A,454,Absolute probability change for Recovery state
+Recovery_Percentage_Points,Delta_R_pp,32.05,percentage_points,N/A,N/A,454,Percentage point change for Recovery state
+Control_Absolute_Change,Delta_C,0.2029,probability_diff,N/A,N/A,454,Absolute probability change for Control state
+Control_Percentage_Points,Delta_C_pp,20.29,percentage_points,N/A,N/A,454,Percentage point change for Control state
+Primary_Interaction_Contrast,Gamma_256,0.1176,probability_diff,0.0955,0.1400,454,Primary difference-in-differences contrast
+Primary_Percentage_Points,Gamma_256_pp,11.76,percentage_points,9.55,14.00,454,Primary interaction in percentage points
+Strict_Interaction_Contrast,Gamma_256_strict,0.1160,probability_diff,0.0913,0.1408,388,Strict contamination interaction contrast
+Strict_Percentage_Points,Gamma_256_strict_pp,11.60,percentage_points,9.13,14.08,388,Strict interaction in percentage points
+Bootstrap_Replicates,B,10000,replicates,N/A,N/A,454,Problem-blocked bootstrap replicates
