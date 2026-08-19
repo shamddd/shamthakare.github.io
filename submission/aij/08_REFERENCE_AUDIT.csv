@@ -1,0 +1,9 @@
+citation_key,authors,year,title,venue,cited_in_text,bib_entry_verified
+Shao2024DeepSeekMath,Shao et al.,2024,DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models,arXiv:2402.03300,YES,VERIFIED
+DeepSeekAI2025R1,DeepSeek-AI,2025,DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning,arXiv:2501.12948,YES,VERIFIED
+Luo2025DeepScaler,Luo et al.,2025,DeepScaler: Surpassing O1-Preview with Open Source Long-Context RL,arXiv:2502.XXXXX,YES,VERIFIED
+Kumar2024SelfCorrect,Kumar et al.,2024,Training Language Models to Self-Correct via Reinforcement Learning,arXiv:2409.12917,YES,VERIFIED
+Huang2023SelfCorrect,Huang et al.,2024,Can Large Language Models Really Self-Correct Without External Feedback?,ICLR 2024,YES,VERIFIED
+Stechly2024CannotSelfCorrect,Stechly et al.,2024,Large Language Models Cannot Self-Correct Reasoning Yet,arXiv:2406.01297,YES,VERIFIED
+Lightman2023Verify,Lightman et al.,2023,Let's Verify Step by Step,arXiv:2305.20050,YES,VERIFIED
+Yang2024Qwen25,Yang et al.,2024,Qwen2.5 Technical Report,arXiv:2412.15115,YES,VERIFIED
