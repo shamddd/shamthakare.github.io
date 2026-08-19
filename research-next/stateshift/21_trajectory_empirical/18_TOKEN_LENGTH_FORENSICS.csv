@@ -1,0 +1,13 @@
+metric_name,empirical_value,unit
+total_rollouts_audited,8172,rollouts
+min_generated_tokens,240,tokens
+median_generated_tokens,240,tokens
+mean_generated_tokens,240.0,tokens
+p75_generated_tokens,240,tokens
+p90_generated_tokens,240,tokens
+p95_generated_tokens,240,tokens
+p99_generated_tokens,240,tokens
+max_generated_tokens,240,tokens
+rollouts_exceeding_512_tokens,0,count
+rollouts_exceeding_1024_tokens,0,count
+rollouts_exceeding_2048_tokens,0,count
