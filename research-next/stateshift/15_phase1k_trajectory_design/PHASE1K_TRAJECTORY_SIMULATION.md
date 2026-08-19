@@ -1,6 +1,11 @@
 # PHASE 1K TRAJECTORY PRECISION & RESOLUTION SIMULATION REPORT
 
-**Milestone**: Phase 1K Prospective Trajectory Simulation  
+> [!WARNING]
+> **SUPERSEDED METHODOLOGICAL ASSESSMENT**
+> The preliminary evaluations in this early Stage-1 document regarding $K=2$ emergence timing and shape resolution are **SUPERSEDED** by the authoritative Phase 1K.2 Power Audit (`PHASE1K2_FINAL_POWER_AUDIT.md`) and Phase 1K Final Closure (`PHASE1K_FINAL_CLOSURE.md`).
+> Phase 1K was **PROSPECTIVELY DESIGNED — NOT EXECUTED**. $K=2$ is restricted strictly to descriptive visualization only and is NOT defensible for formal trajectory inference.
+
+**Milestone**: Phase 1K Prospective Trajectory Simulation (Early Stage-1 Draft)  
 **Execution Timestamp**: `2026-08-20 01:09 UTC`  
 **Simulation Replicates**: $B = 1,000$ per candidate $K$  
 **Evaluated Trajectory**: Smooth S-curve transition from $\Gamma_0 = 0.000$ to $\Gamma_{256} = +0.1176$  

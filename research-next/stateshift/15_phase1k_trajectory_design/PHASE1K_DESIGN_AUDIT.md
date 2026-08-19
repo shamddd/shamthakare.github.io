@@ -1,6 +1,11 @@
 # PHASE 1K ZERO-COST TRAJECTORY DESIGN AUDIT
 
-**Milestone**: Phase 1K Secondary Trajectory Design Audit  
+> [!WARNING]
+> **SUPERSEDED METHODOLOGICAL ASSESSMENT**
+> Early Stage-1 evaluations in this audit regarding $K=2$ emergence resolution are **SUPERSEDED** by the authoritative Phase 1K.2 Power Audit (`PHASE1K2_FINAL_POWER_AUDIT.md`) and Phase 1K Final Closure (`PHASE1K_FINAL_CLOSURE.md`).
+> Phase 1K was **PROSPECTIVELY DESIGNED — NOT EXECUTED**.
+
+**Milestone**: Phase 1K Secondary Trajectory Design Audit (Early Stage-1 Draft)  
 **Execution Timestamp**: `2026-08-20 01:08 UTC`  
 **Auditor**: Principal ML Research Scientist, Lead Statistical Methodologist & GPU Cost Engineer  
 **Scope**: Evaluates 7 intermediate fine-tuning checkpoints ($t \in \{32, 64, 96, 128, 160, 192, 224\}$)  
