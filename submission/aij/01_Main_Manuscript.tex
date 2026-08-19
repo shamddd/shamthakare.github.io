@@ -1,0 +1,92 @@
+\documentclass[11pt,3p,review]{elsarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\journal{Artificial Intelligence}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{StateShift: Tracking State-Dependent Reasoning Recovery Across Post-Training}
+
+\author[inst1]{Author Name\corref{cor1}}
+\ead{REQUIRED_FROM_AUTHOR@institution.edu}
+\cortext[cor1]{Corresponding author. Full postal address required.}
+\address[inst1]{Department Name, Institution Name, City, Country}
+
+\begin{abstract}
+Standard evaluations of reinforcement-learning post-training in large language models emphasize aggregate benchmark accuracy, potentially obscuring changes conditional on local reasoning state. We introduce \textbf{StateShift}, a framework for measuring target-transition recovery under matched reasoning states. In a controlled study ($N=454, 29,056$ rollouts), we observe an 11.76-percentage-point state-by-checkpoint interaction between the base and step-256 checkpoints ($\Gamma_{256}=0.1176, 95\%$ problem-blocked bootstrap CI $[0.0955, 0.1400]$). Across nine empirically evaluated checkpoints, the interaction was consistent with a non-decreasing trajectory under prespecified order-restricted analysis despite local variation in unconstrained estimates, and was already detectable at the earliest available post-training checkpoint, $t=32$ ($\Gamma_{32}=0.0333$, multiplicity-adjusted 95\% CI $[0.0011, 0.0655]$). In a separate analysis of 3,200 unperturbed rollouts, 18.19\% contained a verifier-confirmed natural reasoning error; among 582 qualifying error episodes, 180 subsequently satisfied the prespecified autonomous recovery criterion (30.93\%, 95\% problem-blocked bootstrap CI $[27.19\%, 34.82\%]$). These results show that state-conditioned evaluation exposes behavioral structure not captured by aggregate correctness alone.
+\end{abstract}
+
+\begin{keyword}
+Large language models \sep Reinforcement learning \sep Mathematical reasoning \sep Reasoning recovery \sep Post-training evaluation \sep State-conditioned evaluation
+\end{keyword}
+
+\end{frontmatter}
+
+\section{Introduction}
+Reinforcement learning from verifier feedback (RLVR) has significantly improved mathematical reasoning in large language models. However, standard benchmark metrics measure only final accuracy, providing limited insight into how post-training changes reasoning behavior conditional on local state. Does RL training uniformly improve reasoning capability, or does it specifically enhance the model's ability to recover from invalid intermediate states?
+
+To answer this question, we present \textbf{StateShift}, a experimental framework evaluating state-conditioned reasoning dynamics across post-training.
+
+\section{Background and Related Work}
+\subsection{Reinforcement Learning for Reasoning}
+Recent advances such as DeepSeekMath, DeepSeek-R1, and DeepScaler demonstrate the efficacy of Group Relative Policy Optimization (GRPO) for reasoning.
+
+\subsection{Categorical Self-Correction Literature}
+Self-correction literature generally requires multi-turn verbal feedback or PRM verifiers. In contrast, StateShift evaluates unprompted natural post-error recovery in single-rollout decoding.
+
+\section{The StateShift Framework}
+StateShift evaluates target-transition success under two matched conditions:
+\begin{enumerate}
+    \item \textbf{Recovery Condition ($R$)}: The model is initialized at a locally invalid intermediate reasoning state.
+    \item \textbf{Control Condition ($C$)}: The model is initialized at a matched control state.
+\end{enumerate}
+
+The primary estimand is the difference-in-differences state-by-checkpoint interaction:
+\begin{equation}
+\Gamma_t = (\mu_{R,t} - \mu_{R,0}) - (\mu_{C,t} - \mu_{C,0})
+\end{equation}
+
+\section{Controlled State-Conditioned Evaluation (Study A)}
+In our primary confirmatory experiment ($N=454, K=16, 29,056$ rollouts), we observe:
+\begin{align}
+\mu_{R,0} = 0.3834, \quad \mu_{C,0} = 0.3892 \\
+\mu_{R,256} = 0.7039, \quad \mu_{C,256} = 0.5921
+\end{align}
+yielding a primary interaction $\Gamma_{256} = \mathbf{+0.1176}$ ($95\%$ problem-blocked bootstrap CI $[+0.0955, +0.1400], p < 0.0001$). Under strict decontamination filtering ($N_{\text{Strict}}=388$), $\Gamma_{256,\text{Strict}} = \mathbf{+0.1160}$ ($95\%$ CI $[+0.0913, +0.1408]$).
+
+\section{Post-Training Trajectory Analysis}
+Evaluating intermediate checkpoints across training yields the empirical nine-point vector:
+\begin{equation}
+\mathbf{\Gamma} = [0.0000, +0.0333, +0.0337, +0.0774, +0.0748, +0.0598, +0.0976, +0.0950, +0.1176]
+\end{equation}
+Across nine empirically evaluated checkpoints, the interaction was consistent with a non-decreasing trajectory under prespecified order-restricted analysis despite local variation in unconstrained estimates. The positive interaction was already statistically detectable by the earliest available post-training checkpoint $t=32$ ($\Gamma_{32} = +0.0333$, multiplicity-adjusted 95\% CI $[+0.0011, +0.0655]$).
+
+\section{Natural Post-Error Recovery (Study B)}
+In $3,200$ unperturbed rollouts ($N=200, K=16$), $18.19\%$ contained a verifier-confirmed natural reasoning error ($\text{NEI} = 18.19\%$, $582$ error rollouts). Among $582$ qualifying error episodes, $180$ subsequently satisfied the prespecified autonomous recovery criterion ($\text{NRR} = \mathbf{30.93\%}$, $95\%$ problem-blocked bootstrap CI $[27.19\%, 34.82\%]$).
+
+\section{Limitations}
+Strict pairwise monotonicity across all adjacent intervals was not established due to sample size constraints ($K=2/3$ at intermediate steps). Sub-32-step emergence remains unobserved because fine-grained checkpoints $t \in \{1..31\}$ do not exist. Natural post-error recovery is conditional on error occurrence and should not be interpreted as an unqualified causal self-correction probability.
+
+\section{Declarations}
+\subsection{Competing Interests}
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\subsection{Funding}
+No external funding supported this research.
+
+\subsection{CRediT Author Statement}
+Author Name: Conceptualization, Methodology, Software, Formal analysis, Writing - Original Draft.
+
+\subsection{Data Availability}
+The raw rollout records, analysis scripts, and problem registries supporting the findings of this study are available in the project repository.
+
+\bibliographystyle{elsarticle-num}
+\bibliography{03_References}
+
+\end{document}
