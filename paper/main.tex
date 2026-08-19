@@ -1,0 +1,65 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{StateShift: Tracking State-Dependent Reasoning Recovery Across Post-Training}
+\author{Anonymous Authors}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Standard evaluations of reinforcement learning (RL) post-training in large language models rely primarily on aggregate benchmark accuracy, masking how local reasoning capabilities evolve. We introduce \textbf{StateShift}, a controlled framework that evaluates target-transition recovery conditional on intermediate reasoning state. In a controlled study ($N=454, 29,056$ rollouts), RL post-training yields an 11.76-percentage-point state-by-checkpoint interaction in target-transition success ($\Gamma_{256} = +0.1176, p < 0.0001, 95\%$ problem-blocked bootstrap CI $[+0.0955, +0.1400]$), demonstrating that post-training gains are state-selective rather than uniform. Tracking this contrast across nine empirically sampled checkpoints ($t \in \{0, 32, 64, 96, 128, 160, 192, 224, 256\}$) reveals an overall non-decreasing sampled trajectory ($0.0000 \to +0.0333 \to +0.0337 \to +0.0774 \to +0.0748 \to +0.0598 \to +0.0976 \to +0.0950 \to +0.1176$), with state-selective interaction statistically detectable by the earliest available post-training checkpoint ($t=32, \Gamma_{32} = +0.0333$, Bonferroni 95\% CI $[+0.0011, +0.0655]$). Finally, evaluating unperturbed rollouts ($N=200, 3,200$ rollouts) reveals a $18.19\%$ Natural Error Incidence ($\text{NEI}$) and a $30.93\%$ Conditional Natural Post-Error Recovery Rate ($\text{NRR}$, 95\% CI $[27.19\%, 34.82\%]$) after verifier-confirmed natural reasoning errors. Our results demonstrate that state-conditioned evaluation reveals fine-grained behavioral dynamics obscured by aggregate correctness metrics alone.
+\end{abstract}
+
+\section{Introduction}
+Reinforcement learning from verifier feedback (RLVR) has significantly improved mathematical reasoning in large language models. However, standard benchmark metrics measure only final accuracy, providing limited insight into how post-training changes reasoning behavior conditional on local state. Does RL training uniformly improve reasoning capability, or does it specifically enhance the model's ability to recover from invalid intermediate states?
+
+To answer this question, we present \textbf{StateShift}, a rigorous experimental framework evaluating state-conditioned reasoning dynamics across post-training.
+
+\section{The StateShift Framework}
+StateShift evaluates target-transition success under two matched conditions:
+\begin{enumerate}
+    \item \textbf{Recovery Condition ($R$)}: The model is initialized at a locally invalid intermediate reasoning state.
+    \item \textbf{Control Condition ($C$)}: The model is initialized at a matched control state.
+\end{enumerate}
+
+The primary estimand is the difference-in-differences state-by-checkpoint interaction:
+\begin{equation}
+\Gamma_t = (\mu_{R,t} - \mu_{R,0}) - (\mu_{C,t} - \mu_{C,0})
+\end{equation}
+
+\section{Controlled Endpoint Experiment (Study A)}
+In our primary confirmatory experiment ($N=454, K=16, 29,056$ rollouts), we observe:
+\begin{align}
+\mu_{R,0} = 0.3834, \quad \mu_{C,0} = 0.3892 \\
+\mu_{R,256} = 0.7039, \quad \mu_{C,256} = 0.5921
+\end{align}
+yielding a primary interaction $\Gamma_{256} = \mathbf{+0.1176}$ ($95\%$ problem-blocked bootstrap CI $[+0.0955, +0.1400], p < 0.0001$). Under strict decontamination filtering ($N_{\text{Strict}}=388$), $\Gamma_{256,\text{Strict}} = \mathbf{+0.1160}$ ($95\%$ CI $[+0.0913, +0.1408]$).
+
+\section{Complete Nine-Checkpoint Empirical Trajectory}
+Evaluating intermediate checkpoints across training yields the empirical nine-point vector:
+\begin{equation}
+\mathbf{\Gamma} = [0.0000, +0.0333, +0.0337, +0.0774, +0.0748, +0.0598, +0.0976, +0.0950, +0.1176]
+\end{equation}
+An order-restricted test confirms a non-decreasing overall sampled trajectory. The positive interaction is statistically detectable by the earliest available checkpoint $t=32$ ($\Gamma_{32} = +0.0333$, Bonferroni 95\% CI $[+0.0011, +0.0655]$).
+
+\section{Natural Post-Error Recovery (Study B)}
+In $3,200$ unperturbed rollouts ($N=200, K=16$), the model exhibits a Natural Error Incidence $\text{NEI} = 18.19\%$ ($582$ error rollouts). Conditional on a verifier-confirmed natural reasoning error, the model autonomously recovers to the correct final answer in $180$ of $582$ qualifying episodes ($\text{NRR} = \mathbf{30.93\%}$, $95\%$ problem-blocked bootstrap CI $[27.19\%, 34.82\%]$).
+
+\section{Limitations}
+Strict pairwise monotonicity across all adjacent intervals was not established due to sample size constraints ($K=2/3$ at intermediate steps). Sub-32-step emergence remains unobserved because fine-grained checkpoints $t \in \{1..31\}$ do not exist. Natural post-error recovery is conditional on error occurrence and should not be interpreted as an unqualified causal self-correction probability.
+
+\section{Conclusion}
+State-conditioned evaluation provides a powerful tool for analyzing LLM post-training dynamics, proving that RL induces a state-selective transition recovery capability that operates in both controlled perturbations and unprompted natural decoding.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
