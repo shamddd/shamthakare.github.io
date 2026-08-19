@@ -1,0 +1,15 @@
+{
+  "study_name": "StateShift Natural Recovery Feasibility Pilot",
+  "audit_phase": "Phase 2 Stage C0.2 Provenance Reality Check",
+  "old_recorded_revision": "50bdcb5a50bdcb5a50bdcb5a50bdcb5a50bdcb5a",
+  "why_invalid": "Synthetic placeholder string generated during manifest instantiation; does not exist in Hugging Face commit log.",
+  "actual_executed_revision": "7667ad787966f5733fdca3d2b240452d7095ff95",
+  "evidence_used": [
+    "Hugging Face Model API (https://huggingface.co/api/models/UWNSL/Qwen2.5-7B-deepscaler_4k_step_256)",
+    "vLLM Hub snapshot resolution log",
+    "Safetensor shard index equality"
+  ],
+  "weight_identity_status": "VERIFIED_IDENTICAL",
+  "classification": "D. REVISION_METADATA_INVALID_BUT_WEIGHTS_IDENTIFIED",
+  "manuscript_enablement_status": "ENABLED"
+}
