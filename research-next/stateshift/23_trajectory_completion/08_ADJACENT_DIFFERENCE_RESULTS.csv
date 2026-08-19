@@ -1,0 +1,9 @@
+interval,d_t,is_positive
+t=0->t=32,0.0333,True
+t=32->t=64,0.0004,True
+t=64->t=96,0.0437,True
+t=96->t=128,-0.0026,False
+t=128->t=160,-0.015,False
+t=160->t=192,0.0378,True
+t=192->t=224,-0.0026,False
+t=224->t=256,0.0226,True
