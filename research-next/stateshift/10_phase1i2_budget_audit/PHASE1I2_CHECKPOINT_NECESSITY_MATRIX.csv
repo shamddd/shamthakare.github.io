@@ -1,0 +1,10 @@
+Checkpoint,Required_for_Gamma_256,Scientific_Purpose,Classification
+0,YES,Establishes pre-fine-tuning baseline performance (mu_R_0 and mu_C_0),ESSENTIAL_PRIMARY
+32,NO,Intermediate trajectory characterization (early fine-tuning transition),SECONDARY_TRAJECTORY
+64,NO,Intermediate trajectory characterization (early-mid fine-tuning transition),SECONDARY_TRAJECTORY
+96,NO,Intermediate trajectory characterization (mid fine-tuning transition),SECONDARY_TRAJECTORY
+128,NO,Intermediate trajectory characterization (mid-point fine-tuning transition),SECONDARY_TRAJECTORY
+160,NO,Intermediate trajectory characterization (mid-late fine-tuning transition),SECONDARY_TRAJECTORY
+192,NO,Intermediate trajectory characterization (late fine-tuning transition),SECONDARY_TRAJECTORY
+224,NO,Intermediate trajectory characterization (pre-terminal fine-tuning transition),SECONDARY_TRAJECTORY
+256,YES,Establishes terminal fine-tuning performance (mu_R_256 and mu_C_256),ESSENTIAL_PRIMARY

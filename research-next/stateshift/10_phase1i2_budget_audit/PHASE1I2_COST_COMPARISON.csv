@@ -1,0 +1,6 @@
+Design,Total_Rollouts,Extrap_GPU_Hours,Base_Cost_USD,Reserve_20pct_USD,Total_Budget_USD,Wall_Clock_1GPU_Hours,Wall_Clock_4GPU_Hours,Fits_In_9.43_Balance
+A (Full 9-Ckpt K=16),130752,16.09,25.58,5.12,30.7,16.09,4.02,NO
+B (Endpoint K=16),29056,3.58,5.69,1.14,6.82,3.58,0.89,YES
+C (Endpoint K=12),21792,2.68,4.26,0.85,5.12,2.68,0.67,YES
+D (Endpoint K=8),14528,1.79,2.84,0.57,3.41,1.79,0.45,YES
+E (Endpoint K=4),7264,0.89,1.42,0.28,1.71,0.89,0.22,YES
