@@ -1,0 +1,6 @@
+K,Rollouts,GPU_Hours,Total_Cost_USD,Additional_Funding_USD,Monotonicity_Accuracy_Pct,False_Reversal_Pct,Emergence_Accuracy_Pct,Peak_Accuracy_Pct,Pointwise_CI_Width,Simultaneous_CI_Width,Monotonicity_Class,Emergence_Class,Peak_Class
+4,25424,3.13,5.97,2.23,13.8,55.5,99.9,87.5,0.092,0.1244,WEAK,STRONG,STRONG
+6,38136,4.69,8.95,5.21,24.1,36.3,100.0,94.7,0.0751,0.1015,WEAK,STRONG,STRONG
+8,50848,6.26,11.94,8.2,34.6,23.9,100.0,96.9,0.065,0.0879,WEAK,STRONG,STRONG
+12,76272,9.39,17.91,14.17,51.2,10.7,100.0,99.3,0.0531,0.0718,WEAK,STRONG,STRONG
+16,101696,12.51,23.88,20.14,64.1,5.4,100.0,99.8,0.046,0.0622,WEAK,STRONG,STRONG
