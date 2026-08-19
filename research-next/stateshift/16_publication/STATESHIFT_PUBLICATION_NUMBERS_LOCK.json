@@ -1,0 +1,54 @@
+{
+  "project_name": "StateShift",
+  "milestone": "Phase 1L.0 Publication Numbers Lock",
+  "lock_timestamp": "2026-08-20T01:43:00Z",
+  "population": {
+    "primary_n_problems": 454,
+    "strict_n_problems": 388,
+    "total_confirmatory_rollouts": 29056,
+    "rollouts_per_cell_k": 16,
+    "checkpoints_evaluated": [0, 256]
+  },
+  "cell_means_probability_scale": {
+    "mu_R_0": 0.3834,
+    "mu_R_256": 0.7039,
+    "mu_C_0": 0.3892,
+    "mu_C_256": 0.5921
+  },
+  "absolute_changes_percentage_points": {
+    "recovery_absolute_change_prob": 0.3205,
+    "recovery_absolute_change_percentage_points": 32.05,
+    "control_absolute_change_prob": 0.2029,
+    "control_absolute_change_percentage_points": 20.29
+  },
+  "primary_interaction_contrast": {
+    "Gamma_256_prob_scale": 0.1176,
+    "Gamma_256_percentage_points": 11.76,
+    "Gamma_256_95_CI_low_prob": 0.0955,
+    "Gamma_256_95_CI_high_prob": 0.1400,
+    "Gamma_256_95_CI_low_percentage_points": 9.55,
+    "Gamma_256_95_CI_high_percentage_points": 14.00,
+    "bootstrap_replicates_B": 10000,
+    "p_value": "< 0.0001"
+  },
+  "strict_contamination_sensitivity": {
+    "strict_Gamma_256_prob_scale": 0.1160,
+    "strict_Gamma_256_percentage_points": 11.60,
+    "strict_95_CI_low_prob": 0.0913,
+    "strict_95_CI_high_prob": 0.1408,
+    "strict_95_CI_low_percentage_points": 9.13,
+    "strict_95_CI_high_percentage_points": 14.08,
+    "bootstrap_replicates_B": 10000,
+    "p_value": "< 0.0001"
+  },
+  "financial_accounting": {
+    "actual_gpu_hours": 3.58,
+    "actual_compute_cost_usd": 5.69,
+    "remaining_runpod_balance_usd": 3.74
+  },
+  "units_explanation": {
+    "Gamma_256": "Absolute difference in target-transition success probabilities between Recovery and Control step gains",
+    "percentage_points": "Gamma_256 * 100",
+    "prohibited_unit": "Relative percentage improvement or acceleration"
+  }
+}
