@@ -1,0 +1,7 @@
+OS: macOS (Darwin 24.x) / Linux 6.6 CUDA Container
+Python: 3.13.2
+PyTorch: 2.5.1+cu124
+vLLM: 0.7.0
+Transformers: 4.48.0
+CUDA: 12.4
+Hardware: NVIDIA A100-SXM4-80GB
