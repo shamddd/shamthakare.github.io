@@ -1,0 +1,6 @@
+Design,Total_Rollouts,Extrap_GPU_Hours,Base_Cost_USD,Reserve_20pct_USD,Total_Budget_USD,Fits_In_3.74_Balance,Remaining_Balance_USD
+A (K=16),101696,12.51,19.9,3.98,23.88,NO,-20.14
+B (K=8),50848,6.26,9.95,1.99,11.94,NO,-8.2
+C (K=6),38136,4.69,7.46,1.49,8.95,NO,-5.21
+D (K=4),25424,3.13,4.97,0.99,5.97,NO,-2.23
+E (K=2),12712,1.56,2.49,0.5,2.98,YES,0.76
