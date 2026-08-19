@@ -21,7 +21,7 @@
 
 ## 2. Key Findings
 
-1. **Emergence Timing Resolution (HIGH)**: The emergence of positive recovery acceleration (transition from $\Gamma_0 = 0.00$ to $\Gamma_{96} \approx +0.062$ or $\Gamma_{128} \approx +0.084$) is identifiable at $N=454$ problem resolution even with $K=2$ repeats per problem.
+1. **Emergence Timing Resolution (HIGH)**: The emergence of positive recovery gain (transition from $\Gamma_0 = 0.00$ to $\Gamma_{96} \approx +0.062$ or $\Gamma_{128} \approx +0.084$) is identifiable at $N=454$ problem resolution even with $K=2$ repeats per problem.
 2. **Trajectory Shape Characterization**: Candidate E ($K=2$) provides adequate statistical precision ($\text{SE} = 0.0318$) to distinguish monotonic growth vs. plateau vs. non-monotonic dips across the 9 trajectory checkpoints.
 3. **Trade-off Summary**: While $K=16$ provides narrower local CIs, $K=2$ is the **only design that fits within the available `$3.74 USD` RunPod balance**.
 
