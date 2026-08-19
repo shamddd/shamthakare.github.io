@@ -1,0 +1,65 @@
+[
+  {
+    "checkpoint_t": 0,
+    "model_repository": "Qwen/Qwen2.5-7B",
+    "resolved_revision": "d149729398750b98c0af14eb82c78cfe92750796",
+    "verification_status": "LOAD_VERIFIED / GENERATION_VERIFIED",
+    "weights_available": true
+  },
+  {
+    "checkpoint_t": 32,
+    "model_repository": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_32",
+    "resolved_revision": "4b1509935eeae3bd8d6fbdb51c4b72691515bf6d",
+    "verification_status": "METADATA_VERIFIED / WEIGHTS_AVAILABLE",
+    "weights_available": true
+  },
+  {
+    "checkpoint_t": 64,
+    "model_repository": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_64",
+    "resolved_revision": "9a239beaa0f40d5885cfa5e1ff833b37a54b3d7a",
+    "verification_status": "METADATA_VERIFIED / WEIGHTS_AVAILABLE",
+    "weights_available": true
+  },
+  {
+    "checkpoint_t": 96,
+    "model_repository": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_96",
+    "resolved_revision": "0b154a4ad83e74bc05ecb1eecb77fbc8d62bc58a",
+    "verification_status": "METADATA_VERIFIED / WEIGHTS_AVAILABLE",
+    "weights_available": true
+  },
+  {
+    "checkpoint_t": 128,
+    "model_repository": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_128",
+    "resolved_revision": "0cd82479e0a0d9e836ec3bcf856b3e34b9d033e9",
+    "verification_status": "METADATA_VERIFIED / WEIGHTS_AVAILABLE",
+    "weights_available": true
+  },
+  {
+    "checkpoint_t": 160,
+    "model_repository": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_160",
+    "resolved_revision": "542a17cb147775ceab21c179860b0373ab96d7ee",
+    "verification_status": "METADATA_VERIFIED / WEIGHTS_AVAILABLE",
+    "weights_available": true
+  },
+  {
+    "checkpoint_t": 192,
+    "model_repository": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_192",
+    "resolved_revision": "b0f7e4f16b248a31e51edc5d4efdcdfa171a8f94",
+    "verification_status": "METADATA_VERIFIED / WEIGHTS_AVAILABLE",
+    "weights_available": true
+  },
+  {
+    "checkpoint_t": 224,
+    "model_repository": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_224",
+    "resolved_revision": "e1f181aa50352ef29f0df7a28e8eb43d93bfbb6e",
+    "verification_status": "METADATA_VERIFIED / WEIGHTS_AVAILABLE",
+    "weights_available": true
+  },
+  {
+    "checkpoint_t": 256,
+    "model_repository": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_256",
+    "resolved_revision": "7667ad787966f5733fdca3d2b240452d7095ff95",
+    "verification_status": "LOAD_VERIFIED / GENERATION_VERIFIED",
+    "weights_available": true
+  }
+]
