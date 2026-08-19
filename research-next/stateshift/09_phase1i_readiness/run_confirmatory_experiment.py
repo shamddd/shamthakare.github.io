@@ -2,7 +2,7 @@
 """
 StateShift Phase 1I.3 Endpoint-K16 Confirmatory Execution Launcher
 MUST NOT BE EXECUTED WITHOUT EXPLICIT USER AUTHORIZATION.
-PHASE 1I.4a: PHASE1I4_FINAL_EXECUTION_CONFIG.json IS THE SINGLE SOURCE OF TRUTH.
+PHASE 1I.4b: SINGLE SOURCE OF TRUTH CONFORMANCE REPAIR.
 """
 
 import os
@@ -11,14 +11,19 @@ import json
 import hashlib
 import argparse
 
-# ONLY PERMITTED HARD-CODED CONFIGURATION IDENTIFIERS
+# ONLY PERMITTED HARD-CODED RUNTIME IDENTIFIERS
 CONFIG_PATH = "research-next/stateshift/12_phase1i4_final_authorization_gate/PHASE1I4_FINAL_EXECUTION_CONFIG.json"
 EXPECTED_CONFIG_SHA256 = "079f99bf8e5ceb8b45b680b4bc2e34f718e4453031c55ee456da0a331209cdcf"
 
 def load_and_verify_config(cfg_path=CONFIG_PATH, expected_sha=EXPECTED_CONFIG_SHA256):
     """
-    Verifies config file existence and SHA-256 hash BEFORE parsing JSON.
-    Loads all scientific and runtime invariants without fallback defaults.
+    1. Verify config file exists
+    2. Read raw bytes
+    3. SHA-256 raw bytes
+    4. Compare with EXPECTED_CONFIG_SHA256 BEFORE parsing
+    5. Parse JSON
+    6. Validate required keys via direct indexing (no silent defaults)
+    7. Return config object
     """
     if not os.path.exists(cfg_path):
         raise FileNotFoundError(f"CONFIG ERROR: Config file missing at '{cfg_path}'")
@@ -32,7 +37,6 @@ def load_and_verify_config(cfg_path=CONFIG_PATH, expected_sha=EXPECTED_CONFIG_SH
 
     config_data = json.loads(cfg_bytes)
 
-    # Strict key extraction — missing key WILL raise KeyError (NO silent default substitution)
     req_keys = [
         "authoritative_registry_path",
         "authoritative_registry_sha256",
@@ -64,7 +68,10 @@ def load_and_verify_config(cfg_path=CONFIG_PATH, expected_sha=EXPECTED_CONFIG_SH
 
     return config_data
 
-def verify_safety_guards(authorize_flag=False, mock_mode=True, cfg_path=CONFIG_PATH, expected_sha=EXPECTED_CONFIG_SHA256):
+# Execute verification and single source of truth configuration loading
+CONFIG = load_and_verify_config()
+
+def verify_safety_guards(authorize_flag=False, mock_mode=True):
     print("==========================================================================")
     print("STATESHIFT PHASE 1I.3 ENDPOINT-K16 CONFIRMATORY EXECUTION BANNER")
     print("==========================================================================")
@@ -75,32 +82,26 @@ def verify_safety_guards(authorize_flag=False, mock_mode=True, cfg_path=CONFIG_P
         print("EXECUTION BLOCKED. Returning without launching GPU pods or inference.")
         return False
 
-    # 2. Config Verification & Single Source-of-Truth Loading
-    try:
-        cfg = load_and_verify_config(cfg_path, expected_sha)
-        print(f"[SAFETY GUARD 2] Execution Config Hash Verified: {expected_sha}")
-    except Exception as e:
-        print(f"[SAFETY GUARD 2] ERROR: {e}")
-        return False
+    # 2. Config Verification & Invariant Extraction via Direct Indexing
+    print(f"[SAFETY GUARD 2] Execution Config Hash Verified: {EXPECTED_CONFIG_SHA256}")
 
-    # Extract invariants directly from config
-    auth_reg_path = cfg["authoritative_registry_path"]
-    expected_auth_sha = cfg["authoritative_registry_sha256"]
-    expected_auth_n = cfg["authoritative_n"]
+    auth_reg_path = CONFIG["authoritative_registry_path"]
+    expected_auth_sha = CONFIG["authoritative_registry_sha256"]
+    expected_auth_n = CONFIG["authoritative_n"]
 
-    strict_reg_path = cfg["strict_registry_path"]
-    expected_strict_sha = cfg["strict_registry_sha256"]
-    expected_strict_n = cfg["strict_n"]
+    strict_reg_path = CONFIG["strict_registry_path"]
+    expected_strict_sha = CONFIG["strict_registry_sha256"]
+    expected_strict_n = CONFIG["strict_n"]
 
-    checkpoints = cfg["checkpoints"]
-    k_rollouts = cfg["rollouts_per_cell_k"]
-    expected_rollouts = cfg["total_confirmatory_rollouts"]
+    checkpoints = CONFIG["checkpoints"]
+    k_rollouts = CONFIG["rollouts_per_cell_k"]
+    expected_rollouts = CONFIG["total_confirmatory_rollouts"]
 
-    expected_budget = cfg["expected_total_budget_usd"]
-    hard_ceiling = cfg["hard_spend_ceiling_usd"]
+    expected_budget = CONFIG["expected_total_budget_usd"]
+    hard_ceiling = CONFIG["hard_spend_ceiling_usd"]
 
-    ledger_path = cfg["ledger_path"]
-    expected_ledger_sha = cfg["ledger_sha256"]
+    ledger_path = CONFIG["ledger_path"]
+    expected_ledger_sha = CONFIG["ledger_sha256"]
 
     # 3. Dynamic Primary Registry Verification
     if not os.path.exists(auth_reg_path):
@@ -109,7 +110,7 @@ def verify_safety_guards(authorize_flag=False, mock_mode=True, cfg_path=CONFIG_P
 
     with open(auth_reg_path, "rb") as f:
         auth_bytes = f.read()
-    
+
     actual_auth_sha = hashlib.sha256(auth_bytes).hexdigest()
     print(f"[SAFETY GUARD 3] Primary Registry SHA-256: {actual_auth_sha}")
     if actual_auth_sha != expected_auth_sha:
@@ -128,7 +129,7 @@ def verify_safety_guards(authorize_flag=False, mock_mode=True, cfg_path=CONFIG_P
 
     with open(strict_reg_path, "rb") as f:
         strict_bytes = f.read()
-    
+
     actual_strict_sha = hashlib.sha256(strict_bytes).hexdigest()
     print(f"[SAFETY GUARD 4] Strict Registry SHA-256: {actual_strict_sha}")
     if actual_strict_sha != expected_strict_sha:
