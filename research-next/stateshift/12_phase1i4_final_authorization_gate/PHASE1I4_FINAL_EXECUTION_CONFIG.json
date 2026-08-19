@@ -1,0 +1,38 @@
+{
+  "config_version": "Phase 1I.4 Final Execution Configuration",
+  "execution_timestamp": "2026-08-19 23:32 UTC",
+  "authoritative_registry_path": "research-next/stateshift/06_data_registry/human_adjudication/FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V4.json",
+  "authoritative_registry_sha256": "76f1a8adead0f3ebe78ac0ef2b2b87f55767083b9988bbdee61a69af7b9d5478",
+  "authoritative_n": 454,
+  "strict_registry_path": "research-next/stateshift/06_data_registry/human_adjudication/FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V4_STRICT.json",
+  "strict_registry_sha256": "667660ca243c2d6df8af4cec7cd859ef2bd403ff1993abc033947409dd210227",
+  "strict_n": 388,
+  "intervention_states": ["control", "recovery"],
+  "checkpoints": [0, 256],
+  "rollouts_per_cell_k": 16,
+  "total_confirmatory_rollouts": 29056,
+  "model_repositories": {
+    "t=0": "Qwen/Qwen2.5-7B",
+    "t=256": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_256"
+  },
+  "model_revisions": {
+    "t=0": "d149729398750b98c0af14eb82c78cfe92750796",
+    "t=256": "7667ad787966f5733fdca3d2b240452d7095ff95"
+  },
+  "tokenizer_repository": "Qwen/Qwen2.5-7B",
+  "sampling_temperature": 0.6,
+  "sampling_top_p": 0.95,
+  "max_new_tokens": 512,
+  "master_seed_string": "20260819_stateshift_v4",
+  "master_seed_policy_hash": "ffaf7e547807a38eb69a2c6c1b448a3d681c5fd3ad33ac7d88e8e4a11b90bed6",
+  "protocol_hash": "0b8555185b9f769ea9db7b09bdd42dd61dc22b47ef44ec87cea0ed1be35c4e8e",
+  "analysis_freeze_hash": "b97d620cd0913a961329be684c91d27b75e4b2bac94727d578aabb9fc1c3d88c",
+  "ledger_path": "research-next/stateshift/11_phase1i3_execution_freeze/PHASE1I3_FINAL_CONFIRMATORY_LEDGER.jsonl",
+  "ledger_sha256": "63628d7f3c0922a2af7e4dfbbde60ac33afaf1be11aa7bf62fd0dd933fb2ce39",
+  "base_compute_cost_usd": 5.69,
+  "expected_total_budget_usd": 6.82,
+  "hard_spend_ceiling_usd": 8.00,
+  "max_hourly_gpu_rate_usd": 1.65,
+  "last_verified_account_balance_usd": 9.43,
+  "record_type": "empirical_confirmatory"
+}
