@@ -1,0 +1,18 @@
+study_name: "Controlled State-Conditioned Endpoint Study (Study A)"
+checkpoints:
+  base: "Qwen/Qwen2.5-7B"
+  step_256: "UWNSL/Qwen2.5-7B-deepscaler_4k_step_256"
+sample_size:
+  primary_n: 454
+  strict_n: 388
+  k_rollouts: 16
+total_primary_rollouts: 29056
+decoding_parameters:
+  temperature: 0.6
+  top_p: 0.95
+  max_new_tokens: 512
+frozen_results:
+  gamma_256: 0.1176
+  ci_95: [0.0955, 0.1400]
+  strict_gamma_256: 0.1160
+  strict_ci_95: [0.0913, 0.1408]

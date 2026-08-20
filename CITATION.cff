@@ -1,17 +1,12 @@
 cff-version: 1.2.0
-message: "If you use the recovery_eval framework, please cite this software repository. The associated IEEE BigData 2026 manuscript is currently under review."
-title: "recovery_eval: State-Matched and Provenance-Aware Evaluation of Recovery Behavior in Language-Model Reasoning"
+message: "If you use StateShift in your research, please cite it as below."
 authors:
-  - family-names: "Thakare"
-    given-names: "Sham Satish"
-    orcid: "https://orcid.org/0009-0000-0000-0000"
-type: software
-year: 2026
-keywords:
-  - "Large Language Models"
-  - "Mathematical Reasoning"
-  - "Model Evaluation"
-  - "Data-Centric AI"
-  - "Reproducibility"
-repository-code: "https://github.com/shamddd/recovery_eval"
+  - family-names: Thakare
+    given-names: Sham Satish
+    email: shamthakare3000@gmail.com
+    affiliation: Independent Researcher
+title: "StateShift: Tracking State-Dependent Reasoning Recovery Across Post-Training"
+version: 0.1.0
+date-released: 2026-08-20
+repository-code: "https://github.com/shamthakare/stateshift"
 license: MIT

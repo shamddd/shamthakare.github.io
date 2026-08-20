@@ -1,142 +1,148 @@
-# recovery_eval
+# StateShift: Tracking State-Dependent Reasoning Recovery Across Post-Training
 
-[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/downloads/)
+[![CI](https://github.com/shamthakare/stateshift/actions/workflows/ci.yml/badge.svg)](https://github.com/shamthakare/stateshift/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](tests/)
-[![IEEE BigData 2026](https://img.shields.io/badge/IEEE%20BigData%202026-Submitted%20(BigD497)-orange.svg)](PUBLICATION_STATUS.md)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
-A provenance-aware, state-matched evaluation framework for studying recovery behavior in language-model reasoning.
-
----
-
-## Research Paper
-
-**Title:** `recovery_eval: State-Matched and Provenance-Aware Evaluation of Recovery Behavior in Language-Model Reasoning`  
-**Venue:** IEEE International Conference on Big Data (IEEE BigData 2026)  
-**Submission ID:** `BigD497`  
-**Associated Session:** 11th IEEE Special Session on Machine Learning on Big Data (MLBD 2026), Session #2  
-**Status:** Submitted / Under review (Awaiting conference decision)  
+**Author**: Sham Satish Thakare (Independent Researcher, Pune, Maharashtra, India)  
+**Publication Status**: Manuscript prepared/submitted to *Artificial Intelligence* (Elsevier)  
 
 ---
 
-## What `recovery_eval` Does
+## 📌 Executive Summary & Main Findings
 
-Standard benchmark evaluation measures aggregate end-to-end accuracy, which can conflate baseline generation fluency with true error recovery. `recovery_eval` provides a data-centric evaluation methodology to isolate state-specific reasoning performance:
+Standard evaluations of reinforcement-learning (RL) post-training in large language models emphasize aggregate benchmark accuracy, potentially obscuring how local reasoning capabilities evolve during post-training. **StateShift** is a controlled framework that measures target-transition recovery conditional on intermediate reasoning state.
 
-* **Verifier-Defined Recovery States**: Identifies intermediate reasoning prefix errors using a deterministic verifier.
-* **Structurally Matched Control States**: Prospective matching pairs recovery states with valid reference controls across continuous structural covariates (depth, remaining solution length, token length) under exact categorical matching constraints.
-* **Append-Only Evidence Governance**: Maintains an append-only event ledger with cryptographic hashing to prevent data leakage and item re-selection.
-* **Primitive Neural Rollout Provenance**: Logs input token IDs, output BPE token continuations, local weight manifests, and deterministic verifier execution outputs.
-* **Independent Analysis Reconstruction**: Enables 100% analytical reconstruction directly from sealed raw evidence files.
-* **Checkpoint-Interface Diagnostics**: Enables reproducible comparison between model checkpoints and prompt-interface configurations without confounding baseline fluency gains.
+```
+       Recovery Condition (R)                          Control Condition (C)
+  [Invalid Intermediate State]                    [Matched Baseline State]
+               │                                             │
+               ▼                                             ▼
+  Target-Transition Success (μ_R,t)              Target-Transition Success (μ_C,t)
+               └──────────────────────┬──────────────────────┘
+                                      ▼
+                        Interaction Contrast (Γ_t)
+                     Γ_t = (μ_R,t - μ_R,0) - (μ_C,t - μ_C,0)
+```
 
----
+### Key Empirical Results
 
-## Empirical Demonstration
-
-We applied `recovery_eval` to evaluate error recovery across released checkpoint-interface configurations:
-
-* **Scope**: 400 genuine neural continuations generated across 20 prospectively isolated GSM8K test problems ($N=20$).
-* **Models**: `Qwen/Qwen2.5-Math-1.5B` (Base, commit `4a83ca6e`) and `Qwen/Qwen2.5-Math-1.5B-Instruct` (Instruct, commit `aafeb0fc`).
-* **Observed Continuation Success**:
-  * Recovery States ($s_R$): Base $= 0.1500$, Instruct $= 0.5800$ (Difference: $+0.4300$)
-  * Control States ($s_C$): Base $= 0.3800$, Instruct $= 0.9200$ (Difference: $+0.5400$)
-* **Matched Recovery-Specific Contrast**: $D_{\text{recovery}} = \mathbf{-0.1100}$
-* **95% Descriptive Bootstrap Interval**: $\mathbf{[-0.240, +0.030]}$ (10,000 resamples)
-
-> **Empirical Finding**: Under the evaluated state-matched protocol, we did not observe evidence of a recovery-specific advantage for the Instruct checkpoint over the Base checkpoint. Aggregate continuation success gains (+0.4300 on recovery vs +0.5400 on control) reflect overall baseline fluency improvements rather than a specialized error-recovery mechanism.
+| Study Phase | Sample Size | Primary Estimand | Empirical Value | 95% Problem-Blocked Bootstrap CI | Status / Interpretation |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **Study A (Endpoint)** | $N=454, K=16$ ($29,056$ rollouts) | $\Gamma_{256}$ | **`+0.1176`** | $[+0.0955, +0.1400]$ ($p < 0.0001$) | $+11.76$ percentage-point state-by-checkpoint interaction |
+| **Strict Subgroup** | $N_{\text{Strict}}=388, K=16$ | $\Gamma_{256,\text{Strict}}$ | **`+0.1160`** | $[+0.0913, +0.1408]$ | Robust under strict decontamination filtering |
+| **Trajectory (Step 32)** | $N=454, K=2/3$ | $\Gamma_{32}$ | **`+0.0333`** | $[+0.0011, +0.0655]$ (Multiplicity-Adj.) | Statistically detectable by earliest available checkpoint ($t=32$) |
+| **Study B (Natural Recovery)**| $N=200, K=16$ ($3,200$ rollouts) | $\text{NRR}$ | **`30.93%`** | $[27.19\%, 34.82\%]$ ($180/582$ episodes) | Conditional natural post-error recovery rate ($\text{NEI}=18.19\%$) |
 
 ---
 
-## Research Integrity
+## 📈 Complete Nine-Checkpoint Empirical Trajectory
 
-This project maintains strict research integrity and scientific transparency:
+Evaluating intermediate checkpoints across post-training ($t \in \{0, 32, 64, 96, 128, 160, 192, 224, 256\}$) yields the empirical interaction vector:
 
-* **Historical Retraction Transparency**: Prior exploratory research stages (Stage 8 / Stage 9) relied on simulated synthetic testbed data. Following a forensic audit, those simulation claims were formally retracted and replaced by genuine neural execution.
-* **Auditability**: Historical retraction documentation is preserved in `research-next/strategy_change/stage9d3/` for archival provenance.
-* **Genuine Neural Continuations**: All active empirical results in the IEEE BigData submission derive exclusively from PyTorch `model.generate()` tensor outputs generated on Apple Silicon MPS (`mps:0`).
-* **Sealed Evidence**: Raw evidence (`RAW_NEURAL_ROLLOUTS.jsonl`, SHA-256 `51b5a157d9e4...`) and submission packages are hash-sealed and version-controlled.
+$$\mathbf{\Gamma} = [0.0000,\ +0.0333,\ +0.0337,\ +0.0774,\ +0.0748,\ +0.0598,\ +0.0976,\ +0.0950,\ +0.1176]$$
 
----
+![StateShift Trajectory](figures/figure2_trajectory.png)
 
-## Reproducibility
-
-### Execution Specifications
-* **Models**: `Qwen/Qwen2.5-Math-1.5B` & `Qwen/Qwen2.5-Math-1.5B-Instruct`
-* **Hardware**: Apple Silicon MPS (`mps:0`), FP16 precision
-* **Sampling Parameters**: Temperature $t=0.0$ (greedy decoding), `top_p=1.0`, `max_new_tokens=512`
-* **Rollout Design**: 400 continuations (20 problems $\times$ 2 states $\times$ 2 policies $\times$ 5 rollout seeds)
-* **Matching Thresholds**: Normalized weighted-L1 distance $d \le 0.25$ (standard) and $d \le 0.10$ (tight); 20/20 pairs satisfied both thresholds ($d_{\text{mean}} = 0.0360$).
-
-### Quick Start & Verification Commands
-
-1. **Run Unit & Integrity Tests**:
-   ```bash
-   pytest -q research-next/ieee_bigdata_2026/tests/
-   ```
-
-2. **Verify Python Package Import**:
-   ```bash
-   python -c "import recovery_eval; print(recovery_eval.__version__)"
-   ```
-
-3. **Execute CLI Interface**:
-   ```bash
-   recovery-eval --help
-   recovery-eval audit --raw-evidence RAW_NEURAL_ROLLOUTS.jsonl
-   ```
+> **Trajectory Interpretation**: Across nine empirically evaluated checkpoints, the interaction was consistent with a non-decreasing trajectory under prespecified order-restricted analysis (Pooled Adjacent Violators Algorithm, PAVA) despite local variation in unconstrained estimates. The interaction was already statistically detectable at the earliest available post-training checkpoint ($t=32$).
 
 ---
 
-## Repository Structure
+## 🎯 Scientific Claim Boundaries
 
-```text
-recovery_eval/
-├── PUBLICATION_STATUS.md                  # Current IEEE BigData submission status
-├── README.md                              # Main research project overview
-├── CITATION.cff                           # CFF citation metadata
-├── CITATION.bib                           # BibTeX citation entry
-├── recovery_eval/                         # Core Python package codebase
-├── research-next/ieee_bigdata_2026/       # Active IEEE BigData 2026 research workflow
-│   ├── 00_audit/                          # Governance & canary audit scripts
-│   ├── 01_literature/                     # Literature analysis & reference audit
-│   ├── 02_novelty/                        # Methodological contrast analysis
-│   ├── 03_protocol/                       # Prospective matching protocol
-│   ├── 05_framework/                      # Evidence ledger & verifier logic
-│   ├── 07_execution/                      # Neural rollout execution scripts
-│   ├── 08_analysis/                       # Statistical bootstrap & contrast analysis
-│   ├── 09_genuine_execution_v1/           # Sealed raw evidence & certificates
-│   ├── manuscript/                        # IEEEtran TeX source & figure generation
-│   └── tests/                             # Test suite for evaluation reproducibility
-├── submission_bigdata2026_main_v3/        # CyberChair submission bundle & manifests
-└── tests/                                 # Package unit tests
+To ensure scientific integrity, StateShift distinguishes between supported empirical conclusions and disallowed overclaims:
+
+| Claim Topic | Supported Scientific Statement | Disallowed / Unsupported Overclaim |
+| :--- | :--- | :--- |
+| **Endpoint Contrast** | *"Between base and step-256 checkpoints, we observe an 11.76-percentage-point interaction ($\Gamma_{256}=+0.1176$)."* | ❌ *"11.76% acceleration"* |
+| **Trajectory Trend** | *"Consistent with a non-decreasing trajectory under prespecified order-restricted analysis."* | ❌ *"Strict pairwise monotonicity across all checkpoints"* |
+| **Emergence** | *"Interaction was already statistically detectable at the earliest available checkpoint, $t=32$."* | ❌ *"The effect emerged exactly at step 32"* |
+| **Natural Recovery** | *"Among 582 verifier-confirmed natural error episodes, 180 subsequently satisfied autonomous recovery ($30.93\%$)."* | ❌ *"The model self-corrects 30.93% of the time"* |
+
+---
+
+## 🚀 Reproduction & Artifact Verification
+
+StateShift is designed for 100% zero-GPU statistical reproduction using pure Python scripts:
+
+### Installation
+```bash
+git clone https://github.com/shamthakare/stateshift.git
+cd stateshift
+pip install -e .
+```
+
+### Zero-GPU Statistical Reproduction
+```bash
+# 1. Run full statistical reproduction suite
+python scripts/reproduce_analysis.py
+
+# 2. Verify publication artifact assertions (100% match assertion)
+python scripts/verify_artifacts.py
+
+# 3. Run unit test suite
+PYTHONPATH=. pytest tests/
 ```
 
 ---
 
-## Manuscript Availability
+## 🔗 Model Provenance & Checkpoint Lineage
 
-The submitted manuscript is currently under review at **IEEE BigData 2026**.
+All evaluated checkpoints belong to the open-source DeepScaler model lineage (`UWNSL/Qwen2.5-7B-deepscaler_4k_step_X`), anchored by the base model `Qwen/Qwen2.5-7B` at $t=0$:
 
-* **Status**: Manuscript available upon request while under review.
+| Checkpoint ($t$) | Repository ID | Verified Git Commit SHA |
+| :---: | :--- | :--- |
+| **$t=0$** | `Qwen/Qwen2.5-7B` | Base Pretrained Model |
+| **$t=32$** | `UWNSL/Qwen2.5-7B-deepscaler_4k_step_32` | `f46f9eac9908013a502735b7e882821f492ca61e` |
+| **$t=64$** | `UWNSL/Qwen2.5-7B-deepscaler_4k_step_64` | `d57afa929761825af618c6545ab7f7a5b28b3dc1` |
+| **$t=96$** | `UWNSL/Qwen2.5-7B-deepscaler_4k_step_96` | `5164cb6d7dcace900aed6a961cea33de40f2b6dc` |
+| **$t=128$** | `UWNSL/Qwen2.5-7B-deepscaler_4k_step_128` | `27d9d8455a50c0cb0af37e9676bac4e2a1ecddec` |
+| **$t=160$** | `UWNSL/Qwen2.5-7B-deepscaler_4k_step_160` | `d8df8a5d6290bcc7b4b5fa108121cc5b9808bf58` |
+| **$t=192$** | `UWNSL/Qwen2.5-7B-deepscaler_4k_step_192` | `cb3f9bda37c44699246d04b9af21df41879e0ac3` |
+| **$t=224$** | `UWNSL/Qwen2.5-7B-deepscaler_4k_step_224` | `1833fa4e7beea19c2451e1f7a4dfe3068454edaf` |
+| **$t=256$** | `UWNSL/Qwen2.5-7B-deepscaler_4k_step_256` | `7667ad787966f5733fdca3d2b240452d7095ff95` |
 
 ---
 
-## Citation
+## 📂 Repository Architecture
 
-If you use the `recovery_eval` framework or codebase in your research, please cite:
+```
+stateshift/
+├── README.md
+├── LICENSE (MIT)
+├── CITATION.cff
+├── pyproject.toml
+├── requirements.txt
+├── .gitignore
+├── .github/workflows/ci.yml
+│
+├── stateshift/                    # Core Python package
+│   ├── evaluation/                # Evaluator routines
+│   ├── perturbations/             # Matched Recovery/Control state builder
+│   ├── verification/              # Deterministic answer verifier
+│   ├── statistics/                # Blocked bootstrap & NEI/NRR metrics
+│   ├── trajectory/                # Order-restricted PAVA analysis
+│   └── natural_recovery/          # Natural error episode detector
+│
+├── configs/                       # Experiment YAML configurations
+├── scripts/                       # Reproduction & verification scripts
+├── figures/                       # Vector PDF & PNG publication figures
+├── tests/                         # Pytest unit & integrity test suite
+├── docs/                          # Comprehensive methodology & audit docs
+└── paper/                         # LaTeX manuscript companion source
+```
+
+---
+
+## 📜 Citation & License
 
 ```bibtex
-@unpublished{thakare2026recoveryeval,
-  author = {Thakare, Sham Satish},
-  title = {recovery\_eval: State-Matched and Provenance-Aware Evaluation of Recovery Behavior in Language-Model Reasoning},
-  year = {2026},
-  note = {Submitted to IEEE BigData 2026, Submission ID BigD497}
+@article{Thakare2026StateShift,
+  title={StateShift: Tracking State-Dependent Reasoning Recovery Across Post-Training},
+  author={Thakare, Sham Satish},
+  journal={Prepared/submitted to Artificial Intelligence (Elsevier)},
+  year={2026}
 }
 ```
 
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
