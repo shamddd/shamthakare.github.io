@@ -1,7 +1,0 @@
-{
-  "t0_model": "Qwen/Qwen2.5-7B",
-  "t0_revision": "d149729398750b98c0af14eb82c78cfe92750796",
-  "t256_model": "UWNSL/Qwen2.5-7B-deepscaler_4k_step_256",
-  "t256_revision": "7667ad787966f5733fdca3d2b240452d7095ff95",
-  "tokenizer": "Qwen/Qwen2.5-7B"
-}

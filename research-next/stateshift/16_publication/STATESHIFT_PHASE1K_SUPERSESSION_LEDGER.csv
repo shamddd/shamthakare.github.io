@@ -1,4 +1,0 @@
-artifact_name,superseded_claim_text,superseded_by_phase,authoritative_status,supersession_note
-PHASE1K_TRAJECTORY_SIMULATION.md,Emergence Timing Resolution (HIGH) at K=2,Phase 1K.2 / 1K Final Closure,PROSPECTIVELY_DESIGNED_NOT_EXECUTED,K=2 emergence resolution superseded; K=2 is restricted strictly to descriptive visualization only.
-PHASE1K_DESIGN_AUDIT.md,K=2 achieves adequate precision for emergence timing,Phase 1K.2 / 1K Final Closure,PROSPECTIVELY_DESIGNED_NOT_EXECUTED,K=2 yields 62.1% false-reversal rate; non-defensible for trajectory inference.
-PHASE1K_FINAL_RECOMMENDATION.md,High emergence timing resolution at K=2,Phase 1K.2 / 1K Final Closure,PROSPECTIVELY_DESIGNED_NOT_EXECUTED,Replaced by explicit DESCRIPTIVE VISUALIZATION ONLY recommendation.

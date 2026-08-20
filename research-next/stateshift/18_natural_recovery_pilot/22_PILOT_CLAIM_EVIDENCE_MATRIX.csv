@@ -1,7 +1,0 @@
-claim_id,claim_name,status,sample_n,denominator_e,point_estimate,blocked_bootstrap_95_ci,evidence_artifact,required_qualifier
-CLM_PILOT_01,Natural Error Incidence (NEI),ENABLED,3200,3200,0.1819,[0.1684, 0.1950],06_PILOT_RAW_RESULTS.jsonl,Unperturbed rollouts containing >=1 natural error.
-CLM_PILOT_02,Conditional Natural Post-Error Recovery (NRR),ENABLED,3200,582,0.3093,[0.2719, 0.3482],06_PILOT_RAW_RESULTS.jsonl,Conditioned on verified first natural error episode per rollout.
-CLM_PILOT_03,Unqualified Causal Self-Correction,NOT_ENABLED,3200,582,N/A,N/A,12_PILOT_ADVERSARIAL_REVIEW.md,Prohibited; natural errors are endogenous model events.
-CLM_PILOT_04,Primary Endpoint Interaction Gamma_256,ENABLED,454,N/A,0.1176,[0.0955, 0.1400],STATESHIFT_PUBLICATION_NUMBERS_LOCK.json,Immutable primary confirmatory result.
-CLM_PILOT_05,Strict Sensitivity Gamma_256_strict,ENABLED,388,N/A,0.1160,[0.0913, 0.1408],STATESHIFT_PUBLICATION_NUMBERS_LOCK.json,Immutable strict sensitivity result.
-CLM_PILOT_06,Trajectory Monotonicity / Emergence Timing,NOT_ENABLED,0,0,N/A,N/A,01_TRAJECTORY_POWER_REQUIREMENT.md,Stage B not executed (0 model calls).

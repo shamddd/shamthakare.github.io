@@ -1,6 +1,0 @@
-claim_level,claim_name,enablement_status,statistical_evidence,allowed_manuscript_phrasing
-Level_1,Intermediate Effect,ENABLED,"Gamma_32=+0.0333, Gamma_96=+0.0774, Gamma_160=+0.0598, Gamma_224=+0.0950 (all p < 0.01)","State-selective interaction is empirically present across all sampled intermediate post-training checkpoints."
-Level_2,Earliest Detectability,ENABLED,"Gamma_32 CI=[+0.0062, +0.0604] excludes zero","Target-transition contrast was already statistically detectable by checkpoint t=32."
-Level_3,Full Nine-Checkpoint Trajectory,ENABLED,"9-point vector [0.0000, 0.0333, 0.0337, 0.0774, 0.0748, 0.0598, 0.0976, 0.0950, 0.1176]","Across all nine available checkpoints, the StateShift interaction showed progressive overall growth."
-Level_4,Strict Monotonicity,NOT_ENABLED,"Joint 8-interval positivity test underpowered at K=2","Strict pairwise monotonicity across all adjacent 32-step intervals is underpowered."
-Level_5,Inflection & Local Peak,NOT_ENABLED,Sparse sampling resolution (K=2),"Sub-interval inflection dynamics remain unobserved."

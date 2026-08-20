@@ -100,6 +100,7 @@ stateshift/
 ├── tests/
 ├── figures/
 ├── docs/
+├── artifacts/
 └── paper/
 ```
 

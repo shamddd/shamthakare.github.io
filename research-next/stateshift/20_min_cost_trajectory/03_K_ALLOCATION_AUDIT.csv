@@ -1,6 +1,0 @@
-allocation_scheme,k_per_checkpoint,total_rollouts_sparse3,total_rollouts_dense7,cost_sparse3_usd,cost_dense7_usd,power_gamma_pos,feasibility_with_3.11_usd
-Minimal_K2,K=2,5448,12712,1.71,3.99,0.72,HIGH_FOR_SPARSE3
-Optimal_Stage_B1,K=3,8172,19068,2.57,5.99,0.84,HIGH_FOR_SPARSE3
-Balanced_K4,K=4,10896,25424,3.42,7.99,0.91,EXCEEDS_BY_0.31
-High_Power_K8,K=8,21792,50848,6.85,15.98,0.97,EXCEEDS_BUDGET
-Full_Monotonic_K24,K=24,65376,152544,20.55,29.88,0.99,EXCEEDS_BUDGET

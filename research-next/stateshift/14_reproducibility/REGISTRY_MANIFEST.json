@@ -1,8 +1,0 @@
-{
-  "primary_registry_path": "research-next/stateshift/06_data_registry/human_adjudication/FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V4.json",
-  "primary_registry_sha256": "76f1a8adead0f3ebe78ac0ef2b2b87f55767083b9988bbdee61a69af7b9d5478",
-  "primary_n": 454,
-  "strict_registry_path": "research-next/stateshift/06_data_registry/human_adjudication/FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V4_STRICT.json",
-  "strict_registry_sha256": "667660ca243c2d6df8af4cec7cd859ef2bd403ff1993abc033947409dd210227",
-  "strict_n": 388
-}

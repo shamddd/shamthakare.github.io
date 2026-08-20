@@ -1,9 +1,0 @@
-Claim_ID,Scientific_Claim_Description,Full_Design_Supports,Endpoint_Design_Supports,Primary_or_Secondary,Lost_If_Intermediate_Ckpts_Omitted
-A,A state-selective checkpoint-change interaction exists between base and final checkpoint.,YES,YES,Primary,NO
-B,Gamma_256 is positive / negative / null.,YES,YES,Primary,NO
-C,Recovery and control behavior changed differently from t=0 to t=256.,YES,YES,Primary,NO
-D,The recovery effect evolves monotonically across training.,YES,NO,Secondary,YES
-E,The recovery effect evolves non-monotonically across training.,YES,NO,Secondary,YES
-F,A transition inflection occurs at a specific intermediate checkpoint.,YES,NO,Secondary,YES
-G,The full post-training trajectory has a specific functional shape.,YES,NO,Secondary,YES
-H,The endpoint result persists under strict contamination sensitivity (N=388).,YES,YES,Primary,NO

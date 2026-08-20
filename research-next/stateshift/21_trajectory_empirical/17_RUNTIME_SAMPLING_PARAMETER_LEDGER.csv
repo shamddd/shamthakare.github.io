@@ -1,4 +1,0 @@
-checkpoint_step,manifest_max_tokens,actual_runtime_max_new_tokens,actual_temperature,actual_top_p,protocol_status
-64,4096,512,0.6,0.95,DOCUMENTATION_ERROR_CORRECTED
-128,4096,512,0.6,0.95,DOCUMENTATION_ERROR_CORRECTED
-192,4096,512,0.6,0.95,DOCUMENTATION_ERROR_CORRECTED

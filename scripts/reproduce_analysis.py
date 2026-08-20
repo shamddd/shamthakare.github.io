@@ -41,7 +41,7 @@ def reproduce_trajectory():
     print("2. COMPLETE NINE-CHECKPOINT EMPIRICAL TRAJECTORY")
     print("=" * 60)
     
-    raw_csv = "research-next/stateshift/23_trajectory_completion/07_FULL_NINE_POINT_TRAJECTORY.csv"
+    raw_csv = "artifacts/trajectory/nine_checkpoint_trajectory.csv"
     if os.path.exists(raw_csv):
         df_traj = pd.read_csv(raw_csv)
     else:

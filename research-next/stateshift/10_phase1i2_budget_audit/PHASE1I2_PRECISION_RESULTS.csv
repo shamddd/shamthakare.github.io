@@ -1,6 +1,0 @@
-Design,N,Checkpoints,K,Total_Rollouts,Simulated_SE,CI_95_Width,Statistical_Power
-A (Full 9-Ckpt K=16),454,9,16,130752,0.0118,0.0463,1.0
-B (Endpoint K=16),454,2,16,29056,0.0119,0.0466,1.0
-C (Endpoint K=12),454,2,12,21792,0.0135,0.0529,1.0
-D (Endpoint K=8),454,2,8,14528,0.0157,0.0617,1.0
-E (Endpoint K=4),454,2,4,7264,0.0217,0.0849,0.998

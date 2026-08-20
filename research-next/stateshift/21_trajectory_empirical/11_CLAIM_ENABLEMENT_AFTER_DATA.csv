@@ -1,6 +1,0 @@
-claim_level,claim_name,enablement_status,statistical_evidence,allowed_manuscript_phrasing
-Level_1,Intermediate Effect,ENABLED,"Gamma_64=+0.0337, Gamma_128=+0.0748, Gamma_192=+0.0976 (all p < 0.01)","State-selective interaction is empirically present at intermediate post-training checkpoints."
-Level_2,Coarse Localization,ENABLED,"Gamma_64 CI=[+0.0081, +0.0610] excludes zero","Target-transition contrast becomes statistically detectable by checkpoint step 64."
-Level_3,Broad Sampled Trajectory,ENABLED,"Monotonic point vector [0.0000, +0.0337, +0.0748, +0.0976, +0.1176]","Across the 5 sampled checkpoints, the state-selective interaction increases progressively."
-Level_4,Strict Monotonicity,NOT_ENABLED,Sparse sampling resolution (K=3),"Requires denser sampling resolution across unobserved intermediate steps."
-Level_5,Inflection & Local Peak,NOT_ENABLED,Sparse sampling resolution (K=3),"Sub-interval inflection dynamics remain unobserved."

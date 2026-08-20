@@ -1,6 +1,0 @@
-external_asset_id,asset_name,creator_organization,repository_or_url,citation_key,license,usage_in_stateshift,required_acknowledgment
-EXT_01,Qwen2.5-7B,Alibaba Cloud Qwen Team,https://huggingface.co/Qwen/Qwen2.5-7B,Yang2024Qwen25,Apache 2.0,Pretrained baseline model t=0,Pretrained Qwen2.5-7B base model provided by Alibaba Cloud Qwen Team.
-EXT_02,Qwen2.5-7B-DeepScaler-4k,UWNSL / DeepScaler Team,https://huggingface.co/UWNSL/Qwen2.5-7B-deepscaler_4k_step_256,Luo2025DeepScaler,Apache 2.0,Fine-tuned RL step-256 model,RL fine-tuned DeepScaler checkpoint provided by UWNSL DeepScaler team.
-EXT_03,AIME / MATH Benchmarks,Mathematical Association of America,https://github.com/hendrycks/math,Hendrycks2021MATH,MIT,Evaluation problem source,Underlying mathematical benchmark problems from AIME/MATH.
-EXT_04,vLLM Engine,vLLM Project / UC Berkeley,https://github.com/vllm-project/vllm,Kwon2023vLLM,Apache 2.0,Rollout generation server,Inference server powered by vLLM engine.
-EXT_05,RunPod Compute,RunPod Inc.,https://runpod.io,N/A,Commercial,Cloud GPU infrastructure,Compute infrastructure provided by RunPod.
