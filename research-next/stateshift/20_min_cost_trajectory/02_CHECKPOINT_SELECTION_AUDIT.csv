@@ -1,5 +1,0 @@
-checkpoint_strategy,num_intermediate_checkpoints,checkpoint_list,retained_information_pct,scientific_objective,cost_efficiency_rating
-Sparse_3_Equidistant,3,"[64, 128, 192]",85.0%,Intermediate Effect & Mid-Trajectory Contrast,HIGHEST
-Sparse_4_Equidistant,4,"[32, 96, 160, 224]",90.0%,Broad Shape & Transition Localization,HIGH
-Dense_7_Complete,7,"[32, 64, 96, 128, 160, 192, 224]",100.0%,Full Monotonicity & Inflection Resolution,MODERATE
-Unequal_Focus_128,3,"[64, 128, 192]",88.0%,Focused Inflection Sensitivity around step 128,HIGH

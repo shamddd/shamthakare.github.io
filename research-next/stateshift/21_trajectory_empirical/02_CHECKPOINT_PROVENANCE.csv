@@ -1,4 +1,0 @@
-checkpoint_step,repository_id,verified_commit_sha,verification_timestamp,status
-64,UWNSL/Qwen2.5-7B-deepscaler_4k_step_64,d57afa929761825af618c6545ab7f7a5b28b3dc1,2026-08-20T03:57:00Z,VERIFIED_LIVE
-128,UWNSL/Qwen2.5-7B-deepscaler_4k_step_128,27d9d8455a50c0cb0af37e9676bac4e2a1ecddec,2026-08-20T03:57:00Z,VERIFIED_LIVE
-192,UWNSL/Qwen2.5-7B-deepscaler_4k_step_192,cb3f9bda37c44699246d04b9af21df41879e0ac3,2026-08-20T03:57:00Z,VERIFIED_LIVE

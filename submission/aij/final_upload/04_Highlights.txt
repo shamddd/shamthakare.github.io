@@ -1,5 +1,0 @@
-StateShift measures state-conditioned reasoning recovery in post-trained LLMs.
-Observed 11.76 percentage-point interaction between base and step-256 checkpoints.
-Interaction was consistent with non-decreasing trajectory across 9 checkpoints.
-State-selective interaction was detectable at earliest checkpoint, step-32.
-Conditional natural post-error recovery rate was 30.93% in unperturbed decoding.

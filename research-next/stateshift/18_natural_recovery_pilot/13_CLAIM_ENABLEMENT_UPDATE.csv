@@ -1,7 +1,0 @@
-claim,stage_a_status,stage_c0_status,evidence_artifact,sample_size_n,denominator_e,estimate_val,ci_95,allowed_manuscript_wording,final_status
-Natural Post-Error Recovery,NOT_ENABLED,ENABLED,10_PILOT_STATISTICAL_RESULTS.json,3200,582,0.3093,[0.2731, 0.3480],"In unperturbed rollouts containing natural reasoning errors, the model autonomously recovers to the correct final answer in 30.93% of episodes.",ENABLED
-Natural Self-Correction (Causal),NOT_ENABLED,QUALIFIED,12_PILOT_ADVERSARIAL_REVIEW.md,3200,582,0.3093,[0.2731, 0.3480],Must use 'natural post-error recovery' to reflect endogenous error generation.,QUALIFIED_ENABLED
-Endpoint Primary Interaction,ENABLED,ENABLED,STATESHIFT_PUBLICATION_NUMBERS_LOCK.json,454,N/A,0.1176,[0.0955, 0.1400],From t=0 to t=256 target-transition success increased by 11.76 percentage points more in Recovery than Control.,ENABLED
-Relative Risk RR_256,ENABLED,ENABLED,14_RELATIVE_EFFECT_AUDIT.md,454,N/A,1.1888,[1.1420, 1.2375],Target-transition success at step 256 is 1.189x higher in Recovery than Control.,ENABLED
-Relative Gain Ratio RRG,ENABLED,ENABLED,14_RELATIVE_EFFECT_AUDIT.md,454,N/A,1.5796,[1.4120, 1.7750],The absolute gain in Recovery target-transition success is 1.58x larger than Control gain.,ENABLED
-Trajectory Monotonicity,NOT_ENABLED,NOT_ENABLED,01_TRAJECTORY_POWER_REQUIREMENT.md,0,0,N/A,N/A,Unobserved (Stage B not executed),NOT_ENABLED

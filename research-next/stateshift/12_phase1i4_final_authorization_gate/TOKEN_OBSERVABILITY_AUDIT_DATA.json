@@ -1,9 +1,0 @@
-{
-  "audited_record_count": 40,
-  "p_target_observable_given_recovery": 1.0,
-  "p_target_observable_given_control": 1.0,
-  "p_target_observable_given_t0": 1.0,
-  "p_target_observable_given_t256": 1.0,
-  "differential_censoring_bias_delta": 0.0,
-  "observability_verdict": "VALID \u2014 ZERO DIFFERENTIAL CENSORING BIAS"
-}
