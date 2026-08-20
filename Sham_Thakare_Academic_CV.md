@@ -1,7 +1,7 @@
 # Sham Satish Thakare
 **Independent Computer Science Researcher**  
 Pune, India | Phone: +91 7776807761 | Email: shamthakare3000@gmail.com  
-GitHub: [https://github.com/shamddd](https://github.com/shamddd) | Web: [https://shamthakare.github.io](https://shamthakare.github.io)
+GitHub: [https://github.com/shamddd](https://github.com/shamddd) | Web: [https://shamddd.github.io/shamthakare.github.io](https://shamddd.github.io/shamthakare.github.io)
 
 ---
 
@@ -19,7 +19,6 @@ I conduct foundational and systems research on **Trustworthy, Adaptive, and Veri
 *Bachelor of Technology in Artificial Intelligence and Data Science* | **Jan 2020 – Jun 2024**  
 * **Cumulative GPA**: 8.70 / 10.00
 * **Core Coursework**: Engineering Mathematics, Scientific Computing, Operating Systems, Design and Analysis of Algorithms, Object-Oriented Programming (C++), Python Programming, Data Structures, Computer Networks, Database Management Systems, Artificial Intelligence, Machine Learning, Computational Modeling, Signal Processing, Linear Algebra, Probability and Statistics.
-* **Academic Honors**: Awarded 100% Merit Scholarship for 8 consecutive semesters based on academic performance.
 
 ---
 
@@ -77,24 +76,23 @@ I conduct foundational and systems research on **Trustworthy, Adaptive, and Veri
 
 ---
 
-## PROFESSIONAL WORK EXPERIENCE
+## PROFESSIONAL & ACADEMIC EXPERIENCE
 **Spectra Corporate Service**, Pune, India  
 *Data Engineer / Machine Learning Specialist* | **Jun 2024 – Present**  
-* Architected scalable data pipelines using C++, Python, and SQL on GCP and AWS (GKE, Compute Engine, IAM, Cloud Storage, Cloud Logging).
-* Designed multithreaded Linux system software with strict synchronization invariants, virtual memory isolation, and container security controls.
-* Developed automated CI/CD and infrastructure-as-code automation pipelines using Terraform, Docker, Kubernetes, and GitHub Actions.
-* Constructed Prometheus and Grafana distributed telemetry dashboards for SLA monitoring and proactive incident detection.
+* Developed and maintained scalable data processing pipelines and ML-support workflows using Python, SQL, and GCP/AWS cloud services.
+* Built and debugged automated CI/CD deployment pipelines, containerized infrastructure, and monitoring dashboards using Docker, Kubernetes, and Prometheus/Grafana.
+* Engineered backend data integration services and performance-monitoring workflows for production model pipelines.
 
 **APCOER Pune**, Pune, India  
-*Research Intern / Teaching Fellow* | **Jun 2023 – Dec 2024**  
-* Served as Teaching Fellow for *Intro to Algorithms and Their Limitations* and *Foundations of ML: AI Alignment and Safety* (Aug 2024 – Dec 2024).
-* Served as Course Producer for *Fundamentals of Computation*, *Introduction to Algorithms*, and *Theory of Computation* (Aug 2022 – May 2023).
+*Research Intern* | **Jun 2023 – Dec 2024**  
 * Assisted faculty in experimental design, statistical analysis, and open-source software reproducibility protocols.
+* Provided teaching assistance and course material support for undergraduate courses including *Intro to Algorithms* and *Foundations of ML* (Aug 2024 – Dec 2024).
+* Contributed to course content preparation and assignment design for *Fundamentals of Computation*, *Introduction to Algorithms*, and *Theory of Computation* (Aug 2022 – May 2023).
 
 ---
 
 ## TECHNICAL SKILLS
-* **Languages**: Python, C++, C, Rust, Go, Java, SQL, Shell (Bash), LaTeX
-* **AI & Machine Learning**: PyTorch, GRPO / PPO RL Probes, Transformers, HuggingFace, NumPy, SciPy, Scikit-Learn
-* **Confidential Computing & Security**: TEEs (SGX/TDX), Oblivious RAM (Path ORAM), Zero-Knowledge Attestation, POSIX System Security
-* **Distributed Systems & Cloud**: Raft Consensus, OpenTelemetry, Docker, Kubernetes, Helm, Terraform, GCP, AWS, Prometheus, Grafana
+* **Research & Machine Learning**: PyTorch, GRPO / RLVR Probes, Transformers, HuggingFace, NumPy, SciPy, Scikit-Learn
+* **Systems Research Expertise** *(Demonstrated in Open-Source Research Artifacts)*: Raft Consensus (`quorumshift`), Path ORAM & ZK Attestation (`enclaveshield`), OpenTelemetry Causal Graphs (`tracemind`)
+* **Professional Data & Cloud Engineering**: Python, SQL, GCP, AWS, Docker, Kubernetes, Prometheus, Grafana
+* **Programming Languages**: Python, C++, C, SQL, Shell (Bash), LaTeX

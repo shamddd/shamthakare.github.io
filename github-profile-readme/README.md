@@ -1,11 +1,11 @@
 # Sham Satish Thakare
 **Independent Computer Science Researcher & Data Engineer / ML Specialist**  
-Pune, Maharashtra, India · `shamthakare3000@gmail.com` · [Website](https://shamthakare.github.io) · [CV PDF](https://shamthakare.github.io/Sham_Thakare_Academic_CV.pdf)
+Pune, Maharashtra, India · `shamthakare3000@gmail.com` · [Website](https://shamddd.github.io/shamthakare.github.io) · [CV PDF](https://shamddd.github.io/shamthakare.github.io/Sham_Thakare_Academic_CV.pdf)
 
 ---
 
 ### Research Statement & Primary Focus
-I conduct foundational and systems research on **Trustworthy, Adaptive, and Verifiable Autonomous Systems**, spanning:
+I conduct foundational and systems research on **Trustworthy, Adaptive, and Verifiable Autonomous Systems**, spanning four core vectors:
 1. **Calibrated Reasoning & Adaptive Compute**: RLVR/GRPO reward plasticity prediction ($\alpha_{\text{SVD}}, \bar{H}, \sigma_g^2$) and token entropy credit assignment.
 2. **Confidential Computing & Security**: Zero-knowledge remote attestation proofs and adaptive Path ORAM tree rebalancing ($1.47\text{ms}$ access latency).
 3. **Learning-Augmented Distributed Consensus**: Raft joint-consensus dynamic vote weighting ($\text{AdaptiveReplica}$) under asymmetric failure domains ($13.50\text{ms}$ p99 write latency).
@@ -39,5 +39,5 @@ I conduct foundational and systems research on **Trustworthy, Adaptive, and Veri
 
 ### Education & Professional Experience
 - **Data Engineer / ML Specialist**, Spectra Corporate Service (Jun 2024 – Present)
-- **Research Intern / Teaching Fellow**, APCOER Pune (Jun 2023 – Dec 2024)
-- **B.Tech. in AI & Data Science**, APCOER Pune (Jan 2020 – Jun 2024, Cumulative GPA: 8.70 / 10.00, 100% Merit Scholarship 8 sems)
+- **Research Intern**, APCOER Pune (Jun 2023 – Dec 2024)
+- **B.Tech. in AI & Data Science**, APCOER Pune (Jan 2020 – Jun 2024, Cumulative GPA: 8.70 / 10.00)

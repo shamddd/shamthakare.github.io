@@ -1,35 +1,13 @@
-# Byte-compiled / Python
+# Ignore temporary Python scripts and bytecode
+*.pyc
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.pytest_cache/
-.coverage
-htmlcov/
-*.egg-info/
-.dist/
-build/
+clean_runner.py
+run_7b_stage1_pilot.py
+run_real_7b_pilot.py
+runner_b64.txt
+runpod_7b_pilot_runner.py
 
-# IDE / OS
+# System files
 .DS_Store
-.idea/
-.vscode/
-*.swp
 __MACOSX/
 ._*
-
-# Environment / Credentials
-.env
-.env.*
-secrets.yaml
-*.pem
-*.key
-credentials/
-
-# Large model artifacts / checkpoints (Do not commit 15GB+ weights)
-*.safetensors
-*.bin
-*.pt
-*.onnx
-models/cache/
-wandb/
