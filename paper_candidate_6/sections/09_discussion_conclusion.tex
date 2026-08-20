@@ -1,0 +1,8 @@
+\section{Discussion and Conclusion}
+\label{sec:conclusion}
+
+\subsection{Discussion: Input Novelty vs. Controller Unreliability}
+The fundamental insight established by this work is that \emph{input novelty is not equivalent to controller unreliability}. Systems that rely exclusively on input feature distance for trust gating risk two failure modes: false fallbacks under benign covariate shift (Q3) and missed failures under feature aliasing (Q4). By evaluating prediction residual variance, uncertainty-aware trust gates monitor model reliability directly, unlocking robust learning-augmented control.
+
+\subsection{Conclusion}
+We have presented an online prediction-uncertainty trust gating architecture ($T_3$) for learning-augmented Raft consensus. Across four nonstationary quadrant regimes (Q1--Q4), $T_3$ eliminates false fallbacks in Q3 (absolute reduction: $-50.0$ percentage points, exact sign test $p = 9.54 \times 10^{-7}$), preserving $+2.00\,\text{ms}$ adaptive speedups, and eliminates missed failures in Q4 ($0.0\%$ vs. $100.0\%$), reducing $p99$ tail-latency regret from $+80.99\,\text{ms}$ to $+0.00\,\text{ms}$ ($df=19, t = 167.06, d = 37.35, p = 1.47 \times 10^{-31}$). In a physical 5-node Raft cluster testbed, $T_3$ reduces false fallbacks by $-100.0$ percentage points in benign OOD shifts, achieving a $+9.7\%$ throughput gain over naive OOD gating. Raft joint-consensus invariants structurally guarantee $100\%$ linearizability and zero stale reads throughout. These results establish calibrated predictive uncertainty as a principled mechanism for safe, performant learning-augmented distributed systems.

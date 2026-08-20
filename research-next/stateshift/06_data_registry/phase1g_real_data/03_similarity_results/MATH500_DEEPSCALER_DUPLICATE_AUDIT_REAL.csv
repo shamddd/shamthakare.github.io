@@ -1,0 +1,501 @@
+math500_id,training_dataset,training_item_id,classification,jaccard_3gram,numeric_variant,justification
+math500_000,DeepScaleR,ds_40113,NEAR_DUPLICATE_HIGH_CONFIDENCE,0.9615,NO,"High token n-gram similarity (Jaccard=0.786, EditRatio=0.962) with DeepScaleR item ds_40113."
+math500_001,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_002,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_003,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_004,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_005,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_006,DeepScaleR,ds_04261,POSSIBLE_RELATED,0.7059,NO,Moderate semantic/structural overlap (Jaccard=0.259) with DeepScaleR item ds_04261.
+math500_007,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_008,DeepScaleR,ds_34181,POSSIBLE_RELATED,0.7895,NO,Moderate semantic/structural overlap (Jaccard=0.511) with DeepScaleR item ds_34181.
+math500_009,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_010,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_011,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_012,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_013,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_014,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_015,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_016,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_017,DeepScaleR,ds_39807,NEAR_DUPLICATE_HIGH_CONFIDENCE,0.9399,NO,"High token n-gram similarity (Jaccard=0.940, EditRatio=0.932) with DeepScaleR item ds_39807."
+math500_018,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_019,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_020,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_021,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_022,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_023,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_024,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_025,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_026,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_027,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_028,DeepScaleR,ds_39912,POSSIBLE_RELATED,0.7895,NO,Moderate semantic/structural overlap (Jaccard=0.575) with DeepScaleR item ds_39912.
+math500_029,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_030,DeepScaleR,ds_37590,POSSIBLE_RELATED,0.6923,NO,Moderate semantic/structural overlap (Jaccard=0.233) with DeepScaleR item ds_37590.
+math500_031,DeepScaleR,ds_24525,STRUCTURAL_NUMERIC_VARIANT,0.9500,YES,Identical mathematical structure with modified numerical parameters in DeepScaleR item ds_24525.
+math500_032,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_033,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_034,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_035,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_036,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_037,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_038,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_039,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_040,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_041,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_042,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_043,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_044,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_045,DeepScaleR,ds_35861,POSSIBLE_RELATED,0.7895,NO,Moderate semantic/structural overlap (Jaccard=0.520) with DeepScaleR item ds_35861.
+math500_046,DeepScaleR,ds_17660,POSSIBLE_RELATED,0.8636,NO,Moderate semantic/structural overlap (Jaccard=0.714) with DeepScaleR item ds_17660.
+math500_047,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_048,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_049,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_050,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_051,DeepScaleR,ds_37357,POSSIBLE_RELATED,0.7692,NO,Moderate semantic/structural overlap (Jaccard=0.565) with DeepScaleR item ds_37357.
+math500_052,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_053,DeepScaleR,ds_39759,NEAR_DUPLICATE_HIGH_CONFIDENCE,0.9000,NO,"High token n-gram similarity (Jaccard=0.643, EditRatio=0.900) with DeepScaleR item ds_39759."
+math500_054,DeepScaleR,ds_38629,STRUCTURAL_NUMERIC_VARIANT,0.9500,YES,Identical mathematical structure with modified numerical parameters in DeepScaleR item ds_38629.
+math500_055,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_056,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_057,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_058,DeepScaleR,ds_16817,POSSIBLE_RELATED,0.8000,NO,Moderate semantic/structural overlap (Jaccard=0.176) with DeepScaleR item ds_16817.
+math500_059,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_060,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_061,DeepScaleR,ds_37529,POSSIBLE_RELATED,0.7879,NO,Moderate semantic/structural overlap (Jaccard=0.541) with DeepScaleR item ds_37529.
+math500_062,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_063,DeepScaleR,ds_37176,POSSIBLE_RELATED,0.7941,NO,Moderate semantic/structural overlap (Jaccard=0.632) with DeepScaleR item ds_37176.
+math500_064,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_065,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_066,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_067,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_068,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_069,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_070,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_071,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_072,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_073,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_074,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_075,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_076,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_077,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_078,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_079,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_080,DeepScaleR,ds_07202,EXACT_DUPLICATE,1.0000,NO,Exact normalized SHA-256 match with DeepScaleR item ds_07202.
+math500_081,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_082,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_083,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_084,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_085,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_086,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_087,DeepScaleR,ds_33552,NEAR_DUPLICATE_HIGH_CONFIDENCE,0.9000,NO,"High token n-gram similarity (Jaccard=0.400, EditRatio=0.900) with DeepScaleR item ds_33552."
+math500_088,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_089,DeepScaleR,ds_37838,POSSIBLE_RELATED,0.7000,NO,Moderate semantic/structural overlap (Jaccard=0.208) with DeepScaleR item ds_37838.
+math500_090,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_091,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_092,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_093,DeepScaleR,ds_34401,POSSIBLE_RELATED,0.8750,NO,Moderate semantic/structural overlap (Jaccard=0.619) with DeepScaleR item ds_34401.
+math500_094,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_095,DeepScaleR,ds_39938,POSSIBLE_RELATED,0.7059,NO,Moderate semantic/structural overlap (Jaccard=0.433) with DeepScaleR item ds_39938.
+math500_096,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_097,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_098,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_099,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_100,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_101,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_102,DeepScaleR,ds_34186,POSSIBLE_RELATED,0.7500,NO,Moderate semantic/structural overlap (Jaccard=0.091) with DeepScaleR item ds_34186.
+math500_103,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_104,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_105,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_106,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_107,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_108,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_109,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_110,DeepScaleR,ds_07160,NEAR_DUPLICATE_HIGH_CONFIDENCE,0.9714,NO,"High token n-gram similarity (Jaccard=0.920, EditRatio=0.971) with DeepScaleR item ds_07160."
+math500_111,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_112,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_113,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_114,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_115,DeepScaleR,ds_10837,NEAR_DUPLICATE_HIGH_CONFIDENCE,0.9000,NO,"High token n-gram similarity (Jaccard=0.714, EditRatio=0.900) with DeepScaleR item ds_10837."
+math500_116,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_117,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_118,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_119,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_120,DeepScaleR,ds_36351,POSSIBLE_RELATED,0.7308,NO,Moderate semantic/structural overlap (Jaccard=0.731) with DeepScaleR item ds_36351.
+math500_121,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_122,DeepScaleR,ds_33823,NEAR_DUPLICATE_HIGH_CONFIDENCE,0.8947,NO,"High token n-gram similarity (Jaccard=0.575, EditRatio=0.895) with DeepScaleR item ds_33823."
+math500_123,DeepScaleR,ds_35589,NEAR_DUPLICATE_HIGH_CONFIDENCE,0.9623,NO,"High token n-gram similarity (Jaccard=0.955, EditRatio=0.962) with DeepScaleR item ds_35589."
+math500_124,DeepScaleR,ds_33652,POSSIBLE_RELATED,0.7647,NO,Moderate semantic/structural overlap (Jaccard=0.255) with DeepScaleR item ds_33652.
+math500_125,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_126,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_127,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_128,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_129,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_130,DeepScaleR,ds_37713,POSSIBLE_RELATED,0.6667,NO,Moderate semantic/structural overlap (Jaccard=0.390) with DeepScaleR item ds_37713.
+math500_131,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_132,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_133,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_134,DeepScaleR,ds_37095,POSSIBLE_RELATED,0.6458,NO,Moderate semantic/structural overlap (Jaccard=0.600) with DeepScaleR item ds_37095.
+math500_135,DeepScaleR,ds_38411,POSSIBLE_RELATED,0.7667,NO,Moderate semantic/structural overlap (Jaccard=0.613) with DeepScaleR item ds_38411.
+math500_136,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_137,DeepScaleR,ds_24712,POSSIBLE_RELATED,0.6667,NO,Moderate semantic/structural overlap (Jaccard=0.158) with DeepScaleR item ds_24712.
+math500_138,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_139,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_140,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_141,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_142,DeepScaleR,ds_35242,POSSIBLE_RELATED,0.7000,NO,Moderate semantic/structural overlap (Jaccard=0.324) with DeepScaleR item ds_35242.
+math500_143,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_144,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_145,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_146,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_147,DeepScaleR,ds_37053,POSSIBLE_RELATED,0.8333,NO,Moderate semantic/structural overlap (Jaccard=0.589) with DeepScaleR item ds_37053.
+math500_148,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_149,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_150,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_151,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_152,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_153,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_154,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_155,DeepScaleR,ds_34990,STRUCTURAL_NUMERIC_VARIANT,0.9500,YES,Identical mathematical structure with modified numerical parameters in DeepScaleR item ds_34990.
+math500_156,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_157,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_158,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_159,DeepScaleR,ds_11669,POSSIBLE_RELATED,0.7391,NO,Moderate semantic/structural overlap (Jaccard=0.603) with DeepScaleR item ds_11669.
+math500_160,DeepScaleR,ds_33641,POSSIBLE_RELATED,0.7143,NO,Moderate semantic/structural overlap (Jaccard=0.296) with DeepScaleR item ds_33641.
+math500_161,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_162,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_163,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_164,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_165,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_166,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_167,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_168,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_169,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_170,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_171,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_172,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_173,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_174,DeepScaleR,ds_33830,POSSIBLE_RELATED,0.7500,NO,Moderate semantic/structural overlap (Jaccard=0.500) with DeepScaleR item ds_33830.
+math500_175,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_176,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_177,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_178,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_179,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_180,DeepScaleR,ds_39186,POSSIBLE_RELATED,0.6667,NO,Moderate semantic/structural overlap (Jaccard=0.300) with DeepScaleR item ds_39186.
+math500_181,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_182,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_183,DeepScaleR,ds_33804,STRUCTURAL_NUMERIC_VARIANT,0.9500,YES,Identical mathematical structure with modified numerical parameters in DeepScaleR item ds_33804.
+math500_184,DeepScaleR,ds_37309,POSSIBLE_RELATED,0.6842,NO,Moderate semantic/structural overlap (Jaccard=0.684) with DeepScaleR item ds_37309.
+math500_185,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_186,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_187,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_188,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_189,DeepScaleR,ds_36251,POSSIBLE_RELATED,0.7883,NO,Moderate semantic/structural overlap (Jaccard=0.774) with DeepScaleR item ds_36251.
+math500_190,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_191,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_192,DeepScaleR,ds_36276,POSSIBLE_RELATED,0.7143,NO,Moderate semantic/structural overlap (Jaccard=0.490) with DeepScaleR item ds_36276.
+math500_193,DeepScaleR,ds_37520,NEAR_DUPLICATE_HIGH_CONFIDENCE,0.9259,NO,"High token n-gram similarity (Jaccard=0.760, EditRatio=0.926) with DeepScaleR item ds_37520."
+math500_194,DeepScaleR,ds_37118,POSSIBLE_RELATED,0.7647,NO,Moderate semantic/structural overlap (Jaccard=0.444) with DeepScaleR item ds_37118.
+math500_195,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_196,DeepScaleR,ds_33489,STRUCTURAL_NUMERIC_VARIANT,0.9500,YES,Identical mathematical structure with modified numerical parameters in DeepScaleR item ds_33489.
+math500_197,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_198,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_199,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_200,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_201,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_202,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_203,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_204,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_205,DeepScaleR,ds_40259,POSSIBLE_RELATED,0.6923,NO,Moderate semantic/structural overlap (Jaccard=0.463) with DeepScaleR item ds_40259.
+math500_206,DeepScaleR,ds_40048,POSSIBLE_RELATED,0.8000,NO,Moderate semantic/structural overlap (Jaccard=0.500) with DeepScaleR item ds_40048.
+math500_207,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_208,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_209,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_210,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_211,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_212,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_213,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_214,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_215,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_216,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_217,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_218,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_219,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_220,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_221,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_222,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_223,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_224,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_225,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_226,DeepScaleR,ds_19501,STRUCTURAL_NUMERIC_VARIANT,0.9500,YES,Identical mathematical structure with modified numerical parameters in DeepScaleR item ds_19501.
+math500_227,DeepScaleR,ds_39877,NEAR_DUPLICATE_HIGH_CONFIDENCE,0.9091,NO,"High token n-gram similarity (Jaccard=0.667, EditRatio=0.909) with DeepScaleR item ds_39877."
+math500_228,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_229,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_230,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_231,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_232,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_233,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_234,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_235,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_236,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_237,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_238,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_239,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_240,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_241,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_242,DeepScaleR,ds_34291,POSSIBLE_RELATED,0.7750,NO,Moderate semantic/structural overlap (Jaccard=0.447) with DeepScaleR item ds_34291.
+math500_243,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_244,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_245,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_246,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_247,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_248,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_249,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_250,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_251,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_252,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_253,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_254,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_255,DeepScaleR,ds_40040,POSSIBLE_RELATED,0.8077,NO,Moderate semantic/structural overlap (Jaccard=0.712) with DeepScaleR item ds_40040.
+math500_256,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_257,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_258,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_259,DeepScaleR,ds_37511,POSSIBLE_RELATED,0.6667,NO,Moderate semantic/structural overlap (Jaccard=0.286) with DeepScaleR item ds_37511.
+math500_260,DeepScaleR,ds_40172,POSSIBLE_RELATED,0.7857,NO,Moderate semantic/structural overlap (Jaccard=0.446) with DeepScaleR item ds_40172.
+math500_261,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_262,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_263,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_264,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_265,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_266,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_267,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_268,DeepScaleR,ds_38414,STRUCTURAL_NUMERIC_VARIANT,0.9500,YES,Identical mathematical structure with modified numerical parameters in DeepScaleR item ds_38414.
+math500_269,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_270,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_271,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_272,DeepScaleR,ds_37709,POSSIBLE_RELATED,0.8696,NO,Moderate semantic/structural overlap (Jaccard=0.695) with DeepScaleR item ds_37709.
+math500_273,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_274,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_275,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_276,DeepScaleR,ds_19491,POSSIBLE_RELATED,0.8333,NO,Moderate semantic/structural overlap (Jaccard=0.472) with DeepScaleR item ds_19491.
+math500_277,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_278,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_279,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_280,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_281,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_282,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_283,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_284,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_285,DeepScaleR,ds_07141,EXACT_DUPLICATE,1.0000,NO,Exact normalized SHA-256 match with DeepScaleR item ds_07141.
+math500_286,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_287,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_288,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_289,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_290,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_291,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_292,DeepScaleR,ds_06718,NEAR_DUPLICATE_HIGH_CONFIDENCE,1.0000,NO,"High token n-gram similarity (Jaccard=1.000, EditRatio=0.875) with DeepScaleR item ds_06718."
+math500_293,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_294,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_295,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_296,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_297,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_298,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_299,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_300,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_301,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_302,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_303,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_304,DeepScaleR,ds_36369,POSSIBLE_RELATED,0.6923,NO,Moderate semantic/structural overlap (Jaccard=0.349) with DeepScaleR item ds_36369.
+math500_305,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_306,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_307,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_308,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_309,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_310,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_311,DeepScaleR,ds_37687,NEAR_DUPLICATE_HIGH_CONFIDENCE,0.8824,NO,"High token n-gram similarity (Jaccard=0.444, EditRatio=0.882) with DeepScaleR item ds_37687."
+math500_312,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_313,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_314,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_315,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_316,DeepScaleR,ds_33255,POSSIBLE_RELATED,0.8421,NO,Moderate semantic/structural overlap (Jaccard=0.385) with DeepScaleR item ds_33255.
+math500_317,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_318,DeepScaleR,ds_39554,POSSIBLE_RELATED,0.8750,NO,Moderate semantic/structural overlap (Jaccard=0.163) with DeepScaleR item ds_39554.
+math500_319,DeepScaleR,ds_33506,POSSIBLE_RELATED,0.8000,NO,Moderate semantic/structural overlap (Jaccard=0.559) with DeepScaleR item ds_33506.
+math500_320,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_321,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_322,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_323,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_324,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_325,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_326,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_327,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_328,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_329,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_330,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_331,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_332,DeepScaleR,ds_36501,POSSIBLE_RELATED,0.8000,NO,Moderate semantic/structural overlap (Jaccard=0.593) with DeepScaleR item ds_36501.
+math500_333,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_334,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_335,DeepScaleR,ds_37711,POSSIBLE_RELATED,0.7273,NO,Moderate semantic/structural overlap (Jaccard=0.694) with DeepScaleR item ds_37711.
+math500_336,DeepScaleR,ds_34137,STRUCTURAL_NUMERIC_VARIANT,0.9500,YES,Identical mathematical structure with modified numerical parameters in DeepScaleR item ds_34137.
+math500_337,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_338,DeepScaleR,ds_37586,POSSIBLE_RELATED,0.7500,NO,Moderate semantic/structural overlap (Jaccard=0.333) with DeepScaleR item ds_37586.
+math500_339,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_340,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_341,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_342,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_343,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_344,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_345,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_346,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_347,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_348,DeepScaleR,ds_19122,STRUCTURAL_NUMERIC_VARIANT,0.9500,YES,Identical mathematical structure with modified numerical parameters in DeepScaleR item ds_19122.
+math500_349,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_350,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_351,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_352,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_353,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_354,DeepScaleR,ds_23744,POSSIBLE_RELATED,0.7500,NO,Moderate semantic/structural overlap (Jaccard=0.269) with DeepScaleR item ds_23744.
+math500_355,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_356,DeepScaleR,ds_33662,POSSIBLE_RELATED,0.8000,NO,Moderate semantic/structural overlap (Jaccard=0.229) with DeepScaleR item ds_33662.
+math500_357,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_358,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_359,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_360,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_361,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_362,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_363,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_364,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_365,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_366,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_367,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_368,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_369,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_370,DeepScaleR,ds_39846,POSSIBLE_RELATED,0.7500,NO,Moderate semantic/structural overlap (Jaccard=0.489) with DeepScaleR item ds_39846.
+math500_371,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_372,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_373,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_374,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_375,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_376,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_377,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_378,DeepScaleR,ds_39563,POSSIBLE_RELATED,0.7143,NO,Moderate semantic/structural overlap (Jaccard=0.269) with DeepScaleR item ds_39563.
+math500_379,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_380,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_381,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_382,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_383,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_384,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_385,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_386,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_387,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_388,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_389,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_390,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_391,DeepScaleR,ds_33375,POSSIBLE_RELATED,0.7826,NO,Moderate semantic/structural overlap (Jaccard=0.550) with DeepScaleR item ds_33375.
+math500_392,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_393,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_394,DeepScaleR,ds_05788,POSSIBLE_RELATED,0.7442,NO,Moderate semantic/structural overlap (Jaccard=0.491) with DeepScaleR item ds_05788.
+math500_395,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_396,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_397,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_398,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_399,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_400,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_401,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_402,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_403,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_404,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_405,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_406,DeepScaleR,ds_38045,POSSIBLE_RELATED,0.7778,NO,Moderate semantic/structural overlap (Jaccard=0.158) with DeepScaleR item ds_38045.
+math500_407,DeepScaleR,ds_34083,POSSIBLE_RELATED,0.6667,NO,Moderate semantic/structural overlap (Jaccard=0.365) with DeepScaleR item ds_34083.
+math500_408,DeepScaleR,ds_40160,POSSIBLE_RELATED,0.8000,NO,Moderate semantic/structural overlap (Jaccard=0.612) with DeepScaleR item ds_40160.
+math500_409,DeepScaleR,ds_37005,POSSIBLE_RELATED,0.7600,NO,Moderate semantic/structural overlap (Jaccard=0.419) with DeepScaleR item ds_37005.
+math500_410,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_411,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_412,DeepScaleR,ds_06976,EXACT_DUPLICATE,1.0000,NO,Exact normalized SHA-256 match with DeepScaleR item ds_06976.
+math500_413,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_414,DeepScaleR,ds_33074,POSSIBLE_RELATED,0.6923,NO,Moderate semantic/structural overlap (Jaccard=0.235) with DeepScaleR item ds_33074.
+math500_415,DeepScaleR,ds_38288,NEAR_DUPLICATE_HIGH_CONFIDENCE,0.8889,NO,"High token n-gram similarity (Jaccard=0.379, EditRatio=0.889) with DeepScaleR item ds_38288."
+math500_416,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_417,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_418,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_419,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_420,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_421,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_422,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_423,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_424,DeepScaleR,ds_34146,STRUCTURAL_NUMERIC_VARIANT,0.9500,YES,Identical mathematical structure with modified numerical parameters in DeepScaleR item ds_34146.
+math500_425,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_426,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_427,DeepScaleR,ds_34054,POSSIBLE_RELATED,0.6818,NO,Moderate semantic/structural overlap (Jaccard=0.423) with DeepScaleR item ds_34054.
+math500_428,DeepScaleR,ds_37415,POSSIBLE_RELATED,0.6667,NO,Moderate semantic/structural overlap (Jaccard=0.598) with DeepScaleR item ds_37415.
+math500_429,DeepScaleR,ds_18799,POSSIBLE_RELATED,0.6667,NO,Moderate semantic/structural overlap (Jaccard=0.348) with DeepScaleR item ds_18799.
+math500_430,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_431,DeepScaleR,ds_39856,STRUCTURAL_NUMERIC_VARIANT,0.9500,YES,Identical mathematical structure with modified numerical parameters in DeepScaleR item ds_39856.
+math500_432,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_433,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_434,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_435,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_436,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_437,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_438,DeepScaleR,ds_39518,POSSIBLE_RELATED,0.7143,NO,Moderate semantic/structural overlap (Jaccard=0.359) with DeepScaleR item ds_39518.
+math500_439,DeepScaleR,ds_37357,POSSIBLE_RELATED,0.7692,NO,Moderate semantic/structural overlap (Jaccard=0.385) with DeepScaleR item ds_37357.
+math500_440,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_441,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_442,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_443,DeepScaleR,ds_33384,POSSIBLE_RELATED,0.6923,NO,Moderate semantic/structural overlap (Jaccard=0.353) with DeepScaleR item ds_33384.
+math500_444,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_445,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_446,DeepScaleR,ds_34346,STRUCTURAL_NUMERIC_VARIANT,0.9500,YES,Identical mathematical structure with modified numerical parameters in DeepScaleR item ds_34346.
+math500_447,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_448,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_449,DeepScaleR,ds_34109,POSSIBLE_RELATED,0.7273,NO,Moderate semantic/structural overlap (Jaccard=0.263) with DeepScaleR item ds_34109.
+math500_450,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_451,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_452,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_453,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_454,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_455,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_456,DeepScaleR,ds_37393,POSSIBLE_RELATED,0.7368,NO,Moderate semantic/structural overlap (Jaccard=0.455) with DeepScaleR item ds_37393.
+math500_457,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_458,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_459,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_460,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_461,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_462,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_463,DeepScaleR,ds_34691,POSSIBLE_RELATED,0.7500,NO,Moderate semantic/structural overlap (Jaccard=0.422) with DeepScaleR item ds_34691.
+math500_464,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_465,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_466,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_467,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_468,DeepScaleR,ds_33262,POSSIBLE_RELATED,0.8421,NO,Moderate semantic/structural overlap (Jaccard=0.350) with DeepScaleR item ds_33262.
+math500_469,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_470,DeepScaleR,ds_16786,POSSIBLE_RELATED,0.6562,NO,Moderate semantic/structural overlap (Jaccard=0.312) with DeepScaleR item ds_16786.
+math500_471,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_472,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_473,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_474,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_475,DeepScaleR,ds_06870,POSSIBLE_RELATED,0.8772,NO,Moderate semantic/structural overlap (Jaccard=0.658) with DeepScaleR item ds_06870.
+math500_476,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_477,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_478,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_479,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_480,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_481,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_482,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_483,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_484,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_485,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_486,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_487,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_488,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_489,DeepScaleR,ds_06417,POSSIBLE_RELATED,0.8571,NO,Moderate semantic/structural overlap (Jaccard=0.688) with DeepScaleR item ds_06417.
+math500_490,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_491,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_492,DeepScaleR,ds_40289,NEAR_DUPLICATE_HIGH_CONFIDENCE,0.9062,NO,"High token n-gram similarity (Jaccard=0.690, EditRatio=0.906) with DeepScaleR item ds_40289."
+math500_493,DeepScaleR,ds_34419,POSSIBLE_RELATED,0.6957,NO,Moderate semantic/structural overlap (Jaccard=0.353) with DeepScaleR item ds_34419.
+math500_494,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_495,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_496,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_497,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_498,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.
+math500_499,None,None,NO_MEANINGFUL_MATCH,0.0000,NO,No significant textual or structural overlap detected.

@@ -1,0 +1,22 @@
+PaperA,PaperB,Score,ScientificRelationship,SharedInfra,PrimaryClaimOverlap,CollisionAssessment,Action
+PUB-001,PUB-002,1,Thematic connection (LLM Reasoning),Shared LLM checkpoints,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+PUB-001,PUB-003,1,Thematic connection (LLM Inference),Shared benchmark tasks,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+PUB-001,Candidate#4,2,Shared RL lineage & Qwen checkpoint,Qwen-2.5-Math checkpoint,Evaluates capability boundary for RLVR calibration vs token entropy length confounding,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED (Disclose shared RL pipeline)
+PUB-001,Candidate#5,0,Unrelated,None,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+PUB-001,Candidate#6,0,Unrelated,None,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+PUB-001,Candidate#7,0,Unrelated,None,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+PUB-002,PUB-003,1,Thematic connection (LLM Reasoning),Shared datasets,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+PUB-002,Candidate#4,1,Thematic connection (Reasoning Models),Shared Qwen checkpoints,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+PUB-002,Candidate#5,2,Shared agent/reasoning error evaluation,Prefix logger infra,Evaluates multi-turn tool action divergence D(d) vs single-step arithmetic recovery D_recovery,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED (Disclose error evaluation infra)
+PUB-002,Candidate#6,0,Unrelated,None,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+PUB-002,Candidate#7,0,Unrelated,None,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+PUB-003,Candidate#4,1,Thematic connection (RL & Search),Shared MATH500,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+PUB-003,Candidate#5,0,Unrelated,None,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+PUB-003,Candidate#6,0,Unrelated,None,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+PUB-003,Candidate#7,0,Unrelated,None,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+Candidate#4,Candidate#5,0,Unrelated,None,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+Candidate#4,Candidate#6,0,Unrelated,None,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+Candidate#4,Candidate#7,0,Unrelated,None,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+Candidate#5,Candidate#6,0,Unrelated,None,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED
+Candidate#5,Candidate#7,2,Shared AgentGuard provenance logger,AgentGuard state logger,Evaluates ZK authorization-path proof vs post-restoration action divergence,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED (Disclose shared agent logger)
+Candidate#6,Candidate#7,0,Unrelated,None,None,NO IDENTIFIED DUPLICATE PRIMARY CLAIM,KEEP & PROCEED

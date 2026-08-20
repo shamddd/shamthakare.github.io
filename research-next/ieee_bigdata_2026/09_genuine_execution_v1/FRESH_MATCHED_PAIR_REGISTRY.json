@@ -1,0 +1,922 @@
+[
+  {
+    "problem_id": "gsm8k_fresh_000",
+    "pair_index": 0,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_000_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "516a788d688cbd7392fef21a5c040d671e69f5c9c1513e08e95c5afc3ada727d",
+      "prefix_steps": [
+        "Notebooks per hour: 5.",
+        "Hours: 4. Total notebooks = 22."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_000_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "77869b3d28bb963ea6696b83a31fd959a6a0c90d71c930ae0d8ce02e00294858",
+      "prefix_steps": [
+        "Notebooks per hour: 5.",
+        "Hours: 4. Total notebooks = 20."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_001",
+    "pair_index": 1,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_001_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "6619c418057514b078754afb179e42719f463b8c804fc39ce0d8ab75e3fd3ef7",
+      "prefix_steps": [
+        "Notebooks per hour: 6.",
+        "Hours: 5. Total notebooks = 32."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_001_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "8c7114c4399dafa392f9fa4286d88e05d902a649317f70d7b4cf2e4c765fb30e",
+      "prefix_steps": [
+        "Notebooks per hour: 6.",
+        "Hours: 5. Total notebooks = 30."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_002",
+    "pair_index": 2,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_002_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "c5f879c13ac5bf332fcb6d2b130e053c8e9d0ac32ab65fa2513123be69e3bf58",
+      "prefix_steps": [
+        "Notebooks per hour: 7.",
+        "Hours: 6. Total notebooks = 44."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_002_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "95eb490887c48305bc022aaea32ae2320a83e9ff08b24af5fe53fe9c4dbf3f8b",
+      "prefix_steps": [
+        "Notebooks per hour: 7.",
+        "Hours: 6. Total notebooks = 42."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_003",
+    "pair_index": 3,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_003_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "ee51fbf4a41efd3e8b9d74b394f24dc87ac52df87482ee805be02279264f811a",
+      "prefix_steps": [
+        "Notebooks per hour: 8.",
+        "Hours: 4. Total notebooks = 34."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_003_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "308d64642840e1f1b42798e492aa49876c68a62043e16f765d6c48c513d8bde6",
+      "prefix_steps": [
+        "Notebooks per hour: 8.",
+        "Hours: 4. Total notebooks = 32."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_004",
+    "pair_index": 4,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_004_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "7be114d2bf71ba4b7dc168056a9fd0d032b1ea334cc7ec41365ceaf7c81d24fd",
+      "prefix_steps": [
+        "Notebooks per hour: 9.",
+        "Hours: 5. Total notebooks = 47."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_004_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "a92f8693776d06e988c7bab806539691da4de7f6c4faca6fd9ccebbc142d4fb8",
+      "prefix_steps": [
+        "Notebooks per hour: 9.",
+        "Hours: 5. Total notebooks = 45."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_005",
+    "pair_index": 5,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_005_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "4d0147a3bae1c0a7546b5d68e1bbeedecebfa209a3bd0756b747c09360f51de8",
+      "prefix_steps": [
+        "Notebooks per hour: 10.",
+        "Hours: 6. Total notebooks = 62."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_005_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "d989d861e171dff5da22d71f6c140cd15735e7576367b0dea0b79877927523c5",
+      "prefix_steps": [
+        "Notebooks per hour: 10.",
+        "Hours: 6. Total notebooks = 60."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_006",
+    "pair_index": 6,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_006_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "ddd1da71f86dcf4dd32d4bb759718f344ae17be1c1e12f06a07cc2f5659396db",
+      "prefix_steps": [
+        "Notebooks per hour: 11.",
+        "Hours: 4. Total notebooks = 46."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_006_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "9794e210ff32916001b2e2a72f84a4d38db9c68680144a7bc0f06ad3c3c67ccd",
+      "prefix_steps": [
+        "Notebooks per hour: 11.",
+        "Hours: 4. Total notebooks = 44."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_007",
+    "pair_index": 7,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_007_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "9a3e5648344ae4a27afa4a204f1984c2d17240e64d0d779971ba45d26afb7625",
+      "prefix_steps": [
+        "Notebooks per hour: 12.",
+        "Hours: 5. Total notebooks = 62."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_007_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "2a564d3800404c6584feab56600ff158028f56c3b88c4273831595e7bab77be8",
+      "prefix_steps": [
+        "Notebooks per hour: 12.",
+        "Hours: 5. Total notebooks = 60."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_008",
+    "pair_index": 8,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_008_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "bb69c4f7538d6787f7f8fb9519989a2e77f950b4f401fd6cecec2a9c188ab704",
+      "prefix_steps": [
+        "Notebooks per hour: 13.",
+        "Hours: 6. Total notebooks = 80."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_008_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "3bf633da4495c6209e8dc948720d862531471bea431e54127aa434614703bd13",
+      "prefix_steps": [
+        "Notebooks per hour: 13.",
+        "Hours: 6. Total notebooks = 78."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_009",
+    "pair_index": 9,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_009_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "ce512e2c256d67a3562f53b22be8e4b376a4358f1da3024082abc82c537ba752",
+      "prefix_steps": [
+        "Notebooks per hour: 14.",
+        "Hours: 4. Total notebooks = 58."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_009_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "54fd6d43fe6f83ec8bc8c583c5b6fb84ed3e92d122b3d7837a66aee3b5735c59",
+      "prefix_steps": [
+        "Notebooks per hour: 14.",
+        "Hours: 4. Total notebooks = 56."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_010",
+    "pair_index": 10,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_010_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "16ea691f3f44ffe6d28504d0ce767ca0a436cac6d4c45bcf331d776ac380bd04",
+      "prefix_steps": [
+        "Notebooks per hour: 15.",
+        "Hours: 5. Total notebooks = 77."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_010_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "6a6d75b1b3ba2812958845684b9cff4036f96c9ab7b91bba7dc4c6afa8f20210",
+      "prefix_steps": [
+        "Notebooks per hour: 15.",
+        "Hours: 5. Total notebooks = 75."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_011",
+    "pair_index": 11,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_011_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "c170aed3c997003e8054309903cdb744062f7a010dfc3aa508507d87fa3d40e6",
+      "prefix_steps": [
+        "Notebooks per hour: 16.",
+        "Hours: 6. Total notebooks = 98."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_011_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "88ef766cbc805f71775e93e64d6cb10a062e60d8354ba609bf37e56b05ea1eba",
+      "prefix_steps": [
+        "Notebooks per hour: 16.",
+        "Hours: 6. Total notebooks = 96."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_012",
+    "pair_index": 12,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_012_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "42d3c30cc2588b5bf37e5725dd1f3434e98ccda95321cf306b14bf38739b6bd9",
+      "prefix_steps": [
+        "Notebooks per hour: 17.",
+        "Hours: 4. Total notebooks = 70."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_012_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "3c8550ad27159eccefe58b505a62a036a4cb4d47f9fa0fac3115ff928d737bf3",
+      "prefix_steps": [
+        "Notebooks per hour: 17.",
+        "Hours: 4. Total notebooks = 68."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_013",
+    "pair_index": 13,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_013_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "4866587053cfac08ddc518928b2f53a1d318ca7dc7ccc1bd3033162f17200704",
+      "prefix_steps": [
+        "Notebooks per hour: 18.",
+        "Hours: 5. Total notebooks = 92."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_013_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "ffbb4d93c9d5d7e70a1954dda98feffe838a6404e1fc2b6f5f5b47c6051b6744",
+      "prefix_steps": [
+        "Notebooks per hour: 18.",
+        "Hours: 5. Total notebooks = 90."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_014",
+    "pair_index": 14,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_014_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "158f1ca85441453c1cffb37d62133ab949032a350c448369b4207bb72ecd0b15",
+      "prefix_steps": [
+        "Notebooks per hour: 19.",
+        "Hours: 6. Total notebooks = 116."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_014_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "43ef16ad3b5c0f618783bf4e2a968a87def4628d3ad7bfa91e66c276b00f566a",
+      "prefix_steps": [
+        "Notebooks per hour: 19.",
+        "Hours: 6. Total notebooks = 114."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_015",
+    "pair_index": 15,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_015_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "ce005b5312950eaba0c727fb37ec8c1a6fbf32eb310c126e216dc1504dc692a7",
+      "prefix_steps": [
+        "Notebooks per hour: 20.",
+        "Hours: 4. Total notebooks = 82."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_015_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "4fb362acb76789465cf41a84fde9c2a5e3e5523ab731621f1d106c9c0462f111",
+      "prefix_steps": [
+        "Notebooks per hour: 20.",
+        "Hours: 4. Total notebooks = 80."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_016",
+    "pair_index": 16,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_016_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "4994351adcea3a2b1a771cfe90e3b20f015325d0a03acd99a60bd8a46dbe6a72",
+      "prefix_steps": [
+        "Notebooks per hour: 21.",
+        "Hours: 5. Total notebooks = 107."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_016_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "443a3761581317dc440c77d7a1c9d1759b7f0662d6ce99ed57af961e3753978b",
+      "prefix_steps": [
+        "Notebooks per hour: 21.",
+        "Hours: 5. Total notebooks = 105."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_017",
+    "pair_index": 17,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_017_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "73cf3e62c93c2d2cdc552ffb872cf7c17ed29f623414b56239974fdd4c92fb5a",
+      "prefix_steps": [
+        "Notebooks per hour: 22.",
+        "Hours: 6. Total notebooks = 134."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_017_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "731d84980523f896ba5adf71eba5d07ba16fb5f67f8e5f881dc82381f27e2979",
+      "prefix_steps": [
+        "Notebooks per hour: 22.",
+        "Hours: 6. Total notebooks = 132."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_018",
+    "pair_index": 18,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_018_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "767d5e6edea5fd40c39e12bbcf47f89f17ba465b67096d384eec1d49ee6a4edf",
+      "prefix_steps": [
+        "Notebooks per hour: 23.",
+        "Hours: 4. Total notebooks = 94."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_018_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "19a8524cc7c884cea2849c85a30c19f2257373a5b0b7b72d43325fe6bba50a06",
+      "prefix_steps": [
+        "Notebooks per hour: 23.",
+        "Hours: 4. Total notebooks = 92."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_fresh_019",
+    "pair_index": 19,
+    "recovery_state": {
+      "state_id": "gsm8k_fresh_019_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "e4931ef82a4d180dfdc981c2cd548d019fbe7f1420332b3e9cd6c6ce58c0926d",
+      "prefix_steps": [
+        "Notebooks per hour: 24.",
+        "Hours: 5. Total notebooks = 122."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 35.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_fresh_019_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "a128c303607d2d0c26b4c58381e18bb6cb209bd64a1877cedbd4f986efeeadf6",
+      "prefix_steps": [
+        "Notebooks per hour: 24.",
+        "Hours: 5. Total notebooks = 120."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 1.0,
+        "token_length": 33.0,
+        "reasoning_operation_type": "multiplication",
+        "problem_difficulty": "LOW"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  }
+]

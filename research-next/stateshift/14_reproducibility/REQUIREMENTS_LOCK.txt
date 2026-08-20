@@ -1,0 +1,7 @@
+vllm==0.7.0
+torch==2.5.1
+transformers==4.48.0
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.14.1
+runpod==1.7.5

@@ -1,0 +1,56 @@
+{
+  "code_edge_cases": [
+    {
+      "case_id": "code_infinite_loop",
+      "code": "while True: pass",
+      "result": "TIMEOUT_ISOLATED_CLEANLY",
+      "timeout_sec": 2.0
+    },
+    {
+      "case_id": "code_file_access",
+      "code": "open('/etc/passwd')",
+      "result": "PERMISSION_DENIED_SANDBOX_BLOCKED"
+    },
+    {
+      "case_id": "code_net_access",
+      "code": "import socket; socket.socket()",
+      "result": "NETWORK_DISABLED_BLOCKED"
+    }
+  ],
+  "math_edge_cases": [
+    {
+      "case_id": "math_div_zero",
+      "expression": "1 / (x - 2)",
+      "result": "DOMAIN_VIOLATION_REJECTED",
+      "test_val": 2
+    },
+    {
+      "case_id": "math_sqrt_neg",
+      "expression": "sqrt(x - 5)",
+      "result": "DOMAIN_VIOLATION_REJECTED",
+      "test_val": 3
+    },
+    {
+      "case_id": "math_inequality",
+      "correct_fix": "x > -3",
+      "err_fix": "x < -3",
+      "expression": "-3*x < 9",
+      "result": "VERIFIED_EQUIVALENCE_PASSED"
+    },
+    {
+      "case_id": "math_abs_val",
+      "correct_solutions": [
+        10,
+        -2
+      ],
+      "expression": "|x - 4| = 6",
+      "result": "VERIFIED_MULTIPLE_SOLUTIONS_PASSED"
+    },
+    {
+      "case_id": "math_percentage",
+      "correct_fix": "30",
+      "expression": "20% of 150",
+      "result": "VERIFIED_NUMERICAL_PASSED"
+    }
+  ]
+}

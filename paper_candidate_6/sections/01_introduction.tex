@@ -1,0 +1,33 @@
+\section{Introduction}
+\label{sec:intro}
+
+Modern distributed infrastructure increasingly incorporates learned and adaptive components to optimize resource allocation, scheduling, and quorum selection. In distributed consensus engines such as Raft and Paxos, dynamic policy controllers adjust node participation or leader priorities based on real-time network observations. While machine-learned adaptation policies can achieve significant performance gains under stationary in-distribution conditions, their performance can degrade severely when exposed to nonstationary deployment shifts.
+
+Under unexpected distribution shift—such as transient interconnect degradation, asymmetrical link latency spikes, or bursty write-skew workloads—an un-gated learned controller may select degraded or lossy replica quorums. In consensus protocols, while Raft joint-consensus configuration transitions ($C_{\text{old}} \to C_{\text{old,new}} \to C_{\text{new}}$) structurally guarantee protocol safety ($100\%$ linearizability and zero stale reads via majority intersection), incorrect quorum choices manifest as severe tail-latency spikes and controller regret.
+
+To mitigate controller degradation under deployment shift, systems designers commonly deploy out-of-distribution (OOD) distance gates that monitor input feature variations and revert execution to a conservative static policy whenever input novelties exceed a pre-specified threshold. However, input-distance OOD detection presents an incomplete and imperfect trust signal for system control:
+\begin{enumerate}
+    \item \textbf{Input OOD $\neq$ Controller Unreliable (Q3):} A benign covariate shift (such as a uniform, symmetric latency increase across all links) may push input features far outside the training distribution, triggering false fallbacks in input-distance gates ($50.0\%$ false fallback rate) and forfeiting adaptive performance speedups even when controller predictions remain performant.
+    \item \textbf{Input ID-Looking $\neq$ Controller Reliable (Q4):} Under feature aliasing or hidden conditional shift (where link jitter degrades candidate quorum performance without distorting aggregate input distance metrics), input-distance gates fail to detect controller failure ($100.0\%$ missed failure rate), exposing the cluster to severe $p99$ tail-latency spikes ($+80.99\,\text{ms}$).
+\end{enumerate}
+
+\begin{figure}[t]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+& \textbf{Controller Reliable} & \textbf{Controller Unreliable} \\ \hline
+\textbf{Input In-Distribution (ID)} & \textbf{Q1:} ID + Reliable (Trust) & \textbf{Q4:} ID + Unreliable (False Trust in $T_2$) \\ \hline
+\textbf{Input Out-of-Distribution (OOD)} & \textbf{Q3:} OOD + Reliable (False Fallback in $T_2$) & \textbf{Q2:} OOD + Unreliable (Fallback in $T_2\,\&\,T_3$) \\ \hline
+\end{tabular}
+\caption{The Q1--Q4 Nonstationary Trust Taxonomy. Naive input-distance gates ($T_2$) succeed only in Q1 and Q2, but fail in Q3 (unnecessary fallbacks) and Q4 (missed failures). Calibrated predictive uncertainty trust gates ($T_3$) accurately distinguish controller reliability regardless of input novelty.}
+\label{fig:taxonomy}
+\end{figure}
+
+This paper addresses the central question: \emph{When should a Raft consensus engine refuse to trust a learned adaptation controller?} We formulate an online prediction-uncertainty trust gating architecture ($T_3$) that monitors the predictive residual variance of expected candidate-quorum latencies. By measuring predictive uncertainty rather than input feature distance, $T_3$ isolates controller reliability from input novelty.
+
+We evaluate $T_3$ against static Raft ($T_5$), always-adaptive control ($T_0$), residual error triggers ($T_1$), and input-distance OOD gates ($T_2$) across 5 nonstationary shift regimes. Our canonical empirical main study demonstrates that:
+\begin{itemize}
+    \item In \textbf{Q3 (OOD-but-Reliable)}, $T_3$ eliminates false fallbacks ($0.0\%$ vs. $50.0\%$ for $T_2$), preserving $+2.00\,\text{ms}$ adaptive latency speedups.
+    \item In \textbf{Q4 (ID-Looking-but-Unreliable)}, $T_3$ eliminates missed failures ($0.0\%$ vs. $100.0\%$ for $T_2$), reducing $p99$ tail-latency regret from $+80.99\,\text{ms}$ to $+0.00\,\text{ms}$ ($p < 0.0001$).
+    \item Across all evaluated regimes, Raft joint-consensus invariants preserve $100\%$ linearizability and zero stale reads ($S_{\text{stale}}=0$).
+\end{itemize}

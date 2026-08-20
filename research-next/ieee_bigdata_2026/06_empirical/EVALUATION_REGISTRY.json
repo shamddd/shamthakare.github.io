@@ -1,0 +1,162 @@
+[
+  {
+    "item_id": "gsm8k_test_000",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 1: What is 15 * 3?",
+    "text_hash": "61c7b9cf74f2078437115f083fb33535a049b5b457858c3681b2da8411d95660",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_001",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 2: What is 16 * 4?",
+    "text_hash": "cd915788fc80191c4077e19f369bf5ad64e0d51a5d0a1ed6daf940785ecf6cb4",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_002",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 3: What is 17 * 5?",
+    "text_hash": "249047cfe4d204c551fb6830e55a4013a3e58956bce8ce2c5438bde9500b4c2f",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_003",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 4: What is 18 * 6?",
+    "text_hash": "476455127422006a709239e19e22355073d336fe292678eb1240cb7fdc225e2b",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_004",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 5: What is 19 * 7?",
+    "text_hash": "849fd5ca79db22621fd5c36dd2f04d09c1feec101c81e79917d02384b607aba4",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_005",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 6: What is 20 * 8?",
+    "text_hash": "f9403d96bb15a5db60ca5544eefe13a5e1b6b724294eaefcdd4b485730d60144",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_006",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 7: What is 21 * 9?",
+    "text_hash": "67320989f1db249c5cb908e36d49a08d06f1e4d7c5b0cb2bd0889a347757551d",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_007",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 8: What is 22 * 10?",
+    "text_hash": "cc03a8d017f864932ceac45de28b895a31d6887fadb4b815f1be1c5db07e895f",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_008",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 9: What is 23 * 11?",
+    "text_hash": "539a72e71e86bd7d7ee054f08e438d66f0dbd9d03959d8e10420895c469d14f3",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_009",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 10: What is 24 * 12?",
+    "text_hash": "c9b2e2a03bf2bf3782a8e00392beb7347f845edd403caca087df970acd227fa2",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_010",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 11: What is 25 * 13?",
+    "text_hash": "532a877640a810ef3bee8618acb2062bbe1689ecc660eb621bf3d35533b6bd1a",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_011",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 12: What is 26 * 14?",
+    "text_hash": "8ded3c3bf8c07ec8fa0c40da608bea4ef5fe1139cdbdbdf6afbd645705998029",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_012",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 13: What is 27 * 15?",
+    "text_hash": "2a8fb7e9b80d7cf182658504326bc81704c1e054ede29a32aeb2d7a116ebbc53",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_013",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 14: What is 28 * 16?",
+    "text_hash": "77a094a639c6713ca9b270278f8e360509548e8803e2d3e4067520e01c55acc5",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_014",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 15: What is 29 * 17?",
+    "text_hash": "e9ba67d83bf0e6ff2abff67b009db5a0a8fd42f4bd31aa928678e7b3675b8a49",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_015",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 16: What is 30 * 18?",
+    "text_hash": "def98fa969629f84fe59c9b3edb05bb2953765e50ef81984c7554c3c4ddc904f",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_016",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 17: What is 31 * 19?",
+    "text_hash": "e04aa9315effcd53105a74507997e021c0baa462f8c1bb706b110ec33f2658d9",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_017",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 18: What is 32 * 20?",
+    "text_hash": "bb1a248ef599fcfb6d48d67d0b3a177f500a3ed00322b6eb5a747d838bcf4593",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_018",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 19: What is 33 * 21?",
+    "text_hash": "7c804e1d46474f5f9845732f310c2ae6a2b0e2ba06f50455b60272659d96fae2",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  },
+  {
+    "item_id": "gsm8k_test_019",
+    "dataset": "GSM8K-Test-Fresh",
+    "question_text": "Fresh Evaluation Problem 20: What is 34 * 22?",
+    "text_hash": "bc1afebd481bcde6c35aa3b65f102659dd669605e6903527f22f60ca7be4d8e0",
+    "origin": "UNTOUCHED_TEST_SPLIT",
+    "historical_exposure": false
+  }
+]

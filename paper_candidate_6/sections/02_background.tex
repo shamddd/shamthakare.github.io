@@ -1,0 +1,17 @@
+\section{Background and Protocol Invariants}
+\label{sec:background}
+
+\subsection{Raft Consensus and Joint Configuration Transitions}
+Raft is a distributed consensus algorithm designed to manage a replicated state machine across $N$ independent server nodes. Consensus progress requires a leader node to replicate log entries across a majority quorum of replicas before committing transactions. Standard static Raft configures a fixed majority quorum size $Q_{\text{static}} = \lfloor N/2 \rfloor + 1$ (e.g., 3 out of 5 nodes).
+
+When dynamic quorum reconfiguration occurs, Raft enforces joint consensus configuration transitions:
+\begin{equation}
+C_{\text{old}} \longrightarrow C_{\text{old,new}} \longrightarrow C_{\text{new}}
+\end{equation}
+During joint consensus, log entries must be committed independently under both $C_{\text{old}}$ and $C_{\text{new}}$ majority rules. This structural intersection rule guarantees that no two disjoint quorums can commit conflicting entries simultaneously. Consequently, Raft joint consensus structurally guarantees $100\%$ linearizability and zero stale reads ($S_{\text{stale}}=0$).
+
+\subsection{The AdaptiveReplica Baseline Foundation}
+In prior work, \texttt{AdaptiveReplica} introduced dynamic vote-weight adaptation to optimize write latency under asymmetric network topologies. By assigning higher voting weights to lower-latency replica links, \texttt{AdaptiveReplica} reduces write $p99$ latency under stationary fault patterns. However, \texttt{AdaptiveReplica} assumes stationary feature distributions. When network conditions undergo abrupt nonstationary distribution shift, the underlying latency predictor generates inaccurate quorum recommendations.
+
+\subsection{Learning-Augmented Systems and Fallback Mechanics}
+Mitzenmacher and Vassilvitskii~\cite{mitzenmacher2022algorithms} established the theoretical framework for algorithms with predictions, proving that learning-augmented algorithms can achieve consistency (near-optimal performance when predictions are accurate) while maintaining worst-case robustness guarantees via conservative fallback when predictions fail. Program 3 builds directly upon this foundational framework by instantiating an online prediction-uncertainty trust gate for Raft consensus quorums.

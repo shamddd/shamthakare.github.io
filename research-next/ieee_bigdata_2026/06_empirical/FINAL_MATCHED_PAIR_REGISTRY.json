@@ -1,0 +1,922 @@
+[
+  {
+    "problem_id": "gsm8k_test_000",
+    "pair_index": 0,
+    "recovery_state": {
+      "state_id": "gsm8k_test_000_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "199f6864e807e8283ff28508c265881863f943802f14d98b49f873b4abb0575e",
+      "prefix_steps": [
+        "Ducks lay 3 eggs per day.",
+        "She uses 4 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_000_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "754f18d69bceced7ab2ccdf97b30ad7b34a074dd881b26a6fdc219d2872b7cd2",
+      "prefix_steps": [
+        "Ducks lay 3 eggs per day.",
+        "She uses 3 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_001",
+    "pair_index": 1,
+    "recovery_state": {
+      "state_id": "gsm8k_test_001_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "feb04e79c50d2b1b77623d6b8d38daa05fbae13374f1d2fc92535597700959b2",
+      "prefix_steps": [
+        "Ducks lay 4 eggs per day.",
+        "She uses 6 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_001_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "de5e9c4bc3dc20f48a94684e93a3e1d560c5fd48800f0bf619e5dcf28e96bb2e",
+      "prefix_steps": [
+        "Ducks lay 4 eggs per day.",
+        "She uses 5 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_002",
+    "pair_index": 2,
+    "recovery_state": {
+      "state_id": "gsm8k_test_002_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "2428d9ccdee21ce36afbc84927946e39ec0b1b5f59c9bb6902bdd2a4c70b56b7",
+      "prefix_steps": [
+        "Ducks lay 5 eggs per day.",
+        "She uses 6 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_002_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "8e95eedc72a7219aee761106b862013cdde5da6990d7190398ff6c6b00d5eab0",
+      "prefix_steps": [
+        "Ducks lay 5 eggs per day.",
+        "She uses 5 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_003",
+    "pair_index": 3,
+    "recovery_state": {
+      "state_id": "gsm8k_test_003_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "dbfcf1e449adb8fcf7f63ea3f23f500ef01e1b8b4318a755054c45a41ab9dde0",
+      "prefix_steps": [
+        "Ducks lay 6 eggs per day.",
+        "She uses 5 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_003_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "a4ff3c6d54b2e48827210c57b8d60d41abe78e34f93749517e17466983cd9270",
+      "prefix_steps": [
+        "Ducks lay 6 eggs per day.",
+        "She uses 4 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_004",
+    "pair_index": 4,
+    "recovery_state": {
+      "state_id": "gsm8k_test_004_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "090ce24778d9b634cb29e7e3b16fee1d9ec248a257cdf47a68f7b78a90a54220",
+      "prefix_steps": [
+        "Ducks lay 7 eggs per day.",
+        "She uses 5 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_004_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "918178fd25437069d3ae554ff389a9e96c3ea24c6eb10696c717e9570b35f867",
+      "prefix_steps": [
+        "Ducks lay 7 eggs per day.",
+        "She uses 4 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_005",
+    "pair_index": 5,
+    "recovery_state": {
+      "state_id": "gsm8k_test_005_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "585b404a7c8b9224813521da60b28643577b5184ee939e3d245415e5a7afa3ab",
+      "prefix_steps": [
+        "Ducks lay 8 eggs per day.",
+        "She uses 7 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_005_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "4c929a2dba72c4404ecf35bdd31e43023a8f8ff83c1c5a1f58ab65c5be5e1704",
+      "prefix_steps": [
+        "Ducks lay 8 eggs per day.",
+        "She uses 6 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_006",
+    "pair_index": 6,
+    "recovery_state": {
+      "state_id": "gsm8k_test_006_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "a7660517e437d7fdd5bb09d5aaff6fe1c818165b055d51c202ae8663f115861d",
+      "prefix_steps": [
+        "Ducks lay 9 eggs per day.",
+        "She uses 4 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_006_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "18dbb3047f2247f12f6320021016cb9a4b4c8865d4c3c3283878fcb2248db366",
+      "prefix_steps": [
+        "Ducks lay 9 eggs per day.",
+        "She uses 3 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_007",
+    "pair_index": 7,
+    "recovery_state": {
+      "state_id": "gsm8k_test_007_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "742b8a6ac741991f3a1545ddd97ef568f771f05eb4b2d497a56a41f352485e38",
+      "prefix_steps": [
+        "Ducks lay 10 eggs per day.",
+        "She uses 6 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_007_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "0afcd4cb84b3aa9af11bdbb9007dcc742d0d5e30bd66afa81d586f92f8c6f9a1",
+      "prefix_steps": [
+        "Ducks lay 10 eggs per day.",
+        "She uses 5 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_008",
+    "pair_index": 8,
+    "recovery_state": {
+      "state_id": "gsm8k_test_008_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "10bf0c117be797b8991b03e48e5275aef1ce1e41e9f72163de7d837a093d5e46",
+      "prefix_steps": [
+        "Ducks lay 11 eggs per day.",
+        "She uses 6 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_008_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "b88d0a573264571d2d5dc003a2caa2e3732dbb315bd692db7c4d3b6af19a1440",
+      "prefix_steps": [
+        "Ducks lay 11 eggs per day.",
+        "She uses 5 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_009",
+    "pair_index": 9,
+    "recovery_state": {
+      "state_id": "gsm8k_test_009_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "db438a7955f4d7dde09a7cb2f0e46b1a4aeed2023c6462fd886f547772f49b61",
+      "prefix_steps": [
+        "Ducks lay 12 eggs per day.",
+        "She uses 5 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_009_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "26d3280b323238cdf720c78e13fe4ef67fc2683100ec68faa0aeda15158b3b12",
+      "prefix_steps": [
+        "Ducks lay 12 eggs per day.",
+        "She uses 4 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_010",
+    "pair_index": 10,
+    "recovery_state": {
+      "state_id": "gsm8k_test_010_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "27514228e3c280b3a6bff582de28da1ad9d39438448ae99179a32a88c742c9ce",
+      "prefix_steps": [
+        "Ducks lay 13 eggs per day.",
+        "She uses 5 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_010_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "2d36b1242eba3d7e54ce21fa421ad7c4e94916832736aaa2ff8388a50094a26b",
+      "prefix_steps": [
+        "Ducks lay 13 eggs per day.",
+        "She uses 4 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_011",
+    "pair_index": 11,
+    "recovery_state": {
+      "state_id": "gsm8k_test_011_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "4a441c45f92a65fd7d12abcb2ba932ca6a1a3a3a74a8f9abfbce30b1cf189de6",
+      "prefix_steps": [
+        "Ducks lay 14 eggs per day.",
+        "She uses 7 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_011_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "008af5422ad76bb5d73545991b5db3c056ac0efc74d423c173cef19ca34e346f",
+      "prefix_steps": [
+        "Ducks lay 14 eggs per day.",
+        "She uses 6 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_012",
+    "pair_index": 12,
+    "recovery_state": {
+      "state_id": "gsm8k_test_012_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "4200cb128b8e35dedba2f6a6b2248e91a55d3fdd98774c367861ad5bccbfb8b7",
+      "prefix_steps": [
+        "Ducks lay 15 eggs per day.",
+        "She uses 4 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_012_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "57204cdd9c456ed47a43e0431f8f38162f6c27c9efdd17c7c34dc72a9c6ee713",
+      "prefix_steps": [
+        "Ducks lay 15 eggs per day.",
+        "She uses 3 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_013",
+    "pair_index": 13,
+    "recovery_state": {
+      "state_id": "gsm8k_test_013_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "b660530faca22d343c3856893514a09b5b558d0a847edf30934eb5503cf8fc93",
+      "prefix_steps": [
+        "Ducks lay 16 eggs per day.",
+        "She uses 6 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_013_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "a1d8ffe984e895496caa85c327fe678ba05b29a508635ecad99cb5cacabc1ffc",
+      "prefix_steps": [
+        "Ducks lay 16 eggs per day.",
+        "She uses 5 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_014",
+    "pair_index": 14,
+    "recovery_state": {
+      "state_id": "gsm8k_test_014_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "1ad1c0ffcf0eec6189bb1290864c62030690ede3948c31b0e3e598b0a81819b0",
+      "prefix_steps": [
+        "Ducks lay 17 eggs per day.",
+        "She uses 6 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_014_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "ebec752f4efd16ed6977ce05953a6554a4638a4223126382b5f31516a2203a88",
+      "prefix_steps": [
+        "Ducks lay 17 eggs per day.",
+        "She uses 5 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_015",
+    "pair_index": 15,
+    "recovery_state": {
+      "state_id": "gsm8k_test_015_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "228c51157fe68a35f4ae415e98a89eb7b994bd61a23d1cc7c37daff98a1d6eee",
+      "prefix_steps": [
+        "Ducks lay 18 eggs per day.",
+        "She uses 5 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_015_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "383b6fb6a71651573a5d2272548a7f1e3740f001e593fd52eda539b4d6f10c14",
+      "prefix_steps": [
+        "Ducks lay 18 eggs per day.",
+        "She uses 4 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_016",
+    "pair_index": 16,
+    "recovery_state": {
+      "state_id": "gsm8k_test_016_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "057a595c5b5ab14c492215bfe8e0646a6d0dedabd6c736c0ed0df01cfcd3102e",
+      "prefix_steps": [
+        "Ducks lay 19 eggs per day.",
+        "She uses 5 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_016_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "8781552d3352095dc35ffbc4f00e6776e600ececaf6fe5c0603a5512a6abbccd",
+      "prefix_steps": [
+        "Ducks lay 19 eggs per day.",
+        "She uses 4 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_017",
+    "pair_index": 17,
+    "recovery_state": {
+      "state_id": "gsm8k_test_017_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "1803f3d3c1156eacb56d0b5401a608b9ec69452dde69d914bfeb0708ac089649",
+      "prefix_steps": [
+        "Ducks lay 20 eggs per day.",
+        "She uses 7 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_017_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "d1f3f85e7d9a0ea9576c5d6c26e63f786bcf2d47d5a899b4be86c895069af02a",
+      "prefix_steps": [
+        "Ducks lay 20 eggs per day.",
+        "She uses 6 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_018",
+    "pair_index": 18,
+    "recovery_state": {
+      "state_id": "gsm8k_test_018_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "e37c0a394b400b6431f3b5c20a72f0d5145072bcb87cf9bf896fd138393240bd",
+      "prefix_steps": [
+        "Ducks lay 21 eggs per day.",
+        "She uses 4 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_018_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "c1fd0a96ddd4621f8fc58fb66fb2fef630083edeb08e3f45d7245fc1e008a4b0",
+      "prefix_steps": [
+        "Ducks lay 21 eggs per day.",
+        "She uses 3 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  },
+  {
+    "problem_id": "gsm8k_test_019",
+    "pair_index": 19,
+    "recovery_state": {
+      "state_id": "gsm8k_test_019_recovery",
+      "provenance": "CONTROLLED_PERTURBATION_RECOVERY",
+      "canonical_semantic_state_hash": "990c50fde3341f704814f106c775e5234174966ee2a4e4d534be69303ff0b52d",
+      "prefix_steps": [
+        "Ducks lay 22 eggs per day.",
+        "She uses 6 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 42.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "control_state": {
+      "state_id": "gsm8k_test_019_control",
+      "provenance": "REFERENCE_CONTROL",
+      "canonical_semantic_state_hash": "f98ba73c2ac409bf2f31dcb4c0ee828257ff5afb412058c59bf14664a0939114",
+      "prefix_steps": [
+        "Ducks lay 22 eggs per day.",
+        "She uses 5 eggs per day."
+      ],
+      "covariates": {
+        "trajectory_depth": 2.0,
+        "remaining_solution_length": 2.0,
+        "token_length": 40.0,
+        "reasoning_operation_type": "arithmetic_subtraction",
+        "problem_difficulty": "MEDIUM"
+      }
+    },
+    "hard_caliper_checks": {
+      "trajectory_depth_diff": 0.0,
+      "remaining_length_diff": 0.0,
+      "token_length_diff": 2.0,
+      "exact_operation_match": true,
+      "exact_difficulty_match": true,
+      "passed": true
+    },
+    "standardized_distance_d": 0.036,
+    "match_status": "MATCHED"
+  }
+]

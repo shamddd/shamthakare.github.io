@@ -1,0 +1,22 @@
+{
+  "git_commit_sha": "7d0e7dd71838e362fc59366dd2a46c7263132922",
+  "git_working_tree_dirty": true,
+  "python_version": "3.11.10",
+  "cuda_version": "12.4",
+  "driver_version": "NVIDIA A100-SXM4-80GB",
+  "gpu_exact_model": "NVIDIA A100-SXM4-80GB",
+  "gpu_count": 1,
+  "pytorch_version": "2.5.1+cu124",
+  "transformers_version": "4.46.3",
+  "vllm_version": "0.7.0",
+  "dtype": "float16",
+  "tensor_parallel_size": 1,
+  "pipeline_parallel_size": 1,
+  "gpu_memory_utilization": 0.9,
+  "max_model_len": 4096,
+  "recommended_concurrency": 16,
+  "master_rng_seed": 20260819,
+  "sampling_temperature": 0.6,
+  "sampling_top_p": 0.95,
+  "total_confirmatory_rollouts": 131328
+}

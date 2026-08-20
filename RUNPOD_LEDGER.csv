@@ -1,0 +1,7 @@
+ExperimentID,Program,GPU,PricePerHour,ExpectedHours,ExpectedCost,ActualHours,ActualCost,ScientificPurpose,Status
+EXP-P1-01,Program 1,RunPod L4,0.40,2.0,0.80,0.0,0.00,Baseline ECE / Brier score calibration evaluation on Qwen2.5-0.5B (GSM8K),PLANNED
+EXP-P1-02,Program 1,RunPod A40,0.79,2.5,1.98,0.0,0.00,Process Brier-GRPO pilot fine-tuning run (20-100 math problems),PLANNED
+EXP-P1-03,Program 1,RunPod L4,0.40,1.8,0.72,0.0,0.00,Layer-wise SVD decay & entropy diagnostic probing pass,PLANNED
+EXP-P2-01,Program 2,RunPod L4,0.40,3.5,1.40,0.0,0.00,Multi-turn SODA tool error belief propagation sweep across depth 0-20,PLANNED
+EXP-P3-01,Program 3,Local CPU,0.00,5.0,0.00,0.0,0.00,C++20 Raft consensus joint-state simulation under asymmetric partition,PLANNED
+EXP-P4-01,Program 4,Local CPU,0.00,4.0,0.00,0.0,0.00,TraceMind OpenTelemetry graph walk & ZK attestation verification,PLANNED

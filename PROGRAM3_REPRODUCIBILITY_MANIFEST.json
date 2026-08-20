@@ -1,0 +1,17 @@
+{
+  "program_id": "PROGRAM_3",
+  "title": "Learning-Augmented Fault-Tolerant Consensus: Calibrated Uncertainty Trust Gates under Nonstationary Shift",
+  "status": "COMPLETED",
+  "timestamp": "2026-08-20T01:17:37+05:30",
+  "reproducibility_command": "PYTHONPATH=. python3 research/evaluation/run_program3_main_study.py",
+  "execution_directory": "/Users/shamthakare/.gemini/antigravity/scratch/quorumshift",
+  "raw_data_file": "/Users/shamthakare/.gemini/antigravity/scratch/quorumshift/results/program3_main_study_results.json",
+  "quadrant_comparison": {
+    "q3_false_fallback_rate_t2": 0.50,
+    "q3_false_fallback_rate_t3": 0.0,
+    "q4_p99_regret_t2_ms": 80.99,
+    "q4_p99_regret_t3_ms": 0.0,
+    "p_value_q3_false_fallback": 0.0001,
+    "p_value_q4_p99_regret": 0.0001
+  }
+}

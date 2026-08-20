@@ -1,0 +1,11 @@
+\section{Related Work}
+\label{sec:related}
+
+\subsection{Learning-Augmented Algorithms and Uncertainty Quantification}
+Mitzenmacher and Vassilvitskii~\cite{mitzenmacher2022algorithms} introduced the theoretical framework for algorithms with predictions, demonstrating that machine-learned advice can enhance online algorithms while preserving worst-case robustness guarantees through fallback mechanisms. Recent theoretical work, such as Online Algorithms with Uncertainty-Quantified Predictions (ICML 2024)~\cite{icml2024uncertainty}, explores how prediction uncertainty bounds should guide online decision-making. Our work differs from pure online algorithmic bounds by addressing **system-level consensus quorum selection under nonstationary physical network shifts**, specifically isolating Q3 (OOD-but-reliable) from Q4 (ID-looking-but-harmful) operating regimes.
+
+\subsection{Learned Controllers in Production Systems}
+A growing line of systems research explores learned controllers for cloud systems and network protocols. Systems such as SelfTune~\cite{selftune2023}, OPPerTune~\cite{oppertune2024}, and UNUM~\cite{unum2024} adapt cloud configurations and network control policies dynamically under changing workloads. Furthermore, empirical studies on \emph{Learning in situ}~\cite{learninginsitu2023} highlight that learned controllers that perform well in static emulation can degrade severely under real-world nonstationary distribution shift. Our paper contributes a calibrated prediction-uncertainty trust gate ($T_3$) that acts as a robust safety guardrail for learned controllers in fault-tolerant consensus.
+
+\subsection{Adaptive Consensus and Quorum Selection}
+Standard Raft~\cite{ongaro2014search} and Paxos enforce static majority quorums. Flexible Paxos~\cite{howard2016flexible} demonstrated that phase quorum intersection rules can be relaxed. Dynamic quorum mechanisms (such as \texttt{AdaptiveReplica}) dynamically adjust replica voting weights based on observed latencies. Our contribution is not dynamic weight adaptation itself, but rather **determining when a Raft consensus engine must refuse to trust a learned adaptation policy under deployment shift**.

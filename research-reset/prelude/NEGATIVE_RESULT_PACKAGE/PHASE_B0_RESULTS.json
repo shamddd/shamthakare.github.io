@@ -1,0 +1,84 @@
+{
+  "b0_classification": "INCONCLUSIVE",
+  "recommendation": "REFORMULATE \u2014 PILOT INCONCLUSIVE",
+  "delta_mae_primary_m5_vs_m1": -0.0010694041659885436,
+  "family_delta_maes": {
+    "SmolLM2": -0.001778074666440501,
+    "Qwen": -0.0010361590819884057,
+    "Pythia": -0.00039397874953672404
+  },
+  "seed_to_ckpt_variance_ratio": 1.172773473145158,
+  "k6_triggered": false,
+  "ablation_models": {
+    "M0_B": {
+      "overall_mae": 0.008114682417840384,
+      "per_family_mae": {
+        "SmolLM2": 0.008901479836457726,
+        "Qwen": 0.0062486679488088824,
+        "Pythia": 0.009193899468254543
+      },
+      "spearman_rho": 0.3216783216783217,
+      "kendall_tau": 0.1818181818181818,
+      "sign_accuracy": 0.9166666666666666
+    },
+    "M1_BH": {
+      "overall_mae": 0.009001989999814514,
+      "per_family_mae": {
+        "SmolLM2": 0.011511476983159444,
+        "Qwen": 0.005222620786305251,
+        "Pythia": 0.010271872229978848
+      },
+      "spearman_rho": -0.027972027972027972,
+      "kendall_tau": 0.0303030303030303,
+      "sign_accuracy": 0.9166666666666666
+    },
+    "M2_BH_Probe": {
+      "overall_mae": 0.008998710307908907,
+      "per_family_mae": {
+        "SmolLM2": 0.011511633620483547,
+        "Qwen": 0.00523805695539371,
+        "Pythia": 0.010246440347849464
+      },
+      "spearman_rho": -0.027972027972027972,
+      "kendall_tau": 0.0303030303030303,
+      "sign_accuracy": 0.9166666666666666
+    },
+    "M3_BH_Geom": {
+      "overall_mae": 0.010099654514991747,
+      "per_family_mae": {
+        "SmolLM2": 0.013285250570126682,
+        "Qwen": 0.006311486734734655,
+        "Pythia": 0.010702226240113905
+      },
+      "spearman_rho": 0.04895104895104895,
+      "kendall_tau": 0.0606060606060606,
+      "sign_accuracy": 0.9166666666666666
+    },
+    "M4_BH_Grad": {
+      "overall_mae": 0.009032509060590976,
+      "per_family_mae": {
+        "SmolLM2": 0.011511895284665482,
+        "Qwen": 0.005337387635486704,
+        "Pythia": 0.010248244261620737
+      },
+      "spearman_rho": -0.027972027972027972,
+      "kendall_tau": 0.0303030303030303,
+      "sign_accuracy": 0.9166666666666666
+    },
+    "M5_BH_All_Internal": {
+      "overall_mae": 0.010071394165803058,
+      "per_family_mae": {
+        "SmolLM2": 0.013289551649599945,
+        "Qwen": 0.0062587798682936565,
+        "Pythia": 0.010665850979515572
+      },
+      "spearman_rho": 0.04895104895104895,
+      "kendall_tau": 0.0606060606060606,
+      "sign_accuracy": 0.9166666666666666
+    }
+  },
+  "num_total_runs": 18,
+  "num_primary_runs": 12,
+  "num_seed_replication_runs": 6,
+  "preregistration_amendment_sha256": "51ab9c5364ce3934335c02450ea13cd691a329fa0378bc28a0e88b6883bfd12f"
+}

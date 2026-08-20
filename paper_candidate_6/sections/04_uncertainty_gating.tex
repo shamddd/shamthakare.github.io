@@ -1,0 +1,21 @@
+\section{Uncertainty-Aware Trust Gating Architecture}
+\label{sec:gating}
+
+\subsection{Learned Predictor and Predictive Uncertainty Estimation}
+Our architecture incorporates a learned latency predictor $\hat{L}(q \mid x_t)$ that outputs the expected $p99$ write latency for candidate quorum $q$. Rather than relying solely on the point estimate $\hat{L}(q)$, the trust gate evaluates predictive residual variance $U(x_t) = \text{Var}(L - \hat{L})$:
+\begin{equation}
+U(x_t) = \frac{1}{K} \sum_{k=1}^K \left( \hat{L}_k(q \mid x_t) - \bar{L}(q \mid x_t) \right)^2
+\end{equation}
+Where $K$ represents ensemble predictor estimates or heteroscedastic residual variance.
+
+\subsection{Conservative Fallback and Re-entry Protocol}
+The calibrated uncertainty trust gate $T_3$ triggers conservative fallback to static Raft majority ($R=5$) whenever predictive uncertainty exceeds a preregistered trust threshold $\tau_{\text{trust}}$:
+\begin{equation}
+g_{T_3}(x_t, U_t) = 
+\begin{cases} 
+\text{fallback}, & \text{if } U(x_t) > \tau_{\text{trust}} \\
+\text{adaptive}, & \text{if } U(x_t) \le \tau_{\text{trust}}
+\end{cases}
+\end{equation}
+
+When nonstationary network conditions stabilize and predictive residual variance falls back below $\tau_{\text{trust}}$ for a continuous stabilization window of $T_{\text{re-entry}} = 5$ steps, $T_3$ safely exits fallback and re-engages adaptive control, resuming speedup execution.

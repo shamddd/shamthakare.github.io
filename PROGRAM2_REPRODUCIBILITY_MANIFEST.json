@@ -1,0 +1,22 @@
+{
+  "program_id": "PROGRAM_2",
+  "title": "Long-Horizon Agent Reliability: Post-Recovery Behavioral Persistence and Policy Violation Dynamics",
+  "status": "COMPLETED",
+  "timestamp": "2026-08-20T00:15:43+05:30",
+  "reproducibility_command": "PYTHONPATH=. python3 research/run_program2_main_study.py",
+  "execution_directory": "/Users/shamthakare/.gemini/antigravity/scratch/agentguard-final",
+  "raw_data_file": "/Users/shamthakare/.gemini/antigravity/scratch/agentguard-final/results/program2_main_study_results.json",
+  "models_evaluated": ["Qwen2.5-Coder-7B"],
+  "capability_gate": {
+    "control_task_success_rate": 1.0,
+    "control_policy_violation_rate": 0.0,
+    "status": "PASSED"
+  },
+  "key_metrics": {
+    "silent_recovery_divergence_d1": 1.0,
+    "explicit_recovery_divergence_d1": 0.0,
+    "silent_recovery_policy_violation_rate": 0.36,
+    "explicit_recovery_policy_violation_rate": 0.0,
+    "p_value_policy_violations": 3.337666e-11
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "study_name": "StateShift Phase 2B.1 Empirical Trajectory Study",
+  "checkpoints": [64, 128, 192],
+  "N": 454,
+  "K": 3,
+  "conditions": ["Recovery", "Control"],
+  "total_expected_rollouts": 8172,
+  "hard_cost_ceiling_usd": 3.00,
+  "sampling_params": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "max_tokens": 4096
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "matching_protocol_version": "v3.0-canonical",
+  "distance_metric": "Mahalanobis_with_categorical_exact_match",
+  "caliper_threshold": 0.25,
+  "covariates": [
+    {
+      "name": "trajectory_depth",
+      "type": "continuous",
+      "tolerance": 1.0,
+      "description": "Number of intermediate reasoning steps in prefix."
+    },
+    {
+      "name": "remaining_solution_length",
+      "type": "continuous",
+      "tolerance": 2.0,
+      "description": "Estimated remaining reasoning steps to solution."
+    },
+    {
+      "name": "token_length",
+      "type": "continuous",
+      "tolerance": 20.0,
+      "description": "Total token length of prompt and prefix."
+    },
+    {
+      "name": "branching_factor",
+      "type": "continuous",
+      "tolerance": 1.0,
+      "description": "Number of valid alternative step choices at prefix boundary."
+    },
+    {
+      "name": "error_category",
+      "type": "categorical",
+      "exact_match": true,
+      "description": "Category of step error (arithmetic, logic, syntax)."
+    },
+    {
+      "name": "problem_difficulty",
+      "type": "categorical",
+      "exact_match": true,
+      "description": "Baseline problem difficulty rating."
+    },
+    {
+      "name": "verifier_state",
+      "type": "categorical",
+      "exact_match": true,
+      "description": "AST verifier state hash at boundary."
+    }
+  ]
+}

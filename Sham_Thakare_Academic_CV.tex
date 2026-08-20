@@ -1,0 +1,130 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\definecolor{primary}{RGB}{15, 23, 42}
+\definecolor{accent}{RGB}{2, 132, 199}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent
+}
+
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+
+\setlist[itemize]{leftmargin=*,noitemsep,topsep=1pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=*,noitemsep,topsep=1pt,parsep=0pt}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+    {\huge \bfseries Sham Satish Thakare} \\[3pt]
+    {\large \itshape Independent Computer Science Researcher \& ML Software Engineer} \\[4pt]
+    Pune, Maharashtra, India \ \textperiodcentered \ Phone: +91 7776807761 \ \textperiodcentered \ Email: \href{mailto:shamthakare3000@gmail.com}{shamthakare3000@gmail.com} \\
+    GitHub: \href{https://github.com/shamddd}{github.com/shamddd} \ \textperiodcentered \ Web: \href{https://shamthakare.github.io}{shamthakare.github.io}
+\end{center}
+
+\vspace{-4pt}
+
+\section*{Research Statement \& Interests}
+I conduct foundational and systems research on \textbf{Trustworthy, Adaptive, and Verifiable Autonomous Systems}. My work focuses on four primary vectors:
+\begin{enumerate}[label={[\arabic*]}]
+    \item \textbf{Foundation Model Plasticity \& Calibrated Reasoning}: Representation geometry diagnostics ($\alpha_{\text{SVD}}, \bar{H}, \sigma_g^2$) for predicting reinforcement learning reward plasticity in intermediate checkpoints, token entropy length confounding, and RLVR self-consistency calibration.
+    \item \textbf{Confidential Computing \& Hardware Security}: Zero-knowledge remote attestation membership proofs and access-frequency-weighted adaptive Oblivious RAM (ORAM) tree rebalancing algorithms for hardware enclaves (SGX/TDX).
+    \item \textbf{Learning-Augmented Distributed Consensus}: Failure-domain aware dynamic quorum adaptation ($\text{AdaptiveReplica}$) over Raft joint-consensus transitions with uncertainty-aware trust gates ($T_3$).
+    \item \textbf{Causal Observability \& Verifiable AI Systems}: Topological causal walks over OpenTelemetry microservice dependency graphs ($\text{TraceMind}$) and zero-knowledge authorization-path provenance graph proofs ($\text{EnclaveShield}$).
+\end{enumerate}
+
+\section*{Education}
+\textbf{Anantrao Pawar College of Engineering \& Research (APCOER)}, \textit{Pune, India} \hfill \textbf{Jan 2020 -- Jun 2024} \\
+\textit{Bachelor of Technology in Artificial Intelligence and Data Science}
+\begin{itemize}
+    \item \textbf{Cumulative GPA}: 8.70 / 10.00
+    \item \textbf{Academic Honors}: Awarded 100\% Merit Scholarship for 8 consecutive semesters based on academic performance.
+    \item \textbf{Core Coursework}: Engineering Mathematics, Scientific Computing, Operating Systems, Design and Analysis of Algorithms, C++, Python, Data Structures, Computer Networks, Database Management Systems, Artificial Intelligence, Machine Learning, Computational Modeling, Signal Processing, Linear Algebra, Probability and Statistics.
+\end{itemize}
+
+\section*{Research Experience \& Manuscripts}
+
+\subsection*{Submitted / Under Review Manuscripts}
+\begin{enumerate}[label={[\arabic*]}]
+    \item \textbf{When Confidence Proxies Confound Reasoning Complexity: Pitfalls of Uncertainty-Weighted Credit Assignment in LM RL} \\
+    \underline{Sham Satish Thakare} \\
+    \textit{IEEE Transactions on Artificial Intelligence (IEEE TAI)} \hfill [ \textbf{Submitted, Aug 2026} ] \\
+    Exposes length confounding in token predictive entropy ($r = +0.486$), proving sample-level uncertainty weighting (CA-GRPO) yields 0.00\% Pass@1 gain over standard outcome GRPO. Code: \url{https://github.com/shamddd/ear_grpo_reasoning}
+
+    \item \textbf{recovery\_eval: State-Matched and Provenance-Aware Evaluation of Recovery Behavior in Language-Model Reasoning} \\
+    \underline{Sham Satish Thakare} \\
+    \textit{11th IEEE Special Session on Machine Learning on Big Data (MLBD 2026) / IEEE BigData} \hfill [ \textbf{Submitted (BigD497), Aug 2026} ] \\
+    Introduces a matched state-contrast protocol ($D_{\text{recovery}} = -0.1100$, 95\% CI [-0.240, +0.030]), demonstrating Instruct checkpoints lack a recovery-specific advantage over Base checkpoints on single-step arithmetic errors. Code: \url{https://github.com/shamddd/recovery_eval}
+
+    \item \textbf{Amortized Intervention Frontiers for Language-Model Reasoning: When Does Training Beat Search?} \\
+    \underline{Sham Satish Thakare} \\
+    \textit{Transactions on Machine Learning Research (TMLR) / NeurIPS Workshop} \hfill [ \textbf{Submitted, Aug 2026} ] \\
+    Formalizes deployment cost frontiers ($C_{\text{total}} = C_{\text{train}} + Q \cdot C_{\text{inference}}$). Demonstrates OOD length extrapolation accelerates RLVR amortization crossover ($R_f \approx 0.0618 \ll 1.0$). Code: \url{https://github.com/shamddd/submission_package}
+
+    \item \textbf{StateShift: State-Matched Evaluation of Error Recovery in Neural Reasoning} \\
+    \underline{Sham Satish Thakare} \\
+    \textit{Artificial Intelligence (Elsevier AIJ)} \hfill [ \textbf{Submitted (ARTINT-D-26-01491), 2026} ] \\
+    Formulates verifier-defined continuation state matching on neural reasoning rollouts under structural covariate controls. Code: \url{https://github.com/shamddd/stateshift}
+\end{enumerate}
+
+\subsection*{Preprints \& Working Papers}
+\begin{enumerate}[label={[\arabic*]},start=5]
+    \item \textbf{Predicting Reinforcement-Learning Plasticity of Intermediate Language-Model Checkpoints: A Cross-Architecture Diagnostic Study} \\
+    \underline{Sham Satish Thakare} \\
+    \textit{Preprint / Working Paper (Target under consideration: JMLR)} \hfill [ \textbf{Working Paper, 2026} ] \\
+    Formulated diagnostic probing vectors $\phi(C_k)$ measuring layer-wise representation entropy and singular value spectrum decay rates ($R^2 = 0.91, p = 0.0004$). Code: \url{https://github.com/shamddd/adaptive-rl-forge}
+
+    \item \textbf{EnclaveShield: Zero-Knowledge Memory Attestation and Side-Channel Mitigation for Hardware Enclaves} \\
+    \underline{Sham Satish Thakare} \\
+    \textit{Preprint / Working Paper (Target under consideration: IEEE TDSC)} \hfill [ \textbf{Working Paper, 2026} ] \\
+    Engineered ZK quote attestation membership proofs and access-frequency-weighted adaptive Path ORAM tree rebalancing ($1.47\text{ms}$ latency, $H(A) = 0.82 \pm 0.02$). Code: \url{https://github.com/shamddd/enclaveshield}
+
+    \item \textbf{AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus} \\
+    \underline{Sham Satish Thakare} \\
+    \textit{Preprint / Working Paper (Target under consideration: IEEE TPDS)} \hfill [ \textbf{Working Paper, 2026} ] \\
+    Formulated dynamic vote-weight adaptation over Raft joint-consensus transitions with trust gates ($T_3$), reducing p99 write latency to $13.50\text{ms}$ ($88.8\%$ reduction vs static $120.48\text{ms}$) with zero stale reads. Code: \url{https://github.com/shamddd/quorumshift}
+
+    \item \textbf{TraceMind: Graph-Constrained Causal Reasoning for Root-Cause Localization in Microservice Systems} \\
+    \underline{Sham Satish Thakare} \\
+    \textit{Preprint / Working Paper (Target under consideration: IEEE TCC)} \hfill [ \textbf{Working Paper, 2026} ] \\
+    Constructed topological causal walks over OpenTelemetry Service Dependency Graphs, achieving 100.0\% Top-1 RCA accuracy (MRR = 1.00) across 24 fault scenarios. Code: \url{https://github.com/shamddd/tracemind}
+\end{enumerate}
+
+\section*{Professional Experience}
+\textbf{Spectra Corporate Service}, \textit{Pune, India} \hfill \textbf{Jun 2024 -- Present} \\
+\textit{Data Engineer / Machine Learning Specialist}
+\begin{itemize}
+    \item Architected scalable data pipelines using C++, Python, and SQL on GCP and AWS (GKE, Compute Engine, Cloud Storage, Cloud Logging).
+    \item Implemented Linux multithreaded system software, synchronization primitives, container security controls, and IaC pipelines using Terraform, Docker, Kubernetes, and GitHub Actions.
+    \item Constructed Prometheus and Grafana distributed telemetry dashboards for SLA monitoring and proactive incident detection.
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{APCOER Pune}, \textit{Pune, India} \hfill \textbf{Jun 2023 -- Dec 2024} \\
+\textit{Research Intern / Teaching Fellow}
+\begin{itemize}
+    \item Served as Teaching Fellow for \textit{Intro to Algorithms and Their Limitations} and \textit{Foundations of ML: AI Alignment and Safety} (Aug--Dec 2024).
+    \item Served as Course Producer for \textit{Fundamentals of Computation}, \textit{Introduction to Algorithms}, and \textit{Theory of Computation} (Aug 2022--May 2023).
+    \item Assisted faculty in experimental design, statistical analysis, and open-source software reproducibility protocols.
+\end{itemize}
+
+\section*{Technical Skills}
+\begin{itemize}
+    \item \textbf{Languages}: Python, C++, C, Rust, Go, Java, SQL, Bash, LaTeX
+    \item \textbf{AI \& Machine Learning}: PyTorch, GRPO/PPO RL Probes, Transformers, HuggingFace, NumPy, SciPy, Scikit-Learn
+    \item \textbf{Systems \& Security}: Raft Consensus, OpenTelemetry, TEEs (SGX/TDX), Path ORAM, Zero-Knowledge Proofs
+    \item \textbf{Cloud \& Infrastructure}: Docker, Kubernetes, Helm, Terraform, GCP, AWS, Prometheus, Grafana, Linux Kernel/POSIX
+\end{itemize}
+
+\end{document}

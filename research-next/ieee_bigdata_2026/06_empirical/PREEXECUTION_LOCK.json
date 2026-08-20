@@ -1,0 +1,10 @@
+{
+  "lock_version": "v1.0-preexecution-sealed",
+  "preexecution_git_commit": "bc7c62a",
+  "evaluation_registry_sha256": "b2f3756fa5a59a60bed48c340af64f24a8d2fe458367013f862dfd3a0fdc92dd",
+  "model_provenance_locked": true,
+  "generation_config_locked": true,
+  "analysis_plan_locked": true,
+  "exposure_ledger_sealed": true,
+  "scientific_inference_authorized": false
+}

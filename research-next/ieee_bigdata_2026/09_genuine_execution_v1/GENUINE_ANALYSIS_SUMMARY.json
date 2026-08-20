@@ -1,0 +1,14 @@
+{
+  "E1_matching_coverage": 1.0,
+  "E2_covariate_balance": "Standardized Mean Distance d = 0.036 <= 0.25 (100% Balanced)",
+  "E3_provenance_completeness": 1.0,
+  "E4_deterministic_reconstruction": true,
+  "E5_d_recovery_point_estimate": -0.11,
+  "E5_bootstrap_95_ci": [
+    -0.24,
+    0.03
+  ],
+  "E6_matching_sensitivity": "Standard matching d <= 0.25 (d_obs = 0.036): D_recovery = -0.1100",
+  "raw_evidence_commit": "2252cf13adb4b929d4b85ffc909e8ea9089ba041",
+  "raw_evidence_tree": "1d596f2e0ba4b02b31a399a9a51d1a25e3d34f61"
+}

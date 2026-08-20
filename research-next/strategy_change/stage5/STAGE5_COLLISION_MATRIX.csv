@@ -1,0 +1,6 @@
+work,intermed_interv,state_matched,recovery_specific,novelty_boundary
+Interventional Training (InT / Yang et al. 2025),YES,PARTIAL,NO,InT patches trajectories for training; we perform state-matched evaluation of RL policy change.
+Integrated Policy Gradient (Li et al. ICLR 2026),YES,NO,NO,IPG attributes gradients to critical components.
+MENTOR (Jiang et al. ICLR 2026),YES,NO,NO,Injects guidance at decision points.
+PrefixRL (Setlur et al. 2026),NO,NO,NO,Optimizes prefix FLOPs.
+CLaM (2026),YES,NO,NO,Studies mediator counterfactuals.

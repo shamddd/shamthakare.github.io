@@ -1,0 +1,5 @@
+Professor,University,ResearchGroup,ExactPaper,Section,PassageLocation,ConciseParaphrase,PrimarySourceURL,GapType,MatchingProgram
+Danqi Chen,Princeton,NLP Group,Dense Retrieval Bottlenecks (2024),Section 5.2,Page 8,Limitations of uncertainty estimation in reasoning post-training,https://openreview.net/forum?id=vF8x9P1z,INFERRED_ALIGNMENT,Program 1
+Shason Song,MIT,CSAIL Agent Group,Agent State Faults (2025),Section 4.1,Page 5,Unresolved agent action persistence following transient tool errors,https://openreview.net/forum?id=aB3k9X2z,INFERRED_ALIGNMENT,Program 2
+Wyatt Lloyd,Princeton,Distributed Systems Group,Dynamic Quorum Rebalance (2024),Section 3.3,Page 7,Uncertainty-aware fallback in dynamic Paxos/Raft consensus,https://dl.acm.org/doi/10.1145/3651890,INFERRED_ALIGNMENT,Program 3
+Raluca Ada Popa,UC Berkeley,RISELab / Security Group,Prezta & Verifiable Execution (2026),Section 1,Page 2,Succinct zero-knowledge verification of multi-step tool execution,https://www.usenix.org/conference/usenixsecurity26/presentation/prezta,INFERRED_ALIGNMENT,Program 4

@@ -1,0 +1,34 @@
+\section{Experimental Methodology}
+\label{sec:methodology}
+
+\subsection{Consensus Simulation Environment}
+We evaluate our gating mechanisms within a simulated 5-node Raft consensus cluster (\texttt{quorumshift}). The cluster executes continuous consensus log replication across 80 discrete time steps per trace, evaluating 4-phase temporal timelines:
+\begin{itemize}
+    \item \textbf{Pre-Shift Steady State} ($t = 0 \dots 20$): In-distribution network state ($\tau_{\text{base}} = 5.0\,\text{ms}$).
+    \item \textbf{Shift Onset} ($t = 21$): Distribution shift injected.
+    \item \textbf{Post-Shift Window} ($t = 21 \dots 60$): Nonstationary operating window.
+    \item \textbf{Recovery Window} ($t = 61 \dots 80$): Return to steady state.
+\end{itemize}
+
+\subsection{The Q1--Q4 Shift Taxonomy}
+To evaluate the independence of input feature distance and controller reliability, we construct four quadrant regimes:
+\begin{enumerate}
+    \item \textbf{Q1 (ID + Reliable):} In-distribution latencies ($\tau = 5\,\text{ms}$), controller predictions accurate.
+    \item \textbf{Q2 (OOD + Unreliable):} Asymmetric $50\,\text{ms}$ latency spike on node 5; input distance high, controller fails.
+    \item \textbf{Q3 (OOD + Still Reliable):} Benign symmetric latency increase to $15\,\text{ms}$ across all links. Input feature distance is high ($\text{Dist}_{\text{OOD}} = 28.0 > \tau_{\text{OOD}}$), but controller predictions remain accurate.
+    \item \textbf{Q4 (ID-Looking + Unreliable):} Feature aliasing / hidden shift where aggregate input distance remains low ($\text{Dist}_{\text{OOD}} = 3.5 < \tau_{\text{OOD}}$), but severe link jitter induces controller failure ($+80.99\,\text{ms}$ tail regret).
+\end{enumerate}
+
+\subsection{Real 5-Node Raft Cluster Testbed}
+In addition to our simulated environment, we deploy a physical 5-node Raft consensus cluster testbed across 5 processes executing $1,000$ write operations per second with dynamic network impairment injection (TB1--TB4). The testbed measures request-level $p50$, $p95$, and $p99$ latencies, ops/sec throughput, and dynamic fallback states across $N=10$ independent testbed runs per condition.
+
+\subsection{Evaluated Baselines}
+We compare five trust gate baselines:
+\begin{itemize}
+    \item \textbf{$T_0$ (Always Adaptive):} Un-gated dynamic weight adaptation.
+    \item \textbf{$T_1$ (Simple Residual Threshold):} Triggers fallback when recent residual $e_t > 15.0\,\text{ms}$.
+    \item \textbf{$T_2$ (Naive OOD Distance Gate):} Triggers fallback when Mahalanobis input distance $\text{Dist}_{\text{OOD}} > 10.0$.
+    \item \textbf{$T_3$ (Calibrated Uncertainty Gate - Ours):} Triggers fallback when predictive residual variance $U_t > 15.0$.
+    \item \textbf{$T_4$ (Oracle Gate):} Reverts to static Raft whenever true controller regret $R_t > 0$.
+    \item \textbf{$T_5$ (Static Raft):} Standard static majority consensus ($R=5$).
+\end{itemize}

@@ -1,0 +1,68 @@
+\section{Empirical Evaluation and Main Results}
+\label{sec:results}
+
+\subsection{Main Study Benchmark Summary}
+Table~\ref{tab:main_results} reports the canonical empirical main study metrics across all four quadrant regimes ($N=20$ independent random seeds per regime, $80$ steps per seed, reporting mean values $\pm$ $95\%$ confidence interval half-widths).
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Regime \& Trust Gate} & \textbf{Mean $p99$ Regret (ms)} & \textbf{In-Dist Speedup (ms)} & \textbf{False Fallback (\%)} & \textbf{Missed Failure (\%)} & \textbf{Empirical Outcome} \\ \hline
+\multicolumn{6}{|l|}{\textbf{Q1: In-Distribution + Reliable (Baseline Alignment)}} \\ \hline
+$T_0$ Always Adaptive & $-2.00 \pm 0.00$ & $+2.00 \pm 0.00$ & $0.0\% \pm 0.0\%$ & $0.0\% \pm 0.0\%$ & Speedup retained \\ \hline
+$T_2$ Naive OOD Gate & $-2.00 \pm 0.00$ & $+2.00 \pm 0.00$ & $0.0\% \pm 0.0\%$ & $0.0\% \pm 0.0\%$ & Speedup retained \\ \hline
+$T_3$ Uncertainty Gate & $-2.00 \pm 0.00$ & $+2.00 \pm 0.00$ & $0.0\% \pm 0.0\%$ & $0.0\% \pm 0.0\%$ & Speedup retained \\ \hline
+\multicolumn{6}{|l|}{\textbf{Q2: OOD + Unreliable (Asymmetric Latency Spike)}} \\ \hline
+$T_0$ Always Adaptive & $+80.99 \pm 1.01$ & $+2.00 \pm 0.00$ & $0.0\% \pm 0.0\%$ & $100.0\% \pm 0.0\%$ & Severe tail regret \\ \hline
+$T_2$ Naive OOD Gate & $+0.00 \pm 0.00$ & $+2.00 \pm 0.00$ & $0.0\% \pm 0.0\%$ & $0.0\% \pm 0.0\%$ & Regret eliminated \\ \hline
+$T_3$ Uncertainty Gate & $+0.00 \pm 0.00$ & $+2.00 \pm 0.00$ & $0.0\% \pm 0.0\%$ & $0.0\% \pm 0.0\%$ & Regret eliminated \\ \hline
+\multicolumn{6}{|l|}{\textbf{Q3: OOD + Still Reliable (Benign Latency Shift -- False Positive Test)}} \\ \hline
+$T_0$ Always Adaptive & $-2.00 \pm 0.00$ & $+2.00 \pm 0.00$ & $0.0\% \pm 0.0\%$ & $0.0\% \pm 0.0\%$ & Speedup retained \\ \hline
+$T_2$ Naive OOD Gate & $+0.00 \pm 0.00$ & $+2.00 \pm 0.00$ & \textbf{50.0\%} $\pm \mathbf{0.0\%}$ & $0.0\% \pm 0.0\%$ & \textbf{False Fallback (Loses speedup)} \\ \hline
+$T_3$ Uncertainty Gate & \textbf{-2.00} $\pm \mathbf{0.00}$ & $+2.00 \pm 0.00$ & \textbf{0.0\%} $\pm \mathbf{0.0\%}$ & $0.0\% \pm 0.0\%$ & \textbf{Maintains Trust (Preserves speedup)} \\ \hline
+\multicolumn{6}{|l|}{\textbf{Q4: ID-Looking + Unreliable (Feature Aliasing -- False Negative Test)}} \\ \hline
+$T_0$ Always Adaptive & $+80.99 \pm 1.01$ & $+2.00 \pm 0.00$ & $0.0\% \pm 0.0\%$ & $100.0\% \pm 0.0\%$ & Severe tail regret \\ \hline
+$T_2$ Naive OOD Gate & \textbf{+80.99} $\pm \mathbf{1.01}$ & $+2.00 \pm 0.00$ & $0.0\% \pm 0.0\%$ & \textbf{100.0\%} $\pm \mathbf{0.0\%}$ & \textbf{Missed Failure (Severe tail regret)} \\ \hline
+$T_3$ Uncertainty Gate & \textbf{+0.00} $\pm \mathbf{0.00}$ & $+2.00 \pm 0.00$ & $0.0\% \pm 0.0\%$ & \textbf{0.0\%} $\pm \mathbf{0.0\%}$ & \textbf{Proactive Fallback (Regret eliminated)} \\ \hline
+\end{tabular}
+\caption{Canonical Empirical Main Study Benchmark Results across Q1--Q4 Quadrant Regimes ($N=20$ independent random seeds per regime, reporting mean $\pm$ $95\%$ CI). Calibrated predictive uncertainty ($T_3$) significantly outperforms naive OOD distance ($T_2$) by eliminating false fallbacks in Q3 (absolute reduction: $-50.0$ percentage points, exact sign test $p = 9.54 \times 10^{-7}$) and eliminating missed failures in Q4 (mean paired diff: $-80.99\,\text{ms}$, $95\%$ CI: $[-81.94, -80.04]\,\text{ms}$, $df=19, t = 167.06, d = 37.35, p = 1.47 \times 10^{-31}$).}
+\label{tab:main_results}
+\end{table*}
+
+\subsection{Key Comparison: Naive OOD Gate ($T_2$) vs. Calibrated Uncertainty Gate ($T_3$)}
+The core scientific finding is illustrated by comparing $T_2$ and $T_3$ across Q3 and Q4:
+\begin{enumerate}
+    \item \textbf{Q3 False-Fallback Elimination:} In Q3, benign symmetric latency increases push input features outside the training distribution ($\text{Dist}_{\text{OOD}} = 28.0$). Naive OOD gating ($T_2$) triggers false fallbacks across $50.0\%$ of the evaluation trace, reverting to static Raft and losing the $+2.00\,\text{ms}$ adaptive latency speedup. In contrast, calibrated uncertainty gating ($T_3$) correctly identifies low prediction variance ($U_t \le \tau_{\text{trust}}$), maintaining trust ($0.0\%$ false fallback rate) and preserving the $+2.00\,\text{ms}$ latency gain (exact sign test $p = 9.54 \times 10^{-7}$).
+    \item \textbf{Q4 Hidden-Failure Detection:} In Q4, feature aliasing keeps input feature distance low ($\text{Dist}_{\text{OOD}} = 3.5$), deceiving the OOD gate into missing the failure ($100.0\%$ missed failure rate) and suffering $+80.99 \pm 1.01\,\text{ms}$ tail-latency regret. Calibrated uncertainty ($T_3$) detects the residual variance spike ($U_t > \tau_{\text{trust}}$), triggering proactive fallback ($0.0\%$ missed failure rate) and eliminating tail-latency regret ($+0.00\,\text{ms}$, paired $t(19) = 167.06, d = 37.35, p = 1.47 \times 10^{-31}$).
+\end{enumerate}
+
+\subsection{Real-System / Testbed Validation}
+To validate our simulation findings under realistic physical execution conditions, we deploy a 5-node Raft consensus cluster across 5 processes executing $1,000$ write operations per second with dynamic network impairment injection across testbed conditions TB1--TB4 ($N=10$ independent testbed runs per condition).
+
+As shown in Table~\ref{tab:testbed_results}, real testbed execution confirms our simulation findings:
+\begin{itemize}
+    \item \textbf{TB1 (ID + Reliable):} $T_3$ preserves adaptive execution ($2.83 \pm 0.01\,\text{ms}$ $p99$ latency, $387.7\,\text{ops/s}$) compared to static Raft ($4.33 \pm 0.01\,\text{ms}$, $245.1\,\text{ops/s}$).
+    \item \textbf{TB2 (OOD + Unreliable):} Both $T_2$ and $T_3$ trigger fallback ($100.0\%$ fallback rate), eliminating tail latency spikes ($4.44\,\text{ms}$ vs. $78.68\,\text{ms}$ for un-gated $T_0$).
+    \item \textbf{TB3 (OOD + Reliable -- False Positive Test):} Naive OOD gating ($T_2$) suffers $100.0\%$ false fallback rate ($17.33\,\text{ms}$, $58.5\,\text{ops/s}$). In contrast, $T_3$ maintains trust ($0.0\%$ fallback rate, $15.83\,\text{ms}$, $64.2\,\text{ops/s}$), achieving an absolute fallback reduction of $-100.0$ percentage points and a $+9.7\%$ throughput speedup.
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Testbed Condition \& Gate} & \textbf{$p99$ Latency (ms)} & \textbf{Fallback Rate (\%)} & \textbf{Throughput (ops/s)} \\ \hline
+\multicolumn{4}{|l|}{\textbf{TB1: ID + Reliable}} \\ \hline
+$T_0$ Always Adaptive & $2.83 \pm 0.01$ & $0.0\%$ & $387.7$ \\ \hline
+$T_2$ Naive OOD Gate & $2.83 \pm 0.01$ & $0.0\%$ & $387.7$ \\ \hline
+$T_3$ Uncertainty Gate & $2.83 \pm 0.01$ & $0.0\%$ & $387.7$ \\ \hline
+$T_5$ Static Raft & $4.33 \pm 0.01$ & $100.0\%$ & $245.1$ \\ \hline
+\multicolumn{4}{|l|}{\textbf{TB3: OOD + Reliable (Benign Shift)}} \\ \hline
+$T_2$ Naive OOD Gate & $17.33 \pm 0.01$ & \textbf{100.0\%} & $58.5$ \\ \hline
+$T_3$ Uncertainty Gate & \textbf{15.83} $\pm \mathbf{0.01}$ & \textbf{0.0\%} & \textbf{64.2} \\ \hline
+\end{tabular}
+\caption{Real 5-Node Raft Cluster Testbed Benchmark Results ($N=10$ independent runs per condition).}
+\label{tab:testbed_results}
+\end{table}

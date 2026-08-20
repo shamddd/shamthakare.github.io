@@ -1,0 +1,23 @@
+{
+  "program_id": "PROGRAM_4",
+  "title": "Verifiable, Private & Observable AI Systems: Zero-Knowledge Authorization-Path Compliance Proofs over Authenticated Provenance Graphs",
+  "status": "PILOT_COMPLETED",
+  "timestamp": "2026-08-20T01:43:54+05:30",
+  "reproducibility_command": "python3 run_program4_pilot.py",
+  "execution_directory": "/Users/shamthakare/.gemini/antigravity/scratch",
+  "raw_data_file": "/Users/shamthakare/.gemini/antigravity/scratch/results/program4_pilot_results.json",
+  "pilot_metrics": {
+    "b0_accuracy": 1.0,
+    "b0_disclosure": 1.0,
+    "b1_accuracy": 1.0,
+    "b1_disclosure": 0.625,
+    "b2_l_accuracy": 0.50,
+    "b2_l_fp_rate": 0.50,
+    "b2_l_plus_accuracy": 1.0,
+    "b3_g_accuracy": 1.0,
+    "b3_g_disclosure": 0.0,
+    "b3_g_prover_latency_s": 0.817,
+    "b3_g_verifier_latency_ms": 22.0,
+    "b3_g_proof_size_bytes": 2048
+  }
+}

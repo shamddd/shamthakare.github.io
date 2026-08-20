@@ -1,0 +1,37 @@
+{
+  "BASE": {
+    "arm_name": "BASE",
+    "checkpoint_sha256": "cbbce02ac479c1db6285e7092235a16cab64bbd0a5cb9ea0ab3fa5cc8580d840",
+    "seed": 50,
+    "status": "EXECUTED_CLEAN",
+    "training_hours": 0.009
+  },
+  "FULL-RLVR": {
+    "arm_name": "FULL-RLVR",
+    "checkpoint_sha256": "dd89e488b4e041ac27efc9b2805b2ef2e53e25bf28c5027304003aec6f37dae3",
+    "seed": 50,
+    "status": "EXECUTED_CLEAN",
+    "training_hours": 0.012
+  },
+  "FULL-SFT": {
+    "arm_name": "FULL-SFT",
+    "checkpoint_sha256": "dea1b5d601bd16dccdd2a3db970e9412c6492fd501498ac6b284585189ce968b",
+    "seed": 50,
+    "status": "EXECUTED_CLEAN",
+    "training_hours": 0.012
+  },
+  "PREFIXRL": {
+    "arm_name": "PREFIXRL",
+    "checkpoint_sha256": "0c385849703bd9dbc6fe2d8b41c5c8002d81db60d4d5ea23fb3574ef19a0e952",
+    "seed": 50,
+    "status": "EXECUTED_CLEAN",
+    "training_hours": 0.012
+  },
+  "RECOVERY-SFT": {
+    "arm_name": "RECOVERY-SFT",
+    "checkpoint_sha256": "c8587f1c26cfcea744c84a149bd7ac1d5bc51ef9f7fb69880e800d4d4a313b1c",
+    "seed": 50,
+    "status": "EXECUTED_CLEAN",
+    "training_hours": 0.012
+  }
+}

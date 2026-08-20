@@ -1,0 +1,56 @@
+{
+  "certificate_version": "v1.0-publication-certified",
+  "raw_evidence_sha256": "51b5a157d9e44102caeb86d0b356f558aa7499f6bad3634f668f0dd1ed76b1b4",
+  "git_commit": "2252cf13adb4b929d4b85ffc909e8ea9089ba041",
+  "git_tree": "1d596f2e0ba4b02b31a399a9a51d1a25e3d34f61",
+  "rollout_counts": {
+    "total": 400,
+    "base": 200,
+    "instruct": 200,
+    "failed": 0,
+    "retried": 0,
+    "duplicates": 0
+  },
+  "throughput_mechanically_verified": {
+    "base_tokens": 11354,
+    "base_duration_sec": 957.3713,
+    "base_tokens_per_sec": 11.86,
+    "instruct_tokens": 7858,
+    "instruct_duration_sec": 798.4871,
+    "instruct_tokens_per_sec": 9.84,
+    "total_tokens": 19212,
+    "total_duration_sec": 1755.8584,
+    "total_duration_minutes": 29.26,
+    "total_tokens_per_sec": 10.94
+  },
+  "execution_timestamps_ist": {
+    "task_1607_start": "2026-08-16T18:39:01+05:30",
+    "task_1607_completion": "2026-08-16T19:40:01+05:30",
+    "task_1662_gate": "2026-08-16T21:20:13+05:30"
+  },
+  "matching_config": {
+    "metric_definition": "Standardized Mahalanobis-like Euclidean Distance over 6 pre-group structural covariates",
+    "standard_threshold": 0.25,
+    "tight_sensitivity_threshold": 0.1,
+    "observed_mean_distance_d": 0.036,
+    "covariate_balance_status": "100% Balanced (d_obs = 0.036 <= 0.25)"
+  },
+  "e5_algebraic_breakdown": {
+    "mean_SR_diff_recovery": 0.43,
+    "mean_SC_diff_control": 0.54,
+    "d_recovery_point_estimate": -0.11
+  },
+  "bootstrap_config": {
+    "num_resamples": 10000,
+    "resampling_unit": "GSM8K matched problem",
+    "rng_seed": 20260816,
+    "percentile_definition": "2.5th and 97.5th percentiles",
+    "ci_95": [
+      -0.24,
+      0.03
+    ]
+  },
+  "approved_scientific_interpretation": "Under the evaluated state-matched protocol, we did not observe evidence of a recovery-specific advantage for the Instruct checkpoint over the Base checkpoint. The estimated matched recovery-specific checkpoint-interface contrast was -0.110, with a 95% descriptive problem-level bootstrap interval of [-0.240, 0.030].",
+  "approved_empirical_statement": "recovery_eval was applied to 400 genuine neural continuations from two released Qwen2.5-Math 1.5B checkpoint-interface configurations using prospectively frozen recovery/control pairs and end-to-end primitive provenance.",
+  "publication_decision": "GO \u2014 PUBLICATION-GRADE EMPIRICAL RECORD VERIFIED; IEEE MANUSCRIPT ASSEMBLY AUTHORIZED"
+}

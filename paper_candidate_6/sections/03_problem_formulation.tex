@@ -1,0 +1,33 @@
+\section{Problem Formulation}
+\label{sec:problem}
+
+\subsection{System State and Adaptive Action Space}
+Let $x_t \in \mathbb{R}^d$ represent the observed system state vector at time step $t$, comprising sliding-window replica link latencies $\tau_i$, network jitter $\sigma_i$, packet loss ratios $\eta_i$, and write-workload ratio $w_t$:
+\begin{equation}
+x_t = [\tau_1, \dots, \tau_N, \sigma_1, \dots, \sigma_N, \eta_1, \dots, \eta_N, w_t]
+\end{equation}
+
+An adaptive controller policy $\pi_\theta(x_t)$ selects candidate quorum configuration $a_t = q \in \mathcal{Q}$. The executed write latency cost is $C(x_t, a_t)$. Under standard static Raft, the fixed majority quorum policy is $a_{\text{static}}$, yielding cost $C(x_t, a_{\text{static}})$.
+
+\subsection{Controller Regret Definition}
+We define instantaneous controller latency regret $R_t$ as the excess write latency incurred by the adaptive policy relative to static Raft:
+\begin{equation}
+R_t = C(x_t, a_{\text{adaptive}}) - C(x_t, a_{\text{static}})
+\end{equation}
+
+Over a temporal evaluation window $W$, the high-tail empirical $p99$ latency regret $\text{Regret}_{p99}$ is:
+\begin{equation}
+\text{Regret}_{p99} = P_{99}\left(\{C(x_t, a_{\text{adaptive}})\}_{t \in W}\right) - P_{99}\left(\{C(x_t, a_{\text{static}})\}_{t \in W}\right)
+\end{equation}
+When $\text{Regret}_{p99} > 0$, the adaptive controller suffers SLO-degrading tail-latency regret.
+
+\subsection{Trust Gate Decision Logic}
+A trust gate $g(x_t, U_t) \in \{\text{adaptive}, \text{fallback}\}$ dynamically determines whether to execute the adaptive quorum action $a_{\text{adaptive}}$ or fall back to static Raft $a_{\text{static}}$:
+\begin{equation}
+a_{\text{executed}} = 
+\begin{cases} 
+a_{\text{adaptive}}, & \text{if } g(x_t, U_t) = \text{adaptive} \\
+a_{\text{static}}, & \text{if } g(x_t, U_t) = \text{fallback}
+\end{cases}
+\end{equation}
+Where $U_t$ is the trust signal evaluated by the gate.
