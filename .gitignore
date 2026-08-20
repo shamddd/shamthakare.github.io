@@ -1,0 +1,35 @@
+# Byte-compiled / Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.dist/
+build/
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+__MACOSX/
+._*
+
+# Environment / Credentials
+.env
+.env.*
+secrets.yaml
+*.pem
+*.key
+credentials/
+
+# Large model artifacts / checkpoints (Do not commit 15GB+ weights)
+*.safetensors
+*.bin
+*.pt
+*.onnx
+models/cache/
+wandb/

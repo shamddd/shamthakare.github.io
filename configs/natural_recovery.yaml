@@ -1,0 +1,15 @@
+study_name: "Unprompted Natural Post-Error Recovery Study (Study B)"
+sample_size:
+  problems: 200
+  k_rollouts: 16
+total_unperturbed_rollouts: 3200
+natural_error_episodes: 582
+qualifying_recoveries: 180
+frozen_results:
+  nei: 18.19
+  nei_ci_95: [16.84, 19.50]
+  nrr: 30.93
+  nrr_ci_95: [27.19, 34.82]
+recovery_rules:
+  require_intermediate_state_recovery: true
+  require_final_answer_correctness: true

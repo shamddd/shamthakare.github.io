@@ -1,0 +1,13 @@
+study_name: "Nine-Checkpoint Post-Training Trajectory Study"
+checkpoints: [0, 32, 64, 96, 128, 160, 192, 224, 256]
+model_lineage: "UWNSL/Qwen2.5-7B-deepscaler_4k_step_{step}"
+frozen_gamma_vector: [0.0000, 0.0333, 0.0337, 0.0774, 0.0748, 0.0598, 0.0976, 0.0950, 0.1176]
+earliest_detectable_checkpoint: 32
+gamma_32: 0.0333
+multiplicity_adjusted_ci_32: [0.0011, 0.0655]
+order_restricted_analysis:
+  supported: true
+  method: "PAVA"
+strict_monotonicity:
+  supported: false
+  reason: "Joint 8-interval positivity test is underpowered at K=2/3"
