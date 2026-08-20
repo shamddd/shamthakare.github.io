@@ -24,7 +24,7 @@ $$\text{Total Rollouts} = 454 \times 2 \times 9 \times 16 = \mathbf{130,752 \tex
 
 ## 2. Dry-Run Ledger Accounting Verification
 
-* **Ledger File**: [`PHASE1I_DRY_RUN_LEDGER_V2.jsonl`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_DRY_RUN_LEDGER_V2.jsonl)
+* **Ledger File**: [`PHASE1I_DRY_RUN_LEDGER_V2.jsonl`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_DRY_RUN_LEDGER_V2.jsonl)
 * **Total Rows**: Exactly `130,752` JSON lines.
 * **Duplicate Primary Keys**: **`0 duplicates`**.
 * **Missing Combinations**: **`0 missing combinations`**.

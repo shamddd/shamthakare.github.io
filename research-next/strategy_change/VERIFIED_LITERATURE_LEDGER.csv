@@ -1,8 +1,0 @@
-paper_title,authors,year,venue,relevance,collision_type,notes
-Echo Chamber: RL Post-training Amplifies Behaviors Learned in Pretraining,Zhao et al.,2025,COLM 2025,High,CONCEPTUAL NULL,Shows RL primarily amplifies pre-existing pretraining modes.
-Parameter-Efficient Reinforcement Learning using Prefix Optimization,Rocha Filho et al.,2026,ICLR 2026,High,PRIMARY BASELINE COLLISION,Shows prefix-only optimization recovers large fraction of RL gains.
-SAGE: Shaping Anchors for Guided Exploration in RLVR of LLMs,Lee et al.,2026,ICML 2026,High,EXPLORATION COLLISION,Focuses on anchor-guided mode exploration during RLVR.
-Understanding Reasoning from Pretraining to Post-Training,Shen et al.,2026,arXiv 2026,Medium,MECHANISTIC ADJACENCY,Analyzes trajectory shifts from pretraining to SFT/RL.
-Provable Benefits of RLVR over SFT for Reasoning Models: Learning to Backtrack Efficiently,Wei & Kim,2026,arXiv 2026,CRITICAL,THEORETICAL COLLISION,Theoretical proof that RLVR learns backtracking on stylized state spaces.
-RL Excursions during Pre-training,Bansal et al.,2026,arXiv 2026,Medium,PRETRAINING ADJACENCY,Studies RL exploration during pre-training phase.
-Energy-Based Fine-Tuning: Beyond Next-Token Prediction,Jelassi et al.,2026,arXiv 2026,Medium,OBJECTIVE ADJACENCY,Explores sequence-level energy vs next-token objectives.

@@ -3,7 +3,7 @@
 **Milestone**: Phase 1I.4b Source-Code Conformance & Single-Source-of-Truth Verification  
 **Execution Timestamp**: `2026-08-19 23:46 UTC`  
 **Auditor**: Principal ML Systems Engineer & Scientific Integrity Auditor  
-**Target File**: [`research-next/stateshift/09_phase1i_readiness/run_confirmatory_experiment.py`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/run_confirmatory_experiment.py)  
+**Target File**: [`research-next/stateshift/09_phase1i_readiness/run_confirmatory_experiment.py`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/run_confirmatory_experiment.py)  
 
 ---
 

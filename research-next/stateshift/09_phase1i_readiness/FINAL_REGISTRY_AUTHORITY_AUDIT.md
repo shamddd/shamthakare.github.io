@@ -13,8 +13,8 @@
 
 | Registry Version | Target Count ($N$) | File Location | SHA-256 Hash | Status |
 | :--- | :---: | :--- | :--- | :---: |
-| **Authoritative Post-Human V4** | **`N = 454`** | [`FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V4.json`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/human_adjudication/FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V4.json) | `76f1a8adead0f3ebe78ac0ef2b2b87f55767083b9988bbdee61a69af7b9d5478` | **`AUTHORITATIVE PRIMARY`** |
-| **Strict Contamination V4** | **`N = 388`** | [`FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V4_STRICT.json`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/human_adjudication/FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V4_STRICT.json) | `667660ca243c2d6df8af4cec7cd859ef2bd403ff1993abc033947409dd210227` | **`STRICT SECONDARY`** |
+| **Authoritative Post-Human V4** | **`N = 454`** | [`FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V4.json`](file://~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/human_adjudication/FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V4.json) | `76f1a8adead0f3ebe78ac0ef2b2b87f55767083b9988bbdee61a69af7b9d5478` | **`AUTHORITATIVE PRIMARY`** |
+| **Strict Contamination V4** | **`N = 388`** | [`FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V4_STRICT.json`](file://~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/human_adjudication/FINAL_CONFIRMATORY_REGISTRY_POST_HUMAN_V4_STRICT.json) | `667660ca243c2d6df8af4cec7cd859ef2bd403ff1993abc033947409dd210227` | **`STRICT SECONDARY`** |
 
 ---
 

@@ -14,7 +14,7 @@
 ### Step 2: Title & Abstract Entry
 1. **Title**: Paste the canonical title:
    `StateShift: Tracking State-Dependent Reasoning Recovery Across Post-Training`
-2. **Abstract**: Paste the locked abstract from [`05_ABSTRACT_AND_KEYWORDS.md`](file:///Users/shamthakare/.gemini/antigravity/scratch/submission/aij/05_ABSTRACT_AND_KEYWORDS.md).
+2. **Abstract**: Paste the locked abstract from [`05_ABSTRACT_AND_KEYWORDS.md`](file://~/.gemini/antigravity/scratch/submission/aij/05_ABSTRACT_AND_KEYWORDS.md).
 
 ### Step 3: Keywords & Classifications
 1. Paste the 6 approved keywords: `Large language models`, `Reinforcement learning`, `Mathematical reasoning`, `Reasoning recovery`, `Post-training evaluation`, `State-conditioned evaluation`.

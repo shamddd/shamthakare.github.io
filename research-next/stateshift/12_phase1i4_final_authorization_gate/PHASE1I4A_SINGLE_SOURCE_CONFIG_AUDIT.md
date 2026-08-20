@@ -3,14 +3,14 @@
 **Milestone**: Phase 1I.4a Launcher Config Refactoring & Single Source of Truth Audit  
 **Execution Timestamp**: `2026-08-19 23:37 UTC`  
 **Auditor**: Principal ML Systems Engineer & Scientific Integrity Auditor  
-**Single Source of Truth Configuration File**: [`PHASE1I4_FINAL_EXECUTION_CONFIG.json`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/12_phase1i4_final_authorization_gate/PHASE1I4_FINAL_EXECUTION_CONFIG.json)  
+**Single Source of Truth Configuration File**: [`PHASE1I4_FINAL_EXECUTION_CONFIG.json`](file://~/.gemini/antigravity/scratch/research-next/stateshift/12_phase1i4_final_authorization_gate/PHASE1I4_FINAL_EXECUTION_CONFIG.json)  
 **Expected Configuration SHA-256**: `079f99bf8e5ceb8b45b680b4bc2e34f718e4453031c55ee456da0a331209cdcf`  
 
 ---
 
 ## 1. Single Source of Truth Refactoring Audit
 
-The launcher script [`run_confirmatory_experiment.py`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/run_confirmatory_experiment.py) has been strictly refactored to eliminate all duplicated scientific and runtime constants:
+The launcher script [`run_confirmatory_experiment.py`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/run_confirmatory_experiment.py) has been strictly refactored to eliminate all duplicated scientific and runtime constants:
 
 | Audit Checkpoint | Pre-Refactoring State | Post-Refactoring State (Phase 1I.4a) | Verification Status |
 | :--- | :--- | :--- | :---: |

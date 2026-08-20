@@ -1,4 +1,0 @@
-benchmark,verifier_reliability,contamination_risk,ability_to_measure_Q
-ModComp (E0),1.0 (Exact),Zero (Synthetic),HIGH
-GSM8K (Proposed E2),0.95 (SymPy),Medium,HIGH
-MATH Level 1-5 (Proposed E2),0.90 (LaTeX),Medium,HIGH

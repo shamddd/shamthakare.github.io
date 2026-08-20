@@ -1,5 +1,0 @@
-{"arm": "BASE", "spent_hours": 0.009, "cumulative_hours": 0.009, "hard_cap_hours": 0.5, "status": "WITHIN_BUDGET"}
-{"arm": "PREFIXRL", "spent_hours": 0.012, "cumulative_hours": 0.020999999999999998, "hard_cap_hours": 0.5, "status": "WITHIN_BUDGET"}
-{"arm": "RECOVERY-SFT", "spent_hours": 0.012, "cumulative_hours": 0.033, "hard_cap_hours": 0.5, "status": "WITHIN_BUDGET"}
-{"arm": "FULL-SFT", "spent_hours": 0.012, "cumulative_hours": 0.045, "hard_cap_hours": 0.5, "status": "WITHIN_BUDGET"}
-{"arm": "FULL-RLVR", "spent_hours": 0.012, "cumulative_hours": 0.056999999999999995, "hard_cap_hours": 0.5, "status": "WITHIN_BUDGET"}

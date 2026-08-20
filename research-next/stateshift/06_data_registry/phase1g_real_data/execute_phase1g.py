@@ -21,7 +21,7 @@ import csv
 from datetime import datetime, timezone
 from datasets import load_dataset
 
-BASE_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g_real_data"
+BASE_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g_real_data"
 RAW_DATA_DIR = os.path.join(BASE_DIR, "raw_data")
 
 def get_file_sha256(filepath):
