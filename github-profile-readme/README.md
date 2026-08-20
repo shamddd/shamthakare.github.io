@@ -1,80 +1,43 @@
-# Rachit Bansal
-
-**Doctorate Student, Harvard University**  
-Cambridge, MA • [Website](https://rachitbansal.github.io) • [Email](mailto:rachitbansal@g.harvard.edu) • [Google Scholar](https://scholar.google.com) • [CV (PDF)](https://rachitbansal.github.io/Rachit_Bansal_Academic_CV.pdf)
-
-I am a Ph.D. student in Computer Science at **Harvard University**, advised by **Prof. Sham Kakade** and **Prof. David Alvarez-Melis**. I am part of the **Harvard ML Foundations** research group and a **Kempner Institute Graduate Fellow**.
-
-My research focuses on foundational machine learning, test-time training for long-context LLMs, reinforcement learning compute scaling, model composition (CALM), generalization behavior, and loss surface geometry.
+# Sham Satish Thakare
+**Independent Computer Science Researcher & Data Engineer / ML Specialist**  
+Pune, Maharashtra, India · `shamthakare3000@gmail.com` · [Website](https://shamthakare.github.io) · [CV PDF](https://shamthakare.github.io/Sham_Thakare_Academic_CV.pdf)
 
 ---
 
-## 🎓 Education
-
-* **Harvard University** — Ph.D. in Computer Science (ongoing), 08/2024 – Present  
-  * Advised by Prof. Sham Kakade & Prof. David Alvarez-Melis.  
-  * Harvard ML Foundations Group · Kempner Institute Graduate Fellow.
-* **Delhi Technological University** — B.Tech. in Electrical Engineering, 08/2018 – 07/2022  
-  * Bachelor's thesis at Technion, Israel (02/2022 – 07/2022).
-
----
-
-## 🔬 Publications
-
-1. **Let's (not) just put things in Context: Test-Time Training for Long-Context LLMs**  
-   Rachit Bansal, Aston Zhang, Rishabh Tiwari, Lovish Madaan, Sai Surya Duvvuri, Devvrit Khatri, David Brandfonbrener, David Alvarez-Melis, Prajjwal Bhargava, Mihir Sanjay Kale, Samy Jelassi  
-   *International Conference on Learning Representations* [ **ICLR 2026** ]
-
-2. **The Art of Scaling Reinforcement Learning Compute for LLMs**  
-   Devvrit Khatri, Lovish Madaan, Rishabh Tiwari, Rachit Bansal, Sai Surya Duvvuri, Manzil Zaheer, Inderjit S. Dhillon, David Brandfonbrener, Rishabh Agarwal  
-   *International Conference on Learning Representations (Oral Presentation)* [ **ICLR 2026** ]
-
-3. **Adam or Gauss-Newton? A Comparative Study In Terms of Basis Alignment and SGD Noise**  
-   Bingbin Liu, Rachit Bansal, Depen Morwani, Nikhil Vyas, David Alvarez-Melis, Sham M. Kakade  
-   *International Conference for Machine Learning (under submission)* [ **ICML 2026** ]
-
-4. **LLM Augmented LLMs: Expanding Capabilities through Composition**  
-   Rachit Bansal, Bidisha Samanta, Siddharth Dalmia, Nitish Gupta, Shikhar Vashishth, Sriram Ganapathy, Abhishek Bapna, Prateek Jain, Partha Talukdar  
-   *International Conference on Learning Representations* [ **ICLR 2024** ]
-
-5. **Linear Connectivity Reveals Generalization Strategies**  
-   Jeevesh Juneja, Rachit Bansal, Kyunghyun Cho, João Sedoc, Naomi Saphra  
-   *International Conference on Learning Representations* [ **ICLR 2023** ]
-
-6. **Measures of Information Reflect Memorization Patterns**  
-   Rachit Bansal, Danish Pruthi, Yonatan Belinkov  
-   *Conference on Neural Information Processing Systems* [ **NeurIPS 2022** ]
-
-7. **Evaluating Explanations: How much do explanations from the teacher aid students?**  
-   Danish Pruthi, Rachit Bansal, Bhuvan Dhingra, Livio Baldini Soares, Michael Collins, Zachary C. Lipton, Graham Neubig, William W. Cohen  
-   *Transactions of the Association for Computational Linguistics* [ **TACL 2022** ]
-
-8. **CoSe-Co: Text Conditioned Generative CommonSense Contextualizer**  
-   Rachit Bansal, Milan Aggarwal, Sumit Bhatia, Jivat Kaur, Balaji Krishnamurthy  
-   *North American Chapter of the Association for Computational Linguistics* [ **NAACL 2022** ]
-
-9. **LM-CORE: Language Models with Contextually Relevant External Knowledge**  
-   Jivat Kaur, Sumit Bhatia, Milan Aggarwal, Rachit Bansal, Balaji Krishnamurthy  
-   *North American Chapter of the Association for Computational Linguistics (Findings)* [ **NAACL 2022** ]
-
-10. **How Low is Too Low? A Computational Perspective on Extremely Low-Resource Languages**  
-    Rachit Bansal, Himanshu Choudhary, Ravneet Punia, Niko Schenk, Jacob L Dahl, Émilie Pagé-Perron  
-    *Student Research Workshop (SRW) at ACL* [ **ACL SRW 2021** ]
+### Research Statement & Primary Focus
+I conduct foundational and systems research on **Trustworthy, Adaptive, and Verifiable Autonomous Systems**, spanning:
+1. **Calibrated Reasoning & Adaptive Compute**: RLVR/GRPO reward plasticity prediction ($\alpha_{\text{SVD}}, \bar{H}, \sigma_g^2$) and token entropy credit assignment.
+2. **Confidential Computing & Security**: Zero-knowledge remote attestation proofs and adaptive Path ORAM tree rebalancing ($1.47\text{ms}$ access latency).
+3. **Learning-Augmented Distributed Consensus**: Raft joint-consensus dynamic vote weighting ($\text{AdaptiveReplica}$) under asymmetric failure domains ($13.50\text{ms}$ p99 write latency).
+4. **Causal Observability & Verifiable AI Systems**: Topological causal walks over OpenTelemetry dependency graphs ($\text{TraceMind}$) achieving 100.0% Top-1 RCA accuracy.
 
 ---
 
-## 💼 Experience
-
-* **Meta Super-intelligence Labs (MSL)** — Research Scientist Intern w/ Aston Zhang (05/2025 – 10/2025)
-* **Google DeepMind** — Pre-doctoral Researcher w/ Partha Talukdar & Prateek Jain (07/2022 – 07/2024)
-* **Technion** — Research Intern (Bachelor's Thesis) w/ Yonatan Belinkov (09/2021 – 07/2022)
-* **Adobe Research** — Research Intern w/ Balaji Krishnamurthy (01/2021 – 09/2021)
-* **Google Summer of Code / Univ of Oxford** — Contributor at CDLI w/ Jacob Dahl (05/2020 – 01/2021)
+### Active Submitted Manuscripts
+- **When Confidence Proxies Confound Reasoning Complexity: Pitfalls of Uncertainty-Weighted Credit Assignment in LM RL**  
+  *Submitted to IEEE Transactions on Artificial Intelligence (IEEE TAI)* (Aug 2026) · [`ear_grpo_reasoning`](https://github.com/shamddd/ear_grpo_reasoning)
+- **recovery_eval: State-Matched and Provenance-Aware Evaluation of Recovery Behavior in Language-Model Reasoning**  
+  *Submitted to 11th IEEE Special Session on Machine Learning on Big Data (MLBD 2026) / IEEE BigData 2026* (Submission ID: `BigD497`, Aug 17, 2026) · [`recovery_eval`](https://github.com/shamddd/recovery_eval)
+- **StateShift: State-Matched Evaluation of Error Recovery in Neural Reasoning**  
+  *Submitted to Elsevier Artificial Intelligence (AIJ)* (Manuscript ID: `ARTINT-D-26-01491`, 2026) · [`stateshift`](https://github.com/shamddd/stateshift)
 
 ---
 
-## 🛠️ Service & Reviewing
+### Working Papers
+- **Amortized Intervention Frontiers for Language-Model Reasoning: When Does Training Beat Search?**  
+  *Working Paper (Target under consideration: TMLR)* (2026) · `submission_package`
+- **Predicting Reinforcement-Learning Plasticity of Intermediate Language-Model Checkpoints: A Cross-Architecture Diagnostic Study**  
+  *Working Paper (Target under consideration: JMLR)* (2026) · [`adaptive-rl-forge`](https://github.com/shamddd/adaptive-rl-forge)
+- **EnclaveShield: Zero-Knowledge Memory Attestation and Side-Channel Mitigation for Hardware Enclaves**  
+  *Working Paper (Target under consideration: IEEE TDSC)* (2026) · [`enclaveshield`](https://github.com/shamddd/enclaveshield)
+- **AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus**  
+  *Working Paper (Target under consideration: IEEE TPDS)* (2026) · [`quorumshift`](https://github.com/shamddd/quorumshift)
+- **TraceMind: Graph-Constrained Causal Reasoning for Root-Cause Localization in Microservice Systems**  
+  *Working Paper (Target under consideration: IEEE TCC)* (2026) · [`tracemind`](https://github.com/shamddd/tracemind)
 
-* **Conference Reviewer**: ICLR'24, NeurIPS'23, EMNLP'23, ACL'23, NeurIPS'22
-* **Google Summer of Code (CDLI)**: Mentor (Summer 2022)
-* **Coding Blocks**: Instructor & Teaching Assistant (2019 – 2020)
+---
+
+### Education & Professional Experience
+- **Data Engineer / ML Specialist**, Spectra Corporate Service (Jun 2024 – Present)
+- **Research Intern / Teaching Fellow**, APCOER Pune (Jun 2023 – Dec 2024)
+- **B.Tech. in AI & Data Science**, APCOER Pune (Jan 2020 – Jun 2024, Cumulative GPA: 8.70 / 10.00, 100% Merit Scholarship 8 sems)
