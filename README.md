@@ -5,7 +5,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
 **Author**: Sham Satish Thakare (Independent Researcher, Pune, Maharashtra, India)  
-**Publication Status**: Manuscript prepared/submitted to *Artificial Intelligence* (Elsevier)  
+**Publication Status**: Submitted to *Artificial Intelligence* (Elsevier), 2026 — Manuscript ARTINT-D-26-01491  
 
 ---
 

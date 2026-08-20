@@ -87,7 +87,7 @@ def reproduce_natural_recovery():
 def main():
     print("STATESHIFT REPRODUCIBILITY ANALYSIS SUITE")
     print("Author: Sham Satish Thakare (Independent Researcher)")
-    print("Status: Prepared/submitted to Artificial Intelligence (Elsevier)\n")
+    print("Status: Submitted to Artificial Intelligence (Elsevier), 2026 — Manuscript ARTINT-D-26-01491\n")
     
     reproduce_endpoint()
     reproduce_trajectory()
