@@ -18,7 +18,7 @@ $$106 = 1 + 94 + 0 + 11$$
 | **$N_{\text{hist}}$** | `HISTORICAL_PRESERVED` | **`94`** | Historical dataset registry schemas & adjudication CSVs preserved for cryptographic hash integrity. |
 | **$N_{\text{unres}}$** | `ACTIVE_UNRESOLVED` | **`0`** | Imprecise active scientific claims remaining (**ZERO REMAINING**). |
 | **$N_{\text{false}}$** | `FALSE_POSITIVE_OR_NONCLAIM` | **`11`** | Explicit quotes of prohibited terms inside lock/audit documents as negative examples. |
-| **$N_{\text{tot}}$** | `TOTAL UNIQUE FLAGGED` | **`106`** | **100% Accounted & Ledgered** in [`STATESHIFT_TERMINOLOGY_OCCURRENCE_LEDGER.csv`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/16_publication/STATESHIFT_TERMINOLOGY_OCCURRENCE_LEDGER.csv). |
+| **$N_{\text{tot}}$** | `TOTAL UNIQUE FLAGGED` | **`106`** | **100% Accounted & Ledgered** in [`STATESHIFT_TERMINOLOGY_OCCURRENCE_LEDGER.csv`](file://~/.gemini/antigravity/scratch/research-next/stateshift/16_publication/STATESHIFT_TERMINOLOGY_OCCURRENCE_LEDGER.csv). |
 
 ---
 

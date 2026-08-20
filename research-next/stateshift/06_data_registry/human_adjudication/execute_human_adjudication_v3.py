@@ -42,10 +42,10 @@ import re
 import csv
 from datetime import datetime, timezone
 
-PHASE1G_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g_real_data"
-PHASE1G4B_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g4b_reconciliation"
-PHASE1G4D_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g4d_reconciliation"
-ADJUDICATION_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/human_adjudication"
+PHASE1G_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g_real_data"
+PHASE1G4B_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g4b_reconciliation"
+PHASE1G4D_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g4d_reconciliation"
+ADJUDICATION_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/human_adjudication"
 
 def get_file_sha256(filepath):
     h = hashlib.sha256()

@@ -33,7 +33,7 @@ import torch
 from datetime import datetime, timezone
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-CANARY_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/08_phase1h_canary"
+CANARY_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/08_phase1h_canary"
 RAW_REPORT_PATH = os.path.join(CANARY_DIR, "CANARY_EXECUTION_REPORT.json")
 
 CHECKPOINTS = [

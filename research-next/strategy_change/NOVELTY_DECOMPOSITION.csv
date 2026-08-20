@@ -1,8 +1,0 @@
-component,status,notes
-N1: Showing RL reweights existing base strategies,KNOWN,"Covered by Echo Chamber (Zhao et al., 2025)"
-N2: Showing RL can alter within-strategy dynamics,KNOWN ADJACENT,Covered theoretically by Wei & Kim (2026)
-N3: Formal decomposition (Selection vs Policy Change),PARTIALLY KNOWN,Conceptual formalization
-N4: Identifying task regimes where each mechanism dominates,POSSIBLY NOVEL,Un-colonized empirical boundary
-N5: Using forced-strategy interventions to separate mechanisms,POSSIBLY NOVEL,Causal prefix-steering methodology
-N6: Class A (Prefix-Decidable) vs Class B (Recovery-Required) boundary,POSSIBLY NOVEL,Core falsifiable hypothesis
-N7: Prefix-RL vs Full-RL breakdown across Class A / Class B,POSSIBLY NOVEL,Decisive empirical test

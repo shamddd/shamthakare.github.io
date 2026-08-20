@@ -1,6 +1,0 @@
-citation_key,authors,year,title,venue,arxiv_id,status
-kang2025quagmires,Kang et al.,2025,Quagmires in SFT-RL Post-Training,arXiv / ICLR 2026 Poster,2510.01624,VERIFIED
-lee2026sage,Lee et al.,2026,SAGE: Shaping Anchors for Guided Exploration in RLVR,arXiv,2605.18864,VERIFIED
-scalelogic2026,Anonymous,2026,Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key,arXiv,2605.06638,VERIFIED
-brown2024bestofn,Brown et al.,2024,Large Language Monitored Reasoning with Best-of-N,NeurIPS 2024,2404.01234,VERIFIED
-shen2025posttraining,Shen et al.,2025,Compute Tradeoffs in Post-Training Reasoning Models,ICML 2025,2502.09876,VERIFIED

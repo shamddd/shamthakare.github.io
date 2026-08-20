@@ -28,11 +28,11 @@ import hashlib
 import csv
 from datetime import datetime, timezone
 
-PHASE1G_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g_real_data"
-PHASE1G4A_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g4a_reconciliation"
-PHASE1G4B_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g4b_reconciliation"
-PHASE1G4C_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g4c_reconciliation"
-PHASE1G4D_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g4d_reconciliation"
+PHASE1G_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g_real_data"
+PHASE1G4A_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g4a_reconciliation"
+PHASE1G4B_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g4b_reconciliation"
+PHASE1G4C_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g4c_reconciliation"
+PHASE1G4D_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g4d_reconciliation"
 
 def get_file_sha256(filepath):
     h = hashlib.sha256()

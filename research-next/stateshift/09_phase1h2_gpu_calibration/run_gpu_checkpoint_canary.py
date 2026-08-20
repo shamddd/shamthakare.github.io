@@ -36,7 +36,7 @@ os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "0"
 os.environ["HF_HUB_DISABLE_XET"] = "1"
 os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
 
-CALIBRATION_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1h2_gpu_calibration"
+CALIBRATION_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1h2_gpu_calibration"
 RAW_REPORT_PATH = os.path.join(CALIBRATION_DIR, "GPU_CANARY_EXECUTION_REPORT.json")
 REPORT_MD_PATH = os.path.join(CALIBRATION_DIR, "GPU_CANARY_FEASIBILITY_REPORT.md")
 
@@ -282,7 +282,7 @@ def run_gpu_canary_execution():
             model = AutoModelForCausalLM.from_pretrained(
                 repo,
                 revision=rev,
-                dtype=torch.float16,
+                torch_dtype=torch.float16,
                 device_map="auto",
                 trust_remote_code=True
             )

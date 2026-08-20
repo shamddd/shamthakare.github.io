@@ -1,4 +1,0 @@
-paper,recovery_states,failure_prefixes,state_matched_interaction,novelty_boundary
-"Failure-Prefix Conditioning (Kim, Shrestha, Ross 2026)",YES,YES,NO,Conditions on failure prefixes during SFT/RL; does not evaluate differential late estimand Delta_late under state-matched control.
-Interventional Training (InT / Yang et al. 2025),YES,NO,NO,Patches error trajectories for training.
-PrefixRL (Setlur et al. 2026),NO,NO,NO,Prefix FLOP optimization baseline.

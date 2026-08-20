@@ -1,4 +1,0 @@
-paper,year,venue,relevance,collision_status,notes
-"Pass@k and Test-Time Compute (Chen et al., 2021)",2021,arXiv,High,ADJACENT,Formalizes Pass@k sample complexity; does not parameterize downstream query volume Q.
-"Search Efficiency under Capability Degradation (Snell et al., 2024)",2024,arXiv,High,STRONG OVERLAP,Shows search becomes FLOP-inefficient when base accuracy drops; we extend this to up-front training amortization.
-"Serving Economics of LLM Fine-Tuning (Agrawal et al., 2024)",2024,Systems/ML,Medium,PARTIAL OVERLAP,Analyzes serving query volume Q for fine-tuning vs prompt engineering.

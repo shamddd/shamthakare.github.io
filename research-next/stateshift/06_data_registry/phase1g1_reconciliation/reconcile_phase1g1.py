@@ -30,9 +30,9 @@ import csv
 import random
 from datetime import datetime, timezone
 
-PHASE1G_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g_real_data"
+PHASE1G_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g_real_data"
 RAW_DIR = os.path.join(PHASE1G_DIR, "raw_data")
-RECON_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g1_reconciliation"
+RECON_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/phase1g1_reconciliation"
 
 def get_file_sha256(filepath):
     h = hashlib.sha256()

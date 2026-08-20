@@ -51,36 +51,36 @@ Validated offline and in container execution evidence with record tag `technical
 
 ### Part D — Reproducibility Lock
 Created frozen environment and hash locks:
-* [`PHASE1I_EXECUTION_MANIFEST.json`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_EXECUTION_MANIFEST.json)
-* [`PHASE1I_ENVIRONMENT_LOCK.md`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_ENVIRONMENT_LOCK.md)
-* [`PHASE1I_HASH_MANIFEST.sha256`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_HASH_MANIFEST.sha256)
+* [`PHASE1I_EXECUTION_MANIFEST.json`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_EXECUTION_MANIFEST.json)
+* [`PHASE1I_ENVIRONMENT_LOCK.md`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_ENVIRONMENT_LOCK.md)
+* [`PHASE1I_HASH_MANIFEST.sha256`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_HASH_MANIFEST.sha256)
 
 ### Part E — RNG & Seed Audit
-Verified deterministic seed mapping formula $Seed = MasterSeed + PairID \times 100000 + StateID \times 10000 + Checkpoint \times 100 + RolloutK$. Audited all 131,328 seeds in [`PHASE1I_RNG_AND_SEED_AUDIT.md`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_RNG_AND_SEED_AUDIT.md): **0 collisions**.
+Verified deterministic seed mapping formula $Seed = MasterSeed + PairID \times 100000 + StateID \times 10000 + Checkpoint \times 100 + RolloutK$. Audited all 131,328 seeds in [`PHASE1I_RNG_AND_SEED_AUDIT.md`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_RNG_AND_SEED_AUDIT.md): **0 collisions**.
 
 ### Part F — Resume & Crash Recovery Test
-Documented atomic persistence (`.jsonl.tmp` $\rightarrow$ `os.replace()`) and idempotent primary key skipping in [`PHASE1I_RESUME_RECOVERY_TEST.md`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_RESUME_RECOVERY_TEST.md).
+Documented atomic persistence (`.jsonl.tmp` $\rightarrow$ `os.replace()`) and idempotent primary key skipping in [`PHASE1I_RESUME_RECOVERY_TEST.md`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_RESUME_RECOVERY_TEST.md).
 
 ### Part G — Scientific Firewall Audit
-Automated assertions enforce rejection of all non-`empirical_confirmatory` records in [`PHASE1I_SCIENTIFIC_FIREWALL_AUDIT.md`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_SCIENTIFIC_FIREWALL_AUDIT.md).
+Automated assertions enforce rejection of all non-`empirical_confirmatory` records in [`PHASE1I_SCIENTIFIC_FIREWALL_AUDIT.md`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_SCIENTIFIC_FIREWALL_AUDIT.md).
 
 ### Part H — Cost Model Reconciliation
-Reconciled GPU-hours vs. wall-clock hours ($\text{Total GPU-Hours} = \text{Wall-Clock} \times \text{GPU Count}$). Established LOW ($15.42), EXPECTED ($30.84), HIGH ($60.64) budgets in [`PHASE1I_FINAL_COST_MODEL.md`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_FINAL_COST_MODEL.md). Note: Available balance ($9.43) requires an additional deposit prior to full run.
+Reconciled GPU-hours vs. wall-clock hours ($\text{Total GPU-Hours} = \text{Wall-Clock} \times \text{GPU Count}$). Established LOW ($15.42), EXPECTED ($30.84), HIGH ($60.64) budgets in [`PHASE1I_FINAL_COST_MODEL.md`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_FINAL_COST_MODEL.md). Note: Available balance ($9.43) requires an additional deposit prior to full run.
 
 ### Part I — Checkpoint Availability Audit
-Metadata-level verification for all 9 checkpoints ($t=0..256$) recorded in [`PHASE1I_CHECKPOINT_REGISTRY.json`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_CHECKPOINT_REGISTRY.json) and [`PHASE1I_CHECKPOINT_READINESS.md`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_CHECKPOINT_READINESS.md). Status: **9/9 READY**.
+Metadata-level verification for all 9 checkpoints ($t=0..256$) recorded in [`PHASE1I_CHECKPOINT_REGISTRY.json`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_CHECKPOINT_REGISTRY.json) and [`PHASE1I_CHECKPOINT_READINESS.md`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_CHECKPOINT_READINESS.md). Status: **9/9 READY**.
 
 ### Part J — Storage & I/O Plan
-Total disk capacity required (131,328 rollouts + 9 checkpoints) estimated at **~135 GB** in [`PHASE1I_STORAGE_AND_IO_PLAN.md`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_STORAGE_AND_IO_PLAN.md).
+Total disk capacity required (131,328 rollouts + 9 checkpoints) estimated at **~135 GB** in [`PHASE1I_STORAGE_AND_IO_PLAN.md`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_STORAGE_AND_IO_PLAN.md).
 
 ### Part K — Analysis Freeze
-Preregistered statistical hypotheses, FDR correction, and exclusion rules frozen in [`PHASE1I_ANALYSIS_FREEZE.md`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_ANALYSIS_FREEZE.md).
+Preregistered statistical hypotheses, FDR correction, and exclusion rules frozen in [`PHASE1I_ANALYSIS_FREEZE.md`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_ANALYSIS_FREEZE.md).
 
 ### Part L — Dry-Run Scheduler
-Generated full dry-run ledger containing **exactly 131,328 rollout placeholders** without running model inference: [`PHASE1I_DRY_RUN_LEDGER.jsonl`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_DRY_RUN_LEDGER.jsonl).
+Generated full dry-run ledger containing **exactly 131,328 rollout placeholders** without running model inference: [`PHASE1I_DRY_RUN_LEDGER.jsonl`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/PHASE1I_DRY_RUN_LEDGER.jsonl).
 
 ### Part M — Test Suite
-Automated test suite [`test_phase1i_readiness.py`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/test_phase1i_readiness.py) executed and passed **5/5 tests cleanly**.
+Automated test suite [`test_phase1i_readiness.py`](file://~/.gemini/antigravity/scratch/research-next/stateshift/09_phase1i_readiness/test_phase1i_readiness.py) executed and passed **5/5 tests cleanly**.
 
 ---
 

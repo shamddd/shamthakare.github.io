@@ -1,7 +1,0 @@
-{
-  "run_id": "PREFIXRL_seed42",
-  "episodes": 100,
-  "tokens": 5000,
-  "status": "SUCCESS",
-  "final_loss": 0.12
-}

@@ -20,7 +20,7 @@ import hashlib
 import csv
 from datetime import datetime, timezone
 
-ADJUDICATION_DIR = "/Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/human_adjudication"
+ADJUDICATION_DIR = "~/.gemini/antigravity/scratch/research-next/stateshift/06_data_registry/human_adjudication"
 
 def get_file_sha256(filepath):
     h = hashlib.sha256()

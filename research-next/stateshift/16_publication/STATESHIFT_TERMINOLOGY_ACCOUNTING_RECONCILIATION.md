@@ -20,7 +20,7 @@ $$105 = 0 + 94 + 0 + 11$$
 | **`HISTORICAL_PRESERVED`** | **`94`** | Historical dataset schemas, phase 1g/1h audit logs, and human adjudication CSVs preserved for cryptographic hash integrity. |
 | **`ACTIVE_UNRESOLVED`** | **`0`** | Imprecise active claims remaining in repository text (**ZERO REMAINING**). |
 | **`FALSE_POSITIVE_OR_NONCLAIM`** | **`11`** | Explicit quotes of prohibited terms in publication lock/audit documents as negative examples (e.g. `❌ "+11.76% acceleration"`). |
-| **`TOTAL UNIQUE FLAGGED`** | **`105`** | **100% Accounted & Ledgered** in [`STATESHIFT_TERMINOLOGY_OCCURRENCE_LEDGER.csv`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/16_publication/STATESHIFT_TERMINOLOGY_OCCURRENCE_LEDGER.csv). |
+| **`TOTAL UNIQUE FLAGGED`** | **`105`** | **100% Accounted & Ledgered** in [`STATESHIFT_TERMINOLOGY_OCCURRENCE_LEDGER.csv`](file://~/.gemini/antigravity/scratch/research-next/stateshift/16_publication/STATESHIFT_TERMINOLOGY_OCCURRENCE_LEDGER.csv). |
 
 ---
 

@@ -25,7 +25,7 @@ If viewed strictly post-repair:
 
 ## 2. Supersession Audit of Phase 1K Early Claims
 
-Early Stage-1 Phase 1K draft documents (`PHASE1K_TRAJECTORY_SIMULATION.md`, `PHASE1K_DESIGN_AUDIT.md`) contained preliminary assertions regarding $K=2$ emergence timing. These have been formally logged in [`STATESHIFT_PHASE1K_SUPERSESSION_LEDGER.csv`](file:///Users/shamthakare/.gemini/antigravity/scratch/research-next/stateshift/16_publication/STATESHIFT_PHASE1K_SUPERSESSION_LEDGER.csv) and tagged with `SUPERSEDED METHODOLOGICAL ASSESSMENT` warning headers.
+Early Stage-1 Phase 1K draft documents (`PHASE1K_TRAJECTORY_SIMULATION.md`, `PHASE1K_DESIGN_AUDIT.md`) contained preliminary assertions regarding $K=2$ emergence timing. These have been formally logged in [`STATESHIFT_PHASE1K_SUPERSESSION_LEDGER.csv`](file://~/.gemini/antigravity/scratch/research-next/stateshift/16_publication/STATESHIFT_PHASE1K_SUPERSESSION_LEDGER.csv) and tagged with `SUPERSEDED METHODOLOGICAL ASSESSMENT` warning headers.
 
 ### Authoritative Phase 1K Publication Status:
 $$\text{PHASE 1K SECONDARY TRAJECTORY EXTENSION: } \mathbf{PROSPECTIVELY\ DESIGNED\ \text{—}\ NOT\ EXECUTED}$$
