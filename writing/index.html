@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Research Notes — Sham Satish Thakare</title>
+    <meta name="description" content="Visual explanations, experiments, negative results, and technical notes from Sham Satish Thakare's work on reliable adaptive intelligent systems.">
+    <meta name="author" content="Sham Satish Thakare">
+
+    <meta property="og:title" content="Research Notes — Sham Satish Thakare">
+    <meta property="og:description" content="Technical research essays and visual explanations on reasoning calibration, RLVR post-training, and reliable AI systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shamddd.github.io/shamthakare.github.io/writing/">
+
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="canonical" href="https://shamddd.github.io/shamthakare.github.io/writing/">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrapper">
+            <a class="site-title" href="../index.html">Sham Satish Thakare</a>
+            <nav class="site-nav">
+                <a class="page-link active" href="index.html">Writing</a>
+                <a class="page-link" href="../papers.html">Publications</a>
+                <a class="page-link" href="../Sham_Thakare_Academic_CV.pdf" target="_blank">CV</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="wrapper">
+            <h1 class="page-heading">Research Notes</h1>
+            <p style="font-size: 1.1rem; color: #475569; line-height: 1.6; margin-bottom: 2rem;">
+                Visual explanations, diagnostic experiments, negative results, and technical notes from my work on <strong>Reliable Adaptive Intelligent Systems</strong>.
+            </p>
+
+            <!-- Featured Flagship Research Essay -->
+            <h2 class="section-heading">Featured Research Essay</h2>
+            <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 1.5rem; margin-bottom: 3rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); display: flex; flex-direction: column; gap: 1rem;">
+                <div style="display: flex; gap: 0.8rem; align-items: center;">
+                    <span style="background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 600; font-size: 0.75rem; text-transform: uppercase;">Working Paper / Research Note</span>
+                    <span style="font-size: 0.85rem; color: #64748b;">August 2026 · 14 min read</span>
+                </div>
+
+                <h3 style="margin: 0; font-size: 1.5rem; font-weight: 800;">
+                    <a href="when-confidence-confounds-reasoning-complexity/index.html" style="color: #0f172a; text-decoration: none;">When Confidence Proxies Confound Reasoning Complexity</a>
+                </h3>
+
+                <p style="margin: 0; font-size: 1rem; color: #475569; line-height: 1.6;">
+                    <strong>Question:</strong> Can common uncertainty proxies confound sequence completion length with mathematical error during RLVR post-training? A diagnostic audit exposing completion-length confounding ($r = 0.486, N=100$) in token predictive entropy, proving MC-dropout determinism on zero-dropout LLMs, and demonstrating via preregistered negative controls that consistency weighting produced zero observed online advantage ($d = 0.00, N=3$ seeds) over outcome-supervised GRPO.
+                </p>
+
+                <div style="margin-top: 0.5rem; display: flex; gap: 1.5rem; font-size: 0.9rem; font-weight: 600;">
+                    <a href="when-confidence-confounds-reasoning-complexity/index.html" style="color: #2563eb;">Read Interactive Essay &rarr;</a>
+                    <a href="../pdfs/ear-grpo-reasoning.pdf" target="_blank" style="color: #475569;">Working Paper PDF</a>
+                    <a href="https://github.com/shamddd/ear_grpo_reasoning" target="_blank" rel="noopener" style="color: #475569;">GitHub Repo</a>
+                </div>
+            </div>
+
+            <!-- Research Themes Section -->
+            <h2 class="section-heading">Research Themes & Active Inquiries</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 1rem;">
+                
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 1.25rem; border-radius: 8px;">
+                    <h3 style="margin-top: 0; font-size: 1.05rem; color: #2563eb;">1. Reasoning Reliability</h3>
+                    <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
+                        Evaluating confidence calibration, estimator validity, and credit assignment in LLM policy gradient post-training.
+                    </p>
+                    <a href="when-confidence-confounds-reasoning-complexity/index.html" style="font-size: 0.85rem; font-weight: 600; color: #2563eb;">Explore Essay &rarr;</a>
+                </div>
+
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 1.25rem; border-radius: 8px;">
+                    <h3 style="margin-top: 0; font-size: 1.05rem; color: #059669;">2. Agent Tool Safety</h3>
+                    <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
+                        Multi-stage tool execution interception and runtime safety verification for healthcare-commerce agents.
+                    </p>
+                    <a href="https://github.com/shamddd/medirush-safeagent" target="_blank" rel="noopener" style="font-size: 0.85rem; font-weight: 600; color: #059669;">View Code &rarr;</a>
+                </div>
+
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 1.25rem; border-radius: 8px;">
+                    <h3 style="margin-top: 0; font-size: 1.05rem; color: #7c3aed;">3. Adaptive Computation</h3>
+                    <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
+                        Predicting RL plasticity across intermediate training checkpoints to optimize compute allocation.
+                    </p>
+                    <a href="../papers/rl-plasticity.html" style="font-size: 0.85rem; font-weight: 600; color: #7c3aed;">View Paper &rarr;</a>
+                </div>
+
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 1.25rem; border-radius: 8px;">
+                    <h3 style="margin-top: 0; font-size: 1.05rem; color: #d97706;">4. Causal Observability</h3>
+                    <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
+                        Formulating state-contrast continuation metrics to evaluate error recovery under frozen structural covariates.
+                    </p>
+                    <a href="../papers/recovery-eval.html" style="font-size: 0.85rem; font-weight: 600; color: #d97706;">View Paper &rarr;</a>
+                </div>
+
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 1.25rem; border-radius: 8px;">
+                    <h3 style="margin-top: 0; font-size: 1.05rem; color: #db2777;">5. Reliable Infrastructure</h3>
+                    <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
+                        Dynamic C++20 consensus quorum adaptation under asymmetric network partitioning in distributed systems.
+                    </p>
+                    <a href="https://github.com/shamddd/quorumshift" target="_blank" rel="noopener" style="font-size: 0.85rem; font-weight: 600; color: #db2777;">View Code &rarr;</a>
+                </div>
+
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 1.25rem; border-radius: 8px;">
+                    <h3 style="margin-top: 0; font-size: 1.05rem; color: #475569;">6. Verifiable Systems</h3>
+                    <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
+                        Monte Carlo Tree Search and Step-DPO alignment for verifiable symbolic reasoning environments.
+                    </p>
+                    <a href="https://github.com/shamddd/scre-align" target="_blank" rel="noopener" style="font-size: 0.85rem; font-weight: 600; color: #475569;">View Code &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="wrapper">
+            <p>© 2026 Sham Satish Thakare · <a href="mailto:shamthakare3000@gmail.com">shamthakare3000@gmail.com</a> · <a href="https://github.com/shamddd" target="_blank" rel="noopener">GitHub (@shamddd)</a> · <a href="../Sham_Thakare_Academic_CV.pdf" target="_blank">CV (PDF)</a></p>
+        </div>
+    </footer>
+</body>
+</html>

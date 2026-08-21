@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sham Satish Thakare — Research Notes</title>
+    <link>https://shamddd.github.io/shamthakare.github.io/writing/</link>
+    <description>Visual explanations, diagnostic experiments, negative results, and technical notes from Sham Satish Thakare's work on Reliable Adaptive Intelligent Systems.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://shamddd.github.io/shamthakare.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>When Confidence Proxies Confound Reasoning Complexity</title>
+      <link>https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/</link>
+      <description>Testing estimator validity, zero-dropout compute graph determinism, and negative controls in RLVR post-training.</description>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/</guid>
+    </item>
+  </channel>
+</rss>

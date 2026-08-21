@@ -117,7 +117,9 @@
             <div class="meta-bar">
                 <span>By <strong>Sham Satish Thakare</strong></span>
                 <span>•</span>
-                <span>Research Note · Working Paper · August 2026</span>
+                <span class="status-badge" style="background:#e0f2fe; color:#0369a1; border-color:#7dd3fc;">Reliable Adaptive Intelligent Systems · Research Notes</span>
+                <span>•</span>
+                <span>August 2026</span>
                 <span>•</span>
                 <span>14 min read</span>
                 <span>•</span>
@@ -141,7 +143,7 @@
                 <div style="font-weight: 700; color: #0369a1; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.05em; margin-bottom: 0.4rem;">30-Second Summary</div>
                 <p style="margin: 0 0 0.5rem 0;"><strong>Question:</strong> Can common uncertainty proxies confound sequence completion length with mathematical error during RLVR post-training?</p>
                 <p style="margin: 0 0 0.5rem 0;"><strong>Evidence:</strong> Evaluated on GSM8K ($N = 100$ prompt clusters, 98 df), token entropy was positively correlated with length ($r = 0.486, 95\%\text{ CI } [+0.318, +0.627]$). Controlling for completion length decreased the association to $r_{\text{partial}} = -0.092$ ($p = 0.365$). Across $N = 3$ evaluated training seeds (42, 1337, 2026), proposed CA-GRPO and standard GRPO produced the same observed mean Group Pass@1 ($80.00\% \pm 0.00\%, d = 0.00$).</p>
-                <p style="margin: 0;"><strong>Boundary:</strong> These experiments evaluate <code>Qwen2.5-0.5B-Instruct</code> on mathematical reasoning; they do not establish that the same behavior holds for larger model scales ($> 7\text{B}$) or non-mathematical task domains.</p>
+                <p style="margin: 0;"><strong>Boundary:</strong> These experiments evaluate <code>Qwen2.5-0.5B-Instruct</code>; they do not establish whether the same behavior holds at larger model scales or across other model families.</p>
             </div>
         </section>
 
@@ -169,7 +171,7 @@
                 <div class="findings-box not-found">
                     <h3 style="margin-top:0; color:#b91c1c; font-size:1rem;">What They Do NOT Establish</h3>
                     <ul style="margin:0.5rem 0 0 1.2rem; padding:0; font-size:0.88rem; color:#991b1b; line-height:1.5;">
-                        <li>Do not establish that the same behavior holds for larger model scales ($> 7\text{B}$) or other model families.</li>
+                        <li>These experiments evaluate <code>Qwen2.5-0.5B-Instruct</code>; they do not establish whether the same behavior holds at larger model scales or across other model families.</li>
                         <li>Not evidence across non-mathematical domains (e.g., Code, Medical QA).</li>
                         <li>Not a universal rejection of step-level Process Reward Models (PRMs).</li>
                         <li>Not proof of universal non-inferiority beyond the evaluated $N=3$ training seeds.</li>
@@ -544,7 +546,7 @@
         <section id="limitations">
             <h2>12. Scope & Boundaries</h2>
             <p>
-                These experiments evaluate <code>Qwen2.5-0.5B-Instruct</code>; they do not establish that the same behavior holds for larger model scales ($> 7\text{B}$) or other model families.
+                These experiments evaluate <code>Qwen2.5-0.5B-Instruct</code>; they do not establish whether the same behavior holds at larger model scales or across other model families.
             </p>
 
             <!-- Figure 9 -->
@@ -583,6 +585,33 @@
   journal={Working Paper / Research Note},
   year={2026}
 }</code></pre>
+        </section>
+
+        <!-- Related Research Section -->
+        <section id="related-research" style="margin-top: 3rem; border-top: 1px solid #e2e8f0; padding-top: 2rem;">
+            <h2>Related Research Artifacts</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                <div style="background: #f8fafc; border: 1px solid #cbd5e1; padding: 1rem; border-radius: 6px;">
+                    <div style="font-size: 0.8rem; font-weight: 700; color: #7c3aed;">ADAPTIVE COMPUTATION</div>
+                    <div style="font-weight: 700; color: #0f172a; margin: 0.3rem 0;">CARLS RL Plasticity Scheduler</div>
+                    <div style="font-size: 0.85rem; color: #475569; margin-bottom: 0.5rem;">Predicting reinforcement learning plasticity across intermediate checkpoints.</div>
+                    <a href="../../papers/rl-plasticity.html" style="font-size: 0.85rem; font-weight: 600; color: #7c3aed;">View Paper &rarr;</a>
+                </div>
+
+                <div style="background: #f8fafc; border: 1px solid #cbd5e1; padding: 1rem; border-radius: 6px;">
+                    <div style="font-size: 0.8rem; font-weight: 700; color: #d97706;">CAUSAL OBSERVABILITY</div>
+                    <div style="font-weight: 700; color: #0f172a; margin: 0.3rem 0;">recovery_eval Metrics</div>
+                    <div style="font-size: 0.85rem; color: #475569; margin-bottom: 0.5rem;">Formulating error recovery metrics under frozen structural covariates.</div>
+                    <a href="../../papers/recovery-eval.html" style="font-size: 0.85rem; font-weight: 600; color: #d97706;">View Paper &rarr;</a>
+                </div>
+
+                <div style="background: #f8fafc; border: 1px solid #cbd5e1; padding: 1rem; border-radius: 6px;">
+                    <div style="font-size: 0.8rem; font-weight: 700; color: #059669;">AGENT SAFETY</div>
+                    <div style="font-weight: 700; color: #0f172a; margin: 0.3rem 0;">MediRush-SafeAgent</div>
+                    <div style="font-size: 0.85rem; color: #475569; margin-bottom: 0.5rem;">Multi-stage runtime tool execution safety interception.</div>
+                    <a href="https://github.com/shamddd/medirush-safeagent" target="_blank" rel="noopener" style="font-size: 0.85rem; font-weight: 600; color: #059669;">View Code &rarr;</a>
+                </div>
+            </div>
         </section>
 
         <!-- References -->
