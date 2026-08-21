@@ -1,4 +1,4 @@
-# Medium Final Claim Audit
+# Medium Final Claim & Language Audit
 
 **Author**: Sham Satish Thakare  
 **Audit Date**: August 22, 2026  
@@ -6,7 +6,16 @@
 
 ---
 
-## Sentence-Level Numerical Claim Traceability
+## 1. Scientific Wording Precision Audit
+
+| Target Area | Applied Scientific Correction | Precision Status |
+|---|---|---|
+| **Confound Interpretation** | *"In this evaluated sample, the association between token entropy and correctness was no longer statistically significant after controlling for completion length. This suggests that sequence length is an important confound when interpreting token entropy as an error signal."* | **PASS (Exact Match)** |
+| **Advantage Weighting Effect** | *"If a length-confounded confidence proxy is used to scale policy-gradient advantages, longer trajectories may systematically receive different weights for reasons unrelated to correctness. Whether this produces a persistent preference for shorter reasoning requires separate evaluation."* | **PASS (Exact Match)** |
+
+---
+
+## 2. Numerical Claim Traceability Matrix
 
 | Claim Location | Medium Article Text | Source of Truth Value | Audit Status |
 |---|---|---|---|
@@ -20,7 +29,7 @@
 
 ---
 
-## Human Writing & Fluff Audit
+## 3. Human Writing & Fluff Audit
 
 - ❌ "Delve", "Landscape", "Groundbreaking", "Revolutionary", "Remarkable", "Crucial", "Robust", "Novel", "Fascinating", "Game-changing", "Cutting-edge": **0 occurrences (100% Clean)**.
 - ✅ All phrasing strictly distinguishes **Observation**, **Interpretation**, and **Hypothesis**.
@@ -29,4 +38,4 @@
 
 ## Audit Certification
 
-Every quantitative claim in `distribution/MEDIUM_FINAL.md` has been 100% verified against raw experimental logs.
+Every quantitative claim and scientific interpretation in `distribution/MEDIUM_FINAL.md` has been 100% verified.

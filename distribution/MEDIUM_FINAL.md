@@ -36,7 +36,7 @@ Consider the structural difference between a single-step arithmetic recall task 
 
 Every additional generated token introduces minor categorical variance into the predictive distribution. If an uncertainty metric sums or averages token predictive entropy over a trajectory without controlling for sequence length, it naturally assigns higher "uncertainty" to long, correct mathematical proofs than to short, confident hallucinations.
 
-If an RL policy gradient algorithm scales advantage vectors by a length-confounded confidence proxy $U(y_i)$, it alters credit assignment. Trajectories with detailed multi-step reasoning receive reduced advantage weights simply because they are long. Over thousands of RLVR gradient steps, this induces length penalty distortion, pushing the policy toward concise shortcuts and penalizing the exploratory chain-of-thought derivations necessary for complex reasoning tasks.
+If a length-confounded confidence proxy is used to scale policy-gradient advantages, longer trajectories may systematically receive different weights for reasons unrelated to correctness. Whether this produces a persistent preference for shorter reasoning requires separate evaluation.
 
 ![Figure 1: Reasoning Complexity Confound Overview](https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/hero-concept.svg)
 *Figure 1: Reasoning Complexity Confound Overview ($N = 100$ prompt clusters, `Qwen2.5-0.5B-Instruct`). Longer multi-step reasoning leads to higher token entropy ($r = 0.486$), causing naive estimators to misidentify valid derivations as uncertain.*
@@ -68,7 +68,7 @@ After controlling for completion length, the association between token predictiv
 
 $$r_{\text{partial}} = -0.092 \quad (p = 0.365, \text{not statistically significant})$$
 
-Intuitively, partial correlation measures the relationship between two variables after removing the linear influence of a third variable (sequence length). Because the partial correlation collapses to non-significance ($p = 0.365$), raw token entropy operates primarily as a proxy for sequence length rather than mathematical validity.
+In this evaluated sample, the association between token entropy and correctness was no longer statistically significant after controlling for completion length. This suggests that sequence length is an important confound when interpreting token entropy as an error signal.
 
 ![Figure 3: Error Discrimination AUROC Benchmark](https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/auroc-benchmark.svg)
 *Figure 3: Error Discrimination AUROC Benchmark ($N = 100$). Self-Consistency consensus achieved AUROC = 0.812, whereas token-level proxies clustered around 0.60–0.62 due to sequence length bias.*
