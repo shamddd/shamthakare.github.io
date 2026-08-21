@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>When Confidence Proxies Confound Reasoning Complexity — Narrative Research Note</title>
+    <title>When Confidence Proxies Confound Reasoning Complexity</title>
 
     <!-- Canonical URL pointing to the main technical research article -->
-    <link rel="canonical" href="https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/" />
+    <link rel="canonical" href="https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/">
 
     <!-- Open Graph Metadata -->
-    <meta property="og:title" content="When Confidence Proxies Confound Reasoning Complexity" />
-    <meta property="og:description" content="What negative controls revealed about entropy, MC-dropout, and uncertainty-weighted RLVR." />
-    <meta property="og:image" content="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/hero-concept.png" />
-    <meta property="og:url" content="https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/medium/" />
-    <meta property="og:type" content="article" />
+    <meta property="og:title" content="When Confidence Proxies Confound Reasoning Complexity">
+    <meta property="og:description" content="What negative controls revealed about entropy, MC-dropout, and uncertainty-weighted RLVR.">
+    <meta property="og:image" content="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/hero-concept.png">
+    <meta property="og:url" content="https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/medium/">
+    <meta property="og:type" content="article">
 
     <!-- Twitter Card Metadata -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="When Confidence Proxies Confound Reasoning Complexity" />
-    <meta name="twitter:description" content="What negative controls revealed about entropy, MC-dropout, and uncertainty-weighted RLVR." />
-    <meta name="twitter:image" content="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/hero-concept.png" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="When Confidence Proxies Confound Reasoning Complexity">
+    <meta name="twitter:description" content="What negative controls revealed about entropy, MC-dropout, and uncertainty-weighted RLVR.">
+    <meta name="twitter:image" content="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/hero-concept.png">
 
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-            line-height: 1.7;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.8;
             color: #242424;
             background: #ffffff;
             margin: 0;
@@ -33,35 +33,18 @@
         .container {
             max-width: 740px;
             margin: 0 auto;
-            padding: 2rem 1.5rem 4rem 1.5rem;
-        }
-        .banner {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            padding: 1rem 1.25rem;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            color: #475569;
-            margin-bottom: 2.5rem;
-        }
-        .banner a {
-            color: #2563eb;
-            font-weight: 600;
-            text-decoration: none;
-        }
-        .banner a:hover {
-            text-decoration: underline;
+            padding: 2.5rem 1.5rem 5rem 1.5rem;
         }
         h1 {
-            font-size: 2.4rem;
+            font-size: 2.5rem;
             font-weight: 800;
-            letter-spacing: -0.02em;
+            line-height: 1.2;
             color: #0f172a;
             margin-bottom: 0.5rem;
-            line-height: 1.25;
+            letter-spacing: -0.02em;
         }
         .subtitle {
-            font-size: 1.25rem;
+            font-size: 1.3rem;
             color: #475569;
             margin-top: 0;
             margin-bottom: 1.5rem;
@@ -70,15 +53,27 @@
         .meta-line {
             font-size: 0.95rem;
             color: #64748b;
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .notice-box {
+            background: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem 1.25rem;
             margin-bottom: 2.5rem;
+            font-size: 0.95rem;
+            color: #334155;
+            border-radius: 0 6px 6px 0;
+        }
+        .notice-box a {
+            color: #2563eb;
+            font-weight: 600;
+            text-decoration: underline;
         }
         h2 {
-            font-size: 1.6rem;
+            font-size: 1.7rem;
             font-weight: 700;
             color: #0f172a;
-            margin-top: 2.5rem;
+            margin-top: 2.8rem;
             margin-bottom: 1rem;
             letter-spacing: -0.01em;
         }
@@ -87,24 +82,22 @@
             font-size: 1.1rem;
         }
         blockquote {
-            border-left: 4px solid #3b82f6;
+            border-left: 3px solid #0f172a;
             margin: 1.8rem 0;
-            padding: 0.5rem 0 0.5rem 1.25rem;
-            color: #334155;
+            padding-left: 1.25rem;
+            color: #1e293b;
             font-style: italic;
-            background: #f8fafc;
-            border-radius: 0 6px 6px 0;
+            font-size: 1.15rem;
         }
         figure {
-            margin: 2rem 0;
+            margin: 2.5rem 0;
             text-align: center;
         }
         figure img {
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 6px;
             border: 1px solid #e2e8f0;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
         }
         figcaption {
             font-size: 0.9rem;
@@ -115,8 +108,8 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 1.8rem 0;
-            font-size: 0.95rem;
+            margin: 2rem 0;
+            font-size: 1rem;
         }
         th, td {
             padding: 0.75rem 1rem;
@@ -130,62 +123,49 @@
             border-bottom: 2px solid #cbd5e1;
         }
         ul, ol {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.6rem;
             padding-left: 1.5rem;
             font-size: 1.05rem;
         }
         li {
             margin-bottom: 0.5rem;
         }
-        .code-block {
+        .metric-block {
             background: #f1f5f9;
-            padding: 0.75rem 1rem;
+            padding: 0.75rem 1.25rem;
             border-radius: 6px;
             font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-            font-size: 0.95rem;
+            font-size: 1rem;
             color: #0f172a;
-            margin: 1rem 0;
+            margin: 1.2rem 0;
+            display: inline-block;
         }
-        .footer-box {
-            margin-top: 3.5rem;
+        .footer-source {
+            margin-top: 4rem;
             padding-top: 2rem;
-            border-top: 2px solid #e2e8f0;
-            background: #f8fafc;
-            padding: 1.5rem;
-            border-radius: 8px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.95rem;
+            color: #64748b;
         }
-        .footer-box a {
+        .footer-source a {
             color: #2563eb;
-            font-weight: 600;
-            text-decoration: none;
-        }
-        .footer-box a:hover {
             text-decoration: underline;
+            word-break: break-all;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Import Notice Banner -->
-        <div class="banner">
-            <strong>Research Note / Working Paper · 2026</strong><br>
-            This article is a narrative explanation of the full technical research note. The <a href="https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/">canonical version</a> contains interactive analyses, complete figures, and reproducibility artifacts.
-        </div>
-
-        <!-- Article Container for Medium Importer -->
-        <article class="medium-import-content">
+        <article>
             <h1>When Confidence Proxies Confound Reasoning Complexity</h1>
             <p class="subtitle">What negative controls revealed about entropy, MC-dropout, and uncertainty-weighted RLVR</p>
-            <p class="meta-line">By <strong>Sham Satish Thakare</strong> · Working Paper / Research Note · 2026</p>
+            <p class="meta-line">Sham Satish Thakare · Working Paper / Research Note · 2026</p>
 
-            <!-- Featured Hero Figure -->
-            <figure>
-                <img src="../../../assets/research/rlvr-reasoning/medium/hero-concept.png" alt="Conceptual diagram showing longer reasoning associated with higher token entropy and the question of whether entropy reflects uncertainty or sequence length.">
-                <figcaption>Reasoning Complexity Confound Overview. Evaluating candidate confidence signals across mathematical reasoning rollouts.</figcaption>
-            </figure>
+            <div class="notice-box">
+                <p style="margin:0 0 0.4rem 0; font-weight:700; color:#0f172a;">Research Note / Working Paper · 2026</p>
+                <p style="margin:0;">This is the narrative version of the research. The <a href="https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/">full technical article</a> contains interactive analyses, complete figures, provenance, and reproducibility artifacts.</p>
+            </div>
 
-            <!-- Section 1: The Question -->
-            <h2>The Question</h2>
             <p>
                 When a language model produces a longer reasoning trace, should higher predictive entropy automatically be interpreted as greater uncertainty?
             </p>
@@ -211,8 +191,7 @@
                 An uncertainty proxy can look informative offline while being confounded by properties of the generated trajectory—and even a useful offline error predictor does not necessarily become a useful online credit-assignment signal.
             </p>
 
-            <!-- Section 2: Does Token Entropy Track Sequence Length? -->
-            <h2>Does Token Entropy Track Sequence Length?</h2>
+            <h2>The Question</h2>
             <p>
                 Suppose two reasoning trajectories answer the same kind of mathematical problem.
             </p>
@@ -237,31 +216,45 @@
             <p>
                 Whether that produces a persistent preference for shorter reasoning during training is a separate empirical question.
             </p>
+
+            <h2>Does Token Entropy Track Sequence Length?</h2>
             <p>
                 I evaluated candidate confidence signals on untouched GSM8K mathematical reasoning problems using Qwen2.5-0.5B-Instruct.
             </p>
             <p>
-                The confirmatory analysis used N = 100 prompt clusters. Token predictive entropy was positively correlated with completion length:
+                The confirmatory analysis used:
             </p>
-            <div class="code-block">r = 0.486,  95% CI [+0.318, +0.627]</div>
+            <p><strong>N = 100 prompt clusters</strong></p>
             <p>
-                It was also correlated with equation count (r = 0.421). This matters because an apparent relationship between entropy and correctness may partly reflect the complexity or length of the generated solution.
+                Token predictive entropy was positively correlated with completion length:
+            </p>
+            <div class="metric-block">r = 0.486</div>
+            <p>
+                with 95% CI [+0.318, +0.627]. It was also correlated with equation count: r = 0.421.
             </p>
             <p>
-                <strong>Controlling for completion length:</strong> Before controlling for length, the observed association between token entropy and correctness was r = −0.214. After controlling for completion length using partial correlation, it decreased to:
+                This matters because an apparent relationship between entropy and correctness may partly reflect the complexity or length of the generated solution.
             </p>
-            <div class="code-block">r_partial = −0.092,  p = 0.365</div>
+            <p><strong>Controlling for completion length</strong></p>
+            <p>
+                Before controlling for length, the observed association between token entropy and correctness was r = −0.214.
+            </p>
+            <p>
+                After controlling for completion length using partial correlation, it decreased to:
+            </p>
+            <div class="metric-block">r_partial = −0.092, p = 0.365</div>
+            <p>
+                The remaining association was not statistically significant in this evaluated sample.
+            </p>
             <p>
                 In this evaluated sample, the association between token entropy and correctness was no longer statistically significant after controlling for completion length. This suggests that sequence length is an important confound when interpreting token entropy as an error signal.
             </p>
 
-            <!-- Figure 1: Sequence Length Result -->
             <figure>
-                <img src="../../../assets/research/rlvr-reasoning/medium/correlation-length-entropy.png" alt="Scatter or summary plot showing positive association between completion length and token predictive entropy, r equals 0.486, across 100 GSM8K prompt clusters.">
+                <img src="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/correlation-length-entropy.png" alt="Token predictive entropy positive association with sequence completion length r = 0.486">
                 <figcaption>Token predictive entropy was positively associated with completion length in the evaluated GSM8K sample (N = 100, r = 0.486).</figcaption>
             </figure>
 
-            <!-- Section 3: A Correct-but-Complex Stress Test -->
             <h2>A Correct-but-Complex Stress Test</h2>
             <p>
                 Correlation analysis alone does not show what happens on the kinds of examples that matter most for reasoning.
@@ -275,18 +268,16 @@
             <p>
                 Across the evaluated prompt clusters, token predictive entropy produced this misranking in:
             </p>
-            <div class="code-block">42.1% of paired comparisons</div>
+            <p><strong>42.1% of paired comparisons</strong></p>
             <p>
                 In this stress test, the estimator misranked 42.1% of paired traces. If used directly as a multiplicative policy-gradient weight, such a signal can assign lower weights to some correct longer trajectories for reasons not aligned with correctness.
             </p>
 
-            <!-- Figure 2: Stress Test -->
             <figure>
-                <img src="../../../assets/research/rlvr-reasoning/medium/stress-test-failure.png" alt="Correct-but-complex stress test diagram comparing short incorrect derivation against long correct derivation.">
-                <figcaption>Correct-but-complex stress test. In 42.1% of evaluated paired comparisons, token predictive entropy ranked the long correct derivation as more uncertain than the shorter incorrect derivation.</figcaption>
+                <img src="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/stress-test-failure.png" alt="Correct but complex stress test diagram showing misranking in 42.1% of paired comparisons">
+                <figcaption>In 42.1% of evaluated paired comparisons, token predictive entropy ranked the long correct derivation as more uncertain than the shorter incorrect derivation.</figcaption>
             </figure>
 
-            <!-- Section 4: The MC-Dropout Assumption Needed an Architecture Check -->
             <h2>The MC-Dropout Assumption Needed an Architecture Check</h2>
             <p>
                 I next examined Monte Carlo dropout.
@@ -303,29 +294,27 @@
             <p>
                 For the inspected Qwen2.5-0.5B-Instruct configuration, the architecture audit found:
             </p>
-            <div class="code-block">0 active nn.Dropout modules</div>
+            <p><strong>0 active nn.Dropout modules</strong></p>
             <p>
                 in the inspected attention and MLP blocks, with attention_dropout = 0.0.
             </p>
             <p>
                 Nominal MC-dropout passes therefore produced deterministic repeated outputs in this evaluated setup:
             </p>
-            <div class="code-block">Var(log P) = 0.0000000000,  ΔLogit = 0.0</div>
+            <div class="metric-block">Var(log P) = 0.0000000000, ΔLogit = 0.0</div>
             <p>
                 The resulting policy-update vectors were collinear with standard GRPO in the evaluated calculation:
             </p>
-            <div class="code-block">cos(Δθ) = 1.000000</div>
+            <div class="metric-block">cos(Δθ) = 1.000000</div>
             <p>
                 The conclusion is deliberately architecture-specific. I am not claiming that MC-dropout is invalid for language models generally. Rather, before treating repeated stochastic inference as an uncertainty estimator, inspect whether the model configuration actually contains the stochastic mechanism the estimator requires.
             </p>
 
-            <!-- Figure 3: MC-Dropout -->
             <figure>
-                <img src="../../../assets/research/rlvr-reasoning/medium/zero-dropout-audit.png" alt="Architecture audit showing zero active dropout modules in the evaluated Qwen2.5-0.5B-Instruct configuration and deterministic repeated forward passes.">
+                <img src="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/zero-dropout-audit.png" alt="Architecture audit showing zero active dropout modules in Qwen2.5-0.5B-Instruct">
                 <figcaption>In the evaluated Qwen2.5-0.5B-Instruct configuration, nominal MC-dropout produced no predictive variance because the inspected architecture had no active dropout modules.</figcaption>
             </figure>
 
-            <!-- Section 5: A Better Offline Signal Still Did Not Guarantee Better Online Learning -->
             <h2>A Better Offline Signal Still Did Not Guarantee Better Online Learning</h2>
             <p>
                 Self-consistency provided an interesting contrast.
@@ -333,7 +322,10 @@
             <p>
                 Using K = 4 sampled completions, the observed diagnostic metrics included:
             </p>
-            <div class="code-block">AUROC = 0.812,  r_partial = −0.569 (p = 8.1 × 10⁻¹⁰)</div>
+            <div class="metric-block">AUROC = 0.812</div>
+            <p>
+                and r_partial = −0.569, p = 8.1 × 10⁻¹⁰.
+            </p>
             <p>
                 This made self-consistency a more informative offline diagnostic signal in the evaluated benchmark.
             </p>
@@ -344,15 +336,18 @@
                 Does a better offline error predictor automatically become a better online policy-gradient weight?
             </p>
             <p>
-                To test that, I evaluated Consistency-Aware GRPO (CA-GRPO) against matched controls across three independent training seeds (42, 1337, 2026):
+                To test that, I evaluated Consistency-Aware GRPO (CA-GRPO) against matched controls.
+            </p>
+            <p>
+                The experiment used three independent training seeds: 42, 1337, 2026.
             </p>
 
             <table>
                 <thead>
                     <tr>
                         <th>Method</th>
-                        <th>Group Size (K)</th>
-                        <th>Mean Pass@1 (%) [N = 3 Seeds]</th>
+                        <th>K</th>
+                        <th>Mean Pass@1</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -377,7 +372,7 @@
                         <td>80.00% ± 0.00%</td>
                     </tr>
                     <tr style="font-weight: bold; background: #f8fafc;">
-                        <td>CA-GRPO (Proposed)</td>
+                        <td>CA-GRPO</td>
                         <td>4</td>
                         <td>80.00% ± 0.00%</td>
                     </tr>
@@ -400,13 +395,11 @@
                 That is not a universal non-inferiority result. With only three training seeds, it should not be interpreted as one.
             </p>
 
-            <!-- Figure 4: Controlled RL Result -->
             <figure>
-                <img src="../../../assets/research/rlvr-reasoning/medium/rl-control-results.png" alt="Bar chart comparing Pass@1 across five controlled GRPO conditions over three training seeds.">
+                <img src="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/rl-control-results.png" alt="Bar chart comparing Pass@1 across 5 controlled GRPO conditions">
                 <figcaption>Across N = 3 evaluated training seeds, CA-GRPO and standard GRPO had the same observed mean Group Pass@1. The result describes this experiment; it does not establish universal equivalence.</figcaption>
             </figure>
 
-            <!-- Section 6: What Negative Controls Changed About My Interpretation -->
             <h2>What Negative Controls Changed About My Interpretation</h2>
             <p>
                 This experiment reinforced a distinction that is easy to miss:
@@ -432,16 +425,26 @@
                 In this experiment, the controls made the result more informative precisely because the proposed method did not outperform the baseline.
             </p>
 
-            <!-- Section 7: What I Learned -->
             <h2>What I Learned</h2>
             <ol>
-                <li><strong>Validate an estimator before optimizing with it.</strong><br>An uncertainty score should be tested against nuisance variables such as sequence length before it becomes part of a learning objective.</li>
-                <li><strong>Audit the model architecture.</strong><br>An estimator can silently degenerate if its assumed stochastic mechanism is absent from the actual model configuration.</li>
-                <li><strong>Separate offline discrimination from online utility.</strong><br>A metric with useful AUROC does not automatically provide useful policy-gradient credit assignment.</li>
-                <li><strong>Use negative controls early.</strong><br>Permuted, random, and compute-matched controls can reveal whether an apparent improvement actually depends on the proposed mechanism.</li>
+                <li>
+                    <strong>Validate an estimator before optimizing with it.</strong><br>
+                    An uncertainty score should be tested against nuisance variables such as sequence length before it becomes part of a learning objective.
+                </li>
+                <li>
+                    <strong>Audit the model architecture.</strong><br>
+                    An estimator can silently degenerate if its assumed stochastic mechanism is absent from the actual model configuration.
+                </li>
+                <li>
+                    <strong>Separate offline discrimination from online utility.</strong><br>
+                    A metric with useful AUROC does not automatically provide useful policy-gradient credit assignment.
+                </li>
+                <li>
+                    <strong>Use negative controls early.</strong><br>
+                    Permuted, random and compute-matched controls can reveal whether an apparent improvement actually depends on the proposed mechanism.
+                </li>
             </ol>
 
-            <!-- Section 8: What This Study Does Not Establish -->
             <h2>What This Study Does Not Establish</h2>
             <p>
                 The experiments evaluate Qwen2.5-0.5B-Instruct. They do not establish whether the same behavior holds at larger model scales or across other model families.
@@ -459,10 +462,9 @@
                 The result is not “uncertainty weighting does not work.”
             </p>
             <p>
-                The result is that uncertainty estimators should be validated for confounding, architectural compatibility, and online intervention utility before they are trusted as credit-assignment signals.
+                The result is that uncertainty estimators should be validated for confounding, architectural compatibility and online intervention utility before they are trusted as credit-assignment signals.
             </p>
 
-            <!-- Section 9: Where I Want to Take This Next -->
             <h2>Where I Want to Take This Next</h2>
             <p>
                 The next question is whether these observations persist across:
@@ -473,7 +475,7 @@
                 <li>broader reasoning domains;</li>
                 <li>more training seeds;</li>
                 <li>alternative uncertainty estimators;</li>
-                <li>and step-level rather than trajectory-level credit assignment.</li>
+                <li>step-level rather than trajectory-level credit assignment.</li>
             </ul>
             <p>
                 A particularly interesting direction is determining which uncertainty signals remain informative after conditioning on reasoning complexity and whether those signals predict actual learning dynamics rather than only offline correctness.
@@ -482,23 +484,32 @@
                 That distinction—between measuring uncertainty and using uncertainty to change learning—is where I think the deeper research problem lies.
             </p>
 
-            <!-- Section 10: Explore the Research -->
             <h2>Explore the Research</h2>
             <p>
-                The complete technical version contains the additional figures, interactive research explorers, experimental details, provenance information, and reproducibility artifacts.
+                The complete technical version contains additional figures, interactive research explorers, experimental details, provenance information and reproducibility artifacts.
             </p>
-            <ul>
-                <li>🌐 <strong>Canonical Technical Article</strong>: <a href="https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/">https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/</a></li>
-                <li>📄 <strong>Working Paper PDF</strong>: <a href="https://shamddd.github.io/shamthakare.github.io/pdfs/ear-grpo-reasoning.pdf">https://shamddd.github.io/shamthakare.github.io/pdfs/ear-grpo-reasoning.pdf</a></li>
-                <li>💻 <strong>Code & Reproducibility</strong>: <a href="https://github.com/shamddd/ear_grpo_reasoning">https://github.com/shamddd/ear_grpo_reasoning</a></li>
-            </ul>
             <p>
-                <strong>Research code snapshot:</strong> <code>cc2bec4</code>
+                Canonical technical article:<br>
+                <a href="https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/">https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/</a>
             </p>
-            <div class="footer-box">
-                <p style="margin:0; font-size:0.9rem; color:#475569;">
-                    This article is a narrative explanation of an ongoing Working Paper / Research Note. The <a href="https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/">canonical technical article</a> linked above is the source of record for experimental details, figures, limitations, and subsequent revisions.
-                </p>
+            <p>
+                Working paper:<br>
+                <a href="https://shamddd.github.io/shamthakare.github.io/pdfs/ear-grpo-reasoning.pdf">https://shamddd.github.io/shamthakare.github.io/pdfs/ear-grpo-reasoning.pdf</a>
+            </p>
+            <p>
+                Code:<br>
+                <a href="https://github.com/shamddd/ear_grpo_reasoning">https://github.com/shamddd/ear_grpo_reasoning</a>
+            </p>
+            <p>
+                Research code snapshot: <code>cc2bec4</code>
+            </p>
+            <p>
+                This article is a narrative explanation of an ongoing Working Paper / Research Note. The canonical technical article linked above is the source of record for experimental details, figures, limitations and subsequent revisions.
+            </p>
+
+            <div class="footer-source">
+                Originally published as a technical research note at:<br>
+                <a href="https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/">https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/</a>
             </div>
         </article>
     </div>
