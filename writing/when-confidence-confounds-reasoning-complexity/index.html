@@ -95,18 +95,17 @@
             <a href="#tldr">30-Second Summary</a>
             <a href="#findings-panel">What We Found</a>
             <a href="#intuition">1. Intuition</a>
-            <a href="#why-care">2. Why Care?</a>
-            <a href="#assumptions">3. Assumptions & Methods</a>
-            <a href="#research-question">4. Research Question</a>
-            <a href="#experimental-design">5. Experimental Pipeline</a>
-            <a href="#results-length-confound">6. Length Confounding</a>
-            <a href="#results-auroc">7. Diagnostic Benchmark</a>
-            <a href="#architectural-audit">8. Architectural Audit</a>
-            <a href="#failure-cases">9. Failure Case Analysis</a>
-            <a href="#results-rl">10. Preregistered RL Results</a>
-            <a href="#interactive-explorers">11. Interactive Explorers</a>
-            <a href="#limitations">12. Scope & Boundaries</a>
-            <a href="#inspect-evidence">13. Inspect the Evidence</a>
+            <a href="#why-care">2. Why This Matters</a>
+            <a href="#assumptions">3. Assumptions & Formulations</a>
+            <a href="#experimental-design">4. Experimental Pipeline</a>
+            <a href="#results-length-confound">5. Sequence-Length Analysis</a>
+            <a href="#results-auroc">6. Diagnostic Error Discrimination</a>
+            <a href="#architectural-audit">7. Architecture Audit</a>
+            <a href="#failure-cases">8. Correct-but-Complex Stress Test</a>
+            <a href="#results-rl">9. Controlled RL Benchmark</a>
+            <a href="#interactive-explorers">10. Interactive Research Explorers</a>
+            <a href="#limitations">11. Scope & Boundaries</a>
+            <a href="#inspect-evidence">12. Inspect the Evidence</a>
         </aside>
 
         <!-- Restrained Public Article Header -->
@@ -130,11 +129,11 @@
         </header>
 
         <!-- Artifact Versioning Box -->
-        <div class="version-box">
-            <span><strong>Article Version:</strong> v1.0</span>
-            <span><strong>Article Updated:</strong> August 21, 2026</span>
-            <span><strong>Research Code Commit:</strong> <code title="Full Hash: cc2bec46d5f2421873fe8adfb83b622ad6e10861">cc2bec4</code></span>
-            <span><strong>PDF Revision:</strong> August 16, 2026</span>
+        <div class="version-box" style="display: flex; flex-wrap: wrap; gap: 1.5rem; background: #f8fafc; border: 1px solid #cbd5e1; padding: 0.75rem 1.25rem; border-radius: 8px; font-size: 0.85rem; color: #475569; margin-bottom: 2rem;">
+            <div><span style="font-size: 0.75rem; font-weight: 700; color: #64748b; text-transform: uppercase; display: block;">ARTICLE VERSION</span> <strong style="color: #0f172a;">v1.0.1</strong></div>
+            <div><span style="font-size: 0.75rem; font-weight: 700; color: #64748b; text-transform: uppercase; display: block;">ARTICLE UPDATED</span> <strong style="color: #0f172a;">August 22, 2026</strong></div>
+            <div><span style="font-size: 0.75rem; font-weight: 700; color: #64748b; text-transform: uppercase; display: block;">PAPER REVISION</span> <strong style="color: #0f172a;">August 16, 2026</strong></div>
+            <div><span style="font-size: 0.75rem; font-weight: 700; color: #64748b; text-transform: uppercase; display: block;">RESEARCH CODE</span> <a href="https://github.com/shamddd/ear_grpo_reasoning/commit/cc2bec46d5f2421873fe8adfb83b622ad6e10861" target="_blank" rel="noopener" style="color: #2563eb; font-family: monospace; font-weight: bold; text-decoration: none;">cc2bec4</a></div>
         </div>
 
         <!-- 30-Second Summary / TL;DR -->
@@ -150,7 +149,7 @@
         <!-- Opening / Overview -->
         <section id="phenomenon">
             <p style="font-size: 1.12rem; line-height: 1.7; color: #1e293b;">
-                In reinforcement learning from verifiable rewards (RLVR) for mathematical reasoning, policy gradient algorithms such as Group Relative Policy Optimization (GRPO) compute baseline-free advantages across sampled rollouts. To protect policies from reward hacking and policy collapse, researchers frequently hypothesize that scaling advantages by internal uncertainty signals—such as token predictive entropy—will suppress unreliable trajectories. However, when benchmarked across multi-step mathematical derivations on GSM8K ($N = 100$ prompt clusters, 98 degrees of freedom), token predictive entropy was positively correlated with completion length ($r = 0.486$). After controlling for completion length, the association decreased from $r = -0.214$ to $r_{\text{partial}} = -0.092$ ($p = 0.365$, not statistically significant). Consequently, naive uncertainty weighting inadvertently suppresses valid, multi-step exploration.
+                In reinforcement learning from verifiable rewards (RLVR) for mathematical reasoning, policy gradient algorithms such as Group Relative Policy Optimization (GRPO) compute baseline-free advantages across sampled rollouts. To protect policies from reward hacking and policy collapse, researchers frequently hypothesize that scaling advantages by internal uncertainty signals—such as token predictive entropy—will suppress unreliable trajectories. However, when benchmarked across multi-step mathematical derivations on GSM8K ($N = 100$ prompt clusters, 98 degrees of freedom), token predictive entropy was positively correlated with completion length ($r = 0.486$). After controlling for completion length, the association decreased from $r = -0.214$ to $r_{\text{partial}} = -0.092$ ($p = 0.365$, not statistically significant). This raises the possibility that naive uncertainty weighting may downweight valid multi-step trajectories for reasons partly related to sequence length rather than correctness.
             </p>
         </section>
 
@@ -198,17 +197,17 @@
                     <strong>Figure 1: Reasoning Complexity Confound Overview.</strong><br>
                     • <em>What Data & Model?</em> Untouched GSM8K prompt clusters ($N = 100$), evaluated on <code>Qwen2.5-0.5B-Instruct</code>.<br>
                     • <em>What Metric?</em> Pearson correlation $r$ between sequence length and token predictive entropy.<br>
-                    • <em>What Does Result Show?</em> Longer multi-step reasoning leads to higher token entropy ($r = 0.486$). Naively assuming high entropy means error causes the estimator to penalize valid multi-step derivations in 42.1% of paired comparisons.<br>
+                    • <em>What Does Result Show?</em> Longer multi-step reasoning was associated with higher token entropy ($r = 0.486$) in the evaluated sample, illustrating how sequence length can confound interpretation of entropy as an uncertainty signal.<br>
                     • <em>What Does It Not Establish?</em> Does not prove entropy weighting fails in non-mathematical tasks.
                 </div>
             </div>
         </section>
 
-        <!-- Section 2: Why Should We Care? -->
+        <!-- Section 2: Why This Matters -->
         <section id="why-care">
-            <h2>2. Why Should We Care?</h2>
+            <h2>2. Why This Matters</h2>
             <p>
-                When an RL policy gradient algorithm (such as GRPO) scales advantage vectors by a length-confounded uncertainty proxy $U(y_i)$, it alters credit assignment. Trajectories with detailed multi-step reasoning receive reduced advantage weights simply because they are long. Over thousands of RLVR gradient steps, this induces length penalty distortion, pushing the policy toward concise, brittle shortcuts and penalizing the exploratory chain-of-thought derivations necessary for complex reasoning tasks.
+                If a length-confounded confidence proxy is used to scale policy-gradient advantages, longer trajectories may systematically receive different weights for reasons unrelated to correctness. Whether this produces a persistent preference for shorter reasoning requires separate evaluation.
             </p>
         </section>
 
@@ -235,7 +234,7 @@
                     <strong>Figure 2: Conventional Assumption vs. Observed Length Confound.</strong><br>
                     • <em>What Data & Model?</em> GSM8K ($N = 100$ prompt clusters), <code>Qwen2.5-0.5B-Instruct</code>.<br>
                     • <em>What Metric?</em> Partial correlation $r_{\text{partial}}$ controlling for sequence token length.<br>
-                    • <em>What Does Result Show?</em> Conventional intuition assumes token entropy measures error; empirical data proves it acts primarily as a sequence-length proxy ($r = 0.486$).<br>
+                    • <em>What Does Result Show?</em> Conventional intuition assumes token entropy measures error; empirical data shows a positive association with sequence completion length ($r = 0.486$).<br>
                     • <em>What Does It Not Establish?</em> Does not imply that all calibration techniques are length-confounded.
                 </div>
             </div>
@@ -251,9 +250,9 @@
             </div>
         </section>
 
-        <!-- Section 5: Experimental Pipeline -->
+        <!-- Section 4: Experimental Pipeline -->
         <section id="experimental-design">
-            <h2>5. Experimental Pipeline</h2>
+            <h2>4. Experimental Pipeline</h2>
             <p>
                 We benchmarked candidate uncertainty proxies across untouched GSM8K confirmatory data ($N = 100$ prompt clusters, 98 degrees of freedom) and preregistered a 5-way controlled RL post-training benchmark across 3 independent seeds ($N = 3$) under a canonical 256-token generation budget.
             </p>
@@ -271,9 +270,9 @@
             </div>
         </section>
 
-        <!-- Section 6: Results - Length Confounding -->
+        <!-- Section 5: Sequence-Length Analysis -->
         <section id="results-length-confound">
-            <h2>6. Results: Sequence Length Confounding ($N = 100$)</h2>
+            <h2>5. Sequence-Length Analysis ($N = 100$)</h2>
             <p>
                 Evaluating candidate confidence proxies on GSM8K ($N = 100$ prompt clusters) reveals a pattern consistent with sequence-length confounding:
             </p>
@@ -296,9 +295,9 @@
             </div>
         </section>
 
-        <!-- Section 7: Results - Diagnostic Benchmark -->
+        <!-- Section 6: Diagnostic Error Discrimination -->
         <section id="results-auroc">
-            <h2>7. Diagnostic Error Discrimination Benchmark ($N = 100$)</h2>
+            <h2>6. Diagnostic Error Discrimination Benchmark ($N = 100$)</h2>
             <p>
                 Table 1 summarizes the offline diagnostic benchmark across candidate confidence proxies on untouched GSM8K data ($N = 100$ prompt clusters, 98 degrees of freedom):
             </p>
@@ -360,14 +359,14 @@
                     • <em>What Data & Model?</em> Untouched GSM8K prompt clusters ($N = 100$), <code>Qwen2.5-0.5B-Instruct</code>.<br>
                     • <em>What Metric?</em> Area Under the Receiver Operating Characteristic Curve (AUROC).<br>
                     • <em>What Does Result Show?</em> Self-Consistency consensus achieved AUROC = 0.812, whereas token-level proxies clustered around 0.60–0.62 due to sequence length bias.<br>
-                    • <em>What Does It Not Establish?</em> Does not establish online RL policy training utility (see Section 10).
+                    • <em>What Does It Not Establish?</em> Does not establish online RL policy training utility (see Section 9).
                 </div>
             </div>
         </section>
 
-        <!-- Section 8: Architectural Audit -->
+        <!-- Section 7: Architecture Audit -->
         <section id="architectural-audit">
-            <h2>8. Architectural Audit: Zero-Dropout MC Probing Determinism</h2>
+            <h2>7. Architecture Audit: Zero-Dropout MC Probing Determinism</h2>
             <p>
                 Before benchmarking diagnostic proxies, we audited the internal execution graph of target open-weight causal models, specifically <code>Qwen/Qwen2.5-0.5B-Instruct</code>.
             </p>
@@ -394,11 +393,11 @@
             </div>
         </section>
 
-        <!-- Section 9: Failure Cases -->
+        <!-- Section 8: Correct-but-Complex Stress Test -->
         <section id="failure-cases">
-            <h2>9. Failure Case Analysis ($N = 100$)</h2>
+            <h2>8. Correct-but-Complex Stress Test ($N = 100$)</h2>
             <p>
-                In the Correct-but-Complex Stress Test ($N = 100$ prompt clusters), token predictive entropy misidentified correct multi-step reasoning traces as more uncertain than short incorrect errors in <strong>42.1% of paired comparisons</strong>.
+                In this stress test ($N = 100$ prompt clusters), the estimator misidentified correct multi-step reasoning traces as more uncertain than short incorrect errors in <strong>42.1% of paired comparisons</strong>. If used directly as a multiplicative policy-gradient weight, such a signal can assign lower weights to some correct longer trajectories for reasons not aligned with correctness.
             </p>
 
             <!-- Figure 7 -->
@@ -414,9 +413,9 @@
             </div>
         </section>
 
-        <!-- Section 10: Preregistered RL Results -->
+        <!-- Section 9: Controlled RL Benchmark -->
         <section id="results-rl">
-            <h2>10. Preregistered 5-Way Controlled RL Benchmark ($N = 3$ Seeds)</h2>
+            <h2>9. Controlled RL Benchmark ($N = 3$ Seeds)</h2>
             <p>
                 To test whether a validated offline error predictor (Self-Consistency) translates into an effective online policy gradient weight, we preregistered Consistency-Aware GRPO (CA-GRPO):
             </p>
@@ -495,9 +494,9 @@
             </div>
         </section>
 
-        <!-- Section 11: Interactive Explorers -->
+        <!-- Section 10: Interactive Research Explorers -->
         <section id="interactive-explorers">
-            <h2>11. Interactive Research Explorers</h2>
+            <h2>10. Interactive Research Explorers</h2>
 
             <!-- Metric Explainer Widget -->
             <div class="interactive-widget">
@@ -542,9 +541,9 @@
             </div>
         </section>
 
-        <!-- Section 12: Scope & Boundaries -->
+        <!-- Section 11: Scope & Boundaries -->
         <section id="limitations">
-            <h2>12. Scope & Boundaries</h2>
+            <h2>11. Scope & Boundaries</h2>
             <p>
                 These experiments evaluate <code>Qwen2.5-0.5B-Instruct</code>; they do not establish whether the same behavior holds at larger model scales or across other model families.
             </p>
@@ -562,9 +561,9 @@
             </div>
         </section>
 
-        <!-- Section 13: Inspect the Evidence -->
+        <!-- Section 12: Inspect the Evidence -->
         <section id="inspect-evidence" style="margin-top: 3rem; border-top: 1px solid #e2e8f0; padding-top: 2rem;">
-            <h2>13. Inspect the Evidence</h2>
+            <h2>12. Inspect the Evidence</h2>
             <div class="metric-card" style="background: #f8fafc;">
                 <h3 style="margin-top:0; color:#0f172a;">Evidence & Provenance Directory</h3>
                 <ul style="line-height: 1.8; font-size: 0.95rem;">
