@@ -191,6 +191,11 @@
                 An uncertainty proxy can look informative offline while being confounded by properties of the generated trajectory—and even a useful offline error predictor does not necessarily become a useful online credit-assignment signal.
             </p>
 
+            <figure>
+                <img src="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/hero-concept.png" alt="Reasoning complexity confound conceptual overview diagram">
+                <figcaption>Reasoning Complexity Confound Overview. Evaluating candidate confidence signals across mathematical reasoning rollouts.</figcaption>
+            </figure>
+
             <h2>The Question</h2>
             <p>
                 Suppose two reasoning trajectories answer the same kind of mathematical problem.
@@ -211,10 +216,7 @@
                 Longer generations involve more token transitions and more opportunities for variation in the predictive distribution. This creates a potential nuisance variable: sequence length.
             </p>
             <p>
-                If an uncertainty signal is subsequently used to scale policy-gradient advantages, a length-confounded estimator could assign different weights to trajectories for reasons that are not aligned with correctness.
-            </p>
-            <p>
-                Whether that produces a persistent preference for shorter reasoning during training is a separate empirical question.
+                If a length-confounded confidence proxy is used to scale policy-gradient advantages, longer trajectories may systematically receive different weights for reasons unrelated to correctness. Whether this produces a persistent preference for shorter reasoning requires separate evaluation.
             </p>
 
             <h2>Does Token Entropy Track Sequence Length?</h2>
