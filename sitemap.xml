@@ -7,6 +7,12 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/</loc>
+        <lastmod>2026-08-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>https://shamddd.github.io/shamthakare.github.io/papers.html</loc>
         <lastmod>2026-08-21</lastmod>
         <changefreq>weekly</changefreq>
@@ -43,39 +49,21 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://shamddd.github.io/shamthakare.github.io/papers/stateshift.html</loc>
+        <loc>https://shamddd.github.io/shamthakare.github.io/papers/medirush.html</loc>
         <lastmod>2026-08-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://shamddd.github.io/shamthakare.github.io/papers/amortized-intervention-frontiers.html</loc>
-        <lastmod>2026-08-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://shamddd.github.io/shamthakare.github.io/papers/rl-plasticity.html</loc>
         <lastmod>2026-08-21</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://shamddd.github.io/shamthakare.github.io/papers/enclaveshield.html</loc>
+        <loc>https://shamddd.github.io/shamthakare.github.io/papers/quorumshift.html</loc>
         <lastmod>2026-08-21</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://shamddd.github.io/shamthakare.github.io/papers/adaptive-replica.html</loc>
-        <lastmod>2026-08-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://shamddd.github.io/shamthakare.github.io/papers/tracemind.html</loc>
-        <lastmod>2026-08-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
 </urlset>

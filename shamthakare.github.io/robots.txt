@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://shamddd.github.io/shamthakare.github.io/sitemap.xml
