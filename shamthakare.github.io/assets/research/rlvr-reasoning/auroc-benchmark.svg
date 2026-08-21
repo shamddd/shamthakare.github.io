@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 340" width="100%" height="100%">
+  <rect width="850" height="340" fill="#0f172a" rx="12"/>
+  <text x="425" y="35" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+    Diagnostic Error Discrimination Benchmark (GSM8K, N = 100)
+  </text>
+  <text x="425" y="55" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">
+    Self-consistency achieves AUROC = 0.812, while token entropy (0.618) is degraded by sequence length bias
+  </text>
+
+  <g transform="translate(220, 80)">
+    <line x1="0" y1="0" x2="550" y2="0" stroke="#334155" stroke-dasharray="4,4"/>
+    <text x="-15" y="4" fill="#94a3b8" font-family="monospace" font-size="11" text-anchor="end">1.00</text>
+
+    <line x1="0" y1="50" x2="550" y2="50" stroke="#334155" stroke-dasharray="4,4"/>
+    <text x="-15" y="54" fill="#94a3b8" font-family="monospace" font-size="11" text-anchor="end">0.80</text>
+
+    <line x1="0" y1="100" x2="550" y2="100" stroke="#334155" stroke-dasharray="4,4"/>
+    <text x="-15" y="104" fill="#94a3b8" font-family="monospace" font-size="11" text-anchor="end">0.60</text>
+
+    <line x1="0" y1="150" x2="550" y2="150" stroke="#334155" stroke-dasharray="4,4"/>
+    <text x="-15" y="154" fill="#94a3b8" font-family="monospace" font-size="11" text-anchor="end">0.40</text>
+
+    <line x1="0" y1="200" x2="550" y2="200" stroke="#475569" stroke-width="1.5"/>
+    <text x="-15" y="204" fill="#94a3b8" font-family="monospace" font-size="11" text-anchor="end">0.00</text>
+
+    <rect x="40" y="47" width="80" height="153" fill="#10b981" rx="4"/>
+    <text x="80" y="37" fill="#34d399" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">0.812</text>
+    <text x="80" y="225" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Self-Consistency</text>
+    <text x="80" y="240" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">(K=4, N=100)</text>
+
+    <rect x="170" y="95.5" width="80" height="104.5" fill="#ef4444" rx="4"/>
+    <text x="210" y="85.5" fill="#fca5a5" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">0.618</text>
+    <text x="210" y="225" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Token Entropy</text>
+    <text x="210" y="240" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">(r_len = 0.486)</text>
+
+    <rect x="300" y="94" width="80" height="106" fill="#f59e0b" rx="4"/>
+    <text x="340" y="84" fill="#fde68a" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">0.624</text>
+    <text x="340" y="225" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Logit Margin</text>
+    <text x="340" y="240" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">(r_len = 0.495)</text>
+
+    <rect x="430" y="98.7" width="80" height="101.3" fill="#64748b" rx="4"/>
+    <text x="470" y="88.7" fill="#cbd5e1" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">0.605</text>
+    <text x="470" y="225" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Mean NLL</text>
+    <text x="470" y="240" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">(r_len = 0.432)</text>
+  </g>
+</svg>

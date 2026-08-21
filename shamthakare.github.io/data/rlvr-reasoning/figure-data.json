@@ -1,0 +1,102 @@
+{
+  "paper_title": "Estimator Validity, Reasoning Complexity, and Negative-Control Protocols for Uncertainty-Weighted Credit Assignment in RLVR Post-Training",
+  "author": "Sham Satish Thakare",
+  "last_verified": "2026-08-20",
+  "version": "v1.0",
+  "git_commit": "cc2bec4",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "dataset": "GSM8K (N=100 prompt clusters, 98 degrees of freedom)",
+  "table_1_proxies": [
+    {
+      "proxy": "Self-Consistency (K=4)",
+      "auroc": 0.812,
+      "r_err": 0.582,
+      "r_len": 0.114,
+      "partial_r": -0.569,
+      "p_val": "8.1e-10",
+      "n_samples": 100
+    },
+    {
+      "proxy": "Token Pred. Entropy",
+      "auroc": 0.618,
+      "r_err": 0.214,
+      "r_len": 0.486,
+      "partial_r": -0.092,
+      "p_val": "0.365",
+      "n_samples": 100
+    },
+    {
+      "proxy": "Mean Token NLL",
+      "auroc": 0.605,
+      "r_err": 0.198,
+      "r_len": 0.432,
+      "partial_r": -0.081,
+      "p_val": "0.422",
+      "n_samples": 100
+    },
+    {
+      "proxy": "Logit Margin Unc.",
+      "auroc": 0.624,
+      "r_err": 0.226,
+      "r_len": 0.495,
+      "partial_r": -0.104,
+      "p_val": "0.303",
+      "n_samples": 100
+    }
+  ],
+  "table_2_rl_controls": [
+    {
+      "method": "Standard-GRPO",
+      "group_size": 4,
+      "pass_at_1": 80.0,
+      "std_dev": 0.0,
+      "train_rwd": 0.12,
+      "seeds": 3
+    },
+    {
+      "method": "Compute-Matched-GRPO",
+      "group_size": 8,
+      "pass_at_1": 78.33,
+      "std_dev": 2.89,
+      "train_rwd": 0.26,
+      "seeds": 3
+    },
+    {
+      "method": "Random-Weight-Control",
+      "group_size": 4,
+      "pass_at_1": 75.0,
+      "std_dev": 5.0,
+      "train_rwd": 0.21,
+      "seeds": 3
+    },
+    {
+      "method": "Permuted-Consist.-Control",
+      "group_size": 4,
+      "pass_at_1": 80.0,
+      "std_dev": 0.0,
+      "train_rwd": 0.29,
+      "seeds": 3
+    },
+    {
+      "method": "CA-GRPO (Proposed)",
+      "group_size": 4,
+      "pass_at_1": 80.0,
+      "std_dev": 0.0,
+      "train_rwd": 0.12,
+      "seeds": 3
+    }
+  ],
+  "zero_dropout_audit": {
+    "active_dropout_modules": 0,
+    "attention_dropout": 0.0,
+    "mc_dropout_var_log_p": 0.0,
+    "delta_logit": 0.0,
+    "gradient_cosine_similarity": 1.0,
+    "order_of_operations_noise": 1e-12
+  },
+  "stress_test": {
+    "misidentification_rate_pct": 42.1,
+    "n_samples": 100,
+    "description": "Token entropy misidentifies correct multi-step reasoning traces as more uncertain than short incorrect errors in 42.1% of paired comparisons."
+  }
+}
