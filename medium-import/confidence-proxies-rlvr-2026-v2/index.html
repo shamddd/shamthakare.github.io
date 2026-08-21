@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When Confidence Proxies Confound Reasoning Complexity</title>
+    <meta name="description" content="What negative controls revealed about entropy, MC-dropout, and uncertainty-weighted RLVR.">
+    <!-- NO CANONICAL LINK ELEMENT -->
+    <!-- NO OG:URL OR JSON-LD POINTING TO TECHNICAL ARTICLE -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.8;
+            color: #242424;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 6rem 1.5rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.25;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+        .subtitle {
+            font-size: 1.3rem;
+            color: #475569;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+        }
+        .author-line {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        h2 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1.4rem;
+            font-size: 1.1rem;
+        }
+        blockquote {
+            border-left: 3px solid #0f172a;
+            margin: 1.8rem 0;
+            padding-left: 1.25rem;
+            color: #1e293b;
+            font-style: italic;
+            font-size: 1.15rem;
+        }
+        figure {
+            margin: 2.5rem 0;
+            text-align: center;
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+        figcaption {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-top: 0.75rem;
+            line-height: 1.5;
+        }
+        ul, ol {
+            margin-bottom: 1.6rem;
+            padding-left: 1.5rem;
+            font-size: 1.05rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .footer-source {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.95rem;
+            color: #64748b;
+        }
+        .footer-source a {
+            color: #2563eb;
+            text-decoration: underline;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>When Confidence Proxies Confound Reasoning Complexity</h1>
+            <p class="subtitle">What negative controls revealed about entropy, MC-dropout, and uncertainty-weighted RLVR</p>
+            <p class="author-line">Sham Satish Thakare · Working Paper / Research Note · 2026</p>
+
+            <p>
+                When a language model produces a longer reasoning trace, should higher predictive entropy automatically be interpreted as greater uncertainty?
+            </p>
+            <p>
+                My experiments suggest that this interpretation needs more care.
+            </p>
+            <p>
+                In reinforcement learning from verifiable rewards (RLVR), methods such as Group Relative Policy Optimization (GRPO) learn from groups of sampled reasoning trajectories. A tempting extension is to use an uncertainty or confidence signal—such as token predictive entropy or Monte Carlo dropout variance—to modify how strongly individual trajectories influence learning.
+            </p>
+            <p>
+                But that creates a prerequisite question:
+            </p>
+            <blockquote>
+                Does the uncertainty estimator actually measure what we think it measures?
+            </blockquote>
+            <p>
+                I investigated this question using mathematical reasoning experiments with Qwen2.5-0.5B-Instruct, diagnostic evaluation on GSM8K, architectural probing, a correct-but-complex stress test, and a controlled RL benchmark.
+            </p>
+            <p>
+                The central result was not that uncertainty estimation is useless. It was more specific:
+            </p>
+            <p>
+                An uncertainty proxy can look informative offline while being confounded by properties of the generated trajectory—and even a useful offline error predictor does not necessarily become a useful online credit-assignment signal.
+            </p>
+
+            <figure>
+                <img src="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/hero-concept.png" alt="Reasoning complexity confound conceptual overview diagram" width="1600" height="900">
+                <figcaption>Reasoning Complexity Confound Overview. Evaluating candidate confidence signals across mathematical reasoning rollouts.</figcaption>
+            </figure>
+
+            <h2>The Question</h2>
+            <p>
+                Suppose two reasoning trajectories answer the same kind of mathematical problem.
+            </p>
+            <p>
+                One is short and wrong.
+            </p>
+            <p>
+                The other is long, contains several intermediate calculations, and reaches the correct answer.
+            </p>
+            <p>
+                If the longer trajectory has higher token predictive entropy, should we conclude that the model was less reliable?
+            </p>
+            <p>
+                Not necessarily.
+            </p>
+            <p>
+                Longer generations involve more token transitions and more opportunities for variation in the predictive distribution. This creates a potential nuisance variable: sequence length.
+            </p>
+            <p>
+                If a length-confounded confidence proxy is used to scale policy-gradient advantages, longer trajectories may systematically receive different weights for reasons unrelated to correctness. Whether this produces a persistent preference for shorter reasoning requires separate evaluation.
+            </p>
+
+            <h2>Does Token Entropy Track Sequence Length?</h2>
+            <p>
+                I evaluated candidate confidence signals on untouched GSM8K mathematical reasoning problems using Qwen2.5-0.5B-Instruct across N = 100 prompt clusters.
+            </p>
+            <p>
+                Token predictive entropy was positively correlated with completion length (r = 0.486, 95% CI [+0.318, +0.627], N = 100). It was also correlated with equation count (r = 0.421).
+            </p>
+            <p>
+                This matters because an apparent relationship between entropy and correctness may partly reflect the complexity or length of the generated solution.
+            </p>
+
+            <h3>Controlling for Completion Length</h3>
+            <p>
+                Before controlling for length, the observed association between token entropy and correctness was r = −0.214.
+            </p>
+            <p>
+                After controlling for completion length using partial correlation, it decreased to r_partial = −0.092 and p = 0.365.
+            </p>
+            <p>
+                In this evaluated sample, the association between token entropy and correctness was no longer statistically significant after controlling for completion length. This suggests that sequence length is an important confound when interpreting token entropy as an error signal.
+            </p>
+
+            <figure>
+                <img src="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/correlation-length-entropy.png" alt="Token predictive entropy positive association with sequence completion length r = 0.486" width="1600" height="900">
+                <figcaption>Token predictive entropy was positively associated with completion length in the evaluated GSM8K sample (N = 100, r = 0.486).</figcaption>
+            </figure>
+
+            <h2>A Correct-but-Complex Stress Test</h2>
+            <p>
+                Correlation analysis alone does not show what happens on the kinds of examples that matter most for reasoning.
+            </p>
+            <p>
+                So I also examined a Correct-but-Complex Stress Test across N = 100 prompt clusters.
+            </p>
+            <p>
+                The comparison asks whether an estimator ranks a long, correct multi-step derivation as more uncertain than a shorter incorrect derivation.
+            </p>
+            <p>
+                Across the evaluated prompt clusters, token predictive entropy produced this misranking in 42.1% of paired comparisons.
+            </p>
+            <p>
+                In this stress test, the estimator misranked 42.1% of paired traces. If used directly as a multiplicative policy-gradient weight, such a signal can assign lower weights to some correct longer trajectories for reasons not aligned with correctness.
+            </p>
+
+            <figure>
+                <img src="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/stress-test-failure.png" alt="Correct but complex stress test diagram showing misranking in 42.1% of paired comparisons" width="1600" height="900">
+                <figcaption>In 42.1% of evaluated paired comparisons, token predictive entropy ranked the long correct derivation as more uncertain than the shorter incorrect derivation.</figcaption>
+            </figure>
+
+            <h2>The MC-Dropout Assumption Needed an Architecture Check</h2>
+            <p>
+                I next examined Monte Carlo dropout.
+            </p>
+            <p>
+                MC-dropout estimates predictive variation by performing repeated stochastic forward passes with dropout active at inference time.
+            </p>
+            <p>
+                But before running a large number of such passes, there is a simpler question:
+            </p>
+            <blockquote>
+                Does the evaluated model actually contain active dropout modules capable of producing that stochasticity?
+            </blockquote>
+            <p>
+                For the inspected Qwen2.5-0.5B-Instruct configuration, the architecture audit found 0 active nn.Dropout modules in the inspected attention and MLP blocks, with attention_dropout = 0.0.
+            </p>
+            <p>
+                Nominal MC-dropout passes therefore produced deterministic repeated outputs in this evaluated setup: Var(log P) = 0.0000000000 and ΔLogit = 0.0.
+            </p>
+            <p>
+                The resulting policy-update vectors were collinear with standard GRPO in the evaluated calculation (cos(Δθ) = 1.000000).
+            </p>
+            <p>
+                The conclusion is deliberately architecture-specific. I am not claiming that MC-dropout is invalid for language models generally. Rather, before treating repeated stochastic inference as an uncertainty estimator, inspect whether the model configuration actually contains the stochastic mechanism the estimator requires.
+            </p>
+
+            <figure>
+                <img src="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/zero-dropout-audit.png" alt="Architecture audit showing zero active dropout modules in Qwen2.5-0.5B-Instruct" width="1600" height="900">
+                <figcaption>In the evaluated Qwen2.5-0.5B-Instruct configuration, nominal MC-dropout produced no predictive variance because the inspected architecture had no active dropout modules.</figcaption>
+            </figure>
+
+            <h2>A Better Offline Signal Still Did Not Guarantee Better Online Learning</h2>
+            <p>
+                Self-consistency provided an interesting contrast.
+            </p>
+            <p>
+                Using K = 4 sampled completions, self-consistency achieved AUROC = 0.812, with r_partial = −0.569 and p = 8.1 × 10⁻¹⁰ in the evaluated offline diagnostic benchmark.
+            </p>
+            <p>
+                This made self-consistency a more informative offline diagnostic signal in the evaluated benchmark.
+            </p>
+            <p>
+                But that raised the next question:
+            </p>
+            <p>
+                Does a better offline error predictor automatically become a better online policy-gradient weight?
+            </p>
+            <p>
+                To test that, I evaluated Consistency-Aware GRPO (CA-GRPO) against matched controls across N = 3 independent training seeds (42, 1337, 2026).
+            </p>
+            <p>
+                Across N = 3 independent training seeds:
+            </p>
+            <ul>
+                <li>Standard GRPO (K = 4): 80.00% ± 0.00% Pass@1.</li>
+                <li>Compute-Matched GRPO (K = 8): 78.33% ± 2.89% Pass@1.</li>
+                <li>Random-Weight Control (K = 4): 75.00% ± 5.00% Pass@1.</li>
+                <li>Permuted-Consistency Control (K = 4): 80.00% ± 0.00% Pass@1.</li>
+                <li>CA-GRPO (K = 4): 80.00% ± 0.00% Pass@1.</li>
+            </ul>
+            <p>
+                Across these three evaluated seeds (N = 3), CA-GRPO and standard outcome-supervised GRPO produced the same observed mean Group Pass@1: 80.00% ± 0.00%.
+            </p>
+            <p>
+                The observed effect size was Cohen's d = 0.00.
+            </p>
+            <p>
+                The permuted-consistency control also produced an observed mean of 80.00% ± 0.00%.
+            </p>
+            <p>
+                Therefore, in this particular experimental setup, trajectory-specific consistency-aware advantage scaling provided no observed performance advantage over standard outcome-supervised GRPO.
+            </p>
+            <p>
+                That is not a universal non-inferiority result. With only three training seeds, it should not be interpreted as one.
+            </p>
+
+            <figure>
+                <img src="https://shamddd.github.io/shamthakare.github.io/assets/research/rlvr-reasoning/medium/rl-control-results.png" alt="Bar chart comparing Pass@1 across 5 controlled GRPO conditions over N=3 seeds" width="1600" height="900">
+                <figcaption>Across N = 3 evaluated training seeds, CA-GRPO and standard GRPO had the same observed mean Group Pass@1. The result describes this experiment; it does not establish universal equivalence.</figcaption>
+            </figure>
+
+            <h2>What Negative Controls Changed About My Interpretation</h2>
+            <p>
+                This experiment reinforced a distinction that is easy to miss:
+            </p>
+            <blockquote>
+                Offline prediction and online intervention are different problems.
+            </blockquote>
+            <p>
+                An estimator can discriminate errors reasonably well without providing useful information when inserted into an optimization rule.
+            </p>
+            <p>
+                Negative controls help separate those possibilities.
+            </p>
+            <ul>
+                <li>A <strong>permuted signal</strong> asks whether the proposed trajectory—and trajectory-specific correspondence actually matters.</li>
+                <li>A <strong>random-weight control</strong> asks whether generic perturbation produces a similar effect.</li>
+                <li>A <strong>compute-matched baseline</strong> helps distinguish an algorithmic effect from additional sampling or compute.</li>
+            </ul>
+            <p>
+                Without those controls, an improvement can be too easily attributed to the mechanism we hoped would explain it.
+            </p>
+            <p>
+                In this experiment, the controls made the result more informative precisely because the proposed method did not outperform the baseline.
+            </p>
+
+            <h2>What I Learned</h2>
+            <ol>
+                <li>
+                    <strong>Validate an estimator before optimizing with it.</strong><br>
+                    An uncertainty score should be tested against nuisance variables such as sequence length before it becomes part of a learning objective.
+                </li>
+                <li>
+                    <strong>Audit the model architecture.</strong><br>
+                    An estimator can silently degenerate if its assumed stochastic mechanism is absent from the actual model configuration.
+                </li>
+                <li>
+                    <strong>Separate offline discrimination from online utility.</strong><br>
+                    A metric with useful AUROC does not automatically provide useful policy-gradient credit assignment.
+                </li>
+                <li>
+                    <strong>Use negative controls early.</strong><br>
+                    Permuted, random and compute-matched controls can reveal whether an apparent improvement actually depends on the proposed mechanism.
+                </li>
+            </ol>
+
+            <h2>What This Study Does Not Establish</h2>
+            <p>
+                The experiments evaluate Qwen2.5-0.5B-Instruct. They do not establish whether the same behavior holds at larger model scales or across other model families.
+            </p>
+            <p>
+                The diagnostic experiments focus on mathematical reasoning benchmarks, including GSM8K and SVAMP, under the evaluated generation configuration. They do not establish the same behavior for code generation, medical QA, or other open-ended domains.
+            </p>
+            <p>
+                The controlled RL experiment uses only N = 3 independent training seeds. The observed equality between CA-GRPO and standard GRPO is therefore not a formal demonstration of universal non-inferiority.
+            </p>
+            <p>
+                The negative controls evaluate trajectory-level advantage weighting. They do not reject step-level Process Reward Models or every possible formulation of uncertainty-aware reinforcement learning.
+            </p>
+            <p>
+                The result is not “uncertainty weighting does not work.”
+            </p>
+            <p>
+                The result is that uncertainty estimators should be validated for confounding, architectural compatibility and online intervention utility before they are trusted as credit-assignment signals.
+            </p>
+
+            <h2>Where I Want to Take This Next</h2>
+            <p>
+                The next question is whether these observations persist across:
+            </p>
+            <ul>
+                <li>larger model scales;</li>
+                <li>different model families;</li>
+                <li>broader reasoning domains;</li>
+                <li>more training seeds;</li>
+                <li>alternative uncertainty estimators;</li>
+                <li>step-level rather than trajectory-level credit assignment.</li>
+            </ul>
+            <p>
+                A particularly interesting direction is determining which uncertainty signals remain informative after conditioning on reasoning complexity and whether those signals predict actual learning dynamics rather than only offline correctness.
+            </p>
+            <p>
+                That distinction—between measuring uncertainty and using uncertainty to change learning—is where I think the deeper research problem lies.
+            </p>
+
+            <h2>Explore the Research</h2>
+            <p>
+                The complete technical version contains additional figures, interactive research explorers, experimental details, provenance information and reproducibility artifacts.
+            </p>
+            <p>
+                Technical article:<br>
+                <a href="https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/">https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/</a>
+            </p>
+            <p>
+                Working paper:<br>
+                <a href="https://shamddd.github.io/shamthakare.github.io/pdfs/ear-grpo-reasoning.pdf">https://shamddd.github.io/shamthakare.github.io/pdfs/ear-grpo-reasoning.pdf</a>
+            </p>
+            <p>
+                Code:<br>
+                <a href="https://github.com/shamddd/ear_grpo_reasoning">https://github.com/shamddd/ear_grpo_reasoning</a>
+            </p>
+
+            <div class="footer-source">
+                Originally published as a technical research note at:<br>
+                <a href="https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/">https://shamddd.github.io/shamthakare.github.io/writing/when-confidence-confounds-reasoning-complexity/</a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
