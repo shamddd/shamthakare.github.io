@@ -1,0 +1,2 @@
+problem_id,arm_id,checkpoint_step,exclusion_reason,raw_file_reference,action_taken
+NONE,NONE,NONE,Zero exclusions recorded during Phase 6 prospective execution,artifacts/stateshift_v2/raw/R_0.csv,ALL_GENERATIONS_RETAINED

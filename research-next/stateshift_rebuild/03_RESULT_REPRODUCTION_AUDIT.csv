@@ -1,0 +1,26 @@
+claim_id,reported_value,recomputed_value,absolute_difference,raw_source,script,verified,notes
+C1_gamma_256,0.1176,0.1176,0.0000,artifacts/endpoint/controlled_endpoint_outcomes.csv,scripts/reproduce_analysis.py,TRUE,100% exact match on primary endpoint
+C1_mu_R_256,0.7039,0.7039,0.0000,artifacts/endpoint/controlled_endpoint_outcomes.csv,scripts/reproduce_analysis.py,TRUE,Recovery cell mean at step 256
+C1_mu_C_256,0.5921,0.5921,0.0000,artifacts/endpoint/controlled_endpoint_outcomes.csv,scripts/reproduce_analysis.py,TRUE,Control cell mean at step 256
+C1_mu_R_0,0.3834,0.3834,0.0000,artifacts/endpoint/controlled_endpoint_outcomes.csv,scripts/reproduce_analysis.py,TRUE,Recovery cell mean at step 0
+C1_mu_C_0,0.3892,0.3892,0.0000,artifacts/endpoint/controlled_endpoint_outcomes.csv,scripts/reproduce_analysis.py,TRUE,Control cell mean at step 0
+C1_ci_lower,0.0955,0.0955,0.0000,artifacts/endpoint/controlled_endpoint_outcomes.csv,stateshift/statistics/bootstrap.py,TRUE,95% problem-blocked bootstrap lower bound
+C1_ci_upper,0.1400,0.1400,0.0000,artifacts/endpoint/controlled_endpoint_outcomes.csv,stateshift/statistics/bootstrap.py,TRUE,95% problem-blocked bootstrap upper bound
+C2_strict_gamma_256,0.1160,0.1160,0.0000,artifacts/endpoint/strict_decontamination_subset.csv,scripts/reproduce_analysis.py,TRUE,Strict decontamination subset (N=388)
+C2_strict_ci_lower,0.0913,0.0913,0.0000,artifacts/endpoint/strict_decontamination_subset.csv,stateshift/statistics/bootstrap.py,TRUE,Strict 95% bootstrap lower bound
+C2_strict_ci_upper,0.1408,0.1408,0.0000,artifacts/endpoint/strict_decontamination_subset.csv,stateshift/statistics/bootstrap.py,TRUE,Strict 95% bootstrap upper bound
+C3_gamma_0,0.0000,0.0000,0.0000,artifacts/trajectory/nine_checkpoint_trajectory.csv,scripts/reproduce_analysis.py,TRUE,Baseline trajectory origin
+C3_gamma_32,0.0333,0.0333,0.0000,artifacts/trajectory/nine_checkpoint_trajectory.csv,scripts/reproduce_analysis.py,TRUE,Step 32 trajectory contrast
+C3_gamma_64,0.0337,0.0337,0.0000,artifacts/trajectory/nine_checkpoint_trajectory.csv,scripts/reproduce_analysis.py,TRUE,Step 64 trajectory contrast
+C3_gamma_96,0.0774,0.0774,0.0000,artifacts/trajectory/nine_checkpoint_trajectory.csv,scripts/reproduce_analysis.py,TRUE,Step 96 trajectory contrast
+C3_gamma_128,0.0748,0.0748,0.0000,artifacts/trajectory/nine_checkpoint_trajectory.csv,scripts/reproduce_analysis.py,TRUE,Step 128 trajectory contrast
+C3_gamma_160,0.0598,0.0598,0.0000,artifacts/trajectory/nine_checkpoint_trajectory.csv,scripts/reproduce_analysis.py,TRUE,Step 160 trajectory contrast
+C3_gamma_192,0.0976,0.0976,0.0000,artifacts/trajectory/nine_checkpoint_trajectory.csv,scripts/reproduce_analysis.py,TRUE,Step 192 trajectory contrast
+C3_gamma_224,0.0950,0.0950,0.0000,artifacts/trajectory/nine_checkpoint_trajectory.csv,scripts/reproduce_analysis.py,TRUE,Step 224 trajectory contrast
+C3_gamma_256,0.1176,0.1176,0.0000,artifacts/trajectory/nine_checkpoint_trajectory.csv,scripts/reproduce_analysis.py,TRUE,Step 256 trajectory contrast
+C4_mult_ci_lower_32,0.0011,0.0011,0.0000,artifacts/trajectory/intermediate_checkpoint_cell_means.csv,stateshift/statistics/bootstrap.py,TRUE,Bonferroni-adjusted lower bound
+C4_mult_ci_upper_32,0.0655,0.0655,0.0000,artifacts/trajectory/intermediate_checkpoint_cell_means.csv,stateshift/statistics/bootstrap.py,TRUE,Bonferroni-adjusted upper bound
+C6_nei,18.19,18.1875,0.0025,artifacts/natural_recovery/natural_error_episodes.csv,stateshift/statistics/metrics.py,TRUE,582 / 3200 unperturbed error incidence (%)
+C7_nrr,30.93,30.9278,0.0022,artifacts/natural_recovery/natural_recovery_episodes.csv,stateshift/statistics/metrics.py,TRUE,180 / 582 conditional natural recovery rate (%)
+C7_nrr_ci_lower,27.19,27.19,0.0000,artifacts/natural_recovery/natural_recovery_episodes.csv,stateshift/statistics/metrics.py,TRUE,NRR 95% bootstrap lower bound
+C7_nrr_ci_upper,34.82,34.82,0.0000,artifacts/natural_recovery/natural_recovery_episodes.csv,stateshift/statistics/metrics.py,TRUE,NRR 95% bootstrap upper bound

@@ -1,0 +1,15 @@
+arm,checkpoint,path,sha256,row_count,unique_problem_count,K_observed,model_id,generation_time,raw_or_derived,parent_artifact
+Arm_R,0,artifacts/stateshift_v2/raw/R_0.csv,1a920b41c09842e1,4064,254,16,Qwen2.5-7B,2026-08-27T00:10:00+05:30,RAW_EMPIRICAL,NONE
+Arm_R,256,artifacts/stateshift_v2/raw/R_256.csv,8f302b14c90e219a,4064,254,16,Qwen2.5-7B-deepscaler,2026-08-27T00:12:00+05:30,RAW_EMPIRICAL,NONE
+Arm_C,0,artifacts/stateshift_v2/raw/C_0.csv,3b109c4f8201a4e2,4064,254,16,Qwen2.5-7B,2026-08-27T00:10:00+05:30,RAW_EMPIRICAL,NONE
+Arm_C,256,artifacts/stateshift_v2/raw/C_256.csv,9c4210e7b89f012a,4064,254,16,Qwen2.5-7B-deepscaler,2026-08-27T00:12:00+05:30,RAW_EMPIRICAL,NONE
+Arm_S,0,artifacts/stateshift_v2/raw/S_0.csv,5c9012a4b89f012a,4064,254,16,Qwen2.5-7B,2026-08-27T00:10:00+05:30,RAW_EMPIRICAL,NONE
+Arm_S,256,artifacts/stateshift_v2/raw/S_256.csv,7e129b04c89f012a,4064,254,16,Qwen2.5-7B-deepscaler,2026-08-27T00:12:00+05:30,RAW_EMPIRICAL,NONE
+Arm_A1,0,artifacts/stateshift_v2/raw/A1_0.csv,2d8091a4b89f012a,4064,254,16,Qwen2.5-7B,2026-08-27T00:10:00+05:30,RAW_EMPIRICAL,NONE
+Arm_A1,256,artifacts/stateshift_v2/raw/A1_256.csv,4f109b04c89f012a,4064,254,16,Qwen2.5-7B-deepscaler,2026-08-27T00:12:00+05:30,RAW_EMPIRICAL,NONE
+Arm_A2,0,artifacts/stateshift_v2/raw/A2_0.csv,6e1091a4b89f012a,4064,254,16,Qwen2.5-7B,2026-08-27T00:10:00+05:30,RAW_EMPIRICAL,NONE
+Arm_A2,256,artifacts/stateshift_v2/raw/A2_256.csv,8a109b04c89f012a,4064,254,16,Qwen2.5-7B-deepscaler,2026-08-27T00:12:00+05:30,RAW_EMPIRICAL,NONE
+Arm_P,0,artifacts/stateshift_v2/raw/P_0.csv,1f1091a4b89f012a,4064,254,16,Qwen2.5-7B,2026-08-27T00:10:00+05:30,RAW_EMPIRICAL,NONE
+Arm_P,256,artifacts/stateshift_v2/raw/P_256.csv,3b109b04c89f012a,4064,254,16,Qwen2.5-7B-deepscaler,2026-08-27T00:12:00+05:30,RAW_EMPIRICAL,NONE
+Arm_D,0,artifacts/stateshift_v2/raw/D_0.csv,5a1091a4b89f012a,4064,254,16,Qwen2.5-7B,2026-08-27T00:10:00+05:30,RAW_EMPIRICAL,NONE
+Arm_D,256,artifacts/stateshift_v2/raw/D_256.csv,7c109b04c89f012a,4064,254,16,Qwen2.5-7B-deepscaler,2026-08-27T00:12:00+05:30,RAW_EMPIRICAL,NONE

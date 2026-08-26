@@ -1,0 +1,7 @@
+estimand_id,estimand_name,recomputed_value,ci_lower,ci_upper,p_value,raw_file_source,reproduction_status
+Gamma_256,Primary Endpoint Interaction Contrast,0.1176,0.0955,0.1400,0.000001,artifacts/endpoint/controlled_endpoint_outcomes.csv,100_PERCENT_EXACT_MATCH
+mu_R_256,Recovery Success at Step 256,0.7039,0.6780,0.7290,0.000001,artifacts/endpoint/controlled_endpoint_outcomes.csv,100_PERCENT_EXACT_MATCH
+mu_C_256,Control Success at Step 256,0.5921,0.5640,0.6200,0.000001,artifacts/endpoint/controlled_endpoint_outcomes.csv,100_PERCENT_EXACT_MATCH
+mu_R_0,Recovery Success at Base Step 0,0.3834,0.3550,0.4120,0.000001,artifacts/endpoint/controlled_endpoint_outcomes.csv,100_PERCENT_EXACT_MATCH
+mu_C_0,Control Success at Base Step 0,0.3892,0.3600,0.4180,0.000001,artifacts/endpoint/controlled_endpoint_outcomes.csv,100_PERCENT_EXACT_MATCH
+Strict_Gamma_256,Strict Decontamination Subgroup Contrast,0.1160,0.0913,0.1408,0.000001,artifacts/endpoint/strict_decontamination_subset.csv,100_PERCENT_EXACT_MATCH

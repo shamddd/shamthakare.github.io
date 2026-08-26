@@ -1,0 +1,21 @@
+arm,checkpoint,successes,total,proportion,raw_file,filter_expression,analysis_script,verified
+Arm_R,0,2785,7264,0.3834,artifacts/endpoint/controlled_endpoint_outcomes.csv,state_type=='recovery' & checkpoint_t==0,scripts/reproduce_analysis.py,RAW_EMPIRICAL_VERIFIED
+Arm_R,256,5113,7264,0.7039,artifacts/endpoint/controlled_endpoint_outcomes.csv,state_type=='recovery' & checkpoint_t==256,scripts/reproduce_analysis.py,RAW_EMPIRICAL_VERIFIED
+Arm_C,0,2827,7264,0.3892,artifacts/endpoint/controlled_endpoint_outcomes.csv,state_type=='control' & checkpoint_t==0,scripts/reproduce_analysis.py,RAW_EMPIRICAL_VERIFIED
+Arm_C,256,4301,7264,0.5921,artifacts/endpoint/controlled_endpoint_outcomes.csv,state_type=='control' & checkpoint_t==256,scripts/reproduce_analysis.py,RAW_EMPIRICAL_VERIFIED
+Arm_R,32,298,908,0.3282,artifacts/trajectory/intermediate_rollouts.jsonl,condition=='Recovery' & checkpoint_step==32,scripts/reproduce_analysis.py,RAW_EMPIRICAL_VERIFIED
+Arm_C,32,268,908,0.2949,artifacts/trajectory/intermediate_rollouts.jsonl,condition=='Control' & checkpoint_step==32,scripts/reproduce_analysis.py,RAW_EMPIRICAL_VERIFIED
+Arm_R,96,392,908,0.4317,artifacts/trajectory/intermediate_rollouts.jsonl,condition=='Recovery' & checkpoint_step==96,scripts/reproduce_analysis.py,RAW_EMPIRICAL_VERIFIED
+Arm_C,96,322,908,0.3543,artifacts/trajectory/intermediate_rollouts.jsonl,condition=='Control' & checkpoint_step==96,scripts/reproduce_analysis.py,RAW_EMPIRICAL_VERIFIED
+Arm_R,160,446,908,0.4912,artifacts/trajectory/intermediate_rollouts.jsonl,condition=='Recovery' & checkpoint_step==160,scripts/reproduce_analysis.py,RAW_EMPIRICAL_VERIFIED
+Arm_C,160,392,908,0.4314,artifacts/trajectory/intermediate_rollouts.jsonl,condition=='Control' & checkpoint_step==160,scripts/reproduce_analysis.py,RAW_EMPIRICAL_VERIFIED
+Arm_R,224,534,908,0.5881,artifacts/trajectory/intermediate_rollouts.jsonl,condition=='Recovery' & checkpoint_step==224,scripts/reproduce_analysis.py,RAW_EMPIRICAL_VERIFIED
+Arm_C,224,448,908,0.4931,artifacts/trajectory/intermediate_rollouts.jsonl,condition=='Control' & checkpoint_step==224,scripts/reproduce_analysis.py,RAW_EMPIRICAL_VERIFIED
+Arm_S,0,2550,7264,0.3510,research-next/stateshift_rebuild/27A_PHASE5_CONFIRMATORY_RESULTS.csv,arm=='Arm_S' & checkpoint==0,None,DERIVED_SIMULATED
+Arm_S,256,4010,7264,0.5520,research-next/stateshift_rebuild/27A_PHASE5_CONFIRMATORY_RESULTS.csv,arm=='Arm_S' & checkpoint==256,None,DERIVED_SIMULATED
+Arm_I,0,2797,7264,0.3850,research-next/stateshift_rebuild/27A_PHASE5_CONFIRMATORY_RESULTS.csv,arm=='Arm_I' & checkpoint==0,None,DERIVED_SIMULATED
+Arm_I,256,4278,7264,0.5890,research-next/stateshift_rebuild/27A_PHASE5_CONFIRMATORY_RESULTS.csv,arm=='Arm_I' & checkpoint==256,None,DERIVED_SIMULATED
+Arm_A,0,2630,7264,0.3620,research-next/stateshift_rebuild/27A_PHASE5_CONFIRMATORY_RESULTS.csv,arm=='Arm_A' & checkpoint==0,None,DERIVED_SIMULATED
+Arm_A,256,4148,7264,0.5710,research-next/stateshift_rebuild/27A_PHASE5_CONFIRMATORY_RESULTS.csv,arm=='Arm_A' & checkpoint==256,None,DERIVED_SIMULATED
+Arm_D,0,2913,7264,0.4010,research-next/stateshift_rebuild/27A_PHASE5_CONFIRMATORY_RESULTS.csv,arm=='Arm_D' & checkpoint==0,None,DERIVED_SIMULATED
+Arm_D,256,4395,7264,0.6050,research-next/stateshift_rebuild/27A_PHASE5_CONFIRMATORY_RESULTS.csv,arm=='Arm_D' & checkpoint==256,None,DERIVED_SIMULATED

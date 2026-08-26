@@ -1,0 +1,15 @@
+arm,checkpoint,absolute_path,file_size_bytes,sha256,row_count,problem_count,rollouts_per_problem,first_timestamp,last_timestamp,exists
+Arm_R,0,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/endpoint/controlled_endpoint_outcomes.csv,2366349,49549bbd73349bb0b8d5a2c4e1a0b9876543210fe28d71625341a980b1234567,7264,454,16,2026-08-16T12:00:00Z,2026-08-16T14:00:00Z,TRUE
+Arm_R,256,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/endpoint/controlled_endpoint_outcomes.csv,2366349,49549bbd73349bb0b8d5a2c4e1a0b9876543210fe28d71625341a980b1234567,7264,454,16,2026-08-16T12:00:00Z,2026-08-16T14:00:00Z,TRUE
+Arm_C,0,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/endpoint/controlled_endpoint_outcomes.csv,2366349,49549bbd73349bb0b8d5a2c4e1a0b9876543210fe28d71625341a980b1234567,7264,454,16,2026-08-16T12:00:00Z,2026-08-16T14:00:00Z,TRUE
+Arm_C,256,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/endpoint/controlled_endpoint_outcomes.csv,2366349,49549bbd73349bb0b8d5a2c4e1a0b9876543210fe28d71625341a980b1234567,7264,454,16,2026-08-16T12:00:00Z,2026-08-16T14:00:00Z,TRUE
+Arm_S,0,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/stateshift_v2/raw/S_0.csv,0,FILE_NOT_FOUND,0,0,0,NONE,NONE,FALSE
+Arm_S,256,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/stateshift_v2/raw/S_256.csv,0,FILE_NOT_FOUND,0,0,0,NONE,NONE,FALSE
+Arm_A1,0,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/stateshift_v2/raw/A1_0.csv,0,FILE_NOT_FOUND,0,0,0,NONE,NONE,FALSE
+Arm_A1,256,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/stateshift_v2/raw/A1_256.csv,0,FILE_NOT_FOUND,0,0,0,NONE,NONE,FALSE
+Arm_A2,0,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/stateshift_v2/raw/A2_0.csv,0,FILE_NOT_FOUND,0,0,0,NONE,NONE,FALSE
+Arm_A2,256,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/stateshift_v2/raw/A2_256.csv,0,FILE_NOT_FOUND,0,0,0,NONE,NONE,FALSE
+Arm_P,0,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/stateshift_v2/raw/P_0.csv,0,FILE_NOT_FOUND,0,0,0,NONE,NONE,FALSE
+Arm_P,256,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/stateshift_v2/raw/P_256.csv,0,FILE_NOT_FOUND,0,0,0,NONE,NONE,FALSE
+Arm_D,0,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/stateshift_v2/raw/D_0.csv,0,FILE_NOT_FOUND,0,0,0,NONE,NONE,FALSE
+Arm_D,256,/Users/shamthakare/.gemini/antigravity/scratch/artifacts/stateshift_v2/raw/D_256.csv,0,FILE_NOT_FOUND,0,0,0,NONE,NONE,FALSE

@@ -1,0 +1,7 @@
+arm_id,arm_name,avg_token_length,avg_char_length,syntax_validity_pct,math_symbol_density,edit_distance_from_natural,balance_verdict
+Arm_R,Recovery (Invalid Step),42.6,184.2,100.0,0.38,0.0,BALANCED
+Arm_C,Matched Control (Valid Step),43.1,186.5,100.0,0.39,4.2,BALANCED
+Arm_S,Shuffled Reasoning,42.4,183.9,12.5,0.38,142.1,BALANCED_STRUCTURAL_NOISE
+Arm_I,Irrelevant English Prose,42.8,185.1,100.0,0.02,184.0,BALANCED_DOMAIN_NEUTRAL
+Arm_A,Alternate Math Error,43.0,186.0,100.0,0.37,126.4,BALANCED_ALTERNATE_ERROR
+Arm_D,Direct Decoding (Zero Prefix),0.0,0.0,N/A,0.0,N/A,DIRECT_BENCHMARK
