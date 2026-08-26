@@ -5,8 +5,8 @@
 **ISO-8601 Timestamp**: `2026-08-27T00:22:20+05:30` (IST) / `2026-08-26T18:52:20Z` (UTC)  
 **GitHub Repository**: `https://github.com/shamddd/stateshift.git`  
 **Git Branch**: `main`  
-**Old Remote HEAD SHA**: `aae18a6218ed9b5c7155e16d48b645b4322b754c`  
-**New Verified Remote HEAD SHA**: `750039aa76bcd197ca7abf4fd91f202260914afb`  
+**Canonical Protocol Freeze Commit SHA**: `750039aa76bcd197ca7abf4fd91f202260914afb`  
+**Certificate Commit SHA**: `df492d970873e69c441f3cbad4ea0707878465b8`  
 **Parent Commit SHA**: `aae18a6218ed9b5c7155e16d48b645b4322b754c`  
 **Author Timestamp**: `2026-08-27T00:18:20+05:30`  
 **Committer Timestamp**: `2026-08-27T00:22:20+05:30`  
