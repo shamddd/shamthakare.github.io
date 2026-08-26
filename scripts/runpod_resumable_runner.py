@@ -4,16 +4,21 @@ StateShift Real vLLM Execution Engine for Phase 8
 Author: Sham Satish Thakare (Independent Researcher)
 """
 
-import os, sys, json, time, hashlib, datetime, argparse, gc
+import os, sys, json, time, hashlib, datetime, argparse, gc, subprocess
 
 SCIENTIFIC_PROTOCOL_SHA = "750039aa76bcd197ca7abf4fd91f202260914afb"
-EXECUTION_CODE_SHA = "47d95d22177c3a17d5f1e9bcd604ed53bb6306bd"
 
 BASE_MODEL_ID = "Qwen/Qwen2.5-7B"
 BASE_REVISION_SHA = "e1d4b910a892049b120c4a8617ab85d0b31323cf"
 
 POST_TRAINED_MODEL_ID = "UWNSL/Qwen2.5-7B-deepscaler"
 POST_TRAINED_REVISION_SHA = "9a83f120c4a8617ab85d0b31323cfeb18204b910a"
+
+def get_git_sha():
+    try:
+        return subprocess.check_output('git rev-parse HEAD', shell=True, text=True).strip()
+    except Exception:
+        return "UNKNOWN_EXECUTION_SHA"
 
 def parse_boxed_answer(text):
     if not text:
@@ -37,9 +42,9 @@ def parse_boxed_answer(text):
     return ""
 
 def verify_answer(parsed, reference):
-    if not parsed or not reference:
+    if not parsed or reference is None:
         return 0
-    parsed_clean = parsed.replace(",", "").strip()
+    parsed_clean = str(parsed).replace(",", "").strip()
     ref_clean = str(reference).replace(",", "").strip()
     if parsed_clean == ref_clean:
         return 1
@@ -72,7 +77,7 @@ def load_completed_keys(output_dir):
 def update_ledger(ledger_path, total_expected, completed_count, elapsed_hours, estimated_cost, last_job_key="NONE"):
     ledger = {
         "scientific_protocol_sha": SCIENTIFIC_PROTOCOL_SHA,
-        "execution_code_sha": EXECUTION_CODE_SHA,
+        "execution_code_sha": get_git_sha(),
         "total_expected_jobs": total_expected,
         "completed_jobs": completed_count,
         "remaining_jobs": total_expected - completed_count,
@@ -114,7 +119,6 @@ def run_real_vllm_inference(jobs, output_dir, max_budget_usd, cost_per_hour, bat
             return
         print(f"=== LOADING MODEL {model_id} (Revision: {model_revision[:8]}...) ===")
         llm = LLM(model=model_id, revision=model_revision, tensor_parallel_size=1, trust_remote_code=True)
-        sampling_params = SamplingParams(temperature=0.7, top_p=0.95, max_tokens=1024)
 
         for i in range(0, len(cohort_jobs), batch_size):
             # Budget check
@@ -129,12 +133,23 @@ def run_real_vllm_inference(jobs, output_dir, max_budget_usd, cost_per_hour, bat
 
             batch = cohort_jobs[i:i+batch_size]
             prompts = [f"{j['prompt']}\n{j['prefix']}" for j in batch]
-            outputs = llm.generate(prompts, sampling_params)
+            
+            # Apply request-level seeds deterministically
+            sampling_params_list = [
+                SamplingParams(temperature=0.7, top_p=0.95, max_tokens=1024, seed=j['seed'])
+                for j in batch
+            ]
+
+            # vLLM generate call with per-request sampling params
+            outputs = [llm.generate(p, sp)[0] for p, sp in zip(prompts, sampling_params_list)]
 
             for job_item, out in zip(batch, outputs):
                 raw_text = out.outputs[0].text
                 parsed = parse_boxed_answer(raw_text)
-                verifier_res = verify_answer(parsed, job_item.get('reference_answer', '42'))
+                
+                # Strict reference answer lookup with no fallback
+                ref_ans = job_item['reference_answer']
+                verifier_res = verify_answer(parsed, ref_ans)
                 
                 out_fname = f"gsm8k_{job_item['arm']}_{job_item['checkpoint']}.jsonl"
                 out_fpath = os.path.join(output_dir, out_fname)
@@ -145,11 +160,13 @@ def run_real_vllm_inference(jobs, output_dir, max_budget_usd, cost_per_hour, bat
                     "checkpoint": job_item['checkpoint'],
                     "rollout_index": job_item['rollout_index'],
                     "seed": job_item['seed'],
+                    "effective_generation_seed": job_item['seed'],
                     "job_key": job_item['job_key'],
                     "model_id": model_id,
                     "model_revision": model_revision,
                     "prompt": job_item['prompt'],
                     "prefix": job_item['prefix'],
+                    "reference_answer": ref_ans,
                     "prompt_hash": hashlib.sha256(job_item['prompt'].encode()).hexdigest(),
                     "prefix_hash": hashlib.sha256(job_item['prefix'].encode()).hexdigest(),
                     "raw_completion": raw_text,
@@ -173,10 +190,33 @@ def run_real_vllm_inference(jobs, output_dir, max_budget_usd, cost_per_hour, bat
     process_checkpoint_cohort(ckpt0_jobs, BASE_MODEL_ID, BASE_REVISION_SHA)
     process_checkpoint_cohort(ckpt256_jobs, POST_TRAINED_MODEL_ID, POST_TRAINED_REVISION_SHA)
 
+def check_manifest_overlap(bench_manifest_path, conf_manifest_path):
+    bench_pids = set()
+    conf_pids = set()
+    
+    if os.path.exists(bench_manifest_path):
+        with open(bench_manifest_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                if line.strip():
+                    bench_pids.add(json.loads(line)['problem_id'])
+
+    if os.path.exists(conf_manifest_path):
+        with open(conf_manifest_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                if line.strip():
+                    conf_pids.add(json.loads(line)['problem_id'])
+
+    overlap = bench_pids.intersection(conf_pids)
+    if overlap:
+        print(f"FAIL-CLOSED: Benchmark manifest overlaps confirmatory manifest on {len(overlap)} problems: {overlap}")
+        return False
+    return True
+
 def main():
     start_time = time.time()
     parser = argparse.ArgumentParser(description="StateShift Real vLLM Execution Engine")
     parser.add_argument("--manifest", default="artifacts/stateshift_v4/manifest/confirmatory_112k_job_manifest.jsonl")
+    parser.add_argument("--benchmark_manifest", default="artifacts/stateshift_v4/manifest/pilot_benchmark_job_manifest.jsonl")
     parser.add_argument("--output_dir", default=None)
     parser.add_argument("--max_budget_usd", type=float, default=4.0)
     parser.add_argument("--cost_per_hour", type=float, default=1.69)
@@ -199,25 +239,40 @@ def main():
     os.makedirs(args.output_dir, exist_ok=True)
     ledger_path = os.path.join(os.path.dirname(args.output_dir), "phase8_execution_ledger.json")
 
-    # Load manifest
-    jobs = []
-    if os.path.exists(args.manifest):
-        with open(args.manifest, 'r', encoding='utf-8') as f:
-            for line in f:
-                if line.strip():
-                    jobs.append(json.loads(line))
-
     # Benchmark mode
     if args.benchmark_jobs > 0:
         if args.mock:
             print("FAIL-CLOSED: Benchmark mode requires real CUDA GPU inference!")
             sys.exit(1)
-        # Real GPU benchmark execution on DEV/PILOT problems
-        run_real_vllm_inference(jobs[:args.benchmark_jobs], args.output_dir, args.max_budget_usd, args.cost_per_hour)
+        
+        # Verify zero overlap between benchmark manifest and confirmatory manifest
+        if not check_manifest_overlap(args.benchmark_manifest, args.manifest):
+            sys.exit(1)
+
+        bench_jobs = []
+        if os.path.exists(args.benchmark_manifest):
+            with open(args.benchmark_manifest, 'r', encoding='utf-8') as f:
+                for line in f:
+                    if line.strip():
+                        bench_jobs.append(json.loads(line))
+
+        run_real_vllm_inference(bench_jobs[:args.benchmark_jobs], args.output_dir, args.max_budget_usd, args.cost_per_hour)
         return
 
+    # Confirmatory mode
+    jobs = []
+    if os.path.exists(args.manifest):
+        with open(args.manifest, 'r', encoding='utf-8') as f:
+            for line in f:
+                if line.strip():
+                    j = json.loads(line)
+                    # Verify required fields
+                    if 'reference_answer' not in j or not j['reference_answer']:
+                        print(f"FAIL-CLOSED: Job {j.get('job_key')} is missing reference_answer!")
+                        sys.exit(1)
+                    jobs.append(j)
+
     if args.mock:
-        # Execute mock testing loop writing ONLY to artifacts/stateshift_mock/
         completed_keys = load_completed_keys(args.output_dir)
         pending = [j for j in jobs if j['job_key'] not in completed_keys]
         for idx, job in enumerate(pending):
@@ -236,13 +291,15 @@ def main():
                 "checkpoint": ckpt,
                 "rollout_index": job['rollout_index'],
                 "seed": job['seed'],
+                "effective_generation_seed": job['seed'],
                 "job_key": job['job_key'],
                 "model_id": job['model_id'],
                 "model_revision": BASE_REVISION_SHA if ckpt==0 else POST_TRAINED_REVISION_SHA,
-                "prompt": f"Solve {job['problem_id']}",
-                "prefix": f"Step 1: Arm {arm} prefix",
-                "prompt_hash": hashlib.sha256(f"prompt_{job['problem_id']}".encode()).hexdigest(),
-                "prefix_hash": hashlib.sha256(f"prefix_{arm}".encode()).hexdigest(),
+                "prompt": job.get('prompt', f"Solve {job['problem_id']}"),
+                "prefix": job.get('prefix', f"Step 1: Arm {arm} prefix"),
+                "reference_answer": job['reference_answer'],
+                "prompt_hash": hashlib.sha256(job.get('prompt', '').encode()).hexdigest(),
+                "prefix_hash": hashlib.sha256(job.get('prefix', '').encode()).hexdigest(),
                 "raw_completion": f"Step 1: Mock rollout for {job['problem_id']}. Final Answer: \\boxed{{{100 if succ else 999}}}.",
                 "parsed_answer": str(100 if succ else 999),
                 "verifier_result": 1 if succ else 0,
@@ -256,7 +313,6 @@ def main():
                 f.write(json.dumps(record) + '\n')
         update_ledger(ledger_path, len(jobs), len(jobs), 0.001, 0.0)
     else:
-        # Real vLLM inference call
         run_real_vllm_inference(jobs, args.output_dir, args.max_budget_usd, args.cost_per_hour)
 
 if __name__ == "__main__":

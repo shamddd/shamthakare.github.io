@@ -1,0 +1,8 @@
+# Pinned Requirements for StateShift Phase 8 RunPod GPU Execution
+vllm>=0.6.0
+torch>=2.4.0
+transformers>=4.44.0
+sympy>=1.12
+numpy>=1.26.0
+pandas>=2.2.0
+pytest>=8.0.0

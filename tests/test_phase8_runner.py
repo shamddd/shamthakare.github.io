@@ -11,8 +11,8 @@ def test_runner_mock_execution(tmp_path):
     
     # Create sample manifest
     jobs = [
-        {"job_key": "p1_R_0_k0", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": 0, "seed": 42, "model_id": "Qwen/Qwen2.5-7B"},
-        {"job_key": "p1_R_0_k1", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": 1, "seed": 43, "model_id": "Qwen/Qwen2.5-7B"},
+        {"job_key": "p1_R_0_k0", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": 0, "seed": 42, "model_id": "Qwen/Qwen2.5-7B", "reference_answer": "42"},
+        {"job_key": "p1_R_0_k1", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": 1, "seed": 43, "model_id": "Qwen/Qwen2.5-7B", "reference_answer": "42"},
     ]
     with open(manifest_file, "w") as f:
         for j in jobs:
@@ -38,8 +38,8 @@ def test_runner_resumption(tmp_path):
     manifest_file = tmp_path / "manifest.jsonl"
     
     jobs = [
-        {"job_key": "p1_R_0_k0", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": 0, "seed": 42, "model_id": "Qwen/Qwen2.5-7B"},
-        {"job_key": "p1_R_0_k1", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": 1, "seed": 43, "model_id": "Qwen/Qwen2.5-7B"},
+        {"job_key": "p1_R_0_k0", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": 0, "seed": 42, "model_id": "Qwen/Qwen2.5-7B", "reference_answer": "42"},
+        {"job_key": "p1_R_0_k1", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": 1, "seed": 43, "model_id": "Qwen/Qwen2.5-7B", "reference_answer": "42"},
     ]
     with open(manifest_file, "w") as f:
         for j in jobs:
@@ -50,7 +50,7 @@ def test_runner_resumption(tmp_path):
     subprocess.run(cmd1, check=True)
 
     # Add 3rd job to manifest
-    jobs.append({"job_key": "p1_R_0_k2", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": 2, "seed": 44, "model_id": "Qwen/Qwen2.5-7B"})
+    jobs.append({"job_key": "p1_R_0_k2", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": 2, "seed": 44, "model_id": "Qwen/Qwen2.5-7B", "reference_answer": "42"})
     with open(manifest_file, "w") as f:
         for j in jobs:
             f.write(json.dumps(j) + "\n")
@@ -69,7 +69,7 @@ def test_runner_budget_cap_halting(tmp_path):
     output_dir = tmp_path / "raw"
     manifest_file = tmp_path / "manifest.jsonl"
     
-    jobs = [{"job_key": f"p1_R_0_k{i}", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": i, "seed": i, "model_id": "m"} for i in range(10)]
+    jobs = [{"job_key": f"p1_R_0_k{i}", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": i, "seed": i, "model_id": "m", "reference_answer": "42"} for i in range(10)]
     with open(manifest_file, "w") as f:
         for j in jobs:
             f.write(json.dumps(j) + "\n")
