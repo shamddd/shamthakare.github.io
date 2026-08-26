@@ -1,2 +1,2 @@
-partition,path,size_bytes,sha256,row_count,problem_count,rollouts_per_problem,exists
-Pilot,artifacts/stateshift_v3/pilot/pilot_rollouts.jsonl,6124500,d8920194b81204e129f041ca9102c841a90184b2c129f041ca9102c841a90184,10304,46,16,TRUE
+partition,path,size_bytes,sha256,row_count,problem_count,rollouts_per_problem,exists,empirical_status
+Pilot,artifacts/stateshift_v3/pilot/pilot_rollouts.jsonl,6124500,d8920194b81204e129f041ca9102c841a90184b2c129f041ca9102c841a90184,10304,46,16,True,SYNTHETIC_TEST_FIXTURE
