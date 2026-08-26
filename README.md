@@ -119,7 +119,7 @@ Detailed checkpoint commit SHAs, weight identity proofs, and Hugging Face reposi
   author = {Thakare, Sham Satish},
   title = {StateShift: Tracking State-Dependent Reasoning Recovery Across Post-Training},
   year = {2026},
-  note = {Submitted to Artificial Intelligence (Elsevier), manuscript ARTINT-D-26-01491}
+  note = {Working Paper, 2026 — Ongoing Manuscript Revision, manuscript ARTINT-D-26-01491}
 }
 ```
 

@@ -1,0 +1,12 @@
+{
+  "protocol_version": "v4.0-phase7-gsm8k-confirmatory",
+  "target_dataset": "GSM8K_Test",
+  "N_new_problems": 500,
+  "K_depth": 16,
+  "arms": ["R", "C", "S", "A1", "A2", "P", "D"],
+  "checkpoints": [0, 256],
+  "expected_total_rollouts": 112000,
+  "primary_estimand": "Gamma_256_R_C",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "endpoint_model": "UWNSL/Qwen2.5-7B-deepscaler"
+}

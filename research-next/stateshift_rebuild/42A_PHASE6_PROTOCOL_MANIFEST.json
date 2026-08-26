@@ -1,0 +1,12 @@
+{
+  "protocol_version": "v3.0-prospective-confirmatory",
+  "freeze_timestamp": "2026-08-27T00:03:00+05:30",
+  "git_commit_sha": "51ca0a71d50fbdd673eb5d594bf987678fd304dc",
+  "untouched_registry_sha256": "e7f9208a19b4c02e5d718429188d304210e4785f096238ab8240a1b947c610e2",
+  "primary_estimand": "Gamma_256_R_C",
+  "arms": ["R", "C", "S", "A1", "A2", "P", "D"],
+  "N_confirmatory": 254,
+  "K_depth": 16,
+  "checkpoints": [0, 256],
+  "expected_total_rollouts": 56896
+}

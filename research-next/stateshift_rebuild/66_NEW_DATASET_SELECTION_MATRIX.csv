@@ -1,0 +1,6 @@
+dataset,domain,n_available,final_verifier,intermediate_error_verifiability,prior_stateshift_use,license,contamination_risk,fit_score
+GSM8K_Test,Mathematical Reasoning,1319,Deterministic Sympy / Integer,HIGH,NONE,MIT,LOW,5.0
+SVAMP,Math Word Problems,1000,Deterministic Sympy,HIGH,NONE,MIT,LOW,4.2
+AIME_2024,Competition Mathematics,30,Integer Boxed Answer,HIGH,NONE,Public,LOW,2.5
+MBPP,Code Generation,500,Pytest Execution,HIGH,NONE,CC-BY-4.0,LOW,4.0
+MATH_500,Mathematical Reasoning,500,Deterministic Sympy,HIGH,HEAVILY_USED,MIT,HIGH,0.0

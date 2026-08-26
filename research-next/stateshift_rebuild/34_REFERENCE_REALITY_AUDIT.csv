@@ -1,0 +1,16 @@
+paper_id,title,authors,venue,year,doi,arxiv_id,primary_source_url,verified,status,error_found
+P01,DeepSeekMath: Pushing the Limits of Mathematical Reasoning,Shao et al.,arXiv,2024,10.48550/arXiv.2402.03300,2402.03300,https://arxiv.org/abs/2402.03300,TRUE,VERIFIED,None
+P02,Can Large Language Models Really Self-Correct Without External Feedback?,Huang et al.,ICLR,2024,10.48550/arXiv.2310.01798,2310.01798,https://arxiv.org/abs/2310.01798,TRUE,VERIFIED,None
+P03,Let's Verify Step by Step,Lightman et al.,arXiv,2023,10.48550/arXiv.2305.20050,2305.20050,https://arxiv.org/abs/2305.20050,TRUE,VERIFIED,None
+P04,DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via RL,DeepSeek-AI,arXiv,2025,10.48550/arXiv.2501.12948,2501.12948,https://arxiv.org/abs/2501.12948,TRUE,VERIFIED,None
+P05,Scaling LLM Test-Time Compute Optimally,Snell et al.,arXiv,2024,10.48550/arXiv.2408.03314,2408.03314,https://arxiv.org/abs/2408.03314,TRUE,VERIFIED,None
+P06,Solving Math Word Problems with Process-Based Feedback,Uesato et al.,arXiv,2022,10.48550/arXiv.2211.14275,2211.14275,https://arxiv.org/abs/2211.14275,TRUE,VERIFIED,None
+P07,Are Natural Language Reasoners Vulnerable to Adversarial Prefix Injection?,Kamoi et al.,EMNLP,2024,NONE,2404.01234,https://arxiv.org/abs/2404.01234,FALSE,INVALID_CITATION,arXiv ID 2404.01234 points to unrelated physics paper
+P08,Are Emergent Abilities of Large Language Models a Mirage?,Schaeffer et al.,NeurIPS,2023,10.48550/arXiv.2304.15004,2304.15004,https://arxiv.org/abs/2304.15004,TRUE,VERIFIED,None
+P09,Training Verifiers to Solve Math Word Problems,Cobbe et al.,arXiv,2021,10.48550/arXiv.2110.14168,2110.14168,https://arxiv.org/abs/2110.14168,TRUE,VERIFIED,None
+P10,Large Language Models Cannot Self-Correct Reasoning Without External Feedback,Valmeekam et al.,ICLR Workshop,2024,10.48550/arXiv.2402.08119,2402.08119,https://arxiv.org/abs/2402.08119,TRUE,VERIFIED,None
+P11,Measuring Faithfulness in Chain-of-Thought Reasoning,Lanham et al.,arXiv,2023,10.48550/arXiv.2307.13702,2307.13702,https://arxiv.org/abs/2307.13702,TRUE,VERIFIED,None
+P12,Assessing Chain-of-Thought Robustness to Stepwise Errors,Ye et al.,ACL,2024,NONE,2401.09876,https://arxiv.org/abs/2401.09876,FALSE,INVALID_CITATION,arXiv ID 2401.09876 points to CERN physics paper
+P13,Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting,Turpin et al.,NeurIPS,2023,10.48550/arXiv.2305.04388,2305.04388,https://arxiv.org/abs/2305.04388,TRUE,VERIFIED,Venue corrected from ACL 2024 to NeurIPS 2023
+P14,Training Large Language Models to Self-Correct via Reinforcement Learning,Kumar et al.,arXiv,2024,NONE,2409.12900,https://arxiv.org/abs/2409.12900,FALSE,INVALID_CITATION,arXiv ID 2409.12900 points to phytoplankton image paper
+P15,Empirical Study of Reasoning Path Dynamics in RLVR,Wu et al.,arXiv,2024,NONE,2411.08900,https://arxiv.org/abs/2411.08900,FALSE,INVALID_CITATION,arXiv ID 2411.08900 points to RNA-GPT paper

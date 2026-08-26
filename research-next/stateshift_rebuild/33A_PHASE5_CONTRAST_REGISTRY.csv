@@ -1,0 +1,7 @@
+contrast_id,contrast_name,baseline_arm,comparison_arm,formula,value_256,ci_lower,ci_upper,p_value,classification
+Gamma_256,Primary Diff-in-Diff Interaction,Arm_C,Arm_R,(p_R256 - p_R0) - (p_C256 - p_C0),0.1176,0.0955,0.1400,0.000001,PRIMARY_CANONICAL_ESTIMAND
+Gamma_Strict_256,Strict Decontamination Contrast,Arm_C_Strict,Arm_R_Strict,(p_R256_s - p_R0_s) - (p_C256_s - p_C0_s),0.1160,0.0913,0.1408,0.000001,PRESPECIFIED_SECONDARY
+Gamma_RD_256,Direct Benchmark Contrast,Arm_D,Arm_R,(p_R256 - p_R0) - (p_D256 - p_D0),0.1165,0.0940,0.1390,0.000001,EXPLORATORY_SECONDARY
+Gamma_RS_256,Shuffled Prefix Contrast,Arm_S,Arm_R,(p_R256 - p_R0) - (p_S256 - p_S0),0.1195,0.0970,0.1420,0.000001,EXPLORATORY_SECONDARY
+Gamma_RI_256,Irrelevant Prose Contrast,Arm_I,Arm_R,(p_R256 - p_R0) - (p_I256 - p_I0),0.1165,0.0940,0.1390,0.000001,EXPLORATORY_SECONDARY
+Gamma_RA_256,Alternate Math Error Contrast,Arm_A,Arm_R,(p_R256 - p_R0) - (p_A256 - p_A0),0.1115,0.0890,0.1340,0.000001,EXPLORATORY_SECONDARY
