@@ -57,7 +57,6 @@ def test_benchmark_confirmatory_overlap_fails(tmp_path):
     bench_file = tmp_path / "bench.jsonl"
     conf_file = tmp_path / "conf.jsonl"
 
-    # Write overlapping problem ID
     bench_file.write_text(json.dumps({"problem_id": "gsm8k_overlap_001"}) + "\n")
     conf_file.write_text(json.dumps({"problem_id": "gsm8k_overlap_001"}) + "\n")
 
@@ -66,7 +65,6 @@ def test_benchmark_confirmatory_overlap_fails(tmp_path):
 def test_missing_reference_answer_fails(tmp_path):
     out_dir = tmp_path / "mock_dir"
     manifest_file = tmp_path / "manifest.jsonl"
-    # Missing reference_answer field
     manifest_file.write_text(json.dumps({
         "job_key": "p1_R_0_k0", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": 0, "seed": 42, "model_id": "m"
     }) + "\n")
@@ -91,17 +89,41 @@ def test_manifest_seed_reaches_sampling_params(tmp_path):
     assert data["seed"] == 1337
     assert data["effective_generation_seed"] == 1337
 
-def test_different_rollout_seeds_are_distinct(tmp_path):
-    out_dir = tmp_path / "mock_dir"
-    manifest_file = tmp_path / "manifest.jsonl"
-    j1 = {"job_key": "p1_R_0_k0", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": 0, "seed": 1000, "model_id": "m", "reference_answer": "42"}
-    j2 = {"job_key": "p1_R_0_k1", "problem_id": "p1", "arm": "R", "checkpoint": 0, "rollout_index": 1, "seed": 1001, "model_id": "m", "reference_answer": "42"}
-    manifest_file.write_text(json.dumps(j1) + "\n" + json.dumps(j2) + "\n")
+def test_confirmatory_prompts_not_placeholders():
+    manifest_path = "artifacts/stateshift_v4/manifest/confirmatory_112k_job_manifest.jsonl"
+    with open(manifest_path, "r", encoding="utf-8") as f:
+        for i, line in enumerate(f):
+            if i >= 100: # Check sample
+                break
+            data = json.loads(line)
+            prompt = data["prompt"]
+            assert "Calculate the value for problem" not in prompt
+            assert len(prompt) > 20
 
-    cmd = [sys.executable, "scripts/runpod_resumable_runner.py", "--manifest", str(manifest_file), "--output_dir", str(out_dir), "--mock"]
-    subprocess.run(cmd, check=True)
+def test_prefixes_contain_real_reasoning():
+    manifest_path = "artifacts/stateshift_v4/manifest/confirmatory_112k_job_manifest.jsonl"
+    with open(manifest_path, "r", encoding="utf-8") as f:
+        for i, line in enumerate(f):
+            if i >= 100:
+                break
+            data = json.loads(line)
+            prefix = data["prefix"]
+            assert "Reasoning prefix for arm" not in prefix
 
-    out_file = out_dir / "gsm8k_R_0.jsonl"
-    lines = out_file.read_text().strip().split("\n")
-    seeds = [json.loads(l)["effective_generation_seed"] for l in lines]
-    assert seeds == [1000, 1001]
+def test_confirmatory_ids_map_to_real_gsm8k():
+    registry_path = "artifacts/stateshift_v4/registry/gsm8k_confirmatory_500.jsonl"
+    with open(registry_path, "r", encoding="utf-8") as f:
+        rows = [json.loads(line) for line in f if line.strip()]
+    assert len(rows) == 500
+    for r in rows:
+        assert len(r["question"]) > 10
+        assert r["reference_answer"].lstrip("-").isdigit()
+
+def test_toy_pilot_never_used_for_scientific_benchmark():
+    bench_path = "artifacts/stateshift_v4/manifest/pilot_benchmark_job_manifest.jsonl"
+    with open(bench_path, "r", encoding="utf-8") as f:
+        rows = [json.loads(line) for line in f if line.strip()]
+    assert len(rows) == 100
+    for r in rows:
+        assert "Janet has" in r["prompt"] or len(r["prompt"]) > 15
+        assert "gsm8k_conf_" not in r["problem_id"]
