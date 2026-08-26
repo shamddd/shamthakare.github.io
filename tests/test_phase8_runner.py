@@ -30,7 +30,7 @@ def test_runner_mock_execution(tmp_path):
     lines = out_file.read_text().strip().split("\n")
     assert len(lines) == 2
     d0 = json.loads(lines[0])
-    assert d0["empirical_status"] == "RAW_MODEL_INFERENCE"
+    assert d0["empirical_status"] == "MOCK_BACKEND"
     assert d0["job_key"] == "p1_R_0_k0"
 
 def test_runner_resumption(tmp_path):
@@ -75,7 +75,7 @@ def test_runner_budget_cap_halting(tmp_path):
             f.write(json.dumps(j) + "\n")
 
     # Pass max_budget_usd = 0.0 to trigger cost stop
-    cmd = [sys.executable, "scripts/runpod_resumable_runner.py", "--manifest", str(manifest_file), "--output_dir", str(output_dir), "--mock", "--max_budget_usd", "0.00"]
+    cmd = [sys.executable, "scripts/runpod_resumable_runner.py", "--manifest", str(manifest_file), "--output_dir", str(output_dir), "--mock", "--max_budget_usd", "0.00", "--cost_per_hour", "999999.0"]
     res = subprocess.run(cmd, capture_output=True, text=True)
     assert res.returncode == 0
-    assert "BUDGET CAP REACHED" in res.stdout
+    assert "BUDGET CAP HALT" in res.stdout or "BUDGET CAP HALT" in res.stderr

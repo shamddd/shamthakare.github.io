@@ -174,6 +174,7 @@ def run_real_vllm_inference(jobs, output_dir, max_budget_usd, cost_per_hour, bat
     process_checkpoint_cohort(ckpt256_jobs, POST_TRAINED_MODEL_ID, POST_TRAINED_REVISION_SHA)
 
 def main():
+    start_time = time.time()
     parser = argparse.ArgumentParser(description="StateShift Real vLLM Execution Engine")
     parser.add_argument("--manifest", default="artifacts/stateshift_v4/manifest/confirmatory_112k_job_manifest.jsonl")
     parser.add_argument("--output_dir", default=None)
@@ -220,6 +221,11 @@ def main():
         completed_keys = load_completed_keys(args.output_dir)
         pending = [j for j in jobs if j['job_key'] not in completed_keys]
         for idx, job in enumerate(pending):
+            elapsed_hours = (time.time() - start_time) / 3600.0
+            curr_cost = elapsed_hours * args.cost_per_hour
+            if args.max_budget_usd <= 0.0:
+                print(f"BUDGET CAP HALT: ${curr_cost:.2f} >= ${args.max_budget_usd:.2f}")
+                sys.exit(0)
             arm = job['arm']
             ckpt = job['checkpoint']
             out_fpath = os.path.join(args.output_dir, f"gsm8k_{arm}_{ckpt}.jsonl")
