@@ -14,7 +14,8 @@
 | **Primary Interaction ($\Gamma_{256}$)** | $+0.1176$ | Study A Endpoint ($N=454, K=16$) | **`PASS`** |
 | **Strict Subgroup ($\Gamma_{256,\text{Strict}}$)** | $+0.1160$ | Strict Subgroup ($N=388, K=16$) | **`PASS`** |
 | **Trajectory Contrast ($\Gamma_{32}$)** | $+0.0333$ | Phase 2B.4 ($N=454, K=2$) | **`PASS`** |
-| **Multiplicity-Adjusted CI ($\Gamma_{32}$)** | $[+0.0011, +0.0655]$ | Step 32 Bonferroni Adjustment | **`PASS`** |
+| **Unadjusted 95% CI ($\Gamma_{32}$)** | $[+0.0023, +0.0677]$ | Step 32 Bootstrap ($p=0.0190$) | **`PASS`** |
+| **Bonferroni 95% CI ($\Gamma_{32}$)** | $[-0.0100, +0.0789]$ | Step 32 Bonferroni ($p_{\text{adj}}=0.0760$) | **`PASS`** |
 | **Natural Error Incidence ($\text{NEI}$)** | $18.19\%$ | Study B ($N=200, 3,200$ rollouts) | **`PASS`** |
 | **Natural Post-Error Recovery ($\text{NRR}$)** | $30.93\%$ | Study B ($180/582$ episodes) | **`PASS`** |
 

@@ -22,7 +22,7 @@ By comparing model completion success under matched Recovery (invalid intermedia
 
 * **Controlled Endpoint Interaction ($\Gamma_{256}$)**: Between base ($t=0$) and step-256 checkpoints, we observe an 11.76-percentage-point interaction ($\Gamma_{256} = +0.1176$, $95\%$ problem-blocked bootstrap CI $[+0.0955, +0.1400]$).
 * **Strict Decontamination Subgroup**: Under strict decontamination filtering ($N_{\text{Strict}}=388$), the interaction remains robust ($\Gamma_{256,\text{Strict}} = +0.1160$, $95\%$ CI $[+0.0913, +0.1408]$).
-* **Earliest Detectable Checkpoint ($t=32$)**: The interaction is statistically detectable by the earliest available post-training checkpoint ($t=32$, $\Gamma_{32} = +0.0333$, multiplicity-adjusted $95\%$ CI $[+0.0011, +0.0655]$).
+* **Early Checkpoint Contrast at $t=32$**: The checkpoint-32 contrast was positive under unadjusted inference ($\Gamma_{32} = +0.0333$, unadjusted $95\%$ bootstrap CI $[+0.0023, +0.0677]$, $p=0.019$), but did not survive family-wise Bonferroni correction (Bonferroni-adjusted $95\%$ CI $[-0.0100, +0.0789]$, $p_{\text{adj}}=0.076$).
 
 ---
 
@@ -54,7 +54,7 @@ Across nine empirically evaluated checkpoints, the interaction was consistent wi
 **Claim Boundaries**:
 * Strict monotonicity across all adjacent checkpoints is **not established** due to sampling variation at intermediate checkpoints.
 * The exact training step at which the interaction emerged is **not identifiable** because checkpoints between $t=0$ and $t=32$ are unavailable.
-* Checkpoint $t=32$ represents the **earliest available** statistically detectable checkpoint in the evaluated lineage.
+* Checkpoint $t=32$ represents the **earliest evaluated intermediate checkpoint** in the evaluated lineage; the checkpoint-32 contrast was positive under unadjusted inference but did not survive family-wise Bonferroni correction.
 
 ---
 

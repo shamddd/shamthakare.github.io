@@ -17,7 +17,7 @@ def test_disallowed_claims():
     
     # Assert allowed phrasing
     allowed_trajectory_statement = "Across nine empirically evaluated checkpoints, the interaction was consistent with a non-decreasing trajectory under prespecified order-restricted analysis despite local variation in unconstrained estimates."
-    allowed_emergence_statement = "The interaction was already statistically detectable at the earliest available post-training checkpoint, t=32."
+    allowed_emergence_statement = "The unadjusted checkpoint-32 contrast was positive, while family-wise Bonferroni-adjusted inference did not establish significance at this earliest checkpoint."
     
     for banned in banned_claims:
         assert banned not in allowed_trajectory_statement.lower()

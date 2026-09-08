@@ -12,7 +12,7 @@ This directory contains the public LaTeX source files and publication companion 
 
 * `main.tex`: Full manuscript LaTeX source file.
 * `supplement.tex`: Supplementary Material LaTeX source file.
-* `references.bib`: BibTeX bibliography file (50 verified items).
+* `references.bib`: BibTeX bibliography file (8 verified items).
 
 ---
 

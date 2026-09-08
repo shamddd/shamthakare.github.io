@@ -24,7 +24,7 @@ $$\mathbf{FINAL\ VERIFICATION\ GATE:\ GATE\ 6B\text{-}V\ —\ RESULT\ EMPIRICAL,
 | :--- | :---: | :---: | :---: | :--- |
 | **Primary Interaction Contrast ($\Gamma_{256}$)** | **+0.1176** | $[+0.0955, +0.1400]$ | $< 0.0001$ | **`RAW EMPIRICAL VERIFIED`** ($N=454, K=16$) |
 | **Strict Decontamination Subgroup ($\Gamma_{256,\text{Strict}}$)** | **+0.1160** | $[+0.0913, +0.1408]$ | $< 0.0001$ | **`RAW EMPIRICAL VERIFIED`** ($N_{\text{Strict}}=388$) |
-| **Earliest Available Interaction ($\Gamma_{32}$)** | **+0.0333** | $[+0.0011, +0.0655]$ | $< 0.05$ | **`RAW EMPIRICAL VERIFIED`** ($N=454, K=2$) |
+| **Early Trajectory Interaction ($\Gamma_{32}$)** | **+0.0333** | $[+0.0023, +0.0677]$ | $0.019$ (Bonf: $[-0.0100, +0.0789]$, $p=0.076$) | **`RAW EMPIRICAL VERIFIED`** ($N=454, K=2$) |
 | **Natural Error Incidence ($\text{NEI}$)** | **18.19%** | $[16.84\%, 19.50\%]$ | — | **`RAW EMPIRICAL VERIFIED`** ($582/3200$ rollouts) |
 | **Conditional Natural Recovery ($\text{NRR}$)** | **30.93%** | $[27.19\%, 34.82\%]$ | — | **`RAW EMPIRICAL VERIFIED`** ($180/582$ episodes) |
 

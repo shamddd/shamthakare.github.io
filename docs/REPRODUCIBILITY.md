@@ -29,7 +29,7 @@ When running `python scripts/verify_artifacts.py`, the suite asserts the followi
 * **Primary Interaction ($\Gamma_{256}$)**: $+0.1176$ ($95\%$ problem-blocked bootstrap CI $[+0.0955, +0.1400]$).
 * **Strict Subgroup ($\Gamma_{256,\text{Strict}}$)**: $+0.1160$ ($95\%$ CI $[+0.0913, +0.1408]$).
 * **Nine-Point Trajectory Vector**: $[0.0000, +0.0333, +0.0337, +0.0774, +0.0748, +0.0598, +0.0976, +0.0950, +0.1176]$.
-* **Earliest Detectable Checkpoint**: $t=32$ ($\Gamma_{32} = +0.0333$, multiplicity-adjusted 95% CI $[+0.0011, +0.0655]$).
+* **Early Trajectory Contrast ($t=32$)**: $\Gamma_{32} = +0.0333$ (unadjusted 95% bootstrap CI $[+0.0023, +0.0677]$, $p=0.019$; Bonferroni 95% CI $[-0.0100, +0.0789]$, $p_{\text{adj}}=0.076$). Contrast is nominally positive, but does not survive Bonferroni family-wise multiplicity adjustment.
 * **Natural Error Incidence ($\text{NEI}$)**: $18.19\%$ ($582/3200$).
 * **Natural Post-Error Recovery ($\text{NRR}$)**: $30.93\%$ ($180/582$, 95% CI $[27.19\%, 34.82\%]$).
 

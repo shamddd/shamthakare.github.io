@@ -10,7 +10,7 @@
 | :--- | :--- | :--- |
 | **Endpoint Gain** | "Between base and step-256 checkpoints, we observe an 11.76-percentage-point state-by-checkpoint interaction ($\Gamma_{256} = +0.1176$). | ❌ "11.76% acceleration" |
 | **Trajectory** | "Across nine empirically evaluated checkpoints, the interaction was consistent with a non-decreasing trajectory under prespecified order-restricted analysis despite local variation in unconstrained estimates." | ❌ "Strict pairwise monotonicity across all checkpoints" |
-| **Emergence** | "The interaction was already statistically detectable at the earliest available post-training checkpoint, $t=32$ ($\Gamma_{32}=+0.0333$)." | ❌ "The effect emerged exactly at step 32" |
+| **Emergence** | "The checkpoint-32 contrast was positive under unadjusted inference ($\Gamma_{32}=+0.0333$), but did not survive family-wise Bonferroni correction." | ❌ "The effect emerged exactly at step 32" |
 | **Natural Recovery** | "Among 582 verifier-confirmed natural error episodes, 180 subsequently satisfied the autonomous recovery criterion ($30.93\%$)." | ❌ "The model self-corrects 30.93% of the time" |
 
 ---

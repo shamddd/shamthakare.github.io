@@ -12,7 +12,7 @@ To account for problem-level difficulty variation and intra-problem rollout corr
 
 ## 2. Multiplicity Adjustments
 
-For intermediate trajectory checkpoints, Bonferroni multiplicity adjustments are applied to control the family-wise error rate across intermediate comparisons. At step 32, the multiplicity-adjusted 95% CI is $[+0.0011, +0.0655]$, confirming that target-transition contrast is statistically detectable at $t=32$.
+For intermediate trajectory checkpoints, Bonferroni multiplicity adjustments are applied to control the family-wise error rate across intermediate comparisons ($M=4$ intermediate checkpoints $\{32, 96, 160, 224\}$ evaluated in Phase 2B.4 against $t=0$). At step 32, the unadjusted 95% bootstrap CI is $[+0.0023, +0.0677]$ ($p=0.0190$), while the Bonferroni multiplicity-adjusted 95% CI is $[-0.0100, +0.0789]$ ($p_{\text{adj}}=0.0760$). Because the simultaneous Bonferroni interval spans zero, the contrast does not achieve statistical significance under conservative family-wise multiplicity control at this earliest checkpoint.
 
 ---
 

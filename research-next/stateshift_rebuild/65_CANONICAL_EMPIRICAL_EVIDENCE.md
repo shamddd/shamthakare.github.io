@@ -21,7 +21,7 @@ Only the following data are physically verified from raw byte-level model rollou
 * **File Path**: `artifacts/trajectory/intermediate_rollouts.jsonl` ($1,643,568$ bytes)
 * **SHA-256 Hash**: `26a9c82989486d35f7b5dd172a9410222c3affb647bd253575f2f706f3ebe979`
 * **Raw Model Generations**: **$7,264$ empirical rollouts** ($N=454, K=2$, Arms R & C at $t=32, 96, 160, 224$)
-* **Earliest Contrast ($\Gamma_{32}$)**: **$+0.0333$** ($95\%$ Multiplicity CI $[+0.0011, +0.0655]$)
+* **Early Contrast ($\Gamma_{32}$)**: **$+0.0333$** (Unadjusted 95% CI $[+0.0023, +0.0677]$, $p=0.019$; Bonferroni 95% CI $[-0.0100, +0.0789]$, $p_{\text{adj}}=0.076$)
 
 ### C. Study B Natural Recovery Dataset
 * **File Path**: `artifacts/natural_recovery/natural_error_episodes.csv` ($44,577$ bytes)

@@ -62,7 +62,7 @@ def reproduce_trajectory():
     eval_order = is_order_restricted_consistent(gammas)
     print(f"\nOrder-Restricted Analysis Supported : {eval_order['is_order_restricted_supported']}")
     print(f"Isotonic Fit Vector                 : {eval_order['isotonic_fit']}")
-    print(f"Earliest Available Checkpoint t=32   : Gamma_32 = +0.0333 (Multiplicity-Adjusted 95% CI: [+0.0011, +0.0655])")
+    print(f"Early Checkpoint Contrast t=32      : Gamma_32 = +0.0333 (Unadjusted 95% CI: [+0.0023, +0.0677], Bonferroni 95% CI: [-0.0100, +0.0789])")
     return df_traj, eval_order
 
 

@@ -18,8 +18,8 @@ C3_gamma_160,0.0598,0.0598,0.0000,artifacts/trajectory/nine_checkpoint_trajector
 C3_gamma_192,0.0976,0.0976,0.0000,artifacts/trajectory/nine_checkpoint_trajectory.csv,scripts/reproduce_analysis.py,TRUE,Step 192 trajectory contrast
 C3_gamma_224,0.0950,0.0950,0.0000,artifacts/trajectory/nine_checkpoint_trajectory.csv,scripts/reproduce_analysis.py,TRUE,Step 224 trajectory contrast
 C3_gamma_256,0.1176,0.1176,0.0000,artifacts/trajectory/nine_checkpoint_trajectory.csv,scripts/reproduce_analysis.py,TRUE,Step 256 trajectory contrast
-C4_mult_ci_lower_32,0.0011,0.0011,0.0000,artifacts/trajectory/intermediate_checkpoint_cell_means.csv,stateshift/statistics/bootstrap.py,TRUE,Bonferroni-adjusted lower bound
-C4_mult_ci_upper_32,0.0655,0.0655,0.0000,artifacts/trajectory/intermediate_checkpoint_cell_means.csv,stateshift/statistics/bootstrap.py,TRUE,Bonferroni-adjusted upper bound
+C4_bonf_ci_lower_32,-0.0100,-0.0100,0.0000,artifacts/trajectory/intermediate_checkpoint_cell_means.csv,stateshift/statistics/bootstrap.py,TRUE,Bonferroni-adjusted lower bound
+C4_bonf_ci_upper_32,0.0789,0.0789,0.0000,artifacts/trajectory/intermediate_checkpoint_cell_means.csv,stateshift/statistics/bootstrap.py,TRUE,Bonferroni-adjusted upper bound
 C6_nei,18.19,18.1875,0.0025,artifacts/natural_recovery/natural_error_episodes.csv,stateshift/statistics/metrics.py,TRUE,582 / 3200 unperturbed error incidence (%)
 C7_nrr,30.93,30.9278,0.0022,artifacts/natural_recovery/natural_recovery_episodes.csv,stateshift/statistics/metrics.py,TRUE,180 / 582 conditional natural recovery rate (%)
 C7_nrr_ci_lower,27.19,27.19,0.0000,artifacts/natural_recovery/natural_recovery_episodes.csv,stateshift/statistics/metrics.py,TRUE,NRR 95% bootstrap lower bound

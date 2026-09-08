@@ -12,13 +12,13 @@
 ## 1. Abstract & Highlights
 
 ### Abstract
-> Standard evaluations of reinforcement-learning post-training in large language models emphasize aggregate benchmark accuracy, potentially obscuring changes conditional on local reasoning state. We introduce StateShift, a framework for measuring target-transition recovery under matched reasoning states. In a controlled study (N=454, 29,056 rollouts), we observe an 11.76-percentage-point state-by-checkpoint interaction between the base and step-256 checkpoints ($\Gamma_{256}=0.1176$, 95% problem-blocked bootstrap CI $[0.0955, 0.1400]$). Across nine empirically evaluated checkpoints, the interaction was consistent with a non-decreasing trajectory under prespecified order-restricted analysis despite local variation in unconstrained estimates, and was already detectable at the earliest available post-training checkpoint, $t=32$ ($\Gamma_{32}=0.0333$, multiplicity-adjusted 95% CI $[0.0011, 0.0655]$). In a separate analysis of 3,200 unperturbed rollouts, 18.19% contained a verifier-confirmed natural reasoning error; among 582 qualifying error episodes, 180 subsequently satisfied the prespecified autonomous recovery criterion (30.93%, 95% problem-blocked bootstrap CI $[27.19\%, 34.82\%]$). These results show that state-conditioned evaluation exposes behavioral structure not captured by aggregate correctness alone.
+> Standard evaluations of reinforcement-learning post-training in large language models emphasize aggregate benchmark accuracy, potentially obscuring changes conditional on local reasoning state. We introduce StateShift, a framework for measuring target-transition recovery under matched reasoning states. In a controlled study (N=454, 29,056 rollouts), we observe an 11.76-percentage-point state-by-checkpoint interaction between the base and step-256 checkpoints ($\Gamma_{256}=0.1176$, 95% problem-blocked bootstrap CI $[0.0955, 0.1400]$). Across nine empirically evaluated checkpoints, the interaction was consistent with a non-decreasing trajectory under prespecified order-restricted analysis despite local variation in unconstrained estimates; the unadjusted checkpoint-32 contrast was positive ($\Gamma_{32}=0.0333$, unadjusted 95% bootstrap CI $[+0.0023, +0.0677]$, $p=0.019$), while family-wise Bonferroni-adjusted inference did not establish significance at this earliest checkpoint (Bonferroni 95% CI $[-0.0100, +0.0789]$). In a separate analysis of 3,200 unperturbed rollouts, 18.19% contained a verifier-confirmed natural reasoning error; among 582 qualifying error episodes, 180 subsequently satisfied the prespecified autonomous recovery criterion (30.93%, 95% problem-blocked bootstrap CI $[27.19\%, 34.82\%]$). These results show that state-conditioned evaluation exposes behavioral structure not captured by aggregate correctness alone.
 
 ### Highlights
 * Controlled framework measuring state-conditioned reasoning recovery in post-trained LLMs.
 * +11.76 percentage-point state-by-checkpoint interaction contrast at step 256 ($\Gamma_{256}=+0.1176$).
 * Nine-checkpoint empirical trajectory evaluated via prespecified order-restricted PAVA analysis.
-* Interaction statistically detectable by earliest available post-training checkpoint ($t=32$).
+* Early positive contrast at $t=32$ ($\Gamma_{32}=+0.0333$, unadjusted $p=0.019$; Bonferroni non-significant).
 * 30.93% conditional natural post-error recovery rate across 582 unperturbed error rollouts.
 
 ---
@@ -66,7 +66,7 @@ $$\Gamma_{256} = (0.7039 - 0.3834) - (0.5921 - 0.3892) = 0.3205 - 0.2029 = \math
 ### Secondary Endpoints
 * **Strict Subgroup**: $\Gamma_{256,\text{Strict}} = \mathbf{+0.1160}$ ($95\%$ CI $[+0.0913, +0.1408]$).
 * **9-Checkpoint Trajectory Vector**: $\mathbf{\Gamma} = [0.0000, +0.0333, +0.0337, +0.0774, +0.0748, +0.0598, +0.0976, +0.0950, +0.1176]$.
-* **Earliest Detectable Interaction**: Step 32 ($\Gamma_{32} = \mathbf{+0.0333}$, multiplicity-adjusted 95% CI $[+0.0011, +0.0655]$).
+* **Early Trajectory Interaction**: Step 32 ($\Gamma_{32} = \mathbf{+0.0333}$, unadjusted 95% CI $[+0.0023, +0.0677]$, $p=0.019$; Bonferroni 95% CI $[-0.0100, +0.0789]$, $p_{\text{adj}}=0.076$).
 * **Natural Error Incidence ($\text{NEI}$)**: $18.19\%$ ($582/3200$ unperturbed rollouts).
 * **Conditional Natural Post-Error Recovery Rate ($\text{NRR}$)**: $30.93\%$ ($180/582$ error rollouts, 95% CI $[27.19\%, 34.82\%]$).
 
