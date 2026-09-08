@@ -6,7 +6,8 @@ State-conditioned evaluation of reasoning recovery across reinforcement learning
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](pyproject.toml)
 
-**Publication Status**: Submitted to *Artificial Intelligence* (Elsevier), 2026 — Manuscript ARTINT-D-26-01491
+**Research Status**: Working Paper / Ongoing Manuscript Revision  
+**Historical Submission**: *Artificial Intelligence* (Elsevier), manuscript ARTINT-D-26-01491
 
 ---
 
@@ -119,7 +120,7 @@ Detailed checkpoint commit SHAs, weight identity proofs, and Hugging Face reposi
   author = {Thakare, Sham Satish},
   title = {StateShift: Tracking State-Dependent Reasoning Recovery Across Post-Training},
   year = {2026},
-  note = {Working Paper, 2026 — Ongoing Manuscript Revision, manuscript ARTINT-D-26-01491}
+  note = {Working Paper, 2026 — Ongoing Manuscript Revision; Historical Submission: Artificial Intelligence (Elsevier), manuscript ARTINT-D-26-01491}
 }
 ```
 

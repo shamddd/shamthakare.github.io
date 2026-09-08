@@ -2,7 +2,7 @@
 
 **Project**: StateShift  
 **Author**: Sham Satish Thakare (Independent Researcher, Pune, Maharashtra, India)  
-**Publication Status**: Prepared/submitted to *Artificial Intelligence* (Elsevier)  
+**Research Status**: Working Paper / Ongoing Manuscript Revision (Historical Submission: *Artificial Intelligence*, Elsevier)  
 **Audit Timestamp**: `2026-08-20 12:52 UTC`  
 
 ---

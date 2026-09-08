@@ -1,6 +1,6 @@
 # StateShift Empirical Scientific Artifacts
 
-This directory contains the frozen, immutable empirical datasets, rollout outcome ledgers, trajectory vectors, natural error logs, and provenance manifests supporting the StateShift paper (*Submitted to Artificial Intelligence, Elsevier, manuscript ARTINT-D-26-01491*).
+This directory contains the frozen, immutable empirical datasets, rollout outcome ledgers, trajectory vectors, natural error logs, and provenance manifests supporting the StateShift research paper (*Working Paper / Ongoing Manuscript Revision; Historical Submission: Artificial Intelligence, Elsevier, manuscript ARTINT-D-26-01491*).
 
 ---
 
