@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Sham Satish Thakare — Research Identity & Portfolio</title>
-    <meta name="description" content="Personal academic website of Sham Satish Thakare, Independent Computer Science Researcher studying Reliable Adaptive Intelligent Systems.">
+    <title>Sham Satish Thakare — Reliable Autonomous AI Systems</title>
+    <meta name="description" content="Academic research website of Sham Satish Thakare — Studying state inference, retry safety, recovery contracts, and verification in autonomous AI systems.">
     <meta name="author" content="Sham Satish Thakare">
 
     <meta property="og:title" content="Sham Satish Thakare">
-    <meta property="og:description" content="Independent Computer Science Researcher studying foundation model reasoning and reliable autonomous systems.">
+    <meta property="og:description" content="Independent CS Researcher studying Reliable Autonomous AI Systems.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://shamddd.github.io/shamthakare.github.io/">
 
@@ -23,166 +23,188 @@
         <div class="wrapper">
             <a class="site-title" href="index.html">Sham Satish Thakare</a>
             <nav class="site-nav">
-                <a class="page-link" href="writing/when-confidence-confounds-reasoning-complexity/index.html">Writing</a>
-                <a class="page-link" href="papers.html">Publications</a>
-                <a class="page-link" href="Sham_Thakare_Academic_CV.pdf" target="_blank">CV</a>
+                <a class="page-link" href="#flagships">Research Flagships</a>
+                <a class="page-link" href="#publications">Publications & Status</a>
+                <a class="page-link" href="#future">PhD Agenda</a>
+                <a class="page-link" href="Sham_Thakare_Academic_CV.pdf" target="_blank">CV (PDF)</a>
             </nav>
         </div>
     </header>
 
     <div class="page-content">
         <div class="wrapper">
-            <!-- Reserved Portrait Space -->
-            <div class="portrait-box" aria-label="Reserved photo space"></div>
-
-            <p>
-                I am an independent computer science researcher and machine learning specialist based in Pune, India. My overarching research mission centers on <strong>Reliable Adaptive Intelligent Systems</strong>—investigating reasoning calibration in LLM post-training, tool-use safety for autonomous agents, adaptive RL computation, and failure-domain aware distributed consensus.
-            </p>
-
-            <p>
-                Currently, I am a Data Engineer / Machine Learning Specialist at <strong>Spectra Corporate Service</strong> in Pune, India, engineering high-throughput parallel data processing pipelines and cloud telemetry infrastructure using C++, Python, and SQL. Previously, I was a Research Intern at <strong>APCOER Pune</strong> (2023–2024), where I conducted machine learning research and supported undergraduate instruction in <em>Data Structures, Algorithms, and Foundations of Machine Learning</em>.
-            </p>
-
-            <p>
-                In June 2024, I graduated with a B.Tech. in Artificial Intelligence and Data Science from APCOER Pune with a cumulative GPA of 8.70 / 10.00.
-            </p>
-
-            <!-- Featured Flagship Research Essay -->
-            <h2 class="section-heading">Featured Technical Research Essay</h2>
-            <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #2563eb; padding: 1.25rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0;">
-                <span style="font-size: 0.75rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.05em;">Working Paper / Research Note</span>
-                <h3 style="margin: 0.4rem 0 0.6rem 0; font-size: 1.25rem; font-weight: 700;">
-                    <a href="writing/when-confidence-confounds-reasoning-complexity/index.html" style="color: #0f172a; text-decoration: none;">When Confidence Proxies Confound Reasoning Complexity</a>
-                </h3>
-                <p style="margin: 0 0 0.8rem 0; font-size: 0.95rem; color: #475569; line-height: 1.5;">
-                    A diagnostic audit exposing completion-length confounding ($r = 0.486, N=100$) in token predictive entropy, proving MC-dropout determinism on zero-dropout LLMs, and demonstrating via preregistered negative controls that consistency weighting produced zero observed online advantage ($d = 0.00, N=3$ seeds) over outcome-supervised GRPO.
+            <!-- 1. WHAT PROBLEM DOES SHAM STUDY? -->
+            <div style="margin-bottom: 2rem;">
+                <h1 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin-bottom: 0.5rem;">
+                    Reliable Autonomous AI Systems
+                </h1>
+                <p style="font-size: 1.1rem; color: #334155; line-height: 1.6; font-weight: 500;">
+                    State Inference • Failure Diagnosis • Recovery Decisions • Persistent-State Verification
                 </p>
-                <div style="font-size: 0.85rem; font-weight: 600;">
-                    <a href="writing/when-confidence-confounds-reasoning-complexity/index.html" style="color: #2563eb;">Read Interactive Essay &rarr;</a>
+                <div style="background: #f1f5f9; border-left: 4px solid #2563eb; padding: 1rem 1.25rem; border-radius: 0 6px 6px 0; margin: 1.25rem 0;">
+                    <strong style="color: #0f172a;">Primary Research Question:</strong>
+                    <p style="margin: 0.4rem 0 0 0; color: #334155; font-size: 1.0rem; line-height: 1.5;">
+                        <em>Given deployable observations from an autonomous tool-using agent trajectory, how can a system infer whether persistent external state is correct, determine whether intervention is required, and verify that recovery has actually restored the intended state?</em>
+                    </p>
+                </div>
+                <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">
+                    I am an independent CS researcher and Data Engineer / ML Specialist at <strong>Spectra Corporate Service</strong> (Pune, India). I graduated with a B.E./B.Tech in Artificial Intelligence & Data Science from SPPU (CGPA 8.70/10.00). My work bridges machine learning post-training dynamics with classical distributed systems principles, targeting admission to top CS PhD programs for Fall 2027.
+                </p>
+            </div>
+
+            <!-- 2. THE THREE FLAGSHIP PROJECTS -->
+            <h2 id="flagships" class="section-heading" style="border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">
+                Flagship Research Sequence
+            </h2>
+            <p style="font-size: 0.95rem; color: #475569; margin-bottom: 1.5rem;">
+                My research agenda advances sequentially across three core programs:
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2.5rem;">
+                <!-- Flagship 1 -->
+                <div style="background: #ffffff; border: 1px solid #cbd5e1; border-top: 4px solid #3b82f6; border-radius: 6px; padding: 1.25rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <span style="font-size: 0.75rem; font-weight: 700; color: #2563eb; text-transform: uppercase;">Flagship 1 • Model-State Recovery</span>
+                        <span style="font-size: 0.75rem; background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 4px; font-weight: 600;">Working Paper / Ongoing Revision</span>
+                    </div>
+                    <h3 style="margin: 0.4rem 0; font-size: 1.2rem;">
+                        <a href="https://github.com/shamddd/stateshift" style="color: #0f172a; text-decoration: none;">StateShift: Error Recovery across Post-Training Checkpoints</a>
+                    </h3>
+                    <p style="font-size: 0.9rem; color: #475569; line-height: 1.5; margin: 0.4rem 0;">
+                        Investigates how error recovery behavior changes across model/post-training state under controlled verifier perturbations. Identifies a controlled state-by-checkpoint interaction contrast of &Gamma;<sub>256</sub> = +0.1176 (95% CI [+0.0955, +0.1400]).
+                    </p>
+                    <div style="font-size: 0.8rem; color: #64748b;">
+                        <em>Historical Note: Previous review cycle at Artificial Intelligence (Elsevier, ARTINT-D-26-01491) closed; manuscript under revision.</em>
+                    </div>
+                </div>
+
+                <!-- Flagship 2 -->
+                <div style="background: #ffffff; border: 1px solid #cbd5e1; border-top: 4px solid #10b981; border-radius: 6px; padding: 1.25rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <span style="font-size: 0.75rem; font-weight: 700; color: #059669; text-transform: uppercase;">Flagship 2 • Runtime Verification</span>
+                        <span style="font-size: 0.75rem; background: #dcfce7; color: #15803d; padding: 2px 8px; border-radius: 4px; font-weight: 600;">Working Paper / Research Artifact</span>
+                    </div>
+                    <h3 style="margin: 0.4rem 0; font-size: 1.2rem;">
+                        <a href="https://github.com/shamddd/verified-state-recovery" style="color: #0f172a; text-decoration: none;">Verified State Recovery: Retry Safety & Recovery Contracts</a>
+                    </h3>
+                    <p style="font-size: 0.9rem; color: #475569; line-height: 1.5; margin: 0.4rem 0;">
+                        Empirically demonstrates an evaluation-blindness gap in ToolSandbox: under post-commit ACK loss, blind retry causes duplicate persistent mutations while benchmark evaluators return similarity 1.0. Establishes declarative Recovery Contracts and Verified Recovery Score (VRS). Shows verify-before-retry (B3) is sufficient in tested clean-observability regimes.
+                    </p>
+                    <div style="font-size: 0.8rem; color: #64748b;">
+                        <em>Artifact: 112 automated unit tests passing; dual-verified on official ToolSandbox upstream tasks and SQLite transactional environment.</em>
+                    </div>
+                </div>
+
+                <!-- Flagship 3 -->
+                <div style="background: #ffffff; border: 1px solid #cbd5e1; border-top: 4px solid #8b5cf6; border-radius: 6px; padding: 1.25rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <span style="font-size: 0.75rem; font-weight: 700; color: #7c3aed; text-transform: uppercase;">Flagship 3 • Future Frontier</span>
+                        <span style="font-size: 0.75rem; background: #f3e8ff; color: #6b21a8; padding: 2px 8px; border-radius: 4px; font-weight: 600;">PhD Research Agenda</span>
+                    </div>
+                    <h3 style="margin: 0.4rem 0; font-size: 1.2rem;">
+                        <span style="color: #0f172a;">Recovery-State Inference & Verified Restoration</span>
+                    </h3>
+                    <p style="font-size: 0.9rem; color: #475569; line-height: 1.5; margin: 0.4rem 0;">
+                        Moves beyond declared contracts and clean postcondition queries toward action-relevant latent recovery-state inference under partial observability, sequential information acquisition, and safe intervention planning.
+                    </p>
                 </div>
             </div>
 
-            <!-- Cross-Paper Interactive Research Map -->
-            <h2 class="section-heading">Research Identity & Portfolio Map</h2>
-            <p style="font-size: 0.95rem; color: #475569;">
-                My research portfolio is structured around the core paradigm of <strong>Reliable Adaptive Intelligent Systems</strong> across six interconnected sub-fields:
-            </p>
-
-            <div style="background: #0f172a; color: #f8fafc; padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0; font-family: system-ui, sans-serif;">
-                <div style="text-anchor: middle; text-align: center; font-weight: bold; font-size: 1.1rem; color: #38bdf8; margin-bottom: 1.25rem;">
-                    RELIABLE ADAPTIVE INTELLIGENT SYSTEMS
+            <!-- 3. STRONGEST EMPIRICAL RESULTS -->
+            <h2 class="section-heading" style="border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">
+                Strongest Empirical Findings
+            </h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2.5rem;">
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 1rem; border-radius: 6px;">
+                    <div style="font-weight: 700; color: #0f172a; font-size: 0.95rem;">Tool-Agent Benchmark Blindness</div>
+                    <p style="font-size: 0.85rem; color: #475569; line-height: 1.5; margin-top: 0.5rem;">
+                        In official ToolSandbox creation tasks under post-commit ACK loss (F1), blind retry produced duplicate persistent entities in <strong>5/5 (100%)</strong> scenarios while the benchmark evaluator awarded <strong>similarity = 1.0</strong>. Milestone predicates tested existential presence without enforcing cardinality upper bounds.
+                    </p>
                 </div>
-
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
-                    <div style="background: #1e293b; padding: 1rem; border-radius: 6px; border-top: 3px solid #3b82f6;">
-                        <div style="font-weight: 700; color: #60a5fa; font-size: 0.9rem;">1. Reasoning Reliability</div>
-                        <div style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.3rem;">Uncertainty & GRPO Credit Assignment</div>
-                        <div style="margin-top: 0.5rem; font-size: 0.75rem;"><a href="writing/when-confidence-confounds-reasoning-complexity/index.html" style="color: #38bdf8;">Read Essay &rarr;</a></div>
-                    </div>
-
-                    <div style="background: #1e293b; padding: 1rem; border-radius: 6px; border-top: 3px solid #10b981;">
-                        <div style="font-weight: 700; color: #34d399; font-size: 0.9rem;">2. Agent Tool Safety</div>
-                        <div style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.3rem;">MediRush-SafeAgent Multi-Stage Interception</div>
-                        <div style="margin-top: 0.5rem; font-size: 0.75rem;"><a href="https://github.com/shamddd/medirush-safeagent" target="_blank" rel="noopener" style="color: #34d399;">View Code &rarr;</a></div>
-                    </div>
-
-                    <div style="background: #1e293b; padding: 1rem; border-radius: 6px; border-top: 3px solid #8b5cf6;">
-                        <div style="font-weight: 700; color: #c084fc; font-size: 0.9rem;">3. Adaptive Computation</div>
-                        <div style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.3rem;">CARLS RL Plasticity Scheduling</div>
-                        <div style="margin-top: 0.5rem; font-size: 0.75rem;"><a href="papers/rl-plasticity.html" style="color: #c084fc;">View Paper &rarr;</a></div>
-                    </div>
-
-                    <div style="background: #1e293b; padding: 1rem; border-radius: 6px; border-top: 3px solid #f59e0b;">
-                        <div style="font-weight: 700; color: #fde68a; font-size: 0.9rem;">4. Causal Observability</div>
-                        <div style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.3rem;">recovery_eval Error Recovery Metrics</div>
-                        <div style="margin-top: 0.5rem; font-size: 0.75rem;"><a href="papers/recovery-eval.html" style="color: #fde68a;">View Paper &rarr;</a></div>
-                    </div>
-
-                    <div style="background: #1e293b; padding: 1rem; border-radius: 6px; border-top: 3px solid #ec4899;">
-                        <div style="font-weight: 700; color: #f472b6; font-size: 0.9rem;">5. Reliable Infrastructure</div>
-                        <div style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.3rem;">QuorumShift Consensus Quorum Adaptation</div>
-                        <div style="margin-top: 0.5rem; font-size: 0.75rem;"><a href="https://github.com/shamddd/quorumshift" target="_blank" rel="noopener" style="color: #f472b6;">View Code &rarr;</a></div>
-                    </div>
-
-                    <div style="background: #1e293b; padding: 1rem; border-radius: 6px; border-top: 3px solid #64748b;">
-                        <div style="font-weight: 700; color: #94a3b8; font-size: 0.9rem;">6. Verifiable Systems</div>
-                        <div style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.3rem;">SCRE-Align MCTS & Step-DPO</div>
-                        <div style="margin-top: 0.5rem; font-size: 0.75rem;"><a href="https://github.com/shamddd/scre-align" target="_blank" rel="noopener" style="color: #94a3b8;">View Code &rarr;</a></div>
-                    </div>
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 1rem; border-radius: 6px;">
+                    <div style="font-weight: 700; color: #0f172a; font-size: 0.95rem;">Sufficiency of Standard Systems Baselines</div>
+                    <p style="font-size: 0.85rem; color: #475569; line-height: 1.5; margin-top: 0.5rem;">
+                        Under clean observability, classical verify-before-retry (B3) achieved <strong>100% VRS (10/10)</strong> and <strong>0% false recovery</strong> with single-probe overhead in the experimental cost model. Idempotency-aware abstention (B2) secured safety in tested conditions but yielded <strong>0% recovery coverage</strong>.
+                    </p>
+                </div>
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 1rem; border-radius: 6px;">
+                    <div style="font-weight: 700; color: #0f172a; font-size: 0.95rem;">Model Post-Training Recovery Contrast</div>
+                    <p style="font-size: 0.85rem; color: #475569; line-height: 1.5; margin-top: 0.5rem;">
+                        In StateShift, controlled endpoint recovery difference-in-differences interaction contrast reached <strong>&Gamma;<sub>256</sub> = +0.1176</strong> (95% CI [+0.0955, +0.1400]) across checkpoint sequences, tracking recovery capacity gains during post-training.
+                    </p>
                 </div>
             </div>
 
-            <h2 class="section-heading">News & Timeline</h2>
-            
-            <h3 class="year-heading">2026</h3>
-            <ul class="news-list">
-                <li class="news-item">
-                    <span class="news-date">August</span>
-                    <span class="news-text">Published flagship research essay <a href="writing/when-confidence-confounds-reasoning-complexity/index.html"><em>When Confidence Proxies Confound Reasoning Complexity</em></a>.</span>
-                </li>
-                <li class="news-item">
-                    <span class="news-date">August</span>
-                    <span class="news-text">Submitted <em>Estimator Validity in RLVR</em> (Working Paper / Submitted Manuscript).</span>
-                </li>
-                <li class="news-item">
-                    <span class="news-date">August</span>
-                    <span class="news-text">Submitted <em>MediRush-SafeAgent</em> to <strong>Elsevier Artificial Intelligence in Medicine (AIIM)</strong>.</span>
-                </li>
-                <li class="news-item">
-                    <span class="news-date">August</span>
-                    <span class="news-text">Submitted <em>recovery_eval</em> to <strong>11th IEEE Special Session on Machine Learning on Big Data (IEEE BigData 2026)</strong>.</span>
-                </li>
-                <li class="news-item">
-                    <span class="news-date">August</span>
-                    <span class="news-text">Submitted <em>When Should Language Models Learn from Reinforcement?</em> to <strong>Journal of Machine Learning Research (JMLR)</strong>.</span>
-                </li>
-            </ul>
-
-            <h3 class="year-heading">2024</h3>
-            <ul class="news-list">
-                <li class="news-item">
-                    <span class="news-date">June</span>
-                    <span class="news-text">Joined <strong>Spectra Corporate Service</strong> as Data Engineer / Machine Learning Specialist in Pune, India.</span>
-                </li>
-                <li class="news-item">
-                    <span class="news-date">June</span>
-                    <span class="news-text">Graduated with <strong>B.Tech. in AI & DS</strong> from APCOER Pune (Cumulative GPA: 8.70 / 10.00).</span>
-                </li>
-            </ul>
-
-            <h2 class="section-heading">Key Research Projects & Repositories</h2>
-            
-            <p>
-                <strong>Uncertainty-Weighted Credit Assignment in LM RL (ear_grpo_reasoning)</strong><br>
-                Exposed completion-length confounding ($r = 0.486, N=100$) in token predictive entropy, demonstrating that outcome-confidence proxies cause uncertainty-weighted GRPO to misallocate credit on valid multi-step derivations. [<a href="writing/when-confidence-confounds-reasoning-complexity/index.html">Essay</a>] [<a href="papers/ear-grpo.html">Paper</a>] [<a href="pdfs/ear-grpo-reasoning.pdf" target="_blank">PDF</a>] [<a href="https://github.com/shamddd/ear_grpo_reasoning" target="_blank" rel="noopener">Code</a>]
+            <!-- 4. TRANSPARENT PUBLICATION STATUS -->
+            <h2 id="publications" class="section-heading" style="border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">
+                Publication Status & Transparency Ledger
+            </h2>
+            <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 1rem;">
+                <em>Policy: In adherence to academic integrity, manuscripts are labeled with exact status. I currently have zero accepted peer-reviewed archival publications. All active research is available as working papers, open-source code artifacts, and reproducible testbeds.</em>
             </p>
 
-            <p>
-                <strong>MediRush-SafeAgent: Multi-Stage Tool Execution Safety</strong><br>
-                Multi-stage runtime interception framework guaranteeing 100% safe task completion and 0% policy violations for healthcare-commerce agents. [<a href="https://github.com/shamddd/medirush-safeagent" target="_blank" rel="noopener">Code</a>]
-            </p>
+            <div style="overflow-x: auto; margin-bottom: 2.5rem;">
+                <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
+                    <thead>
+                        <tr style="background: #f1f5f9; border-bottom: 2px solid #cbd5e1;">
+                            <th style="padding: 8px 12px;">Manuscript / Research Artifact</th>
+                            <th style="padding: 8px 12px;">Status Label</th>
+                            <th style="padding: 8px 12px;">Disclosure & Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 8px 12px;"><strong>StateShift</strong></td>
+                            <td style="padding: 8px 12px;"><span style="background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Working Paper / Revision</span></td>
+                            <td style="padding: 8px 12px;">Historical Elsevier AIJ submission (ARTINT-D-26-01491) cycle closed; undergoing manuscript revision.</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 8px 12px;"><strong>Verified State Recovery</strong></td>
+                            <td style="padding: 8px 12px;"><span style="background: #dcfce7; color: #15803d; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Working Paper / Artifact</span></td>
+                            <td style="padding: 8px 12px;">Research artifact frozen; preparing for submission to flagship software engineering / systems venue.</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 8px 12px;"><strong>EAR-GRPO Reasoning</strong></td>
+                            <td style="padding: 8px 12px;"><span style="background: #f1f5f9; color: #475569; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Working Paper / Note</span></td>
+                            <td style="padding: 8px 12px;">Historical IEEE TAI submission (TAI-2026-Aug-A-01875) formally withdrawn. Demonstrates length confounding.</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 8px 12px;"><strong>AdaptiveRL-Forge (CARLS)</strong></td>
+                            <td style="padding: 8px 12px;"><span style="background: #f1f5f9; color: #475569; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Working Paper</span></td>
+                            <td style="padding: 8px 12px;">Working paper targeting JMLR in preparation; not yet formally submitted.</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 8px 12px;"><strong>TrustQuorum</strong></td>
+                            <td style="padding: 8px 12px;"><span style="background: #f1f5f9; color: #475569; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Research Artifact</span></td>
+                            <td style="padding: 8px 12px;">N=60 containerized Raft testbed evaluating OOD novelty vs decision unreliability.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-            <p>
-                <strong>State-Matched Error Recovery Evaluation (recovery_eval)</strong><br>
-                Formulated state-contrast continuation evaluation ($D_{\text{recovery}} = -0.1100$) measuring error recovery under frozen structural covariates across reasoning model rollouts. [<a href="papers/recovery-eval.html">Paper</a>] [<a href="pdfs/recovery-eval.pdf" target="_blank">PDF</a>] [<a href="https://github.com/shamddd/recovery_eval" target="_blank" rel="noopener">Code</a>]
+            <!-- 5. FUTURE PHD RESEARCH AGENDA -->
+            <h2 id="future" class="section-heading" style="border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">
+                Future PhD Research Agenda (Fall 2027)
+            </h2>
+            <p style="font-size: 0.95rem; color: #334155; line-height: 1.6;">
+                For my prospective doctoral work, I aim to tackle core theoretical and systems questions at the intersection of agent planning, belief-state inference, and formal verification:
             </p>
+            <ol style="font-size: 0.9rem; color: #475569; line-height: 1.6; padding-left: 1.25rem;">
+                <li style="margin-bottom: 0.5rem;">
+                    <strong>Information Sufficiency under Partial Observability</strong>: What minimal observation history is mathematically sufficient to identify recovery-equivalent external states when tools emit unacknowledged mutations?
+                </li>
+                <li style="margin-bottom: 0.5rem;">
+                    <strong>Optimal Intervention Planning</strong>: When should an autonomous agent probe, retry, compensate, or escalate to human-in-the-loop abstention under uncertain postconditions?
+                </li>
+                <li style="margin-bottom: 0.5rem;">
+                    <strong>Compositional Guarantees</strong>: How can recovery correctness guarantees compose across hierarchical agent memory, multi-party external state, and irreversible physical side effects?
+                </li>
+            </ol>
 
-            <p>
-                <strong>CARLS: Adaptive Reinforcement Learning Scheduler</strong><br>
-                Predicts RL plasticity across intermediate checkpoints, reducing training FLOPs by 18.7% while boosting Pass@4 accuracy. [<a href="papers/rl-plasticity.html">Paper</a>] [<a href="https://github.com/shamddd/carls-plasticity" target="_blank" rel="noopener">Code</a>]
-            </p>
-
-            <p>
-                <strong>Failure-Domain Aware Consensus Quorum Adaptation (quorumshift)</strong><br>
-                Designed C++20 dynamic quorum adaptation for Raft consensus clusters under asymmetric network partitioning. [<a href="https://github.com/shamddd/quorumshift" target="_blank" rel="noopener">Code</a>]
-            </p>
+            <div style="margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; font-size: 0.85rem; color: #94a3b8; text-align: center;">
+                &copy; 2026 Sham Satish Thakare • Reliable Autonomous AI Systems
+            </div>
         </div>
     </div>
-
-    <footer class="site-footer">
-        <div class="wrapper">
-            <p>© 2026 Sham Satish Thakare · <a href="mailto:shamthakare3000@gmail.com">shamthakare3000@gmail.com</a> · <a href="https://github.com/shamddd" target="_blank" rel="noopener">GitHub (@shamddd)</a> · <a href="Sham_Thakare_Academic_CV.pdf" target="_blank">CV (PDF)</a> · <a href="publications.bib" target="_blank">BibTeX</a></p>
-        </div>
-    </footer>
 </body>
 </html>
