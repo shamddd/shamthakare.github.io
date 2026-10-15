@@ -15,11 +15,13 @@ Pune, Maharashtra, India | Email: shamthakare3000@gmail.com | Website: https://s
 ## Education & Honors
 
 ### APCOER Pune (Savitribai Phule Pune University) — Pune, India
-**Bachelor of Technology (B.Tech.) in Artificial Intelligence & Data Science** | *Jan 2020 – Jun 2024*  
-* Cumulative GPA: **8.70 / 10.00** (First Class with Distinction; Final Year SGPA: **9.53 / 10.00**, Department Rank 1).
-* **Gold Medal in Mathematics (2024)**: Awarded for highest academic standing across mathematical and quantitative curricula in the university cohort.
-* **Core Mathematics Coursework**: Advanced Linear Algebra (Spectral Decomposition, SVD), Probability & Stochastic Processes, Optimization Theory (Convex Optimization, KKT Conditions), Discrete Mathematics & Graph Theory, Calculus & Differential Equations.
-* **Computer Science Coursework**: Design & Analysis of Algorithms, Data Structures, Distributed Computing, Operating Systems, Machine Learning, Deep Learning, Computational Intelligence, Database Management Systems.
+**Bachelor of Engineering (B.E.) in Artificial Intelligence & Data Science** | *2020 – 2024*  
+* Cumulative GPA: **8.70 / 10.00** (First Class with Distinction; Final Year SGPA: **9.53 / 10.00**, Department Rank 1, 170/170 Credits, Total Grade Points: 1479/1700, Seat No: `B191102032`, PRN: `72159719L`, Conferred April 2024 / 125th Convocation).
+* **Gold Medal in Mathematics (2024)**: Conferred for highest quantitative and mathematical academic rank in the university cohort.
+* **Progressive Academic Standing**: First Year (F.E.) SGPA: **8.64** • Second Year (S.E.) SGPA: **8.02** • Third Year (T.E.) SGPA: **8.69** • Final Year (B.E.) SGPA: **9.53 / 10.00**.
+* **Verified University Coursework (Grade O / 10.0 Outstanding)**: Quantum Artificial Intelligence (Course 417523A, 10/10, 30 GP), Artificial Neural Networks (Course 317531, 10/10, 30 GP), Distributed Computing (Course 417531, 10/10, 30 GP), Operating Systems (Course 217521, 10/10, 30 GP), Cyber Security (Course 317530, 10/10, 30 GP), Capstone Senior Thesis / Project Stage I & II (Courses 417527 & 417536, 8 cr, 10/10, 80 GP), Industry Internship (Course 317535, 4 cr, 10/10, 40 GP), Engineering Mathematics II Tutorial (10/10). Grade A+ in ML, Deep Learning, Data Science; Grade A in Discrete Mathematics (Course 210241, 9/10).
+* **Official Medium of Instruction**: Formally certified on official Savitribai Phule Pune University transcripts as **ENGLISH** (Ref: `EXAM./TRANS./BEN241203044`).
+* **Pre-University Education**: Higher Secondary Certificate (HSC - Class XII Science), Z.P. Agarkar Jr. College, Akola (2018–2020, 71.23%, Seat: `V001345`) • Secondary School Certificate (SSC - Class X), Happy Hours High School, Akola (March 2018, **85.20% Distinction, Mathematics: 95/100**, Science: 88/100, Seat: `H006786`).
 
 ---
 
@@ -107,6 +109,16 @@ Pune, Maharashtra, India | Email: shamthakare3000@gmail.com | Website: https://s
 * **Quantum Computing & Information**: Quantum Gates & Circuits, Unitary Operators, Density Matrix Formalism, Quantum Algorithms (Shor, Grover, Quantum Walks), Qiskit, Cirq.
 * **Machine Learning & AI**: Reinforcement Learning (PPO, GRPO, RLVR), Transformer Architectures, Statistical Learning Theory, PyTorch, JAX, Hugging Face Transformers, NumPy, SciPy.
 * **Systems Programming & Infrastructure**: C++ (C++20 Multithreading, Lock-free Primitives), Distributed Consensus (Raft), POSIX, Linux Kernel Internals, OpenTelemetry, Git, Docker, LaTeX.
+
+---
+
+## Standardized Tests & Professional Certifications
+
+* **Academic IELTS**: Overall Band **6.5** (Listening: 6.0, Reading: 6.5, Writing: 6.0, Speaking: 6.5), CEFR Level **B2** (Test Date: Feb 15, 2025).
+* **German APS Certificate**: Prüfnummer **41183/24**, Embassy of the Federal Republic of Germany, New Delhi (Issued Feb 06, 2025).
+* **Oracle Certified**: Oracle Cloud Infrastructure Certified Architect Associate (`103492744OCI26CAA`) · Oracle AI Database Certified Foundations Associate (`103492744OCI26DCFA`) · Agentic AI Foundations Associate (`103492744AAI26OFA`).
+* **Microsoft & Google**: Microsoft Certified: SQL AI Developer Associate (`6CD87101C1676B9E`) · Google AI Professional Certificate & Google Advanced Data Analytics (Credly verified: https://credly.com/go/aZ16JfHk).
+* **IIT Bombay**: Spoken Tutorial Certified in Android App using Kotlin (APCOER Pune Centre, Cert ID: `3206110F6D`).
 
 ---
 
