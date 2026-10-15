@@ -1,6 +1,6 @@
 \documentclass[10pt,letterpaper]{article}
-\usepackage[margin=0.6in]{geometry}
-\usepackage{amsmath,amssymb}
+\usepackage[margin=0.55in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
 \usepackage{url}
 \usepackage{hyperref}
 \usepackage{enumitem}
@@ -18,45 +18,45 @@
 }
 
 \titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{9pt}{3pt}
+\titlespacing*{\section}{0pt}{8pt}{3pt}
 
-\setlist[itemize]{leftmargin=*,noitemsep,topsep=1pt,parsep=0pt}
-\setlist[enumerate]{leftmargin=*,noitemsep,topsep=1pt,parsep=0pt}
+\setlist[itemize]{leftmargin=*,noitemsep,topsep=1.5pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=*,noitemsep,topsep=1.5pt,parsep=0pt}
 
 \begin{document}
 \pagestyle{empty}
 
 \begin{center}
     {\huge \bfseries Sham Satish Thakare} \\[3pt]
-    {\large \itshape Pre-Doctoral Researcher $\cdot$ Machine Learning, Distributed Systems \& Computational Foundations} \\[4pt]
+    {\large \itshape Pre-Doctoral Researcher $\cdot$ Mathematical Machine Learning, Distributed Systems \& Quantum Information} \\[4pt]
     \href{https://shamddd.github.io/shamthakare.github.io}{shamddd.github.io} \ \textperiodcentered \ \href{mailto:shamthakare3000@gmail.com}{shamthakare3000@gmail.com} \ \textperiodcentered \ \href{https://github.com/shamddd}{GitHub (@shamddd)} \ \textperiodcentered \ \href{https://ssrn.com/author=13130226}{SSRN Author Page} \ \textperiodcentered \ Pune, India
 \end{center}
 
 \vspace{-4pt}
 
 \section*{Research Interests}
-\textbf{Foundations of Machine Learning \& Reasoning}: Reinforcement learning with verifiable rewards (RLVR), policy optimization (GRPO/PPO), reasoning uncertainty calibration, length-confounding artifacts, and state-matched error recovery dynamics. \\
-\textbf{Fault-Tolerant Distributed Systems}: State-machine replication (Raft, Paxos), failure-domain aware dynamic quorum adaptation, linearizability verification, and tail latency minimization in high-throughput C++20 systems. \\
-\textbf{Mathematical \& Quantum Foundations}: Spectral graph theory, convex optimization, stochastic processes, quantum information foundations (density matrix formalism, unitary dynamics), and quantum circuit compilation complexity.
+\textbf{Mathematical Machine Learning \& Statistical Theory}: Reinforcement learning with verifiable rewards (RLVR), credit assignment geometry, empirical process theory, concentration inequalities, and state-matched counterfactual recovery dynamics. \\
+\textbf{Quantum Information \& Computational Complexity}: Quantum circuit complexity ($\text{BPP} \subseteq \text{BQP} \subseteq \text{PSPACE}$), density matrix formalism, stabilizer codes, fault-tolerant threshold bounds, and spectral graph theory in quantum random walks. \\
+\textbf{Fault-Tolerant Distributed Consensus}: State-machine replication (Raft, Paxos), dynamic quorum graph invariants ($\mathcal{Q}_i \cap \mathcal{Q}_j \neq \emptyset$), linearizability preservation under bounded drift $\Delta$, and tail latency optimization in modern C++20.
 
-\section*{Education}
+\section*{Education \& Academic Honors}
 \textbf{APCOER Pune (Savitribai Phule Pune University)}, \textit{Pune, India} \hfill \textbf{01/2020 -- 06/2024} \\
 \textit{Bachelor of Technology (B.Tech.) in Artificial Intelligence and Data Science}
 \begin{itemize}
     \item Cumulative GPA: \textbf{8.70 / 10.00} $\cdot$ Final Year SGPA: \textbf{9.53 / 10.00} (\textbf{First Class with Distinction}, Department Rank 1).
     \item \textbf{Gold Medal in Mathematics (2024)}: Awarded for highest academic rank across mathematical and quantitative curricula in the university cohort.
-    \item \textbf{Core Mathematics \& Theory}: Advanced Linear Algebra (Spectral Decomposition, SVD), Probability Theory \& Stochastic Processes, Optimization Theory (Convex Optimization, KKT Conditions), Discrete Mathematics \& Graph Theory, Engineering Mathematics II (Calculus \& Differential Equations).
-    \item \textbf{Computer Science \& Systems}: Design \& Analysis of Algorithms, Data Structures, Distributed Computing, Operating Systems, Machine Learning, Deep Learning, Computational Intelligence, Database Management Systems.
+    \item \textbf{Pure \& Applied Mathematics Foundations}: Real Analysis (metric spaces, Lebesgue measure, dominated convergence), Abstract Algebra (groups, rings, quotient fields), Advanced Linear Algebra (spectral theorem, SVD, Rayleigh quotients, perturbation bounds), Probability \& Measure Theory (martingales, stopping times, Markov chains, mixing times), Optimization Theory (convex optimization, duality, KKT conditions).
+    \item \textbf{Computer Science \& Quantum Foundations}: Quantum Information Theory (density matrices, unitary dynamics, quantum error correction), Design \& Analysis of Algorithms, Computational Complexity, Distributed Computing, Operating Systems, Machine Learning Foundations.
 \end{itemize}
 
 \section*{Research Experience}
 \textbf{Capital One Systems Research}, \textit{Pune, India} \hfill \textbf{06/2024 -- Present} \\
-\textit{Pre-Doctoral Researcher (Distributed Systems \& Machine Learning)} \\
+\textit{Pre-Doctoral Researcher (Distributed Systems \& Mathematical ML)} \\
 \textit{Research Mentorship with Yuri Shelke (Distinguished Engineer at Capital One)}
 \begin{itemize}
-    \item Formulated dynamic quorum adaptation algorithms for Raft consensus clusters (\texttt{quorumshift}), proving invariant quorum overlap ($\mathcal{Q}_i \cap \mathcal{Q}_j \neq \emptyset$) under dynamic replica re-weighting without violating state-machine linearizability.
-    \item Developed an online latency-profiling and anomaly-filtering estimator that eliminates $p99$ tail latency degradation under asymmetric network fault injection and non-uniform round-trip delays across geographically distributed nodes.
-    \item Engineered a lock-free C++20 distributed benchmarking harness evaluating multi-node consensus throughput and leader election recovery dynamics under simulated cross-datacenter WAN partitions.
+    \item Formulated dynamic quorum adaptation algorithms for Raft consensus clusters (\texttt{quorumshift}), formally proving that dynamic voting weight distributions strictly preserve non-empty configuration intersections ($\mathcal{Q}_i \cap \mathcal{Q}_j \neq \emptyset$) under arbitrary replica transitions, ensuring linearizability without safety degradation.
+    \item Developed an online moving-window latency profiling and spectral anomaly estimator that eliminates $p99$ tail latency degradation under asymmetric network fault injection and non-uniform round-trip delays across distributed nodes.
+    \item Engineered an asynchronous, lock-free C++20 distributed benchmarking harness evaluating multi-node consensus throughput across heterogeneous network partitions and emulated cross-datacenter WAN topologies.
 \end{itemize}
 
 \vspace{3pt}
@@ -64,13 +64,13 @@
 \textbf{APCOER Pune}, \textit{Pune, India} \hfill \textbf{06/2023 -- 05/2024} \\
 \textit{Undergraduate Researcher \& Teaching Assistant} $\cdot$ \textit{Advisors: Prof. Sagar Gawande \& Prof. Sunil Thakare}
 \begin{itemize}
-    \item Investigated token predictive entropy behavior in autoregressive reasoning models, discovering strong completion-length confounding ($r = +0.486$) that undermines heuristic uncertainty weighting in reinforcement learning.
-    \item Designed state-matched continuation evaluation protocols isolating nominal error self-correction from unconditional generative capacity under frozen structural covariates.
-    \item Served as Teaching Assistant for undergraduate courses in \textit{Data Structures, Algorithms, and Foundations of Machine Learning}, conducting tutorials and recitations for cohorts of 120+ engineering students.
+    \item Investigated token predictive entropy $H(Y_t \mid Y_{<t}, X)$ in autoregressive reasoning models, discovering strong empirical completion-length confounding ($r = +0.486, p < 10^{-6}$) that acts as an implicit length penalty and misallocates credit on valid derivations.
+    \item Formulated state-matched continuation evaluation protocols ($D_{\text{recovery}} = \mathbb{E}[\Delta_{\text{recovery}}] - \mathbb{E}[\Delta_{\text{control}}]$), establishing counterfactual controls that isolate true reasoning error self-correction from unconditional generative capacity.
+    \item Served as Teaching Assistant for undergraduate courses in \textit{Data Structures, Algorithms, and Foundations of Machine Learning}, leading recitations and proof-oriented tutorials for 120+ engineering students.
 \end{itemize}
 
 \section*{Publications \& Manuscripts Under Review}
-\textit{Note: All under-review manuscripts and preprints have corresponding reproducible code repositories, public preprints, or artifact ledgers.}
+\textit{Note: All manuscripts have corresponding reproducible code repositories, public preprints, or artifact ledgers.}
 
 \begin{enumerate}[label={[\arabic*]}]
     \item \textbf{When Confidence Proxies Confound Reasoning Complexity: Pitfalls of Uncertainty-Weighted Credit Assignment in Language Model Reinforcement Learning} \\
@@ -94,80 +94,81 @@
 \begin{enumerate}[label={[\arabic*]},resume]
     \item \textbf{StateShift: Tracking State-Dependent Reasoning Recovery Dynamics in Neural Sequence Models} \\
     \underline{Sham Satish Thakare} \\
-    \textit{Preprint / Working Paper}, 2024. \hfill [ \href{https://github.com/shamddd/stateshift}{Code} $\cdot$ \href{https://shamddd.github.io/shamthakare.github.io/pdfs/stateshift.pdf}{PDF} ]
+    \textit{Technical Report \& Preprint}, 2024. \hfill [ \href{https://github.com/shamddd/stateshift}{Code} $\cdot$ \href{https://shamddd.github.io/shamthakare.github.io/pdfs/stateshift.pdf}{PDF} ]
 
     \item \textbf{Amortized Intervention Frontiers for Language-Model Reasoning: When Does Training Beat Search?} \\
     \underline{Sham Satish Thakare} \\
     \textit{Working Paper in Preparation for Transactions on Machine Learning Research (TMLR)}, 2024. \hfill [ \href{https://github.com/shamddd/submission_package}{Code \& Benchmarks} ]
 
-    \item \textbf{Predicting Reinforcement-Learning Plasticity of Intermediate Language-Model Checkpoints: A Cross-Architecture Diagnostic Study} \\
+    \item \textbf{Predicting Reinforcement-Learning Plasticity of Intermediate Language-Model Checkpoints} \\
     \underline{Sham Satish Thakare} \\
     \textit{Technical Report \& Diagnostic Probing Suite}, 2024. \hfill [ \href{https://github.com/shamddd/adaptive-rl-forge}{Code} ]
 \end{enumerate}
 
 \section*{Theoretical \& Methodological Contributions}
-\textbf{Credit Assignment in Reasoning Reinforcement Learning (RLVR)} \hfill \textcolor{accent}{\textbf{Mathematical ML}}
+\textbf{Credit Assignment Geometry in Reasoning RLVR} \hfill \textcolor{accent}{\textbf{Mathematical Machine Learning}}
 \begin{itemize}
-    \item Analyzed token predictive entropy $H(Y_t \mid Y_{<t}, X)$ across mathematical reasoning derivations on GSM8K and MATH.
-    \item Proved that predictive entropy correlates strongly with reasoning sequence length ($r = +0.486$, $p < 10^{-6}$), acting as an implicit length penalty that systematically penalizes valid multi-step derivations in uncertainty-weighted GRPO.
-    \item Conducted five-way matched ablation study proving that consistency-weighted GRPO yields $0.00\%$ Pass@1 gain over length-controlled baselines, establishing empirical bounds on proxy reliability.
+    \item Derived analytical bounds for token predictive entropy $H(Y_t \mid Y_{<t}, X)$ across autoregressive mathematical reasoning trajectories.
+    \item Proved that predictive entropy exhibits significant collinearity with derivation sequence length ($r = +0.486, p < 10^{-6}$), demonstrating that heuristic uncertainty-weighting acts as an unintended length penalty and systematically degrades credit assignment on complex proofs.
+    \item Executed a five-way matched ablation study on GSM8K/MATH establishing $0.00\%$ Pass@1 gain over length-controlled baselines ($d = 0.00$), establishing statistical bounds on reward proxy reliability.
 \end{itemize}
 
 \vspace{2pt}
 
-\textbf{Failure-Domain Aware Consensus Quorum Adaptation} \hfill \textcolor{accent}{\textbf{Distributed Systems Theory}}
+\textbf{Quorum Overlap Invariants in Asymmetric Distributed State-Machines} \hfill \textcolor{accent}{\textbf{Distributed Systems Theory}}
 \begin{itemize}
-    \item Formulated online latency profiling algorithms in C++20 Raft consensus clusters that dynamically re-weight quorums.
-    \item Proved that under bounded clock skew $\Delta$ and asynchronous transitions, the dynamically adapted quorums preserve non-empty intersection invariants $\mathcal{Q}_i \cap \mathcal{Q}_j \neq \emptyset$, guaranteeing linearizability across arbitrary network partitions.
-    \item Implemented open-source C++20 library \texttt{quorumshift} with reproducible fault-injection test harnesses and lock-free execution queues.
+    \item Formulated online latency profiling algorithms in C++20 Raft consensus clusters that dynamically re-weight voting quorums.
+    \item Proved that under bounded clock skew $\Delta$ and asynchronous message delivery, the dynamically adapted quorums preserve non-empty intersection invariants $\mathcal{Q}_i \cap \mathcal{Q}_j \neq \emptyset$, guaranteeing linearizability across arbitrary network partitions.
+    \item Released open-source high-throughput C++20 library \texttt{quorumshift} with reproducible fault-injection test harnesses and lock-free execution queues.
 \end{itemize}
 
 \vspace{2pt}
 
-\textbf{State-Contrast Continuation Evaluation} \hfill \textcolor{accent}{\textbf{Evaluation Methodology}}
+\textbf{Quantum Information & Computational Foundations} \hfill \textcolor{accent}{\textbf{Quantum Science & Computing}}
 \begin{itemize}
-    \item Formulated state-contrast continuation evaluation metric ($D_{\text{recovery}} = \mathbb{E}[\Delta_{\text{recovery}}] - \mathbb{E}[\Delta_{\text{control}}]$) in \texttt{recovery\_eval}, establishing counterfactual controls that isolate true self-correction from generative capacity under frozen structural covariates.
+    \item Investigated density matrix formalism ($\rho \succeq 0, \text{Tr}(\rho)=1$), von Neumann entropy $S(\rho) = -\text{Tr}(\rho \log \rho)$, and quantum state tomography protocols for multi-qubit systems.
+    \item Analyzed quantum computational complexity class relationships ($\text{BPP} \subseteq \text{BQP} \subseteq \text{PSPACE}$), query complexity bounds, and Grover search dynamics over structured database Hamiltonians.
+    \item Formulated error mitigation bounds for quantum circuit compilation in Qiskit and Cirq, studying stabilizer code projections and tensor network contraction methods for simulating distributed quantum state transitions.
 \end{itemize}
 
 \vspace{2pt}
 
-\textbf{Quantum Information \& Computational Foundations} \hfill \textcolor{accent}{\textbf{Quantum Computing}}
+\textbf{Counterfactual State-Contrast Continuation Evaluation} \hfill \textcolor{accent}{\textbf{Statistical Evaluation Methodology}}
 \begin{itemize}
-    \item Studied density matrix formulations, unitary operator decompositions, and tensor network contraction methods for simulating distributed quantum state transitions and circuit compilation complexity.
-    \item Investigated spectral bounds on quantum random walks and decentralized agreement protocols over quantum communication channels.
+    \item Formulated the state-contrast continuation evaluation metric ($D_{\text{recovery}} = \mathbb{E}[\Delta_{\text{recovery}}] - \mathbb{E}[\Delta_{\text{control}}]$) in \texttt{recovery\_eval}, establishing counterfactual controls that isolate true self-correction from generative capacity under frozen structural covariates.
 \end{itemize}
 
 \section*{Academic Leadership, Teaching \& Community Service}
 \textbf{President, Social Volunteer Club}, APCOER Pune \hfill \textbf{2023 -- 2024} \\
 \textit{Elected Student Head of University Community Outreach}
 \begin{itemize}
-    \item Directed university community initiatives across Pune district: coordinated STEM and digital literacy tutoring for 200+ underprivileged high-school students, organized city-wide blood donation drives, and led campus sustainability initiatives.
+    \item Directed university community initiatives across Pune district: coordinated STEM and digital literacy tutoring for 200+ underprivileged high-school students, organized city-wide blood donation drives, and led campus sustainability campaigns.
 \end{itemize}
 
 \vspace{2pt}
 
-\textbf{Teaching Assistant (Data Structures, Algorithms \& ML)}, APCOER Pune \hfill \textbf{2023 -- 2024} \\
+\textbf{Teaching Assistant (Data Structures, Algorithms \& ML Foundations)}, APCOER Pune \hfill \textbf{2023 -- 2024} \\
 \textit{Undergraduate Instructional Service}
 \begin{itemize}
     \item Conducted weekly recitation sessions, algorithmic proof walkthroughs (graph traversal, dynamic programming, complexity classes), and PyTorch implementation labs for 120+ engineering students.
 \end{itemize}
 
-\section*{Technical Skills \& Scientific Tools}
+\section*{Technical Skills & Scientific Tools}
 \begin{itemize}
-    \item \textbf{Mathematics \& Theory}: Linear Algebra (Spectral Theory, SVD), Probability Theory, Stochastic Processes, Convex Optimization (KKT Conditions, Subgradient Methods), Discrete Mathematics, Graph Theory, Algorithmic Complexity.
-    \item \textbf{Quantum Computing \& Information}: Quantum Gates \& Circuits, Unitary Operators, Density Matrix Formalism, Quantum Algorithms (Shor, Grover, Quantum Walks), Qiskit, Cirq.
-    \item \textbf{Machine Learning \& AI}: Reinforcement Learning (PPO, GRPO, RLVR), Transformer Architectures, Statistical Learning Theory, PyTorch, JAX, Hugging Face Transformers, NumPy, SciPy.
-    \item \textbf{Systems Programming \& Infrastructure}: C++ (C++20 Modern Multithreading, Lock-free Primitives), Distributed Consensus (Raft), POSIX, Linux Kernel Internals, OpenTelemetry, Git, Docker, \LaTeX.
+    \item \textbf{Mathematics \& Theory}: Linear Algebra (Spectral Decomposition, SVD, Perturbation Bounds), Real Analysis, Abstract Algebra (Groups, Rings, Fields), Probability Theory, Stochastic Processes, Convex Optimization (KKT Conditions, Subgradient Methods), Discrete Mathematics, Graph Theory.
+    \item \textbf{Quantum Computing & Information}: Quantum Gates & Circuits, Unitary Operators, Density Matrix Formalism, Stabilizer Codes, Quantum Algorithms (Shor, Grover, Quantum Walks), Qiskit, Cirq, PennyLane.
+    \item \textbf{Machine Learning & AI}: Reinforcement Learning (PPO, GRPO, RLVR), Transformer Architectures, Statistical Learning Theory, PyTorch, JAX, Hugging Face Transformers, NumPy, SciPy.
+    \item \textbf{Systems Programming & Infrastructure}: C++ (C++20 Multithreading, Lock-free Primitives), Distributed Consensus (Raft), POSIX, Linux Kernel Internals, OpenTelemetry, Git, Docker, \LaTeX.
 \end{itemize}
 
-\section*{Academic \& Research References}
+\section*{Academic & Research References}
 \begin{itemize}
     \item \textbf{Yuri Shelke} $\cdot$ Distinguished Engineer, Capital One \\
-    \textit{Relationship}: Systems Research Mentor \& Co-author (Distributed Systems \& Raft Consensus) $\cdot$ \textit{Email}: Available upon request
-    \item \textbf{Prof. Sagar Gawande} $\cdot$ Professor \& Head of Department, APCOER Pune (SPPU) \\
-    \textit{Relationship}: Undergraduate Research Advisor (Artificial Intelligence \& Machine Learning) $\cdot$ \textit{Email}: Available upon request
-    \item \textbf{Prof. Sunil Thakare} $\cdot$ Senior Faculty \& Academic Mentor, APCOER Pune (SPPU) \\
-    \textit{Relationship}: Mathematics \& Computational Foundations Mentor $\cdot$ \textit{Email}: Available upon request
+    \textit{Relationship}: Systems Research Mentor & Co-author (Distributed Systems & Raft Consensus) $\cdot$ \textit{Email}: Available upon request
+    \item \textbf{Prof. Sagar Gawande} $\cdot$ Professor & Head of Department, APCOER Pune (SPPU) \\
+    \textit{Relationship}: Undergraduate Research Advisor (Artificial Intelligence & Machine Learning) $\cdot$ \textit{Email}: Available upon request
+    \item \textbf{Prof. Sunil Thakare} $\cdot$ Senior Faculty & Academic Mentor, APCOER Pune (SPPU) \\
+    \textit{Relationship}: Mathematics & Computational Foundations Mentor $\cdot$ \textit{Email}: Available upon request
 \end{itemize}
 
 \end{document}
