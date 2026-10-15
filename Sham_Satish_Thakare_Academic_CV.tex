@@ -1,0 +1,150 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\definecolor{primary}{RGB}{15, 23, 42}
+\definecolor{accent}{RGB}{2, 132, 199}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent
+}
+
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+
+\setlist[itemize]{leftmargin=*,noitemsep,topsep=1pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=*,noitemsep,topsep=1pt,parsep=0pt}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+    {\huge \bfseries Sham Satish Thakare} \\[3pt]
+    {\large \itshape Independent Computer Science Researcher $\cdot$ Machine Learning \& Systems Engineer} \\[4pt]
+    \href{https://shamddd.github.io/shamthakare.github.io}{shamddd.github.io} \ \textperiodcentered \ \href{mailto:shamthakare3000@gmail.com}{shamthakare3000@gmail.com} \ \textperiodcentered \ \href{https://github.com/shamddd}{GitHub (@shamddd)} \ \textperiodcentered \ \href{https://ssrn.com/author=13130226}{SSRN Author Page}
+\end{center}
+
+\vspace{-4pt}
+
+\section*{Education}
+\textbf{APCOER Pune (Savitribai Phule Pune University)}, \textit{India} \hfill \textbf{01/2020 -- 06/2024} \\
+\textit{B.Tech. in Artificial Intelligence and Data Science}
+\begin{itemize}
+    \item Cumulative GPA: \textbf{8.70 / 10.00} $\cdot$ Final Year SGPA: \textbf{9.53 / 10.00} (\textbf{First Class with Distinction}).
+    \item \textbf{Gold Medal in Mathematics (2024)}: Awarded for highest academic standing across mathematical and quantitative curricula.
+    \item Core Focus: Machine Learning Foundations, Probability \& Statistics, Data Structures, Distributed Systems.
+\end{itemize}
+
+\vspace{3pt}
+
+\section*{Experience}
+\textbf{Capital One}, \textit{India} \hfill \textbf{06/2024 -- Present} \\
+\textit{Pre-Doctoral Researcher (Systems Research)} \\
+\textit{Research Mentorship with Yuri Shelke (Distinguished Engineer)}
+\begin{itemize}
+    \item Formulated failure-domain aware dynamic quorum adaptation in C++20 Raft consensus clusters (\texttt{quorumshift}).
+    \item Developed online latency profiling algorithms eliminating tail latency degradation under asymmetric network fault injection.
+    \item Engineered high-throughput benchmarking suites and automated fault-injection harnesses across heterogeneous nodes.
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{APCOER Pune}, \textit{India} \hfill \textbf{06/2023 -- 12/2024} \\
+\textit{Undergraduate Researcher \& Teaching Assistant} with Prof. Sagar Gawande and Prof. Sunil Thakare
+\begin{itemize}
+    \item Conducted research on foundation model reasoning architectures, length confounding, and evaluation protocols.
+    \item Served as Teaching Assistant for undergraduate coursework in \textit{Data Structures, Algorithms, and Foundations of Machine Learning}.
+\end{itemize}
+
+\section*{Publications}
+\begin{enumerate}[label={[\arabic*]}]
+    \item \textbf{When Confidence Proxies Confound Reasoning Complexity: Pitfalls of Uncertainty-Weighted Credit Assignment in Language Model Reinforcement Learning} \\
+    \underline{Sham Satish Thakare} \\
+    \textit{IEEE Transactions on Artificial Intelligence} \hfill [ \textbf{IEEE TAI 2026 (Under Review)} ]
+
+    \item \textbf{AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus} \\
+    \underline{Sham Satish Thakare}, Yuri Shelke \\
+    \textit{IEEE Transactions on Artificial Intelligence} \hfill [ \textbf{IEEE TAI 2026 (Under Review)} ]
+
+    \item \textbf{MediRush-SafeAgent: Layered Runtime Enforcement for Healthcare-Commerce LLM Tool Execution} \\
+    \underline{Sham Satish Thakare} \\
+    \textit{Intelligence-Based Medicine (Elsevier) \& SSRN Preprint (ID: 7446543)} \hfill [ \textbf{IBMED 2026 (Under Review)} ]
+
+    \item \textbf{recovery\_eval: State-Matched and Provenance-Aware Evaluation of Recovery Behavior in Language-Model Reasoning} \\
+    \underline{Sham Satish Thakare} \\
+    \textit{11th IEEE Special Session on Machine Learning on Big Data} \hfill [ \textbf{IEEE BigData 2026 (Under Review)} ]
+
+    \item \textbf{StateShift: Tracking State-Dependent Reasoning Recovery Across Post-Training} \\
+    \underline{Sham Satish Thakare} \\
+    \textit{Technical Report / Preprint} \hfill [ \textbf{Working Paper 2026} ]
+
+    \item \textbf{Amortized Intervention Frontiers for Language-Model Reasoning: When Does Training Beat Search?} \\
+    \underline{Sham Satish Thakare} \\
+    \textit{Transactions on Machine Learning Research (in preparation)} \hfill [ \textbf{Working Paper 2026} ]
+\end{enumerate}
+
+\section*{Featured Academic Projects and Collaborations}
+\textbf{Uncertainty-Weighted Credit Assignment in LM RL} \hfill \textbf{01/2026 -- Present} \\
+\textit{Independent Research} \hfill \textcolor{accent}{\textbf{Reasoning Foundations}}
+\begin{itemize}
+    \item In reinforcement learning with verifiable rewards (RLVR), outcome confidence proxies are used to weight policy gradients.
+    \item Exposed length confounding ($r = +0.486$) in token predictive entropy, proving that confidence weighting misallocates credit on valid multi-step derivations.
+    \item Executed five-way matched ablation study on GSM8K showing 0.00\% Pass@1 gain over standard outcome-supervised GRPO. [IEEE TAI'26]
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{Failure-Domain Aware Consensus Quorum Adaptation} \hfill \textbf{06/2024 -- Present} \\
+\textit{w/ Yuri Shelke (Distinguished Engineer at Capital One)} \hfill \textcolor{accent}{\textbf{Distributed Systems}}
+\begin{itemize}
+    \item State-machine replication protocols suffer from tail latency degradation under asymmetric network jitter and partitions.
+    \item Formulated online latency profiling algorithms in C++20 Raft consensus clusters that dynamically re-weight quorums without violating linearizability invariants.
+    \item Released open-source high-throughput C++20 library \texttt{quorumshift} with reproducible fault-injection test harness. [IEEE TAI'26]
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{Layered Runtime Enforcement for Autonomous LLM Agents} \hfill \textbf{05/2026 -- Present} \\
+\textit{Independent Research} \hfill \textcolor{accent}{\textbf{Agent Safety}}
+\begin{itemize}
+    \item Multistep autonomous agent tool calls in healthcare-commerce environments present catastrophic unrecoverable mutations.
+    \item Formulated MediRush-SafeAgent: deterministic state interception and out-of-band schema validation barriers that decouple proposed calls from system mutations. [IBMED'26 / SSRN 7446543]
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{State-Matched Error Recovery Evaluation Protocols} \hfill \textbf{02/2026 -- Present} \\
+\textit{Independent Research} \hfill \textcolor{accent}{\textbf{Evaluation Methodology}}
+\begin{itemize}
+    \item Evaluating reasoning self-correction requires controlling for generative capacity under frozen structural covariates.
+    \item Formulated state-contrast continuation evaluation ($D_{\text{recovery}} = -0.1100$) in \texttt{recovery\_eval}, proving nominal self-correction claims often reflect length confounding. [IEEE BigData'26]
+\end{itemize}
+
+\section*{Teaching and Academic Leadership}
+\textbf{President, Social Volunteer Club}, APCOER Pune \hfill \textbf{2023 -- 2024} \\
+\textit{Elected Student Head of University Community Outreach}
+\begin{itemize}
+    \item Directed university community service, blood donation camps, digital literacy programs for underprivileged youth, and campus sustainability initiatives across Pune district.
+\end{itemize}
+\vspace{2pt}
+\textbf{Teaching Assistant}, APCOER Pune \hfill \textbf{2023 -- 2024} \\
+\textit{Foundations of Machine Learning \& Data Structures}
+\begin{itemize}
+    \item Conducted tutorial and doubt-clearing sessions for undergraduate cohorts in algorithm design, complexity analysis, and PyTorch implementations.
+\end{itemize}
+
+\section*{Featured Coursework \& Skills}
+\begin{itemize}
+    \item \textbf{Mathematics \& Foundations}: Probability \& Statistics (University Top Grade); Linear Algebra; Discrete Mathematics; Optimization Theory.
+    \item \textbf{Machine Learning \& AI}: Reinforcement Learning (GRPO/PPO/RLVR); Deep Learning Foundations; Natural Language Processing; Statistical Learning Theory.
+    \item \textbf{Systems \& Engineering}: Distributed Systems (Consensus Protocols / Raft); High-Throughput C++20 Multithreading; Operating Systems; Database Internals (SQL/Indexing).
+\end{itemize}
+
+\end{document}

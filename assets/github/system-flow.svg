@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 140" width="100%" height="100%">
+  <style>
+    .bg { fill: #07090e; stroke: #1c2738; stroke-width: 1.5; }
+    .label { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; fill: #f1f5f9; }
+    .sub { font-family: 'JetBrains Mono', monospace; font-size: 9px; fill: #64748b; }
+    .step-num { font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 700; fill: #38bdf8; }
+    
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #f4f4f5; stroke: #cbd5e1; }
+      .label { fill: #09090b; }
+      .sub { fill: #64748b; }
+    }
+  </style>
+
+  <rect width="900" height="140" rx="10" class="bg" />
+
+  <text x="30" y="28" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="#94a3b8" letter-spacing="0.15em">
+    SYSTEM LIFECYCLE: DETERMINISTIC MULTI-STAGE INTERCEPTION
+  </text>
+
+  <g transform="translate(30, 45)">
+    <!-- Stage 1: Input -->
+    <rect x="0" y="0" width="125" height="65" rx="6" fill="#0d1522" stroke="#1e293b" />
+    <text x="12" y="18" class="step-num">01 / INPUT</text>
+    <text x="12" y="36" class="label">Policy Intent</text>
+    <text x="12" y="52" class="sub">LLM Tool Call</text>
+
+    <!-- Arrow -->
+    <path d="M 130 32 L 145 32" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrow)" />
+
+    <!-- Stage 2: Scope -->
+    <rect x="150" y="0" width="125" height="65" rx="6" fill="#0d1522" stroke="#1e293b" />
+    <text x="162" y="18" class="step-num">02 / SCOPE</text>
+    <text x="162" y="36" class="label">Capability Filter</text>
+    <text x="162" y="52" class="sub">Least Privilege</text>
+
+    <!-- Arrow -->
+    <path d="M 280 32 L 295 32" stroke="#38bdf8" stroke-width="1.5" />
+
+    <!-- Stage 3: Auth -->
+    <rect x="300" y="0" width="125" height="65" rx="6" fill="#0d1522" stroke="#1e293b" />
+    <text x="312" y="18" class="step-num">03 / AUTH</text>
+    <text x="312" y="36" class="label">Crypto Grant</text>
+    <text x="312" y="52" class="sub">Signed Token</text>
+
+    <!-- Arrow -->
+    <path d="M 430 32 L 445 32" stroke="#10b981" stroke-width="1.5" />
+
+    <!-- Stage 4: Execute -->
+    <rect x="450" y="0" width="125" height="65" rx="6" fill="#0c1f1a" stroke="#10b981" />
+    <text x="462" y="18" class="step-num" fill="#10b981">04 / EXECUTE</text>
+    <text x="462" y="36" class="label">Sandboxed</text>
+    <text x="462" y="52" class="sub">Isolated Container</text>
+
+    <!-- Arrow -->
+    <path d="M 580 32 L 595 32" stroke="#10b981" stroke-width="1.5" />
+
+    <!-- Stage 5: Verify -->
+    <rect x="600" y="0" width="125" height="65" rx="6" fill="#0c1f1a" stroke="#10b981" />
+    <text x="612" y="18" class="step-num" fill="#10b981">05 / VERIFY</text>
+    <text x="612" y="36" class="label">Invariant Check</text>
+    <text x="612" y="52" class="sub">Safety Predicates</text>
+
+    <!-- Arrow -->
+    <path d="M 730 32 L 745 32" stroke="#f59e0b" stroke-width="1.5" />
+
+    <!-- Stage 6: Rollback -->
+    <rect x="750" y="0" width="125" height="65" rx="6" fill="#241708" stroke="#f59e0b" />
+    <text x="762" y="18" class="step-num" fill="#f59e0b">06 / RECOVER</text>
+    <text x="762" y="36" class="label">Atomic Rollback</text>
+    <text x="762" y="52" class="sub">State Rewind</text>
+  </g>
+</svg>

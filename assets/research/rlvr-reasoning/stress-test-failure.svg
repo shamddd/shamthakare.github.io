@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 300" width="100%" height="100%">
+  <rect width="850" height="300" fill="#0f172a" rx="12"/>
+  <text x="425" y="35" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+    Stress Test: Correct-but-Complex Derivation Failure Mode (N = 100)
+  </text>
+  <text x="425" y="55" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">
+    Token predictive entropy misidentifies valid multi-step reasoning as more uncertain than short errors in 42.1% of cases
+  </text>
+
+  <g transform="translate(60, 85)">
+    <rect x="0" y="0" width="340" height="170" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" rx="6"/>
+    <text x="170" y="25" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Trace A: Short Incorrect Answer</text>
+    <text x="20" y="55" fill="#cbd5e1" font-family="monospace" font-size="11">"x = 5 + 2 = 10" (Incorrect)</text>
+    <text x="20" y="80" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Sequence Length: 4 tokens</text>
+    <text x="20" y="105" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Mean Token Entropy: 0.18</text>
+    <rect x="20" y="125" width="300" height="30" fill="#451a03" stroke="#b45309" rx="4"/>
+    <text x="170" y="145" fill="#fde68a" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Naively Rated as "High Confidence"</text>
+
+    <text x="365" y="90" fill="#ef4444" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">VS</text>
+
+    <rect x="390" y="0" width="340" height="170" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" rx="6"/>
+    <text x="560" y="25" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Trace B: Multi-Step Correct Derivation</text>
+    <text x="410" y="55" fill="#cbd5e1" font-family="monospace" font-size="11">"Let total = 5... Step 1... Step 2... = 7"</text>
+    <text x="410" y="80" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Sequence Length: 48 tokens</text>
+    <text x="410" y="105" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Mean Token Entropy: 0.42</text>
+    <rect x="410" y="125" width="300" height="30" fill="#450a0a" stroke="#b91c1c" rx="4"/>
+    <text x="560" y="145" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Penalized as "Uncertain" (42.1% Pair Misranking)</text>
+  </g>
+</svg>

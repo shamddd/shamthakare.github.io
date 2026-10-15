@@ -1,0 +1,513 @@
+/* Rachit Bansal / Jekyll Minima Exact Stylesheet */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #111111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: 14px;
+}
+
+ul, ol {
+  margin-left: 30px;
+}
+
+li > ul, li > ol {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  color: #111111;
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+
+p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1756a9;
+}
+
+a:hover {
+  color: #111111;
+  text-decoration: underline;
+}
+
+blockquote {
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+pre, code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eef;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+}
+
+pre > code {
+  border: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Wrapper Layout */
+.wrapper {
+  max-width: calc(800px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    max-width: calc(800px - 30px);
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.wrapper:after, .footer-col-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.icon > svg path {
+  fill: #828282;
+}
+
+/* Site Header */
+.site-header {
+  border-top: 5px solid #424242;
+  border-bottom: 1px solid #e8e8e8;
+  min-height: 56px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.site-title {
+  font-size: 26px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+  font-weight: 300;
+  color: #424242;
+  text-decoration: none;
+}
+
+.site-title, .site-title:visited {
+  color: #424242;
+}
+
+.site-title:hover {
+  color: #111111;
+  text-decoration: none;
+}
+
+/* Site Navigation & Link Spacing (Publications | Blog | CV) */
+/* Site Navigation & Link Spacing (Publications | Blog | CV) */
+.site-nav {
+  float: right;
+  line-height: 56px;
+}
+
+.site-nav .menu-icon {
+  display: none;
+}
+
+.site-nav .trigger {
+  clear: both;
+}
+
+.site-nav .page-link {
+  color: #111111;
+  line-height: 1.5;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.site-nav .page-link:not(:first-child) {
+  margin-left: 20px;
+}
+
+.site-nav .page-link:hover {
+  color: #111111;
+  text-decoration: underline;
+}
+
+.site-nav .page-link.active {
+  font-weight: 400;
+  color: #111111;
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav {
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    background-color: #fdfdfd;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    text-align: right;
+  }
+  .site-nav .menu-icon {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .site-nav .menu-icon > svg {
+    width: 18px;
+    height: 15px;
+  }
+  .site-nav .menu-icon > svg path {
+    fill: #424242;
+  }
+  .site-nav .trigger {
+    clear: both;
+    display: none;
+  }
+  .site-nav:hover .trigger {
+    display: block;
+    padding-bottom: 5px;
+  }
+  .site-nav .page-link {
+    display: block;
+    padding: 5px 10px;
+    margin-left: 0 !important;
+  }
+}
+
+/* Page Content */
+.page-content {
+  padding: 30px 0;
+}
+
+/* Footnotes (Minima Jekyll standard) */
+.footnotes {
+  color: #828282;
+  font-size: 14px;
+  border-top: 1px solid #e8e8e8;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.footnotes ol {
+  margin-left: 30px;
+}
+
+.footnotes li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.footnotes p {
+  margin-bottom: 0;
+  color: #828282;
+  text-align: left;
+}
+
+.footnote {
+  font-size: 12px;
+  vertical-align: super;
+  text-decoration: none;
+  color: #2a7ae2;
+  font-weight: normal;
+}
+
+.reversefootnote {
+  font-size: 14px;
+  margin-left: 4px;
+  text-decoration: none;
+  color: #2a7ae2;
+}
+
+/* Publications Page Cards (Rachit Bansal exact structure) */
+.paper_title {
+  text-align: center;
+  background-color: rgba(45, 45, 45, 0.1);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  border-radius: 3px;
+}
+
+.paper_title a {
+  color: #111111;
+  font-weight: 500;
+}
+
+.paper_title a:hover {
+  color: #2a7ae2;
+}
+
+.paper_authors {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.fullCard {
+  width: 700px;
+  max-width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  background-color: #ffffff;
+}
+
+.cardContent {
+  padding: 10px;
+}
+
+.thumbnail-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+  border-radius: 3px;
+  overflow: hidden;
+  background: #f4f4f4;
+  height: 100%;
+  min-height: 140px;
+  margin: 6px;
+}
+
+.thumbnail-box:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.19), 0 8px 8px rgba(0, 0, 0, 0.23);
+}
+
+.thumbnail-placeholder {
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #555555;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.conf_name {
+  float: right;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #666666;
+}
+
+.conf_name.review {
+  color: #c2410c;
+  font-weight: 500;
+}
+
+.venue_bar {
+  margin-bottom: 8px;
+}
+
+.paper_desc {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: #333333;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.links {
+  text-align: left;
+  color: black;
+  margin-right: 8px;
+  padding: 4px 0;
+  margin-bottom: 0px;
+}
+
+.link-btn {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-right: 8px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  background-color: #f7f7f7;
+  color: #333333;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.link-btn:hover {
+  background-color: #2a7ae2;
+  color: #ffffff;
+  border-color: #2a7ae2;
+  text-decoration: none;
+}
+
+details.bibtex-details {
+  margin-top: 8px;
+}
+
+details.bibtex-details summary {
+  font-size: 12px;
+  color: #666666;
+  cursor: pointer;
+}
+
+details.bibtex-details pre {
+  margin-top: 6px;
+  padding: 8px 12px;
+  background-color: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  font-size: 11px;
+}
+
+@media screen and (max-width: 600px) {
+  .fullCard {
+    grid-template-columns: 1fr;
+  }
+  .thumbnail-box {
+    height: 100px;
+    min-height: 100px;
+  }
+}
+
+/* Site Footer (Rachit Bansal exact Minima 3-column footer) */
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 30px 0;
+  background-color: #fdfdfd;
+  margin-top: 50px;
+  clear: both;
+}
+
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  color: #424242;
+}
+
+.footer-col-wrapper {
+  font-size: 15px;
+  color: #828282;
+  margin-left: -15px;
+}
+
+.footer-col-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.footer-col-1 {
+  width: calc(35% - (30px / 2));
+}
+
+.footer-col-2 {
+  width: calc(20% - (30px / 2));
+}
+
+.footer-col-3 {
+  width: calc(45% - (30px / 2));
+}
+
+@media screen and (max-width: 800px) {
+  .footer-col-1, .footer-col-2, .footer-col-3 {
+    float: none;
+    width: calc(100% - (30px / 2));
+  }
+}
+
+.contact-list, .social-media-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.contact-list li, .social-media-list li {
+  margin-bottom: 6px;
+}
+
+.social-media-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #828282;
+  text-decoration: none;
+}
+
+.social-media-list a:hover {
+  color: #111111;
+  text-decoration: underline;
+}

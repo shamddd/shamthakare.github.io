@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 280" width="100%" height="100%">
+  <rect width="850" height="280" fill="#0f172a" rx="12"/>
+  <text x="425" y="35" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+    Scope & Limitations Boundary
+  </text>
+  
+  <g transform="translate(50, 75)">
+    <rect x="0" y="0" width="360" height="160" fill="#064e3b" stroke="#059669" stroke-width="1.5" rx="8"/>
+    <text x="180" y="30" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">
+      VALIDATED FINDINGS
+    </text>
+    <text x="20" y="60" fill="#ecfdf5" font-family="system-ui, sans-serif" font-size="12">• MC-Dropout determinism on 0-dropout LLMs</text>
+    <text x="20" y="85" fill="#ecfdf5" font-family="system-ui, sans-serif" font-size="12">• Length confounding in token entropy (r=0.486, N=100)</text>
+    <text x="20" y="110" fill="#ecfdf5" font-family="system-ui, sans-serif" font-size="12">• Offline error prediction ≠ Online RL credit</text>
+    <text x="20" y="135" fill="#ecfdf5" font-family="system-ui, sans-serif" font-size="12">• Pass@1 equality (d=0.00) across N=3 training seeds</text>
+
+    <rect x="390" y="0" width="360" height="160" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5" rx="8"/>
+    <text x="570" y="30" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">
+      UNTESTED / FUTURE SCOPE
+    </text>
+    <text x="410" y="60" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="12">• Models > 7B parameters</text>
+    <text x="410" y="85" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="12">• Non-mathematical reasoning domains (Code, Med)</text>
+    <text x="410" y="110" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="12">• Process-level step verifiers (PRMs)</text>
+    <text x="410" y="135" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="12">• Dynamic K > 16 rollout budgets</text>
+  </g>
+</svg>

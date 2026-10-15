@@ -8,7 +8,7 @@
   <title>Publications — Sham Satish Thakare</title>
   <meta name="description" content="Academic manuscripts, preprints, and research software by Sham Satish Thakare.">
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css?v=4">
   <link rel="canonical" href="https://shamddd.github.io/shamthakare.github.io/papers.html">
 
   <!-- MathJax -->
@@ -21,15 +21,22 @@
 
   <header class="site-header">
     <div class="wrapper">
-      <a class="site-title" href="/">Sham Satish Thakare</a>
+      <a class="site-title" href="index.html">Sham Satish Thakare</a>
 
       <nav class="site-nav">
-        <a class="page-link" href="/">About</a>
-        <a class="page-link active" href="papers.html">Publications</a>
-        <a class="page-link" href="https://github.com/shamddd" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a class="page-link" href="https://ssrn.com/author=13130226" target="_blank" rel="noopener noreferrer">SSRN</a>
-        <a class="page-link" href="Sham_Satish_Thakare_Academic_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-        <a class="page-link" href="mailto:shamthakare3000@gmail.com">Contact</a>
+        <a href="#" class="menu-icon">
+          <svg viewBox="0 0 18 15">
+            <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+            <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+            <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+          </svg>
+        </a>
+
+        <div class="trigger">
+          <a class="page-link active" href="papers.html">Publications</a>
+          <a class="page-link" href="blog.html" style="margin-left: 20px;">Blog</a>
+          <a class="page-link" href="Sham_Satish_Thakare_Academic_CV.pdf" target="_blank" style="margin-left: 20px;">CV</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -68,7 +75,10 @@
             Falsifies token-predictive entropy as an uncertainty proxy in LM RLVR. Demonstrates that predictive entropy correlates strongly with sequence length ($r = +0.486$), causing uncertainty-weighted GRPO to systematically misallocate credit on valid multi-step reasoning derivations.
           </p>
           <div class="links">
-            <a href="https://github.com/shamddd/ear_grpo_reasoning" class="link-btn" target="_blank" rel="noopener noreferrer">Code (GitHub)</a>
+            <a href="pdfs/when-confidence-confounds-reasoning-complexity.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">Manuscript (PDF)</a>
+            <a href="https://github.com/shamddd/ear_grpo_reasoning" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
+            <a href="https://github.com/shamddd/ear_grpo_reasoning#probing-suite" class="link-btn" target="_blank" rel="noopener noreferrer">Probing Suite</a>
+            <a href="papers/ear-grpo.html" class="link-btn">Paper Overview</a>
           </div>
           <details class="bibtex-details">
             <summary>BibTeX</summary>
@@ -96,16 +106,18 @@
             </a>
           </div>
           <div class="paper_authors">
-            <strong>Sham Satish Thakare</strong>, Yuri Shelke
+            <strong>Sham Satish Thakare</strong>, Yuri Shelke (Distinguished Engineer, Capital One)
           </div>
           <div class="venue_bar">
-            <span class="conf_name review">Under Review at IEEE Transactions on Artificial Intelligence (IEEE TAI)</span>
+            <span class="conf_name review">Under Review at IEEE Transactions on Artificial Intelligence (IEEE TAI) &bull; Capital One Systems Research</span>
           </div>
           <p class="paper_desc">
-            Formulates failure-domain aware latency profiling algorithms in C++20 Raft consensus clusters, eliminating tail latency spikes under asymmetric network fault injection and non-uniform round-trip delays.
+            Formulates failure-domain aware latency profiling algorithms in C++20 Raft consensus clusters (<code>quorumshift</code>), eliminating tail latency spikes under asymmetric network fault injection and non-uniform round-trip delays. Conducted as Pre-Doctoral Systems Researcher at Capital One mentored by Yuri Shelke.
           </p>
           <div class="links">
-            <a href="https://github.com/shamddd/quorumshift" class="link-btn" target="_blank" rel="noopener noreferrer">Code (GitHub)</a>
+            <a href="https://github.com/shamddd/quorumshift" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
+            <a href="https://github.com/shamddd/quorumshift#benchmarks" class="link-btn" target="_blank" rel="noopener noreferrer">Benchmark Ledger</a>
+            <a href="papers/adaptive-replica.html" class="link-btn">Paper Overview</a>
           </div>
           <details class="bibtex-details">
             <summary>BibTeX</summary>
@@ -114,7 +126,7 @@
   title   = {AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus},
   journal = {IEEE Transactions on Artificial Intelligence},
   year    = {2026},
-  note    = {Under Review},
+  note    = {Under Review, Capital One Systems Research},
   url     = {https://github.com/shamddd/quorumshift}
 }</pre>
           </details>
@@ -142,8 +154,10 @@
             Presents layered runtime boundary enforcement and deterministic state-interception architectures for autonomous LLM tool executions in high-stakes healthcare-commerce workflows.
           </p>
           <div class="links">
-            <a href="http://ssrn.com/abstract=7446543" class="link-btn" target="_blank" rel="noopener noreferrer">Paper (SSRN)</a>
+            <a href="http://ssrn.com/abstract=7446543" class="link-btn" target="_blank" rel="noopener noreferrer">Preprint (SSRN)</a>
+            <a href="https://github.com/shamddd/medirush-safeagent" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
             <a href="https://ssrn.com/author=13130226" class="link-btn" target="_blank" rel="noopener noreferrer">Author Page (SSRN)</a>
+            <a href="papers/medirush-safeagent.html" class="link-btn">Paper Overview</a>
           </div>
           <details class="bibtex-details">
             <summary>BibTeX</summary>
@@ -180,7 +194,10 @@
             Formulates state-contrast continuation evaluation ($D_{\text{recovery}} = -0.1100$) measuring error recovery under frozen structural covariates across reasoning model rollouts, preventing confounding between generative capacity and recovery resilience.
           </p>
           <div class="links">
-            <a href="https://github.com/shamddd/recovery_eval" class="link-btn" target="_blank" rel="noopener noreferrer">Code (GitHub)</a>
+            <a href="pdfs/recovery-eval.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">Manuscript (PDF)</a>
+            <a href="https://github.com/shamddd/recovery_eval" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
+            <a href="https://github.com/shamddd/recovery_eval#evaluation-ledger" class="link-btn" target="_blank" rel="noopener noreferrer">Evaluation Ledger</a>
+            <a href="papers/recovery-eval.html" class="link-btn">Paper Overview</a>
           </div>
           <details class="bibtex-details">
             <summary>BibTeX</summary>
@@ -219,7 +236,10 @@
             Evaluates neural reasoning continuation state matching under verifier perturbations and structural covariate controls, establishing empirical bounds on reasoning recovery dynamics.
           </p>
           <div class="links">
-            <a href="https://github.com/shamddd/stateshift" class="link-btn" target="_blank" rel="noopener noreferrer">Code (GitHub)</a>
+            <a href="pdfs/stateshift.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">Manuscript (PDF)</a>
+            <a href="https://github.com/shamddd/stateshift" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
+            <a href="https://github.com/shamddd/stateshift#checkpoints" class="link-btn" target="_blank" rel="noopener noreferrer">Checkpoints</a>
+            <a href="papers/stateshift.html" class="link-btn">Paper Overview</a>
           </div>
           <details class="bibtex-details">
             <summary>BibTeX</summary>
@@ -255,7 +275,8 @@
             Theoretical and empirical characterization of compute Pareto frontiers comparing test-time guided search versus amortized post-training reinforcement learning on complex reasoning graphs.
           </p>
           <div class="links">
-            <a href="https://github.com/shamddd/submission_package" class="link-btn" target="_blank" rel="noopener noreferrer">Code (GitHub)</a>
+            <a href="https://github.com/shamddd/submission_package" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
+            <a href="https://github.com/shamddd/submission_package#benchmarks" class="link-btn" target="_blank" rel="noopener noreferrer">Pareto Benchmarks</a>
           </div>
         </div>
       </div>
@@ -281,7 +302,8 @@
             Diagnoses parameter plasticity and representation collapse across model checkpoints, establishing diagnostic probes for RL fine-tuning stability.
           </p>
           <div class="links">
-            <a href="https://github.com/shamddd/adaptive-rl-forge" class="link-btn" target="_blank" rel="noopener noreferrer">Code (GitHub)</a>
+            <a href="https://github.com/shamddd/adaptive-rl-forge" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
+            <a href="https://github.com/shamddd/adaptive-rl-forge#diagnostic-probes" class="link-btn" target="_blank" rel="noopener noreferrer">Diagnostic Probes</a>
           </div>
         </div>
       </div>
@@ -307,7 +329,8 @@
             Zero-knowledge memory attestation proofs and adaptive Path ORAM tree rebalancing for hardware-enclave environments under speculative and memory access attacks.
           </p>
           <div class="links">
-            <a href="https://github.com/shamddd/enclaveshield" class="link-btn" target="_blank" rel="noopener noreferrer">Code (GitHub)</a>
+            <a href="https://github.com/shamddd/enclaveshield" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
+            <a href="https://github.com/shamddd/enclaveshield#zk-proofs" class="link-btn" target="_blank" rel="noopener noreferrer">ZK Proof Artifacts</a>
           </div>
         </div>
       </div>
@@ -333,7 +356,8 @@
             Formulates topological causal discovery over distributed tracing graphs, isolating anomalous propagation paths with statistical guarantees.
           </p>
           <div class="links">
-            <a href="https://github.com/shamddd/tracemind" class="link-btn" target="_blank" rel="noopener noreferrer">Code (GitHub)</a>
+            <a href="https://github.com/shamddd/tracemind" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
+            <a href="https://github.com/shamddd/tracemind#causal-benchmarks" class="link-btn" target="_blank" rel="noopener noreferrer">Causal Benchmarks</a>
           </div>
         </div>
       </div>
@@ -343,13 +367,31 @@
 
   <footer class="site-footer">
     <div class="wrapper">
-      <div>&copy; 2026 Sham Satish Thakare &bull; Pune, India</div>
-      <div class="footer-links">
-        <a href="https://github.com/shamddd" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://ssrn.com/author=13130226" target="_blank" rel="noopener noreferrer">SSRN</a>
-        <a href="Sham_Satish_Thakare_Academic_CV.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
-        <a href="/">About</a>
-        <a href="mailto:shamthakare3000@gmail.com">Email</a>
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <table>
+            <tr class="contact-list">
+              <td style="padding-right: 14px; vertical-align: middle;">
+                <a href="mailto:shamthakare3000@gmail.com" title="Email">
+                  <svg viewBox="0 0 24 24" width="20" height="20"><path fill="#828282" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </a>
+              </td>
+              <td style="padding-right: 14px; vertical-align: middle;">
+                <a href="https://github.com/shamddd" title="GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 16 16" width="20" height="20"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.33,5.302,7.362c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+                </a>
+              </td>
+              <td style="padding-right: 14px; vertical-align: middle;">
+                <a href="https://ssrn.com/author=13130226" title="SSRN" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" width="20" height="20"><path fill="#828282" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="footer-col footer-col-3">
+          <p class="text" align="right" style="color: #828282; font-size: 14px; margin: 0;">Last updated October 14, 2026.</p>
+        </div>
       </div>
     </div>
   </footer>

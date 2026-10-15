@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="100%">
+  <style>
+    .bg { fill: #0d121b; stroke: #1c2738; stroke-width: 1.5; }
+    .title { font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; fill: #f1f5f9; }
+    .domain-title { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; }
+    .desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; fill: #94a3b8; }
+    .metric { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; }
+    
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #f4f4f5; stroke: #cbd5e1; }
+      .title { fill: #09090b; }
+      .desc { fill: #475569; }
+    }
+  </style>
+
+  <rect width="900" height="240" rx="12" class="bg" />
+
+  <!-- Domain 1: REASON -->
+  <g transform="translate(30, 30)">
+    <rect width="195" height="180" rx="8" fill="#07090e" stroke="#1e293b" stroke-width="1.2" />
+    <rect x="0" y="0" width="195" height="4" fill="#38bdf8" rx="2" />
+    <text x="16" y="28" class="domain-title" fill="#38bdf8">01 / REASON</text>
+    <text x="16" y="48" class="title">Reasoning Reliability</text>
+    <text x="16" y="76" class="desc">Uncertainty calibration and</text>
+    <text x="16" y="94" class="desc">length-confounding in RLVR</text>
+    <text x="16" y="112" class="desc">credit assignment (GRPO).</text>
+    <line x1="16" y1="132" x2="179" y2="132" stroke="#1e293b" />
+    <text x="16" y="152" class="metric" fill="#38bdf8">r = 0.486 / r_part = -0.092</text>
+    <text x="16" y="168" class="metric" fill="#94a3b8">ear_grpo_reasoning</text>
+  </g>
+
+  <!-- Domain 2: ADAPT -->
+  <g transform="translate(245, 30)">
+    <rect width="195" height="180" rx="8" fill="#07090e" stroke="#1e293b" stroke-width="1.2" />
+    <rect x="0" y="0" width="195" height="4" fill="#a855f7" rx="2" />
+    <text x="16" y="28" class="domain-title" fill="#a855f7">02 / ADAPT</text>
+    <text x="16" y="48" class="title">RL Plasticity (CARLS)</text>
+    <text x="16" y="76" class="desc">Pre-hoc representation probes</text>
+    <text x="16" y="94" class="desc">predicting downstream RL</text>
+    <text x="16" y="112" class="desc">reward saturation curves.</text>
+    <line x1="16" y1="132" x2="179" y2="132" stroke="#1e293b" />
+    <text x="16" y="152" class="metric" fill="#a855f7">18.7% FLOPs Reduction</text>
+    <text x="16" y="168" class="metric" fill="#94a3b8">adaptive-rl-forge</text>
+  </g>
+
+  <!-- Domain 3: VERIFY -->
+  <g transform="translate(460, 30)">
+    <rect width="195" height="180" rx="8" fill="#07090e" stroke="#1e293b" stroke-width="1.2" />
+    <rect x="0" y="0" width="195" height="4" fill="#10b981" rx="2" />
+    <text x="16" y="28" class="domain-title" fill="#10b981">03 / VERIFY</text>
+    <text x="16" y="48" class="title">Agent Safety</text>
+    <text x="16" y="76" class="desc">Deterministic multi-stage</text>
+    <text x="16" y="94" class="desc">interception enforcing least-</text>
+    <text x="16" y="112" class="desc">privilege capability bounds.</text>
+    <line x1="16" y1="132" x2="179" y2="132" stroke="#1e293b" />
+    <text x="16" y="152" class="metric" fill="#10b981">100% Policy Interception</text>
+    <text x="16" y="168" class="metric" fill="#94a3b8">medirush-safeagent</text>
+  </g>
+
+  <!-- Domain 4: RECOVER -->
+  <g transform="translate(675, 30)">
+    <rect width="195" height="180" rx="8" fill="#07090e" stroke="#1e293b" stroke-width="1.2" />
+    <rect x="0" y="0" width="195" height="4" fill="#f59e0b" rx="2" />
+    <text x="16" y="28" class="domain-title" fill="#f59e0b">04 / RECOVER</text>
+    <text x="16" y="48" class="title">Distributed Quorums</text>
+    <text x="16" y="76" class="desc">Dynamic quorum adaptation</text>
+    <text x="16" y="94" class="desc">under asymmetric network</text>
+    <text x="16" y="112" class="desc">partitions in C++20 Raft.</text>
+    <line x1="16" y1="132" x2="179" y2="132" stroke="#1e293b" />
+    <text x="16" y="152" class="metric" fill="#f59e0b">-41.3% p99 Tail Latency</text>
+    <text x="16" y="168" class="metric" fill="#94a3b8">quorumshift (C++20)</text>
+  </g>
+</svg>
