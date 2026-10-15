@@ -1,400 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link href="css/shamulent.css" rel="stylesheet">
+    <title>Sham Satish Thakare – Publications</title>
+    <meta name="description" content="Academic publications, preprints, and research software by Sham Satish Thakare.">
+    <meta property="og:title" content="Sham Satish Thakare – Publications">
+    <meta property="og:description" content="Academic publications, preprints, and research software by Sham Satish Thakare.">
+    <meta name="twitter:card" content="summary_large_image">
+  </head>
+  <body>
+    <div>
 
-  <title>Publications — Sham Satish Thakare</title>
-  <meta name="description" content="Academic manuscripts, preprints, and research software by Sham Satish Thakare.">
-
-  <link rel="stylesheet" href="css/main.css?v=4">
-  <link rel="canonical" href="https://shamddd.github.io/shamthakare.github.io/papers.html">
-
-  <!-- MathJax -->
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
-</head>
-
-<body>
-
-  <header class="site-header">
-    <div class="wrapper">
-      <a class="site-title" href="index.html">Sham Satish Thakare</a>
-
-      <nav class="site-nav">
-        <a href="#" class="menu-icon">
-          <svg viewBox="0 0 18 15">
-            <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-            <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-            <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-          </svg>
-        </a>
-
-        <div class="trigger">
-          <a class="page-link active" href="papers.html">Publications</a>
-          <a class="page-link" href="blog.html" style="margin-left: 20px;">Blog</a>
-          <a class="page-link" href="Sham_Satish_Thakare_Academic_CV.pdf" target="_blank" style="margin-left: 20px;">CV</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main class="page-content" aria-label="Content">
-    <div class="wrapper">
-
-      <h1>Publications & Manuscripts</h1>
-      <p>
-        Academic manuscripts, journal submissions, preprints, and research software on foundation model reasoning (RLVR), 
-        runtime agent enforcement, evaluation methodology, and distributed systems. Code repositories, benchmarks, and 
-        reproduction scripts are publicly hosted on <a href="https://github.com/shamddd" target="_blank" rel="noopener noreferrer">GitHub</a> 
-        and preprints on <a href="https://ssrn.com/author=13130226" target="_blank" rel="noopener noreferrer">SSRN</a>.
-      </p>
-
-      <h2>Manuscripts Under Review / In Submission</h2>
-
-      <!-- Paper 1: EAR GRPO -->
-      <div class="fullCard" id="confidence-proxies">
-        <div class="thumbnail-box">
-          <div class="thumbnail-placeholder">Entropy<br>Confounding</div>
-        </div>
-        <div class="cardContent">
-          <div class="paper_title">
-            <a href="https://github.com/shamddd/ear_grpo_reasoning" target="_blank" rel="noopener noreferrer">
-              When Confidence Proxies Confound Reasoning Complexity: Pitfalls of Uncertainty-Weighted Credit Assignment in Language Model Reinforcement Learning
-            </a>
-          </div>
-          <div class="paper_authors">
-            <strong>Sham Satish Thakare</strong>
-          </div>
-          <div class="venue_bar">
-            <span class="conf_name review">Under Review at IEEE Transactions on Artificial Intelligence (IEEE TAI)</span>
-          </div>
-          <p class="paper_desc">
-            Falsifies token-predictive entropy as an uncertainty proxy in LM RLVR. Demonstrates that predictive entropy correlates strongly with sequence length ($r = +0.486$), causing uncertainty-weighted GRPO to systematically misallocate credit on valid multi-step reasoning derivations.
-          </p>
-          <div class="links">
-            <a href="pdfs/when-confidence-confounds-reasoning-complexity.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">Manuscript (PDF)</a>
-            <a href="https://github.com/shamddd/ear_grpo_reasoning" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
-            <a href="https://github.com/shamddd/ear_grpo_reasoning#probing-suite" class="link-btn" target="_blank" rel="noopener noreferrer">Probing Suite</a>
-            <a href="papers/ear-grpo.html" class="link-btn">Paper Overview</a>
-          </div>
-          <details class="bibtex-details">
-            <summary>BibTeX</summary>
-            <pre>@article{thakare2026confidence,
-  author  = {Thakare, Sham Satish},
-  title   = {When Confidence Proxies Confound Reasoning Complexity: Pitfalls of Uncertainty-Weighted Credit Assignment in Language Model Reinforcement Learning},
-  journal = {IEEE Transactions on Artificial Intelligence},
-  year    = {2026},
-  note    = {Under Review},
-  url     = {https://github.com/shamddd/ear_grpo_reasoning}
-}</pre>
-          </details>
-        </div>
-      </div>
-
-      <!-- Paper 2: AdaptiveReplica (with Yuri Shelke) -->
-      <div class="fullCard" id="adaptive-replica">
-        <div class="thumbnail-box">
-          <div class="thumbnail-placeholder">Distributed<br>Consensus</div>
-        </div>
-        <div class="cardContent">
-          <div class="paper_title">
-            <a href="https://github.com/shamddd/quorumshift" target="_blank" rel="noopener noreferrer">
-              AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus
-            </a>
-          </div>
-          <div class="paper_authors">
-            <strong>Sham Satish Thakare</strong>, Yuri Shelke (Distinguished Engineer, Capital One)
-          </div>
-          <div class="venue_bar">
-            <span class="conf_name review">Under Review at IEEE Transactions on Artificial Intelligence (IEEE TAI) &bull; Capital One Systems Research</span>
-          </div>
-          <p class="paper_desc">
-            Formulates failure-domain aware latency profiling algorithms in C++20 Raft consensus clusters (<code>quorumshift</code>), eliminating tail latency spikes under asymmetric network fault injection and non-uniform round-trip delays. Conducted as Pre-Doctoral Systems Researcher at Capital One mentored by Yuri Shelke.
-          </p>
-          <div class="links">
-            <a href="https://github.com/shamddd/quorumshift" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
-            <a href="https://github.com/shamddd/quorumshift#benchmarks" class="link-btn" target="_blank" rel="noopener noreferrer">Benchmark Ledger</a>
-            <a href="papers/adaptive-replica.html" class="link-btn">Paper Overview</a>
-          </div>
-          <details class="bibtex-details">
-            <summary>BibTeX</summary>
-            <pre>@article{thakare2026adaptivereplica,
-  author  = {Thakare, Sham Satish and Shelke, Yuri},
-  title   = {AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus},
-  journal = {IEEE Transactions on Artificial Intelligence},
-  year    = {2026},
-  note    = {Under Review, Capital One Systems Research},
-  url     = {https://github.com/shamddd/quorumshift}
-}</pre>
-          </details>
-        </div>
-      </div>
-
-      <!-- Paper 3: MediRush-SafeAgent -->
-      <div class="fullCard" id="medirush-safeagent">
-        <div class="thumbnail-box">
-          <div class="thumbnail-placeholder">Agent Safety<br>Runtime</div>
-        </div>
-        <div class="cardContent">
-          <div class="paper_title">
-            <a href="http://ssrn.com/abstract=7446543" target="_blank" rel="noopener noreferrer">
-              MediRush-SafeAgent: Layered Runtime Enforcement for Healthcare-Commerce LLM Tool Execution
-            </a>
-          </div>
-          <div class="paper_authors">
-            <strong>Sham Satish Thakare</strong>
-          </div>
-          <div class="venue_bar">
-            <span class="conf_name review">Under Review at Intelligence-Based Medicine (Elsevier) &bull; SSRN Preprint</span>
-          </div>
-          <p class="paper_desc">
-            Presents layered runtime boundary enforcement and deterministic state-interception architectures for autonomous LLM tool executions in high-stakes healthcare-commerce workflows.
-          </p>
-          <div class="links">
-            <a href="http://ssrn.com/abstract=7446543" class="link-btn" target="_blank" rel="noopener noreferrer">Preprint (SSRN)</a>
-            <a href="https://github.com/shamddd/medirush-safeagent" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
-            <a href="https://ssrn.com/author=13130226" class="link-btn" target="_blank" rel="noopener noreferrer">Author Page (SSRN)</a>
-            <a href="papers/medirush-safeagent.html" class="link-btn">Paper Overview</a>
-          </div>
-          <details class="bibtex-details">
-            <summary>BibTeX</summary>
-            <pre>@article{thakare2026medirush,
-  author  = {Thakare, Sham Satish},
-  title   = {MediRush-SafeAgent: Layered Runtime Enforcement for Healthcare-Commerce LLM Tool Execution},
-  journal = {Intelligence-Based Medicine},
-  year    = {2026},
-  note    = {Under Review; SSRN Preprint 7446543},
-  url     = {http://ssrn.com/abstract=7446543}
-}</pre>
-          </details>
-        </div>
-      </div>
-
-      <!-- Paper 4: Recovery Eval -->
-      <div class="fullCard" id="recovery-eval">
-        <div class="thumbnail-box">
-          <div class="thumbnail-placeholder">State-Matched<br>Evaluation</div>
-        </div>
-        <div class="cardContent">
-          <div class="paper_title">
-            <a href="https://github.com/shamddd/recovery_eval" target="_blank" rel="noopener noreferrer">
-              recovery_eval: State-Matched and Provenance-Aware Evaluation of Recovery Behavior in Language-Model Reasoning
-            </a>
-          </div>
-          <div class="paper_authors">
-            <strong>Sham Satish Thakare</strong>
-          </div>
-          <div class="venue_bar">
-            <span class="conf_name review">Under Review at 11th IEEE Special Session on Machine Learning on Big Data (IEEE BigData 2026)</span>
-          </div>
-          <p class="paper_desc">
-            Formulates state-contrast continuation evaluation ($D_{\text{recovery}} = -0.1100$) measuring error recovery under frozen structural covariates across reasoning model rollouts, preventing confounding between generative capacity and recovery resilience.
-          </p>
-          <div class="links">
-            <a href="pdfs/recovery-eval.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">Manuscript (PDF)</a>
-            <a href="https://github.com/shamddd/recovery_eval" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
-            <a href="https://github.com/shamddd/recovery_eval#evaluation-ledger" class="link-btn" target="_blank" rel="noopener noreferrer">Evaluation Ledger</a>
-            <a href="papers/recovery-eval.html" class="link-btn">Paper Overview</a>
-          </div>
-          <details class="bibtex-details">
-            <summary>BibTeX</summary>
-            <pre>@inproceedings{thakare2026recoveryeval,
-  author    = {Thakare, Sham Satish},
-  title     = {recovery\_eval: State-Matched and Provenance-Aware Evaluation of Recovery Behavior in Language-Model Reasoning},
-  booktitle = {11th IEEE Special Session on Machine Learning on Big Data (IEEE BigData)},
-  year      = {2026},
-  note      = {Under Review},
-  url       = {https://github.com/shamddd/recovery_eval}
-}</pre>
-          </details>
-        </div>
-      </div>
-
-      <h2>Preprints & Working Papers</h2>
-
-      <!-- Paper 5: StateShift -->
-      <div class="fullCard" id="stateshift">
-        <div class="thumbnail-box">
-          <div class="thumbnail-placeholder">StateShift<br>Protocol</div>
-        </div>
-        <div class="cardContent">
-          <div class="paper_title">
-            <a href="https://github.com/shamddd/stateshift" target="_blank" rel="noopener noreferrer">
-              StateShift: Tracking State-Dependent Reasoning Recovery Across Post-Training
-            </a>
-          </div>
-          <div class="paper_authors">
-            <strong>Sham Satish Thakare</strong>
-          </div>
-          <div class="venue_bar">
-            <span class="conf_name">Preprint / Technical Report, 2026</span>
-          </div>
-          <p class="paper_desc">
-            Evaluates neural reasoning continuation state matching under verifier perturbations and structural covariate controls, establishing empirical bounds on reasoning recovery dynamics.
-          </p>
-          <div class="links">
-            <a href="pdfs/stateshift.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">Manuscript (PDF)</a>
-            <a href="https://github.com/shamddd/stateshift" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
-            <a href="https://github.com/shamddd/stateshift#checkpoints" class="link-btn" target="_blank" rel="noopener noreferrer">Checkpoints</a>
-            <a href="papers/stateshift.html" class="link-btn">Paper Overview</a>
-          </div>
-          <details class="bibtex-details">
-            <summary>BibTeX</summary>
-            <pre>@article{thakare2026stateshift,
-  author = {Thakare, Sham Satish},
-  title  = {StateShift: Tracking State-Dependent Reasoning Recovery Across Post-Training},
-  year   = {2026},
-  note   = {Preprint},
-  url    = {https://github.com/shamddd/stateshift}
-}</pre>
-          </details>
-        </div>
-      </div>
-
-      <!-- Paper 6: Amortized Intervention Frontiers -->
-      <div class="fullCard" id="amortized">
-        <div class="thumbnail-box">
-          <div class="thumbnail-placeholder">Search vs<br>Training</div>
-        </div>
-        <div class="cardContent">
-          <div class="paper_title">
-            <a href="https://github.com/shamddd/submission_package" target="_blank" rel="noopener noreferrer">
-              Amortized Intervention Frontiers for Language-Model Reasoning: When Does Training Beat Search?
-            </a>
-          </div>
-          <div class="paper_authors">
-            <strong>Sham Satish Thakare</strong>
-          </div>
-          <div class="venue_bar">
-            <span class="conf_name">Working Paper, 2026</span>
-          </div>
-          <p class="paper_desc">
-            Theoretical and empirical characterization of compute Pareto frontiers comparing test-time guided search versus amortized post-training reinforcement learning on complex reasoning graphs.
-          </p>
-          <div class="links">
-            <a href="https://github.com/shamddd/submission_package" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
-            <a href="https://github.com/shamddd/submission_package#benchmarks" class="link-btn" target="_blank" rel="noopener noreferrer">Pareto Benchmarks</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Paper 7: RL Plasticity -->
-      <div class="fullCard" id="plasticity">
-        <div class="thumbnail-box">
-          <div class="thumbnail-placeholder">Representation<br>Plasticity</div>
-        </div>
-        <div class="cardContent">
-          <div class="paper_title">
-            <a href="https://github.com/shamddd/adaptive-rl-forge" target="_blank" rel="noopener noreferrer">
-              Predicting Reinforcement-Learning Plasticity of Intermediate Language-Model Checkpoints: A Cross-Architecture Diagnostic Study
-            </a>
-          </div>
-          <div class="paper_authors">
-            <strong>Sham Satish Thakare</strong>
-          </div>
-          <div class="venue_bar">
-            <span class="conf_name">Working Paper, 2026</span>
-          </div>
-          <p class="paper_desc">
-            Diagnoses parameter plasticity and representation collapse across model checkpoints, establishing diagnostic probes for RL fine-tuning stability.
-          </p>
-          <div class="links">
-            <a href="https://github.com/shamddd/adaptive-rl-forge" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
-            <a href="https://github.com/shamddd/adaptive-rl-forge#diagnostic-probes" class="link-btn" target="_blank" rel="noopener noreferrer">Diagnostic Probes</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Paper 8: EnclaveShield -->
-      <div class="fullCard" id="enclaveshield">
-        <div class="thumbnail-box">
-          <div class="thumbnail-placeholder">Confidential<br>Hardware</div>
-        </div>
-        <div class="cardContent">
-          <div class="paper_title">
-            <a href="https://github.com/shamddd/enclaveshield" target="_blank" rel="noopener noreferrer">
-              EnclaveShield: Zero-Knowledge Memory Attestation and Side-Channel Mitigation for Hardware Enclaves
-            </a>
-          </div>
-          <div class="paper_authors">
-            <strong>Sham Satish Thakare</strong>
-          </div>
-          <div class="venue_bar">
-            <span class="conf_name">Working Paper, 2026</span>
-          </div>
-          <p class="paper_desc">
-            Zero-knowledge memory attestation proofs and adaptive Path ORAM tree rebalancing for hardware-enclave environments under speculative and memory access attacks.
-          </p>
-          <div class="links">
-            <a href="https://github.com/shamddd/enclaveshield" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
-            <a href="https://github.com/shamddd/enclaveshield#zk-proofs" class="link-btn" target="_blank" rel="noopener noreferrer">ZK Proof Artifacts</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Paper 9: TraceMind -->
-      <div class="fullCard" id="tracemind">
-        <div class="thumbnail-box">
-          <div class="thumbnail-placeholder">Causal<br>Tracing</div>
-        </div>
-        <div class="cardContent">
-          <div class="paper_title">
-            <a href="https://github.com/shamddd/tracemind" target="_blank" rel="noopener noreferrer">
-              TraceMind: Graph-Constrained Causal Reasoning for Root-Cause Localization in Microservice Systems
-            </a>
-          </div>
-          <div class="paper_authors">
-            <strong>Sham Satish Thakare</strong>
-          </div>
-          <div class="venue_bar">
-            <span class="conf_name">Working Paper, 2026</span>
-          </div>
-          <p class="paper_desc">
-            Formulates topological causal discovery over distributed tracing graphs, isolating anomalous propagation paths with statistical guarantees.
-          </p>
-          <div class="links">
-            <a href="https://github.com/shamddd/tracemind" class="link-btn" target="_blank" rel="noopener noreferrer">Verified Code (GitHub)</a>
-            <a href="https://github.com/shamddd/tracemind#causal-benchmarks" class="link-btn" target="_blank" rel="noopener noreferrer">Causal Benchmarks</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrapper">
-      <div class="footer-col-wrapper">
-        <div class="footer-col footer-col-1">
-          <table>
-            <tr class="contact-list">
-              <td style="padding-right: 14px; vertical-align: middle;">
-                <a href="mailto:shamthakare3000@gmail.com" title="Email">
-                  <svg viewBox="0 0 24 24" width="20" height="20"><path fill="#828282" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                </a>
-              </td>
-              <td style="padding-right: 14px; vertical-align: middle;">
-                <a href="https://github.com/shamddd" title="GitHub" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 16 16" width="20" height="20"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.33,5.302,7.362c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
-                </a>
-              </td>
-              <td style="padding-right: 14px; vertical-align: middle;">
-                <a href="https://ssrn.com/author=13130226" title="SSRN" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 24 24" width="20" height="20"><path fill="#828282" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-                </a>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="footer-col footer-col-3">
-          <p class="text" align="right" style="color: #828282; font-size: 14px; margin: 0;">Last updated October 14, 2026.</p>
-        </div>
+<header class="" data-sveltekit-noscroll data-sveltekit-preload-code="eager">
+  <div class="layout-md content grid grid-cols-2 gap-5 pt-2 pb-2 object-scale-down">
+    <div class=""><img class="object-scale-down rounded-t-lg" src="assets/sham_thakare.jpg" alt="Sham Satish Thakare"></div>
+  
+    <div class="grid-rows-4 md:space-y-0 place-content-center">
+      <div class=""><h1 class="font-bold text-black text-2xl"><a href="index.html">Sham Satish Thakare</a>
+          <span class="page-title svelte-1ggp7n1"><span class="text-neutral-400 svelte-1ggp7n1">—</span>
+                Publications</span></h1></div>
+      <div class="anormal-font">(He/Him/His) </div>
+      <div class="anormal-font"><br> <span class="anormal-font-bold text-black">Pre-Doctoral Researcher at <a href="https://www.capitalone.com" target="_blank" rel="noopener noreferrer" class="alink">Capital One</a>
+	<br> 
+        <br> Systems Research Mentorship: <a href="https://www.linkedin.com/in/yurishelke/" target="_blank" rel="noopener noreferrer" class="alink">Yuri Shelke</a> (Distinguished Engineer)</span>
+	<br>
+	<br> <a href="https://apcoer.abhinavsociety.org" target="_blank" rel="noopener noreferrer" class="alink">APCOER Pune (SPPU)</a> · <span class="anormal-font-bold text-black">Gold Medal in Mathematics</span>
       </div>
     </div>
-  </footer>
+  </div>
 
-</body>
+  <div class="layout-md"><div class="flex-grow border-b-2 border-black"></div></div>
+  
+  <nav class="svelte-1ggp7n1">
+    <a href="index.html" class="hover:text-black transition-colors svelte-1ggp7n1">home</a>
+    <a href="publications.html" class="hover:text-black transition-colors svelte-1ggp7n1 text-black">publications</a>
+    <a href="teaching.html" class="hover:text-black transition-colors svelte-1ggp7n1">teaching</a>
+    <a href="Sham_Satish_Thakare_Academic_CV.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-black transition-colors svelte-1ggp7n1">cv</a>
+    <a href="bio.html" class="hover:text-black transition-colors svelte-1ggp7n1">bio</a>
+  </nav>
+
+</header>
+
+<main>
+
+<section class="layout-md"><h2 class="heading2">Publications:</h2>
+  
+<div class="grid grid-cols-1 gap-y-0 ml-4"><div class="anormal-font-bold mb-8">You can view my research repositories and preprint records at <a class="anormal-font alink" href="https://github.com/shamddd" target="_blank" rel="noopener noreferrer">[GitHub]</a> or <a class="anormal-font alink" href="https://ssrn.com/author=13130226" target="_blank" rel="noopener noreferrer">[SSRN]</a>.
+  </div></div>
+
+<h2 class="heading2">Manuscripts Under Review / In Submission:</h2>
+<div class="grid grid-cols-1 gap-y-0 ml-4">
+  
+  <!-- Paper 1 -->
+  <div class="mb-6">
+    <div class="anormal-font-semibold"><a href="papers/ear-grpo.html" class="alink">When Confidence Proxies Confound Reasoning Complexity: Pitfalls of Uncertainty-Weighted Credit Assignment in Language Model Reinforcement Learning</a></div>
+    <div class="anormal-font mt-1">Sham Satish Thakare</div>
+    <div class="anormal-font text-neutral-500">Under Review at <em>IEEE Transactions on Artificial Intelligence (IEEE TAI)</em>, 2026</div>
+    <div class="anormal-font mt-1">Falsifies token-predictive entropy as an uncertainty proxy in LM RLVR. Demonstrates that predictive entropy correlates strongly with sequence length ($r = +0.486$), causing uncertainty-weighted GRPO to systematically misallocate credit on valid multi-step derivations.</div>
+    <div class="mt-2 space-x-2">
+      <a href="pdfs/when-confidence-confounds-reasoning-complexity.pdf" target="_blank" rel="noopener noreferrer" class="alink">[pdf]</a>
+      <a href="https://github.com/shamddd/ear_grpo_reasoning" target="_blank" rel="noopener noreferrer" class="alink">[code]</a>
+      <a href="https://github.com/shamddd/ear_grpo_reasoning#probing-suite" target="_blank" rel="noopener noreferrer" class="alink">[probing suite]</a>
+      <a href="papers/ear-grpo.html" class="alink">[overview]</a>
+    </div>
+  </div>
+
+  <!-- Paper 2 -->
+  <div class="mb-6">
+    <div class="anormal-font-semibold"><a href="papers/adaptive-replica.html" class="alink">AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus</a></div>
+    <div class="anormal-font mt-1">Sham Satish Thakare, Yuri Shelke (Distinguished Engineer, Capital One)</div>
+    <div class="anormal-font text-neutral-500">Under Review at <em>IEEE Transactions on Artificial Intelligence (IEEE TAI)</em>, 2026 &bull; Capital One Systems Research</div>
+    <div class="anormal-font mt-1">Formulates failure-domain aware latency profiling algorithms in C++20 Raft consensus clusters (<code>quorumshift</code>), eliminating tail latency spikes under asymmetric network fault injection and non-uniform round-trip delays. Mentored by Yuri Shelke at Capital One.</div>
+    <div class="mt-2 space-x-2">
+      <a href="https://github.com/shamddd/quorumshift" target="_blank" rel="noopener noreferrer" class="alink">[code (C++20)]</a>
+      <a href="https://github.com/shamddd/quorumshift#benchmarks" target="_blank" rel="noopener noreferrer" class="alink">[benchmark ledger]</a>
+      <a href="papers/adaptive-replica.html" class="alink">[overview]</a>
+    </div>
+  </div>
+
+  <!-- Paper 3 -->
+  <div class="mb-6">
+    <div class="anormal-font-semibold"><a href="papers/medirush-safeagent.html" class="alink">MediRush-SafeAgent: Layered Runtime Enforcement for Healthcare-Commerce LLM Tool Execution</a></div>
+    <div class="anormal-font mt-1">Sham Satish Thakare</div>
+    <div class="anormal-font text-neutral-500">In Peer Review at <em>Intelligence-Based Medicine (Elsevier)</em> &bull; SSRN Preprint 7446543</div>
+    <div class="anormal-font mt-1">Presents layered runtime boundary enforcement and deterministic state-interception architectures for autonomous LLM tool executions in high-stakes healthcare-commerce workflows.</div>
+    <div class="mt-2 space-x-2">
+      <a href="http://ssrn.com/abstract=7446543" target="_blank" rel="noopener noreferrer" class="alink">[ssrn preprint]</a>
+      <a href="https://github.com/shamddd/medirush-safeagent" target="_blank" rel="noopener noreferrer" class="alink">[code]</a>
+      <a href="https://ssrn.com/author=13130226" target="_blank" rel="noopener noreferrer" class="alink">[ssrn author page]</a>
+      <a href="papers/medirush-safeagent.html" class="alink">[overview]</a>
+    </div>
+  </div>
+
+  <!-- Paper 4 -->
+  <div class="mb-6">
+    <div class="anormal-font-semibold"><a href="papers/recovery-eval.html" class="alink">recovery_eval: State-Matched and Provenance-Aware Evaluation of Recovery Behavior in Language-Model Reasoning</a></div>
+    <div class="anormal-font mt-1">Sham Satish Thakare</div>
+    <div class="anormal-font text-neutral-500">Under Review at <em>11th IEEE Special Session on Machine Learning on Big Data (IEEE BigData 2026)</em></div>
+    <div class="anormal-font mt-1">Formulates state-contrast continuation evaluation ($D_{\text{recovery}} = -0.1100$) measuring error recovery under frozen structural covariates across reasoning model rollouts, preventing confounding between generative capacity and recovery resilience.</div>
+    <div class="mt-2 space-x-2">
+      <a href="pdfs/recovery-eval.pdf" target="_blank" rel="noopener noreferrer" class="alink">[pdf]</a>
+      <a href="https://github.com/shamddd/recovery_eval" target="_blank" rel="noopener noreferrer" class="alink">[code]</a>
+      <a href="https://github.com/shamddd/recovery_eval#evaluation-ledger" target="_blank" rel="noopener noreferrer" class="alink">[evaluation ledger]</a>
+      <a href="papers/recovery-eval.html" class="alink">[overview]</a>
+    </div>
+  </div>
+
+</div>
+
+<h2 class="heading2">Preprints &amp; Working Papers:</h2>
+<div class="grid grid-cols-1 gap-y-0 ml-4">
+
+  <!-- Paper 5 -->
+  <div class="mb-6">
+    <div class="anormal-font-semibold"><a href="papers/stateshift.html" class="alink">StateShift: State-Matched Evaluation of Error Recovery in Neural Reasoning</a></div>
+    <div class="anormal-font mt-1">Sham Satish Thakare</div>
+    <div class="anormal-font text-neutral-500">Submitted to <em>Elsevier Artificial Intelligence (AIJ)</em>, 2026</div>
+    <div class="anormal-font mt-1">Evaluates neural reasoning continuation state matching under verifier perturbations and structural covariate controls, establishing empirical bounds on reasoning recovery dynamics.</div>
+    <div class="mt-2 space-x-2">
+      <a href="pdfs/stateshift.pdf" target="_blank" rel="noopener noreferrer" class="alink">[pdf]</a>
+      <a href="https://github.com/shamddd/stateshift" target="_blank" rel="noopener noreferrer" class="alink">[code]</a>
+      <a href="https://github.com/shamddd/stateshift#checkpoints" target="_blank" rel="noopener noreferrer" class="alink">[checkpoints]</a>
+      <a href="papers/stateshift.html" class="alink">[overview]</a>
+    </div>
+  </div>
+
+  <!-- Paper 6 -->
+  <div class="mb-6">
+    <div class="anormal-font-semibold"><a href="https://github.com/shamddd/submission_package" target="_blank" rel="noopener noreferrer" class="alink">Amortized Intervention Frontiers for Language-Model Reasoning: When Does Training Beat Search?</a></div>
+    <div class="anormal-font mt-1">Sham Satish Thakare</div>
+    <div class="anormal-font text-neutral-500">Working Paper, 2026</div>
+    <div class="anormal-font mt-1">Theoretical and empirical characterization of compute Pareto frontiers comparing test-time guided search versus amortized post-training reinforcement learning on complex reasoning graphs.</div>
+    <div class="mt-2 space-x-2">
+      <a href="https://github.com/shamddd/submission_package" target="_blank" rel="noopener noreferrer" class="alink">[code]</a>
+      <a href="https://github.com/shamddd/submission_package#benchmarks" target="_blank" rel="noopener noreferrer" class="alink">[pareto benchmarks]</a>
+    </div>
+  </div>
+
+  <!-- Paper 7 -->
+  <div class="mb-6">
+    <div class="anormal-font-semibold"><a href="https://github.com/shamddd/adaptive-rl-forge" target="_blank" rel="noopener noreferrer" class="alink">Predicting Reinforcement-Learning Plasticity of Intermediate Language-Model Checkpoints: A Cross-Architecture Diagnostic Study</a></div>
+    <div class="anormal-font mt-1">Sham Satish Thakare</div>
+    <div class="anormal-font text-neutral-500">Working Paper, 2026</div>
+    <div class="anormal-font mt-1">Diagnoses parameter plasticity and representation collapse across model checkpoints, establishing diagnostic probes for RL fine-tuning stability.</div>
+    <div class="mt-2 space-x-2">
+      <a href="https://github.com/shamddd/adaptive-rl-forge" target="_blank" rel="noopener noreferrer" class="alink">[code]</a>
+      <a href="https://github.com/shamddd/adaptive-rl-forge#diagnostic-probes" target="_blank" rel="noopener noreferrer" class="alink">[diagnostic probes]</a>
+    </div>
+  </div>
+
+  <!-- Paper 8 -->
+  <div class="mb-6">
+    <div class="anormal-font-semibold"><a href="https://github.com/shamddd/enclaveshield" target="_blank" rel="noopener noreferrer" class="alink">EnclaveShield: Zero-Knowledge Memory Attestation and Side-Channel Mitigation for Hardware Enclaves</a></div>
+    <div class="anormal-font mt-1">Sham Satish Thakare</div>
+    <div class="anormal-font text-neutral-500">Working Paper, 2026</div>
+    <div class="anormal-font mt-1">Zero-knowledge memory attestation proofs and adaptive Path ORAM tree rebalancing for hardware-enclave environments under speculative and memory access attacks.</div>
+    <div class="mt-2 space-x-2">
+      <a href="https://github.com/shamddd/enclaveshield" target="_blank" rel="noopener noreferrer" class="alink">[code]</a>
+      <a href="https://github.com/shamddd/enclaveshield#zk-proofs" target="_blank" rel="noopener noreferrer" class="alink">[zk proofs]</a>
+    </div>
+  </div>
+
+  <!-- Paper 9 -->
+  <div class="mb-6">
+    <div class="anormal-font-semibold"><a href="https://github.com/shamddd/tracemind" target="_blank" rel="noopener noreferrer" class="alink">TraceMind: Graph-Constrained Causal Reasoning for Root-Cause Localization in Microservice Systems</a></div>
+    <div class="anormal-font mt-1">Sham Satish Thakare</div>
+    <div class="anormal-font text-neutral-500">Working Paper, 2026</div>
+    <div class="anormal-font mt-1">Formulates topological causal discovery over distributed tracing graphs, isolating anomalous propagation paths with statistical guarantees.</div>
+    <div class="mt-2 space-x-2">
+      <a href="https://github.com/shamddd/tracemind" target="_blank" rel="noopener noreferrer" class="alink">[code]</a>
+      <a href="https://github.com/shamddd/tracemind#causal-benchmarks" target="_blank" rel="noopener noreferrer" class="alink">[causal benchmarks]</a>
+    </div>
+  </div>
+
+</div>
+
+<h2 class="heading2">Blog Posts:</h2>
+<div class="ml-4"><div class="space-y-2">
+  <p><a href="writing/when-confidence-confounds-reasoning-complexity.html" class="alink">[When Confidence Proxies Confound Reasoning Complexity: Pitfalls of Uncertainty-Weighted Credit Assignment in Language Model RL]</a></p>
+</div></div>
+
+</section></main>
+
+<footer class="layout-md mt-16 text-lg flex flex-col">
+  <div class="row anormal-font svelte-1t3hv3r">
+    <span class="anormal-font-bold svelte-1t3hv3r">eMail</span>
+    <hr class="svelte-1t3hv3r">
+    <a href="mailto:shamthakare3000@gmail.com" class="flex-none alink svelte-1t3hv3r">shamthakare3000@gmail.com </a>
+  </div>
+
+  <div class="row anormal-font svelte-1t3hv3r">
+    <span class="anormal-font-bold svelte-1t3hv3r">GitHub</span>
+    <hr class="svelte-1t3hv3r">
+    <a class="flex-none alink svelte-1t3hv3r" href="https://github.com/shamddd" target="_blank" rel="noopener noreferrer">@shamddd</a>
+  </div>
+
+  <div class="row anormal-font svelte-1t3hv3r">
+    <span class="flex-none anormal-font-bold svelte-1t3hv3r">Location</span>
+    <hr class="svelte-1t3hv3r">
+    <span class="flex-none svelte-1t3hv3r">Pune, Maharashtra, India</span>
+  </div>
+
+  <div class="row anormal-font svelte-1t3hv3r">
+    <span class="flex-none anormal-font-bold svelte-1t3hv3r">CV</span>
+    <hr class="svelte-1t3hv3r">
+    <a class="flex-none alink svelte-1t3hv3r" href="Sham_Satish_Thakare_Academic_CV.pdf" target="_blank" rel="noopener noreferrer">Sham_Satish_Thakare_Academic_CV.pdf</a>
+  </div>
+</footer>
+
+    </div>
+  </body>
 </html>
