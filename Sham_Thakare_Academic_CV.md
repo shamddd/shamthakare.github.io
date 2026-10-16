@@ -100,6 +100,7 @@ Pune, Maharashtra, India | Email: shamthakare3000@gmail.com | Website: https://s
 
 * **President, Social Volunteer Club**, APCOER Pune (*2023 – 2024*): Elected student head of university community outreach; directed educational mentorship in quantitative and digital skills for 200+ underprivileged high-school students, organized city-wide blood donation drives, and led campus sustainability campaigns.
 * **Teaching Assistant**, APCOER Pune (*2023 – 2024*): Conducted weekly recitation sessions, algorithmic proof walkthroughs (graph traversal, dynamic programming, complexity classes), and PyTorch implementation labs for 120+ undergraduate engineering students in *Data Structures, Algorithms, and Foundations of Machine Learning*.
+* **Peer Academic Mentor (Discrete Math & Quantum Foundations)**, APCOER Pune (*2023 – 2024*): Mentored undergraduate cohorts in proof-based discrete mathematics (graph theory, combinatorics) and quantum information foundations (density matrices, unitary gates, and Qiskit circuit simulations) following Grade O in Quantum Artificial Intelligence and Gold Medal in Mathematics.
 
 ---
 
