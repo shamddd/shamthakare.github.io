@@ -7,9 +7,9 @@
     
     <link href="css/shamulent.css" rel="stylesheet">
     <title>Sham Satish Thakare – Bio</title>
-    <meta name="description" content="Academic Biography of Sham Satish Thakare.">
+    <meta name="description" content="Biography and research perspective of Sham Satish Thakare — Independent Computer Science Researcher.">
     <meta property="og:title" content="Sham Satish Thakare – Bio">
-    <meta property="og:description" content="Academic Biography of Sham Satish Thakare.">
+    <meta property="og:description" content="Biography and research perspective of Sham Satish Thakare — Independent Computer Science Researcher.">
     <meta name="twitter:card" content="summary_large_image">
   </head>
   <body>
@@ -47,24 +47,64 @@
 
 <main>
 
-<section class="layout-md mb-4"><h2 class="heading2">Bio:</h2>
-  <div class="grid grid-cols-1 gap-y-0 ml-4"><div>
-    <p class="mb-4">
-      Sham Satish Thakare is an independent computer science researcher based in Pune, India. His research broadly investigates the scientific and systems principles governing foundation model reasoning reliability, reinforcement learning credit assignment (RLVR), and fault-tolerant distributed consensus protocols.
+<section class="layout-md mb-8">
+  <h2 class="heading2">About Me</h2>
+  <div class="ml-4 space-y-4">
+    <p>
+      I am an independent computer science researcher living and working in Pune, India. My research lives at the intersection of mathematical machine learning—specifically understanding how language models actually learn to reason through reinforcement learning—and building fault-tolerant distributed consensus infrastructure that holds up under severe real-world network stress.
     </p>
 
-    <p class="mb-4">
-      In distributed systems, Sham\'s research investigates failure-domain aware dynamic quorum adaptation algorithms and latency profiling mechanisms in C++20 Raft consensus clusters (<a href="https://github.com/shamddd/quorumshift" target="_blank" rel="noopener noreferrer" class="alink"><code>quorumshift</code></a>), eliminating p99 tail latency degradation under asymmetric network partitions and non-uniform round-trip delays.
+    <p>
+      In 2024, I graduated with a B.Tech. in Artificial Intelligence and Data Science from Savitribai Phule Pune University (APCOER Pune), finishing First Class with Distinction with an 8.70 cumulative GPA and a 9.53 final year SGPA (Rank 1). I was awarded the university's <strong>Gold Medal in Mathematics (2024)</strong> for achieving the highest academic record across our mathematical and quantitative curriculum. That mathematical grounding continues to direct every problem I choose to work on.
+    </p>
+  </div>
+</section>
+
+<section class="layout-md mb-8">
+  <h2 class="heading2">Research Focus &amp; Philosophy</h2>
+  <div class="ml-4 space-y-4 text-neutral-700">
+    <p>
+      I am drawn to questions where standard empirical assumptions quietly break down when inspected carefully.
     </p>
 
-    <p class="mb-4">
-      In foundation model post-training, Sham's recent work falsifies token-predictive entropy as an uncertainty proxy in reinforcement learning with verifiable rewards (GRPO), demonstrating substantial completion-length confounding ($r = +0.486$) and developing length-controlled credit allocation estimators. In parallel, he formulated state-matched difference-in-differences counterfactual evaluation protocols (<a href="https://github.com/shamddd/recovery_eval" target="_blank" rel="noopener noreferrer" class="alink"><code>recovery_eval</code></a> and <a href="https://github.com/shamddd/stateshift" target="_blank" rel="noopener noreferrer" class="alink"><code>stateshift</code></a>) to measure whether language models recover from intermediate reasoning errors under frozen structural covariates.
+    <p>
+      In modern post-training and reinforcement learning with verifiable rewards (RLVR), the community widely assumes that token-predictive entropy works as an effective proxy for model uncertainty. In my recent work, I set out to test whether that assumption actually holds. It turns out that predictive entropy correlates strongly with sequence length (r = +0.486)—meaning that uncertainty-weighted credit assignment methods (like entropy-weighted GRPO) end up misallocating reward gradients simply because a correct mathematical derivation required more steps. We formulated length-invariant credit assignment estimators (<a href="https://github.com/shamddd/ear_grpo_reasoning" target="_blank" rel="noopener noreferrer" class="alink"><code>ear_grpo_reasoning</code></a>) and state-matched difference-in-differences counterfactual evaluation protocols (<a href="https://github.com/shamddd/recovery_eval" target="_blank" rel="noopener noreferrer" class="alink"><code>recovery_eval</code></a>, <a href="https://github.com/shamddd/stateshift" target="_blank" rel="noopener noreferrer" class="alink"><code>stateshift</code></a>) to measure whether models genuinely recover from intermediate reasoning errors when structural covariates are held frozen.
     </p>
 
-    <p class="mb-4">
-      Sham received his B.Tech. in Artificial Intelligence and Data Science from APCOER Pune (Savitribai Phule Pune University) in June 2024 with a cumulative GPA of <strong>8.70 / 10.00</strong> (Final Year SGPA: <strong>9.53 / 10.00</strong>, First Class with Distinction). He was awarded the <strong>Gold Medal in Mathematics (2024)</strong> for highest academic standing across mathematical and quantitative engineering curricula. During his final year, he served as <strong>President of the Social Volunteer Organization</strong>, directing university community outreach, blood donation camps, digital literacy mentoring for underprivileged youth, and sustainability initiatives across Pune district.
+    <p>
+      On the systems side, I care just as much about runtime reality as theoretical elegance. When distributed consensus protocols encounter asymmetric network partitions or non-uniform round-trip times, conventional static quorums suffer crippling tail-latency blowups. To solve this, I designed failure-domain aware dynamic quorum adaptation algorithms and spectral latency estimators in C++20 for Raft consensus clusters (<a href="https://github.com/shamddd/quorumshift" target="_blank" rel="noopener noreferrer" class="alink"><code>quorumshift</code></a>), proving non-empty intersection invariants without ever violating safety or linearizability.
     </p>
-  </div></div>
+
+    <p>
+      My general rule of thumb is simple: work out the math on paper first, identify the falsifiable hypothesis, and then write the low-level code and stress-test benchmarks to see if the hypothesis survives contact with reality.
+    </p>
+  </div>
+</section>
+
+<section class="layout-md mb-8">
+  <h2 class="heading2">The Human Side: Athletics, Community &amp; Life</h2>
+  <div class="ml-4 space-y-4 text-neutral-700">
+    <p>
+      Sustained research requires physical energy and a clear head. I am a competitive runner, specializing in sprints and distance running, and won the <strong>Gold Medal in Athletics</strong> at the 2023 Inter-College Athletic Meet. Most of my toughest algorithmic roadblocks get untangled while out on early morning runs across Pune's hills before the city wakes up.
+    </p>
+
+    <p>
+      During my final undergraduate year, I was elected <strong>President of the Social Volunteer Organization</strong> at APCOER. We ran weekly volunteer tutoring programs for underprivileged high-school students across Pune district, teaching them foundational algebra, arithmetic, and basic digital literacy. We also organized city-wide blood donation camps and local environmental sustainability campaigns. Sitting side-by-side with young students who had never owned a computer and watching them solve algebraic equations for the first time remains one of the most meaningful things I have done.
+    </p>
+
+    <p>
+      When I am away from terminal windows and LaTeX manuscripts, you will usually find me reading classical computer science literature, drinking strong tea, or exploring Pune's historic neighborhoods with a notebook and fountain pen.
+    </p>
+  </div>
+</section>
+
+<section class="layout-md mb-8">
+  <h2 class="heading2">Formal / Colloquium Bio</h2>
+  <div class="ml-4">
+    <blockquote class="p-3 bg-neutral-50 border-l-2 border-neutral-400 text-sm text-neutral-600 leading-relaxed rounded-r">
+      "Sham Satish Thakare is an independent computer science researcher based in Pune, India, investigating foundation model reasoning reliability, reinforcement learning credit assignment (RLVR), and fault-tolerant distributed consensus systems. He holds a B.Tech. in Artificial Intelligence &amp; Data Science (First Class with Distinction) from Savitribai Phule Pune University, where he received the university's Gold Medal in Mathematics (2024)."
+    </blockquote>
+  </div>
 </section>
 
 </main>
@@ -91,7 +131,7 @@
   <div class="row anormal-font svelte-1t3hv3r">
     <span class="flex-none anormal-font-bold svelte-1t3hv3r">CV</span>
     <hr class="svelte-1t3hv3r">
-    <a class="flex-none alink svelte-1t3hv3r" href="Sham_Satish_Thakare_Academic_CV.pdf?v=20261017c" target="_blank" rel="noopener noreferrer">Sham_Satish_Thakare_Academic_CV.pdf?v=20261017c</a>
+    <a class="flex-none alink svelte-1t3hv3r" href="Sham_Satish_Thakare_Academic_CV.pdf?v=20261017c" target="_blank" rel="noopener noreferrer">Sham_Satish_Thakare_Academic_CV.pdf</a>
   </div>
 </footer>
 
