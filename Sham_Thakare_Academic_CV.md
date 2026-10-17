@@ -18,7 +18,7 @@ Pune, Maharashtra, India | Email: shamthakare3000@gmail.com | Web: https://shamd
 
 ### Independent Research
 **Pre-Doctoral Researcher** | *Jun 2024 – Present*  
-*Research Mentorship:  (Distinguished Engineer at Independent Research)*
+*Independent Systems Research & Distributed Consensus Architecture*
 * Researched distributed consensus protocols, fault-tolerant replication, and dynamic quorum adaptation in Raft clusters (`quorumshift`) under asymmetric network fault injection.
 * Formulated moving-window latency profiling algorithms and multi-threaded execution telemetry in C++20, eliminating tail latency spikes and reducing p99 write latency by 41.3%.
 * Engineered high-throughput parallel data processing pipelines, benchmarking memory layout and concurrency invariants across distributed clusters.
