@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>AdaptiveReplica — Sham Satish Thakare & Yuri Shelke</title>
-  <meta name="description" content="AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus by Sham Satish Thakare and Yuri Shelke.">
+  <title>AdaptiveReplica — Sham Satish Thakare</title>
+  <meta name="description" content="AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus by Sham Satish Thakare.">
 
   <!-- Google Scholar Meta Tags -->
   <meta name="citation_title" content="AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus">
   <meta name="citation_author" content="Thakare, Sham Satish">
-  <meta name="citation_author" content="Shelke, Yuri">
-  <meta name="citation_publication_date" content="2026/08">
+    <meta name="citation_publication_date" content="2026/08">
   <meta name="citation_journal_title" content="IEEE Transactions on Artificial Intelligence">
 
   <link rel="stylesheet" href="../css/main.css">
@@ -50,18 +49,18 @@
       <h1>AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus</h1>
       
       <p style="font-size: 17px; font-weight: 500; color: #0284c7; margin-bottom: 12px;">
-        <strong>Sham Satish Thakare</strong>, Yuri Shelke (Distinguished Engineer, Capital One)
+        <strong>Sham Satish Thakare</strong>
       </p>
 
       <div class="venue_bar" style="margin-bottom: 24px;">
         <span class="conf_name review" style="font-size: 14px;">
-          Under Review at IEEE Transactions on Artificial Intelligence (IEEE TAI, Manuscript ID: TAI-2026-Aug-A-01875) &bull; Capital One Systems Research
+          Working Paper &bull; Distributed Systems Research (2026)
         </span>
       </div>
 
       <h2>Abstract</h2>
       <p>
-        In state-machine replication protocols such as Raft, static quorum commitments suffer from tail-latency degradation under asymmetric network faults, straggling peers, and non-uniform round-trip delays. In this paper, we formulate <em>AdaptiveReplica</em>—a failure-domain aware dynamic quorum adaptation mechanism implemented in C++20 (<code>quorumshift</code>). Developed during pre-doctoral systems research at Capital One under the mentorship of Yuri Shelke (Distinguished Engineer), AdaptiveReplica continuously re-weights consensus quorums without violating linearizability invariants or safety thresholds, eliminating tail latency spikes under asymmetric fault injections.
+        In state-machine replication protocols such as Raft, static quorum commitments suffer from tail-latency degradation under asymmetric network faults, straggling peers, and non-uniform round-trip delays. In this paper, we formulate <em>AdaptiveReplica</em>—a failure-domain aware dynamic quorum adaptation mechanism implemented in C++20 (<code>quorumshift</code>). AdaptiveReplica continuously re-weights consensus quorums without violating linearizability invariants or safety thresholds, eliminating tail latency spikes under asymmetric fault injections.
       </p>
 
       <h2>Artifacts & Code</h2>
@@ -72,11 +71,11 @@
 
       <h2>BibTeX</h2>
       <pre style="background: #f1f5f9; padding: 14px; border-radius: 6px; font-family: ui-monospace, monospace; font-size: 12px; overflow-x: auto; color: #1e293b; border: 1px solid #e2e8f0;">@article{thakare2026adaptivereplica,
-  author  = {Thakare, Sham Satish and Shelke, Yuri},
+  author  = {Thakare, Sham Satish},
   title   = {AdaptiveReplica: Dynamic Quorum Adaptation and Failure-Aware Replica Selection in Distributed Consensus},
   journal = {IEEE Transactions on Artificial Intelligence},
   year    = {2026},
-  note    = {Under Review, Manuscript ID: TAI-2026-Aug-A-01875; Capital One Systems Research},
+  note    = {Working Paper / Preprint},
   url     = {https://github.com/shamddd/quorumshift}
 }</pre>
 

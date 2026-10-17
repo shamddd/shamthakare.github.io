@@ -1,6 +1,6 @@
 # Sham Satish Thakare
 **Independent Computer Science Researcher**  
-Pre-Doctoral Researcher at Capital One (Research Mentor: Yuri Shelke, Distinguished Engineer)  
+Independent Computer Science Researcher  
 Pune, Maharashtra, India | Email: shamthakare3000@gmail.com | Web: https://shamddd.github.io/shamthakare.github.io | GitHub: https://github.com/shamddd
 
 ---
@@ -16,9 +16,9 @@ Pune, Maharashtra, India | Email: shamthakare3000@gmail.com | Web: https://shamd
 
 ## Research / Professional Experience
 
-### Capital One
+### Independent Research
 **Pre-Doctoral Researcher** | *Jun 2024 – Present*  
-*Research Mentorship: Yuri Shelke (Distinguished Engineer at Capital One)*
+*Research Mentorship:  (Distinguished Engineer at Independent Research)*
 * Researched distributed consensus protocols, fault-tolerant replication, and dynamic quorum adaptation in Raft clusters (`quorumshift`) under asymmetric network fault injection.
 * Formulated moving-window latency profiling algorithms and multi-threaded execution telemetry in C++20, eliminating tail latency spikes and reducing p99 write latency by 41.3%.
 * Engineered high-throughput parallel data processing pipelines, benchmarking memory layout and concurrency invariants across distributed clusters.
