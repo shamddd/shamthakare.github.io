@@ -87,7 +87,6 @@ Pune, Maharashtra, India | Email: shamthakare3000@gmail.com | Web: https://shamd
 
 ## Honors & Awards
 
-* **Gold Medal in Mathematics** (2024): Highest academic standing in Mathematics and Quantitative Engineering Curricula, APCOER Pune (SPPU).
 * **First Class with Distinction (Honors Classification)** (2024): Savitribai Phule Pune University (SPPU) — Cumulative GPA: 8.70 / 10.00; Final Year SGPA: 9.53 / 10.00.
 * **Gold Medal, Athletics (Sprint / Distance Running)** (2023): Inter-College Athletic Championship.
 

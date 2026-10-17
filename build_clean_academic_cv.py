@@ -34,7 +34,7 @@ class AcademicCVCanvas(canvas.Canvas):
         self.setFillColor(colors.HexColor("#64748b"))
         page_text = f"Sham Satish Thakare — Curriculum Vitae — Page {self._pageNumber} of {page_count}"
         self.drawRightString(612 - 36, 20, page_text)
-        self.drawString(36, 20, "Academic CV · Independent Researcher · Gold Medal in Mathematics (SPPU 2024)")
+        self.drawString(36, 20, "Academic CV · Independent Researcher · Savitribai Phule Pune University")
         self.setStrokeColor(colors.HexColor("#cbd5e1"))
         self.setLineWidth(0.5)
         self.line(36, 32, 612 - 36, 32)
@@ -123,7 +123,7 @@ def build_academic_cv(output_pdf="Sham_Satish_Thakare_Academic_CV.pdf", output_d
 
     # Header
     story.append(Paragraph("Sham Satish Thakare", title_style))
-    story.append(Paragraph("<b>Independent Computer Science Researcher</b> &nbsp;|&nbsp; <b>Gold Medal in Mathematics (2024)</b>", subtitle_style))
+    story.append(Paragraph("<b>Independent Computer Science Researcher</b> &nbsp;|&nbsp; <b>First Class with Distinction</b>", subtitle_style))
     story.append(Paragraph(
         'Pune, India &nbsp;•&nbsp; <a href="mailto:shamthakare3000@gmail.com">shamthakare3000@gmail.com</a> &nbsp;•&nbsp; '
         '<a href="https://shamddd.github.io/shamthakare.github.io/">Portfolio: shamddd.github.io</a> &nbsp;•&nbsp; '
@@ -161,7 +161,6 @@ def build_academic_cv(output_pdf="Sham_Satish_Thakare_Academic_CV.pdf", output_d
     t_edu = Table(edu_data, colWidths=[420, 120])
     t_edu.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('PADDING', (0,0), (-1,-1), 0)]))
     story.append(t_edu)
-    story.append(Paragraph("• <b>Gold Medal in Mathematics (2024):</b> Conferred for highest academic standing across mathematical and quantitative curricula (Calculus, Linear Algebra, Discrete Mathematics, Probability &amp; Statistics, Optimization).", bullet_style))
     story.append(Paragraph("• <b>Academic Standing:</b> Cumulative GPA: <b>8.70 / 10.00</b> (170/170 Credits Completed, Total Grade Points: 1479/1700; Seat: <code>B191102032</code>, PRN: <code>72159719L</code>).", bullet_style))
     story.append(Paragraph("• <b>Final Year Academic Rank:</b> Final Year SGPA: <b>9.53 / 10.00</b> (Department Rank 1).", bullet_style))
     story.append(Paragraph("• <b>Flagship Coursework Honors (Grade O / 10.0 Outstanding):</b> Distributed Computing (10/10), Artificial Neural Networks (10/10), Operating Systems (10/10), Cyber Security (10/10), Capstone Senior Thesis (10/10), Industry Internship (10/10).", bullet_style))
@@ -261,7 +260,7 @@ def build_academic_cv(output_pdf="Sham_Satish_Thakare_Academic_CV.pdf", output_d
     run_name = p_head.add_run("Sham Satish Thakare\n")
     run_name.font.size = Pt(18)
     run_name.font.bold = True
-    run_sub = p_head.add_run("Independent Computer Science Researcher | Gold Medal in Mathematics (2024)\n")
+    run_sub = p_head.add_run("Independent Computer Science Researcher | First Class with Distinction\n")
     run_sub.font.size = Pt(10)
     run_sub.font.bold = True
     run_contact = p_head.add_run("Pune, India | shamthakare3000@gmail.com | Portfolio: shamddd.github.io | GitHub: @shamddd\n\n")
@@ -282,7 +281,6 @@ def build_academic_cv(output_pdf="Sham_Satish_Thakare_Academic_CV.pdf", output_d
     doc_docx.add_paragraph(
         "Savitribai Phule Pune University (APCOER Pune), Pune, Maharashtra, India (2020 – 2024)\n"
         "Bachelor of Engineering (B.E.) in Artificial Intelligence and Data Science | First Class with Distinction (Conferred April 2024)\n"
-        "• Gold Medal in Mathematics (2024): Conferred for highest academic standing across mathematical and quantitative curricula.\n"
         "• Academic Standing: Cumulative GPA: 8.70 / 10.00 (Department Rank 1, Final Year SGPA: 9.53 / 10.00).\n"
         "• Medium of Instruction: Certified as ENGLISH on official university transcripts.\n"
     )
